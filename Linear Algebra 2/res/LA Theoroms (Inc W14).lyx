@@ -1,0 +1,6057 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+
+\usepackage{polynom}
+\newcommand*{\defeq}{\stackrel{\mathsmaller{\mathsf{def}}}{=}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "Arial"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.1cm
+\topmargin 2.1cm
+\rightmargin 2.1cm
+\bottommargin 2.1cm
+\secnumdepth -2
+\tocdepth 1
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\heb}[1]{\text{#1}}
+{#1}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\fldr}{\mathbb{R}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\fldc}{\mathbb{C}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\sp}{\textrm{sp}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\matn}{M_{n}(F)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\matm}{M_{m\times n}(F)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\adj}{\textrm{adj}\,}
+\end_inset
+\begin_inset FormulaMacro
+\renewcommand{\fldr}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\left\Vert #1\right\Vert }
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\vx}{\vec{x}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\vy}{\vec{y}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\lims}[2]{\lim\limits _{#1\to#2}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\defeq}{\overset{\mathrm{def}}{=}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\id}[2]{M_{#2}^{#1}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\rep}[2]{\left[#1\right]_{#2}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\fop}{f\in\hom\left(V,V\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\viv}{v\in V}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ipp}[1]{\left\langle #1\right|}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\la}{\lambda}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\xy}[2]{\left(\begin{smallmatrix}#1\\
+ #2 
+\end{smallmatrix}\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\tid}{\textrm{id}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\desc}[2]{\underset{#2}{\underline{#1}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\gm}[1]{m_{#1}^{\textrm{geom}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\gml}{\gm{\la}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\am}[1]{m_{#1}^{\textrm{alg}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\aml}{\am{\la}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\bl}[1]{\textrm{Block}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $F\left[x\right]$
+\end_inset
+
+ מהווה מרחב וקטורי )וגם חוג!( מעל השדה 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $P,D\in F\left[x\right]$
+\end_inset
+
+ אזי קיימים פולינומים יחידים 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ )המנה( ו-
+\begin_inset Formula $R\left(x\right)$
+\end_inset
+
+ )השארית( שעבורם 
+\begin_inset Formula $P\left(x\right)=Q\left(x\right)\cdot D\left(x\right)+R\left(x\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\deg R\left(x\right)<\deg D\left(x\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $P\in F\left[x\right]$
+\end_inset
+
+ ונניח כי 
+\begin_inset Formula $P\left(x\right)=Q\left(x\right)D\left(x\right)$
+\end_inset
+
+ אזי:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ כל שורש של 
+\begin_inset Formula $Q$
+\end_inset
+
+ ו-
+\begin_inset Formula $D$
+\end_inset
+
+ הוא שורש של 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ כל שורש של 
+\begin_inset Formula $P$
+\end_inset
+
+ הוא שורש של 
+\begin_inset Formula $Q$
+\end_inset
+
+ או )לא בלעדי( שורש של 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $P\in F\left[x\right]$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא שורש של 
+\begin_inset Formula $P$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x-a\mid P\left(x\right)$
+\end_inset
+
+ )כלומר קיים 
+\begin_inset Formula $Q\in F\left[x\right]$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $P\left(x\right)=\left(x-a\right)Q\left(x\right)$
+\end_inset
+
+(.
+\end_layout
+\begin_layout Enumerate
+לפולינום 
+\begin_inset Formula $P\neq0$
+\end_inset
+
+ יש לכל היותר 
+\begin_inset Formula $n$
+\end_inset
+
+ שורשים שונים.
+\end_layout
+\begin_layout Enumerate
+)המשפט היסודי של האלגברה( מעל המספרים המרוכבים, לכל 
+\begin_inset Formula $P\in\mathbb{C}\left[x\right]$
+\end_inset
+
+ קיים שורש מרוכב.
+\end_layout
+\begin_layout Enumerate
+כל פולינום אי-פריק מעל 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ הוא פולינום לינארי או קבוע.
+\end_layout
+\begin_layout Enumerate
+כל פולינום 
+\begin_inset Formula $P\left(x\right)=ax^{2}+bx+c$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\fldr$
+\end_inset
+
+ עם 
+\begin_inset Formula $\Delta=b^{2}-4ac<0$
+\end_inset
+
+ הוא אי-פריק.
+\end_layout
+\begin_layout Enumerate
+כל פולינום אי-פריק מעל הממשיים 
+\begin_inset Formula $P\in\fldr\left[x\right]$
+\end_inset
+
+ הוא אי פריק אם
+\begin_inset Quotes erd
+\end_inset
+
+ם הוא לינארי או שהוא ריבועי עם דיסקרימננט שלילי )
+\begin_inset Formula $\Delta<0$
+\end_inset
+
+( .
+\end_layout
+\begin_layout Enumerate
+גם 
+\begin_inset Formula $\hom\left(V,V\right)$
+\end_inset
+
+ הוא חוג )שדה מלבד אולי קיום הופכי( אם מגדירים כפל אופרטורים בתור הרכבה.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $U$
+\end_inset
+
+ תת מרחב אינוריאנטי ביחס לאופרטור 
+\begin_inset Formula $f\in\hom\left(V,V\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $U$
+\end_inset
+
+ אינוריאנטי ביחס ל-
+\begin_inset Formula $P\left(f\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $P\in F\left[x\right]$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)תכונות 
+\begin_inset Formula $P_{U,W}$
+\end_inset
+
+( בהינתן 
+\begin_inset Formula $P_{U,W}$
+\end_inset
+
+ הטלה על המרחב 
+\begin_inset Formula $U$
+\end_inset
+
+ במקביל למרחב 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ אזי:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $P_{U,W}$
+\end_inset
+
+ ה
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\textrm{Im}P_{U,W}=U,\ker P_{U,W}=W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $P_{U,W}\circ P_{U,W}=P_{U,W}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $U+W=\sp\left\{ U\cup W\right\} $
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $U+W$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $U+W$
+\end_inset
+
+ הוא סכום ישר אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $U\cap W=\left\{ 0\right\} $
+\end_inset
+
+ )הסטודנטית המשקיעה תוכיח(.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $T\in\hom\left(V,V\right)$
+\end_inset
+
+ הטלה אזי 
+\begin_inset Formula $V=\ker T\oplus\textrm{Im}T$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $T\in\hom\left(V,V\right)$
+\end_inset
+
+ היא הטלה אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימים תתי מרחבים 
+\begin_inset Formula $U,W\subseteq V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $V=U\oplus W$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $u\in U,w\in W$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $T\left(u+w\right)=u$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס אזי קיים 
+\begin_inset Formula $k<\dim V$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $Z\left(f,v\right)=\sp\underset{Z\left(f,v\right)\;\text{בסיס של}}{\underline{\left\{ v,f\left(v\right),\dots,f^{k}\left(v\right)\right\} }}$
+\end_inset
+
+ )זה קטן ממש כי אחרת נקבל 
+\begin_inset Formula $n+1$
+\end_inset
+
+ וקטורים בת
+\begin_inset Quotes erd
+\end_inset
+
+ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ו ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+(.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $Z\left(f,v\right)$
+\end_inset
+
+ הוא תת מרחב 
+\begin_inset Formula $f$
+\end_inset
+
+-אינווריאנטי.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $Q\neq0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\deg Q\geq k+1$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $P\mid Q$
+\end_inset
+
+ )
+\begin_inset Formula $P$
+\end_inset
+
+ שהוגדר לעיל(.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w\in Z\left(f,v\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\min_{V}^{f}\left(f\right)\left(w\right)=0$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\viv$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $\fop$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $w\in Z\left(f,v\right)$
+\end_inset
+
+ עם 
+\begin_inset Formula $\deg\min_{w}^{f}<\deg\min_{v}^{f}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\min_{v}^{f}$
+\end_inset
+
+ פולינום פריק.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\fop$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס אזי 
+\begin_inset Formula $\la\in F$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $\la$
+\end_inset
+
+ הוא ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $\left[f\right]_{B}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\fop$
+\end_inset
+
+ אזי לכל המטריצות המייצגות את 
+\begin_inset Formula $f$
+\end_inset
+
+ )ביחס לכל הבסיסים האפשריים של 
+\begin_inset Formula $V$
+\end_inset
+
+( ישנם אותם ע
+\begin_inset Quotes erd
+\end_inset
+
+ע.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ דומות אזי ל-
+\begin_inset Formula $A$
+\end_inset
+
+ ו-
+\begin_inset Formula $B$
+\end_inset
+
+ אותם ערכים עצמיים )היזכרו בתכונה 
+זו
+
+(.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\left(x-\la\right)\mid\min_{v}^{f}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיים ו
+\begin_inset Quotes erd
+\end_inset
+
+ע 
+\begin_inset Formula $w\in Z\left(f,v\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\fop$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ו-
+\begin_inset Formula $\la\in F$
+\end_inset
+
+.
+ אזי התנאים הבאים שקולים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\la$
+\end_inset
+
+ הוא ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\ker\left(f-\la\tid\right)\neq\left\{ 0\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $V\neq\textrm{Im}\left(f-\la\tid\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iiii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(f-\la\tid\right)$
+\end_inset
+
+ איננו הפיך.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in\matn$
+\end_inset
+
+ ו-
+\begin_inset Formula $\la\in F$
+\end_inset
+
+.
+ אזי התנאים הבאים שקולים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\la$
+\end_inset
+
+ הוא ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ קיים 
+\begin_inset Formula $u\in F^{n}$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\left(\la I-A\right)u=0$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\textrm{rank}A<n$
+\end_inset
+
+ )הדרגה לא מלאה(.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\la I-A$
+\end_inset
+
+ איננה הפיכה.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iv\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\det\left(\la I-A\right)=0$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $U_{1},\dots,U_{k}$
+\end_inset
+
+ תתי מרחבים של מ
+\begin_inset Quotes erd
+\end_inset
+
+ו 
+\begin_inset Formula $V$
+\end_inset
+
+ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ 
+\begin_inset Formula $U_{1}+\dots+U_{k}=U\subseteq V$
+\end_inset
+
+ אזי התנאים הבאים שקולים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $U_{1}\oplus\dots\oplus U_{k}=U$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ בסיס של 
+\begin_inset Formula $U_{i}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $B_{1}\cup\dots\cup B_{k}$
+\end_inset
+
+ בסיס ל-
+\begin_inset Formula $U$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\dim U=\dim U_{1}+\dots+\dim U_{k}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\fop$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ניתן ללכסון אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיים בסיס של ו
+\begin_inset Quotes erd
+\end_inset
+
+ע ביחס ל-
+\begin_inset Formula $f$
+\end_inset
+
+ ב-
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $U=\sp\left\{ u_{1},\dots,u_{n}\right\} $
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $U$
+\end_inset
+
+ הוא 
+\begin_inset Formula $f$
+\end_inset
+
+-אינווריאנטי אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $f\left(u_{i}\right)\in U$
+\end_inset
+
+, לכל 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $F\left[x\right]=U\oplus W$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\textrm{char}F\neq2$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $f,g:V\rightarrow V$
+\end_inset
+
+, 
+\begin_inset Formula $U$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של 
+\begin_inset Formula $V$
+\end_inset
+
+ ו
+\numeric on
+-
+\numeric off
+ 
+\begin_inset Formula $\la\in F$
+\end_inset
+
+ ונניח כי 
+\begin_inset Formula $U$
+\end_inset
+
+ הוא 
+\begin_inset Formula $f,g$
+\end_inset
+
+-אינווריאנטי.
+ אזי 
+\begin_inset Formula $U$
+\end_inset
+
+ נשמר ע
+\begin_inset Quotes erd
+\end_inset
+
+י:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f+g$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\la f$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $U$
+\end_inset
+
+ נשמר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $f$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $P\in F\left[x\right]$
+\end_inset
+
+ אזי 
+\begin_inset Formula $U$
+\end_inset
+
+ הוא 
+\begin_inset Formula $P\left(f\right)$
+\end_inset
+
+-אינוורינאטי.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $P,Q,R\in F\left[x\right]$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו וגם 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור לינארי אזי:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(P+Q\right)\left(f\right)=P\left(f\right)+Q\left(f\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(P\cdot Q\right)\left(f\right)=P\left(f\right)\circ Q\left(f\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(f\right)\circ Q\left(f\right)=Q\left(f\right)\circ P\left(f\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iv\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $P=Q\cdot R$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\ker Q\left(f\right)\subseteq\ker P\left(f\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\ker R\left(f\right)\subseteq R\left(f\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in\matn$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $v_{1},\dots,v_{l}\in V$
+\end_inset
+
+ ו
+\begin_inset Quotes erd
+\end_inset
+
+ע עם ע
+\begin_inset Quotes erd
+\end_inset
+
+ע שונים 
+\begin_inset Formula $\la_{1},\dots,\la_{l}$
+\end_inset
+
+ )
+\begin_inset Formula $i\neq j\Rightarrow\la_{i}\neq\la_{j}$
+\end_inset
+
+( אזי 
+\begin_inset Formula $v_{1},\dots,v_{l}$
+\end_inset
+
+ בת
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in\matn$
+\end_inset
+
+ אזי ל-
+\begin_inset Formula $A$
+\end_inset
+
+ לכל היותר 
+\begin_inset Formula $n$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע שונים.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $V_{\la}$
+\end_inset
+
+ הוא תת מרחב של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $f\in\hom\left(V,V\right)$
+\end_inset
+
+.
+ ויהיו 
+\begin_inset Formula $\la_{1},\dots,\la_{s}$
+\end_inset
+
+ שונים אזי 
+\begin_inset Formula $V_{\la_{1}}+\ldots+V_{\la_{s}}=V_{\la_{1}}\oplus\ldots\oplus V_{\la_{s}}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור מעל מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אזי התנאים הבאים שקולים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ ניתן ללכסון.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ ל-
+\begin_inset Formula $f$
+\end_inset
+
+ קיים בסיס של ו
+\begin_inset Quotes erd
+\end_inset
+
+ע.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $V_{\la_{1}}\oplus\dots\oplus V_{\la_{s}}=V$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\la_{1},\dots,\la_{s}$
+\end_inset
+
+ הע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iv\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\dim V_{\la_{1}}+\dots+\dim V_{\la_{s}}=\dim V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $A,D\in\matn$
+\end_inset
+
+ מטריצות דומות 
+אזי
+
+ 
+\begin_inset Formula $\chi_{A}=\chi_{B}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+מטריצות שמייצגות את אותו אופרטור לינארית לפי בסיסים שונים דומות, ולכן
+ פולינום אופייני של אופרטור מוגדר היטב.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור ו-
+\begin_inset Formula $U\subseteq V$
+\end_inset
+
+ תת מרחב אינווריאנטי ל-
+\begin_inset Formula $f$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס אזי 
+\begin_inset Formula $\chi_{f|_{U}}\mid\chi_{f}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם קיים פירוק 
+\begin_inset Formula $\min_{v}^{f}\left(x\right)=P\left(x\right)Q\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $P,Q$
+\end_inset
+
+ הם מתוקנים, אז קיים 
+\begin_inset Formula $w\in Z\left(f,v\right)$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\min_{w}^{f}\left(x\right)=P\left(x\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\sp\left\{ v\right\} $
+\end_inset
+
+ הוא 
+\begin_inset Formula $f$
+\end_inset
+
+-אינוורינאטי אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $v$
+\end_inset
+
+ ו
+\begin_inset Quotes erd
+\end_inset
+
+ע.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $V_{\la}$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ ו-
+\begin_inset Formula $0\neq v\in V$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $U=Z\left(f,u\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $g=f|_{U}:U\rightarrow U$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\min_{v}^{f}=\chi_{g}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)קיילי המילטון( יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור לינארי במ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אזי 
+\begin_inset Formula $\chi_{f}\left(f\right)=0_{\hom\left(V,V\right)}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+הפולינום המינימלי מוגדר היטב.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $F\subseteq K$
+\end_inset
+
+ שדות, 
+\begin_inset Formula $v_{1},\dots,v_{k}\in F^{n}$
+\end_inset
+
+ בת
+\begin_inset Quotes erd
+\end_inset
+
+ל מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $v_{1},\dots,v_{k}$
+\end_inset
+
+ בת
+\begin_inset Quotes erd
+\end_inset
+
+ל מעל 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $F\subseteq K$
+\end_inset
+
+ שדות ו-
+\begin_inset Formula $A\in\matn$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\mu_{A}^{F}$
+\end_inset
+
+ את הפולינום המינימלי של 
+\begin_inset Formula $A$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F$
+\end_inset
+
+ ו-
+\begin_inset Formula $\mu_{A}^{K}$
+\end_inset
+
+ את הפולינום האופייני של 
+\begin_inset Formula $A$
+\end_inset
+
+ מעל 
+\begin_inset Formula $K$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\mu_{A}^{F}=\mu_{A}^{K}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)אפיון של 
+\begin_inset Formula $\mu_{f}$
+\end_inset
+
+( 
+\begin_inset Formula $\mu_{f}$
+\end_inset
+
+ הוא הפולינום המתוקן מדרגה מינימלית 
+\begin_inset Formula $P\in F\left[x\right]$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\min_{v}^{f}\mid P$
+\end_inset
+
+, לכל 
+\begin_inset Formula $0\neq v\in V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\mu_{f}$
+\end_inset
+
+ הוא המכפלה המשותפת המינימלית )
+\begin_inset Formula $lcm$
+\end_inset
+
+( של כל הפולינומים המינימליים של וקטורים ב-
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\mu_{f}\mid\chi_{f}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ כל ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא שורש של 
+\begin_inset Formula $\mu_{f}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ כל שורש של 
+\begin_inset Formula $\mu_{F}$
+\end_inset
+
+ הוא ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iv\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $F=\fldc$
+\end_inset
+
+ או 
+\begin_inset Formula $F=\fldr$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\chi_{f}\mid\left(\mu_{f}\right)^{n}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\dim V=n$
+\end_inset
+
+ ונניח כי ל-
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע שונים.
+ אזי 
+\begin_inset Formula $\mu_{f}=\chi_{f}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+קיום 
+\begin_inset Formula $n$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע שונים הוא לא אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\chi_{f}=\mu_{f}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\left(x-\la\right)^{\gm{\la}}\mid\chi_{f}$
+\end_inset
+
+ עבור 
+כל
+
+ 
+\begin_inset Formula $\la$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\gml\leq\aml$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ ניתן ללכסון אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\chi_{f}$
+\end_inset
+
+ הוא מכפלה של פולינומים לינאריים וגם לכל 
+\begin_inset Formula $\la$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע, 
+\begin_inset Formula $\aml=\gml$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $f\in\hom\left(V,V\right)$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, והע
+\begin_inset Quotes erd
+\end_inset
+
+ע השונים של 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $\la_{1},\dots,\la_{k}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ לכסין אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\dim V=\dim V_{\la_{1}}+\dots+\dim V_{\la_{k}}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+יהי
+
+ 
+\begin_inset Formula $f\neq0$
+\end_inset
+
+ אופרטור נילפ' אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ לא ניתן ללכסון.
+\end_layout
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ מגובה 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left\{ v,f\left(v\right),\dots,f^{l-1}\left(v\right)\right\} $
+\end_inset
+
+ בת
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\left\{ v,f\left(v\right),\dots,f^{l-1}\left(v\right)\right\} $
+\end_inset
+
+ היא בת
+\begin_inset Quotes erd
+\end_inset
+
+ל מסקימלית )בדומה לבסיס במרחב ציקלי( עבור 
+\begin_inset Formula $l$
+\end_inset
+
+ הגובה של 
+\begin_inset Formula $v$
+\end_inset
+
+ ביחס לאופרטור הנילפ' 
+\begin_inset Formula $f$
+\end_inset
+
+ וגם
+\begin_inset Formula 
+\[
+M_{l}\left(F\right)\ni\left[f|_{Z\left(f,v\right)}\right]_{\left(v,\dots f^{l-1}\left(v\right)\right)}=\left(\begin{smallmatrix}0 &  &  & 0\\
+1 & 0\\
+ & \ddots & 0\\
+0 &  & 1 & 0
+\end{smallmatrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $v\neq0$
+\end_inset
+
+ ו- 
+\begin_inset Formula $0\neq u\in Z\left(f,v\right)$
+\end_inset
+
+ אז נסמן 
+\begin_inset Formula $l_{u},l_{v}$
+\end_inset
+
+ הגבהים של 
+\begin_inset Formula $u,v$
+\end_inset
+
+ בהתאמה.
+ אזי 
+\begin_inset Formula $l_{u}\leq l_{v}$
+\end_inset
+
+ ובנוסף 
+\begin_inset Formula $f^{l_{u}-1}\left(u\right)=af^{l_{v}-1}\left(v\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a\in F$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V=Z\left(f,v_{1}\right)+\dots+Z\left(f,v_{k}\right)$
+\end_inset
+
+ אזי זהו סכום ישר אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\{ f^{l_{v_{i}}-1}\left(v_{i}\right):1\leq i\leq k\right\} $
+\end_inset
+
+ בת
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $v_{1},\dots,v_{k}\neq0$
+\end_inset
+
+ יהי 
+\begin_inset Formula $V=Z\left(f,v_{1}\right)+\dots+Z\left(f,v_{k}\right)$
+\end_inset
+
+ אינו סכום ישר.
+ אזי אחת מהאפשרויות הבאות מתקיימת:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ קיים 
+\begin_inset Formula $1\leq r\leq k$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $V=Z\left(f,v_{1}\right)+\dots+Z\left(f,v_{r-1}\right)+Z\left(f,v_{r+1}\right)+\dots+Z\left(f,v_{k}\right)$
+\end_inset
+
+ כלומר שאפשר להסיר את 
+\begin_inset Formula $Z\left(f,v_{r}\right)$
+\end_inset
+
+ מהסכום.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ קיים 
+\begin_inset Formula $1\leq r\leq k$
+\end_inset
+
+ וכן 
+\begin_inset Formula $v'\neq0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+V=Z\left(f,v_{1}\right)+\dots+Z\left(f,v_{r-1}\right)+Z\left(f,v'\right)+Z\left(f,v_{r+1}\right)+\dots+Z\left(f,v_{k}\right)
+\]
+
+\end_inset
+
+כלומר אפשר להחליף את 
+\begin_inset Formula $v_{r}$
+\end_inset
+
+ ב-
+\begin_inset Formula $v'$
+\end_inset
+
+ ובנוסף 
+\begin_inset Formula $\dim Z\left(f,v_{r}\right)>\dim Z\left(f,v'\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)
+קיום
+
+ צורת ז'ורדן עבור אופרטור נילפוטנטי( יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור נילפוטנטי, 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ אזי קיימים 
+\begin_inset Formula $0\neq v_{1},\dots,v_{k}\in V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $V=Z\left(f,v_{1}\right)\oplus\dots\oplus Z\left(f,v_{k}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $1\leq i\leq k$
+\end_inset
+
+, השרשרת 
+\begin_inset Formula $C_{i}\left(v_{i},\dots f^{l_{i}-1}\left(v_{i}\right)\right)$
+\end_inset
+
+ מהווה בסיס ל-
+\begin_inset Formula $Z\left(f,v_{1}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $C=\bigcup\limits _{i=1}^{k}C_{i}$
+\end_inset
+
+ בסיס של 
+\begin_inset Formula $V$
+\end_inset
+
+ וכן
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Formula $i\neq j\Rightarrow C_{i}\cap C_{j}=\varnothing$
+\end_inset
+
+ ומתקיים 
+\begin_inset Graphics
+	filename img/nilp-jordan-matrix.png
+
+\end_inset
+
+ ובעזרת סידור אינדקסים מחדש ניתן להניח כי 
+\begin_inset Formula $l_{1}\geq\dots\geq l_{k}$
+\end_inset
+
+.
+ למטריצה זו נקרא בלוק ז'ורדן נילפוטנטי.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ נילפ' אזי 
+\begin_inset Formula $\chi_{f}=x^{\dim V}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)יחידות צורת ז'ורדן עבור אופרטור נילפוטנטי( יהי 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור נילפ' כאשר 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+ ונניח כי 
+\begin_inset Formula $B,C$
+\end_inset
+
+ בסיסים כך ש- 
+\begin_inset Formula $\left[f\right]_{B},\left[f\right]_{C}$
+\end_inset
+
+ הן בלוק ז'ורדן נילפ' אזי 
+\begin_inset Formula $\left[f\right]_{B}=\left[f\right]_{C}$
+\end_inset
+
+, כלומר אם 
+\begin_inset Formula $A,B\in\matn$
+\end_inset
+
+ בלוקי ז'ורדן נילפ' דומות אזי 
+\begin_inset Formula $A=B$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $R=Q-PD$
+\end_inset
+
+ אז עבור 
+\begin_inset Formula $T\in F\left[x\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $T\mid P,R\iff T\mid P,Q$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)הלמה של בזו, למת ה-
+\begin_inset Formula $\gcd$
+\end_inset
+
+( נניח כי 
+\begin_inset Formula $P,Q\in F\left[x\right]$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $P,Q\neq0$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $H\in F\left[x\right]$
+\end_inset
+
+ שעבורו
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $H\mid P,Q$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $H'\in F\left[x\right]$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $H'\mid P,Q$
+\end_inset
+
+ אז 
+\begin_inset Formula $H'\mid H$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $A,B\in F\left[x\right]$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $H=AP+BQ$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $P,Q$
+\end_inset
+
+ זרים אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימים 
+\begin_inset Formula $A,B\in F\left[x\right]$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $AP+BQ=1$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נניח ש-
+\begin_inset Formula $P,Q$
+\end_inset
+
+ זרים וכן 
+\begin_inset Formula $P,Q'$
+\end_inset
+
+ זרים.
+ אז 
+\begin_inset Formula $P,Q\cdot Q'$
+\end_inset
+
+ זרים.
+\end_layout
+\begin_layout Enumerate
+מטריצות דומות הן בעלות פולינום מינימלי שווה )ובפרט הפולינום המינימלי
+ של אופרטור מוגדר היטב(
+\end_layout
+\begin_layout Enumerate
+מטריצות דומות הן בעלות פולינום אופייני שווה )כבר 
+ראינו את זה
+
+(.
+\end_layout
+\begin_layout Enumerate
+)משפט הפירוק הפולינומיאלי/פרימרי( יהיו 
+\begin_inset Formula $P,P_{1},P_{2}\in F\left[x\right]$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $P=P_{1}\cdot P_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $P_{1},P_{2}$
+\end_inset
+
+ זרים )כלומר 
+\begin_inset Formula $\gcd\left(P_{1},P_{2}\right)=1$
+\end_inset
+
+( וכן 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור.
+ אזי 
+\begin_inset Formula $\ker P\left(f\right)=\ker P_{1}\left(f\right)\oplus\ker P_{2}\left(f\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $P=P_{1}\cdot\ldots\cdot P_{k}\in F\left[x\right]$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $P_{1},\ldots,P_{k}\in F\left[x\right]$
+\end_inset
+
+ מקיימים 
+\begin_inset Formula $i\neq j\Rightarrow\gcd\left(P_{i},P_{j}\right)$
+\end_inset
+
+.
+ אזי אם 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור אז 
+\begin_inset Formula $\ker P\left(f\right)=\ker P_{1}\left(f\right)\oplus\dots\oplus\ker P_{k}\left(f\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)קיום צורת ז'ורדן קנונית( יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ו-
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור.
+ נניח כי 
+\begin_inset Formula $\chi_{f}$
+\end_inset
+
+ הוא מכפלה של פולינומים לינאריים.
+ אזי קיים בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ של 
+\begin_inset Formula $v$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\left[f\right]_{B}$
+\end_inset
+
+ היא מטריצת ז'ורדן.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\fldc=F$
+\end_inset
+
+ אז לכל אופרטור יש הצגה בצורת ז'ורדן )נובע מהמשפט היסודי של האלגברה(.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\in\matn$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\chi_{A}$
+\end_inset
+
+ הוא מכפלה של גורמים לינאריים אז 
+\begin_inset Formula $A$
+\end_inset
+
+ דומה למטריצה 
+\begin_inset Formula $B$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $B$
+\end_inset
+
+ היא מטריצת ז'ורדן.
+\end_layout
+\begin_layout Enumerate
+)יחידות צורת ז'ורדן( יהיו 
+\begin_inset Formula $A,B\in\matn$
+\end_inset
+
+ ונניח כי 
+\begin_inset Formula $A=\bl{J_{A}^{\la_{1}},\dots,J_{A}^{\la_{k}}}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $B=\bl{J_{B}^{\la_{1}'},\dots,J_{B}^{\la_{l}'}}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $A,B$
+\end_inset
+
+ מטריצות ז'ורדן ונניח כי 
+\begin_inset Formula $A\sim B$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $k=l$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left\{ \la_{1},\dots,\la_{k}\right\} =\left\{ \la_{1}'\dots,\la_{l}'\right\} $
+\end_inset
+
+ וכן 
+\begin_inset Formula $\forall\la\in\left\{ \la_{1},\dots,\la_{k}\right\} $
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $J_{A}^{\la}=J^{\la_{B}}$
+\end_inset
+
+.
+ כלומר עד כדי שינוי סדר הבלוקים, המטריצות שוות.
+\end_layout
+\begin_layout Enumerate
+ישנה הצגת ז'ורדן יחידה של אופרטור 
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ עד כדי שינוי סדרת הבלוקים בתוך מטריצת הז'ורדן.
+\end_layout
+\begin_layout Enumerate
+כל מטריצה משולשית עם אפסים על האלכסון היא נילפטונטית.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F=\fldc,\fldr,\mathbb{Q}$
+\end_inset
+
+ ו-
+\begin_inset Formula $f:V\rightarrow V$
+\end_inset
+
+ אופרטור.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ נילפ' אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\chi_{f}\left(x\right)=x^{n}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+לאופרטור נילפ' קיים ע
+\begin_inset Quotes erd
+\end_inset
+
+ע יחיד והוא 
+\begin_inset Formula $0$
+\end_inset
+
+ )הסטודנטית המשקיעה תוכיח(.
+\end_layout
+\begin_layout Enumerate
+אופרטור נילפ' 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא לכסין אם
+\begin_inset Quotes erd
+\end_inset
+
+ם הוא אופרטור ה-
+\begin_inset Formula $0$
+\end_inset
+
+ )מסקנה ישירה מ
+כאן
+
+(.
+\end_layout
+\begin_layout Enumerate
+מספר האופרטורים הנילפוטנטים )עד כדי שינוי סדר האינדקסים( בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא מספר הדרכים לכתוב את 
+\begin_inset Formula $n$
+\end_inset
+
+ כסכום של מספרים טבעיים )שזה קצת מאוד(.
+\end_layout
+\begin_layout Enumerate
+יהי ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ מעל 
+\begin_inset Formula $\fldr$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\ip uv=\frac{1}{4}\left(\norm{u+v}^{2}-\norm{u-v}^{2}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ מעל 
+\begin_inset Formula $\fldc$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\ip uv=\frac{1}{4}\left(\norm{u+v}^{2}-\norm{u-v}^{2}-i\norm{u+iv}^{2}+i\norm{u-iv}^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+)פיתגורס( יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ ויהיו 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $u\perp v$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\norm{u+v}^{2}=\norm u^{2}+\norm v^{2}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ מעל 
+\begin_inset Formula $\fldr$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\norm{u+v}^{2}=\norm u^{2}+\norm v^{2}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $u\perp v$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ מעל 
+\begin_inset Formula $\fldr$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $c\in F$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $u\perp v-cu$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)אי-שוויון קושי שוורץ, אשק
+\begin_inset Quotes erd
+\end_inset
+
+ש( יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ ויהיו 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left|\ip uv\right|\leq\norm u\cdot\norm v$
+\end_inset
+
+.
+ בנוסף, ישנו שוויון אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $u,v$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+\end_layout
+\begin_layout Enumerate
+)אי-שוויון המשולש( יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ ויהיו 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\norm{u+v}\leq\norm u+\norm v$
+\end_inset
+
+.
+ בנוסף, השוויון מתקיים אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $u=0_{V}$
+\end_inset
+
+ או 
+\begin_inset Formula $v=0_{V}$
+\end_inset
+
+ או שקיים 
+\begin_inset Formula $0<c\in\fldr$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $v=cu$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $u\perp S$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $u\perp\sp S$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\sp\left(S\right)^{T}=S^{T}$
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $S^{\perp}$
+\end_inset
+
+ הוא ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ, 
+\begin_inset Formula $W$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של 
+\begin_inset Formula $V$
+\end_inset
+
+ ו-
+\begin_inset Formula $v,v_{W}\in V$
+\end_inset
+
+ ו-
+\begin_inset Formula $w\in W$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $v_{W}$
+\end_inset
+
+ הטלה אורתוג' של 
+\begin_inset Formula $v$
+\end_inset
+
+ על 
+\begin_inset Formula $W$
+\end_inset
+
+ אזי 
+\begin_inset Formula $d\left(v,w\right)\geq d\left(v,v_{W}\right)$
+\end_inset
+
+ והשוויון מתקיים אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $w=v_{W}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)
+יחידות
+
+ ההטלה האורתוג'( יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ, 
+\begin_inset Formula $W$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של 
+\begin_inset Formula $V$
+\end_inset
+
+ ו-
+\begin_inset Formula $v,v_{W},v_{W}'\in V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $v_{W},v_{W}'$
+\end_inset
+
+ הן הטלות אורתוג' של 
+\begin_inset Formula $v$
+\end_inset
+
+ על 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $v_{W}=v_{W}'$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\left(v_{1},\dots,v_{k}\right)$
+\end_inset
+
+ אורתוגונלית וגם 
+\begin_inset Formula $\forall i\in\left[k\right],v_{i}\neq0_{V}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left(v_{1},\dots,v_{k}\right)$
+\end_inset
+
+ בת
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ, 
+\begin_inset Formula $W$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $\left(w_{1},\dots,w_{k}\right)$
+\end_inset
+
+ סדרה אורתונורמלית הפורשת את 
+\begin_inset Formula $W$
+\end_inset
+
+ )כלומר 
+\begin_inset Formula $\sp\left\{ w_{1},\dots,w_{k}\right\} =W$
+\end_inset
+
+( אזי 
+\begin_inset Formula $\forall v\in V$
+\end_inset
+
+ הוקטור 
+\begin_inset Formula $v_{W}=\ip{w_{1}}vw_{1}+\dots+\ip{w_{k}}vw_{k}$
+\end_inset
+
+ הוא הטלה אורתוג' של 
+\begin_inset Formula $v$
+\end_inset
+
+ על 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו מעל 
+\begin_inset Formula $F$
+\end_inset
+
+ ו-
+\begin_inset Formula $g:V\to V$
+\end_inset
+
+ אופרטור אזי 
+\begin_inset Formula $\ker g\subseteq\ker g^{2}\subseteq\dots$
+\end_inset
+
+ הם ת
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $g$
+\end_inset
+
+-אינ'.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+ ו-
+\begin_inset Formula $g:V\to V$
+\end_inset
+
+ אופרטור אזי קיים 
+\begin_inset Formula $k\leq\dim V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\ker g^{k}=\ker g^{k+1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\forall l\geq k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\ker g^{l}=\ker g^{k}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\hat{V_{\la}}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $f$
+\end_inset
+
+-אינ'.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(f-\la\tid_{V}\right)|_{\hat{V_{\la}}}$
+\end_inset
+
+ הוא נילפ' מדרגה 
+\begin_inset Formula $k$
+\end_inset
+
+ לכל היותר כאשר 
+\begin_inset Formula $k$
+\end_inset
+
+ הוא המינימלי כך שהגרעינים מתייצבים.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור כך ש- 
+\begin_inset Formula $\chi_{f}$
+\end_inset
+
+ מתפרק לגורמים לינאריים 
+\begin_inset Formula $\chi_{f}\left(x\right)=\left(x-\la\right)^{m_{1}}\cdot\ldots\cdot\left(x-\la_{k}\right)^{m_{k}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\la_{1},\dots,\la_{k}$
+\end_inset
+
+.
+ אזי מתקיים 
+\begin_inset Formula $V=\hat{V_{\la_{1}}}\oplus\dots\oplus\hat{V_{\la_{k}}}$
+\end_inset
+
+ ובנוסף 
+\begin_inset Formula $\dim\hat{V_{\la_{i}}}=m_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i\in\left[k\right]$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)תהליך גרם-שמידט( יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ, 
+\begin_inset Formula $\left(b_{1},\dots,b_{m}\right)$
+\end_inset
+
+ סדרה בת
+\begin_inset Quotes erd
+\end_inset
+
+ל של וקטורים מ-
+\begin_inset Formula $V$
+\end_inset
+
+.
+ אזי קיימת סדרה אורתונורמלית
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Formula $\left(u_{1},\dots,u_{m}\right)$
+\end_inset
+
+ של וקטורים מ-
+\begin_inset Formula $V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\forall k\in\left[m\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sp\left\{ u_{1},\dots,u_{k}\right\} =\sp\left\{ b_{1},\dots,b_{k}\right\} $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+בכל ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ ממימד סופי קיים בסיס אורתונ'.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $W$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס של ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ אזי קיימת הטלה אורתוג' של 
+\begin_inset Formula $v$
+\end_inset
+
+ על 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ויהי 
+\begin_inset Formula $B=\left(u_{1},\dots,u_{n}\right)$
+\end_inset
+
+ בסיס אורתונ' של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $v,w\in V$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\ip vw=\left[v\right]_{B}\cdot\left[w\right]_{B}\\
+\norm v=\norm{\left[v\right]_{B}}_{F^{n}}
+\end{array}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\cdot$
+\end_inset
+
+ היא המכפלה הסקלרית ו-
+\begin_inset Formula $\norm{\cdot}_{F^{n}}$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י המכפלה הסקלרית כמ
+\begin_inset Quotes erd
+\end_inset
+
+פ.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ו-
+\begin_inset Formula $B=\left(u_{1},\dots,u_{n}\right)$
+\end_inset
+
+ בסיס אורתונ' של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $v,w\in V$
+\end_inset
+
+.
+ אזי:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left[v\right]_{B}=\left(\begin{smallmatrix}\ip{u_{1}}v\\
+\vdots\\
+\ip{u_{n}}v
+\end{smallmatrix}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\ip vw=\text{\ensuremath{\overline{\ip{u_{1}}v}\ip{u_{1}}w+\dots+\overline{\ip{u_{n}}v}\ip{u_{n}}w}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\norm v^{2}=\left|\ip{u_{1}}v\right|^{2}+\dots+\left|\ip{u_{n}}v\right|^{2}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+יהיו
+
+ 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $\left(u_{1},\dots,u_{n}\right)$
+\end_inset
+
+ בסיס אורתונ' של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $W=\sp\left\{ u_{1},\dots,u_{k}\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $1\leq k\leq n-1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $W^{\perp}=\sp\left\{ u_{k+1},\dots,u_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+קיים 
+\begin_inset Formula $z\in V$
+\end_inset
+
+ יחיד שהוא הטלה בניצב של 
+\begin_inset Formula $y$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $S_{1}\subseteq S_{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $S_{1}^{\perp}\supseteq S_{2}^{\perp}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ויהי 
+\begin_inset Formula $U\subseteq V$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ אזי 
+\begin_inset Formula $U\oplus U^{\perp}=V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)
+קריטריון
+
+ אורתוג'/אונ'( יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור אזי התנאים הבאים שקולים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ אורתוג'/אוינטרי.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\norm{f\left(v\right)}=\norm v$
+\end_inset
+
+, 
+\begin_inset Formula $\forall v\in V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ הוא וקטור יחידה אזי גם 
+\begin_inset Formula $f\left(v\right)$
+\end_inset
+
+ הוא וקטור יחידה.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ו-
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אורתוג'/אונ' אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ הפיך.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אורתוג'/אונ', 
+\begin_inset Formula $g:V\to V$
+\end_inset
+
+ הפוך ל-
+\begin_inset Formula $f$
+\end_inset
+
+, אזי 
+\begin_inset Formula $g$
+\end_inset
+
+ אורתוג'/אונ'.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אורתוג'/אונ', 
+\begin_inset Formula $W$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $f$
+\end_inset
+
+-אינ' של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $W^{\perp}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $f$
+\end_inset
+
+-אינ'.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ ו-
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור אורתוג'/אונ' ו-
+\begin_inset Formula $\la$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left|\la\right|=1$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)קריטריון אורתוג' לממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס( יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ו-
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור אזי התנאים הבאים שקולים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ אורתוגונלי/אוניטרי.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ לכל בסיס אורתונרמלי 
+\begin_inset Formula $\left(u_{1},\dots,u_{n}\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $\left(f\left(u_{1}\right),\dots,f\left(u_{n}\right)\right)$
+\end_inset
+
+ מהווה בסיס אורתונורמלי של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ קיים בסיס אורתונורמלי 
+\begin_inset Formula $\left(u_{1},\dots,u_{n}\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\left(f\left(u_{1}\right),\dots,f\left(u_{n}\right)\right)$
+\end_inset
+
+ בסיס אורתונורמלי של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס אורתונ' של 
+\begin_inset Formula $V$
+\end_inset
+
+ ו-
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור לינארי ונסמן 
+\begin_inset Formula $A=\left[f\right]_{B}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אורתוג'/אונ' אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\overline{A}^{T}A=I_{n}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)משפט ההצגה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Reisz
+\lang hebrew
+( יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $l:V\to F$
+\end_inset
+
+ פ' לינארי אזי קיים 
+\begin_inset Formula $w\in V$
+\end_inset
+
+ יחיד כך ש- 
+\begin_inset Formula $l=\ipp w$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $l\left(v\right)=\ip wv$
+\end_inset
+
+, 
+\begin_inset Formula $\forall v\in V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור לינארי אזי קיים 
+\begin_inset Formula $f^{*}:V\to V$
+\end_inset
+
+ יחיד כך ש- 
+\begin_inset Formula $\ip w{f\left(v\right)}=\ip{f^{*}\left(w\right)}v$
+\end_inset
+
+, 
+\begin_inset Formula $\forall v,w\in V$
+\end_inset
+
+.
+ בנוסף, אם 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס אורתונ' של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $A=\left[f\right]_{B}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\overline{A}^{T}=\left[f^{*}\right]_{B}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור אורתוג'/אונ' ו-
+\begin_inset Formula $g:V\to V$
+\end_inset
+
+ אופרטור הפוך ל-
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f^{*}=g$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור לינארי, 
+\begin_inset Formula $W$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $f$
+\end_inset
+
+-אינ' של 
+\begin_inset Formula $V$
+\end_inset
+
+, אזי 
+\begin_inset Formula $W^{\perp}$
+\end_inset
+
+ הוא ת
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+-אינ'.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $W\subseteq V$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, אזי קיים בסיס אורתונ' 
+\begin_inset Formula $\left\{ u_{1},\dots,u_{n}\right\} $
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\sp\left\{ u_{1},\dots,u_{k}\right\} =W$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)ראינו 
+בהרצאה
+
+( יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ.
+ יהיו 
+\begin_inset Formula $\left\{ u_{1},\dots,u_{n}\right\} $
+\end_inset
+
+ בסיס אורתונ' ל-
+\begin_inset Formula $V$
+\end_inset
+
+ ו-.
+ אזי 
+\begin_inset Formula $W^{\perp}=\sp\left\{ u_{k+1},\dots,u_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אם 
+\begin_inset Formula $W$
+\end_inset
+
+ הוא ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של 
+\begin_inset Formula $V$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\dim V=\dim W+\dim W$
+\end_inset
+
+ וגם 
+\begin_inset Formula $V=W\oplus W^{\perp}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $W\subseteq V$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אזי 
+\begin_inset Formula $\left(W^{\perp}\right)^{\perp}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w$
+\end_inset
+
+ היא ההטלה האורתוג' של 
+\begin_inset Formula $v$
+\end_inset
+
+ על 
+\begin_inset Formula $W$
+\end_inset
+
+ ו-
+\begin_inset Formula $z$
+\end_inset
+
+ היא ההטלה של 
+\begin_inset Formula $v$
+\end_inset
+
+ על 
+\begin_inset Formula $W^{\perp}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $w+z=v$
+\end_inset
+
+ )נובע מתכונות ההטלה(.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $\fldc$
+\end_inset
+
+, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור צמוד לעצמו, 
+\begin_inset Formula $\la\in\fldc$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\la\in\fldr$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\in M_{n}\left(\fldc\right)$
+\end_inset
+
+ צמודה לעצמה אז 
+\begin_inset Formula $\la\in\fldc$
+\end_inset
+
+ הוא ע
+\begin_inset Quotes erd
+\end_inset
+
+ע אז 
+\begin_inset Formula $\la\in\fldr$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in\matn$
+\end_inset
+
+ צמודה לעצמה.
+ אזי קיים 
+\begin_inset Formula $\la\in F$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\la$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור צמוד לעצמו, אזי קיים 
+\begin_inset Formula $\la\in F$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\la$
+\end_inset
+
+ הוא ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור צמוד לעצמו, 
+\begin_inset Formula $\la\neq\mu\in F$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $v,w\in V$
+\end_inset
+
+ ו
+\begin_inset Quotes erd
+\end_inset
+
+ע ששיכים ל-
+\begin_inset Formula $\la,\mu$
+\end_inset
+
+ בהתאמה אזי 
+\begin_inset Formula $v\perp w$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ, 
+\begin_inset Formula $\dim V=n$
+\end_inset
+
+, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור צמוד לעצמו, 
+\begin_inset Formula $\la_{1},\dots,\la_{n}\in F$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $i\neq j\to\la_{i}\neq\la_{j}$
+\end_inset
+
+, אזי קיים בסיס אורתונ' 
+\begin_inset Formula $B=\left(u_{1},\dots,u_{n}\right)$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ הוא ו
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+ המתאים לע
+\begin_inset Quotes erd
+\end_inset
+
+ע 
+\begin_inset Formula $\la_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i\in\left[n\right]$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ ממימד סופי, 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס אותרונ' של 
+\begin_inset Formula $V$
+\end_inset
+
+ ו-
+\begin_inset Formula $C$
+\end_inset
+
+ בסיס של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא אורתונ' אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\left[\tid\right]_{B}^{C}$
+\end_inset
+
+ היא מטריצה אורתוג'.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס אורתונ' של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור לינארי, 
+\begin_inset Formula $A=\left[f\right]_{B}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ לכסין בבסיס אורתונ' אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימת מטריצה אורתוג'/אונ' 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $M^{-1}AM$
+\end_inset
+
+ אלכסונית.
+\end_layout
+\begin_layout Enumerate
+)המשפט הספקטרלי במקרה הממשי( יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $\fldr$
+\end_inset
+
+, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ לכסין בבסיס אורתונ' אם
+\begin_inset Quotes erd
+\end_inset
+
+ם צמוד לעצמו.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in M_{n}\left(\fldr\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ לכסינה אורתוג' אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $A$
+\end_inset
+
+ סימטרית.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ ו-
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטורים אורתוג'/אונ' ויהיו 
+\begin_inset Formula $\la_{1}\neq\la_{2}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע שונים של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $V_{\la_{1}}\perp V_{\la_{2}}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $B=\left(u_{1},\dots,u_{n}\right)$
+\end_inset
+
+ בסיס ל-
+\begin_inset Formula $V$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\varphi_{j}:V\to F$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\varphi_{j}\left(u_{i}\right)=\delta_{ij}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left(\varphi_{1},\dots,\varphi_{n}\right)$
+\end_inset
+
+ בסיס ל-
+\begin_inset Formula $V^{*}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס ו-
+\begin_inset Formula $\left(v_{1},\dots,v_{n}\right)$
+\end_inset
+
+ בסיס אורתונ' אזי 
+\begin_inset Formula $\left(\ipp{v_{1}},\dots,\ipp{v_{n}}\right)$
+\end_inset
+
+ הוא הבסיס הדואלי של 
+\begin_inset Formula $V^{*}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $\varphi\in V^{*}$
+\end_inset
+
+, אזי קיים 
+\begin_inset Formula $w\in V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\ipp w=\varphi$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ ו-
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור לינארי.
+ אזי האופרטור הצמוד מקיים 
+\begin_inset Formula $\forall v,u\in V$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ip{f\left(v\right)}u=\ip v{f^{*}\left(u\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור לינארי, 
+\begin_inset Formula $W$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $f$
+\end_inset
+
+- וגם 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+-אינ' של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left(f|_{W}\right)^{*}=f^{*}|_{W}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)המשפט הספקטרלי במקרה המרוכב( יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $\fldc$
+\end_inset
+
+, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ לכסין בבסיס אורתונ' אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $f$
+\end_inset
+
+ נורמלי.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in M_{n}\left(F\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $A$
+\end_inset
+
+ לכסינה אוניטרית אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $A$
+\end_inset
+
+ נורמלית.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\to V$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ב, 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס סדור של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ המטריצה של 
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל-
+\begin_inset Formula $B$
+\end_inset
+
+, אזי 
+\begin_inset Formula $g\left(v,w\right)=\left[v\right]_{B}^{T}G\left[w\right]_{B}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall v,w\in V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $g:F^{n}\times F^{n}\to F$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ב, 
+\begin_inset Formula $G$
+\end_inset
+
+ הטריצה של 
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל-
+\begin_inset Formula $E$
+\end_inset
+
+, 
+\begin_inset Formula $g':F^{n}\times F^{n}\to F$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $g'\left(x,y\right)=x^{T}Gy$
+\end_inset
+
+, אזי 
+\begin_inset Formula $g'\equiv g$
+\end_inset
+
+.
+ כי
+\begin_inset Formula 
+\[
+g\left(x,y\right)=\left[x\right]_{B}^{T}G\left[y\right]_{B}=x^{T}Gy=g'\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to F$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ב, 
+\begin_inset Formula $B,B'$
+\end_inset
+
+ בסיסים סדורים של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $M=\left[\tid\right]_{B}^{B'}$
+\end_inset
+
+ מטריצת המעבר מ-
+\begin_inset Formula $B'$
+\end_inset
+
+ ל-
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $G,G'$
+\end_inset
+
+ המטריצות של 
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל-
+\begin_inset Formula $B,B'$
+\end_inset
+
+ בהתאמה, אזי 
+\begin_inset Formula $G'=M^{T}GM$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יחס חפיפה הוא יחס שקילות )כלומר הוא רפלקסיבי, טרנזטיבי וסימטרי(.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to F$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ב, 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס סדור של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ המטריצה של 
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל-
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $G'$
+\end_inset
+
+ מטריצה שחופפת ל-
+\begin_inset Formula $G$
+\end_inset
+
+, אזי קיים בסיס סדור של 
+\begin_inset Formula $B'$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ כך שהמטריצה של 
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל-
+\begin_inset Formula $B'$
+\end_inset
+
+ היא 
+\begin_inset Formula $G'$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אופרטור לינארי 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ הוא צמוד לעצמו אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\ip{f\left(u\right)}v=\ip u{f\left(v\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall u,v\in V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $U\subseteq V$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אזי 
+\begin_inset Formula $p_{U}$
+\end_inset
+
+ צמוד לעצמו.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ.
+ יהי 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור לינארי.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ נורמלי אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\ip{f\left(u\right)}{f\left(v\right)}=\ip{f^{*}\left(u\right)}{f^{*}\left(v\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall u,v\in V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור ויהיו 
+\begin_inset Formula $\la_{1}\neq\la_{2}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אזי:
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $F=\fldr$
+\end_inset
+
+, ו-
+\begin_inset Formula $f$
+\end_inset
+
+ צמוד לעצמו אזי 
+\begin_inset Formula $V_{\la_{1}}\perp V_{\la_{2}}$
+\end_inset
+
+;
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $F=\fldc$
+\end_inset
+
+ ו-
+\begin_inset Formula $f$
+\end_inset
+
+ נורמלי אזי 
+\begin_inset Formula $V_{\la_{1}}\perp V_{\la_{2}}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)משפט הפירוק האוניטרי( יהי 
+\begin_inset Formula $\left(V,\ip{\cdot}{\cdot}\right)$
+\end_inset
+
+ ממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $\fldc$
+\end_inset
+
+ ו-
+\begin_inset Formula $f:V\to V$
+\end_inset
+
+ אופרטור.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ נורמלי אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימים אופרטורים 
+\begin_inset Formula $u,h:V\to V$
+\end_inset
+
+ המקיימים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $u$
+\end_inset
+
+ אונ' ו-
+\begin_inset Formula $h$
+\end_inset
+
+ הרמיטי )
+\begin_inset Formula $h=h^{*}$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $u,h$
+\end_inset
+
+ מתחלפות, כלומר 
+\begin_inset Formula $u\circ h=h\circ u$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $u\circ h=f=h\circ u$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to F$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ב אזי התנאים הבאים שקולים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ תבנית בילינארית )אנטי( סימטרית..
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ קיים בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+, המטריצה של 
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל-
+\begin_inset Formula $B$
+\end_inset
+
+ )אנטי( סימטרית.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ לכל בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+, המטריצה של 
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל-
+\begin_inset Formula $B$
+\end_inset
+
+ )אנטי( סימטרית.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $q:V\to F$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ר, 
+\begin_inset Formula $g:V\times V\to F$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס, כך ש-
+\begin_inset Formula $q\left(v\right)=g\left(v,v\right)$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+g\left(v,w\right)=\frac{q\left(v+w\right)-q\left(v\right)-q\left(w\right)}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\forall v,w\in V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $g,g'$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס על 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו שונות זו מזו, אזי הת
+\begin_inset Quotes erd
+\end_inset
+
+ר שמתאימות להן שונות זו מזו.
+\end_layout
+\begin_layout Enumerate
+באותם התנאים כמו במשפט הקודם, מתקיים בנוסף
+\begin_inset Formula 
+\[
+g\left(v,w\right)=\frac{q\left(v+w\right)-q\left(v-w\right)}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+מ
+\begin_inset Quotes erd
+\end_inset
+
+ו מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $0\not\equiv g:V\times V\to F$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס, אזי קיים 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ שאינו ניצב לעצמו.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $S^{\perp}$
+\end_inset
+
+ הוא ת
+\begin_inset Quotes erd
+\end_inset
+
+מ של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to F$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $B=\left(b_{1},\dots,b_{n}\right)$
+\end_inset
+
+ בסיס סדור של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ המטריצה של 
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל-
+\begin_inset Formula $B$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $g$
+\end_inset
+
+ לא מנוונת אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $G$
+\end_inset
+
+ הפיכה.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\textrm{char}F\neq2$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to F$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אזי קיים בסיס אורתוג' 
+\begin_inset Formula $B$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in\matn$
+\end_inset
+
+ סימטרית אזי קיימת 
+\begin_inset Formula $D\in\matn$
+\end_inset
+
+ אלכסונית החופפת ל-
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $q:V\to F$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ר, אזי קיים בסיס 
+\begin_inset Formula $\left(v_{1},\dots,v_{n}\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ ו-
+\begin_inset Formula $a_{1},\dots,a_{n}\in F$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\forall v\in V$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $q\left(v\right)=a_{1}c_{1}^{2}+\dots+a_{n}c_{n}^{2}$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\left[v\right]_{B}=\left(\begin{smallmatrix}c_{1}\\
+\vdots\\
+c_{n}
+\end{smallmatrix}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)מהמשפט הספקטרלי, נקרא משפט הפירוק האוניטרי( לאופרטור נורמלי 
+\begin_inset Formula $f$
+\end_inset
+
+ בממ
+\begin_inset Quotes erd
+\end_inset
+
+פ נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $\fldc$
+\end_inset
+
+ קיימים אופרטורים מתחלפים 
+\begin_inset Formula $u,h$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $u$
+\end_inset
+
+ אוניטרי ו-
+\begin_inset Formula $h$
+\end_inset
+
+ הרמיטי המקיימים 
+\begin_inset Formula $u\circ h=f$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $g:V\times V\to\fldr$
+\end_inset
+
+ היא ת
+\begin_inset Quotes erd
+\end_inset
+
+ב אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\forall u\in V$
+\end_inset
+
+, 
+\begin_inset Formula $l_{u}\left(v\right)=g\left(u,v\right)$
+\end_inset
+
+ ו- 
+\begin_inset Formula $r_{u}\left(v\right)=g\left(v,u\right)$
+\end_inset
+
+ הם פ' לינארים.
+\end_layout
+\begin_layout Enumerate
+למטריצות 
+\begin_inset Formula $A,B$
+\end_inset
+
+ חופפות, דרגותיהן שוות )כי אנחנו מכפילים אותן במטריצות הפיכות ששומרות דרגה(.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\fldc$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to\fldc$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אזי קיים 
+\begin_inset Formula $k\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+ ובסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\left[g\right]_{B}=\left(\begin{array}{c|c}
+I_{k} & 0\\
+\hline 0 & 0
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו נ
+\begin_inset Quotes erd
+\end_inset
+
+ס מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to F$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס סדור של 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $G=\left[g\right]_{B}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\textrm{rk}G=\dim V-\dim\ker g$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\fldc$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to\fldc$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $k,k'\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+ ובסיסים סדורים 
+\begin_inset Formula $B,B'$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+\left[g\right]_{B}=\left(\begin{array}{c|c}
+I_{k} & 0\\
+\hline 0 & 0
+\end{array}\right).\left[g\right]_{B'}=\left(\begin{array}{c|c}
+I_{k'} & 0\\
+\hline 0 & 0
+\end{array}\right)
+\]
+
+\end_inset
+
+אזי 
+\begin_inset Formula $k=k'$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in M_{n}\left(\fldc\right)$
+\end_inset
+
+ סימטרית.
+ 
+אזי
+
+ קיים 
+\begin_inset Formula $k\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+ יחיד כך ש-
+\begin_inset Formula $A$
+\end_inset
+
+ חופפת ל-
+\begin_inset Formula $\left(\begin{array}{c|c}
+I_{k} & 0\\
+\hline 0 & 0
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)סילבסטר, קיום( יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\fldr$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to\fldr$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס.
+ אזי קיימים 
+\begin_inset Formula $p,m,z\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+ ובסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $p+m+z=n$
+\end_inset
+
+ וכן ש-
+\begin_inset Formula $\left[g\right]_{B}=G\left(p,m,z\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)סילבסטר, יחידות( יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ו ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\fldr$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\times V\to\fldr$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס, 
+\begin_inset Formula $B,B'$
+\end_inset
+
+ בסיסים סדורים של 
+\begin_inset Formula $V$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\left[g\right]_{B}=G\left(p,m,z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left[g\right]_{B'}=G\left(p',m',z'\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $p=p',m=m',z=z'$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in M_{n}\left(\fldr\right)$
+\end_inset
+
+ סימטרית.
+ אזי קיימים 
+\begin_inset Formula $p,m,z\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+ יחידים כך ש-
+\begin_inset Formula $A$
+\end_inset
+
+ חופפת ל-
+\begin_inset Formula $G\left(p,m,z\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $g:V\times V\to F$
+\end_inset
+
+ תב
+\begin_inset Quotes erd
+\end_inset
+
+ס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $g$
+\end_inset
+
+ ת
+\begin_inset Quotes erd
+\end_inset
+
+ב ו-
+\begin_inset Formula $\forall v\in V$
+\end_inset
+
+, 
+\begin_inset Formula $l_{u}=r_{u}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $q:V\to F$
+\end_inset
+
+ העתקה.
+ אזי 
+\begin_inset Formula $q$
+\end_inset
+
+ היא התבנית הריבועית המשויכת ל-
+\begin_inset Formula $g$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיים בסיס 
+\begin_inset Formula $B=\left(v_{1},\dots,v_{n}\right)$
+\end_inset
+
+ אורתוג' ל-
+\begin_inset Formula $V$
+\end_inset
+
+ ביחס לתב
+\begin_inset Quotes erd
+\end_inset
+
+ס 
+\begin_inset Formula $g$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\forall\alpha_{1},\dots,\alpha_{n}\in F$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+q\left(\sum_{j=1}^{n}\alpha_{j}v_{j}\right)=\sum_{j=1}^{n}a_{i}^{2}q\left(v_{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A\in M_{n}\left(\fldr\right)$
+\end_inset
+
+ אורתוג' וצמודה לעצמה.
+ אזי הסיגנטורה של 
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $\left(p,m\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p=\am 1$
+\end_inset
+
+, 
+\begin_inset Formula $m=\am{-1}$
+\end_inset
+
+.
+\end_layout
+\end_body
+\end_document

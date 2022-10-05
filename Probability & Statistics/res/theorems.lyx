@@ -1,0 +1,2411 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{dsfont}
+\usepackage{polynom}
+\newcommand*{\defeq}{\stackrel{\mathsmaller{\mathsf{def}}}{=}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "Arial"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.1cm
+\topmargin 2.1cm
+\rightmargin 2.1cm
+\bottommargin 2.1cm
+\secnumdepth -2
+\tocdepth 1
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\fldr}{\mathbb{R}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\desc}[2]{\underset{#2}{\underline{#1}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\om}{\Omega}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\fldz}{\mathbb{Z}}
+\end_inset
+\begin_inset FormulaMacro
+\renewcommand{\fldz}{\mathbb{Z}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\fldn}{\mathbb{N}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ome}{\mathbb{\omega}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\mf}{\mathbb{\mathcal{F}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\em}{\mathbb{\mathcal{\ome}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\supp}[1]{\textrm{supp}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\mez}[1]{\mathds{#1}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\boxo}[1]{\begin{array}{|c|}
+\hline #1\\\hline \end{array}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\var}[1]{\textrm{var}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\cov}[1]{\textrm{cov}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\left\Vert #1\right\Vert }
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\xy}[2]{\left(\begin{smallmatrix}#1\\
+ #2 
+\end{smallmatrix}\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\la}{\lambda}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\corr}[1]{\textrm{corr}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\bin}[1]{\textrm{Bin}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\pois}[1]{\textrm{Pois}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ber}[1]{\textrm{Ber}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\geo}[1]{\textrm{Geo}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\unif}[1]{\textrm{Unif}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\dx}{\;\textrm{dx}}
+{\textrm{dx}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\dt}{\;\textrm{dt}}
+{\textrm{dt}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\d}[1]{\;\textrm{d#1}}
+{\textrm{d#1}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ift}{\mathbb{\mathcal{\int\limits _{-\infty}^{\infty}}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ex}[1]{\textrm{Exp}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\n}{\textrm{N}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\u}[1]{\textrm{U}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\test}{\textrm{Test}}
+\end_inset
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\om$
+\end_inset
+
+ קבוצה כלשהי.
+ ההתאמה 
+\begin_inset Formula $A\mapsto\mathds{1}_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall A\subseteq\om$
+\end_inset
+
+ זו התאמה חחע
+\begin_inset Quotes erd
+\end_inset
+
+ל מ-
+\begin_inset Formula $2^{\om}$
+\end_inset
+
+ )קבוצת החזקה( ל-
+\begin_inset Formula $\left\{ 0,1\right\} ^{\om}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)
+\begin_inset Formula $1.5$
+\end_inset
+
+( יהי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מרחב הסתברות .
+ אזי:
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $p:\om\to\fldr_{+}$
+\end_inset
+
+ פ' הסתברות נקודתית על 
+\begin_inset Formula $\om$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P_{p}:\mf\to\fldr_{+}$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $P_{p}\left(A\right)=\sum\limits _{\ome\in A}p\left(\ome\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall A\in\mf$
+\end_inset
+
+ היא פ' הסתברות.
+\end_layout
+\begin_layout Enumerate
+כל פ' הסתברות נקודתית משרה פ' הסתברות.
+\end_layout
+\begin_layout Enumerate
+)אפיון מרחבי הסתברות בדידה( יהי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מרחב הסתברות.
+ אזי התנאים הבאים שקולים:
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $p_{1}\times p_{2}$
+\end_inset
+
+ היא פ' הסתברות נקודתית על 
+\begin_inset Formula $\om_{1}\times\om_{2}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+בתנאים הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל, אם 
+\begin_inset Formula $A\in\mf_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $B\in\mf_{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P_{p_{1}\times p_{2}}\left(A\times B\right)=P_{p_{1}}\left(A\right)\cdot P_{p_{2}}\left(B\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)נוסחת ההסתברות השלמה( יהי 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ חלוקה בת מניה של 
+\begin_inset Formula $\om$
+\end_inset
+
+, ו-
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מרחב הסת'.
+ אזי 
+\begin_inset Formula $\forall D\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(D\right)=\sum\limits _{A\in\mathcal{A}}P\left(A\cap D\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $P\left(A\cup B\right)\leq P\left(A\right)+P\left(B\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)חסם האיחוד( אם 
+\begin_inset Formula $\left\{ A_{n}\right\} _{n\in\fldn}$
+\end_inset
+
+ סדרת מאורעות ב-
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $P\left(\bigcup\limits _{i\in\fldn}A_{i}\right)\leq\sum\limits _{i\in\fldn}P\left(A_{i}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)עקרון ההכלה וההדחה עם 
+\begin_inset Formula $n=2$
+\end_inset
+
+( 
+\begin_inset Formula $P\left(A\cup B\right)=P\left(A\right)+P\left(B\right)-P\left(A\cap B\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)עקרון ההכלה וההדחה עם 
+\begin_inset Formula $n=3$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+P\left(A\cup B\cup C\right)=P\left(A\right)+P\left(B\right)+P\left(C\right)-P\left(A\cap B\right)-P\left(A\cap C\right)-P\left(B\cap C\right)+P\left(A\cap B\cap C\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+)עקרון ההכלה וההדחה( 
+\begin_inset Formula 
+\begin{align*}
+P\left(\bigcup\limits _{i\in\left[n\right]}\right) & =P\left(A_{1}\right)+\dots+P\left(A_{n}\right)-\sum\limits _{\left|I\right|=2}P\left(\bigcap\limits _{i\in I}A_{i}\right)+\sum\limits _{\left|I\right|=3}P\left(\bigcap\limits _{i\in I}A_{i}\right)-\ldots+\left(-1\right)^{\left|I\right|+1}\sum\limits _{\left|I\right|=n}P\left(A_{i}\right)\\
+ & =\sum_{\varnothing\neq I\subseteq\left[n\right]}\left(-1\right)^{\left|I\right|+1}P\left(\bigcap_{i\in I}A_{i}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה, 
+\begin_inset Formula $B\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(B\right)>0$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $P_{B}:\mf\to\fldr_{+}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $P_{B}\left(A\right)=P\left(A|B\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P_{B}$
+\end_inset
+
+ פ' הסת'.
+\end_layout
+\begin_layout Enumerate
+)כלל השרשרת( יהי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה, 
+\begin_inset Formula $P\left(B\right)>0$
+\end_inset
+
+, 
+\begin_inset Formula $A\in\mf$
+\end_inset
+
+, אז 
+\begin_inset Formula $P\left(A\cap B\right)=P\left(A|B\right)P\left(B\right)$
+\end_inset
+
+ )שזה אינטואיטיבי, הסטודנטית המשקיעה תחשוב למה(.
+\end_layout
+\begin_layout Enumerate
+)כלל בייס( אם גם 
+\begin_inset Formula $P\left(A\right)>0$
+\end_inset
+
+, אז 
+\begin_inset Formula $P\left(B|A\right)=\frac{P\left(A|B\right)P\left(B\right)}{P\left(A\right)}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(\om,\mf,\om\right)$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $P\left(A\cap B\right)>0$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $P'=P_{A},P''=\left(P_{A}\right)_{B}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\forall D\in\mf$
+\end_inset
+
+ מתקיים
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Formula $P''\left(D\right)=P\left(D|A\cap B\right)$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\left(P_{A}\right)_{B}=P_{A\cap B}=\left(P_{B}\right)_{A}$
+\end_inset
+
+ )או במילים, סדר ההתנייה לא משפיע על פ' ההסת'(.
+\end_layout
+\begin_layout Enumerate
+תחת הסימונים הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל, הפ' 
+\begin_inset Formula $P_{q}$
+\end_inset
+
+ היא היחידה המקיימת 
+\begin_inset Formula $\forall a\in\om_{1},b\in\om_{2}$
+\end_inset
+
+ כי 
+\begin_inset Formula $P\left(\left\{ \left(a,\cdot\right)\right\} \right)=p\left(a\right)$
+\end_inset
+
+ וכן
+\begin_inset Formula 
+\[
+P\left(\left\{ \left(\cdot,b\right)\right\} \mid\left\{ \left(a,\cdot\right)\right\} \right)=p_{a}\left(b\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\left\{ \left(a,\cdot\right)\right\} =\left\{ a\right\} \times\om_{2}$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\left\{ \left(\cdot,b\right)\right\} =\om_{1}\times\left\{ b\right\} $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+ מאורעות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אזי:
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $A_{1},\dots,A_{n}\in\mf$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A_{1},\dots,A_{n}$
+\end_inset
+
+ מאורעות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\forall j\in\left[n\right]$
+\end_inset
+
+ המאורע 
+\begin_inset Formula $A_{j}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ביתר המאורעות 
+\begin_inset Formula $\left\{ A_{i}\mid j\neq i\in\left[n\right]\right\} $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{1},A_{2},\dots$
+\end_inset
+
+ מאורעות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז 
+\begin_inset Formula $P\left(\bigcap\limits _{i\in\fldn}A_{I}\right)=\prod\limits _{i\in\fldn}P\left(A_{i}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left(\fldr,\mf_{\fldr},P_{X}\right)$
+\end_inset
+
+ היא מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\overset{a.s}{=}Y$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\overset{d}{=}Y$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\overset{a.s}{=}Y$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(x\right)\overset{a.s}{=}f\left(y\right)$
+\end_inset
+
+ וגם אם 
+\begin_inset Formula $X\overset{d}{=}Y$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(x\right)\overset{d}{=}f\left(y\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+הפ' 
+\begin_inset Formula $P_{XY}$
+\end_inset
+
+ היא פ' הסת'.
+\end_layout
+\begin_layout Enumerate
+לא ניתן ללמוד מ-
+\begin_inset Formula $P_{X},P_{Y}$
+\end_inset
+
+ האם 
+\begin_inset Formula $X\overset{a.s.}{=}Y$
+\end_inset
+
+ או איך מתפלג 
+\begin_inset Formula $X+Y$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $P_{X}$
+\end_inset
+
+ היא פ' הסת'.
+\end_layout
+\begin_layout Enumerate
+וקטור מקרי 
+\begin_inset Formula $X=\left(x_{1},\dots,x_{n}\right)$
+\end_inset
+
+ הינו בדיד אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדידים )כלומר ההתפלגויות השוליות בדידות(.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X=\left(X_{1},\dots,X_{n}\right)$
+\end_inset
+
+ וקטורמ מקרי בדיד אז נוכל לחשב את ההתפלגות השולית הנקודתית לכל אחד מ-
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ בעזרת פ' ההתפלגות הנקודתית של 
+\begin_inset Formula $X$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+P_{X_{k}}\left(\alpha_{k}\right)=\sum_{\left(\alpha_{1},\dots,\alpha_{k-1},\alpha_{k+1},\dots,\alpha_{n}\right)\subseteq\fldr^{n-1}}P_{X}\left(\alpha_{1},\dots,\alpha_{k-1},\alpha_{k},\alpha_{k+1},\dots,\alpha_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+)תכונת חוסר הזיכרון( אם 
+\begin_inset Formula $X\sim\textrm{Geo}\left(p\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $P\left(X=n+k\mid X>k\right)=P\left(X=n\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\sim\textrm{Geo}\left(p\right)$
+\end_inset
+
+, 
+\begin_inset Formula $Y\sim\textrm{Geo}\left(q\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $\min\left(X,Y\right)\sim\textrm{Geo}\left(1-\left(1-p\right)\left(1-q\right)\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X\sim\textrm{Ber}\left(p\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $Y\sim\textrm{Ber}\left(q\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ אזי 
+\begin_inset Formula $XY\sim\textrm{Ber}\left(pq\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)נוסחת הקונבולוציה( 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת הנתמכים על 
+\begin_inset Formula $\fldz$
+\end_inset
+
+, 
+\begin_inset Formula $Z=X+Y$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+P\left(Z=n\right)=\sum\limits _{j\in\fldz}P\left(X=j\right)P\left(X=n-j\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\left\{ X_{n}\right\} $
+\end_inset
+
+ סדרת מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת שווי התפלגות ולא קבועים על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+ הראו כי המרחב לא בדיד.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ שווי התפלגות ותהי 
+\begin_inset Formula $S\in\mf_{\fldr}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $P\left(X\in S\right)>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P_{X\mid\left\{ X\in S\right\} }=P_{Y\mid\left\{ Y\in S\right\} }$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדידים אז 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\forall\alpha,\beta\in\fldr$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+P\left(X=\alpha\land Y=\beta\right)=P\left(X=\alpha\right)P\left(Y=\beta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל 
+\begin_inset Formula $S_{1},\dots,S_{n}\subseteq\fldr$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(X\in S_{1}\land\ldots\land X_{n}\in S_{n}\right)=\prod\limits _{i=1}^{n}P\left(X_{i}\in S_{i}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת, ו-
+\begin_inset Formula $f,g\in\fldr^{\fldr}$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(X\right),g\left(Y\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ו-
+\begin_inset Formula $0=b_{0}<\ldots<b_{k}=n$
+\end_inset
+
+ אז הוקטורים המקריים 
+\begin_inset Formula $Y_{1}=\left(X_{1},\dots,X_{b_{1}}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $Y_{2}=\left(X_{b_{1}+1},\dots,X_{b_{2}}\right)$
+\end_inset
+
+ עד 
+\begin_inset Formula $Y_{k}=\left(X_{b_{k}+1},\dots,X_{b_{k}}\right)$
+\end_inset
+
+ הם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\left\{ X_{i}\right\} _{i\in\fldn}$
+\end_inset
+
+ סדרת מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ו-
+\begin_inset Formula $\left\{ S_{i}\right\} _{i\in\fldn}$
+\end_inset
+
+ סדרת מאורעות ב-
+\begin_inset Formula $\mf_{\fldr}$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+P\left(X_{i}\in S_{i},\forall i\in\fldn\right)=\prod_{i\in\fldn}P\left(X_{i}\in S_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X\sim\textrm{Geo}\left(p\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $P\left(X>n\right)=\left(1-p\right)^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\in\fldn$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ הנתמך על 
+\begin_inset Formula $\fldn$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $P\left(X=1\right)<1$
+\end_inset
+
+.
+ אזי שלושת התנאים הבאים שקולים:
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\sim\textrm{Bin}\left(n,p\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $Y\sim\textrm{Bin}\left(m,p\right)$
+\end_inset
+
+ הם מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז 
+\begin_inset Formula $X+Y\sim\textrm{Bin}\left(m+n,p\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $X_{n}\sim\textrm{Bin}\left(n,\frac{\lambda}{n}\right)$
+\end_inset
+
+ סדרת מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אז 
+\begin_inset Formula $\forall k\in\fldn\cup\left\{ 0\right\} $
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}P\left(X_{n}=k\right)=\frac{e^{-\lambda}\lambda^{k}}{k!}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X\sim\textrm{Pois}\left(\lambda\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $Y\sim\textrm{Pois}\left(\mu\right)$
+\end_inset
+
+, 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז 
+\begin_inset Formula $Z=X+Y\sim\textrm{Pois}\left(\lambda+\mu\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X\sim\textrm{Pois}\left(\lambda\right)$
+\end_inset
+
+.
+ נניח שלכל 
+\begin_inset Formula $n\in\fldn\cup\left\{ 0\right\} $
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\left(Y\mid X=n\right)\sim\textrm{Bin}\left(n,p\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $Y\sim\textrm{Pois}\left(\lambda p\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $E\left[X\right]=\sum\limits _{\alpha\in\fldr}\alpha P\left(X=\alpha\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדיד ותהי 
+\begin_inset Formula $f:\fldr\to\fldr$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $Y=f\left(X\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $E\left[Y\right]=\sum\limits _{\alpha\in\fldr}f\left(\alpha\right)P\left(X=\alpha\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)תכונות התוחלת( יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדידים.
+ אזי:
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ כך ש-
+\begin_inset Formula $\textrm{supp}\left(X\right)\subseteq\fldn$
+\end_inset
+
+ אזי 
+\begin_inset Formula $E\left[X\right]=\sum\limits _{n\in\fldn}P\left(X\geq n\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדידים, ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ובעלי תוחלת אז 
+\begin_inset Formula $E\left[XY\right]=E\left[X\right]E\left[Y\right]$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדידים על אותו מ
+\begin_inset Quotes erd
+\end_inset
+
+ה אז 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל שתי פ' 
+\begin_inset Formula $f,g:\fldr\to\fldr$
+\end_inset
+
+ 
+\begin_inset Formula $E\left[f\left(X\right)g\left(Y\right)\right]=E\left[f\left(X\right)\right]E\left[g\left(Y\right)\right]$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\left\{ A_{n}\right\} _{n\in\fldn}$
+\end_inset
+
+ חלוקה של מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ו-
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדיד בעל תוחלת.
+ אזי
+\begin_inset Formula 
+\[
+E\left[X\right]=\sum\limits _{n\in\fldn}E\left[X\mid A_{i}\right]P\left(A_{i}\right)=\sum\limits _{n\in\fldn}E\left[X\mathds{1}_{A_{i}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעלת תוחלת סופית, אזי 
+\begin_inset Formula $P\left(X\geq E\left[X\right]\right)>0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $P\left(X\leq E\left[X\right]\right)>0$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)אי-שוויון מרקוב( אם 
+\begin_inset Formula $X\geq0$
+\end_inset
+
+ כמעט תמיד מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדיד בעל תוחלת אזי 
+\begin_inset Formula $\forall a>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(X\ge a\right)\leq\frac{E\left[X\right]}{a}$
+\end_inset
+
+ )או לחלופין 
+\begin_inset Formula $P\left(X\geq bE\left[X\right]\right)\leq\frac{1}{b}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall b>0$
+\end_inset
+
+(.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\var X=E\left[X^{2}\right]-E\left[X\right]^{2}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)א
+\begin_inset Quotes erd
+\end_inset
+
+ש צ'בישב( יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעלת תוחלת ושונות ו-
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\var X=\sigma^{2}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $P\left(\left|X-E\left[X\right]\right|\geq a\right)\leq\frac{\var X}{a^{2}}=\frac{\sigma^{2}}{a^{2}}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)החוק החלש של המספרים הגדולים( יהיו 
+\begin_inset Formula $X_{1},X_{2},\dots$
+\end_inset
+
+ סדרה אינסופית של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ש
+\begin_inset Quotes erd
+\end_inset
+
+ה בעלי תוחלת )ושונות(.
+ נסמן 
+\begin_inset Formula $E\left[X_{i}\right]=\mu$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\lim_{N\to\infty}P\left(\left|\frac{\sum\limits _{i=1}^{n}X_{i}}{n}-\mu\right|\geq\epsilon\right)=0
+\]
+
+\end_inset
+
+כלומר הסיכוי שבאינסוף ממוצא התוצאות יחרוג אפילו קצת מהתוחלת הוא זניח.
+ לחלופין, ממוצע התוצאות מתכנס בטווח קטן ככל שנרצה לתוחלת.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\cov{X,Y}=E\left[XY\right]-E\left[X\right]E\left[Y\right]$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\var{X+Y}=\var X+\var Y+2\cov{X,Y}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)שונות של סכום מ
+\begin_inset Quotes erd
+\end_inset
+
+מ( אם 
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעלתי שונות אזי
+\begin_inset Formula 
+\[
+\var{\sum_{i=1}^{n}X_{i}}=\sum_{i=1}^{n}\var{X_{i}}+3\sum_{1\leq i<j\leq n}\cov{X_{i},X_{j}}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+)א
+\begin_inset Quotes erd
+\end_inset
+
+ש קושי-שוורץ הסתברותי( יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ש אז 
+\begin_inset Formula $E\left[XY\right]$
+\end_inset
+
+ קיימת ומתקיים 
+\begin_inset Formula $E\left[XY\right]\leq\sqrt{E\left[X^{2}\right]E\left[Y^{2}\right]}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בעלתי ושנות אז 
+\begin_inset Formula $\cov{X,Y}$
+\end_inset
+
+ מוגדר.
+\end_layout
+\begin_layout Enumerate
+)א
+\begin_inset Quotes erd
+\end_inset
+
+ש קושי-שוורץ( יהיו 
+\begin_inset Formula $u,v\in\fldr^{n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left\langle u\mid v\right\rangle \leq\left\Vert u\right\Vert \cdot\left\Vert v\right\Vert $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $-1\leq\corr{X,Y}\leq1$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $\corr{X,Y}=1$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $Y=aX+b$
+\end_inset
+
+, 
+\begin_inset Formula $a>0$
+\end_inset
+
+ ו-
+\begin_inset Formula $\corr{X,Y}=-1$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $Y=aX+b$
+\end_inset
+
+, 
+\begin_inset Formula $a<0$
+\end_inset
+
+.
+
+
+
+\end_layout
+\begin_layout Enumerate
+)תוחלת כממזערת סטיה ריבועית( 
+\begin_inset Formula $E\left[\left(X-a\right)^{2}\right]\geq E\left[\left(X-E\left[X\right]\right)^{2}\right]=\var X$
+\end_inset
+
+, 
+\begin_inset Formula $\forall a\in\fldr$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $Z=X-\frac{\cov{X,Y}Y}{\var Y}$
+\end_inset
+
+ אזי המ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $Z$
+\end_inset
+
+ בלתי מתואם עם 
+\begin_inset Formula $Y$
+\end_inset
+
+ ו-
+\begin_inset Formula $\forall a\in\fldr$
+\end_inset
+
+, 
+\begin_inset Formula $\var{X-aY}\geq\var Z$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+ה-
+\begin_inset Formula $a$
+\end_inset
+
+ שנותן את המינימום שביקשנו הוא 
+\begin_inset Formula $a=\frac{\cov{X,Y}}{\var Y}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $a=\frac{\cov{X,Y}}{\var Y}$
+\end_inset
+
+ ו-
+\begin_inset Formula $b=-E\left[aY-X\right]$
+\end_inset
+
+ נקבל קירוב לינארי 
+מתחשב
+
+ בהתפלגות מיטבי 
+\begin_inset Formula $aY+b$
+\end_inset
+
+ ל-
+\begin_inset Formula $X$
+\end_inset
+
+.
+ זה נקרא 
+\bar under
+ריגרסיה לינארית
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\forall k$
+\end_inset
+
+ זוגי ו-
+\begin_inset Formula $a>0$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(\left|X-E\left[X\right]\right|\geq a\right)\leq\frac{M_{k}\left(X\right)}{a^{k}}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)א
+\begin_inset Quotes erd
+\end_inset
+
+ש צ'רנוף( יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ עם פ' יוצרת מומנטים 
+\begin_inset Formula $M_{X}$
+\end_inset
+
+, 
+\begin_inset Formula $a\in\fldr$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\forall t>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $M_{X}\left(t\right)$
+\end_inset
+
+ מוגדרת מתקיים
+\begin_inset Formula 
+\[
+P\left(X\geq a\right)\leq M_{X}\left(t\right)e^{-ta}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $\left|\corr{X,Y}\right|\leq1$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ בעל מומנט מעריכי )פ' יוצרת מומנטים( אז הנגזרת ה-
+\begin_inset Formula $k$
+\end_inset
+
+ שלו ב-
+\begin_inset Formula $0$
+\end_inset
+
+ היא המומנט מסדר 
+\begin_inset Formula $k$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+M_{k}^{\left(k\right)}\left(0\right)=E\left[X^{k}\right]=m_{k}\left(X\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+)הלמה של הופדינג( אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ המקיים 
+\begin_inset Formula $\left|X\right|\leq1$
+\end_inset
+
+ כמעט תמיד וכן 
+\begin_inset Formula $E\left[X\right]=0$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $t\in\fldr$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $M_{X}\left(t\right)\leq e^{\frac{t^{2}}{2}}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)אי שוויון הופדינג( יהיו 
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת כך ש-
+\begin_inset Formula $\left|X_{i}\right|\leq1$
+\end_inset
+
+, 
+\begin_inset Formula $E\left[X_{i}\right]=0$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\forall a>0$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+P\left(\sum_{i=1}^{n}X_{i}\geq a\right)\leq e^{-\frac{a^{2}}{2n}}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+קיים מ
+\begin_inset Quotes erd
+\end_inset
+
+ה לא בדידה.
+\end_layout
+\begin_layout Enumerate
+קיימת פ' הסת' על 
+\begin_inset Formula $B\left(\left[0,1\right]\right)$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $0\leq a<b\leq1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(\left[a,b\right]\right)=b-a$
+\end_inset
+
+ והיא נקראת מידת לבג.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ, 
+\begin_inset Formula $a\in\fldr$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(X=a\right)=F_{X}\left(a\right)-\lim\limits _{t\to a^{-}}F_{X}\left(t\right)$
+\end_inset
+
+ )הגבול קיים כי היא עולה וחסומה(.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ כך ש-
+\begin_inset Formula $F_{X}=F_{Y}$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\overset{d}{=}Y$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעל צפיפות 
+\begin_inset Formula $f_{X}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $g:\fldr\to\fldr$
+\end_inset
+
+ מונוטונית חזק וגזירה.
+ אזי 
+\begin_inset Formula $Y=g\left(X\right)$
+\end_inset
+
+ הוא מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעל צפיפות ולכל 
+\begin_inset Formula $y\in\fldr$
+\end_inset
+
+, עם 
+\begin_inset Formula $x=g^{-1}\left(y\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f_{Y}\left(y\right)=\frac{f_{X}\left(x\right)}{\left|g'\left(x\right)\right|}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ רציף בהחלט עם פ' צפיפות 
+\begin_inset Formula $f_{X}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $A\subseteq\fldr$
+\end_inset
+
+ )איחוד בן מניה של קטעים זרים( כך ש-
+\begin_inset Formula $P\left(X\in A\right)>0$
+\end_inset
+
+ אז מתקיים שפ' הצפיפות של 
+\begin_inset Formula $X\mid B=X\mid X\in A$
+\end_inset
+
+ )
+\begin_inset Formula $B=\left\{ X\in A\right\} $
+\end_inset
+
+( נתונה ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+f_{X\mid X\in A}\left(a\right)=\frac{\mathds{1}_{A}f_{X}\left(a\right)}{P\left(X\in A\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+לכל מ
+\begin_inset Quotes erd
+\end_inset
+
+מ רציף בהחלט,
+\begin_inset Formula 
+\[
+E\left[X\right]=\int\limits _{0}^{\infty}\overline{F}_{X}\left(x\right)\dx-\int\limits _{-\infty}^{0}F_{X}\left(x\right)\dx
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ עם צפיפות 
+\begin_inset Formula $f_{X}$
+\end_inset
+
+, 
+\begin_inset Formula $g:\fldr\to\fldr$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $Y=g\left(X\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $E\left[Y\right]=\int\limits _{-\infty}^{\infty}g\left(s\right)f_{X}\left(s\right)\d s$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ רציפים בהחלט בעלי תוחלת אז:
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X\sim\unif{\left[a,b\right]}$
+\end_inset
+
+ אז עבור 
+\begin_inset Formula $Y=\alpha X+\beta$
+\end_inset
+
+, אזי 
+\begin_inset Formula $y\sim\unif{\left[\alpha a+\beta,\alpha b+\beta\right]}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)תוחלת של פ' של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X,Y$
+\end_inset
+
+( אם ל-
+\begin_inset Formula $X,Y$
+\end_inset
+
+ צפיפות משותפת 
+\begin_inset Formula $f_{XY}$
+\end_inset
+
+, 
+\begin_inset Formula $g:\fldr^{2}\to\fldr$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+E\left[g\left(X,Y\right)\right]=\int\limits _{-\infty}^{\infty}\int\limits _{-\infty}^{\infty}g\left(x,y\right)f_{XY}\left(x,y\right)\dx\d y
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ רציפים בהחלט אז 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם לכל 
+\begin_inset Formula $s,t\in\fldr$
+\end_inset
+
+, 
+\begin_inset Formula $f_{XY}\left(s,t\right)=f_{X}\left(s\right)f_{Y}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל 
+\begin_inset Formula $a<b,c<d\in\fldr$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+P\left(X\in\left[a,b\right],Y\in\left[c,d\right]\right)=P\left(X\in\left[a,b\right]\right)P\left(Y\in\left[c,d\right]\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ רציפים בהחלט ובעלי צפיפות שולית אז 
+\begin_inset Formula $f_{X}\left(x\right)=\ift f_{XY}\left(x,y\right)\d y$
+\end_inset
+
+ וגם 
+\begin_inset Formula $f_{Y}\left(y\right)=\ift f_{XY}\left(x,y\right)\dx$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)פוביני טונלי( יהיו 
+\begin_inset Formula $D\subseteq\fldr^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $f,g,h,\sigma,\varphi:\fldr^{2}\to\fldr$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+D=\left\{ \left(x,y\right):x\in\left[a,b\right],g\left(x\right)\leq y\leq h\left(x\right)\right\} =\left\{ \left(x,y\right):y\in\left[c,d\right],\varphi\left(y\right)\leq x\leq\sigma\left(y\right)\right\} 
+\]
+
+\end_inset
+
+אזי
+\begin_inset Formula 
+\[
+\iint\limits _{D}f\left(x,y\right)\dx\d y=\int\limits _{a}^{b}\int\limits _{g\left(x\right)}^{h\left(x\right)}f\left(x,y\right)\d y\dx=\int\limits _{c}^{d}\int\limits _{\varphi\left(y\right)}^{\sigma\left(y\right)}f\left(x,y\right)\dx\d y
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+)תכונת חוסר הזיכרון של המ
+\begin_inset Quotes erd
+\end_inset
+
+מ המעריכי( אם 
+\begin_inset Formula $X\sim\ex{\lambda}$
+\end_inset
+
+ אז עבור 
+\begin_inset Formula $Y=\left(X-X_{0}\mid X>X_{0}\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Y\sim\ex{\lambda}$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $X_{0}\geq0$
+\end_inset
+
+(.
+ כלומר, אם הצלחה לא התרחשה עד זמן 
+\begin_inset Formula $X_{0}$
+\end_inset
+
+, אז הזמן שנותר עד הצלחה, 
+\begin_inset Formula $X-X_{0}$
+\end_inset
+
+, מתפלג מעריכית.
+\end_layout
+\begin_layout Enumerate
+)נוסחת הקונבולוציה( אם 
+\begin_inset Formula $x,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת עם צפיפויות 
+\begin_inset Formula $f_{X},f_{Y}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+f_{XY}\left(t\right)=\ift f_{X}\left(s\right)f_{Y}\left(t-s\right)\d s
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+)נוסחת הסת' שלמה רציפה( לכל 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעלי צפיות משותפת מתקיים
+\begin_inset Formula 
+\[
+f_{X}\left(s\right)=\ift f_{Y}\left(t\right)f_{X\mid Y=t}\left(s\right)\d t
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+)נוסחת הקובנולוציה( 
+\begin_inset Formula $f_{XY}\left(s\right)=\ift f_{Y}\left(t\right)f_{X}\left(s-t\right)\d t$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X_{1}\sim N\left(\mu_{1},\sigma_{1}^{2}\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $X_{2}\sim\left(\mu_{2},\sigma_{2}^{2}\right)$
+\end_inset
+
+ אזי:
+\end_layout
+\begin_layout Enumerate
+)משפט הגבול המרכזי( יהיו 
+\begin_inset Formula $X_{1},X_{2},\dots$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ש
+\begin_inset Quotes erd
+\end_inset
+
+ה עם 
+\begin_inset Formula $\var{X_{i}}=1$
+\end_inset
+
+ ו-
+\begin_inset Formula $E\left[X_{i}\right]=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{\sum\limits _{i=1}^{n}X_{i}}{\sqrt{n}}\overset{d}{\longrightarrow}Z$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $Z\sim\n\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)שקול לגבול המרכזי( יהיו 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ש
+\begin_inset Quotes erd
+\end_inset
+
+ה עם תוחלת 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ושונות 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+ אז עבור 
+\begin_inset Formula $Y_{n}=\frac{\sum\limits _{i=1}^{n}\frac{X_{i}-\mu}{\sigma}}{\sqrt{n}}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Y_{n}\overset{d}{\longrightarrow Z}$
+\end_inset
+
+כאשר 
+\begin_inset Formula $Z\sim\n\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת כך ש-
+\begin_inset Formula $X_{i}\sim\ex{\lambda_{i}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\min\left\{ X_{1},\dots,X_{n}\right\} \sim\ex{\sum\limits _{i=1}^{n}\lambda_{i}}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)הרחבה של הגבול המרכזי( עבור 
+\begin_inset Formula $X_{1},X_{2},\dots$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ש
+\begin_inset Quotes erd
+\end_inset
+
+ה כך ש-
+\begin_inset Formula $E\left[X_{i}\right]=\mu$
+\end_inset
+
+, 
+\begin_inset Formula $\var{X_{i}}=\sigma^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\sum\limits _{i=1}^{n}\overset{d}{\longrightarrow}Z'$
+\end_inset
+
+ כאשר
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $Z'\sim\n\left(n\mu,n\sigma^{2}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)הלמה של ניימן-פירסון( המבחן המיטבי לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ נתון הוא מבחן רף ליחס הנראות, כלומר קיים 
+\begin_inset Formula $\lambda_{0}\in\fldr$
+\end_inset
+
+ כך שהמבחן המיטבי מהצורה
+\begin_inset Formula 
+\[
+\test\left(x\right)=\begin{cases}
+H_{0} & \frac{P_{H_{0}}\left(x\right)}{P_{H_{1}}\left(x\right)}>\lambda_{0}\\
+H_{1} & \text{אחרת}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X_{1},\dots,X_{n}\sim\u{\left[0,1\right]}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ נגדיר 
+\begin_inset Formula $Y_{n}=n\left(1-\max\left\{ X_{1},\dots,X_{n}\right\} \right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $Y_{n}\overset{d}{\longrightarrow}Y\sim\ex 1$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נגדיר סדרה 
+\begin_inset Formula $\left\{ X_{n}\right\} $
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $f_{X_{n}}\left(x\right)=\left(1-\cos\left(2\pi nx\right)\right)\mathds{1}_{\left[0,1\right]}$
+\end_inset
+
+ )כלומר קוסינוסים שנדחסים עוד ועוד על 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+( אזי 
+\begin_inset Formula $X_{n}\overset{d}{\longrightarrow}\u{\left[0,1\right]}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\left\{ X_{n}\right\} $
+\end_inset
+
+ סדרת מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ו-
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+\end_layout
+\begin_layout Enumerate
+)הלמה של ניימן-פירסון( יהי 
+\begin_inset Formula $C$
+\end_inset
+
+ מבחן יחס נראות.
+ אזי 
+\begin_inset Formula $C$
+\end_inset
+
+ מיטבי.
+\end_layout
+\end_body
+\end_document

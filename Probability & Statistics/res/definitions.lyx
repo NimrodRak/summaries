@@ -1,0 +1,2928 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{dsfont}
+\usepackage{polynom}
+\newcommand*{\defeq}{\stackrel{\mathsmaller{\mathsf{def}}}{=}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "Arial"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.1cm
+\topmargin 2.1cm
+\rightmargin 2.1cm
+\bottommargin 2.1cm
+\secnumdepth -2
+\tocdepth 1
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\fldr}{\mathbb{R}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\desc}[2]{\underset{#2}{\underline{#1}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\om}{\Omega}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\fldz}{\mathbb{Z}}
+\end_inset
+\begin_inset FormulaMacro
+\renewcommand{\fldz}{\mathbb{Z}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\fldn}{\mathbb{N}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ome}{\mathbb{\omega}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\mf}{\mathbb{\mathcal{F}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\em}{\mathbb{\mathcal{\ome}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\supp}[1]{\textrm{supp}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\mez}[1]{\mathds{#1}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\boxo}[1]{\begin{array}{|c|}
+\hline #1\\\hline \end{array}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\var}[1]{\textrm{var}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\cov}[1]{\textrm{cov}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\left\Vert #1\right\Vert }
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\xy}[2]{\left(\begin{smallmatrix}#1\\
+ #2 
+\end{smallmatrix}\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\la}{\lambda}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\corr}[1]{\textrm{corr}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\bin}[1]{\textrm{Bin}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\pois}[1]{\textrm{Pois}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ber}[1]{\textrm{Ber}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\geo}[1]{\textrm{Geo}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\unif}[1]{\textrm{Unif}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\dx}{\;\textrm{dx}}
+{\textrm{dx}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\dt}{\;\textrm{dt}}
+{\textrm{dt}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\d}[1]{\;\textrm{d#1}}
+{\textrm{d#1}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ift}{\mathbb{\mathcal{\int\limits _{-\infty}^{\infty}}}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\ex}[1]{\textrm{Exp}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\n}{\textrm{N}}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\u}[1]{\textrm{U}\left(#1\right)}
+\end_inset
+\begin_inset FormulaMacro
+\newcommand{\test}{\textrm{Test}}
+\end_inset
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\left\{ A_{n}\right\} _{n\in\fldn}$
+\end_inset
+
+ סדרת קבוצות.
+ נאמר כי 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ 
+\bar under
+עולה
+\bar default
+ אם 
+\begin_inset Formula $A_{n}\subseteq A_{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\in\fldn$
+\end_inset
+
+, ו
+\bar under
+יורדת
+\bar default
+ אם 
+\begin_inset Formula $A_{n}\supseteq A_{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\in\fldn$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהיינה 
+\begin_inset Formula $A\subseteq\om\neq\varnothing$
+\end_inset
+
+.
+ 
+\bar under
+הפונקציה המציינת
+\bar default
+ של 
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mathds{1}_{A}:\om\to\left\{ 0,1\right\} $
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\mathds{1}_{A}\left(x\right)=\begin{cases}
+1 & x\in A\\
+0 & x\notin A
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in\om$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\bar under
+מרחב המדגם
+\bar default
+ )מסומן ב-
+\begin_inset Formula $\Omega$
+\end_inset
+
+( הוא אוסף התוצאות האפשרויות בניסוי.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\om$
+\end_inset
+
+ מרחב מדגם.
+ פ' 
+\begin_inset Formula $P:\om\to\left[0,1\right]$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $\sum\limits _{\omega\in\om}P\left(\omega\right)=1$
+\end_inset
+
+ נקראת 
+\bar under
+פונקציית הסתברות נקודתית
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\om$
+\end_inset
+
+ מרחב מדגם.
+ 
+\bar under
+מאורע
+\bar default
+ הוא תת קבוצה של 
+\begin_inset Formula $\om$
+\end_inset
+
+.
+ אוסף המאורעות מסומן ב-
+\begin_inset Formula $\mf=2^{\om}=\left\{ A:A\subseteq\om\right\} $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\om$
+\end_inset
+
+ מרחב מדגם.
+ פ' 
+\begin_inset Formula $P:\mf\to\fldr_{+}$
+\end_inset
+
+ המקיימת:
+\end_layout
+\begin_layout Enumerate
+תהי פ' הסתברות נקודתית.
+ ה
+\bar under
+תומך
+\bar default
+ של 
+\begin_inset Formula $p$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\textrm{supp}\left(p\right)=\left\{ \ome\in\om:p\left(\ome\right)>0\right\} $
+\end_inset
+
+, כלומר כל הערכים שיש סיכוי שיקרו.
+\end_layout
+\begin_layout Enumerate
+עבור פ' הסתברות 
+\begin_inset Formula $P$
+\end_inset
+
+ עם 
+\begin_inset Formula $P\left(A\right)=1$
+\end_inset
+
+ אז נאמר כי 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\bar under
+נתמכת
+\bar default
+ על 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מרחב הסתברות.
+ נאמר כי 
+\begin_inset Formula $P$
+\end_inset
+
+ היא 
+\bar under
+פונקציית הסתברות בדידה
+\bar default
+ אם קיימת פ' הסתברות נקודתית 
+\begin_inset Formula $p:\om\to\fldr_{+}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $P_{p}=P$
+\end_inset
+
+.
+ במקרה כזה נאמר כי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ הוא 
+\bar under
+מרחב הסתברות בדידה
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מרחב הסתברות ומאורע 
+\begin_inset Formula $A$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $P\left(A\right)=1$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $A$
+\end_inset
+
+ מתרחש 
+\bar under
+כמעט תמיד
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+מרחב הסתברות בדידה 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ נקרא 
+\bar under
+אחיד
+\bar default
+ אם 
+\begin_inset Formula $p\left(\em_{1}\right)=p\left(\em_{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\em_{1},\em_{2}\in\om$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהיינה 
+\begin_inset Formula $p_{1}:\om_{1}\to\left[0,1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $p_{2}:\om_{2}\to\left[0,1\right]$
+\end_inset
+
+ פ' הסת' נקודתיות.
+ נגדיר 
+\begin_inset Formula $p_{1}\times p_{2}:\om_{1}\times\om_{2}\to\left[0,1\right]$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+p_{1}\times p_{2}\left(\left(\em_{1},\em_{2}\right)\right)=p_{1}\left(\em_{1}\right)p_{2}\left(\em_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\forall\left(\em_{1},\em_{2}\right)\in\om_{1}\times\om_{2}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(\om_{1},\mf_{1},P_{p_{1}}\right),\left(\om_{2},\mf_{2},P_{p_{2}}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+ המרחב 
+\begin_inset Formula $\left(\om_{1}\times\om_{2},\mf=2^{\om_{1}\times\om_{2}},P_{p_{1}\times p_{2}}\right)$
+\end_inset
+
+ הוא 
+\bar under
+מרחב המכפלה
+\bar default
+ של המ
+\begin_inset Quotes erd
+\end_inset
+
+ה-ים.
+ מאורע מהצורה 
+\begin_inset Formula $A\times B$
+\end_inset
+
+ נקרא 
+\bar under
+מאורע מכפלה
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\om_{1},\om_{2}$
+\end_inset
+
+ מרחבי מדגם.
+ 
+\bar under
+ניסוי דו שלבי
+\bar default
+ מתואר ע
+\begin_inset Quotes erd
+\end_inset
+
+י פ' הסת' נקודתית 
+\begin_inset Formula $p$
+\end_inset
+
+ על 
+\begin_inset Formula $\om_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\forall\em_{1}\in\om_{1}$
+\end_inset
+
+ נתונה פ' הסת' נקודתית 
+\begin_inset Formula $p_{\em_{1}}$
+\end_inset
+
+ על 
+\begin_inset Formula $\om_{2}$
+\end_inset
+
+.
+ בניסוי הדו שלבי מרחב המדגם הוא 
+\begin_inset Formula $\om_{1}\times\om_{2}$
+\end_inset
+
+ ופ' הסת' הנקודתית 
+\begin_inset Formula $q:\om_{1}\times\om_{2}\to\left[0,1\right]$
+\end_inset
+
+ כך שעבור 
+\begin_inset Formula $\left(\em_{1},\em_{2}\right)\in\om_{1}\times\om_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $q\left(\em_{1},\em_{2}\right)=p\left(\em_{1}\right)\cdot p_{\em_{1}}\left(\em_{2}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\bar under
+חלוקה
+\bar default
+ 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ של המרחב מדגם 
+\begin_inset Formula $\om$
+\end_inset
+
+ היא אוסף מאורעות זרים שאיחודם הוא 
+\begin_inset Formula $\om$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ בת מניה תקרא 
+\bar under
+חלוקה בת מניה
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מרחב הסת', יהיו 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $P\left(B\right)>0$
+\end_inset
+
+ אז 
+\bar under
+ההסתברות המותנית
+\bar default
+ של 
+\begin_inset Formula $A$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $B$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+P_{B}\left(A\right)=P\left(A|B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+נאמר כי יש בין 
+\begin_inset Formula $A,B$
+\end_inset
+
+ 
+\bar under
+אי-תלות
+\bar default
+ אם ל-
+\begin_inset Formula $A,B$
+\end_inset
+
+ הסת' חיובית ובנוסף 
+\begin_inset Formula $P\left(A\mid B\right)=P\left(A\right)$
+\end_inset
+
+ או לחלופין ש-
+\begin_inset Formula $P\left(B\mid A\right)=P\left(B\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נאמר כי 
+\begin_inset Formula $A,B$
+\end_inset
+
+ מאורעות 
+\bar under
+בלתי תלויים
+\bar default
+ )ב
+\begin_inset Quotes erd
+\end_inset
+
+ת( אם 
+\begin_inset Formula $P\left(A\cap B\right)=P\left(A\right)P\left(B\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $A,B_{1},\dots,B_{n}\in\mf$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $A$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ב-
+\begin_inset Formula $\left\{ B_{1},\dots,B_{n}\right\} $
+\end_inset
+
+ אם 
+\begin_inset Formula $\forall I\subseteq\left[n\right]$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $A$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת במאורע 
+\begin_inset Formula $\bigcap\limits _{i\in I}B_{i}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+)סימטרית, לעומת הקודמת( אוסף מאורעות 
+\begin_inset Formula $A_{1},\dots,A_{n}$
+\end_inset
+
+ יקראו ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם לכל 
+\begin_inset Formula $\varnothing\neq I\subseteq\left[n\right]$
+\end_inset
+
+ אם 
+\begin_inset Formula $P\left(\bigcap\limits _{i\in I}A_{i}\right)=\prod\limits _{i\in I}P\left(A_{i}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+מאורעות 
+\begin_inset Formula $A_{1},\dots,A_{n}$
+\end_inset
+
+ יקראו 
+\bar under
+ב
+\begin_inset Quotes erd
+\end_inset
+
+ת בזוגות
+\bar default
+ אם 
+\begin_inset Formula $\forall i\neq j$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $A_{i},A_{j}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+\begin_layout Enumerate
+אוסף מאורעות 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ נקרא ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם כל תת אוסף סופי של מאורעות מתוך 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ הוא ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+ 
+\bar under
+משתנה מקרי
+\bar default
+ הוא פונקציה 
+\begin_inset Formula $X:\om\to\fldr$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+עבור מ
+\begin_inset Quotes erd
+\end_inset
+
+מ, נגדיר פ' 
+\begin_inset Formula $P_{X}:\fldr\to\fldr$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $P_{X}\left(S\right)=P\left(X^{-1}\left(S\right)\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ו-
+\begin_inset Formula $A\in\mf$
+\end_inset
+
+.
+ המ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X\left(\em\right)=\begin{cases}
+1 & \em\in A\\
+0 & \em\notin A
+\end{cases}$
+\end_inset
+
+ נקרא 
+\bar under
+המשתנה המציין
+\bar default
+ )אינדיקטור( של 
+\begin_inset Formula $A$
+\end_inset
+
+ ומסומן ב-
+\begin_inset Formula $\mathds{1}_{A}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+ הפ' 
+\begin_inset Formula $P_{X}:\mf_{\fldr}\to\left[0,1\right]$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $P_{X}=P\left(X^{-1}\left(S\right)\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall S\in\mf_{R}$
+\end_inset
+
+ נקראת 
+\bar under
+התפלגות
+\bar default
+ על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $P_{X}=D$
+\end_inset
+
+, נאמר כי 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\bar under
+מתפלג
+\bar default
+ לפי 
+\begin_inset Formula $D$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $X\sim D$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $P_{X}$
+\end_inset
+
+ היא פ' הסת' בדידה אז נאמר של-
+\begin_inset Formula $X$
+\end_inset
+
+ יש 
+\bar under
+התפלגות בדידה
+\bar default
+ או ש-
+\begin_inset Formula $X$
+\end_inset
+
+ הוא 
+\bar under
+מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדיד
+\bar default
+.
+ אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדיד, פ' ההסת' הנקודתית המתאימה תסומן 
+\begin_inset Formula $p_{X}$
+\end_inset
+
+ ותכונה 
+\bar under
+פונקציית ההתפלגות הנקודתית
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ לתומך של 
+\begin_inset Formula $p_{X}$
+\end_inset
+
+ נקרא ה
+\bar under
+תומך
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $P_{X}\left(S\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $S\in\mf_{\fldr}$
+\end_inset
+
+ אז נאמר שהמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\bar under
+נתמך
+\bar default
+ על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+ 
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\left(X\mid A\right)$
+\end_inset
+
+ המ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X$
+\end_inset
+
+ על 
+\begin_inset Formula $\left(\om,\mf,P_{A}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X=\left(X_{1},\dots,X_{n}\right)$
+\end_inset
+
+ וקטור מקרי.
+ אזי 
+\begin_inset Formula $P_{X}=P_{X_{1},\dots,X_{n}}:\mf_{\fldr^{n}}\to\left[0,1\right]$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+P_{X}\left(A\right)=P\left(X^{-1}\left(A\right)\right)=P\left(\left\{ \em\in\om:X\left(\em\right)\in A\right\} \right)
+\]
+
+\end_inset
+
+היא ה
+\bar under
+התפלגות המשותפת
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ ההתפלגות של כל 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+ נקראת ה
+\bar under
+התפלגות השולית
+\bar default
+ של 
+\begin_inset Formula $P_{X}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נאמר כי מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\bar under
+מתפלג ברנולי
+\bar default
+ עם פרמטר 
+\begin_inset Formula $p$
+\end_inset
+
+ אם
+\begin_inset Formula 
+\[
+\begin{array}{c}
+P\left(X=0\right)=1-p\\
+P\left(X=1\right)=p\\
+P\left(X=\alpha\right)=0,\forall\alpha\notin\left\{ 0,1\right\} 
+\end{array}
+\]
+
+\end_inset
+
+ונסמן 
+\begin_inset Formula $X\sim\textrm{Ber}\left(p\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אוסף סופי של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X=\left(X_{1},\dots,X_{n}\right)$
+\end_inset
+
+ המוגדרים על אותו מ
+\begin_inset Quotes erd
+\end_inset
+
+ה נקרא 
+\bar under
+וקטור מקרי
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ אז ה
+\bar under
+התפלגות המשותפת
+\bar default
+
+\begin_inset space ~
+\end_inset
+
+שלהם היא פ' 
+\begin_inset Formula $P_{XY}:\fldr^{2}\to\left[0,1\right]$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\begin{align*}
+P_{XY}\left(\left(a,b\right)\right) & =P\left(X=a,Y=b\right)\\
+ & =P\left(\left\{ \em\in\om:X\left(\em\right)=a,Y=\left(\em\right)=b\right\} \right)
+\end{align*}
+
+\end_inset
+
+ובאופן כללי אם 
+\begin_inset Formula $S,T\subseteq\fldr$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\begin{align*}
+P_{XY}\left(S,T\right) & =P\left(X\in S\land Y\in T\right)\\
+ & =P\left(\left\{ \em\in\om:X\left(\em\right)\in S,Y\left(\em\right)\in T\right\} \right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+וקטור מקרי 
+\begin_inset Formula $\left(X,Y\right)$
+\end_inset
+
+ יקרא 
+\bar under
+בדיד
+\bar default
+ והתפלגותו תקרא בדידה אם 
+\begin_inset Formula $P_{XY}$
+\end_inset
+
+ פ' הסת' בדידה.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מוגדרים על מ
+\begin_inset Quotes erd
+\end_inset
+
+ה 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $X=\left(X_{1},\dots,X_{n}\right)$
+\end_inset
+
+ הוא 
+\bar under
+וקטור מקרי
+\bar default
+ ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X=\left(X_{1},\dots,X_{n}\right)$
+\end_inset
+
+ וקטור מקרי ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+ על מ
+\begin_inset Quotes erd
+\end_inset
+
+ה 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+ הפ' 
+\begin_inset Formula $P_{X_{1},\dots,X_{n}}=P_{X}:\mf_{\fldr^{n}}\to\left[0,1\right]$
+\end_inset
+
+ המוגדרת 
+\begin_inset Formula $\forall S\subseteq\fldr^{n}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+P_{X}\left(S\right)=P\left(\left\{ \em\in\om:X_{1}\left(\em\right)\land\dots\land X_{n}\left(\em\right)\right\} \right)
+\]
+
+\end_inset
+
+נקראת 
+\bar under
+ההתפלגות המשותפת
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $A\in\mf$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $P\left(A\right)>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P_{A}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ יקראו 
+\bar under
+בלתי תלויים
+\bar default
+ אם 
+\begin_inset Formula $\forall A,B\subseteq\fldr$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+P\left(X\in A\land Y\in B\right)=P\left(X\in A\right)P\left(Y\in B\right)
+\]
+
+\end_inset
+
+או במילים אחרות, אם המאורעות 
+\begin_inset Formula $\left\{ X\in A\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $\left\{ Y\in B\right\} $
+\end_inset
+
+ הם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+\begin_layout Enumerate
+סדרת מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $\left\{ X_{n}\right\} _{n\in\fldn}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם לכל 
+\begin_inset Formula $\left\{ S_{n}\right\} _{n\in\fldn}$
+\end_inset
+
+ סדרת מאורעות ב-
+\begin_inset Formula $\mf_{\fldr}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+P\left(\left\{ X_{n}\in S_{n}:n\in\fldn\right\} \right)=\prod\limits _{n=1}^{\infty}P\left(X_{n}\in S_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X_{1},\dots,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ המוגדרים על אותו מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+ נאמר כי הם 
+\bar under
+בלתי תלויים
+\bar default
+ כאוסף אם לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ קבוצות 
+\begin_inset Formula $S_{1},\dots,S_{n}\subseteq\fldr$
+\end_inset
+
+, המאורעות 
+\begin_inset Formula $\left\{ X\in S_{1}\right\} ,\dots,\left\{ S_{n}\in S_{n}\right\} \in\mf$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+\begin_layout Enumerate
+נאמר סדרת מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $\left\{ X_{i}\right\} _{i\in\fldn}$
+\end_inset
+
+ היא 
+\bar under
+בלתי תלויה
+\bar default
+ אם כל תת אוסף סופי שלה הוא ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ, 
+\begin_inset Formula $\overline{F}_{X}\left(n\right)=P\left(X>n\right)$
+\end_inset
+
+ נקראת 
+\bar under
+ההתפלגות השיורית
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מתפלג פואסון עם שכיחות 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $n\in\fldn\cup\left\{ 0\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $P\left(X=k\right)=\frac{e^{-\lambda}\lambda^{k}}{k!}$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $X\sim\textrm{Pois}\left(\lambda\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ המקבל ערכים ב-
+\begin_inset Formula $\fldn\cup\left\{ 0\right\} $
+\end_inset
+
+ ויהי 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $X$
+\end_inset
+
+ מתפלג פואסון עם שכיחות 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ אם 
+\begin_inset Formula $\forall k\in\fldn\cup\left\{ 0\right\} $
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+P\left(X=k\right)=\frac{e^{-\lambda}\lambda^{k}}{k!}
+\]
+
+\end_inset
+
+במקרה זה נסמן 
+\begin_inset Formula $X\sim\textrm{Pois}\left(\lambda\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדיד.
+ ה
+\bar under
+תוחלת
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\begin{align*}
+E\left[X\right] & =\sum_{\alpha\in\fldr}\alpha P\left(X=\alpha\right)\\
+ & =\sum_{\em\in\om}X\left(\em\right)p\left(\em\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדיד בעל תוחלת סופית.
+ ה
+\bar under
+שונות
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\var X=E\left[\left(x-E\left[X\right]\right)^{2}\right]$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\bar under
+סטיית התקן
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בדיד בעל תוחלת היא 
+\begin_inset Formula $\sigma=\sqrt{\var X}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעלי שונות.
+ ה
+\bar under
+שונות המשותפת
+\bar default
+ של 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ היא 
+\begin_inset Formula $\cov{X,Y}=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]\right)\right]$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\cov{X,Y}=0$
+\end_inset
+
+, נאמר כי 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ הם 
+\bar under
+בלתי מתואמים
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ש אז 
+\bar under
+מקדם המתאם
+\bar default
+ שלהם הוא 
+\begin_inset Formula $\corr{X,Y}=\frac{\cov{X,Y}}{\sigma\left(X\right)\sigma\left(Y\right)}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ ה
+\bar under
+מומנט מסדר 
+\begin_inset Formula $k$
+\end_inset
+
+
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא 
+\begin_inset Formula $m_{k}\left(X\right)=E\left[X^{k}\right]$
+\end_inset
+
+.
+ 
+\bar under
+המומנט המרכזי
+\bar default
+ מסדר 
+\begin_inset Formula $k$
+\end_inset
+
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+M_{k}\left(X\right)=E\left[\left(X-E\left[X\right]\right)^{k}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ נגדיר 
+\begin_inset Formula $M_{X}\left(t\right)=E\left[e^{tx}\right]$
+\end_inset
+
+ נקראת 
+\bar under
+הפונקציה היוצרת מומנטים
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בעלי שונות אז 
+\begin_inset Formula $Z=E\left[X\right]+\frac{\cov{X,Y}\left(Y-E\left[Y\right]\right)}{\var Y}$
+\end_inset
+
+ הוא ה
+\bar under
+ריגרסיה הלינארית
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ על בסיס 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\om$
+\end_inset
+
+ מרחב מדגם.
+ קבוצה 
+\begin_inset Formula $F\subseteq2^{\om}$
+\end_inset
+
+ תקרא 
+\bar under
+
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה
+\bar default
+ אם:
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\mf$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה על מרחב המדגם 
+\begin_inset Formula $\om$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $P:\mf\to\fldr_{+}$
+\end_inset
+
+ פ' הסת'.
+ אזי השלשה 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+ נקראת 
+\bar under
+מרחב הסתברות
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+
+\bar under
+
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה בורל
+\bar default
+ )על 
+\begin_inset Formula $\fldr$
+\end_inset
+
+( המסומנת 
+\begin_inset Formula $\mf=B\left(\fldr\right)$
+\end_inset
+
+ היא ה-
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה המינימלית המכילה את כל הקטעים מהצורה 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ )כלומר אם 
+\begin_inset Formula $\mf$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה כלשהי שמכילה את כל הקטעים 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $B\left(\fldr\right)\subseteq\mf$
+\end_inset
+
+(.
+\end_layout
+\begin_layout Enumerate
+לכל קטע 
+\begin_inset Formula $I\subseteq\fldr$
+\end_inset
+
+, 
+\bar under
+
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה בורל על 
+\begin_inset Formula $I$
+\end_inset
+
+
+\bar default
+ היא 
+\begin_inset Formula $B\left(I\right)=\left\{ A\cap I:A\in B\left(\fldr\right)\right\} $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\bar under
+משתנה מקרי
+\bar default
+ 
+\begin_inset Formula $X:\om\to\fldr$
+\end_inset
+
+ הוא פ' המקיימת שלכל 
+\begin_inset Formula $a<b$
+\end_inset
+
+, 
+\begin_inset Formula $X^{-1}\left(\left[a,b\right]\right)\in\mf$
+\end_inset
+
+ )במילים אחרות - יש תשובה לשאלה מה ההסת' ש-
+\begin_inset Formula $a\leq X\left(\em\right)\leq b$
+\end_inset
+
+(.
+\end_layout
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על מ
+\begin_inset Quotes erd
+\end_inset
+
+ה 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+, 
+\bar under
+ההתפלגות של 
+\begin_inset Formula $X$
+\end_inset
+
+
+\bar default
+ היא הפ' 
+\begin_inset Formula $P_{X}:B\left(\fldr\right)\to\left[0,1\right]$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $P_{X}\left(A\right)=P\left(X^{-1}\left(A\right)\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall A\in B\left(\fldr\right)$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $X\sim P_{X}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+ הפ' 
+\begin_inset Formula $F_{X}:\fldr\to\left[0,1\right]$
+\end_inset
+
+ המוגדרת לכל 
+\begin_inset Formula $t\in\fldr$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $F_{X}\left(t\right)=P\left(X\leq t\right)=P\left((-\infty,t]\right)$
+\end_inset
+
+ נקראת 
+\bar under
+פונקציית ההתפלגות המצטברת
+\bar default
+.
+ 
+\begin_inset Formula $\overline{F}_{X}:\fldr\to\left[0,1\right]$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\overline{F}_{X}\left(t\right)=P\left(X>t\right)$
+\end_inset
+
+ נקראת 
+\bar under
+פונקציית ההתפלגות השיורית
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ נאמר כי 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\bar under
+רציף בהחלט
+\bar default
+ אם קיימת פ' אינטגרבילית 
+\begin_inset Formula $f:\fldr\to\fldr_{+}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $a<b\in\fldr$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+P\left(a<X<b\right)=\int\limits _{a}^{b}f\left(x\right)\dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ נקראת 
+\bar under
+הצפיפות של 
+\begin_inset Formula $X$
+\end_inset
+
+
+\bar default
+ והיא מסומנת ב-
+\begin_inset Formula $f_{x}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על מ
+\begin_inset Quotes erd
+\end_inset
+
+ה )לא בהכרח בדיד(.
+ נאמר כי 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\bar under
+רציף
+\bar default
+ אם קיימת 
+\begin_inset Formula $p_{X}:\fldr\to\fldr_{+}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $-\infty\leq a\leq b\leq\infty$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(a\leq X\leq b\right)=\int\limits _{a}^{b}p_{X}\left(t\right)\dt$
+\end_inset
+
+.
+ 
+\begin_inset Formula $p_{X}$
+\end_inset
+
+ נקראת ה
+\bar under
+צפיפות
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על אותו מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+ 
+\bar under
+פונקציית ההתפלגות המצטברת המשותפת
+\bar default
+ של 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ היא 
+\begin_inset Formula $F_{X,Y}:\fldr^{2}\to\left[0,1\right]$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $F_{X,Y}\left(a,b\right)=P\left(X\leq a,Y\leq b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall a,b\in\fldr$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מעל 
+\begin_inset Formula $\left(\om,\mf,P\right)$
+\end_inset
+
+.
+ נאמר כי יש להם 
+\bar under
+צפיפות משותפת
+\bar default
+ אם קיימת 
+\begin_inset Formula $f_{X,Y}:\fldr^{2}\to[0,\infty)$
+\end_inset
+
+ המקיימת כי לכל 
+\begin_inset Formula $a,b\in\fldr$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+F_{X,Y}\left(a,b\right)=P\left(X\leq a,Y\leq b\right)=\int\limits _{-\infty}^{a}\int\limits _{-\infty}^{b}f_{X,Y}\left(x,y\right)\d y\dx
+\]
+
+\end_inset
+
+ 
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ רציף בהחלט עם צפיפות 
+\begin_inset Formula $f_{X}$
+\end_inset
+
+.
+ ה
+\bar under
+תוחלת
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ היא 
+\begin_inset Formula $E\left[X\right]=\int\limits _{-\infty}^{\infty}sf_{X}\left(s\right)\d s$
+\end_inset
+
+.
+ התוחלת מוגדרת רק אם האינטגרל מתכנס בהחלט.
+\end_layout
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ רציף בהחלט בעל תוחלת, 
+\bar under
+השונות
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\var X=E\left[\left(X-E\left[X\right]\right)^{2}\right]=E\left[X^{2}\right]-E\left[X\right]^{2}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+בהינתן 
+\begin_inset Formula $\left[a,b\right]\subseteq\fldr$
+\end_inset
+
+, נאמר כי 
+\begin_inset Formula $X\sim\unif{\left[a,b\right]}$
+\end_inset
+
+ אם צפיפותו היא 
+\begin_inset Formula $f_{X}\left(t\right)=\begin{cases}
+\frac{1}{b-a} & x\in\left[a,b\right]\\
+0 & \text{אחרת}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ עם פ' התפלגות 
+\begin_inset Formula $F_{X}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $Q_{X}:\left[0,1\right]\to\fldr$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $Q_{X}\left(t\right)=\inf F_{X}^{-1}\left([t,\infty)\right)$
+\end_inset
+
+ )אם 
+\begin_inset Formula $F$
+\end_inset
+
+ עולה חזק אז 
+\begin_inset Formula $Q_{X}\left(t\right)=F_{X}^{-1}\left(t\right)$
+\end_inset
+
+(.
+ 
+\begin_inset Formula $Q_{X}$
+\end_inset
+
+ נקרא ה
+\bar under
+אחוזון
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X,Y$
+\end_inset
+
+ יקראו 
+\bar under
+בלתי תלויים
+\bar default
+ אם לכל 
+\begin_inset Formula $A,B\subseteq\fldr$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(X\in A,Y\in B\right)=P\left(X\in A\right)P\left(Y\in B\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\begin_inset Formula $X$
+\end_inset
+
+ מתפלג 
+\bar under
+קושי
+\bar default
+ עם פרמטרים 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $f_{X}\left(t\right)=\frac{1}{\pi}\cdot\frac{1}{t^{2}+1}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $D$
+\end_inset
+
+ קבוצה עם שטח 
+\begin_inset Formula $\Psi$
+\end_inset
+
+.
+ נאמר של-
+\begin_inset Formula $\left(X,Y\right)$
+\end_inset
+
+ צפיפות משותפת 
+\bar under
+אחידה
+\bar default
+ אם מתקיים 
+\begin_inset Formula $f_{XY}\left(x,y\right)=\begin{cases}
+\frac{1}{\Psi} & \left(x,y\right)\in D\\
+0 & \text{אחרת}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נאמר כי 
+\begin_inset Formula $X$
+\end_inset
+
+ מתפלג 
+\bar under
+מעריכית
+\bar default
+ עם פרמרטר 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $X\sim\ex{\lambda}$
+\end_inset
+
+ אם צפיפותו היא 
+\begin_inset Formula $f_{X}\left(t\right)=\begin{cases}
+\lambda e^{-\lambda t} & t\geq0\\
+0 & t<0
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ רציפים בהחלט בעלי התפלגות משותפת.
+ הצפיפות של 
+\begin_inset Formula $X$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $Y=t$
+\end_inset
+
+ )המקיים 
+\begin_inset Formula $f_{Y}\left(t\right)\neq0$
+\end_inset
+
+ וש-
+\begin_inset Formula $f_{Y}$
+\end_inset
+
+ רציפה ב-
+\begin_inset Formula $t$
+\end_inset
+
+( נתונה ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+f_{X\mid Y=t}\left(s\right)=\frac{f_{XY}\left(s,t\right)}{f_{Y}\left(t\right)}=\frac{f_{XY}\left(s,t\right)}{\ift f_{XY}\left(u,t\right)\d u}
+\]
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+נאמר כי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מתפלג 
+\bar under
+נורמלית
+\bar default
+ אם 
+\begin_inset Formula $f_{X}\left(s\right)=\frac{1}{\sqrt{2}\pi\sigma^{2}}e^{-\frac{\left(s-\mu\right)^{2}}{2\sigma^{2}}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\mu$
+\end_inset
+
+ התוחלת ו-
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $X\sim\n\left(\mu,\sigma^{2}\right)$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+נאמר כי 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\bar under
+נורמלי תקני/סטנדרטי
+\bar default
+ אם 
+\begin_inset Formula $X\sim\n\left(0,1\right)$
+\end_inset
+
+ ובמקרה זה 
+\begin_inset Formula $f_{X}\left(s\right)=\frac{1}{\sqrt{2\pi}}e^{-\frac{s^{2}}{2}}$
+\end_inset
+
+ ועקומתו נקראת עקומת הפעמון ונאמר כי 
+\begin_inset Formula $X$
+\end_inset
+
+ מתפלג גאוסיאנית.
+\end_layout
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ סדרת מ
+\begin_inset Quotes erd
+\end_inset
+
+מ, 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ נאמר כי 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ 
+\bar under
+מתכנס בהתפלגות
+\bar default
+ ל-
+\begin_inset Formula $X$
+\end_inset
+
+ אם מתקיים 
+\begin_inset Formula $\lim\limits _{n\to\infty}F_{X_{n}}\left(t\right)=F_{X}\left(t\right)$
+\end_inset
+
+, לכל 
+\begin_inset Formula $t$
+\end_inset
+
+ שבה 
+\begin_inset Formula $F_{X}$
+\end_inset
+
+ רציפה.
+\end_layout
+\begin_layout Enumerate
+ההסת' לטעות מסוג 
+\begin_inset Formula $I$
+\end_inset
+
+ נקראת 
+\bar under
+רמת המובהקות
+\bar default
+ ומוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+\alpha=P_{H_{0}}\left(X\in\mathcal{S}\right)=P_{H_{0}}\left(\test\left(x\right)=H_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $1-\alpha$
+\end_inset
+
+ נקרא 
+\bar under
+רמת הסמך
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+ההסת' לטעות מסוג 
+\begin_inset Formula $II$
+\end_inset
+
+ ומוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+\beta=P_{H_{1}}\left(X\notin\mathcal{S}\right)=P_{H_{1}}\left(\test\left(x\right)=H_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $1-\beta$
+\end_inset
+
+ נקראת ה
+\bar under
+עוצמה
+\bar default
+ של 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+מבחן 
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\bar under
+טוב לפחות
+\bar default
+ כמו מבחן 
+\begin_inset Formula $D$
+\end_inset
+
+ אם 
+\begin_inset Formula $\alpha_{D}\geq\alpha_{C}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\beta_{D}\geq\beta_{C}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+מבחן 
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\bar under
+טוב ממש
+\bar default
+ ממבחן 
+\begin_inset Formula $D$
+\end_inset
+
+ אם 
+\begin_inset Formula $C$
+\end_inset
+
+ טוב לפחות כמו 
+\begin_inset Formula $D$
+\end_inset
+
+ ולפחות אחד מהא
+\begin_inset Quotes erd
+\end_inset
+
+ש מתקיים כאי שוויון חזק.
+\end_layout
+\begin_layout Enumerate
+מבחן הוא 
+\bar under
+מיטבי
+\bar default
+ אם אין מבחן שטוב ממש ממנו.
+\end_layout
+\begin_layout Enumerate
+עבור מבחן 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ נקרא 
+\bar under
+אזור הדחייה
+\bar default
+ ואילו 
+\begin_inset Formula $\mathcal{S}^{C}$
+\end_inset
+
+ נקרא 
+\bar under
+אזור הקבלה
+\bar default
+.
+\end_layout
+\begin_layout Enumerate
+
+\bar under
+סטטיסטי
+\bar default
+ הוא פ' של הדגימות 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ 
+\bar under
+מבחן רף
+\bar default
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+פ הסטטיסטי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\mathcal{S}=\left\{ f\left(x\right)<\alpha_{0}\right\} $
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\bar under
+נראות
+\bar default
+ לפי 
+\begin_inset Formula $H$
+\end_inset
+
+ של דגימה 
+\begin_inset Formula $X=s$
+\end_inset
+
+ היא 
+\begin_inset Formula $P_{H}\left(X=s\right)$
+\end_inset
+
+.
+ 
+\bar under
+יחס הנראות
+\bar default
+ בנקודה 
+\begin_inset Formula $X=s$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\frac{P_{H_{0}}\left(X=j\right)}{P_{H_{1}}\left(X=j\right)}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $D$
+\end_inset
+
+ התפלגות לא ידועה.
+ 
+\bar under
+דגימות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת
+\bar default
+ מהתפלגות 
+\begin_inset Formula $D$
+\end_inset
+
+ זו סדרת ערכים 
+\begin_inset Formula $\left(x_{1},\dots,x_{n}\right)$
+\end_inset
+
+ המתקבלת מ-
+\begin_inset Formula $\left(X_{1},\dots,X_{n}\right)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $X_{j}\sim D$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $D$
+\end_inset
+
+ התפלגות שהיא אחת מבין 
+\begin_inset Formula $D_{0},D_{1}$
+\end_inset
+
+.
+ נסמן ב-
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ את ההשערה ש-
+\begin_inset Formula $D=D_{0}$
+\end_inset
+
+ וב-
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ את ההשערה ש-
+\begin_inset Formula $D=D_{1}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+
+\bar under
+מבחן
+\bar default
+ הוא קבוצה 
+\begin_inset Formula $S\subseteq\fldr^{n}$
+\end_inset
+
+ כך שלכל דגימה 
+\begin_inset Formula $\left(x_{1},\dots,x_{n}\right)$
+\end_inset
+
+, אם 
+\begin_inset Formula $\left(x_{1},\dots,x_{n}\right)\in S$
+\end_inset
+
+ נדחה את 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ ואחרת נקבל את 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+\end_layout
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $D$
+\end_inset
+
+ התפלגות בדידה או רציפה בהחלט, 
+\begin_inset Formula $\left(x_{1},\dots,x_{n}\right)$
+\end_inset
+
+ דגימה.
+ 
+\bar under
+פונקציית הנראות
+\bar default
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\begin{align*}
+\mathcal{L}_{D}\left(x_{1},\dots,x_{n}\right) & =P_{D}\left(X_{1}=x_{1},\ldots,X_{n}=x_{n}\right)\\
+ & =\prod_{j=1}^{n}P_{D}\left(X_{j}=x_{j}\right)\\
+ & =\prod_{j=1}^{n}f_{X_{n}}\left(x_{j}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+\begin_layout Enumerate
+נאמר ש-
+\begin_inset Formula $C=\left\{ X\in S\right\} $
+\end_inset
+
+ הוא 
+\bar under
+מבחן יחס נראות
+\bar default
+ עם רף 
+\begin_inset Formula $\eta$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\left(x_{1},\dots,x_{n}\right)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $r\left(x_{1},\dots,x_{n}\right)<\eta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(x_{1},\dots,x_{n}\right)\in S$
+\end_inset
+
+ ואם 
+\begin_inset Formula $r\left(x_{1},\dots,x_{n}\right)>\eta$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x_{1},\dots,x_{n}\right)\notin S$
+\end_inset
+
+.
+\end_layout
+\end_body
+\end_document

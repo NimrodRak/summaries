@@ -1,0 +1,585 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{dsfont}
+\usepackage{polynom}
+
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+
+\setcounter{page}{1}
+\usepackage{qtree}
+\newcommand*{\defeq}{\stackrel{\mathsmaller{\mathsf{def}}}{=}}
+
+\usepackage{tikz}
+\usepackage[pdfpagelabels]{hyperref}
+\hypersetup{
+    linktoc=all,
+    colorlinks,
+	linkcolor=teal,
+    bookmarksopen=true,         
+    bookmarksopenlevel=2
+}
+\definecolor{darkgreen}{RGB}{0,100,0}
+\definecolor{realbrown}{RGB}{80,60,0}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "Arial"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.1cm
+\topmargin 2.1cm
+\rightmargin 2.1cm
+\bottommargin 2.1cm
+\secnumdepth 2
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 1
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "keywordstyle={\color{red}},stringstyle={\color{darkgreen}},commentstyle={\color{realbrown}},identifierstyle={\color{blue}}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size giant
+מבוא לרשתות תקשורת |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+67594
+\numeric off
+
+\begin_inset VSpace 40bp
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+הרצאות | פרופ' מיכאל שפירא
+\size giant
+ 
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size larger
+כתיבה | נמרוד רק
+\size giant
+
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size large
+תשפ
+\begin_inset Quotes erd
+\end_inset
+
+ג סמסטר א'
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+
+\size giant
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\size default
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset FormulaMacro
+\newcommand{\desc}[2]{\underset{#2}{\underline{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oh}{\mathcal{O}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oo}[1]{\oh\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\om}[1]{\Omega\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ot}[1]{\Theta\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldr}{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldc}{\mathbb{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\em}{\omega}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\k}{\mathcal{K}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\c}{\mathcal{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\m}{\mathcal{M}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset FormulaMacro
+\newcommand{\fldn}{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldz}{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mez}[1]{\mathds{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\boxo}[1]{\begin{array}{|c|}
+\hline #1\\\hline \end{array}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\var}[1]{\textrm{var}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\left\Vert #1\right\Vert }
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xy}[2]{\left(\begin{smallmatrix}#1\\
+ #2 
+\end{smallmatrix}\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\lambda}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\corr}[1]{\textrm{corr}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bin}[1]{\textrm{Bin}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ber}[1]{\textrm{Ber}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\geo}[1]{\textrm{Geo}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\unif}[1]{\textrm{Unif}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dx}{\;\textrm{dx}}
+{\textrm{dx}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dt}{\;\textrm{dt}}
+{\textrm{dt}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\d}[1]{\;\textrm{d#1}}
+{\textrm{d#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ift}{\mathbb{\mathcal{\int\limits _{-\infty}^{\infty}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\os}{\textrm{OS}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cs}{\textrm{cs}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{\textrm{VM}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+שבוע -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+, הרצאה/תרגול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+, מסקנות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{I
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ | 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\end_body
+\end_document

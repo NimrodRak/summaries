@@ -1,0 +1,7553 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+
+
+\newcommand*{\defeq}{\stackrel{\mathsmaller{\mathsf{def}}}{=}}
+\makeatletter
+\def\moverlay{\mathpalette\mov@rlay}
+\def\mov@rlay#1#2{\leavevmode\vtop{%
+   \baselineskip\z@skip \lineskiplimit-\maxdimen
+   \ialign{\hfil$\m@th#1##$\hfil\cr#2\crcr}}}
+\newcommand{\charfusion}[3][\mathord]{
+    #1{\ifx#1\mathop\vphantom{#2}\fi
+        \mathpalette\mov@rlay{#2\cr#3}
+      }
+    \ifx#1\mathop\expandafter\displaylimits\fi}
+\makeatother
+
+\newcommand{\cupdot}{\charfusion[\mathbin]{\cup}{\cdot}}
+\newcommand{\bigcupdot}{\charfusion[\mathop]{\bigcup}{\cdot}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "Arial"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.1cm
+\topmargin 2.1cm
+\rightmargin 2.1cm
+\bottommargin 2.1cm
+\secnumdepth -1
+\tocdepth 1
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size giant
+הסתברות ושימושיה
+\begin_inset VSpace 40bp
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+הרצאות | ד
+\begin_inset Quotes erd
+\end_inset
+
+ר יוסי שמאי
+\size giant
+
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size larger
+כתיבה | נמרוד רק
+\size giant
+
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size large
+תשפ
+\begin_inset Quotes erd
+\end_inset
+
+א סמסטר ב'
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size giant
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\size default
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\heb}[1]{\text{#1}}
+{#1}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldr}{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldc}{\mathbb{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sp}{\textrm{sp}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\matn}{M_{n}(F)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\matm}{M_{m\times n}(F)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\adj}{\textrm{adj}\,}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\fldr}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\left\Vert #1\right\Vert }
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vx}{\vec{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vy}{\vec{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lims}[2]{\lim\limits _{#1\to#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\defeq}{\overset{\mathrm{def}}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\id}[2]{M_{#2}^{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rep}[2]{\left[#1\right]_{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}[1]{\textrm{Pr}\,\left(#1\right)}
+{\textrm{Pr\left(#1\right)}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mf}{\mathcal{F}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\px}[1]{\textrm{Px}\,\left(#1\right)}
+{\textrm{Px\left(#1\right)}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}[1]{\textrm{Fx}\,\left(#1\right)}
+{\textrm{Fx\left(#1\right)}}
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מאורע
+\bar default
+ הוא תוצאה של ניסוי או מדידה כלשהי.
+ 
+\bar under
+הסתברות
+\bar default
+ היא ערך מספרי למאורעות שונים.
+ אוסף כל המאורעות האפשריים בניסוי מסויים נקרא 
+\bar under
+מרחב המדגם
+\bar default
+ ומסומן ב-
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+הטלת מטבע.
+ 
+\begin_inset Formula $\Omega=\left\{ T,H\right\} $
+\end_inset
+
+ )
+\lang english
+Tail & Heads
+\lang hebrew
+(.
+ אנו מניחים שאין עוד אפשרויות לניסוי.
+ 
+\begin_inset Formula $\pr T=\frac{1}{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\pr H=\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+זורקים קוביה.
+ 
+\begin_inset Formula $\Omega=\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr i=\frac{1}{6}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i\in\left[6\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+זורקים שתי קוביות.
+ 
+\begin_inset Formula $\Omega=\left\{ \left(i,j\right):i,j\in\left[6\right]\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+גילו של אדם כלשהו )בשנים(.
+ 
+\begin_inset Formula $\Omega_{1}=\left\{ x\in\fldr:x\ge0\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Omega_{2}=\mathbb{N}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+A=\textrm{someone 60 y/o} & \overset{\Omega_{1}}{=}\left\{ x\in\fldr:60\leq x\leq61\right\} \\
+ & \overset{\Omega_{2}}{=}\left\{ 60\right\} 
+\end{align*}
+
+\end_inset
+
+לכן זה משנה מה מרחב המדגם שלנו!
+\end_layout
+
+\begin_layout Subsection*
+פעולות על מאורעות
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+חיתוך
+\bar default
+: אם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ מאורעות, גם 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ מאורע.
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+איחוד
+\bar default
+: אם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ מאורעות, גם 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ מאורע.
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+משלים
+\bar default
+: אם 
+\begin_inset Formula $A$
+\end_inset
+
+ מאורע, 
+\begin_inset Formula $A^{c}=\left\{ x\in\Omega:x\notin A\right\} $
+\end_inset
+
+ מאורע.
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+הפרש
+\bar default
+: 
+\begin_inset Formula $A\backslash B=A\cap B^{c}$
+\end_inset
+
+ מאורע.
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+הפרט סימטרי
+\bar default
+: 
+\begin_inset Formula $A\Delta B=\left(A\backslash B\right)\cup\left(B\backslash A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה תהי 
+\begin_inset Formula $\Omega\neq\varnothing$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה של קבוצות כך ש-
+\begin_inset Formula $A_{n}\subseteq\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\bigcap\limits _{n=1}^{\infty}A_{n}=\left\{ x\in\Omega:x\in A_{n},\forall n\in\mathbb{N}\right\} $
+\end_inset
+
+ וגם 
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}A_{n}=\left\{ x\in\Omega:\exists n\in\mathbb{N},x\in A_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נגדיר 
+\begin_inset Formula $A_{n}=[0,\frac{1}{n})$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}A_{n}=A_{1}=[0,1)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\bigcap\limits _{n=1}^{\infty}A_{n}=\left\{ 0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה תהי 
+\begin_inset Formula $\Omega\neq\varnothing$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\mathcal{F}\subseteq2^{\Omega}$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $2^{\Omega}=P\left(\Omega\right)$
+\end_inset
+
+ קבוצת כל תתי הקבוצות של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+(.
+ נאמר כי 
+\begin_inset Formula $\left(\Omega,\mathcal{F}\right)$
+\end_inset
+
+ היא 
+\bar under
+
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה
+\bar default
+ אם מתקיימות התכונות הבאות:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\mathcal{F}\neq\varnothing$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall A\in\mathcal{F}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $A^{c}=\Omega\backslash A\in\mf$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $A_{n}\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}A_{n}\in\mf$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה תהי 
+\begin_inset Formula $\left(\Omega,\mf\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה ויהיו 
+\begin_inset Formula $A_{1},\dots,A_{N}\in\mf$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\bigcup\limits _{n=1}^{N}A_{n}=A_{1}\cup\dots\cup A_{N}=A_{1}\cup\dots\cup A_{N}\cup A_{N}\cup\dots=\bigcup\limits _{n=1}^{\infty}A_{n}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\forall n\geq N$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $A_{n}=A_{N}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\bigcup\limits _{n=1}^{N}A_{n}\in\mf$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mf$
+\end_inset
+
+ סגורה לאיחודים סופיים.
+\end_layout
+
+\begin_layout Description
+משפט )דה מורגן( 
+\begin_inset Formula $\forall A,B\in\Omega$
+\end_inset
+
+ מתקיים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(A\cup B\right)^{c}=A^{c}\cap B^{c}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(A\cap B\right)^{c}=A^{c}\cup B^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+)ברור(
+\end_layout
+
+\begin_layout Description
+מסקנה תהי 
+\begin_inset Formula $\left(\Omega,\mf\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה.
+ 
+\begin_inset Formula $\forall A,B\in\mf$
+\end_inset
+
+, גם 
+\begin_inset Formula $A\cap B\in\mf$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(A\cap B\right)^{c}=A^{c}\cup B^{c}\in\mf$
+\end_inset
+
+ ולכן מסגירות 
+\begin_inset Formula $\mf$
+\end_inset
+
+ למשלים, גם 
+\begin_inset Formula $A\cap B\in\mf$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )דה מורגן המוכלל( יהיו 
+\begin_inset Formula $A_{1},\dots\subseteq\Omega$
+\end_inset
+
+ אזי:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\bigcup\limits _{n=1}^{\infty}A_{n}\right)^{c}=\bigcap\limits _{n=1}^{\infty}A_{n}^{c}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\bigcap\limits _{n=1}^{\infty}A_{n}\right)^{c}=\bigcup\limits _{n=1}^{\infty}A_{n}^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+)כמו דה מורגן הרגיל(.
+\end_layout
+
+\begin_layout Description
+מסקנה תהי 
+\begin_inset Formula $\left(\Omega,\mf\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה.
+ אם 
+\begin_inset Formula $A_{n}\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $\bigcap\limits _{n=1}^{\infty}A_{n}\in\mf$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+כמו המסקנה הקודמת.
+\end_layout
+
+\begin_layout Description
+הגדרה תהי 
+\begin_inset Formula $\left(\Omega,\mf\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה.
+ פונקציה 
+\begin_inset Formula $\textrm{Pr}:\mf\rightarrow\fldr$
+\end_inset
+
+ תקרא 
+\bar under
+פונקציית הסתברות
+\bar default
+ אם מתקיימות התכונות הבאות:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall A\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $0\leq\pr A\leq1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\pr{\Omega}=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ לכל סדרה 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $A_{n}\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\forall n\neq m\in\mathbb{N}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A_{n}\cap A_{m}=\varnothing$
+\end_inset
+
+, מתקיים
+\begin_inset Formula 
+\[
+\pr{\bigcup\limits _{n=1}^{\infty}A_{n}}=\sum\limits _{n=1}^{\infty}\pr{A_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה בפרט מתכונה 
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ נובע שהגבול חייב להיות קיים.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $\left(\Omega,\mf\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה, אזי מהיות 
+\begin_inset Formula $\mf\neq\varnothing$
+\end_inset
+
+, הרי שקיימת 
+\begin_inset Formula $A\subseteq\Omega$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $A\in\mf$
+\end_inset
+
+ לכן 
+\begin_inset Formula $A^{c}\subseteq\mf$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\Omega=A\cup A^{c}\in\mf$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr{\Omega}$
+\end_inset
+
+ מוגדרת.
+\end_layout
+
+\begin_layout Subsection*
+מסקנות
+\end_layout
+
+\begin_layout Enumerate
+נבחר 
+\begin_inset Formula $A_{1}=\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $A_{n}=\varnothing$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\geq2$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}A_{n}=\Omega$
+\end_inset
+
+ וגם כי 
+\begin_inset Formula $A_{n}\cap A_{m}=\varnothing$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\neq m\in\mathbb{N}$
+\end_inset
+
+.
+ לכן מ-
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+1=\pr{\Omega} & =\pr{\biguplus\limits _{n=1}^{\infty}A_{n}}=\sum\limits _{n=1}^{\infty}\pr{A_{n}}\\
+ & =\lims n{\infty}\sum\limits _{n=1}^{N}\pr{A_{n}}=\lims n{\infty}\pr{A_{1}}+\sum\limits _{n=2}^{N}\pr{A_{n}}\\
+ & =1+\lims n{\infty}\sum\limits _{n=2}^{N}\pr{A_{n}}=1+\lims n{\infty}\left(N-1\right)\pr{\varnothing}
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\lims n{\infty}\left(N-1\right)\pr{\varnothing}=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr{\varnothing}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+בהינתן 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $A\cap B=\varnothing$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $A_{1}=A$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}=B$
+\end_inset
+
+ ו- 
+\begin_inset Formula $A_{n}=\varnothing$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\geq3$
+\end_inset
+
+ לכן
+\begin_inset Formula 
+\[
+\pr{A\biguplus B}=\pr{\biguplus\limits _{n=1}^{\infty}A_{n}}=\sum\limits _{n=1}^{\infty}\pr{A_{n}}=\pr A+0
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\pr{A\biguplus B}=\pr A+\pr B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall A\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $A\cap A^{c}=\varnothing$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+1=\pr{\Omega}=\pr{A\biguplus A^{c}}=\pr A+\pr{A^{c}}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\pr{A^{c}}=1-\pr A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ קבוצה, אזי:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\Omega,2^{\Omega}\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $\mf=\left\{ \varnothing,\Omega\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(\Omega,\mf\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ תהי 
+\begin_inset Formula $\Omega,\varnothing\neq A\subseteq\Omega$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\mf=\left\{ \varnothing,\Omega,A,A^{c}\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(\Omega,\mf\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+זורקים קוביה בעלת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פאות.
+ נגדיר 
+\begin_inset Formula $\Omega=\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\mf=2^{\Omega}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\textrm{Pr}:\mf\rightarrow\fldr$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\pr i=\frac{1}{6}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i\in\left[6\right]$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\textrm{Pr}$
+\end_inset
+
+ פ' הסתברות.
+\begin_inset Newline newline
+\end_inset
+
+א.
+ מהו הסיכוי שיצאה תוצאה זוגית? 
+\begin_inset Formula $\pr{\left\{ 2,4,6\right\} }=\pr 2+\pr 4+\pr 6=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\frac{3}{6}=\frac{1}{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ב.
+ מה הסיכוי שהתוצאה לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+? 
+\begin_inset Formula $\pr{1,2,3,4,6}=1-\pr 5=1-\frac{1}{6}=\frac{5}{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+זורקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קוביות.
+ נגדיר 
+\begin_inset Formula $\Omega=\left\{ \left(i,j\right):i,j\in\left[6\right]\right\} $
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $\pr{i,j}=\frac{1}{36}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\left(i,j\right)\in\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+א.
+ מהו 
+\begin_inset Formula $\left|\Omega\right|$
+\end_inset
+
+? 
+\begin_inset Formula $\left|\Omega\right|=36$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ב.
+ מה הסיכוי שסכום התוצאות הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+? 
+\begin_inset Formula $A=\left\{ \left(1,5\right),\left(2,5\right),\left(3,3\right),\left(4,2\right),\left(5,1\right)\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr A=\frac{5}{35}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ג.
+ מה הסיכוי שהקוביה הראשונה יצאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+? 
+\begin_inset Formula $A=\left\{ \left(6,i\right):i\in\left[6\right]\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\pr A=\frac{6}{36}=\frac{1}{6}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ד.
+ מה הסיכוי שסכום הקוביות הוא זוגי? 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $\forall\omega\in\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{\omega}$
+\end_inset
+
+ זהה ואם 
+\begin_inset Formula $\left|\Omega\right|$
+\end_inset
+
+ סופית אזי 
+\begin_inset Formula $\pr{\omega}=\frac{1}{\left|\Omega\right|}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\omega\in\Omega$
+\end_inset
+
+.
+ ולכן 
+\begin_inset Formula $\pr A=\frac{\left|A\right|}{\left|\Omega\right|}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall A\subseteq\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
+\begin_inset Formula $\mathbb{II}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טענה )מונוטוניות( תהי 
+\begin_inset Formula $\left(\Omega,\mf\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה ותהי 
+\begin_inset Formula $\textrm{Pr}:\mf\rightarrow\fldr$
+\end_inset
+
+ פ' הסתברות.
+ יהיו 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\pr A\leq\pr B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $B=\left(B\backslash A\right)\biguplus A$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\pr B=\pr{B\backslash A}+\pr A\geq\pr A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אפילו שיכול להיות שההסתברות של מאורע מסוים היא אפס )אפילו כל מאורע(,
+ זה לא אומר שאין סיכוי שהמאורע יקרה.
+ לדוגמה, הטלת מספר ממשי בין 
+\begin_inset Formula $0$
+\end_inset
+
+ ל-
+\begin_inset Formula $1$
+\end_inset
+
+.
+ ההסתברות להטיל חצי היא 
+\begin_inset Formula $0$
+\end_inset
+
+, אבל ההסתברות להגריל מספר מ-
+\begin_inset Formula $0$
+\end_inset
+
+ עד 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה השלשה 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ נקראת מרחב ההסתברות.
+\end_layout
+
+\begin_layout Description
+טענה )הכלה והדחה 
+\begin_inset Formula $n=2$
+\end_inset
+
+( יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מרחב הסתברות ויהיו 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\pr{A\cup B}=\pr A+\pr B-\pr{A\cap B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A\cup B=\left(A\backslash B\right)\biguplus\left(B\backslash A\right)\biguplus\left(A\cap B\right)$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $B=\left(B\backslash A\right)\biguplus\left(B\cap A\right)$
+\end_inset
+
+ ולכן מההוכחה של מונוטוניות, 
+\begin_inset Formula $\pr{B\backslash A}=\pr B-\pr{A\cap B}$
+\end_inset
+
+ ובאותו האופן עבור 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\pr{A\cup B} & =\pr{A\backslash B}+\pr{B\backslash A}+\pr{A\cap B}\\
+ & =\pr A-\pr{A\cap B}+\pr B-\pr{A\cap B}+\pr{A\cap B}\\
+ & =\pr A+\pr B-\pr{A\cap B}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+תרגיל זורקים שני מטבעות.
+ מה הסיכוי שלפחות אחד מהם יצא פלי?
+\end_layout
+
+\begin_layout Description
+פתרון 
+\begin_inset Formula $\Omega=\left\{ \left(H,H\right),\left(H,T\right),\left(T,H\right),\left(T,T\right)\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr A=\frac{\left|A\right|}{4}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall A\in\mf=2^{\Omega}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $A$
+\end_inset
+
+ להיות המאורע שלפחות אחת מהתוצאות היא פלי, 
+\begin_inset Formula $A=\left\{ \left(H,H\right),\left(H,T\right),\left(T,H\right)\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr A=\frac{1}{4}+\frac{1}{4}+\frac{1}{4}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לחלופין, 
+\begin_inset Formula $\pr{A^{c}}=\pr{\left\{ \left(T,T\right)\right\} }=\frac{1}{4}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr A=\frac{3}{4}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לחלופין, נגדיר 
+\begin_inset Formula $A$
+\end_inset
+
+ המאורע שהראשון יצא 
+\begin_inset Formula $H$
+\end_inset
+
+ ו-
+\begin_inset Formula $B$
+\end_inset
+
+ המאורע שהשני יצא 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{A\cup B}=\pr A+\pr B-\pr{A\cap B}=\frac{1}{2}+\frac{1}{2}-\frac{1}{4}=\frac{3}{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה לכל שני מאורעות 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{A\cup B}\leq\pr A+\pr B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה )הכלה והדחה 
+\begin_inset Formula $n=3$
+\end_inset
+
+( יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה אזי 
+\begin_inset Formula $\forall A,B,C\in\mf$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\pr{A\cup B\cup C}=\pr A+\pr B+\pr C-\pr{A\cap B}-\pr{A\cap C}-\pr{B\cap C}+\pr{A\cap B\cap C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{align*}
+\pr{A\cup B\cup C} & =\pr{A\cup B}+\pr C-\pr{\left(A\cup B\right)\cap C}\\
+ & =\pr A+\pr B-\pr{A\cap B}+\pr C-\pr{\left(A\cap C\right)\cup\left(B\cap C\right)}\\
+ & =\pr A+\pr B+\pr C-\pr{A\cap B}-\pr{A\cap C}-\pr{B\cap C}+\pr{\left(A\cap C\right)\cap\left(B\cap C\right)}\\
+ & =\pr A+\pr B+\pr C-\pr{A\cap B}-\pr{A\cap C}-\pr{B\cap C}+\pr{A\cap B\cap C}
+\end{align*}
+
+\end_inset
+
+כשהמעברים נובעים פשוט משימוש בהכלה והדחה עבור 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ יקרא 
+\bar under
+מ
+\begin_inset Quotes erd
+\end_inset
+
+ה סופי
+\bar default
+ אם 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ סופי.
+ 
+\begin_inset Formula $\textrm{Pr}$
+\end_inset
+
+ תקרא 
+\bar under
+הסתברות אחידה
+\bar default
+ אם 
+\begin_inset Formula $\forall\omega_{1},\omega_{2}\in\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{\left\{ \omega_{1}\right\} }=\pr{\left\{ \omega_{2}\right\} }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה סופי ו-
+\begin_inset Formula $\textrm{Pr}$
+\end_inset
+
+ הסתברות אחידה וגם 
+\begin_inset Formula $\left\{ \omega\right\} \in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\omega\in\Omega$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\forall A\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\pr A=\sum\limits _{\omega\in A}\pr{\left\{ \omega\right\} }=\frac{\left|A\right|}{\left|\Omega\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+בקופסה חמישה כדורים שחורים ושלושה לבנים.
+ בוחרים באקראי כדור ומחזירים אותו לקופסה ושוב מגרילים עוד כדור אקראית מתוך
+ הכדור.
+\begin_inset Newline newline
+\end_inset
+
+א.
+ מה הסיכוי שהכדור הראשון שחור? 
+\begin_inset Formula $\Omega=\left[8\right]$
+\end_inset
+
+, 
+\begin_inset Formula $B=\left[5\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr B=\frac{\left|B\right|}{\left|\Omega\right|}=\frac{5}{8}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ב.
+ מה הסיכוי ששני הכודרים בצבעים שונים זה מזה? 
+\begin_inset Formula $\Omega=\left[8\right]\times\left[8\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\Omega\right|=64$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא המאורע שהראשון שחור והשני לבן ו-
+\begin_inset Formula $B$
+\end_inset
+
+ הוא המאורע שהראשון לבן והשני שחור.
+ 
+\begin_inset Formula $\pr{A\biguplus B}=\pr A+\pr B=\frac{5\cdot3}{64}+\frac{3\cdot5}{64}=\frac{15}{32}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ג.
+ מה הסיכוי שלפחות אחד מהם שחור? זה ההסתברות של המקרה הקודם איחוד זה עם 
+\begin_inset Formula $C$
+\end_inset
+
+ שהוא המאורע ששניהם שחורים.
+ 
+\begin_inset Formula $\pr C=\frac{\left|C\right|}{\left|\Omega\right|}=\frac{25}{64}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{\left(A\cup B\right)\biguplus C}=\frac{30}{64}+\frac{25}{64}=\frac{55}{64}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מגרילים מספר שלם בין 
+\begin_inset Formula $1$
+\end_inset
+
+ ל-
+\begin_inset Formula $100$
+\end_inset
+
+.
+ מה הסיכוי שהוא לא מתחלק ב-
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולא ב-
+\numeric on
+7
+\numeric off
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Omega=\left[100\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ המאורע שהמספר מתחלק ב-
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\begin_inset Formula $B$
+\end_inset
+
+ המאורע שהמספר מתחלק ב-
+\begin_inset Formula $7$
+\end_inset
+
+.
+ נרצה את 
+\begin_inset Formula $\pr{\left(A\cup B\right)^{c}}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\pr{\left(A\cup B\right)^{c}}=1-\pr{A\cup B}=1-\left(\pr A+\pr B-\pr{A\cap B}\right)=1-\left(\frac{20}{100}+\frac{14}{100}-\frac{2}{100}\right)=1-\frac{32}{100}=\frac{17}{25}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מה הסיכוי שמתוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+57
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משפטים באינפי, שניים מהם בדיוק היו המשפט הנורא ומונוטוניות הגבול?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|\Omega\right|={57 \choose 2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|A\right|=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr A=\frac{1}{{57 \choose 2}}=\frac{1}{57\cdot28}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מה הסיכוי לשלוף אקראית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קלפים מתוך חפיסה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+52
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קלפים ולקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אסים.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|\Omega\right|={52 \choose 4}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|A\right|=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr A=\frac{1}{{52 \choose 4}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
+\begin_inset Formula $\mathbb{III}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תרגילים
+\end_layout
+
+\begin_layout Enumerate
+מערבבים חפיסה של 
+\begin_inset Formula $52$
+\end_inset
+
+ קלפים.
+ מה הסיכוי שלאחר הערבוב החפיסה חזרה לסידור המקורי?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|\Omega\right|=52!$
+\end_inset
+
+, 
+\begin_inset Formula $\left|A\right|=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr A=\frac{1}{52!}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מערבים חפיסה של 
+\begin_inset Formula $52$
+\end_inset
+
+ קלפים ומחלקים אותה בין 
+\begin_inset Formula $4$
+\end_inset
+
+ שחקנים כך שכל שחקן יקבל 
+\begin_inset Formula $13$
+\end_inset
+
+ קלפים.
+ מה הסיכוי שאחד השחקנים יקבל את כל הלבבות.
+\begin_inset Newline newline
+\end_inset
+
+נסמן ב-
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ את המאורע שהשחקן ה-
+\begin_inset Formula $i$
+\end_inset
+
+ קיבל את כל הלבבות.
+\begin_inset Formula 
+\[
+\pr{\biguplus\limits _{i=1}^{4}A_{i}}=4\pr{A_{1}}=4\cdot\frac{39!}{52!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בכיתה יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+טורקים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הודים ו-
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סינים.
+ בוחרים שני תלמידים באקראי.
+\begin_inset Newline newline
+\end_inset
+
+מה היסיכוי שהראשון הודי?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\pr A=\frac{5}{16}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מה הסיכוי שבחרנו שני הודים?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\pr A=\frac{{5 \choose 2}}{{16 \choose 2}}=\frac{10}{20}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מה הסיכוי שבחרנו שני תלמידים מאותו מוצא?
+\begin_inset Formula 
+\begin{align*}
+\pr A & =\pr{H,H}+\pr{C,C}+\pr{T,T}\\
+ & =\frac{{5 \choose 2}}{{16 \choose 2}}+\frac{{4 \choose 2}}{{16 \choose 2}}+\frac{{7 \choose 2}}{{16 \choose 2}}\\
+ & =\frac{37}{120}
+\end{align*}
+
+\end_inset
+
+מה הסיכוי שלפחות אחד הילדים הוא הודי? 
+\begin_inset Formula 
+\begin{align*}
+\pr A & =\pr{H,H}+\pr{C,H}+\pr{T,H}\\
+ & =\frac{{5 \choose 2}}{{16 \choose 2}}+\frac{{4 \choose 1}{5 \choose 1}}{{16 \choose 2}}+\frac{{7 \choose 1}{5 \choose 1}}{{16 \choose 2}}\\
+ & =\frac{10+20+35}{120}=\frac{13}{24}
+\end{align*}
+
+\end_inset
+
+מה הסיכוי ששני הילדים שבחרנו הם ממוצא שונה?
+\begin_inset Formula 
+\begin{align*}
+\pr A & =\pr{T,H}+\pr{C,H}+\pr{T,C}\\
+ & =\frac{7\cdot5}{{16 \choose 2}}+\frac{4\cdot5}{{16 \choose 2}}+\frac{7\cdot4}{{16 \choose 2}}=\frac{83}{120}\\
+ & =1-\frac{37}{120}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+בעיה )בעיית יום ההולדת( בבחירת 
+\begin_inset Formula $k$
+\end_inset
+
+ אנשים, מה הסיכוי שלפחות לשניים מהם יהיה יומולדת באותו היום?
+\end_layout
+
+\begin_layout Description
+פתרון יהי 
+\begin_inset Formula $A$
+\end_inset
+
+ המאורע הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+ 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ הוא כל התאריכים האפשריים ל-
+\begin_inset Formula $k$
+\end_inset
+
+ אנשים.
+ 
+\begin_inset Formula $\left|\Omega\right|=365^{k}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A^{c}$
+\end_inset
+
+ הוא המאורע שאין שניים שנולדו באותו התאריך.
+ 
+\begin_inset Formula $\left|A^{c}\right|=365\cdot364\cdot\dots\cdot\left(365-k+1\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{A^{c}}=\frac{365\cdot\dots\cdot\left(365-k+1\right)}{365^{k}}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr A=1-\pr{A^{c}}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $k=25$
+\end_inset
+
+, מקבלים 
+\begin_inset Formula $\pr{A^{c}}<\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+בעיה )בעיית הכובעים( יש 
+\begin_inset Formula $n$
+\end_inset
+
+ אנשים ולכל אחד מהם יש כובע יחודי לו.
+ לוקחים להם את כל הכובעים ומחלקים באקראי את הכובעים בין האנשים.
+ מה הסיכוי שאף אחד מהם לא קיבל בחזרה את הכובע שלו?
+\end_layout
+
+\begin_layout Description
+פתרון 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ הוא אוסף כל האפשרויות לסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ כובעים.
+ 
+\begin_inset Formula $\left|\Omega\right|=n!$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $A$
+\end_inset
+
+ המאורע שאף אחד לא קיבל את הכובע של עצמו.
+ לכן 
+\begin_inset Formula $A^{c}$
+\end_inset
+
+ המאורע שלפחות אחד קיבל את כובעו.
+ נסמן 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ את המאורע שהאדם ה-
+\begin_inset Formula $i$
+\end_inset
+
+ קיבל בחזרה את הכובע שלו ולכן 
+\begin_inset Formula $A^{c}=\bigcup\limits _{i=1}^{n}B_{i}$
+\end_inset
+
+ )אבל זה לא איחוד זר(.
+ 
+\begin_inset Formula 
+\[
+\pr{A^{c}}=\pr{\bigcup\limits _{i=1}^{n}B_{i}}=\sum\limits _{i=1}^{n}\pr{B_{i}}-\sum\limits _{1\leq i<j\leq n}\pr{B_{i}\cap B_{j}}+\dots+\left(-1\right)^{n+1}\pr{B_{1}\cap\dots\cap B_{n}}
+\]
+
+\end_inset
+
+.נשים לב כי אין הבדל בין הנאישם ולכן 
+\begin_inset Formula $\pr{B_{i}}=\pr{B_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{B_{i}\cap B_{j}}=\pr{B_{1}\cap B_{i}}$
+\end_inset
+
+ וכו'.
+ לכן 
+\begin_inset Formula $\pr{A^{c}}=\sum\limits _{i=1}^{n}{n \choose i}\left(-1\right)^{i+1}\pr{B_{1}\cap\dots\cap B_{i}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{B_{1}}=\frac{\left|B_{1}\right|}{\left|\Omega\right|}=\frac{\left(n-1\right)!}{n!}=\frac{1}{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{B_{1}\cap B_{2}}=\frac{\left|B_{1}\cap B_{2}\right|}{\left|\Omega\right|}=\frac{\left(n-2\right)!}{n!}=\frac{1}{n\left(n-1\right)}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr{A^{c}}=\sum\limits _{i=1}^{n}\frac{\left(-1\right)^{k+1}}{k!}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr A=1-\pr{A^{c}}=\sum\limits _{i=0}^{n}\frac{\left(-1\right)^{k}}{k!}\underset{n\to\infty}{\longrightarrow}\frac{1}{e}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה מטלים שתי קבויות.
+ מה הסיכוי שהסכום יצא 
+\begin_inset Formula $5$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Omega=\left[6\right]^{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A=\left\{ \left(1,4\right),\left(2,3\right),\left(3,2\right),\left(4,1\right)\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr A=\frac{\left|A\right|}{\left|\Omega\right|}=\frac{1}{9}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נניח שקיבלנו בקוביה הראשונה 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ מה הסיכוי שהסכום יצא 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $F=\left\{ 3\right\} \times\left[6\right]$
+\end_inset
+
+ הוא מרחב המדגם החדש.
+ 
+\begin_inset Formula $B=\left\{ \left(3,2\right)\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr B=\frac{\left|B\right|}{\left|F\right|}=\frac{1}{6}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נשים לב כי 
+\begin_inset Formula $B=A\cap F$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr B=\frac{\left|A\cap F\right|}{\left|F\right|}=\frac{\frac{\left|A\cap F\right|}{\left|\Omega\right|}}{\frac{\left|F\right|}{\left|\Omega\right|}}=\frac{\pr{A\cap F}}{\pr F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהיו 
+\begin_inset Formula $A,F\in\mf$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\pr F\neq0$
+\end_inset
+
+.
+ נגדיר את ה
+\bar under
+הסתברות המותנית
+\bar default
+ של 
+\begin_inset Formula $A$
+\end_inset
+
+ בהינתן המאורע 
+\begin_inset Formula $F$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\pr{A\mid F}=\frac{\pr{A\cap F}}{\pr F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נתונים 
+\begin_inset Formula $5$
+\end_inset
+
+ כדורים צהובים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שחורים ו-
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לבנים בתוך קופסה.
+ בוחרים כדור באקראי.
+ מה הסיכוי שיצא צהוב?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\pr A=\frac{5}{24}=\frac{1}{5}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מה הסיכוי שיצא צהוב בהינתן שלא יצא שחור?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ הוא המאורע שיצא צהוב.
+ 
+\begin_inset Formula $F$
+\end_inset
+
+ הוא המאורע שלא יצא שחור.
+ 
+\begin_inset Formula $\pr{A\mid F}=\frac{\pr{A\cap F}}{\pr F}=\frac{\frac{1}{5}}{\frac{15}{25}}=\frac{1}{3}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ממוציאים שני כדורים )שונים( מהקופסה.
+ מה הסיכוי שהשני צהוב, בהינתן שהראשון צהוב?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ הוא המאורע שהשני צהוב ו-
+\begin_inset Formula $F$
+\end_inset
+
+ הוא המאורע שהראשון צהוב.
+ 
+\begin_inset Formula $\pr{A\mid F}=\frac{\frac{{5 \choose 2}}{{25 \choose 2}}}{\frac{5}{25}}=\frac{\frac{1}{30}}{\frac{1}{5}}=\frac{1}{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
+\begin_inset Formula $\mathbb{IV}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהי 
+\begin_inset Formula $F\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\pr F\neq0$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\forall A\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\textrm{Qr}\left(A\right)=\frac{\pr{A\cap F}}{\pr F}\left(=\pr{A\mid F}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\textrm{Qr}$
+\end_inset
+
+ פ' הסתברות על 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $0\leq\textrm{Qr}\left(A\right)=\frac{\pr{A\cap F}}{\pr F}\leq\frac{\pr F}{\pr F}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\textrm{Qr}\left(\Omega\right)=\frac{\pr{\Omega\cap F}}{\pr F}=\frac{\pr F}{\pr F}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ תהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה של מאורעות זרים.
+\begin_inset Formula 
+\begin{align*}
+\textrm{Qr}\left(\biguplus\limits _{n=1}^{\infty}A_{n}\right) & =\frac{\pr{\left(\biguplus\limits _{n=1}^{\infty}A_{n}\right)\cap F}}{\pr F}\\
+ & =\frac{\pr{\biguplus\limits _{n=1}^{\infty}\left(A_{n}\cap F\right)}}{\pr F}\\
+ & =\frac{\sum\limits _{n=1}^{\infty}\pr{A_{n}\cap F}}{\pr F}\\
+ & \overset{\left(*\right)}{=}\sum\limits _{n=1}^{\infty}\frac{\pr{A_{n}\cap F}}{\pr F}\\
+ & =\sum\limits _{n=1}^{\infty}\textrm{Qr}\left(A_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\left(\biguplus\limits _{n=1}^{\infty}A_{n}\right)\cap F$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\in\biguplus\limits _{n=1}^{\infty}A_{n}$
+\end_inset
+
+ כלומר אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ וגם קיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x\in A_{n}$
+\end_inset
+
+ כלומר אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $x\in A_{n}\cap F$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x\in\biguplus\limits _{n=1}^{\infty}\left(A_{n}\cap F\right)$
+\end_inset
+
+.
+ בנוסף 
+\begin_inset Formula $\left(A_{i}\cap F\right)\cap\left(A_{j}\cap F\right)=A_{i}\cap A_{j}\cap F=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהיו 
+\begin_inset Formula $A_{1},\dots,A_{n}\subseteq\Omega$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $A_{1},\dots,A_{n}$
+\end_inset
+
+ הם 
+\bar under
+חלוקה
+\bar default
+ של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ אם:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\bigcup\limits _{i=1}^{n}A_{i}=\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $i\neq j\Rightarrow A_{i}\cap A_{j}=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $A_{1},\dots,A_{n}$
+\end_inset
+
+ הם חלוקה של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\forall B\subseteq\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $B=B\cap\Omega=B\cap\left(\biguplus\limits _{i=1}^{n}A_{i}\cap B\right)=\biguplus\limits _{i=1}^{n}A_{i}\cap B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ותהי 
+\begin_inset Formula $A_{1},\dots,A_{n}\in\mf$
+\end_inset
+
+ חלוקה של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\forall B\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\pr B=\sum\limits _{i=1}^{n}\pr{A_{i}\cap B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה )חוק ההסתברות השלמה( יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ותהי 
+\begin_inset Formula $A_{1},\dots,A_{n}\in\mf$
+\end_inset
+
+ חלוקה של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ נניח כי 
+\begin_inset Formula $\pr{A_{i}}\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i\in\left[n\right]$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\forall B\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\pr B=\sum\limits _{i=1}^{n}\pr{B\mid A_{i}}\pr{A_{i}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\pr B=\sum\limits _{i=1}^{n}\pr{A_{i}\cap B}=\sum\limits _{i=1}^{n}\frac{\pr{A_{i}\cap B}}{\pr{A_{i}}}\pr{A_{i}}=\sum\limits _{i=1}^{n}\pr{B\mid A_{i}}\pr{A_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+מסקנה יהי 
+\begin_inset Formula $A\in\mf$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $0<\pr A<1$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $A,A^{c}$
+\end_inset
+
+ חלוקה של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ וכי 
+\begin_inset Formula $1-\pr A=\pr{A^{c}}\neq0$
+\end_inset
+
+.
+ לכן, 
+\begin_inset Formula $\forall B\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\pr B=\pr{B\mid A}\pr A+\pr{B\mid A^{c}}\pr{A^{c}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה )חוק בייס( 
+\begin_inset Formula $\forall A,B\in\mf$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\pr A,\pr B\neq0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\pr{B\mid A}=\pr{A\mid B}\cdot\frac{\pr B}{\pr A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\pr{B\mid A}=\frac{\pr{A\cap B}}{\pr A}=\frac{\pr{A\cap B}}{\pr B}\cdot\frac{\pr B}{\pr A}=\pr{A\mid B}\frac{\pr B}{\pr A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+יוסי מתלבט אם ללמוד ספרות או הסתברות.
+ אם הוא ילמד הסתברות, הוא יעבור את הקורס בהסתברות 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+.
+ אם הוא ילמד ספרות, אז הוא יעבור את הקורס בהסתברות 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+ יוסי החליט לבחור את הקורס באמצעות הטלת מטבע.
+ מה הסיכוי שיוסי עבור את הבחינה בהסתברות?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Omega=\left\{ \left(\text{ה},P\right),\left(\text{ה},F\right),\left(\text{ס},P\right),\left(\text{ס},F\right)\right\} $
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $A=\left\{ \left(\text{ה},P\right),\left(\text{ס},P\right)\right\} $
+\end_inset
+
+ המאורע שיוסי עבר את אחד הקורסים ו-
+\begin_inset Formula $B=\left\{ \left(\text{ה},P\right),\left(\text{ה},F\right)\right\} $
+\end_inset
+
+ המאורע שיוסי למד ספרות.
+ נרצה לחשב את 
+\begin_inset Formula $\pr{A\cap B^{c}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{A\mid B}=\frac{1}{2},\pr{A\mid B^{c}}=\frac{1}{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\pr B=\frac{1}{2}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\pr{A\cap B^{c}}=\pr{A\mid B^{c}}\pr{B^{c}}=\frac{1}{3}\cdot\frac{1}{2}=\frac{1}{6}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מה הסיכוי שיעבור?
+\begin_inset Formula 
+\[
+\pr A=\pr{A\mid B}\pr B+\pr{A\mid B^{c}}\pr{B^{c}}=\frac{1}{2}\cdot\frac{1}{2}+\frac{1}{3}\cdot\frac{1}{2}=\frac{1}{4}+\frac{1}{6}=\frac{5}{12}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+במעבדה לקורונה הסיכוי לחיובי כוזב הוא 
+\begin_inset Formula $5\%$
+\end_inset
+
+ והסיכוי לחיובי כוזב הוא 
+\begin_inset Formula $1\%$
+\end_inset
+
+.
+ מעריכים שבערך 
+\begin_inset Formula $0.5\%$
+\end_inset
+
+ מהאוכלוסיה הם נשאים של וירוס הקורונה.
+ בהינתן שקיבלתי תוצאה חיובית, מה הסיכוי שאני נשא?
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא המאורע שיש לי קורונה.
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ הוא המאורע שהתוצאה חיובית.
+ נרצה לחשב את 
+\begin_inset Formula $\pr{A\mid B}$
+\end_inset
+
+.
+ נתון 
+\begin_inset Formula $\pr A=0.005$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{B\mid A^{c}}\overset{\text{חיובי כוזב}}{=}0.01$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{B^{c}\mid A}\overset{\text{שלילי כוזב}}{=}0.05$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\pr{A\mid B}=\frac{\pr{B\mid A}\cdot\pr A}{\pr B}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\pr{B\mid A}=1-\pr{B^{c}\mid A}=1-0.05=0.95
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\pr B & =\pr{B\mid A}\cdot\pr A+\pr{B\mid A^{c}}\pr{A^{c}}\\
+ & =0.95\cdot0.005+0.01\cdot0.995\\
+ & =0.0147
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pr{A\mid B}=\frac{0.95\cdot0.005}{0.0147}=0.323
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בהנתן שלאדם יש שני ילדים שלפחות אחד מהם הוא בן, מה הסיכוי שגם השני בן?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Omega=\left\{ \cancel{\left(F,F\right)},\left(F,M\right),\left(M,F\right),\left(M,M\right)\right\} $
+\end_inset
+
+.
+ לכן ההסתברות היא 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+פגשתי את הבן והוא גילה אם הוא הבכור או הצעיר.
+ מה הסיכוי שהשני בן?
+\begin_inset Newline newline
+\end_inset
+
+אם הוא אמר שהוא הצעיר אז 
+\begin_inset Formula $\Omega=\left\{ \cancel{\left(F,F\right)}\cancel{,\left(F,M\right)},\left(M,F\right),\left(M,M\right)\right\} $
+\end_inset
+
+ ולכן ההסתברות היא 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ ובאותו האופן אם הוא הבכור ולכן בכל מקרה ההסתברות היא 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+ יהיו 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $A,B$
+\end_inset
+
+ הם 
+\bar under
+בלתי תלויים
+\bar default
+ אם 
+\begin_inset Formula $\pr{A\cap B}=\pr A\cdot\pr B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $\pr A,\pr B\ne0$
+\end_inset
+
+ ו-
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אזי 
+\begin_inset Formula $\pr{A\mid B}=\frac{\pr{A\cap B}}{\pr B}=\pr A$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\pr{B\mid A}=\pr B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אי תלות הוא יחס סימטרי.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+בוחרים קלף מחפיסת קלפים.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא המאורע שיצא אס ו-
+\begin_inset Formula $B$
+\end_inset
+
+ הוא המאורע שיצא לב.
+ האם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\pr A=\frac{4}{52}=\frac{1}{13}$
+\end_inset
+
+, 
+\begin_inset Formula $\pr B=\frac{13}{52}=\frac{1}{4}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{A\cap B}=\frac{1}{52}=\frac{1}{4}\cdot\frac{1}{13}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Enumerate
+זורקים קוביה.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא המאורע שבהטלה הראשונה יצא 
+\begin_inset Formula $4$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ המאורע שהסכום יצא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\begin_inset Formula $C$
+\end_inset
+
+ הוא המאורע שהסכום יצא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+.
+ האם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\pr A=\frac{1}{6}$
+\end_inset
+
+, 
+\begin_inset Formula $\pr B=\pr{\left\{ \left(1,5\right),\left(2,4\right),\left(3,3\right),\left(4,2\right),\left(5,1\right)\right\} }=\frac{5}{36}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{A\cap B}=\pr{\left\{ \left(4,2\right)\right\} }=\frac{1}{36}$
+\end_inset
+
+ ולכן המאורעות תלויים.
+\begin_inset Newline newline
+\end_inset
+
+האם 
+\begin_inset Formula $A,C$
+\end_inset
+
+ בת
+\begin_inset Quotes erd
+\end_inset
+
+ל?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\pr A=\frac{1}{6}$
+\end_inset
+
+, 
+\begin_inset Formula $\pr C=\pr{\left\{ \left(1,6\right),\left(2,5\right),\left(3,4\right),\left(4,3\right),\left(5,2\right),\left(6,1\right)\right\} }=\frac{1}{6}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr{A\cap C}=\pr{\left\{ 4,3\right\} }=\frac{1}{36}=\frac{1}{6}\cdot\frac{1}{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+תרגיל בשקית בלונים יש בלונים ב-
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צבעים: אדום, כחול, צהוב וירוק.
+ נתון כי 
+\begin_inset Formula $15\%$
+\end_inset
+
+ מהבלונים אדומים, 
+\begin_inset Formula $25\%$
+\end_inset
+
+ כחולים, 
+\begin_inset Formula $40\%$
+\end_inset
+
+ צהובים ו-
+\begin_inset Formula $20\%$
+\end_inset
+
+ ירוקים.
+ ההסתברות שבלון אדום יתפוצץ בזמן ניפוח היא 
+\begin_inset Formula $\frac{1}{6}$
+\end_inset
+
+.
+ הסיכוי שכחול יתפוצץ בזמן ניפוח הוא 
+\begin_inset Formula $\frac{1}{8}$
+\end_inset
+
+, של צהוב 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ וירוק 
+\begin_inset Formula $\frac{1}{5}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+א.
+ בוחרים בלון באקראי, מה הסיכוי שהוא יתפוצץ בזמן הניפוח?
+\begin_inset Newline newline
+\end_inset
+
+ב.
+ בהנחה שהבלון שבחרנו התפוצץ, מה הסיכוי שהוא היה אדום?
+\end_layout
+
+\begin_layout Description
+פתרון א.
+ יהי 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ המאורע שבחרנו בלון אדום, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ כחול, 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ צהוב, 
+\begin_inset Formula $A_{4}$
+\end_inset
+
+ ירוק.
+ יהי 
+\begin_inset Formula $B$
+\end_inset
+
+ המאורע שהבלון יתפוצץ בזמן הניפוח.
+\begin_inset Formula 
+\[
+P\left(A_{1}\right)=0.15,P\left(A_{2}\right)=0.25,P\left(A_{3}\right)=0.4,P\left(A_{4}\right)=0.2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(B\mid A_{1}\right)=\frac{1}{6},P\left(B\mid A_{2}\right)=\frac{1}{8},P\left(B\mid A_{3}\right)=\frac{1}{2},P\left(B\mid A_{4}\right)=\frac{1}{5}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $A_{1},\dots,A_{4}$
+\end_inset
+
+ היא חלוקה של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, ולכן 
+\begin_inset Formula 
+\begin{align*}
+P\left(B\right) & =\sum_{i=1}^{4}P\left(B\mid A_{i}\right)P\left(A_{i}\right)\\
+ & =\frac{1}{6}\cdot0.15+\frac{1}{8}\cdot0.25+\frac{1}{2}\cdot0.4+\frac{1}{5}0.2\\
+ & =0.29625
+\end{align*}
+
+\end_inset
+
+ב.
+\begin_inset Formula 
+\[
+P\left(A_{1}\mid B\right)=\frac{P\left(B\mid A_{1}\right)P\left(A_{1}\right)}{P\left(B\right)}=\frac{1}{6}\cdot0.15\cdot0.29625=0.084\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהי 
+\begin_inset Formula $A\in\mf$
+\end_inset
+
+ אזי:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $A,\Omega$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $A,\varnothing$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\pr{A\cap\Omega}=\pr A=\pr A\cdot\pr{\Omega}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\pr{A\cap\varnothing}=\pr{\varnothing}=0=\pr{\varnothing}\pr A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהיו 
+\begin_inset Formula $A,B\in\mf$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אזי גם 
+\begin_inset Formula $A^{c},B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Proof
+נשים לב כי 
+\begin_inset Formula $B=\left(B\cap A\right)\biguplus\left(B\cap A^{c}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr B=\pr{A\cap B}+\pr{A^{c}\cap B}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\begin{align*}
+\pr{A^{c}\cap B} & =\pr B-\pr{A\cap B}\\
+ & =\pr B-\pr A\cdot\pr B\\
+ & =\pr{B\left(1-\pr A\right)}\\
+ & =\pr B\pr{A^{c}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה זורקים שתי קוביות.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא שהקוביה הראשונה יצא 
+\begin_inset Formula $4$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ הקוביה השנייה יצא 
+\begin_inset Formula $2$
+\end_inset
+
+ ו-
+\begin_inset Formula $C$
+\end_inset
+
+ שסכום הקוביות הוא 
+\begin_inset Formula $7$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת וגם כי 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ בנוסף 
+\begin_inset Formula $B,C$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת )מחישוב פשוט(.
+ עם זאת, 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ אינם בלתי תלויים )ברור(.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהיו 
+\begin_inset Formula $A,B,C\in\mf$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ הם 
+\bar under
+בלתי תלויים אם
+\bar default
+: 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת, 
+\begin_inset Formula $A,C$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת וגם 
+\begin_inset Formula $B,C$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת וגם 
+\begin_inset Formula $\pr{A\cap B\cap C}=\pr A\cdot\pr B\cdot\pr C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהיו 
+\begin_inset Formula $A_{1},\dots,A_{n}\in\mf$
+\end_inset
+
+.
+ נאמר כי הם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם 
+\begin_inset Formula $\forall k\in\left[n\right]$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $1\leq i_{1}<\dots<i_{k}\leq n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\pr{A_{i_{1}}\cap\dots\cap A_{i_{k}}}=\pr{A_{i_{1}}}\cdot\ldots\cdot\pr{A_{i_{k}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ותהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת מאורעות.
+ נאמר שהמאורעות הם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם כל תת קבוצה סופית של 
+\begin_inset Formula $\left\{ A_{1},A_{2},\dots\right\} $
+\end_inset
+
+ היא ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהיו 
+\begin_inset Formula $A,B,C\in\mf$
+\end_inset
+
+ אזי
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ ו-
+\begin_inset Formula $B\cup C$
+\end_inset
+
+ הם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ ו-
+\begin_inset Formula $B\backslash C$
+\end_inset
+
+ הם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\pr{A\cap\left(B\cup C\right)} & =\pr{\left(A\cap B\right)\cup\left(A\cap C\right)}\\
+ & =\pr{A\cap B}+\pr{A\cap C}-\pr{A\cap B\cap C}\\
+ & =\pr A\pr B+\pr A\pr C-\pr A\pr B\pr C\\
+ & =\pr A\left(\pr B+\pr C-\pr B\pr C\right)\\
+ & =\pr A\pr{B\cup C}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ נשים לב כי 
+\begin_inset Formula $\pr{A\cap B\cap C}=\pr{A\cap B}\pr C$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ הם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ לכן גם 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+, 
+\begin_inset Formula $C^{c}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ולכן 
+\begin_inset Formula 
+\begin{align*}
+\pr{A\cap\left(B\backslash C\right)} & =\pr{\left(A\cap B\right)\cap C^{c}}\\
+ & =\pr{A\cap B}\pr{C^{c}}\\
+ & =\pr A\pr B\pr{C^{c}}\\
+ & =\pr A\pr{B\cap C^{c}}\\
+ & =\pr A\pr{B\backslash C}
+\end{align*}
+
+\end_inset
+
+ֻ
+\end_layout
+
+\begin_layout Description
+הערה באותו האופן 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז כל מאורע הנוצר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $A$
+\end_inset
+
+ )
+\begin_inset Formula $A,A^{c},\varnothing,\Omega$
+\end_inset
+
+( הוא ב
+\begin_inset Quotes erd
+\end_inset
+
+ת בכל מאורע הנוצר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $B,C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ותהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת מאורעות.
+ נאמר כי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+עולה
+\bar default
+ אם 
+\begin_inset Formula $A_{n}\subseteq A_{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+יורדת
+\bar default
+ אם 
+\begin_inset Formula $A_{n}\supseteq A_{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ותהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה עולה של מאורעות.
+ 
+\begin_inset Formula $\pr{\bigcup\limits _{n=1}^{\infty}A_{n}}=\lim\limits _{N\to\infty}\pr{A_{N}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נביט בסדרה 
+\begin_inset Formula $\left(B_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $B_{1}=A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $B_{2}=A_{2}\backslash A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $B_{n}=A_{n}\backslash A_{n-1}$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $B_{1},B_{2},\dots$
+\end_inset
+
+ הם מאורעות זרים, כלומר 
+\begin_inset Formula $\forall i\ne j$
+\end_inset
+
+, 
+\begin_inset Formula $B_{i}\cap B_{j}=\varnothing$
+\end_inset
+
+.
+ לכן עבור 
+\begin_inset Formula $i<j$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $B_{i}\subseteq A_{i}\subseteq A_{j-1}$
+\end_inset
+
+ ומהיות 
+\begin_inset Formula $A_{j-1}\cap B_{j}=\varnothing$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $B_{i}\cap B_{j}=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בנוסף, 
+\begin_inset Formula $\biguplus\limits _{n=1}^{\infty}B_{n}=\bigcup\limits _{n=1}^{\infty}A_{n}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\biguplus\limits _{n=1}^{N}B_{n}=\bigcup\limits _{n=1}^{N}A_{n}$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\begin{align*}
+\pr{\bigcup\limits _{n=1}^{\infty}A_{n}} & =\pr{\biguplus\limits _{n=1}^{\infty}B_{n}}\\
+ & =\lim_{N\to\infty}\sum_{n=1}^{N}\pr{B_{n}}\\
+ & =\lim_{N\to\infty}\pr{\biguplus\limits _{n=1}^{N}B_{n}}\\
+ & =\lim_{N\to\infty}\pr{\bigcup\limits _{n=1}^{N}A_{n}}\\
+ & =\lim_{N\to\infty}\pr{A_{N}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ותהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה יורדת של מאורעות.
+ אזי 
+\begin_inset Formula $\pr{\bigcap\limits _{n=1}^{\infty}A_{n}}=\lim\limits _{N\to\infty}\pr{A_{N}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{align*}
+1-\pr{\bigcap\limits _{n=1}^{\infty}A_{n}} & =\pr{\left(\bigcap\limits _{n=1}^{\infty}A_{n}\right)^{c}}\\
+ & \overset{\text{דה מורגן}}{=}\pr{\bigcup\limits _{n=1}^{\infty}A_{n}^{c}}\\
+ & =\lim_{N\to\infty}\pr{A_{N}^{c}}\\
+ & =\lim_{N\to\infty}\left(1-\pr{A_{N}}\right)\\
+ & =1-\lim_{N\to\infty}\pr{A_{n}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה בהינתן סדרת מאורעות, 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ )לאו דווקא מונוטונית(, נגדיר 
+\begin_inset Formula $B_{n}=\bigcup\limits _{k=1}^{n}A_{k}$
+\end_inset
+
+ ו-
+\begin_inset Formula $C_{n}=\bigcap\limits _{k=1}^{n}A_{k}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\left(B_{n}\right)$
+\end_inset
+
+ סדרה עולה ו-
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}B_{n}=\bigcup\limits _{n=1}^{\infty}A_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\begin{align*}
+\pr{\bigcup\limits _{n=1}^{\infty}A_{n}} & =\pr{\bigcup_{n=1}^{\infty}B_{n}}\\
+ & =\lim_{N\to\infty}\pr{B_{N}}\\
+ & =\lim_{N\to\infty}\pr{\bigcup_{n=1}^{N}A_{n}}
+\end{align*}
+
+\end_inset
+
+וגם
+\begin_inset Formula 
+\begin{align*}
+\pr{\bigcap_{n=1}^{\infty}A_{n}} & =\pr{\bigcap_{n=1}^{\infty}C_{n}}\\
+ & =\lim_{N\to\infty}\pr{C_{N}}\\
+ & =\lim_{N\to\infty}\pr{\bigcap_{n=1}^{N}A_{n}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ותהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת מאורעות.
+ נגדיר 
+\begin_inset Formula $\limsup A_{n}=\bigcap\limits _{n=1}^{\infty}\bigcup\limits _{k=n}^{\infty}A_{k}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\liminf A_{n}=\bigcup\limits _{n=1}^{\infty}\bigcap\limits _{k=n}^{\infty}A_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $\limsup A_{n}=\left\{ \omega\in\Omega:\text{באופן שכיח}\;\omega\in A_{n}\right\} $
+\end_inset
+
+ וכן 
+\begin_inset Formula $\liminf A_{n}=\left\{ \omega\in\Omega:\text{כמעט תמיד}\;\omega\in A_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
+\begin_inset Formula $\mathbb{VI}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $\liminf A_{n}\subseteq\limsup A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $A_{n}=\begin{cases}
+\{2,4,\dots & 2\mid n\\
+1,3,\dots & 2\nmid n
+\end{cases}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\limsup A_{n}=\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\liminf A_{n}=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $A_{n}=\begin{cases}
+\left\{ 1\right\}  & 2\mid n\\
+\mathbb{N} & 2\nmid n
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $\limsup A_{n}=\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\liminf A_{n}=\left\{ 1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה )א
+\begin_inset Quotes erd
+\end_inset
+
+ש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Boole
+\lang hebrew
+( לכל סדרת מאורעות 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\pr{\bigcup\limits _{n=1}^{\infty}A_{n}}\leq\sum\limits _{n=1}^{\infty}\pr{A_{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $B_{1}=A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $B_{n}=A_{n}\backslash\bigcup\limits _{k=1}^{n-1}A_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\geq2$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}A_{n}=\biguplus\limits _{n=1}^{\infty}B_{n}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $B_{n}\subseteq A_{n}$
+\end_inset
+
+.
+\family typewriter
+
+\begin_inset Formula 
+\[
+\pr{\bigcup_{n=1}^{\infty}A_{n}}=\pr{\biguplus\limits _{n=1}^{\infty}B_{n}}=\sum\limits _{n=1}^{\infty}\pr{B_{n}}\leq\sum\limits _{n=1}^{\infty}\pr{A_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט )
+\lang english
+Borel-Cantelli 1
+\lang hebrew
+( יהי 
+\begin_inset Formula $\left(\Omega,\mf,\mathrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+ תהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה של מאורעות.
+ נניח כי 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\pr{A_{n}}<\infty$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\pr{\limsup A_{n}}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\pr{\limsup A_{n}} & =\pr{\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty}A_{k}}\\
+ & \overset{\text{מונוטוניות}}{\leq}\pr{\bigcup_{k=n_{0}}^{\infty}A_{k}}\\
+ & \overset{\textrm{\textrm{Boole}\;א"ש}}{\leq}\sum_{n=n_{0}}^{\infty}\pr{A_{n}}\\
+ & =\sum_{n=1}^{\infty}\pr{A_{n}}-\sum_{n=1}^{n_{0}-1}\pr{A_{n}}
+\end{align*}
+
+\end_inset
+
+ולכן ממונוטוניות הגבול, 
+\begin_inset Formula 
+\[
+\pr{\limsup A_{n}}\leq\sum_{n=1}^{\infty}\pr{A_{n}}-\lim_{n_{0}\to\infty}\sum_{n=1}^{n_{0}-1}\pr{A_{n}}=0
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\pr{\limsup A_{n}}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )
+\lang english
+Borel-Cantelli 2
+\lang hebrew
+( יהי 
+\begin_inset Formula $\left(\Omega,\mf,\mathrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+ תהי 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה של מאורעות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ נניח כי 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\pr{A_{n}}=\infty$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\pr{\limsup A_{n}}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מספיק להוכיח כי 
+\begin_inset Formula $\pr{\left(\limsup A_{n}\right)^{c}}=0$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula 
+\[
+\left(\limsup A_{n}\right)^{c}=\left(\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty}A_{k}\right)^{c}=\bigcup_{n=1}^{\infty}\left(\bigcup_{k=n}^{\infty}A_{k}\right)^{c}=\bigcup_{n=1}^{\infty}\bigcap_{k=n}^{\infty}A_{k}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\pr{\left(\limsup A_{n}\right)^{c}}=\pr{\bigcup_{n=1}^{\infty}\bigcap_{k=n}^{\infty}A_{k}^{c}}\overset{\textrm{Boole}\;\text{א"ש}}{\le}\sum_{n=1}^{\infty}\pr{\bigcap_{n=1}^{\infty}A_{k}^{c}}
+\]
+
+\end_inset
+
+לכן מספיק להוכיח ש-
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+ , 
+\begin_inset Formula $\pr{\bigcap\limits _{k=n}^{\infty}A_{k}^{c}}=0$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula 
+\begin{align*}
+\pr{\bigcap\limits _{k=n}^{\infty}A_{k}^{c}} & =\lim_{N\to\infty}\pr{\bigcap_{k=n}^{N}A_{k}^{c}}\\
+ & \overset{\text{ב"ת}}{=}\lim_{N\to\infty}\prod_{k=n}^{N}\left(\pr{\left(A_{k}^{c}\right)}\right)\\
+ & =\lim_{N\to\infty}\prod_{k=n}^{N}\left(1-\pr{A_{k}}\right)\\
+ & \overset{\left(*\right)}{\leq}\lim_{N\to\infty}\prod_{k=n}^{N}e^{-\pr{A_{k}}}\\
+ & =\lim_{N\to\infty}e^{-\sum\limits _{k=n}^{N}\pr{A_{k}}}\\
+ & =e^{-\sum\limits _{k=n}^{\infty}\pr{A_{k}}}\\
+ & =e^{-\infty}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\geq0$
+\end_inset
+
+, 
+\begin_inset Formula $1-x\leq e^{-x}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $f\left(x\right)=e^{-x}+x-1\geq0$
+\end_inset
+
+, 
+\begin_inset Formula $f'\left(x\right)=-e^{-x}+1\geq0$
+\end_inset
+
+ ובנוסף 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=n}^{\infty}\pr{A_{k}} & =\sum_{k=1}^{\infty}\pr{A_{k}}-\sum_{k=1}^{n-1}\pr{A_{k}}\\
+ & =\infty-c=\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה מטילים מטבע לא מאוזן עם 
+\begin_inset Formula $\pr H=p$
+\end_inset
+
+, 
+\begin_inset Formula $\pr T=1-p$
+\end_inset
+
+, 
+\begin_inset Formula $\infty$
+\end_inset
+
+ פעמים.
+\begin_inset Newline newline
+\end_inset
+
+א.
+ מה הסיכוי שיצא 
+\begin_inset Formula $H$
+\end_inset
+
+ אינסוף פעמים?
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ את המאורע שבהטלה ה-
+\begin_inset Formula $n$
+\end_inset
+
+ יצא 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\pr{A_{n}}=p$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+ וברור כי המאורעות הם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ נשים לב כי 
+\begin_inset Formula 
+\begin{align*}
+\sum\limits _{k=1}^{\infty}\pr{A_{k}} & =\sum_{k=1}^{\infty}p=\infty
+\end{align*}
+
+\end_inset
+
+ולכן מבורל קנטלי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, 
+\begin_inset Formula $\pr{\limsup A_{n}}=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ב.
+ מה הסיכוי שיצא 
+\begin_inset Formula $HTH$
+\end_inset
+
+ רצוף אינסוף פעמים?
+\begin_inset Newline newline
+\end_inset
+
+נסמן ב-
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ את המאורע שבהטלה ה-
+\begin_inset Formula $n$
+\end_inset
+
+-ית 
+\begin_inset Formula $H$
+\end_inset
+
+, ב-
+\begin_inset Formula $n+1$
+\end_inset
+
+-ית 
+\begin_inset Formula $T$
+\end_inset
+
+ וב-
+\begin_inset Formula $n+2$
+\end_inset
+
+-ית 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\pr{A_{n}}=p^{2}\left(1-p\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A_{1},A_{4},A_{7},\dots$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת וכי 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=1}^{\infty}\pr{A_{3k-2}} & =\pr{A_{1}}+\pr{A_{4}}+\dots\\
+ & =\sum_{k=1}^{\infty}p^{2}\left(1-p\right)=\infty
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\pr{\limsup A_{3k-2}}=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\pr{\limsup A_{n}}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
+\begin_inset Formula $\mathbb{VII}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה.
+ 
+\bar under
+משתנה מקרי
+\bar default
+ הוא פ' 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $S\subseteq\fldr$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה הטלת שתי קוביות.
+ ראינו כי 
+\begin_inset Formula $\Omega=\left[6\right]\times\left[6\right]$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $x:\Omega\to\left\{ 2,\dots12\right\} $
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $x\left(i,j\right)=i+j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $S$
+\end_inset
+
+ לא נקבע ביחידות.
+\end_layout
+
+\begin_layout Description
+הערה ההגדרה המדויקת למ
+\begin_inset Quotes erd
+\end_inset
+
+מ הוא פ' מדידה )כלומר, שלכל 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $x^{-1}\left(a,b\right)$
+\end_inset
+
+ הוא מאורע(.
+\end_layout
+
+\begin_layout Description
+הגדרה תהי 
+\begin_inset Formula $A\subseteq\fldr$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ נגדיר 
+\begin_inset Formula $x^{-1}\left(A\right)=\left\{ \omega\in\Omega:x\left(\omega\right)\in A\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $x\left(i,j\right)=i+j$
+\end_inset
+
+, 
+\begin_inset Formula $x^{-1}\left\{ 2,3\right\} =\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $x$
+\end_inset
+
+ לא חייב להיות חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועדיין 
+\begin_inset Formula $x^{-1}\left(A\right)$
+\end_inset
+
+ מוגדר.
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהי 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ אזי:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $x^{-1}\left(S\right)=\Omega$
+\end_inset
+
+ ו-
+\begin_inset Formula $x^{-1}\left(\varnothing\right)=\varnothing$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall A\subseteq S$
+\end_inset
+
+, 
+\begin_inset Formula $x^{-1}\left(A^{c}\right)=\left(x^{-1}\left(A\right)\right)^{c}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\left(A_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $A_{n}\subseteq S$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $x^{-1}\left(\bigcap\limits _{n=1}^{\infty}A_{n}\right)=\bigcap\limits _{n=1}^{\infty}x^{-1}\left(A_{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left(iv\right)$
+\end_inset
+
+ 
+\begin_inset Formula $x^{-1}\left(\bigcup\limits _{n=1}^{\infty}A_{n}\right)=\bigcup\limits _{n=1}^{\infty}x^{-1}\left(A_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה ניתן גם להגדיר 
+\begin_inset Formula $x\left(A\right)$
+\end_inset
+
+, אבל התמונה של 
+\begin_inset Formula $A$
+\end_inset
+
+ כבר לא מקיימת את תכונות המשפט.
+ לדוגמה 
+\begin_inset Formula $\left(x\left(A\right)\right)^{c}\neq x\left(A^{c}\right)$
+\end_inset
+
+ במקרה של פ' קבועה.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ ברור.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\omega\in x^{-1}\left(A^{c}\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x\left(\omega\right)\in A^{c}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x\left(\omega\right)\notin A$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\omega\notin x^{-1}\left(A\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\omega\in\left(x^{-1}\left(A\right)\right)^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\omega\in x^{-1}\left(\bigcap\limits _{n=1}^{\infty}A_{n}\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x\left(\omega\right)\in\bigcap\limits _{n=1}^{\infty}A_{n}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x\left(\omega\in A_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\omega\in x^{-1}\left(A_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\omega\in\bigcap\limits _{n=1}^{\infty}x^{-1}\left(A_{n}\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\omega\in\bigcap\limits _{n=1}^{\infty}x^{-1}\left(A_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(iv\right)$
+\end_inset
+
+ אותו הדבר רק עם קיים במקום לכל.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהי 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ נגדיר 
+\begin_inset Formula $\forall A\subseteq S$
+\end_inset
+
+, 
+\begin_inset Formula $\textrm{Px}\left(A\right)=\pr{x^{-1}\left(A\right)}$
+\end_inset
+
+ )בשפת העם, 
+\begin_inset Formula $\textrm{Px}\left(A\right)=\pr{x\in A}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה ע
+\begin_inset Quotes erd
+\end_inset
+
+מ ש-
+\begin_inset Formula $\textrm{Px}$
+\end_inset
+
+ תהיה מוגדרת היטב אנו מניחים כי 
+\begin_inset Formula $x^{-1}\left(A\right)$
+\end_inset
+
+ אכן מאורע.
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $\textrm{Px}$
+\end_inset
+
+ מגדירה פ' הסתברות על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\textrm{Px}\left(S\right)=\pr{x^{-1}\left(S\right)}=\pr{\Omega}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall A\subseteq S$
+\end_inset
+
+, 
+\begin_inset Formula $\textrm{Px}\left(A\right)=\pr{x^{-1}\left(A\right)}\in\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\textrm{Px}\left(\biguplus\limits _{n=1}^{\infty}A_{n}\right) & =\pr{x^{-1}\left(\biguplus\limits _{n=1}^{\infty}A_{n}\right)}\\
+ & =\pr{\biguplus\limits _{n=1}^{\infty}A_{n}x^{-1}\left(A_{n}\right)}\\
+ & =\sum_{n=1}^{\infty}\pr{x^{-1}\left(A_{n}\right)}\\
+ & =\sum_{n=1}^{\infty}\textrm{Px}\left(A_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $\forall A,B\subseteq S$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $A\cap B=\varnothing$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+x^{-1}\left(A\right)\cap x^{-1}\left(B\right)=x^{-1}\left(A\cap B\right)=x^{-1}\left(B\right)=\varnothing
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $x\left(i,j\right)=i+j$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\textrm{Px}\left\{ 2,3\right\} =\pr{x^{-1}\left\{ 2,3\right\} }=\pr{\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right)\right\} }=\frac{3}{36}=\frac{1}{12}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה נסמן 
+\begin_inset Formula $\pr{x=k}=\pr{\left\{ \omega\in\Omega:x\left(\omega\right)=k\right\} }$
+\end_inset
+
+ וכו'.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהי 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ 
+\bar under
+פונקציית ההתפלגות
+\bar default
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\textrm{Fx}\left(t\right)=\pr{x\leq t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\left(i,j\right)=i+j$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\textrm{Fx}\left(0\right)=\pr{\varnothing}=0\\
+\fx 2=\pr{x\leq2}=\frac{1}{36}\\
+\fx 3=\frac{1}{12}
+\end{array}
+\]
+
+\end_inset
+
+וכו', כלומר במקרה זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Fx
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא פ' מדרגות.
+\end_layout
+
+\begin_layout Enumerate
+מגרילים מס' 
+\begin_inset Formula $x$
+\end_inset
+
+ בין 
+\begin_inset Formula $0$
+\end_inset
+
+ ל-
+\begin_inset Formula $1$
+\end_inset
+
+.
+ מהי 
+\begin_inset Formula $\fx t$
+\end_inset
+
+? במקהר זה זו תהיה פ' קבועה למעט בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\numeric on
+1
+\numeric off
+, שבה היא תהיה לינארית מ-
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Description
+הערה פ' ההתפלגות היא רציפה מימין.
+\end_layout
+
+\begin_layout Description
+הערה בהינתן 
+\begin_inset Formula $\textrm{Fx}$
+\end_inset
+
+, ניתן לשחזר את 
+\begin_inset Formula $\textrm{Px}$
+\end_inset
+
+ לקבוצות אחרות.
+ לדוגמה, 
+\begin_inset Formula 
+\[
+\pr{x>b}=1-\pr{x\leq b}=1-\fx b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pr{x\leq b}=\pr{x\leq a}+\pr{a<x\leq b}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\pr{a<x\leq b}=\pr{x\leq b}-\pr{x\leq a}=\fx b-\fx a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\pr{x<b} & =\pr{\bigcup_{n=1}^{\infty}\left\{ \omega\in\Omega\right\} :x\left(\omega\right)\leq b-\frac{1}{n}}\\
+ & =\lim_{n\to\infty}\pr{\left\{ \omega\in\Omega:x\left(\omega\right)\leq\frac{1}{n}\right\} }\\
+ & =\lim_{n\to\infty}\fx{b-\frac{1}{n}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהיו 
+\begin_inset Formula $x,y:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ נאמר כי 
+\begin_inset Formula $x,y$
+\end_inset
+
+ 
+\bar under
+שווי התפלגות
+\bar default
+ )או ש-
+\begin_inset Formula $x$
+\end_inset
+
+ מתפלג כמו 
+\begin_inset Formula $y$
+\end_inset
+
+( ונסמן 
+\begin_inset Formula $x\sim y$
+\end_inset
+
+ אם 
+\begin_inset Formula $\fx t=\textrm{Fy}\left(t\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall t\in\fldr$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+תרגיל מוציאים באאקראי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדורים מוך קופסה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדורים המסומנים מ-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+.
+ מה הסיכוי שלפחות אחד מהכדורים הוא 
+\begin_inset Formula $4\geq$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Description
+פתרון נגדיר 
+\begin_inset Formula $\Omega=\left[10\right]^{3}$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\left|\Omega\right|={10 \choose 3}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $x:\Omega\to\left[10\right]$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\left(i,j,k\right)=i$
+\end_inset
+
+.
+ נרצה לחשב את 
+\begin_inset Formula $\pr{x\leq4}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\pr{x=a}=\frac{{10-a \choose 2}}{\left|\Omega\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\pr{x\leq4} & =\pr{x=1}+\pr{x=2}+\pr{x=3}+\pr{x=4}\\
+ & =\frac{1}{\left|\Omega\right|}\left({9 \choose 2}+{8 \choose 2}+{7 \choose 2}+{6 \choose 2}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $S$
+\end_inset
+
+ סופית אזי 
+\begin_inset Formula $\fx t$
+\end_inset
+
+ היא פ' מדרגות ובמקרה זה היא גם לא ממש שימושית, כי 
+\begin_inset Formula $\pr{x\leq t}=\sum\limits _{k\leq t}\pr k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ יקרא מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\bar under
+ברנולי
+\bar default
+ אם 
+\begin_inset Formula $S=\left\{ 0,1\right\} $
+\end_inset
+
+.
+ במקרה זה, קיים 
+\begin_inset Formula $p\in\left[0,1\right]$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\pr{x=1}=p$
+\end_inset
+
+ ו-
+\begin_inset Formula $\pr{x=0}=1-p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ברנולי מתאים לתוצאה של הטלת מטבע מזויף וההסתברות היא על הטלת עץ או פלי.
+\end_layout
+
+\begin_layout Description
+הגדרה מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $x$
+\end_inset
+
+ נקרא 
+\bar under
+בינומי
+\bar default
+ עם פרמטרים 
+\begin_inset Formula $n,p$
+\end_inset
+
+ אם 
+\begin_inset Formula $S=\left\{ 0,\dots,n\right\} $
+\end_inset
+
+ ואם לכל 
+\begin_inset Formula $0\le k\leq n$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{x=k}={n \choose k}p^{k}\left(1-p\right)^{n-k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בינומי מתאים להסתברות שיצא 
+\begin_inset Formula $k$
+\end_inset
+
+ פעמים פאלי ו-
+\begin_inset Formula $n-k$
+\end_inset
+
+ פעמים עץ בהטלה חוזרת 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים של מטבע מזוייף.
+\end_layout
+
+\begin_layout Description
+תרגיל במפעל לייצור חיתולים ההתסברות שחיתול יצא פגום הוא 
+\begin_inset Formula $0.01$
+\end_inset
+
+.
+ מה הסיכוי שבחבילה של 
+\begin_inset Formula $10$
+\end_inset
+
+ חיתולים יהיו 
+\begin_inset Formula $2$
+\end_inset
+
+ חיתולים פגומים לפחות?
+\end_layout
+
+\begin_layout Description
+פתרון יהי 
+\begin_inset Formula $x$
+\end_inset
+
+ מס' החיתולים הפגומים באריזה, 
+\begin_inset Formula $x:\Omega\to\left\{ 0,\dots,10\right\} $
+\end_inset
+
+.
+ נרצה לחשב את 
+\begin_inset Formula $\pr{x\geq2}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\pr{x\geq2}=1-\pr{x=1}-\pr{x=0}
+\]
+
+\end_inset
+
+אבל
+\begin_inset Formula $x\sim B\left(10,0.01\right)$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\pr{x=1}={10 \choose 1}\left(0.01\right)^{1}\left(0,99\right)^{10-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pr{x=0}={10 \choose 0}\left(0.01\right)^{0}\left(0.99\right)^{10}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\pr{x\geq2}=1-10\cdot0.01\left(0,99\right)^{10-1}-\left(0.99\right)^{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+תרגיל במטוס, ההסתברות שמנוע יתקלקל במהלך טיסה הוא 
+\begin_inset Formula $1-p$
+\end_inset
+
+ )כאשר ההסתברות שהמנוע לא יתקלקל היא 
+\begin_inset Formula $p$
+\end_inset
+
+(.
+ המטוס נוחת בשלום כל עוד לפחות חצי מהמנועים שלו עובדים.
+ האם עדיף מטוס עם 
+\begin_inset Formula $4$
+\end_inset
+
+ מנועים או מטוס עם שני מנועים? או שמא התשובה תלויה ב-
+\begin_inset Formula $p$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Description
+פתרון נסמן ב-
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ את מס' המנועים שלא התקלקלו במטוס עם שני מנועים וב-
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ את מס' המנועים שלו התקלקלו במטוס עם 
+\begin_inset Formula $4$
+\end_inset
+
+ מנועים.
+ נשים לב כי 
+\begin_inset Formula $x_{1}:\Omega\to\left\{ 0,1,2\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{1}\sim B\left(2,p\right)$
+\end_inset
+
+ ובאותו האופן 
+\begin_inset Formula $x_{2}\sim B\left(4,p\right)$
+\end_inset
+
+.
+ נבדוק מה יותר גדול, 
+\begin_inset Formula $\pr{x_{1}\geq1}$
+\end_inset
+
+ או 
+\begin_inset Formula $\pr{x_{2}\geq2}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\pr{x_{1}\geq1} & =\pr{x_{1}=1}+\pr{x_{1}=2}\\
+ & ={2 \choose 1}p^{1}\left(1-p\right)^{1}+{2 \choose 2}p^{2}\left(1-p\right)^{0}\\
+ & =2p\left(1-p\right)+p^{2}=2p-p^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\pr{x_{2}\geq2} & =\pr{x_{2}=2}+\pr{x_{2}=3}+\pr{x_{2}=4}\\
+ & ={4 \choose 2}p^{2}\left(1-p\right)^{2}+{4 \choose 3}p^{3}\left(1-p\right)+{4 \choose 4}p^{4}\left(1-p\right)^{0}\\
+ & =3p^{4}-8p^{3}+6p^{2}
+\end{align*}
+
+\end_inset
+
+אם כן נבדוק מתי 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+3p^{4}-8p^{3}+6p^{2}>2p-p^{2}\\
+3p^{4}-8p^{3}+7p^{2}-2p>0\\
+p\left(3p^{3}-8p^{2}+7p-2\right)>0\\
+p\left(p-1\right)^{2}\left(3p-2\right)>0
+\end{array}
+\]
+
+\end_inset
+
+כלומר עבור 
+\begin_inset Formula $p>\frac{2}{3}$
+\end_inset
+
+ עדיף מטוס עם 
+\begin_inset Formula $4$
+\end_inset
+
+ מנועים ואחרת עדיף מטוס עם שני מנועים.
+\end_layout
+
+\begin_layout Part
+\begin_inset Formula $\mathbb{VIII}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהי 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ יקרא 
+\bar under
+פואסוני
+\bar default
+ עם פרמטר 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+ אם 
+\begin_inset Formula $S=\mathbb{N}_{0}$
+\end_inset
+
+ וגם
+\begin_inset Formula 
+\[
+\pr{x=k}=e^{-\lambda}\cdot\frac{\lambda^{k}}{k!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה התפלגות פואסון מופיעה בטבע במקומות שונים:
+\begin_inset Newline newline
+\end_inset
+
+במודל להתפרקות רדיו-אקטיבית;
+\begin_inset Newline newline
+\end_inset
+
+מס' המכוניות שעוברות דרך נקודה מסוימת בכביש בפרק זמן מסוים;
+\begin_inset Newline newline
+\end_inset
+
+מס' המוטציות ב-
+\lang english
+DNA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לאחר חשיפה לקרינה.
+\begin_inset Newline newline
+\end_inset
+
+מס' המבקרים בחדר מיון המגיעים לאשפוז ביום.
+\end_layout
+
+\begin_layout Description
+דוגמה מודל להתפרקות רדיו-אקטיבית: נניח שבפרק זמן 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ )
+\begin_inset Formula $\epsilon<<1$
+\end_inset
+
+(, ההסתברות להתפרקות רדיו-אקטיבית של אטום מסוים היא 
+\begin_inset Formula $\lambda\cdot\epsilon$
+\end_inset
+
+.
+ מה הסיכוי שיהיו 
+\begin_inset Formula $k$
+\end_inset
+
+ התפרקויות בשניה אחת? )כאשר ההפרקויות הן ב
+\begin_inset Quotes erd
+\end_inset
+
+ת זו בזו(.
+\begin_inset Newline newline
+\end_inset
+
+נסמן את מספר ההתפרקויות בשנייה ב-
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ נרצה לחשב את 
+\begin_inset Formula $\pr{x=k}$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $x\sim B\left(\underset{n}{\underline{\frac{1}{\epsilon}}},\lambda\epsilon\right)$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\begin{align*}
+\pr{x=k} & ={n \choose k}\left(\lambda\epsilon\right)^{k}\left(1-\lambda\epsilon\right)^{n-k}\\
+ & ={n \choose k}\left(\frac{\lambda}{n}\right)^{k}\left(1-\frac{\lambda}{n}\right)^{n-k}\\
+ & =\frac{n!}{k!\left(n-k\right)!}\cdot\frac{\lambda^{k}}{n^{k}}\cdot\left(1-\frac{\lambda}{n}\right)^{n}\left(1-\frac{\lambda}{n}\right)^{-k}\\
+ & =\underset{\underset{1}{\downarrow}}{\underline{\frac{n}{n}\cdot\frac{n-1}{n}\cdot\ldots\cdot\frac{\left(n-k+1\right)}{n}}}\frac{\lambda^{k}}{k!}\underset{\underset{e^{-\lambda}}{\downarrow}}{\underline{\left(1-\frac{\lambda}{n}\right)^{n}}}\underset{\underset{1}{\downarrow}}{\underline{\left(1-\frac{\lambda}{n}\right)^{-k}}}\\
+ & =\frac{\lambda^{k}}{k!}e^{-\lambda}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה במקרה זה נסמן 
+\begin_inset Formula $x\sim\textrm{poi}\left(\lambda\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+תרגיל במעבדה נמצא מקור רדיואקטיבי שידוע שמס' החלקיקים שהוא פולט בשנייה מתפלג
+ פואסוני עם פרמטר 
+\begin_inset Formula $\lambda=4$
+\end_inset
+
+.
+ סטודנט מפעיל מונה הסופר את מס' החלקיקים למשך שניה אחת.
+ מה הסיכוי שהוא גילה לא יותר מ-
+\begin_inset Formula $4$
+\end_inset
+
+ חלקיקים?
+\end_layout
+
+\begin_layout Description
+פתרון 
+\begin_inset Formula $x\sim\textrm{poi}\left(4\right)$
+\end_inset
+
+.
+ נרצה לבדוק מהו 
+\begin_inset Formula $\pr{x\leq4}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\pr{x\leq4}=\sum_{k=0}^{4}\pr{x=k}=\sum_{k=0}^{4}\frac{e^{-4}4^{k}}{k!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+תרגיל מס' שגיאות הכתיב בעמ' מתפלג פואסוני עם פרמטר 
+\begin_inset Formula $\lambda=\frac{1}{3}$
+\end_inset
+
+.
+ מה הסיכוי שבעמוד יש לפחות שגיאת כתיב אחת?
+\end_layout
+
+\begin_layout Description
+פתרון 
+\begin_inset Formula $\;$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pr{x\geq1}=1-\pr{x=0}=1-\frac{e^{-\frac{1}{3}}\lambda^{0}}{0!}=1-e^{-\frac{1}{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה מ
+\begin_inset Quotes erd
+\end_inset
+
+ה 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ יקרא 
+\bar under
+דיסקרטי
+\bar default
+ אם 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ סופית או בת מניה.
+\end_layout
+
+\begin_layout Description
+הערה במקרה זה, 
+\begin_inset Formula $\pr{\Omega}=\sum\limits _{\omega\in\Omega}\pr{\omega}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\forall A\in\mf$
+\end_inset
+
+, 
+\begin_inset Formula $\pr A=\sum\limits _{\omega\in A}\pr{\omega}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ יקרא דיסקרטית אם 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה דיסקרטי.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ דיסקרטי.
+ ה
+\bar under
+תוחלת
+\bar default
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ )
+\lang english
+Expectation
+\lang hebrew
+( מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+\mathbb{E}\left[x\right]=\sum_{\omega\in\Omega}x\left(\omega\right)\pr{\omega}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $\mathbb{E}\left[x\right]$
+\end_inset
+
+ היא מס' ממשי, אלא אם 
+\begin_inset Formula $\sum\limits _{\omega\in\Omega}x\left(\omega\right)\pr{\omega}$
+\end_inset
+
+ הוא טור מתבדר.
+ במקרה זה, נאמר כי ל-
+\begin_inset Formula $x$
+\end_inset
+
+ אין תוחלת.
+\end_layout
+
+\begin_layout Description
+הערה מהיות 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה דיסקרטי, אזי 
+\begin_inset Formula $\pr{\Omega}=\sum\limits _{\omega\in\Omega}\pr{\omega}=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathbb{E}\left[x\right]$
+\end_inset
+
+ היא ממוצע הערכים של 
+\begin_inset Formula $x$
+\end_inset
+
+, עם משקולות בהאתם להסתברות של כל 
+\begin_inset Formula $\omega\in\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה הטלת קוביה.
+ 
+\begin_inset Formula $S=\Omega=\left[6\right]$
+\end_inset
+
+, 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $x\left(i\right)=i$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pr i=\frac{1}{6}$
+\end_inset
+
+.
+ מהי התוחלת של 
+\begin_inset Formula $x$
+\end_inset
+
+?
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[x\right] & =\sum_{i=1}^{6}i\pr i\\
+ & =\frac{1}{6}\sum_{i=1}^{6}=\frac{1}{6}\frac{\left(6+1\right)6}{2}=\frac{7}{2}=3.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה יהי 
+\begin_inset Formula $\Omega=\left\{ 0,1,2\right\} $
+\end_inset
+
+ ונגדיר
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pr{\omega}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ ו-
+\begin_inset Formula $x\left(k\right)=k^{2}$
+\end_inset
+
+.
+ מהי התוחלת של 
+\begin_inset Formula $x$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\mathbb{E}\left[x\right]=0\cdot\frac{1}{2}+1\cdot\frac{1}{3}+4\cdot\frac{1}{6}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $\left(\Omega,\mf,\textrm{Pr}\right)$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ה ויהיו 
+\begin_inset Formula $x,y:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעלי תוחלת, 
+\begin_inset Formula $a,b\in\fldr$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{E}\left[ax+by\right]=a\mathbb{E}\left[x\right]+b\mathbb{E}\left[y\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ברור.
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ דיסקרטי.
+ אזי 
+\begin_inset Formula $\mathbb{E}\left[x\right]=\sum\limits _{k\in S}k\cdot\pr{x=k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x^{-1}\left(k\right)\subseteq\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $\forall k\in S$
+\end_inset
+
+, וגם 
+\begin_inset Formula $\biguplus\limits _{k\in S}x^{-1}\left(k\right)=\Omega$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\begin{align*}
+\sum\limits _{k\in S}k\cdot\pr{x=k} & =\sum_{k\in S}\sum_{\omega\in x^{-1}\left(k\right)}x\left(\omega\right)\pr{\omega}\\
+ & =\sum_{k\in S}k\sum_{\omega\in x^{-1}\left(k\right)}\pr{\omega}\\
+ & =\sum_{k\in S}k\pr{x^{-1}\left(k\right)}\\
+ & =\sum_{k\in S}k\pr{x=k}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט יהי 
+\begin_inset Formula $c\equiv x:\Omega\to S$
+\end_inset
+
+ עבור 
+\begin_inset Formula $c\in S$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\mathbb{E}\left[x\right]=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[x\right] & =\sum_{\omega\in\Omega}x\left(\omega\right)\pr{\omega}\\
+ & =c\cdot1=c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $x\sim B\left(n,p\right)$
+\end_inset
+
+.
+ מהי 
+\begin_inset Formula $\mathbb{E}\left[x\right]$
+\end_inset
+
+?
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[x\right] & =\sum_{k=0}^{n}k\pr{x=k}\\
+ & =\sum_{k=0}^{n}k{n \choose k}p^{k}\left(1-p\right)^{n-k}\\
+ & =\sum_{k=1}^{n}k\frac{n!}{k!\left(n-k\right)!}p^{k}\left(1-p\right)^{n-k}\\
+ & =\sum_{k=1}^{n}\frac{n!}{\left(k-1\right)!\left(n-1-\left(k-1\right)\right)!}p^{k}\left(1-p\right)^{n-k}\\
+ & =np\sum_{k=1}^{n}\frac{\left(n-1\right)!}{\left(k-1\right)!\left(n-1-\left(k-1\right)\right)!}p^{k-1}\left(1-p\right)^{n-1-\left(k-1\right)}\\
+ & =np\sum_{k=0}^{n-1}\frac{\left(n-1\right)!}{k!\left(n-1-k\right)!}p^{k}\left(1-p\right)^{n-1-k}\\
+ & =np\underset{1}{\underline{\sum_{k=0}^{n-1}{n-1 \choose k}p^{k}\left(1-p\right)^{n-1-k}}}\\
+ & =np
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $x\sim\textrm{poi}\left(\lambda\right)$
+\end_inset
+
+.
+ מהי 
+\begin_inset Formula $\mathbb{E}\left[x\right]$
+\end_inset
+
+?
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[x\right] & =\sum_{k=0}^{\infty}k\pr{x=k}\\
+ & =\sum_{k=1}^{\infty}ke^{-\lambda}\frac{\lambda^{k}}{k!}\\
+ & =e^{-\lambda}\lambda\sum_{k=1}^{\infty}\frac{\lambda^{k-1}}{\left(k-1\right)!}\\
+ & =e^{-\lambda}\lambda\sum_{k=0}^{\infty}\frac{\lambda^{k}}{k!}\\
+ & =e^{-\lambda}\lambda e^{\lambda}\\
+ & =\lambda
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+תרגיל מהמר בוחר מספר בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\numeric on
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז לזרוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קוביות.
+ הוא מקבל 
+\begin_inset Formula $i$
+\end_inset
+
+ דולרים אם 
+\begin_inset Formula $i$
+\end_inset
+
+ מהקוביות שלו יצאו המס' שבחר, עבור 
+\begin_inset Formula $1\leq i<3$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $i=0$
+\end_inset
+
+, הוא צריך לשלם דולר.
+ מהי תוחלת הרווח?
+\end_layout
+
+\begin_layout Description
+פתרון נסמן ב-
+\begin_inset Formula $x$
+\end_inset
+
+ את מס' הדולרים שמהמר הרוויח.
+ נרצה לחשב את 
+\begin_inset Formula $\mathbb{E}\left[x\right]$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $x:\Omega\to\left\{ -1,1,2,3\right\} $
+\end_inset
+
+ ונשים לב כי מספר הקוביות שיצאו המס' שהוא בחר מתפלג בינומי 
+\begin_inset Formula $B\left(3,\frac{1}{6}\right)$
+\end_inset
+
+.
+ לכן, 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\pr{x=-1}={3 \choose 0}\left(\frac{1}{6}\right)^{0}\left(\frac{5}{6}\right)^{3}=\frac{125}{216}\\
+\pr{x=1}={3 \choose 1}\left(\frac{1}{6}\right)^{1}\left(\frac{5}{6}\right)^{2}=\frac{75}{216}\\
+\pr{x=2}={3 \choose 2}\left(\frac{1}{6}\right)^{2}\left(\frac{5}{6}\right)^{1}=\frac{15}{216}\\
+\pr{x=3}={3 \choose 3}\left(\frac{1}{6}\right)^{3}\left(\frac{5}{6}\right)^{0}=\frac{1}{216}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[x\right] & =\frac{1}{216}\left(-1\cdot125+1\cdot75+2\cdot15+3\cdot1\right)\\
+ & =\frac{1}{216}\cdot\left(-17\right)<0
+\end{align*}
+
+\end_inset
+
+לכן לא משתלם לשחק!
+\end_layout
+
+\begin_layout Description
+הערה בהנתן מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ ופ' 
+\begin_inset Formula $g:\fldr\to\fldr$
+\end_inset
+
+, נוכל להגדיר 
+\begin_inset Formula $y:\Omega\to S$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $y\left(\omega\right)=g\left(x\left(\omega\right)\right)$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $y=g\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[g\left(x\right)\right]=\sum_{k\in S}g\left(x\right)\pr{x=k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[g\left(x\right)\right] & =\sum_{\omega\in\Omega}g\left(x\right)\left(\omega\right)\pr{\omega}\\
+ & =\sum_{\omega\in\Omega}g\left(x\left(\omega\right)\right)\pr{\omega}\\
+ & =\sum_{k\in S}\sum_{\omega\in x^{-1}\left(k\right)}g\left(x\left(\omega\right)\right)\pr{\omega}\\
+ & =\sum_{k\in S}g\left(k\right)\sum_{\omega\in x^{-1}\left(k\right)}\pr{\omega}\\
+ & =\sum_{k\in S}g\left(k\right)\pr{x=k}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה יהי 
+\begin_inset Formula $x:\Omega\to\left\{ 0,1,2\right\} $
+\end_inset
+
+ המ
+\begin_inset Quotes erd
+\end_inset
+
+מ שעבורו 
+\begin_inset Formula $\pr{x=0}=\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{x=1}=\frac{1}{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\pr{x=2}=\frac{1}{6}$
+\end_inset
+
+.
+ מהי 
+\begin_inset Formula $\mathbb{E}\left[x^{2}\right]$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\mathbb{E}\left[x^{2}\right]=0^{2}\frac{1}{2}+1^{2}\frac{1}{3}+2^{3}\frac{1}{6}=\frac{1}{3}+\frac{4}{6}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה ה
+\bar under
+מומנט
+\bar default
+ ה-
+\begin_inset Formula $k$
+\end_inset
+
+ של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מוגדר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $M_{k}\left[x\right]=\mathbb{E}\left[x^{k}\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\forall k\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה השונות )
+\lang english
+variance
+\lang hebrew
+( של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $V\left[x\right]=\mathbb{E}\left[\left(x-\mu\right)^{2}\right]$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\mu=\mathbb{E}\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה השונות היא כמה התוחלת של 
+\begin_inset Formula $x$
+\end_inset
+
+ שונה מ-
+\begin_inset Formula $x$
+\end_inset
+
+ עצמו בתוחלת.
+\end_layout
+
+\begin_layout Description
+הערה נשים לב כי 
+\begin_inset Formula $\mathbb{E}\left[x\cdot y\right]$
+\end_inset
+
+ היא מכ
+\begin_inset Quotes erd
+\end_inset
+
+פ.
+ כך גם 
+\begin_inset Formula $\mathbb{E}\left[\left(x-\mathbb{E}\left[x\right]\right)\left(y-\mathbb{E}\left[y\right]\right)\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+סטיית התקן
+\bar default
+ )
+\lang english
+standard deviation
+\lang hebrew
+( של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $x:\Omega\to S$
+\end_inset
+
+ מגודרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\sigma\left[x\right]=\sqrt{V\left[x\right]}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה סטיית התקן היא הנורמה הנובעת מהמכ
+\begin_inset Quotes erd
+\end_inset
+
+פ 
+\begin_inset Formula $\mathbb{E}\left[\left(x-\mathbb{E}\left[x\right]\right)\left(y-\mathbb{E}\left[y\right]\right)\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
