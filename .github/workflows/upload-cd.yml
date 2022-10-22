@@ -31,3 +31,5 @@ jobs:
           skicka-tokencache-json: ${{ secrets.SKICKA_TOKENCACHE_JSON }}
           upload-from: ./.gitignore
           upload-to: /.gitignore
+          google-client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
+          google-client-secret: ${{ secrets.GOOGLE_CLIENT_SECRET }}
