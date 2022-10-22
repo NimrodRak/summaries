@@ -25,11 +25,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Upload to Google Drive
+      - name: Upload 67594 to Google Drive
         uses: satackey/action-google-drive@v1
         with:
           skicka-tokencache-json: ${{ secrets.SKICKA_TOKENCACHE_JSON }}
           upload-from: "./Introduction to Communication Networks/67594 Introduction to Communication Networks.pdf"
           upload-to: "/67594 Introduction to Communication Networks.pdf"
+          google-client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
+          google-client-secret: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+
+      - name: Upload 67521 to Google Drive
+        uses: satackey/action-google-drive@v1
+        with:
+          skicka-tokencache-json: ${{ secrets.SKICKA_TOKENCACHE_JSON }}
+          upload-from: "./Computational Models Computability Complexity/67521 Computational Models Computability Complexity.pdf"
+          upload-to: "/67521 Computational Models Computability Complexity.pdf"
           google-client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
           google-client-secret: ${{ secrets.GOOGLE_CLIENT_SECRET }}
