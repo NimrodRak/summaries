@@ -928,7 +928,7 @@ addcontentsline{toc}{section}{I
 \backslash
 ;
 \backslash
-; }
+; מבוא לאוטומטים}
 \end_layout
 
 \end_inset
@@ -943,7 +943,7 @@ addcontentsline{toc}{section}{I
 \begin_inset Formula $\mathbb{I}$
 \end_inset
 
- | 
+ | מבוא לאוטומטים 
 \size default
 
 \begin_inset ERT
@@ -974,5 +974,730 @@ addcontentsline{toc}{subsection}{הרצאה}
 הרצאה
 \end_layout
 
+\begin_layout Description
+דוגמה נקפוץ לחלק האחרון של הקורס )סיבוכיות(.
+ בהינתן גרף לא מכוון 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+, נרצה לדעת האם יש בו מעגל אוילר )כזה שעובר בכל צלע בדיוק פעם אחת(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אוילר הוכיח שיש מעגל כזה אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם דרגת כל הקודקודים זוגית, ולכן ניתן להכריע את הבעיה בזמן לינארית כי יש
+ לבעיה אפיון מתמטי.
+\end_layout
+
+\begin_layout Standard
+מעגל המילטון הוא מעגל שעובר בכל קודקוד בדיוק פעם אחת.
+ לבעיה הזו אין אפיון מתמטי, והוכח שאין אלג' יותר טוב מאשר מעבר על כל האפשרויות,
+ בסיבוכיות אקספוננציאלי.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה בהינתן 
+\begin_inset Formula $n=p\cdot q$
+\end_inset
+
+, למצוא את 
+\begin_inset Formula $p,q$
+\end_inset
+
+ דורש זמן חישוב אקספוננציאלי באורך הייצוג, אפע
+\begin_inset Quotes xrd
+\end_inset
+
+פ שהאלג' הוא לינארי במספר עצמו.
+ זה משום שהפרמטר שלנו במקרה הזה הוא לא המספר אלא הייצוג )אנחנו מקבלים 
+\begin_inset Formula $\log n$
+\end_inset
+
+ ספרות/אחדים ואפסים, לא את המספר במלואו(.
+\end_layout
+
+\begin_layout Description
+דוגמה קלט: 
+\begin_inset Formula $\left\{ t_{i}\right\} $
+\end_inset
+
+ אריכים שלכל אחד מהם יש צלעות 
+\begin_inset Formula $\left\{ u_{i}\right\} ,\left\{ d_{i}\right\} ,\left\{ r_{i}\right\} ,\left\{ l_{i}\right\} $
+\end_inset
+
+ )למעלה, למטה, ימינה ושמאלה בהתאמה( כאשר הצלעות הם צבעים )אדום, צהוב, ירוק(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פלט: האם ניתן לרצף באופן חוקי ריבוע 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+, כאשר 
+\begin_inset Quotes xld
+\end_inset
+
+חוקיות
+\begin_inset Quotes xrd
+\end_inset
+
+ מתבטאת בכך שצלעות סמוכות מסכימות על הצבע.
+\end_layout
+
+\begin_layout Description
+דוגמת
+\begin_inset Formula $\;$
+\end_inset
+
+ריצה באופן אינטואיטיבי, במקרים מסוימים, נוכל להציב אחד מהאריכים בפינה, למצוא
+ אילו אריכים מתאימים לו מבחינת הצלעות הסמוכות, להציב אריכים חוקיים נוספים,
+ וכך לחזור חלילה.
+ לעתים )כמו זה שבתמונה(, נוצרת תבנית של אריכים חוקיים על האלכסון )כלומר
+ אריך א' בפינה השמאלית התחתונה, ואז ב' מימינו ומעליו, ואז ג' מימין ומעל
+ כל ב'( ואז אפשר לגדום את התבנית האינסופית הזו לריבוע 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ כל פעם שצריך ולהחזיר ריבוע חוקי.
+ במקרה כזה הפלט יהיה כן.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/tile.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמה לתבנית שנוצרת, אפשר להמשיך לצייר את האלכסון בכיוון דרום-מזרח ולחזור
+ על התבנית החוצה עוד ועוד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+\align center
+הבעיה היא שאין שום ערובה לכך שהתבנית באמת קיימת במקרה הכללי, או שהיא נשמרת,
+ ואי אפשר לרוץ עד 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+ לכן התשובה היא שאין אלג' שפותר את הבעיה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה )בעיית העצירה( קלט: תכנית מחשב 
+\begin_inset Formula $P$
+\end_inset
+
+ וקלט 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פלט: האם 
+\begin_inset Formula $P$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אין לבעיה זו אלג' שפותר אותה בכל המקרים )תחת הנחות מסוימות, אפשר לפעמים
+ לתת תשובה(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{אוטומטים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+אוטומטים
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+אוטומט
+\bar default
+ הוא מחשב עם זכרון מוגבל.
+\end_layout
+
+\begin_layout Description
+דוגמה נתון עט דיגיטלי שיכול לבצע אחת משש פקודות, 
+\begin_inset Formula $\textrm{ON},{\rm OFF},{\rm U},{\rm D},{\rm L},{\rm R}$
+\end_inset
+
+.
+ סדרת פקודות היא חוקית אם היא מתחילה ב-
+\begin_inset Formula ${\rm ON}$
+\end_inset
+
+, מסתיימת ב-
+\begin_inset Formula ${\rm OFF}$
+\end_inset
+
+ ומייצרת קו רקיע משמאל לימין.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/line.png
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמה לקו רקיע חוקי, אסור ללכת שמאלה ואסור לעלות מיד אחרי שיורדים )ולהפך(
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נכתוב אוטומט שמחליט האם סדרת פקודות היא חוקית.
+ אם נצליח לעבור בין המצבים )העיגולים(, החל מהמצב הראשון )זה עם חץ ללא מקור(
+ ועד למצב המקבל )עם העיגול הכפול( על קשתות קיימות, הרי שהסדרה חוקית.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/fsm-line.png
+	lyxscale 40
+	scale 40
+	BoundingBox 100bp 160bp 600bp 600bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט חוקי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינטואיטיבית, המצב האמצעי הוא זה שממנו אפשר לעשות מה שרוצים, העליון הוא
+ אחרי עלייה והתחתון הוא אחרי ירידה.
+ נשים לב כי מכולם אפשר לפנות ימינה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה 
+\bar under
+אוטומט
+\bar default
+ )
+\lang english
+automaton, DFA
+\lang hebrew
+( הוא חמישייה 
+\begin_inset Formula $A=\left\langle Q,\com,\delta,q_{0},F\right\rangle $
+\end_inset
+
+ שהם המצבים, הא
+\begin_inset Quotes xrd
+\end_inset
+
+ב, פונקציית המעברים, המצב ההתחלתי וקבוצת המצבים המקבלים שמוכלת ב-
+\begin_inset Formula $Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\delta$
+\end_inset
+
+ היא פ' 
+\begin_inset Formula $Q\times\com\mapsto Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\com$
+\end_inset
+
+ היא קבוצה סופית של אותיות, לדוגמה 
+\begin_inset Formula $\com=\left\{ 0,1\right\} ,\left\{ 0,1\right\} ^{4}$
+\end_inset
+
+ וכו'.
+\end_layout
+
+\begin_layout Itemize
+מילה היא 
+\begin_inset Formula $w=w_{1},\ldots,w_{n}$
+\end_inset
+
+ סדרה סופית של אותיות, ו-
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ היא המילה הריקה.
+\end_layout
+
+\begin_layout Itemize
+שפה היא קבוצה של מילים, 
+\begin_inset Formula $L\subseteq\com^{*}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\com^{*}=\left\{ w:\com\;\text{מילה סופית מעל הא"ב}\;w\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ הוא האוטומט בציור.
+ במקרה הזה 
+\begin_inset Formula $\com=\left\{ 0,1\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $Q=\left\{ q_{0},q_{1}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $F=\left\{ q_{0}\right\} $
+\end_inset
+
+ ופ' המעברים היא.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|cc}
+\delta & 0 & 1\\
+\hline q_{0} & q_{0} & q_{1}\\
+q_{1} & q_{1} & q_{0}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה 
+\bar under
+ריצה
+\bar default
+ על מילה 
+\begin_inset Formula $w=w_{1}\ldots w_{n}$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\com$
+\end_inset
+
+ היא סדרה של מצבים 
+\begin_inset Formula $r=r_{0}\ldots r_{n}$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $r_{0}=q_{0}$
+\end_inset
+
+ )הריצה מתחילה ב-
+\begin_inset Formula $q_{0}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $i\geq0$
+\end_inset
+
+, 
+\begin_inset Formula $r_{i+1}=\delta\left(r_{i},w_{i+1}\right)$
+\end_inset
+
+ )הריצה מכבדת את 
+\begin_inset Formula $\delta$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ והמילה 
+\begin_inset Formula $011$
+\end_inset
+
+, הריצה היא 
+\begin_inset Formula $q_{0}q_{0}q_{1}q_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $r$
+\end_inset
+
+ היא ריצה 
+\bar under
+מקבלת
+\bar default
+ )
+\lang english
+accepting
+\lang hebrew
+( אם 
+\begin_inset Formula $r_{n}\in F$
+\end_inset
+
+ )המצב האחרון בריצה הוא מקבל(.
+ אחרת, 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא דוחה )
+\lang english
+rejecting
+\lang hebrew
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\bar under
+מקבל
+\bar default
+ את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם הריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ היא מקבלת.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $L\left(A\right)$
+\end_inset
+
+, 
+\bar under
+השפה
+\bar default
+ של האוטומט היא אוסף המילים ש-
+\begin_inset Formula $A$
+\end_inset
+
+ מקבל עליהן.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $L\left(A_{1}\right)=\left\{ w:\text{הוא זוגי}\;w\text{-ים ב-}\;1\;\text{מספר ה-}\right\} $
+\end_inset
+
+ )אפשר להוכיח באינדוקציה(.
+\end_layout
+
+\begin_layout Description
+הערה אם לא קיים מעבר עבור אות ומצב, אפשר או להחליט ש-
+\begin_inset Formula $\delta$
+\end_inset
+
+ לא מוגדרת על כל 
+\begin_inset Formula $Q\times\com$
+\end_inset
+
+ או להחליט שכל קשת לא קיימת מובילה לבור דוחה, כלומר מצב לא מקבל שאי אפשר
+ לצאת ממנו.
+\end_layout
+
+\begin_layout Description
+דוגמה נצייר אוטומט נוסף, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, ונחשב את השפה שלו.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/a2.png
+	lyxscale 40
+	scale 40
+	BoundingBox 150bp 350bp 600bp 500bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+האוטומט 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נסמן בצבע האם כמה מילים נבחרות הן בשפה או לא, 
+\begin_inset Formula ${\color{red}010},{\color{green}011},{\color{red}001110},{\color{green}1},{\color{green}11},{\color{red}00000}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם נחשוב עוד קצת, נגלה ש-
+\begin_inset Formula 
+\[
+L\left(A_{2}\right)=\left\{ w:\text{לפחות 1 אחד, ואחרי ה-1 האחרון יש מספר זוגי (או אפס) של 0-ים}\;w\;\text{יש ב-}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בתרגול נוכיח את זה באופן פורמלי.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה בהינתן שפה, ננסה לחשב את האוטומט.
+ השפה היא 
+\begin_inset Formula $L_{3}=\left\{ w:001\;\text{מכילה את הרצף}\;w\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/from-lang.png
+	lyxscale 40
+	scale 40
+	BoundingBox 200bp 100bp 700bp 270bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט שנגזר מ-
+\begin_inset Formula $L_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
