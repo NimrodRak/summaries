@@ -20,7 +20,7 @@
     colorlinks,
 	linkcolor=teal,
     bookmarksopen=true,         
-    bookmarksopenlevel=2
+    bookmarksopenlevel=3
 }
 \end_preamble
 \use_default_options true
@@ -653,27 +653,17 @@ LatexCommand tableofcontents
 
 
 \begin_inset FormulaMacro
-\newcommand{\pac}{\textrm{PAC}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\vcdim}[1]{\textrm{VCdim}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\erm}{\textrm{ERM}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\marg}{\textrm{margin}}
-\end_inset
-
-
-\begin_inset FormulaMacro
 \newcommand{\tr}{{\rm tr}\,}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\reg}{\textrm{REG}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dfa}{\textrm{DFA}}
 \end_inset
 
 
@@ -972,6 +962,12 @@ addcontentsline{toc}{subsection}{הרצאה}
 
 \size largest
 הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
 \end_layout
 
 \begin_layout Description
@@ -1497,7 +1493,11 @@ accepting
 \begin_inset Formula $r$
 \end_inset
 
- הוא דוחה )
+ הוא 
+\bar under
+דוחה
+\bar default
+ )
 \lang english
 rejecting
 \lang hebrew
@@ -1587,7 +1587,7 @@ status open
 \begin_inset Graphics
 	filename img/a2.png
 	lyxscale 40
-	scale 40
+	scale 55
 	BoundingBox 150bp 350bp 600bp 500bp
 	clip
 
@@ -1668,7 +1668,7 @@ status open
 \begin_inset Graphics
 	filename img/from-lang.png
 	lyxscale 40
-	scale 40
+	scale 50
 	BoundingBox 200bp 100bp 700bp 270bp
 	clip
 
@@ -1699,5 +1699,683 @@ status open
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\com=\left\{ a,b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $L=\left\{ w:\text{אי זוגי}\;\#_{a}w\land w_{n}=b\right\} $
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ הוא מספר ה-
+\begin_inset Formula $a$
+\end_inset
+
+-ים ב-
+\begin_inset Formula $w$
+\end_inset
+
+ ו-
+\begin_inset Formula $w_{n}$
+\end_inset
+
+ האות האחרונה במילה(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ll1.png
+	lyxscale 40
+	scale 55
+	BoundingBox 0bp 0bp 288bp 247bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט שאנחנו טוענים שנגזר מ-
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המצב ההתחלתי לא מקבל כי 
+\begin_inset Formula $\epsilon\notin L$
+\end_inset
+
+.
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ כאות ראשונה לא מקדם אותנו כי זו לא מילה חוקית.
+ הרעיון בהלוך-חזור ב-
+\begin_inset Formula $q_{0},q_{1}$
+\end_inset
+
+ הוא שרק אם המספר הוא אי זוגי של 
+\begin_inset Formula $a$
+\end_inset
+
+-ים, נגיע ל-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ ומשם נעצור במצב מקבל רק אם אנחנו נגמרים ב-
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל מצב נוכל להתאים סטטוס - מה מאפיין את המילה שמגיעה אליו )לאחר מכן נשתמש
+ בסטטוסטים האלה, נפרמל אותם ונוכיח איתם את נכונות האוטומט(:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ - 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ - 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ - 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Formula $L\left(A\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall w\in\com^{*}$
+\end_inset
+
+ )אוסף המילים האפשריות( מתקיים 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{0}$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $\delta^{*}:Q\times\com^{*}\mapsto Q$
+\end_inset
+
+, כלומר הפעלה שוב ושוב של 
+\begin_inset Formula $\delta$
+\end_inset
+
+ על המילה החל ממצב נתון(.
+\end_layout
+
+\begin_layout Proof
+נוכיח את שלוש הטענות הבאות ומשם ינבע כי
+\begin_inset Formula 
+\[
+w\in L\iff\delta^{*}\left(q_{0},w\right)=q_{2}\iff\delta^{*}\left(q_{0},w\right)\in F
+\]
+
+\end_inset
+
+האם
+\begin_inset Quotes xrd
+\end_inset
+
+ם נובע משתי הטענות הראשונות, הטענה השלישית מספקת לנו רק כיוון אחד.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{0}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+באינדוקציה על 
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+בסיס )
+\begin_inset Formula $\left|w\right|=0$
+\end_inset
+
+(: 
+\begin_inset Formula $w=\epsilon$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\delta^{*}\left(q_{0},\epsilon\right)=q_{0}$
+\end_inset
+
+ ואכן 
+\begin_inset Formula $\#_{a}\epsilon$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_layout Standard
+צעד )
+\begin_inset Formula $\left|w\right|\to\left|w\right|+1$
+\end_inset
+
+(: נוכיח את הטענה על 
+\begin_inset Formula $w\cdot a,w\cdot b$
+\end_inset
+
+ בהנחה שהיא נכונה על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ נוכיח רק את המקרה של 
+\begin_inset Formula $w\cdot a$
+\end_inset
+
+ ונשאיר לסטודנטית המשקיעה להוכיח את המקרה השני.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\cdot a\right)=q_{0}$
+\end_inset
+
+ אז בהכרח 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)\in\left\{ q_{1},q_{2}\right\} $
+\end_inset
+
+ )
+\begin_inset Formula $\delta\left(q_{0},a\right)\ne q_{0}$
+\end_inset
+
+( ולכן מה
+\begin_inset Quotes xrd
+\end_inset
+
+א 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי )מטענות 
+\begin_inset Formula $2$
+\end_inset
+
+ ו-
+\begin_inset Formula $3$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $\#_{a}w\cdot a$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\cdot a\right)=q_{1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{0}$
+\end_inset
+
+ ומה
+\begin_inset Quotes xrd
+\end_inset
+
+א 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ זוגי ולכן 
+\begin_inset Formula $\#_{a}w\cdot a$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ נגמרת ב-
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\cdot a\right)=q_{2}$
+\end_inset
+
+ אז זה לא ייתכן )מהגדרת האוטומט(.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\com=\left\{ a,b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $L=\left\{ w:\#_{a}w=\#_{b}w\right\} $
+\end_inset
+
+.
+ אין אוטומט סופי ששפתו 
+\begin_inset Formula $L$
+\end_inset
+
+! זה בגלל שאחרי ה-
+\begin_inset Formula $a$
+\end_inset
+
+ הראשון, נצטרך 
+\begin_inset Quotes xld
+\end_inset
+
+לזכור
+\begin_inset Quotes xrd
+\end_inset
+
+ שיש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לטובת 
+\begin_inset Formula $a$
+\end_inset
+
+, ואז אם שוב יש 
+\begin_inset Formula $a$
+\end_inset
+
+ נצטרך לזכור עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, ואם 
+\begin_inset Formula $b$
+\end_inset
+
+ אז אחד לטובת 
+\begin_inset Formula $b$
+\end_inset
+
+ וזה אינסופי בעצם.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+שפה רגולרית
+\bar default
+ היא שפה שניתנת לזיהוי ע
+\begin_inset Quotes xrd
+\end_inset
+
+י אוטומט, ונסמן 
+\begin_inset Formula $L\in\reg$
+\end_inset
+
+, פורמלית, 
+\begin_inset Formula $L$
+\end_inset
+
+ היא רגולרית אם קיים 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(A\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{פעולות על שפות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פעולות על שפות
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $L_{1},L_{2}\in\com^{*}$
+\end_inset
+
+.
+ כל הפעולות עובדות על שפות מעל 
+\begin_inset Formula $\com_{1}\neq\com_{2}$
+\end_inset
+
+ ובמקרה כזה נסמן 
+\begin_inset Formula $\com=\com_{1}\cup\com_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+איחוד )
+\lang english
+union
+\lang hebrew
+(: 
+\begin_inset Formula $L_{1}\cup L_{2}=\left\{ w:w\in L_{1}\lor w\in L_{2}\right\} $
+\end_inset
+
+ )שפות הן קבוצות, זו לא פעולה חדשה(.
+\end_layout
+
+\begin_layout Enumerate
+שרשור )
+\lang english
+concatenation
+\lang hebrew
+(: 
+\begin_inset Formula $L_{1}\cdot L_{2}=\left\{ w_{1}\cdot w_{2}:w_{1}\in L_{1},w_{2}\in L_{2}\right\} $
+\end_inset
+
+ )הצמדה של כל צמד מילים משתי השפות(.
+\end_layout
+
+\begin_layout Enumerate
+כוכב )
+\lang english
+star
+\lang hebrew
+(: 
+\begin_inset Formula $L^{*}=\left\{ w_{1}\cdot\ldots\cdot w_{k}:k\geq0\land w_{i}\in L,\forall i\leq k\right\} $
+\end_inset
+
+ )שרשור של 
+\begin_inset Formula $0$
+\end_inset
+
+ או יותר מילים ב-
+\begin_inset Formula $L$
+\end_inset
+
+ כולל את 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k=0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L_{1}=\left\{ 1,333\right\} ,L_{2}=\left\{ 22,4444\right\} $
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+L_{1}\cup L_{2} & =\left\{ 1,333,22,4444\right\} \\
+L_{1}\cdot L_{2} & =\left\{ 122,1444,33322,3334444\right\} \\
+L^{*} & =\left\{ \epsilon,1,333,11,1333,3331,333333,...\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $L=\varnothing$
+\end_inset
+
+ אז 
+\begin_inset Formula $L^{*}=\left\{ \epsilon\right\} $
+\end_inset
+
+ וכך גם עבור 
+\begin_inset Formula $L=\left\{ \epsilon\right\} $
+\end_inset
+
+.
+ כל שפה אחרת היא אינסופת )יש לפחות מילה אחת לא ריקה, נשרשר אותה כמה פעמים
+ שרק נרצה(.
+\end_layout
+
 \end_body
 \end_document
