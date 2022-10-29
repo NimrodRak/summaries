@@ -20,7 +20,7 @@
     colorlinks,
 	linkcolor=teal,
     bookmarksopen=true,         
-    bookmarksopenlevel=2
+    bookmarksopenlevel=3
 }
 \end_preamble
 \use_default_options true
@@ -274,6 +274,11 @@ LatexCommand tableofcontents
 
 \begin_inset FormulaMacro
 \newcommand{\r}{\text{\ensuremath{\mathcal{R}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldq}{\mathbb{Q}}
 \end_inset
 
 
@@ -617,12 +622,6 @@ LatexCommand tableofcontents
 
 
 \begin_inset FormulaMacro
-\newcommand{\relu}{\textrm{Relu}\,}
-{\textrm{Relu}}
-\end_inset
-
-
-\begin_inset FormulaMacro
 \newcommand{\ppx}[2]{\frac{\partial#1}{\partial#2}}
 \end_inset
 
@@ -653,27 +652,17 @@ LatexCommand tableofcontents
 
 
 \begin_inset FormulaMacro
-\newcommand{\pac}{\textrm{PAC}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\vcdim}[1]{\textrm{VCdim}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\erm}{\textrm{ERM}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\marg}{\textrm{margin}}
-\end_inset
-
-
-\begin_inset FormulaMacro
 \newcommand{\tr}{{\rm tr}\,}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\reg}{\textrm{REG}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dfa}{\textrm{DFA}}
 \end_inset
 
 
@@ -972,6 +961,12 @@ addcontentsline{toc}{subsection}{הרצאה}
 
 \size largest
 הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
 \end_layout
 
 \begin_layout Description
@@ -1497,7 +1492,11 @@ accepting
 \begin_inset Formula $r$
 \end_inset
 
- הוא דוחה )
+ הוא 
+\bar under
+דוחה
+\bar default
+ )
 \lang english
 rejecting
 \lang hebrew
@@ -1587,7 +1586,7 @@ status open
 \begin_inset Graphics
 	filename img/a2.png
 	lyxscale 40
-	scale 40
+	scale 55
 	BoundingBox 150bp 350bp 600bp 500bp
 	clip
 
@@ -1668,7 +1667,7 @@ status open
 \begin_inset Graphics
 	filename img/from-lang.png
 	lyxscale 40
-	scale 40
+	scale 50
 	BoundingBox 200bp 100bp 700bp 270bp
 	clip
 
@@ -1692,6 +1691,1787 @@ status open
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\com=\left\{ a,b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $L=\left\{ w:\text{אי זוגי}\;\#_{a}w\land w_{n}=b\right\} $
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ הוא מספר ה-
+\begin_inset Formula $a$
+\end_inset
+
+-ים ב-
+\begin_inset Formula $w$
+\end_inset
+
+ ו-
+\begin_inset Formula $w_{n}$
+\end_inset
+
+ האות האחרונה במילה(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ll1.png
+	lyxscale 40
+	scale 55
+	BoundingBox 0bp 0bp 288bp 247bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט שאנחנו טוענים שנגזר מ-
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המצב ההתחלתי לא מקבל כי 
+\begin_inset Formula $\epsilon\notin L$
+\end_inset
+
+.
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ כאות ראשונה לא מקדם אותנו כי זו לא מילה חוקית.
+ הרעיון בהלוך-חזור ב-
+\begin_inset Formula $q_{0},q_{1}$
+\end_inset
+
+ הוא שרק אם המספר הוא אי זוגי של 
+\begin_inset Formula $a$
+\end_inset
+
+-ים, נגיע ל-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ ומשם נעצור במצב מקבל רק אם אנחנו נגמרים ב-
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל מצב נוכל להתאים סטטוס - מה מאפיין את המילה שמגיעה אליו )לאחר מכן נשתמש
+ בסטטוסטים האלה, נפרמל אותם ונוכיח איתם את נכונות האוטומט(:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ - 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ - 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ - 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Formula $L\left(A\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall w\in\com^{*}$
+\end_inset
+
+ )אוסף המילים האפשריות( מתקיים 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{0}$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $\delta^{*}:Q\times\com^{*}\mapsto Q$
+\end_inset
+
+, כלומר הפעלה שוב ושוב של 
+\begin_inset Formula $\delta$
+\end_inset
+
+ על המילה החל ממצב נתון(.
+\end_layout
+
+\begin_layout Proof
+נוכיח את שלוש הטענות הבאות ומשם ינבע כי
+\begin_inset Formula 
+\[
+w\in L\iff\delta^{*}\left(q_{0},w\right)=q_{2}\iff\delta^{*}\left(q_{0},w\right)\in F
+\]
+
+\end_inset
+
+האם
+\begin_inset Quotes xrd
+\end_inset
+
+ם נובע משתי הטענות הראשונות, הטענה השלישית מספקת לנו רק כיוון אחד.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{0}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+באינדוקציה על 
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+בסיס )
+\begin_inset Formula $\left|w\right|=0$
+\end_inset
+
+(: 
+\begin_inset Formula $w=\epsilon$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\delta^{*}\left(q_{0},\epsilon\right)=q_{0}$
+\end_inset
+
+ ואכן 
+\begin_inset Formula $\#_{a}\epsilon$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_layout Standard
+צעד )
+\begin_inset Formula $\left|w\right|\to\left|w\right|+1$
+\end_inset
+
+(: נוכיח את הטענה על 
+\begin_inset Formula $w\cdot a,w\cdot b$
+\end_inset
+
+ בהנחה שהיא נכונה על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ נוכיח רק את המקרה של 
+\begin_inset Formula $w\cdot a$
+\end_inset
+
+ ונשאיר לסטודנטית המשקיעה להוכיח את המקרה השני.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\cdot a\right)=q_{0}$
+\end_inset
+
+ אז בהכרח 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)\in\left\{ q_{1},q_{2}\right\} $
+\end_inset
+
+ )
+\begin_inset Formula $\delta\left(q_{0},a\right)\ne q_{0}$
+\end_inset
+
+( ולכן מה
+\begin_inset Quotes xrd
+\end_inset
+
+א 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ אי זוגי )מטענות 
+\begin_inset Formula $2$
+\end_inset
+
+ ו-
+\begin_inset Formula $3$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $\#_{a}w\cdot a$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\cdot a\right)=q_{1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{0}$
+\end_inset
+
+ ומה
+\begin_inset Quotes xrd
+\end_inset
+
+א 
+\begin_inset Formula $\#_{a}w$
+\end_inset
+
+ זוגי ולכן 
+\begin_inset Formula $\#_{a}w\cdot a$
+\end_inset
+
+ אי זוגי ו-
+\begin_inset Formula $w$
+\end_inset
+
+ נגמרת ב-
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\cdot a\right)=q_{2}$
+\end_inset
+
+ אז זה לא ייתכן )מהגדרת האוטומט(.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\com=\left\{ a,b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $L=\left\{ w:\#_{a}w=\#_{b}w\right\} $
+\end_inset
+
+.
+ אין אוטומט סופי ששפתו 
+\begin_inset Formula $L$
+\end_inset
+
+! זה בגלל שאחרי ה-
+\begin_inset Formula $a$
+\end_inset
+
+ הראשון, נצטרך 
+\begin_inset Quotes xld
+\end_inset
+
+לזכור
+\begin_inset Quotes xrd
+\end_inset
+
+ שיש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לטובת 
+\begin_inset Formula $a$
+\end_inset
+
+, ואז אם שוב יש 
+\begin_inset Formula $a$
+\end_inset
+
+ נצטרך לזכור עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, ואם 
+\begin_inset Formula $b$
+\end_inset
+
+ אז אחד לטובת 
+\begin_inset Formula $b$
+\end_inset
+
+ וזה אינסופי בעצם.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+שפה רגולרית
+\bar default
+ היא שפה שניתנת לזיהוי ע
+\begin_inset Quotes xrd
+\end_inset
+
+י אוטומט, ונסמן 
+\begin_inset Formula $L\in\reg$
+\end_inset
+
+, פורמלית, 
+\begin_inset Formula $L$
+\end_inset
+
+ היא רגולרית אם קיים 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(A\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{פעולות על שפות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פעולות על שפות
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $L_{1},L_{2}\in\com^{*}$
+\end_inset
+
+.
+ כל הפעולות עובדות על שפות מעל 
+\begin_inset Formula $\com_{1}\neq\com_{2}$
+\end_inset
+
+ ובמקרה כזה נסמן 
+\begin_inset Formula $\com=\com_{1}\cup\com_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+איחוד )
+\lang english
+union
+\lang hebrew
+(: 
+\begin_inset Formula $L_{1}\cup L_{2}=\left\{ w:w\in L_{1}\lor w\in L_{2}\right\} $
+\end_inset
+
+ )שפות הן קבוצות, זו לא פעולה חדשה(.
+\end_layout
+
+\begin_layout Enumerate
+שרשור )
+\lang english
+concatenation
+\lang hebrew
+(: 
+\begin_inset Formula $L_{1}\cdot L_{2}=\left\{ w_{1}\cdot w_{2}:w_{1}\in L_{1},w_{2}\in L_{2}\right\} $
+\end_inset
+
+ )הצמדה של כל צמד מילים משתי השפות(.
+\end_layout
+
+\begin_layout Enumerate
+כוכב )
+\lang english
+star
+\lang hebrew
+(: 
+\begin_inset Formula $L^{*}=\left\{ w_{1}\cdot\ldots\cdot w_{k}:k\geq0\land w_{i}\in L,\forall i\leq k\right\} $
+\end_inset
+
+ )שרשור של 
+\begin_inset Formula $0$
+\end_inset
+
+ או יותר מילים ב-
+\begin_inset Formula $L$
+\end_inset
+
+ כולל את 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k=0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L_{1}=\left\{ 1,333\right\} ,L_{2}=\left\{ 22,4444\right\} $
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+L_{1}\cup L_{2} & =\left\{ 1,333,22,4444\right\} \\
+L_{1}\cdot L_{2} & =\left\{ 122,1444,33322,3334444\right\} \\
+L^{*} & =\left\{ \epsilon,1,333,11,1333,3331,333333,...\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $L=\varnothing$
+\end_inset
+
+ אז 
+\begin_inset Formula $L^{*}=\left\{ \epsilon\right\} $
+\end_inset
+
+ וכך גם עבור 
+\begin_inset Formula $L=\left\{ \epsilon\right\} $
+\end_inset
+
+.
+ כל שפה אחרת היא אינסופת )יש לפחות מילה אחת לא ריקה, נשרשר אותה כמה פעמים
+ שרק נרצה(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חזרנו על הגדרות מתורת הקבוצות ונושאים אחרים, כאן אכלול רק דוגמאות/הגדרות/טענות
+ חדשות ו/או לא טריוויאליות.
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר כי 
+\begin_inset Formula $R\subseteq S\times T$
+\end_inset
+
+ הוא 
+\bar under
+יחס
+\bar default
+ מעל 
+\begin_inset Formula $S,T$
+\end_inset
+
+ )לרוב 
+\begin_inset Formula $S=T$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $A=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $R=\left\{ \left(a,b\right):\left|a-b\right|\leq1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+תכונות של יחסים
+\end_layout
+
+\begin_layout Itemize
+רפלקסיביות: 
+\begin_inset Formula $\forall a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,a\right)\in A$
+\end_inset
+
+ או בסימון חלופי, 
+\begin_inset Formula $aRa$
+\end_inset
+
+ )היחס הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל הוא רפלקסיבי(.
+\end_layout
+
+\begin_layout Itemize
+סימטריה: 
+\begin_inset Formula $\forall a,b\in A$
+\end_inset
+
+, אם 
+\begin_inset Formula $aRb$
+\end_inset
+
+ אז 
+\begin_inset Formula $bRa$
+\end_inset
+
+ )היחס הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל הוא סימטרי(.
+\end_layout
+
+\begin_layout Itemize
+טרנזיטיביות: 
+\begin_inset Formula $\forall a,b,c\in A$
+\end_inset
+
+, אם 
+\begin_inset Formula $aRb$
+\end_inset
+
+ ו-
+\begin_inset Formula $bRc$
+\end_inset
+
+ אז 
+\begin_inset Formula $aRc$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+יחס שקילות: יחס שמקיים את שלושת הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יחס שקילות 
+\begin_inset Formula $R$
+\end_inset
+
+ מעל 
+\begin_inset Formula $A$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $A$
+\end_inset
+
+ למחלקות שקילות זרות המוגדרות ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\left[a\right]_{R}=\left\{ b\in A:aRb\right\} $
+\end_inset
+
+, כי אם קיים 
+\begin_inset Formula $x\in\left[a\right]_{R}\cap\left[b\right]_{R}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\left[a\right]_{R}\neq\left[b\right]_{R}$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $c\in\left[a\right]_{R}\backslash\left[b\right]_{R}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+aRc\Rightarrow cRx\Rightarrow cRb\Rightarrow c\in\left[b\right]_{R}
+\]
+
+\end_inset
+
+סתירה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ גרף לא מכוון והיחס 
+\begin_inset Formula $R\subseteq V\times V$
+\end_inset
+
+ שמשמעותו 
+\begin_inset Quotes xld
+\end_inset
+
+כל זוגות הקודקודים שיש ביניהם מסלול ב-
+\begin_inset Formula $G$
+\end_inset
+
+
+\begin_inset Quotes xrd
+\end_inset
+
+.
+ קל לראות שזהו יחס רפלקסיבי, טרנזיטיבי וסימטרי ולכן זהו יחס שקילות.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+עוצמה
+\bar default
+ של קבוצה היא מדד ל
+\begin_inset Quotes xrd
+\end_inset
+
+גגודל
+\begin_inset Quotes xrd
+\end_inset
+
+ הקבוצה.
+ עבור קבוצה סופית 
+\begin_inset Formula $A$
+\end_inset
+
+, העוצמה שלה היא 
+\begin_inset Formula $\left|A\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\left|\fldn\right|=\aleph_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה ראינו ש-
+\begin_inset Formula $\left|\fldz\right|=\left|\fldq\right|=\aleph_{0}$
+\end_inset
+
+ )כאשר שוויון עוצמות משמעו קיום פ' חחע
+\begin_inset Quotes xrd
+\end_inset
+
+ל בין שתי הקבוצות(.
+\end_layout
+
+\begin_layout Description
+הערה נאמר כי 
+\begin_inset Formula $\left|A\right|\leq\left|B\right|$
+\end_inset
+
+ אם יש העתקה חח
+\begin_inset Quotes xrd
+\end_inset
+
+ע מ-
+\begin_inset Formula $A$
+\end_inset
+
+ ל-
+\begin_inset Formula $B$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|A\right|<\left|B\right|$
+\end_inset
+
+ אם בנוסף אין העתקה חח
+\begin_inset Quotes xrd
+\end_inset
+
+ע מ-
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה )האלכסון של קנטור( 
+\begin_inset Formula $\left|\left[0,1\right]\right|=2^{\aleph_{0}}>\aleph_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\com^{n}=\desc{\com\times\ldots\times\com}{\text{פעמים}\;n}$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $\com^{*}=\bigcup\limits _{n=0}^{\infty}\com^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה רבים מתבלבלים כאן אבל חשוב לזכור ש-
+\begin_inset Formula $\com$
+\end_inset
+
+ סופית וכך גם 
+\begin_inset Formula $\com^{n}$
+\end_inset
+
+, אבל 
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+ אין סופית.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+דוגמאות לשפות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\com=\left\{ a,b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{1}=\left\{ \epsilon,a,aa,b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{2}=\left\{ w:w_{1}=a\right\} $
+\end_inset
+
+ )מילים שמתחילות ב-
+\begin_inset Formula $a$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{3}=\left\{ \epsilon\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{4}=\varnothing$
+\end_inset
+
+ וזו אינה אותה קבוצה כמו 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{5}=\left\{ w:\left|w\right|<24\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{1}=\left\{ w:w_{1}=a\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $L_{2}=\left\{ w:w_{n}=b\right\} $
+\end_inset
+
+ )סימון לקוני למילים שמסתיימות ב-
+\begin_inset Formula $b$
+\end_inset
+
+(.
+ שפה נוספת היא
+\begin_inset Formula 
+\begin{align*}
+L_{1}\cup L_{2} & =\left\{ w:w_{1}=a\lor w_{n}=b\right\} \\
+L_{2}\cdot L_{1} & =\left\{ w:ab\;\text{מכילה את הרצף}\;w\right\} \\
+L_{1}\cap L_{2} & =\left\{ w:w_{1}=a\land w_{n}=b\right\} \\
+L_{1}\cdot L_{2} & =L_{1}\cap L_{2}
+\end{align*}
+
+\end_inset
+
+כאשר השוויון האחרון נכון כי המילה הראשונה בצמד מתחילה ב-
+\begin_inset Formula $a$
+\end_inset
+
+ והשנייה נגמרת ב-
+\begin_inset Formula $b$
+\end_inset
+
+ ובאמצע לא משנה מה יש, בדומה ל-
+\begin_inset Formula $L_{1}\cap L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L=\left\{ ww:w\in\com^{*}\right\} $
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\overline{L} & =\com^{*}\backslash L=\left\{ w:2\nmid\left|w\right|\right\} \cup\left\{ w=w_{1}\ldots w_{2n}:w_{1},\ldots,w_{n}\neq w_{n+1}\ldots w_{2n}\right\} \\
+L\cdot L & =\left\{ wwxx:w,x\in\com^{*}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה כל שפה מקיימת 
+\begin_inset Formula $L\subseteq\com^{*}$
+\end_inset
+
+, או באופן שקול 
+\begin_inset Formula $L\in P\left(\com^{*}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כמה מילים יש ב-
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+? 
+\begin_inset Formula $\left|\com^{*}\right|=\aleph_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כמה שפות יש מעל 
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+? 
+\begin_inset Formula $2^{\left|\com^{*}\right|}=2^{\aleph_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כמה שפות רגולריות יש מעל 
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+? 
+\begin_inset Formula $\aleph_{0}$
+\end_inset
+
+, כי כל אוטומט מוגדר ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מחרוזת מעל א
+\begin_inset Quotes xrd
+\end_inset
+
+ב סופי )המצבים, הא
+\begin_inset Quotes xrd
+\end_inset
+
+ב של האוטומט וכו'( ולכן מהנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל עוצמת אוסף המחרוזות ששקולות לאוטומטים היא 
+\begin_inset Formula $\aleph_{0}$
+\end_inset
+
+.
+ לחלופין, כל אוטומט אפשר לצייר ויש מספר בן מנייה של פיקסלים על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+canvas
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)במחשב(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+מסקנה קיימות שפות לא רגולריות, ויש 
+\begin_inset Quotes xld
+\end_inset
+
+יותר
+\begin_inset Quotes xrd
+\end_inset
+
+ לא רגולריות מאשר לא )השפות הרגולריות הן קבוצה במידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתוך כל השפות(.
+\end_layout
+
+\begin_layout Description
+הגדרה בהינתן אוטומט 
+\begin_inset Formula $A$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $\delta^{*}\left(q,w\right)=\begin{cases}
+q & w=\epsilon\\
+\delta\left(\delta^{*}\left(q,w'\right),\sigma\right) & w=w'\sigma,\sigma\in\com
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט באוטומט הבא.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/a-star.png
+	lyxscale 40
+	scale 55
+	BoundingBox 0bp 0bp 288bp 247bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט לדוגמה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב ערך של 
+\begin_inset Formula $\delta^{*}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\delta^{*}\left(q_{1},ba\right)=\delta\left(\delta^{*}\left(q,b\right),a\right)=\delta\left(\delta\left(\delta^{*}\left(q,\epsilon\right),b\right),a\right)=q_{1}
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $\com=\left\{ 0,\ldots,9,\#\right\} $
+\end_inset
+
+ והשפה
+\begin_inset Formula 
+\[
+L=\left\{ x\#a:x\in\left\{ 0,\ldots,0\right\} ^{*},a\in\left\{ 0,\ldots,9\right\} ,a\in x\right\} 
+\]
+
+\end_inset
+
+ נמצא את האוטומט המתאים ל-
+\begin_inset Formula $L$
+\end_inset
+
+.
+ ראשית נשים לב לדוגמה כי 
+\begin_inset Formula $64424\#5\notin L$
+\end_inset
+
+ אבל 
+\begin_inset Formula $1243\#2\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הבעיה באוטומט זה שאין לנו זיכרון ולכן נצטרך 
+\begin_inset Quotes xld
+\end_inset
+
+לזכור
+\begin_inset Quotes xrd
+\end_inset
+
+ מספיק מידע כדי לזכור האם ראינו 
+\begin_inset Formula $\#$
+\end_inset
+
+ עד עכשיו ואילו ספרות ראינו עד כה.
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $Q=\left(2^{\left\{ 0,\ldots,9\right\} }\times\left\{ 1,2\right\} \right)\cup\left\{ q_{acc},q_{sink}\right\} $
+\end_inset
+
+ כאשר מצב מייצג את אוסף הספרות שראינו עד כה והאם ראינו את סולמית עד עכשיו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כן ראינו(.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{0}=\left\langle \varnothing,1\right\rangle $
+\end_inset
+
+ כלומר לא ראינו את סולמית ולא ראינו אף ספרה, 
+\begin_inset Formula $F=\left\{ q_{acc}\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $\com=\left\{ 0,\ldots,9,\#\right\} $
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\delta\left(\left\langle c,i\right\rangle ,\sigma\right)=\begin{cases}
+\left\langle c\cup\left\{ \sigma\right\} ,1\right\rangle  & \sigma\in\left\{ 0,\ldots,9\right\} ,i=1\\
+\left\langle c,2\right\rangle  & \sigma=\#,i=1\\
+q_{acc} & \sigma\in c,i=2\\
+q_{sink} & \sigma\notin c,i=2
+\end{cases}
+\]
+
+\end_inset
+
+עברו על כל המצבים והבינו את המשמעות, הרעיון בסוף הוא שאם ראינו סולמית ונתקלנו
+ באות נוספת, נקבל או נשלול בהתאם להאם ראינו את הספרה או לא.
+ לשם השלמות גם נגדיר 
+\begin_inset Formula $\delta\left(q_{acc},\sigma\right)=\delta\left(q_{sink},\sigma\right)=q_{sink}$
+\end_inset
+
+ כי אם הגענו למצב המקבל והוספנו עוד תו זה כבר לא בשפה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענת
+\begin_inset Formula $\;$
+\end_inset
+
+עזר בהינתן 
+\begin_inset Formula $w\in\left\{ 0,\ldots,9\right\} ^{*}$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $S\left(w\right)=\left\{ \sigma\in\left\{ 0,\ldots,9\right\} ^{*}:w\;\text{מופיעה ב-}\;\sigma\right\} $
+\end_inset
+
+ )אוסף הספרות שמופיעות ב-
+\begin_inset Formula $w$
+\end_inset
+
+(.
+ נוכיח כי 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=\left\langle S\left(w\right),1\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+באינדוקציה על 
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בסיס )
+\begin_inset Formula $w=\epsilon$
+\end_inset
+
+(: 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=\delta\left(q_{0},\epsilon\right)=\left\langle \varnothing,1\right\rangle $
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Proof
+צעד )
+\begin_inset Formula $\left|w\right|-1\to\left|w\right|$
+\end_inset
+
+(: נסמן 
+\begin_inset Formula $w'=w\sigma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta^{*}\left(q_{0},w'\right)=\delta\left(\delta^{*}\left(q_{0},w\right),\sigma\right)\overset{\text{ה"א}}{=}\delta\left(\left\langle S\left(w\right),1\right\rangle ,\sigma\right)=\left\langle S\left(w'\right),1\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $L=L\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח הכלה דו-כיוונית באינדוקציה על אורך המילה; זו דרך ההוכחה המקובלת לטענות
+ על שפות ואוטומטים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $L\subseteq L\left(A\right)$
+\end_inset
+
+: נניח כי 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ ונראה שריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ מקבלת.
+ 
+\begin_inset Formula $w=x\#a$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a\in\left\{ 0,\ldots,9\right\} ,x\in\left[0,\ldots,9\right]^{*}$
+\end_inset
+
+ ו-
+\begin_inset Formula $a\in S\left(x\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\delta^{*}\left(q_{0},w\right) & =\delta\left(\delta^{*}\left(q_{0},x\#\right),a\right)\\
+ & =\delta\left(\delta\left(\desc{\delta^{*}\left(q_{0},x\right)}{\left\langle S\left(x\right),1\right\rangle },\#\right),a\right)\\
+\delta\;\text{הגדרת} & =\delta\left(\left\langle S\left(x\right),2\right\rangle ,a\right)\\
+\delta\;\text{הגדרת} & =q_{acc}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $L\left(A\right)\subseteq L$
+\end_inset
+
+: מספיק שנוכיח שאם 
+\begin_inset Formula $w\notin L$
+\end_inset
+
+ אז 
+\begin_inset Formula $w\notin L\left(A\right)$
+\end_inset
+
+.
+ נעבור על כל המילים 
+\begin_inset Formula $w\notin L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w\in\left\{ 0,\ldots,9\right\} ^{*}$
+\end_inset
+
+ אז מטבענת העזר 
+\begin_inset Formula $\delta\left(q_{0},w\right)=\left\langle S\left(w\right),1\right\rangle \neq q_{acc}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w\in\left\{ 0,\ldots,9\right\} ^{*}\times\left\{ \#\right\} $
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\delta^{*}\left(q_{0},w\right)=\delta\left(\desc{\delta^{*}\left(q_{0},w\right)}{\left\langle S\left(x\right),1\right\rangle },\#\right)=\left\langle S\left(x\right),2\right\rangle \neq q_{acc}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w=x\#y$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\left|y\right|>1$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\begin{align*}
+\delta^{*}\left(q_{0},w\right) & =\delta^{*}\left(\left\langle S\left(x\right),2\right\rangle ,y\right)\neq q_{acc}
+\end{align*}
+
+\end_inset
+
+כאשר השוויון נובע מכך שניתן לפצל את הריצה על 
+\begin_inset Formula $x\#$
+\end_inset
+
+ ואז על 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ הריצה על 
+\begin_inset Formula $x\#$
+\end_inset
+
+ מביאה אותנו ל-
+\begin_inset Formula $\left\langle S\left(x\right),2\right\rangle $
+\end_inset
+
+ מהגדרה של 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+ האי-שוויון נובע מכך ש-
+\begin_inset Formula $\left|y\right|>1$
+\end_inset
+
+ ולכן גם אם אחרי הספרה הראשונה של 
+\begin_inset Formula $y$
+\end_inset
+
+ הגענו ל-
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+, בהכרח כל הספרות האחרות יובילו אותנו תמיד לבור דוחה.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w=x\#a$
+\end_inset
+
+ אבל 
+\begin_inset Formula $a\notin S\left(x\right)$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\begin{align*}
+\delta^{*}\left(q_{0},w\right) & =\delta\left(\delta\left(\delta^{*}\left(q_{0},x\right),\#\right),a\right)\\
+ & =\delta\left(\left\langle S\left(x\right),2\right\rangle ,a\right)\\
+a\notin S\left(x\right)\;\; & =q_{sink}
+\end{align*}
 
 \end_inset
 
