@@ -666,6 +666,11 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\nfa}{\textrm{NFA}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3044,7 +3049,6 @@ status open
 	filename img/a-star.png
 	lyxscale 40
 	scale 55
-	BoundingBox 0bp 0bp 288bp 247bp
 
 \end_inset
 
@@ -3052,6 +3056,8 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3472,6 +3478,1637 @@ q_{sink} & \sigma\notin c,i=2
  & =\delta\left(\left\langle S\left(x\right),2\right\rangle ,a\right)\\
 a\notin S\left(x\right)\;\; & =q_{sink}
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{II
+\backslash
+;
+\backslash
+; אוטומטים אי-דטרמיניסטיים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{II}$
+\end_inset
+
+ | אוטומטים אי-דטרמיניסטיים 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\end_layout
+
+\begin_layout Description
+משפט השפות הרולגריות סגורות לאיחוד, כלומר, אם 
+\begin_inset Formula $L_{1},L_{2}\in\reg$
+\end_inset
+
+ אז 
+\begin_inset Formula $L_{1}\cup L_{2}\in\reg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בהינתן 
+\begin_inset Formula $\dfa$
+\end_inset
+
+-ים 
+\begin_inset Formula $A_{1}=\left\langle Q_{1},\com,\delta_{1},s_{1},F_{1}\right\rangle ,A_{2}=\left\langle Q_{2},\com,\delta_{2},s_{2},F_{2}\right\rangle $
+\end_inset
+
+, נבנה 
+\begin_inset Formula $A=\left\langle Q,\com,\delta,s_{0},F\right\rangle $
+\end_inset
+
+ שעבורו
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left(A\right)=L\left(A_{1}\right)\cup L\left(A_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הרעיון הוא ש-
+\begin_inset Formula $A$
+\end_inset
+
+ מסמלץ את 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ יחד, ואוטומט בבנייה כזו נקרא אוטומט המכפלה.
+ נבחר 
+\begin_inset Formula $Q=Q_{1}\times Q_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $s_{0}=\left\langle s_{1},s_{2}\right\rangle $
+\end_inset
+
+, ופ' מעברים
+\begin_inset Formula 
+\[
+\delta\left(\left\langle q_{1},q_{2}\right\rangle ,\sigma\right)=\left\langle \delta_{1}\left(q_{1},\sigma\right),\delta\left(q_{2},\sigma\right)\right\rangle 
+\]
+
+\end_inset
+
+כאשר אנחנו מניחים ש-
+\begin_inset Formula $A_{1},A_{2}$
+\end_inset
+
+ לא נתקעים כי אפשר להוסיף בור דוחה במקרה הצורך.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $L\subseteq\left\{ a\right\} ^{*}$
+\end_inset
+
+ אז היא מגדירה תת קבוצה של 
+\begin_inset Formula $\fldn$
+\end_inset
+
+ - כל האורכים של מילים בשפה, כלומר 
+\begin_inset Formula $\left\{ i:a^{i}\in L\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+דוגמה נבחר את האוטומטים 
+\begin_inset Formula $A_{1},A_{2}$
+\end_inset
+
+ כבתמונה,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/times.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+האוטומטים 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ )מימין( ו-
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ )משמאל(
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה הזה, אוטומט המכפלה יראה כבאיור, כאשר בכל מעבר אנחנו 
+\begin_inset Quotes xld
+\end_inset
+
+צועדים
+\begin_inset Quotes xrd
+\end_inset
+
+ קדימה גם במצבים של 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ וגם בשל 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/times2.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+ אוטומט המכפלה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולא קשה לראות שהאוטומט מקבל על מספרים זוגיים וכאלה שמתחלקים בשלוש, כלומר
+ 
+\begin_inset Formula $L\left(A\right)=\left\{ w:\left|w\right|\mod2=0\lor\left|w\right|\mod3=0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה מהדוגמה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל ניתן לראות שאם היינו רוצים לבנות אוטומט שהשפה שלו היא 
+\begin_inset Formula $L\left(A_{1}\right)\cap L\left(A_{2}\right)$
+\end_inset
+
+ היינו בוחרים
+\begin_inset Formula 
+\[
+F=\left\{ \left\langle q_{1},q_{2}\right\rangle :q_{1}\in F_{1}\land q_{2}\in F_{2}\right\} 
+\]
+
+\end_inset
+
+כאשר ההבדל כאן הוא 
+\begin_inset Quotes xld
+\end_inset
+
+וגם
+\begin_inset Quotes xrd
+\end_inset
+
+ במקום 
+\begin_inset Quotes xld
+\end_inset
+
+או
+\begin_inset Quotes xrd
+\end_inset
+
+ על המצבים המקבלים.
+\end_layout
+
+\begin_layout Description
+הערה אם היינו רוצים 
+\begin_inset Formula $A$
+\end_inset
+
+ עם 
+\begin_inset Formula $L\left(A\right)=\com^{*}\backslash L\left(A_{1}\right)$
+\end_inset
+
+, מספיק שהיינו מגדירים 
+\begin_inset Formula $A=\left\langle Q_{1},\com,\delta_{1},s_{1},Q_{1}\backslash F_{1}\right\rangle $
+\end_inset
+
+ כי הריצה מגיעה ל-
+\begin_inset Formula $Q_{1}\backslash F_{1}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח כי 
+\begin_inset Formula $L\left(A\right)=L\left(A_{1}\right)\cup L\left(A_{2}\right)$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $w=w_{1}w_{2}\ldots w_{n}$
+\end_inset
+
+ מילה ב-
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $r=r_{0}r_{1}\ldots r_{n}$
+\end_inset
+
+ הריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $r_{i}=\left\langle q_{1}^{i},q_{2}^{i}\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+מהגדרת 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $q_{1}^{0}=s_{1},q_{2}^{0}=s_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $i\ge0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+q_{1}^{i+1}=\delta_{1}\left(q_{1}^{i},w_{i}\right),q_{2}^{i+1}=\delta_{2}\left(q_{2}^{i},w_{i}\right)
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\rho_{1}=q_{1}^{0},q_{1}^{1},\ldots,q_{1}^{n}$
+\end_inset
+
+ היא ריצה של 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ובהתאמה 
+\begin_inset Formula $\rho_{2}=q_{2}^{0},q_{2}^{1},\ldots,q_{2}^{n}$
+\end_inset
+
+ היא ריצה של 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מכאן, 
+\begin_inset Formula $r$
+\end_inset
+
+ מקבלת אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\langle q_{1}^{n},q_{2}^{n}\right\rangle \in F$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $q_{1}^{n}\in F_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $q_{2}^{n}\in F_{2}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ מקבלת או 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+ מקבלת אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $w\in L\left(A_{1}\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $w\in L\left(A_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה בדרך להוכחה ש-
+\begin_inset Formula $\reg$
+\end_inset
+
+ סגור לשרשור, נתקעים בקושי הוכחתי.
+ לכאורה נפרק מילה לשני החלקים, נריץ כל חלק באוטומט המתאים לו ונסיים.
+ הבעיה היא שלכל מילה יכולים להיות כמה פירוקים.
+ לשם כך נצטרך 
+\begin_inset Quotes xld
+\end_inset
+
+לנחש
+\begin_inset Quotes xrd
+\end_inset
+
+ מתי לקפוץ.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+אוטומטים אי-דטרמיניסטיים
+\end_layout
+
+\begin_layout Description
+דוגמה נביט באוטומט הבא,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/nfa.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט אי-דטרמיניסטי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+לכאורה פ' המעברים לא מוגדרת היטב עבור 
+\begin_inset Formula $q_{0},0$
+\end_inset
+
+, אבל כאן הרעיון הוא שהאוטומט יכול לבחור מתוך כמה אפשרויות בעצמו לאיזה מצב
+ הוא עובר, כאשר מילה מתקבלת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י האוטומט אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם קיימת ריצה עם ניחושים כלשהם שמקבלת, ובמקרה כזה נגדיר 
+\begin_inset Formula $\delta\left(q_{0},0\right)=\left\{ q_{0},q_{1}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+אוטומט אי-דטרמיניסטי
+\bar default
+ הוא אוטומט שבו פ' המעברים ממפה מצב ואות )או אפסילון( לקבוצה של מצבים עוקבים
+ אפשריים, כלומר
+\begin_inset Formula 
+\[
+\delta:Q\times\left(\com\cup\left\{ \epsilon\right\} \right)\to2^{Q}
+\]
+
+\end_inset
+
+ומילה מתקבלת אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם קיימת ריצה מקבלת של 
+\begin_inset Formula $A$
+\end_inset
+
+ על המילה.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט באוטומט הבא עם 
+\begin_inset Quotes xld
+\end_inset
+
+צעד אפסילון
+\begin_inset Quotes xrd
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/eps.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט אי-דטרמיניסטי עם 
+\begin_inset Quotes xld
+\end_inset
+
+צעד אפסילון
+\begin_inset Quotes xrd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+המילים הבאות מתקבלות: 
+\begin_inset Formula $\epsilon,0,00,00110$
+\end_inset
+
+ )כי נוכל להשתמש קודם בצד אפסילון במקום ליפול לבור דוחה מ-
+\begin_inset Formula $s_{0}$
+\end_inset
+
+( ואילו 
+\begin_inset Formula $001,00111$
+\end_inset
+
+ לא מתקבלות.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+אוטומט אי-דטרמיניסטי
+\bar default
+ הוא חמשייה מהצורה 
+\begin_inset Formula $A=\left\langle Q,\com,\delta,Q_{0},F\right\rangle $
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $Q_{0}\subseteq Q$
+\end_inset
+
+ )יכולים להיות כמה מצבים התחלתיים( ו-
+\begin_inset Formula $\delta:Q\times\left(\com\cup\left\{ \epsilon\right\} \right)\to2^{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ על מילה 
+\begin_inset Formula $w=\sigma_{1}\sigma_{2}\ldots\sigma_{n}$
+\end_inset
+
+ היא סדרת מצבים 
+\begin_inset Formula $r=r_{0}r_{1}\ldots r_{m}$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $m\geq n$
+\end_inset
+
+ בגלל ריפודי אפסילון( כך שניתן לכתוב את 
+\begin_inset Formula $w$
+\end_inset
+
+ כ-
+\begin_inset Formula $w'=x_{1}x_{2}\ldots x_{m}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x_{i}\in\com\cup\left\{ \epsilon\right\} $
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $r_{0}\in Q_{0}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $r_{i+1}\in\delta\left(r_{i},x_{i+1}\right)$
+\end_inset
+
+ )
+\begin_inset Formula $\in$
+\end_inset
+
+ בניגוד ל-
+\begin_inset Formula $=$
+\end_inset
+
+ ב-
+\begin_inset Formula $\dfa$
+\end_inset
+
+(.
+ בנוסף, 
+\begin_inset Formula $r$
+\end_inset
+
+ מקבלת אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $r_{m}\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאמר כי 
+\begin_inset Formula $A$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם קיימת ריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ שמקבלת.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\com=\left\{ 0,1\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $L=\left\{ w:0,1\;\text{מסתיימת ב-}\;w\right\} $
+\end_inset
+
+, באיור למעלה 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ שהשפה שלו היא 
+\begin_inset Formula $L$
+\end_inset
+
+ ולמטה 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ שקול )ויותר פשוט(,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/nfadfa.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט דטרמיניסטי )למעלה( ואי-דטרמיניסטי )למטה( שמשרתים אותה המטרה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $L=\left\{ w:0\left(0+1\right)\left(0+1\right)\;\text{מסתיימת ב-}\;w\right\} $
+\end_inset
+
+, האוטומט הבא מקבל אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם מילה היא ב-
+\begin_inset Formula $L$
+\end_inset
+
+ )הוכחה פורמלית פשוטה בעל פה(,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/001.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט עם השפה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $L'=\left\{ \text{במקום הלפני לפני אחרון, הלפני אחרון או האחרון}\;0\right\} $
+\end_inset
+
+, האוטומטים הבאים הם בעלי השפה 
+\begin_inset Formula $L'$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/2nfa.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+שני אוטומטים אי-דטרמיניסטיים ששפתם 
+\begin_inset Formula $L'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה מצבים התחלתיים רבים הם שימושיים לדוגמה במקרה של אוטומט המכפלה, שם
+ אם היינו יכולים להגדיר כמה מצבים התחלתיים יכולנו לעשות בניה יותר פשוטה
+ עם 
+\begin_inset Formula $Q=Q_{1}\cup Q_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+ההוכחה למשפט בסוף ההרצה עבר לתחילת חלק ב' של ההרצאה.
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L$
+\end_inset
+
+ היא השפה שבה כל המילים שבהן האות האחרונה הופיע לפניכן במילה, מעל 
+\begin_inset Formula $\com=\left\{ 0,1\right\} $
+\end_inset
+
+.
+ ראו 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ שמתאים לה באיור,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ocmplex.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dfa$
+\end_inset
+
+ שמתאים ל-
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ועתה 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ מתאים )שקול(, כאשר הרעיון כאן הוא שהחלק העליון מתאים לריצה שבה יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד לפחות ובסוף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולמטה זו כזו בהתאם שמסתיימת ב-
+\numeric on
+1
+\numeric off
+.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/NFAC.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nfa$
+\end_inset
+
+ שמתאים ל-
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+משפט לכל 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ 
+\begin_inset Formula $A'$
+\end_inset
+
+ שקול כך ש-
+\begin_inset Formula $L\left(A\right)=L\left(A'\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בהינתן 
+\begin_inset Formula $A=\left\langle Q,\com,Q_{0},\delta,F\right\rangle $
+\end_inset
+
+, נבנה 
+\begin_inset Formula $A'=\left\langle Q',\com,q_{0}',\rho,F'\right\rangle $
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(A\right)=L\left(A\right)'$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $Q'=2^{Q}$
+\end_inset
+
+ ואז הרעיון הוא ש-
+\begin_inset Formula $A'$
+\end_inset
+
+ מגיע למצב 
+\begin_inset Formula $S$
+\end_inset
+
+ בריצה אחרי קריאת 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $A$
+\end_inset
+
+ יכול להגיע לבדיוק כל המצבים ב-
+\begin_inset Formula $S$
+\end_inset
+
+ אחרי קריאת 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+באופן אינדוקטיבי, 
+\begin_inset Formula $\delta^{*}$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\delta^{*}\left(s,\epsilon\right)=s$
+\end_inset
+
+, 
+\begin_inset Formula $\delta^{*}\left(S,\sigma\right)=\bigcup\limits _{s\in S}\delta\left(s,\sigma\right)$
+\end_inset
+
+ ובצעד ה-
+\begin_inset Formula $n$
+\end_inset
+
+-י, 
+\begin_inset Formula $\delta^{*}\left(S,w\cdot\sigma\right)=\delta^{*}\left(\delta^{*}\left(S,w\right),\sigma\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נבחר 
+\begin_inset Formula $q_{0}'=Q_{0}$
+\end_inset
+
+ שהוא קבוצה, אבל 
+\begin_inset Formula $q_{0}'\in Q'$
+\end_inset
+
+ כי 
+\begin_inset Formula $Q'$
+\end_inset
+
+ זו קבוצה של קבוצות ולכן זה בסדר.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $\rho\left(S,\sigma\right)=\bigcup\limits _{s\in S}\delta\left(s,\sigma\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $s\in Q'$
+\end_inset
+
+ ו-
+\begin_inset Formula $\sigma\in\com$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+טענה לכל 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\rho^{*}\left(q_{0}',w\right)=\delta^{*}\left(Q_{0},w\right)$
+\end_inset
+
+ או במילים, המצב ב-
+\begin_inset Formula $A'$
+\end_inset
+
+ ש-
+\begin_inset Formula $A'$
+\end_inset
+
+ מגיע אליו אחרי קריאת 
+\begin_inset Formula $w$
+\end_inset
+
+ )המצב הוא קבוצה בפני עצמו(, שווה לקבוצת המצבים ש-
+\begin_inset Formula $A$
+\end_inset
+
+ יכול להיות בה )באחת הריצות שלו( על 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+נבחר 
+\begin_inset Formula $F'=\left\{ S\in2^{Q}:S\cap F\neq\varnothing\right\} $
+\end_inset
+
+ כי אנחנו מקבלים אם הגענו למצב ב-
+\begin_inset Formula $Q'$
+\end_inset
+
+ שאחד מ)תתי-(המצבים שבו הם מקבלים )כי זה אומר שאנחנו יכולים להגיע אליו בריצה
+ כלשהי של 
+\begin_inset Formula $A'$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+נוכיח כי 
+\begin_inset Formula $L\left(A\right)=L\left(A'\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $w\in L\left(A\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם קיימת ריצה מקבלת של 
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\delta^{*}\left(Q_{0},w\right)\cap F\neq\varnothing$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם )עכשיו נוכיח( 
+\begin_inset Formula $\rho^{*}\left(q_{0}',w\right)\in F'$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $w\in L\left(A\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+)של הטענה המקוננת( באינדוקציה על 
+\begin_inset Formula $w$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בסיס )
+\begin_inset Formula $w=\epsilon$
+\end_inset
+
+(: 
+\begin_inset Formula $\rho^{*}\left(q_{0}',\epsilon\right)=q_{0}'=Q_{0}=\delta^{*}\left(Q_{0},\epsilon\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צעד )
+\begin_inset Formula $\left|w\right|\to\left|w+1\right|$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+\rho^{*}\left(q_{0}',w\cdot\sigma\right)=\rho\left(\rho^{*}\left(q_{0}',w\right),\sigma\right)\overset{\delta\;\text{הגדרת}}{=}\delta^{*}\left(\rho^{*}\left(q_{0}',w\right)\right)\overset{\text{ה"א}}{=}\delta^{*}\left(\delta^{*}\left(Q_{0},w\right),\sigma\right)=\delta^{*}\left(Q_{0},w\cdot\sigma\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+וזה מסיים את ההוכחה כי השפות של האוטומטים שוות.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה בחזרה לדוגמה למעלה )מצורף איור נוסף(, נמצא 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ מתאים לזה )נבצע דטרמינטיזציה(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/comp2.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nfa$
+\end_inset
+
+ שראינו למעלה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ה-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ המתאים הוא כבאיור, כאשר הוא לא שלם כי יש 
+\begin_inset Formula $2^{5}$
+\end_inset
+
+ מצבים.
+ הרעיון בכל אופן הוא שבכל פעם אנחנו מסתכלים לאן כל אחד מהמצבים לוקח אותנו
+ בהינתן האות הנוכחית ואוספים את כולם לכדי מצב )כמו ההגדרה של 
+\begin_inset Formula $\rho$
+\end_inset
+
+(, ושמצב הוא מקבל אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם הוא מכיל מצב שהיה מקבל ב-
+\begin_inset Formula $\nfa$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/comp3.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dfa$
+\end_inset
+
+ שראינו למעלה
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
