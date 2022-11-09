@@ -562,6 +562,7 @@ LatexCommand tableofcontents
 \begin_layout Standard
 \paragraph_spacing onehalf
 \noindent
+\align right
 \begin_inset FormulaMacro
 \newcommand{\u}[1]{\textrm{U}\left(#1\right)}
 \end_inset
@@ -668,6 +669,11 @@ LatexCommand tableofcontents
 
 \begin_inset FormulaMacro
 \newcommand{\nfa}{\textrm{NFA}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\regex}{\textrm{REGEX}}
 \end_inset
 
 
@@ -2408,13 +2414,6 @@ addcontentsline{toc}{subsection}{תרגול}
 
 \size largest
 תרגול
-\end_layout
-
-\begin_layout Standard
-
-\color gray
-חזרנו על הגדרות מתורת הקבוצות ונושאים אחרים, כאן אכלול רק דוגמאות/הגדרות/טענות
- חדשות ו/או לא טריוויאליות.
 \end_layout
 
 \begin_layout Description
@@ -5102,7 +5101,11 @@ status open
 \begin_inset Formula $\dfa$
 \end_inset
 
- שראינו למעלה
+ חלקי שמתאים ל-
+\begin_inset Formula $\nfa$
+\end_inset
+
+ למעלה
 \end_layout
 
 \end_inset
@@ -5116,5 +5119,2553 @@ status open
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+טענה לכל 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $A=\left\langle Q,\com,\delta,Q_{0},F\right\rangle $
+\end_inset
+
+ קיים 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ שקול 
+\begin_inset Formula $B$
+\end_inset
+
+ כך שב-
+\begin_inset Formula $B$
+\end_inset
+
+ אין מעבר 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+הרעיון הוא שנקבץ את כל המצבים שעוברים אליהם עם 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ לאחד כל פעם ונראה שזה שקול.
+ נגדיר
+\begin_inset Formula 
+\[
+E\left(q\right)=\left\{ s:\epsilon\;\text{רק עם מעברי}\;A\text{ב-}\;S\text{ל-}\;q\text{יש מסלול מ-}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נשים לב כי תמיד 
+\begin_inset Formula $q\in E\left(q\right)$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $E\left(q\right)\neq\varnothing$
+\end_inset
+
+ )לא לצעוד מ-
+\begin_inset Formula $q$
+\end_inset
+
+ זה כמו לצעוד אפסילון מ-
+\begin_inset Formula $q$
+\end_inset
+
+ כי לא קראנו כלום(.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $B=\left\langle Q,\com,\delta',\bigcup\limits _{q\in Q_{0}}E\left(q\right),F\right\rangle $
+\end_inset
+
+ כאשר הרעיון במצבים ההתחלתיים הוא כל המצבים שאפשר להגיע אליהם ממצב התחלתי
+ כלשהו רק בצעדי אפסילון.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $\delta'\left(q,\sigma\right)=\bigcup_{s\in\delta\left(q,\sigma\right)}E\left(s\right)$
+\end_inset
+
+ כלומר כל מצב שאפשר להגיע אליו עם האות ומעברי אפסילון מ-
+\begin_inset Formula $q$
+\end_inset
+
+ )בפרט זה כולל גם את מצבי 
+\begin_inset Formula $\delta\left(q,\sigma\right)$
+\end_inset
+
+ המקוריים(.
+\end_layout
+
+\begin_layout Proof
+לא נוכיח נכונות אבל כן נסביר למה הבניה הזו היא פולינומיאלית: אפשר לחשב כל
+ 
+\begin_inset Formula $E\left(q\right)$
+\end_inset
+
+ בזמן יעיל באמצעות 
+\begin_inset Formula ${\rm DFS}$
+\end_inset
+
+ כאשר קשת קיימת בגרף שלנו אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם היא מעבר אפסילון בין שני מצבים באוטומט.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\reg$
+\end_inset
+
+ סגורה לאיחוד, כלומר אם 
+\begin_inset Formula $L_{1},L_{2}\in\reg$
+\end_inset
+
+ אז 
+\begin_inset Formula $L_{1}\cup L_{2}\in\reg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהיו 
+\begin_inset Formula $A_{1}=\left\langle Q_{1},\com,\delta_{1},q_{1},F_{1}\right\rangle ,A_{2}=\left\langle Q_{2},\com,\delta_{2},q_{2},F_{2}\right\rangle $
+\end_inset
+
+ 
+\begin_inset Formula $\dfa$
+\end_inset
+
+-ים ל-
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ בהתאמה.
+ בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $Q_{1}\cap Q_{2}=\varnothing$
+\end_inset
+
+ )אפשר לשנות את השמות, זה לא מעניין(.
+ נבנה 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ לשפה 
+\begin_inset Formula $L_{1}\cup L_{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+B=\left\langle Q_{1}\cup Q_{2},\com,\delta,\left\{ q_{1},q_{2}\right\} ,F_{1}\cup F_{2}\right\rangle 
+\]
+
+\end_inset
+
+ופ' המעבירם מוגדרת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+\delta\left(q,\sigma\right)=\begin{cases}
+\delta\left(q,\sigma\right) & q\in Q_{1}\\
+\delta_{2}\left(q,\sigma\right) & q\in Q_{2}
+\end{cases}
+\]
+
+\end_inset
+
+כך, מילים מ-
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ יוכלו להתקבל מריצות שמתחילות ב-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ ומילים ב-
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ מתקבלות על ריצות החל מ-
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ )למעשה יש לנו שני אוטומטים זרים שכל ריצה יכולה לבחור איפה היא מתחילה(.
+\end_layout
+
+\begin_layout Proof
+נראה ש-
+\begin_inset Formula $L\left(B\right)=L_{1}\cup L_{2}$
+\end_inset
+
+ באמצעות הכלה דו כיוונית.
+\end_layout
+
+\begin_layout Proof
+
+\bar under
+\begin_inset Formula $L_{1}\cup L_{2}\subseteq L\left(B\right)$
+\end_inset
+
+
+\bar default
+: תהי 
+\begin_inset Formula $w\in L_{1}\cup L_{2}$
+\end_inset
+
+ ובה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $w\in L_{1}$
+\end_inset
+
+.
+ היות ש-
+\begin_inset Formula $w\in L_{1}$
+\end_inset
+
+, הריצה של 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ מקבלת ונסמנה 
+\begin_inset Formula $r_{0},\ldots,r_{\left|w\right|}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r_{0}=q_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $r_{\left|w\right|}\in F_{1}$
+\end_inset
+
+.
+ נשים לב שהריצה 
+\begin_inset Formula $r_{0},\ldots,r_{\left|w\right|}$
+\end_inset
+
+ היא ריצה אפשרית של 
+\begin_inset Formula $B$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ כי 
+\begin_inset Formula $r_{0}\in\left\{ q_{1,}q_{2}\right\} $
+\end_inset
+
+, פ' המעברים 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מוגדרת היטב במקרה ש-
+\begin_inset Formula $q\in Q_{1}$
+\end_inset
+
+ וזה מתקייים לכל אורך המסלול ובנוסף 
+\begin_inset Formula $r_{\left|w\right|}\in F_{1}\subseteq F_{1}\cup F_{2}$
+\end_inset
+
+ ולכן הריצה גם מקבלת, כלומר 
+\begin_inset Formula $w\in L\left(B\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\bar under
+\begin_inset Formula $L\left(B\right)\subseteq L_{1}\cup L_{2}$
+\end_inset
+
+
+\bar default
+: תהי 
+\begin_inset Formula $w\in L\left(B\right)$
+\end_inset
+
+, כלומר קיימת ריצה מקבלת של 
+\begin_inset Formula $B$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ שנסמנה 
+\begin_inset Formula $r_{0},\ldots,r_{\left|w\right|}$
+\end_inset
+
+.
+ מהגדרת 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $r_{0}\in\left\{ q_{1},q_{2}\right\} $
+\end_inset
+
+ ונני בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ כי 
+\begin_inset Formula $r_{0}=q_{1}$
+\end_inset
+
+.
+ היות ש-
+\begin_inset Formula $q_{0}\in Q_{1}$
+\end_inset
+
+, לכל 
+\begin_inset Formula $0\leq i\leq\left|w\right|-1$
+\end_inset
+
+ מתקיים שהמעבר מ-
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ ל-
+\begin_inset Formula $r_{i+1}$
+\end_inset
+
+ נעשה דרך הפ' 
+\begin_inset Formula $\delta_{1}$
+\end_inset
+
+ )
+\begin_inset Formula $\delta_{1}$
+\end_inset
+
+ מוגדרת רק על מצבים מ-
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $Q_{1}\cap Q_{2}=\varnothing$
+\end_inset
+
+( ולכן התמונה של 
+\begin_inset Formula $\delta_{1}$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+.
+ בנוסף, 
+\begin_inset Formula $r_{\left|w\right|}\in F_{1}\cup F_{2}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $r_{\left|w\right|}\in Q_{1}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $r_{\left|w\right|}\in F_{1}$
+\end_inset
+
+.
+ לכן, 
+\begin_inset Formula $r_{0},\ldots,r_{\left|w\right|}$
+\end_inset
+
+ היא גם ריצה מקבלת של 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $w\in L_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\reg$
+\end_inset
+
+ סגורה לשרשור, כלומר אם 
+\begin_inset Formula $L_{1},L_{2}\in\reg$
+\end_inset
+
+ אז 
+\begin_inset Formula $L_{1},L_{2}\in\reg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+הרעיון הוא שנאפשר קפיצה )בניחוש( מכל מצב מקבל ב-
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ להתחלה של 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ ואז כך נאפשר שרשור של מילים.
+\end_layout
+
+\begin_layout Proof
+יהיו 
+\begin_inset Formula $A_{1}=\left\langle Q_{1},\com,\delta_{1},q_{1},F_{1}\right\rangle ,A_{2}=\left\langle Q_{2},\com,\delta_{2},q_{2},F_{2}\right\rangle $
+\end_inset
+
+ 
+\begin_inset Formula $\dfa$
+\end_inset
+
+-ים ל-
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ בהתאמה.
+ בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $Q_{1}\cap Q_{2}=\varnothing$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ לשפה 
+\begin_inset Formula $L_{1}\cdot L_{2}$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $B=\left\langle Q_{1}\cup Q_{2},\com,\delta,\left\{ q_{1}\right\} ,F_{2}\right\rangle $
+\end_inset
+
+ כאשר
+\begin_inset Formula 
+\[
+\delta\left(q,\sigma\right)=\begin{cases}
+\delta_{1}\left(q,\sigma\right) & q\in Q_{1},\sigma\in\com\\
+\delta_{2}\left(q,\sigma\right) & q\in Q_{2},\sigma\in\com\\
+\left\{ q_{0}\right\}  & q\in F_{1},\sigma=\epsilon
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נוכיח הכלה דו כיוונית.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+
+\bar under
+\begin_inset Formula $L_{1}\cdot L_{2}\subseteq L\left(B\right)$
+\end_inset
+
+
+\bar default
+: תהי 
+\begin_inset Formula $w\in L_{1}\cdot L_{2}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $w=x\cdot y$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x\in L_{1},y\in L_{2}$
+\end_inset
+
+.
+ ישנן ריצות מקבלות של 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ושל 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $y$
+\end_inset
+
+, בהתאמה נסמנן 
+\begin_inset Formula $r_{0},\ldots,r_{\left|x\right|}$
+\end_inset
+
+ ו-
+\begin_inset Formula $r_{0}',\ldots,r'_{\left|y\right|}$
+\end_inset
+
+.
+ נשים לב כי הריצה 
+\begin_inset Formula $r_{0},\ldots,r_{\left|w\right|},r_{0}',\ldots,r_{\left|y\right|}'$
+\end_inset
+
+ היא ריצה של 
+\begin_inset Formula $B$
+\end_inset
+
+ על 
+\begin_inset Formula $w=x\cdot y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $r_{0}=q_{0}$
+\end_inset
+
+ הוא אכן מצב התחלתי ב-
+\begin_inset Formula $B$
+\end_inset
+
+ ועד 
+\begin_inset Formula $r_{\left|x\right|}$
+\end_inset
+
+ הריצה של 
+\begin_inset Formula $B$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ממשיכה כמו זו של 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ ומסתיימת ב-
+\begin_inset Formula $r_{\left|x\right|}\in F_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מכאן יש מעבר 
+\begin_inset Formula $\left\{ q_{2}\right\} =\delta\left(r_{m},\epsilon\right)$
+\end_inset
+
+ ומשם הריצה של 
+\begin_inset Formula $B$
+\end_inset
+
+ על ההמשך של 
+\begin_inset Formula $w$
+\end_inset
+
+ שהוא בדיוק 
+\begin_inset Formula $y$
+\end_inset
+
+ היא כמו של 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+זו מסתיימת ב-
+\begin_inset Formula $r_{\left|y\right|}\in F_{2}$
+\end_inset
+
+ ובגלל שהמצבים המקבלים של 
+\begin_inset Formula $B$
+\end_inset
+
+ הם גם 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+, קיבלנו ריצה מקבלת.
+\end_layout
+
+\begin_layout Proof
+
+\bar under
+\begin_inset Formula $L\left(B\right)\subseteq L_{1}\cup L_{2}$
+\end_inset
+
+
+\bar default
+: תהי 
+\begin_inset Formula $w\in L\left(B\right)$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $r_{0},\ldots,r_{\left|w\right|}$
+\end_inset
+
+ ריצה מקבלת )כלשהי( של 
+\begin_inset Formula $B$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $r_{0}=\left\{ q_{1}\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $r_{\left|w\right|}\in F_{2}$
+\end_inset
+
+.
+ מהגדרת 
+\begin_inset Formula $B$
+\end_inset
+
+, כדי להגיע ל-
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ חייב להיות קיים 
+\begin_inset Formula $k\in\left[\left|w\right|\right]$
+\end_inset
+
+ כך שהמעבר 
+\begin_inset Formula $r_{k}\to r_{k+1}$
+\end_inset
+
+ השתמש במעבר 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ ממצב ב-
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ ל-
+\begin_inset Formula $\left\{ q_{2}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נביט במילים 
+\begin_inset Formula $x=w_{1},\ldots,w_{k}$
+\end_inset
+
+ ו-
+\begin_inset Formula $y=w_{k+1},\ldots,w_{\left|w\right|}$
+\end_inset
+
+.
+ מהגדרת 
+\begin_inset Formula $B$
+\end_inset
+
+, הריצה 
+\begin_inset Formula $r_{0},\ldots,r_{k}$
+\end_inset
+
+ היא ריצה של 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ שמסתיימת ב-
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ ולכן זו ריצה מקבלת של 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\in L\left(A_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+באופן דומה, הריצה של 
+\begin_inset Formula $B$
+\end_inset
+
+ על 
+\begin_inset Formula $y$
+\end_inset
+
+ החל מ-
+\begin_inset Formula $r_{k+1}$
+\end_inset
+
+ היא ריצה של 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $y$
+\end_inset
+
+ שמסתיממת במצב מקבל ב-
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $y\in L\left(A_{2}\right)$
+\end_inset
+
+ ולכן
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $w\in L\left(A_{1}\right)\cdot L\left(A_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\reg$
+\end_inset
+
+ סגורה לפעולה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Kleene-Star
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כלומר אם 
+\begin_inset Formula $L\in\reg$
+\end_inset
+
+ אז 
+\begin_inset Formula $L^{*}=\bigcup\limits _{k\in\fldn_{0}}\desc{L\cdot\ldots\cdot L}{\text{פעמים}\;k}\in\reg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $A=\left\langle Q,\com,\delta,q_{0},F\right\rangle $
+\end_inset
+
+ 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ ל-
+\begin_inset Formula $L$
+\end_inset
+
+.
+ לכאורה היינו יכולים לבנות 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ שהוא 
+\begin_inset Formula $A$
+\end_inset
+
+ פשוט עם חיבור מהמצבים הסופיים למצב ההתחלתי שוב עם צעד אפסילון.
+ הבעיה היא שאם 
+\begin_inset Formula $A$
+\end_inset
+
+ לא מקבל את המילה הריקה, גם הבניה לא אבל 
+\begin_inset Formula $\epsilon\in L^{*}$
+\end_inset
+
+.
+ לכן נוסיף מצב נוסף 
+\begin_inset Formula $q_{start}$
+\end_inset
+
+ שהוא יהיה המצב ההתחלתי היחיד שיש ממנו צעד אפסילון למצב ההתחלתי של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נבנה 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ לשפה 
+\begin_inset Formula $L^{*}$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $B=\left\langle Q\cup\left\{ q_{start}\right\} ,\com,\delta',\left\{ q_{start}\right\} ,\left\{ q_{start}\right\} \right\rangle $
+\end_inset
+
+ כאשר בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $q_{start}\notin Q$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+\delta'\left(q,\sigma\right)=\begin{cases}
+\left\{ \delta\left(q,\sigma\right)\right\}  & q\in Q\\
+\varnothing & q=q_{start}\\
+\hline \varnothing & q=q_{start}\land\sigma=\epsilon\\
+\left\{ q_{start}\right\}  & q\in F\land\sigma=\epsilon\\
+\left\{ q_{0}\right\}  & q=q_{start}\land\sigma=\epsilon
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה ראו איור של מצבנו מבחינת שקילות של אוטומטים, כאשר בקרוב נלמד על 
+\begin_inset Formula $\regex$
+\end_inset
+
+-ים,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/gnfa.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מפת שקילות בין אוטומטים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{III
+\backslash
+;
+\backslash
+; שפות לא רגולריות ולמת הניפוח}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{III}$
+\end_inset
+
+ | שפות לא רגולריות ולמת הניפוח 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\end_layout
+
+\begin_layout Description
+הערה בהרצאה הקודמת הראנו איך לעשות דטרמינטיזציה ל-
+\begin_inset Formula $\nfa$
+\end_inset
+
+ וראינו שבהינתן 
+\begin_inset Formula $A'$
+\end_inset
+
+ 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ עם 
+\begin_inset Formula $n$
+\end_inset
+
+ מצבים, ל-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ השקול לו יש לכל היותר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ מצבים )חסם עליון(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+היום נראה שאין פולינום 
+\begin_inset Formula $p$
+\end_inset
+
+ שבהינתן )כל( 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ עם 
+\begin_inset Formula $n$
+\end_inset
+
+ מצבים, יש לו 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ שקול עם לכל היותר 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ מצבים )חסם תחתון(.
+\end_layout
+
+\begin_layout Standard
+מקרים פרטיים כמובן כן יכולים להיות חסומים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י פולינום בגדילה שלהם כשהם 
+\begin_inset Formula $\dfa$
+\end_inset
+
+, אבל שום בנייה לא תעבוד לכל 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ אפשרי.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה לא מספיק שנראה, לדוגמה, שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך שיש ל-
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ עם 
+\begin_inset Formula $10$
+\end_inset
+
+ מצבים, אבל כל 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ צריך 
+\begin_inset Formula $2^{10}$
+\end_inset
+
+ מצבים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+זה לא מוכיח שום דבר כי זה לא סותר את הפולינום 
+\begin_inset Formula $p\left(n\right)=n^{3}+500$
+\end_inset
+
+, שעבורו 
+\begin_inset Formula $p\left(10\right)>2^{10}$
+\end_inset
+
+ ולכאורה הוא מצליח לחסום 
+\begin_inset Formula $\nfa$
+\end_inset
+
+-ים כלשהם )כמובן שלא את כולם(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+משפט לכל פולנום 
+\begin_inset Formula $p$
+\end_inset
+
+, קיימת שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך של-
+\begin_inset Formula $L$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ עם 
+\begin_inset Formula $n$
+\end_inset
+
+ מצבים וה-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ הקטן ביותר עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ צריך יותר 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ מצבים.
+\end_layout
+
+\begin_layout Proof
+מספיק שנראה שלכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $L_{n}$
+\end_inset
+
+ כך של-
+\begin_inset Formula $L_{n}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ עם 
+\begin_inset Formula $n+1$
+\end_inset
+
+ מצבים אבל ה-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ הקטן ביותר עבור 
+\begin_inset Formula $L_{n}$
+\end_inset
+
+ צריך לפחות 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ מצבים.
+\end_layout
+
+\begin_layout Proof
+כי אם בשלילה קיים פולינום כאמור, נתבונן ב-
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ שמובטח שעבורו 
+\begin_inset Formula $2^{n_{0}}>p\left(n_{0}+1\right)$
+\end_inset
+
+ ונתבונן ב-
+\begin_inset Formula $L_{n_{0}}$
+\end_inset
+
+.
+ משם ה-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ הקטן ביותר עבור 
+\begin_inset Formula $L_{n_{0}}$
+\end_inset
+
+ מכיל 
+\begin_inset Formula $2^{n_{0}}>p\left(n_{0}+1\right)$
+\end_inset
+
+ מצבים כפי שנוכיח עכשיו בסתירה לקיום פולינום שמקיים את התנאים.
+\end_layout
+
+\begin_layout Proof
+נבחר 
+\begin_inset Formula $\com=\left\{ 0,1\right\} $
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula 
+\[
+L_{n}=\left(0+1\right)^{*}0\left(0+1\right)^{n-1}=\left\{ w:0\;\text{-ית מהסוף היא}n\text{האות ה-}\right\} 
+\]
+
+\end_inset
+
+כאשר הביטוי משמאל נקרא ביטוי רגולרי - 
+\begin_inset Formula $0,1$
+\end_inset
+
+ כמה פעמים שנרצה )רישא(, 
+\begin_inset Formula $0$
+\end_inset
+
+, ואז 
+\begin_inset Formula $n-1$
+\end_inset
+
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ או 
+\begin_inset Formula $1$
+\end_inset
+
+-ים.
+ ראו איור של 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ מתאים לשפה,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sn.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nfa$
+\end_inset
+
+ ל-
+\begin_inset Formula $L_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נניח בשלילה שיש 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ 
+\begin_inset Formula $D_{n}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(D_{n}\right)=L_{n}$
+\end_inset
+
+ ויש ל-
+\begin_inset Formula $D_{n}$
+\end_inset
+
+ פחות מ-
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ מצבים.
+ ישנם 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ וקטורים באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ מילים שונות באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל הא
+\begin_inset Quotes xrd
+\end_inset
+
+ב 
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם ב-
+\begin_inset Formula $D_{n}$
+\end_inset
+
+ יש פחות מ-
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ מצבים, אז מעקרון שובך היונים יש שתי מילים 
+\begin_inset Formula $w_{1}\neq w_{2}\in\left(0+1\right)^{n}$
+\end_inset
+
+ שעבורן 
+\begin_inset Formula $D_{n}$
+\end_inset
+
+ מגיע לאותו המצב בסוף קריאתן.
+ ופורמלית, עבור 
+\begin_inset Formula $D_{n}=\left\langle \left\{ 0,1\right\} ,Q,q_{0},\delta,F\right\rangle $
+\end_inset
+
+, קיימות 
+\begin_inset Formula $w_{1}\neq w_{2}\in\left(0+1\right)^{n}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+q=\delta^{*}\left(q_{0},w_{1}\right)=\delta^{*}\left(q_{0},w_{2}\right)
+\]
+
+\end_inset
+
+ מהיות 
+\begin_inset Formula $w_{1}\neq w_{2}$
+\end_inset
+
+, הרי שקיים 
+\begin_inset Formula $i\in\left[n\right]$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w_{1}\left[i\right]\neq w_{2}\left[i\right]$
+\end_inset
+
+ ובה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $w_{1}\left[i\right]=0,w_{2}\left[i\right]=1$
+\end_inset
+
+.
+ נוכיח שבהכרח האוטומט טועה כי נשרשר סיפא למילים כך ש-
+\begin_inset Formula $i$
+\end_inset
+
+ יהיה האינדקס ה-
+\begin_inset Formula $n$
+\end_inset
+
+ מהסוף ואז האוטומט מסווג את שתי המילים באותה הדרך בניגוד לכך שאחת הוא אמור
+ לקבל והאחרת לדחות )מהגדרת השפה(.
+ נתבונן ב-
+\begin_inset Formula $s=\delta^{*}\left(q,1^{i-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $s\in F$
+\end_inset
+
+ אז 
+\begin_inset Formula $D_{n}$
+\end_inset
+
+ מקבל את 
+\begin_inset Formula $w_{2}\cdot1^{i-1}$
+\end_inset
+
+ בסתירה לנכונות 
+\begin_inset Formula $D_{n}$
+\end_inset
+
+, שכן 
+\begin_inset Formula $w_{2}\cdot1^{i-1}\notin L$
+\end_inset
+
+ )האות ה-
+\begin_inset Formula $n$
+\end_inset
+
+ מהסוף היא 
+\begin_inset Formula $w_{2}\left[i-1\right]$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $s\notin F$
+\end_inset
+
+ אז 
+\begin_inset Formula $D_{n}$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $w_{1}\cdot1^{i-1}$
+\end_inset
+
+ )הוא 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ והריצה היחידה מגיעה ל-
+\begin_inset Formula $s$
+\end_inset
+
+( בסתירה לנכונות 
+\begin_inset Formula $D_{n}$
+\end_inset
+
+, שכן 
+\begin_inset Formula $w_{1}\cdot1^{i-1}\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר הגענו לסתירה בכל המקרים.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה אין 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ עבור 
+\begin_inset Formula $L=\left\{ 0^{n}1^{n}:n\geq0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נניח בשלילה כי 
+\begin_inset Formula $A=\left\langle Q,\com,q_{)},\delta,F\right\rangle $
+\end_inset
+
+ הוא 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ עם 
+\begin_inset Formula $L\left(A\right)=L$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $\left|Q\right|=p$
+\end_inset
+
+.
+ נתבונן במילה 
+\begin_inset Formula $w=0^{p}1^{p}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ ולכן הריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+, 
+\begin_inset Formula $r=q_{0}q_{1},\ldots,q_{2p}$
+\end_inset
+
+, מקבלת, כלומר 
+\begin_inset Formula $q_{2p}\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ברישא 
+\begin_inset Formula $q_{0},\ldots,q_{p}$
+\end_inset
+
+ יש מעגל, כלומר קיימים 
+\begin_inset Formula $0\leq l<j\leq p$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $q_{l}=q_{j}$
+\end_inset
+
+ )מעקרון שובך היונים(.
+ לכן יש ל-
+\begin_inset Formula $A$
+\end_inset
+
+ ריצה מקבל גם על 
+\begin_inset Formula $0^{p-\left(j-1\right)}1^{p}\notin L$
+\end_inset
+
+ )כי אפשר לגדום את המעגל מ-
+\begin_inset Formula $l$
+\end_inset
+
+ ל-
+\begin_inset Formula $j$
+\end_inset
+
+ ולהסתכל על הריצה 
+\begin_inset Formula $q_{0}\ldots q_{l}q_{j+1}\ldots q_{2p}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+משפט )למת הניפוח לשפות רגולריות, 
+\lang english
+pumping lemma
+\lang hebrew
+( אם 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית אז קיים 
+\begin_inset Formula $p\geq1$
+\end_inset
+
+ )קבוע הנפוח( כך שלכל מילה 
+\begin_inset Formula $w\in L$
+\end_inset
+
+, אם 
+\begin_inset Formula $\left|w\right|\geq p$
+\end_inset
+
+ אז קיימת חלוקה 
+\begin_inset Formula $w=x\cdot y\cdot z$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|x\cdot y\right|\leq p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+ )
+\begin_inset Formula $y\neq\epsilon$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall i\geq0$
+\end_inset
+
+, המילה 
+\begin_inset Formula $xy^{i}z\in L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $L$
+\end_inset
+
+ סופית אז אפשר לקחת 
+\begin_inset Formula $p=l+1$
+\end_inset
+
+ עבור 
+\begin_inset Formula $l$
+\end_inset
+
+ אורך המילה הארוכה ביותר ב-
+\begin_inset Formula $L$
+\end_inset
+
+ ואז הלמה מתקיימת באופן ריק.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $L=\left(0+1\right)^{*}0\left(0+1\right)$
+\end_inset
+
+ )כל המילים שהאות הלפני אחרונה שלהם היא 
+\begin_inset Formula $0$
+\end_inset
+
+(.
+ ניקח 
+\begin_inset Formula $p=3$
+\end_inset
+
+ ונתבונן במילה 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|w\right|\geq3$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $w=x\cdot y\cdot z$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x=\epsilon,\left|y\right|=1,\left|z\right|=\left|w\right|-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אכן 
+\begin_inset Formula $y\neq\epsilon$
+\end_inset
+
+ וכמובן 
+\begin_inset Formula $\left|x\cdot y\right|=1\leq3$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $i\geq0$
+\end_inset
+
+, 
+\begin_inset Formula $xy^{i}z\in L$
+\end_inset
+
+ כי 
+\begin_inset Formula $\left|z\right|\geq2$
+\end_inset
+
+ ולכן האות הלפני האחרונה ב-
+\begin_inset Formula $xy^{i}z$
+\end_inset
+
+ נשארת האות הלפני האחרונה ב-
+\begin_inset Formula $z$
+\end_inset
+
+, הלא היא 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה רגולרית.
+ יהי 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+ ונבחר 
+\begin_inset Formula $p$
+\end_inset
+
+ להיות מספר המצבים ב-
+\begin_inset Formula $A$
+\end_inset
+
+.
+ נתבונן במילה 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|w\right|\geq p$
+\end_inset
+
+.
+ בריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+, יש מצב שחוזר בקריאת 
+\begin_inset Formula $p$
+\end_inset
+
+ האותיות הראשונות, כלומר קיימים 
+\begin_inset Formula $0\leq j<l\leq p$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $q_{l}=q_{j}$
+\end_inset
+
+ )מעקרון שובך היונים(.
+ נבחר 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+w=\desc{w_{1}\ldots w_{j}}x\;\desc{w_{j+1}\ldots w_{l}}y\;\desc{w_{l+1}\ldots w_{n}}z
+\]
+
+\end_inset
+
+ונראה שהתנאים של הלמה מתקיימים.
+ 
+\begin_inset Formula $j<l$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x\cdot y\right|\leq p$
+\end_inset
+
+ כי 
+\begin_inset Formula $l\leq p$
+\end_inset
+
+ ואכן 
+\begin_inset Formula $xy^{i}z\in L$
+\end_inset
+
+ כי הריצה היא
+\begin_inset Formula 
+\[
+q_{0},\ldots,q_{j},\left(q_{j+1}\ldots,q_{l}\right)^{i},q_{l+1},\ldots,q_{n}
+\]
+
+\end_inset
+
+כאשר זו ריצה חוקית כי יש מעבר מ-
+\begin_inset Formula $q_{l}$
+\end_inset
+
+ ל-
+\begin_inset Formula $q_{j+1}=q_{l+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Description
+הערה נוכל להשתמש בשלילת למת הניפוח כדי להוכיח ששפות הן לא רגולריות.
+ אם למת הניפוח מספרת לנו ש-
+\begin_inset Formula $L\in\reg\Rightarrow\alpha$
+\end_inset
+
+, אז 
+\begin_inset Formula $\lnot\alpha$
+\end_inset
+
+ הוא שלכל 
+\begin_inset Formula $p\geq1$
+\end_inset
+
+, קיימת מילה 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|w\right|\geq p$
+\end_inset
+
+ כך שלכל חלוקה 
+\begin_inset Formula $w=x\cdot y\cdot z$
+\end_inset
+
+, אם 
+\begin_inset Formula $\left|x\cdot y\right|\leq p$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+, קיים 
+\begin_inset Formula $i\geq0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $xy^{i}z\notin L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+או במילים, לכל קבוע ניפוח קיימת מילה ארוכה מהקבוע כך שלא משנה איזו חלוקה
+ נבחר עם 
+\begin_inset Formula $y\neq\epsilon$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+, אחד הניפוחים של 
+\begin_inset Formula $y$
+\end_inset
+
+ לא בשפה.
+\end_layout
+
+\begin_layout Standard
+את הבחירה על השלילה של שלושת התנאים עשינו כי זה נוח אבל אפשר היה גם לעשות
+ שאם 
+\begin_inset Formula $1,3$
+\end_inset
+
+ מתקיימים אז 
+\begin_inset Formula $2$
+\end_inset
+
+ לא מתקיים.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{דוגמאות לשפות לא רגולריות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+דוגמאות לשפות לא רגולריות
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $L_{1}=\left\{ 0^{n}1^{n}:n\geq0\right\} $
+\end_inset
+
+.
+ זו שפה לא רגולרית )ראינו כבר אבל גם( כי לכל 
+\begin_inset Formula $p$
+\end_inset
+
+, נוכל להתבונן במילה 
+\begin_inset Formula $0^{p}1^{p}$
+\end_inset
+
+.
+ לכל חלוקה 
+\begin_inset Formula $xyz=0^{p}1^{p}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $y=0^{j}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $1\leq j$
+\end_inset
+
+ )אחרת 
+\begin_inset Formula $xy$
+\end_inset
+
+ זולג ל-
+\begin_inset Formula $1$
+\end_inset
+
+-ים ויוצא שהוא ארוך מ-
+\begin_inset Formula $p$
+\end_inset
+
+(.
+ לכן, 
+\begin_inset Formula $xy^{2}z=0^{p+j}1^{p}\notin L_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{2}=\left\{ w:\#_{0}w=\#_{1}w\right\} $
+\end_inset
+
+ היא גם לא רגולרית.
+ ההוכחה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל עובדת גם כן כי גם שם 
+\begin_inset Formula $0^{p}1^{p}\in L$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|0^{p}1^{p}\right|\geq p$
+\end_inset
+
+ וכו' וכו'.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יש דרכים אחרות בהינתן שידוע לנו ש-
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ לא רגולרית להוכיח ש-
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ לא רגולרית.
+\end_layout
+
+\begin_layout Itemize
+ניסיון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+: 
+\begin_inset Formula $L_{1}\subseteq L_{2}$
+\end_inset
+
+ ו-
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ לא רגולרית ולכן 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ לא רגולרית - לא עובד! 
+\begin_inset Formula $L_{1}\subseteq\left(0+1\right)^{*}$
+\end_inset
+
+ אבל האחרונה כן רגולרית )
+\begin_inset Formula $\dfa$
+\end_inset
+
+ טריוויאלי(.
+\end_layout
+
+\begin_layout Itemize
+ניסיון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: עבור 
+\begin_inset Formula $L_{3}=0^{*}1^{*}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ שמזהה אותה )ראו איור(.
+ מתקיים 
+\begin_inset Formula $L_{1}=L_{2}\cap L_{3}$
+\end_inset
+
+ ומסגירות שפות רגולריות לחיתוך, נובע ש-
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ לא רגולרית )אחרת החיתוך שלה עם 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+ היה רגולרי בסתירה לכך ש-
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ לא רגולרית(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dest.png
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dfa$
+\end_inset
+
+ ל-
+\begin_inset Formula $L_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{4}=\left\{ 0^{n}1^{m}:n>m\right\} $
+\end_inset
+
+ לא רגולרית לפחות אינטואיטיבית.
+ נוכיח זאת עם למת הניפוח.
+ בהינתן 
+\begin_inset Formula $p$
+\end_inset
+
+, נתבונן במילה 
+\begin_inset Formula $0^{p+1}1^{p}$
+\end_inset
+
+ ובחלוקה 
+\begin_inset Formula $xyz$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+, 
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+, בהכרח 
+\begin_inset Formula $y=0^{j}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $j\geq1$
+\end_inset
+
+.
+ הניפוח עם 
+\begin_inset Formula $i=0$
+\end_inset
+
+ מוציא מהשפה )ניפוח מטה(, כי
+\begin_inset Formula 
+\[
+0^{p+1-j}1^{p}=xy^{0}z=xz
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $p+1-j\leq p$
+\end_inset
+
+ וזה לא בשפה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{5}=\left\{ w\cdot w:w\in\left(0+1\right)^{*}\right\} $
+\end_inset
+
+ היא לא רגולרית )אינטואיטיבית( ונראה זאת עם למת הניפוח.
+ בהינתן 
+\begin_inset Formula $p\geq1$
+\end_inset
+
+, נתבונן במילה 
+\begin_inset Formula $w=0^{p}10^{p}1\in L_{5}$
+\end_inset
+
+ ואכן 
+\begin_inset Formula $\left|w\right|\geq p$
+\end_inset
+
+.
+ לכל חלוקה 
+\begin_inset Formula $w=xyz$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $y=0^{j}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $j\geq1$
+\end_inset
+
+ )כרגיל( ונתבונן ב-
+\begin_inset Formula $i=2$
+\end_inset
+
+, שעבורו 
+\begin_inset Formula $xy^{2}z=0^{p+j}10^{p}1$
+\end_inset
+
+ היא מילה לא בשפה )הצדדים שלה לא שווים(.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{6}=\left\{ a^{p}:\text{ראשוני}\;p\right\} $
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $\com=\left\{ a\right\} $
+\end_inset
+
+( היא לא רגולרית )כלומר גם אין אפיון עם מספר מצבים סופי של המספרים הראשוניים(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $p$
+\end_inset
+
+, יהי 
+\begin_inset Formula $q$
+\end_inset
+
+ ראשוני עם 
+\begin_inset Formula $q>p$
+\end_inset
+
+.
+ נתבונן במילה 
+\begin_inset Formula $w=a^{q}$
+\end_inset
+
+ ותהי חלוקה 
+\begin_inset Formula $w=xyz$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\left|x\right|=n,\left|y\right|=m$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|z\right|=q-\left(n+m\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left|xy^{i}z\right|=n+mi+q-\left(n+m\right)=m\left(i-1\right)+q
+\]
+
+\end_inset
+
+ועבור 
+\begin_inset Formula $i=q+1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|xy^{i}z\right|=m\left(\left(q+1\right)-1\right)+q=\left(m+1\right)q$
+\end_inset
+
+ שזה כמובן לא בשפה כי זה פריק )
+\begin_inset Formula $m>0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $m+1>1$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{7}=\left\{ w:\text{פלינדרום}\;w\right\} $
+\end_inset
+
+ עבור 
+\begin_inset Formula $\com=\left\{ 0,1\right\} $
+\end_inset
+
+.
+ נתבונן ב-
+\begin_inset Formula $w=0^{p}10^{p}$
+\end_inset
+
+ ואז אם 
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+ אז 
+\begin_inset Formula $xy^{2}z\notin L$
+\end_inset
+
+ כי ה-
+\begin_inset Formula $1$
+\end_inset
+
+ לא באמצע.
+\end_layout
+
 \end_body
 \end_document
