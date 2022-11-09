@@ -7667,5 +7667,1115 @@ status open
  לא באמצע.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{ביטויים רגולריים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+ביטויים רגולריים
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+ביטוי רגולרי
+\bar default
+ מעל א
+\begin_inset Quotes xrd
+\end_inset
+
+ב 
+\begin_inset Formula $\com$
+\end_inset
+
+ הוא אחד מהבאים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a\in\com$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t^{*},t\cup s,t\cdot s$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $t,s$
+\end_inset
+
+ ביטויים רגולריים קצרים יותר.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה דרך נוספת לייצג ביטוי רגולרי מעל 
+\begin_inset Formula $\left\{ a,b\right\} $
+\end_inset
+
+ היא 
+\begin_inset Formula $r:=\varnothing|\epsilon|a|b|r\cup s|r\cdot s|r^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט בביטוי מעל 
+\begin_inset Formula $\com=\left\{ a,b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left(a\cup b\right)^{*}bb\left(a\cup b\right)^{*}$
+\end_inset
+
+.
+ השפה שלו היא כל המילים שמכילות את הרצף 
+\begin_inset Formula $bb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה הביטוי 
+\begin_inset Formula $00^{*}\left(1^{*}\cup2^{*}\right)$
+\end_inset
+
+ מייצג את כל המילים שמתחילות באחד או יותר אפסים ונגמרות ברצף כלשהו של 
+\begin_inset Formula $1$
+\end_inset
+
+-ים או של 
+\begin_inset Formula $2$
+\end_inset
+
+-ים.
+\end_layout
+
+\begin_layout Description
+הגדרה בהינתן ביטויים רגולריים 
+\begin_inset Formula $r,s,t$
+\end_inset
+
+, נגדיר את השפה שלהם כך:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=\varnothing$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(r\right)=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=\epsilon$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(r\right)=\left\{ \epsilon\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=a\in\com$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(r\right)=\left\{ a\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=s\cdot t$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(r\right)=L\left(s\right)\cdot L\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=s\cup t$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(r\right)=L\left(s\right)\cup L\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Formula $L\in\reg$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם קיים ביטוי רגולרי 
+\begin_inset Formula $r$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L=L\left(r\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ יהי 
+\begin_inset Formula $r$
+\end_inset
+
+ ביטוי רגולרי ונראה שקיים 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $A_{r}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(r\right)=L\left(A_{r}\right)$
+\end_inset
+
+ באינדוקציה על אורך סדרת היצירה של 
+\begin_inset Formula $r$
+\end_inset
+
+ )מספר התווים בכתיבה של הביטוי הרגולרי, כך 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ הוא באורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לדוגמה(.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=\varnothing$
+\end_inset
+
+ אז נבחר 
+\begin_inset Formula $A_{r}$
+\end_inset
+
+ להיות 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ ריקה )ששפתו ריקה(.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=\epsilon$
+\end_inset
+
+ אז ניקח את 
+\begin_inset Formula $A_{r}$
+\end_inset
+
+ להיות 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ ששפתו היא 
+\begin_inset Formula $\left\{ \epsilon\right\} $
+\end_inset
+
+ )לדוגמה אוטומט שהמצב ההתחלתי שלו הוא מקבל וכל אות מובילה לבור דוחה.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=a\in\com$
+\end_inset
+
+ אז נבחר 
+\begin_inset Formula $A_{r}$
+\end_inset
+
+ להיות 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ ששפתו היא 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+ )מצב התחלתי לא מקבל, מעבר ממנו למצב מקבל רק על 
+\begin_inset Formula $a$
+\end_inset
+
+ וכל השאר לבור דוחה(.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=s\cup t$
+\end_inset
+
+ אז קיימים 
+\begin_inset Formula $A_{s},A_{t}$
+\end_inset
+
+ מה
+\begin_inset Quotes xrd
+\end_inset
+
+א ומסגירות לאיחוד קיים אוטומט ל-
+\begin_inset Formula $L\left(A_{s}\right)\cup L\left(A_{t}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=s\cdot t$
+\end_inset
+
+ אז קיימים 
+\begin_inset Formula $A_{s},A_{t}$
+\end_inset
+
+ מה
+\begin_inset Quotes xrd
+\end_inset
+
+א ומסגירות לשרשור, קיים אוטומט ל-
+\begin_inset Formula $L\left(A_{s}\right)\cdot L\left(A_{t}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r=t^{*}$
+\end_inset
+
+ אז מה
+\begin_inset Quotes xrd
+\end_inset
+
+א יש 
+\begin_inset Formula $A_{t}$
+\end_inset
+
+ ששפתו שווה לשל 
+\begin_inset Formula $t$
+\end_inset
+
+ ולכן מסגירות לפעולת הכוכב, קיים אוטומט ל-
+\begin_inset Formula $L\left(A_{t}\right)^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ יהי 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ ונוכיח שקיים לו ביטוי רגולרי 
+\begin_inset Formula $r$
+\end_inset
+
+ עם שפה שקולה.
+ נוכיח בדוגמה של הרצת אלג' שמרדד 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ לביטוי רגולרי.
+\end_layout
+
+\begin_layout Standard
+נניח שמותר לנו להשתמש ב-
+\begin_inset Formula ${\rm GNFA}$
+\end_inset
+
+, שהוא 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ בעל קשתות עם ביטוים רגולריים במקום אותיות.
+ בנוסף, נניח של-
+\begin_inset Formula $A$
+\end_inset
+
+ )או ל-
+\begin_inset Formula $\nfa$
+\end_inset
+
+ המקביל לו( יש מצב התחלתי ומקבל יחיד )קל באמצעות צעדי אפסילון(, וכן שהמצב
+ ההתחלתי והמקבל זרים )גם קל עם צעדי אפסילון(.
+ ראו דוגמה ל-
+\begin_inset Formula ${\rm GNFA}$
+\end_inset
+
+, 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/gnfa.jpg
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula ${\rm GNFA}$
+\end_inset
+
+ לדוגמה, אפשר לעבור בין קשתות רק באמצעות מילה שעונה על הביטוי בקשת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+עתה נעקוב אחר הדוגמה שלקוחה מהתרגול כי אני לא מזוכיסט, ראו איור ואחריו הנחיה
+ בנוגע למה אנחנו רואים.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/gg.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula ${\rm GNFA}$
+\end_inset
+
+ לדוגמה, אפשר לעבור בין קשתות רק באמצעות מילה שעונה על הביטוי בקשת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+במעבר הראשון אנחנו מוסיפים את המצב ההתחלתי והמקבל החדשים כדי לקיים את ההנחות
+ שלנו.
+ 
+\end_layout
+
+\begin_layout Proof
+במעברים הבאים אנחנו מוחקים מצבים )במקרה שלנו אחד כל פעם( ומחלצים מהם ביטוים
+ רגולריים מתאימים עד שנישאר רק עם המצב ההתחלתי והמקבל החדשים.
+ נציג נימוקים לכמה מהצמצומים האלה.
+\end_layout
+
+\begin_layout Proof
+במעבר השני אנחנו מוחקים את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ל-
+\begin_inset Formula $2$
+\end_inset
+
+ אפשר להגיע דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ולכן צמצמנו את צעד האפסילון;
+\end_layout
+
+\begin_layout Itemize
+מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $3$
+\end_inset
+
+ צריך 
+\begin_inset Formula $b$
+\end_inset
+
+ ואז רצף כלשהו של 
+\begin_inset Formula $bb$
+\end_inset
+
+, לכן יש לנו קשת 
+\begin_inset Formula $b$
+\end_inset
+
+ וחוג של 
+\begin_inset Formula $3$
+\end_inset
+
+ עם קשת 
+\begin_inset Formula $bb$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+כדי להגיע מ-
+\begin_inset Formula $3$
+\end_inset
+
+ ל-
+\begin_inset Formula $2$
+\end_inset
+
+ אפשר או ללכת ישר באמצעות 
+\begin_inset Formula $a$
+\end_inset
+
+, או לעבור דרך 
+\begin_inset Formula $1$
+\end_inset
+
+ באמצעות 
+\begin_inset Formula $b$
+\end_inset
+
+ ואז 
+\begin_inset Formula $a$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $ba\cup a$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+בנוסף, אפשר להגיע ל-
+\begin_inset Formula $2$
+\end_inset
+
+ מ-
+\begin_inset Formula $2$
+\end_inset
+
+ באמצעות סיבוב דרך 
+\begin_inset Formula $3$
+\end_inset
+
+ ו-
+\begin_inset Formula $1$
+\end_inset
+
+ ולכן יש לו חוג סביב עצמו עם ערך 
+\begin_inset Formula $aa\cup b$
+\end_inset
+
+ מנימוק דומה לנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_layout Standard
+במעבר השני אנחנו מוחקים את 
+\begin_inset Formula $2$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $a$
+\end_inset
+
+ אפשר להגיע או דרך 
+\begin_inset Formula $2$
+\end_inset
+
+ באמצעות 
+\begin_inset Formula $a$
+\end_inset
+
+ ואיזושהי כמות של סיבובים סביב 
+\begin_inset Formula $2$
+\end_inset
+
+ באמצעות 
+\begin_inset Formula $aa\cup b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+מ-
+\begin_inset Formula $3$
+\end_inset
+
+ ל-
+\begin_inset Formula $a$
+\end_inset
+
+ אפשר להגיע עם מספר כלשהו של 
+\begin_inset Formula $bb$
+\end_inset
+
+ וזהו, או דרך 
+\begin_inset Formula $2$
+\end_inset
+
+ עם 
+\begin_inset Formula $ba\cup a$
+\end_inset
+
+ ואז כמה סיבובי 
+\begin_inset Formula $aa\cup b$
+\end_inset
+
+, או ישר עם אפסילון.
+\end_layout
+
+\begin_layout Standard
+הרידור האחרון לא מורכב מדי, הוא די ישיר מבחינת האיחודים כי אין יותר מדי
+ אפשרויות, רק לכתוב את זה זה נורא.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\left(a\cup b\right)\cdot b$
+\end_inset
+
+, נוכל להרכיב אוטומט ל-
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $a\cup b$
+\end_inset
+
+ ואז 
+\begin_inset Formula $\left(a\cup b\right)\cdot b$
+\end_inset
+
+, זהו כל אחת מהבניות באיור השלם )שימו לב שב-
+\begin_inset Formula $a\cup b$
+\end_inset
+
+ שני השניים משמאל היו מקבלים אבל זה הוסר לטובת המצב הסופי(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/merger.png
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nfa$
+\end_inset
+
+ לביטוי הרגולרי הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה תהי 
+\begin_inset Formula $L=\left\{ 1^{n^{2}}:n\in\fldn\right\} $
+\end_inset
+
+.
+ נראה ש-
+\begin_inset Formula $L$
+\end_inset
+
+ לא רגולרית.
+ נניח בשלילה ש-
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית, לכן קיים קבוע ניפוח 
+\begin_inset Formula $p$
+\end_inset
+
+ כך שלכל מילה 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|w\right|>p$
+\end_inset
+
+ ניתן לכתוב 
+\begin_inset Formula $w=xyz$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+, 
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+ ו-
+\begin_inset Formula $xy^{i}z\in L$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נביט במילה 
+\begin_inset Formula $w=1^{p^{2}}\in L$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|w\right|>p$
+\end_inset
+
+.
+ נכתוב 
+\begin_inset Formula $w=xyz$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x=1^{j},y=1^{k},z=1^{l}$
+\end_inset
+
+ ונבחר אותם כך ש-
+\begin_inset Formula $k>0$
+\end_inset
+
+ ו-
+\begin_inset Formula $k+j\leq p$
+\end_inset
+
+.
+ ננסה לנפח ב-
+\begin_inset Formula $i=2$
+\end_inset
+
+.
+ 
+\begin_inset Formula $xy^{2}z=1^{j}1^{2k}1^{l}$
+\end_inset
+
+ שאורכה 
+\begin_inset Formula $j+2k+l$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula 
+\[
+p^{2}\overset{k>0}{<}p^{2}+k\overset{k+j\leq p}{\leq}p^{2}+p<p^{2}+2p+1=\left(p+1\right)^{2}
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $p^{2}<\left|xy^{2}z\right|<\left(p+1\right)^{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|xy^{2}z\right|$
+\end_inset
+
+ אינו ריבוע שלם ולכן הניפוח ב-
+\begin_inset Formula $i=2$
+\end_inset
+
+ אינו ב-
+\begin_inset Formula $L$
+\end_inset
+
+, בסתירה לכך של-
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L=\left\{ w\in\left\{ 0,1\right\} ^{*}:\#_{0}w=\#_{1}w\right\} $
+\end_inset
+
+.
+ נראה כי 
+\begin_inset Formula $L$
+\end_inset
+
+ לא רגולרית.
+ בהינתן 
+\begin_inset Formula $p$
+\end_inset
+
+ קבוע ניפוח, נבחר 
+\begin_inset Formula $w=0^{p}1^{p}$
+\end_inset
+
+ ונכתוב 
+\begin_inset Formula $w=xyz$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x=0^{j},y=0^{k},z=0^{l}1^{p}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k>0,j+k<p$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $i=2$
+\end_inset
+
+, נקבל את הניפוח
+\begin_inset Formula 
+\[
+xy^{2}z=0^{j+2k}0^{l}1^{p}
+\]
+
+\end_inset
+
+וברור שיש יותר אפסים מאחדים ולכן הניפוח לא בשפה סתירה.
+\end_layout
+
 \end_body
 \end_document
