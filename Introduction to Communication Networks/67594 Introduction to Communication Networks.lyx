@@ -539,7 +539,7 @@ addcontentsline{toc}{section}{I
 \backslash
 ;
 \backslash
-; }
+; מבוא}
 \end_layout
 
 \end_inset
@@ -554,7 +554,7 @@ addcontentsline{toc}{section}{I
 \begin_inset Formula $\mathbb{I}$
 \end_inset
 
- | 
+ | מבוא 
 \size default
 
 \begin_inset ERT
@@ -583,6 +583,3202 @@ addcontentsline{toc}{subsection}{הרצאה}
 
 \size largest
 הרצאה
+\end_layout
+
+\begin_layout Standard
+נעסוק בעקרונות מרכזיים ברשתות תקשורת, ובראשם האינטרנט ואתגרים שיש להתמודד
+ איתם בקשר אליו.
+ האינטרט מאוד מורכב ואי אפשר להחליף אותו, אפשר לכל היותר לבצע בו שינויים
+ שקשה מאוד לעשות והם איטיים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{אפליקציות באינטרנט}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+אפליקציות באינטרנט
+\end_layout
+
+\begin_layout Description
+דוגמה הרשת משרתת מטרה כלשהי למשתמש כלשהו, לדוגמה סטרימינג של סרט.
+ כיום סטרימינג קורה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י בקשה של הלקוח מהשרת של כמה שניות של סרט בכל פעם, באופן אינקרמנטלי.
+ כך, אם הרשת לא יכולה להעביר )בין אם יש צוואר בקבוק אצל המשתמש או בכל מום
+ אחר( מספיק סרט מספיק מהר, נקבל תקיעות ונצטרך להוריד רזולוציה כדי לקבל חוויה
+ יותר טובה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם ידוע שיש בעיה ברשת, חלק מהשירותים שמספקים ווידאו בלייב שומרים באפר של
+ כמה שניות מהשידור האמיתי כדי שאם יש תקיעה פתאומית באינטרנט החוויה תראה
+ עדיין אחידה.
+\end_layout
+
+\begin_layout Standard
+סטרימינג היא דוגמה לאפליקציה מעל הרשת - שימוש בפרוטוקולים שבקרוב נלמד.
+ חווית הצפיה שתוארה למעלה נקראת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Quality of Experience
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואלג' הסטרימינג שהצגנו נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dynamic Streaming over HTTP
+\lang hebrew
+.
+ העניין של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+QoE
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא בעייתי מאוד כי כולם מתחרים על אותו רוחב פס ושירותים רבים דורשים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+latency
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמוך )לדוגמה שיחת זום, איכות יכולה להיות נמוכה אבל חייב להגיע מהר( לעומת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+throughput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)כשקיבולת הרבה יותר חשובה מהזמן שלוקח שזה יגיע(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+האינטרנט בעצמו הוא די פרוץ והרבה זמן מנסים לשפר את האבטחה של הרשת אבל זה
+ מאוד קשה כי יש הרבה שחקנים והרשת מבוזרת ולהגיע להסכמה זה כמעט בלתי אפשרי.
+\end_layout
+
+\begin_layout Standard
+בקרוב נדבר על מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+השכבות של אבל לעתה נכווץ אותו ל-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שכבות: החומרה )ראוטרים, מחשבים, סוויצ'ים וכו'(, פרוטוקולים )הדרך שבה מדברות
+ החומרות ביניהם, פרוטוקלים כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP, BGP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכו'( ואפליקציות )אתרים, אפליקציות וכו'(.
+ השכבה העליונה והתחתונה משתנות כל הזמן ומשתפרות בקצב תדיר, אבל השכבה האמצעית
+ נשארת מאחורה כבר מאז שנות ה-
+\numeric on
+90
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מהירות מעבר מידע}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מהירות מעבר מידע
+\end_layout
+
+\begin_layout Standard
+הרבה מהמידע באינטרנט עובר במהירות האור )לדוגמה בין יבשות( ולכן לכאורה אפשר
+ לשלוח מידע מירושלים לניו יורק במהירות האור.
+ הבעיה עם זה היא שראשית החומרה עצמה מאפשרת 
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+ מהירות האור, רוחב הפס יכול להיות מוגבל, מספר תחנות הביניים בין היעדים יכול
+ להיות משמעותי ויכול להיות שנלחם על מקום עם פקטות אחרות, לכן במקום ה-
+\begin_inset Formula $30ms$
+\end_inset
+
+ ההיפותטי של מהירות האור, זה לוקח כמעט פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+בזמן 
+\begin_inset Formula $70$
+\end_inset
+
+ המילישניות האלה שנדמה שהן כלום זמן, מעבד ממוצע מספיק לעשות מיליוני סייקלים
+ ולכן מבחינתו האינטרנט הוא סופר איטי.
+ הזמן הזה הוא קריטי כשמדובר במניות, או דברים שדורשים תיאום בין אנשים שונים,
+ וזו בעיה כי האינטרנט בפועל מיתרגם לתקשורת א-סינכרונית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{האינטרנט ועניינים נוספים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+האינטרנט ועניינים נוספים
+\end_layout
+
+\begin_layout Standard
+הרשת מחלוקת לשלושה משתתפים - קודקודים )ראוטרים, סוויצ'ים(, קשרים )סיב אופטי
+ וכו'( ומשתמשי קצה )מחשב, טלפון אבל גם מקרר, טלוויזיה וכו'(.
+\end_layout
+
+\begin_layout Standard
+כיום מספר המשתמשים ברשת גדל אקספוננציאלית, בגלל שלכל בן אדם יש הרבה יותר
+ ממחשב אחד או טלפון אחד, אלא מקרר ומיקרו וטלוויזיה וכו'.
+ יש הרבה סוגים שונים של משתמשי קצה, המון סוגים של קודקודים וקישורים, וגיוון
+ גדול מאוד בדרישות אפליקציות )האם צריך דו-כיווניות, האם צריך מהירות, האם
+ צריך אמינות וכו' וכו'(.
+ 
+\end_layout
+
+\begin_layout Standard
+הרשת היא התשתית להעברת מידע בין משתמשים, ורק בה נעסוק.
+ מעליה אפשר לבנות רשתות מבוזרות שונות שהן ברמת האפליקציה וזה א מה שיעניין
+ אותנו.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{רשת הטלפוניה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+רשת הטלפוניה
+\end_layout
+
+\begin_layout Standard
+כדי להבין איך האינטרנט עובד, נבין קודם איך רשת הטלפוניה עבדה.
+\end_layout
+
+\begin_layout Standard
+כשרוצים לדבר עם מישהו, קודם כל נרצה לדעת האם אפשר להגיע אליו באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+circuit
+\lang hebrew
+, מסלול שהוא רק שלנו ושאי אפשר לעצור אותו באמצע.
+ אחרי שיש קו, נעביר מידע על הקו עד שתסתיים השיחה.
+ בסוף השיחה, נפנה את המשאבים.
+\end_layout
+
+\begin_layout Standard
+המרכזן הוא זה שיוצר את הקו ומבצע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+switching
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ניתוב של תקשורת שמגיעה מכניסה מסוימת ליציאה מסוימת.
+ כיום טלפוניה מנותבת אוטומטית באמצעות אלג' מורכבים.
+\end_layout
+
+\begin_layout Standard
+כיצד נוכל לנתב שתי כניסות לאותה היציאה?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Time-Division
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נחלק את הזמן לשברירים מחזוריים ונבצע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+round robbin
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על רוחב הפס.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Frequency-Division
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נחלק את הפס לתדרים שונים, כאשר כל תדר אחראי על משתמש אחד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{למה האינטרנט לא נראה כמו הטלפוניה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+למה האינטרנט לא נראה כמו הטלפוניה
+\end_layout
+
+\begin_layout Standard
+מה קורה אם אם משתמש לא משתמש בסלוט שלו )שותק בשיחה(? בטלפונים זה עבד בסדר,
+ אבל באינטרנט זה לא פרקטי.
+\end_layout
+
+\begin_layout Standard
+הרשת שתיארנו זה עתה היא מאוד יציבה, פשוטה, מהירה )העיכוב הוא רק המרחק הפיזי
+ על הפס(, צפויה, קל לגלות איפה יש בעיה.
+\end_layout
+
+\begin_layout Standard
+אז למה לא להשתמש בה גם באינטרנט?
+\end_layout
+
+\begin_layout Itemize
+אי-עמידות בפני כישלון: אם אין רוחב פס או אם יש בעיה באמצע, נוותר ולא נקבל
+ שום תקשורת.
+\end_layout
+
+\begin_layout Itemize
+בזבוז רוחב פס: טלפוניה לא שורדת תחת עומס כי רוחב הפס נגמר מתישהו ובאינטרנט
+ זה לא מתקבל על הדעת.
+ בטלפניה נשמור את רוחב הפס המקסימלי הנדרש לקוים הפתוחים עליה )
+\begin_inset Formula $P$
+\end_inset
+
+(, לעומת האינטרנט שבו התקשורת המקסימלית אולי גבוהה אבל ממוצע הפקטות שמועבר
+ )
+\begin_inset Formula $A$
+\end_inset
+
+( משמעותית יותר נמוך ולכן לא צריך לשמור את כל רוחב הפס המקסימלי כל הזמן.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בטלפניה היחס 
+\begin_inset Formula $\frac{P}{A}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $3:1$
+\end_inset
+
+.
+ באינטרנט היחס הוא יותר מ-
+\begin_inset Formula $100:1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+עיצוב מותאם אפליקציה: טלפוניה עוצבה לטלפונים, בניגוד לאינטרנט שנועד לאפליקציות
+ מסוג אחר.
+\end_layout
+
+\begin_layout Itemize
+זמן הכנה: בטלפוניה לוקח זמן לא זניח ליצור את הקו, בעוד באינטרנט צריך שזה
+ יהיה )כמעט( מידי.
+\end_layout
+
+\begin_layout Standard
+כדי להתגבר על כל הבעיות האלה, ב-'
+\numeric on
+64
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוצע השימוש בפקטות במקום קו שמור, ביזור הרשת והעברת הפקטות דרך הקודקודים
+ ברשת ובהמשך גם ניתוחים סטיסטיים של מערכות כאלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{רשתות ברודקאסט}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+רשתות ברודקאסט
+\end_layout
+
+\begin_layout Standard
+ברשת ברודקאסט כל המידע מועברה לכל קודקוד וכולם חייבים להקשיב לפקטות.
+ זה קורה ב-
+\lang english
+WiFi
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולרוב בשאר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LAN
+\lang hebrew
+-ים )
+\lang english
+Local Area Networks
+\lang hebrew
+(, ומבחינה אינטואיטיבית גם בהרצאה.
+\end_layout
+
+\begin_layout Standard
+יש כמה בעיות בשיטה זו, ביניהן:
+\end_layout
+
+\begin_layout Itemize
+קשה להעביר את הפקטות מרחקים גאוגרפיים גדולים;
+\end_layout
+
+\begin_layout Itemize
+קשה לתאם גישה של כמה משתמשים לרשת )בהרצאה רק אחד מדבר, אבל מה אם שני סטודנטים
+ רוצים לדבר באותו הזמן?(, זו בעיית ה-
+\lang english
+Multiple Access Problem
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+אין פרטיות בתקשורת )למרות שאפשר להצפין את המידע(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{II
+\backslash
+;
+\backslash
+; האינטרנט ומודל השכבות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{II}$
+\end_inset
+
+ | האינטרנט ומודל השכבות 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+רשתות
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+switched
+\end_layout
+
+\begin_layout Standard
+בניגוד לרשתות ברודקאסט, רשתות שהן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+switched
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאפשרות לרבים לחלוק את אותו המשאב ולאנשים שונים לדבר עם אנשים אחרים באותו
+ הזמן.
+ מתחת לסיווג הזה יש עוד שני סוגי רשתות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+circuit-switched
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נקצה משאבים לקיבולת מקסימלית לאורך כל השיחה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+packet-switched
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נעביר פקטות בהתאם לכמה מידע נרצה להעביר ולא נקצה מראש את כל המשאבים שנדרשים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{פקטות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פקטות
+\end_layout
+
+\begin_layout Standard
+ברגע שלפקטה לא מוקצים משאבים, מסלול וכו', היא חייבת להכיל עליה את המידע
+ שמספר לרשת מאיפה ולאן היא צריכה להגיע - כי אף אחד אחר לא יעשה את זה בשבילה.
+\end_layout
+
+\begin_layout Standard
+הפקטה מכילה את גוף הפקטה )
+\lang english
+payload
+\lang hebrew
+(, שהוא המידע שאנחנו רוצים להעביר, ו-
+\lang english
+header
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמכיל מידע שנועד רק לרשת )כמו פרטים על מעטפה(.
+\end_layout
+
+\begin_layout Standard
+כל פקטה מנתובת באופן עצמי ולכן היא יכולה לעבור מסלול שונה גם אם יצאה מיד
+ אחרי פקטה אחרת.
+ נצטרך לדאוג שהעובדה הזו לא תהפוך תקשורת לבלתי אפשרית ואיכותית.
+\end_layout
+
+\begin_layout Standard
+כשפקטה יוצאת, היא עוברת דרך כמה תחנות ביניים וכל תחנת ביניים לכאורה מתעלמת
+ מהגוף )אלא במקרים של אבטחה שלא נעסוק בהם(, ומעבירה הלאה את הפקטה לתחנה
+ הבאה.
+ לקודקוד יש שיקול דעת לאן לנתב או לא לנתב פקטה )ואז היא תיפול(.
+ הרעיון הזה של שליחי ביניים נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+store-and-forward
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הקודקוד שומר את המידע וכשיכול )או לא(, מעביר את המידע הלאה.
+\end_layout
+
+\begin_layout Description
+הערה בכל תחנת ביניים נוסף עוד דיליי של זמן עיבוד בקודקוד )וזה יכול להצטבר
+ במרחקים ארוכים או קודקודים חלשים(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{פרצים וו-Statistical-Multiplexing}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פרצים
+\end_layout
+
+\begin_layout Standard
+מהתיאור הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, פקטות הן פתרון לא מוצלח ולא יציב בלי הבטחה של ביצועים כלשהם.
+ אם כן, למה זה עדיין חשוב לנו?
+\end_layout
+
+\begin_layout Standard
+תקשורת באינטרנט הרבה פעמים היא בפרצים, כלומר דממה להרבה זמן ואז הרבה מידע
+ יותר מרוחב הפס האפשרי, לדוגמה חיפוש בגוגל - נחפש, נסתכל על התוצאות, ואז
+ שוב נחפש - וקבלת המידע מגוגל היא הפרץ.
+ לעומת זאת, סטרימינג מגיע באופן יותר רציף מעל האינטרנט.
+\end_layout
+
+\begin_layout Standard
+כיצד נטפל בפרצים? פתרון אחד הוא פשוט להפיל כל פקטה שאנחנו לא יכולים להעביר
+ מיד.
+ לחלופין, נוכל להוסיף באפרים ששומרים פקטות שמחכות לעבור.
+ עם זאת, תמיד יהיו לנו יותר פקטות מאשר מקום בבאפר, ולכן תמיד נצטרך להפיל
+ חלק מהפקטות.
+\end_layout
+
+\begin_layout Description
+דוגמה נניח שיש לנו שלושה פרצי מידע כבאיור )כחלק משיחה שלוקחת את כל ציר הזמן(,
+ כאשר במקסימום כל שיחה דורשת קצת יותר משליש מרוחב הפס.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם היינו בטלפוניה, היינו מקצים לראשון ולשני מקום והשלישי היה נזרק בחוץ,
+ והיינו מבזבזים בכל רגע נתון שני שליש מרוחב הפס.
+\end_layout
+
+\begin_layout Standard
+עם זאת, היו מספקים משאבים לכולם כי הם לא רצו לדבר במקביל.
+ ההנחה כאן היא שעומס התקשורת בא והולך אבל מתפלג באיזו שהיא צורה לא מתאומת
+ שמאפשרת מעבר של רוב התקשורת בעומס סביר.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/rate.png
+	lyxscale 30
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמה לתקשורת עם פרצים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Statistical Multiplexing
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Statistical Multiplexing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא הרעיון שלפיו נוכל לשרת משתמשים שונים על אותה התשתית גם אם רשמית אין
+ לכולם מקום ביחד )לא כולם יכולים לחפש באותה השנייה בגוגל משהו, אבל בגלל
+ שזה קורה בזמנים שונים במקומות שונים אנחנו כן מצליחים(.
+ גם ביטוח והלוואות עובדים ככה - הבנק לווה כסף בידיעה שלא כולם הולכים למשוך
+ את הכסף שלהם ולכן מרשה לעצמו 
+\begin_inset Quotes xld
+\end_inset
+
+להמציא
+\begin_inset Quotes xrd
+\end_inset
+
+ כסף, או בביטוח, שבו אם כל אחד היה בתאונת דרכים הביטוח היה בבעיה, אבל סטטיסטית
+ זה לא סביר.
+\end_layout
+
+\begin_layout Standard
+אפשר להסתכל על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Stat Mux
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גם בתור חלוקה של הזמן לפריימים )שמחולקים אף הם לסלוטים(.
+ בכל פריים נייצר לכל היותר 
+\begin_inset Formula $P$
+\end_inset
+
+ פקטות ובממוצע נייצר 
+\begin_inset Formula $A$
+\end_inset
+
+ פקטות.
+ אם 
+\begin_inset Formula $P$
+\end_inset
+
+ גדול מ-
+\begin_inset Formula $A$
+\end_inset
+
+ משמעותית זה לא חכם להקצות משאבים לשיחה ספציפית כמו שהזכרנו כבר הרבה פעמים.
+\end_layout
+
+\begin_layout Standard
+עם זאת, חוק המספרים הגדולים אומר לנו שסביר שערכים מהתפלגות יהיו קרובים לתוחלת,
+ יותר מאשר לערך הכי גדול שאפשר - נקבל הרבה יותר התנהגות דומה ל-
+\begin_inset Formula $A$
+\end_inset
+
+ פקטות לפריים מאשר 
+\begin_inset Formula $P$
+\end_inset
+
+ פקטות לפריים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{Packet- vs Circuit-switched}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+השוואה בין רשתות מנותבות
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Circuit
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\lang english
+Packet
+\end_layout
+
+\begin_layout Standard
+לרשת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+circuit-switched
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש כמה יתרונות וחסרונות, ביניהם
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+חסרונות
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יתרונות
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+רוחב פס מבוזבז בפרצים
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+רוחב פס מובטח
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+חיבורים חסומים כשאין משאבים
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אבסטרקציה נוחה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קודקודים חייבים להיות מודעים לשיחות שעוברות דרכם
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מסלול העברת מידע פשוט
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+דיליי בהתחלת השיחה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+תקורה נמוכה פר-פקטה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+החסרונות האלה הם קריטיים מדי לשירותים שלנו באינטרנט שבגללה אנחנו לא משתמשים
+ בטלפוניה לאינטרנט.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+circuit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+packet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קריטריון
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אם הקו נופל לא נשחזר אותו
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אם יש כשל הרשת תחשב מסלול מחדש
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אמינות
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+רוחב פס מוגבל ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הקוים שהוקצו להם משאבים
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ניצול של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Stat.
+ Mux
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לרוחב פס יעיל יותר
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יעילות
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+חיבור שתי מרכזיות דורש הקצאת משאבים מכל צד
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+רשתות יכולות להתחבר בקלות כי הן לא מקצות אחת לשנייה משאבים
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קלות מימוש
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+לא רלוונטי
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+צריך להתמודד עם עומסים )לזרוק פקטות, להוריד את הקצב,...(
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+טיפול בעומסים
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מודולריות ומודל השכביות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מודולריות
+\end_layout
+
+\begin_layout Standard
+לחלק את הקוד לאבסטרקציות ומודולריות זה חשוב מכל מיני סיבות.
+ בין היתר, אפשר לשנות את המימוש למימוש שונה/יותר יעיל בלי שאחרים ידעו.
+ בנוסף, אפשר להוסיף עוד פונקציונאליות לקוד עם מודולים חדשים נפרדים, וזה
+ בעיקר מאפשר להמשיך לשדרג ולהתקדם בחזיתות שונות באותו הזמן.
+\end_layout
+
+\begin_layout Standard
+ברשתות מודולריות מקבלת נדבך נוסף - המימוש הוא מבוזר בין הרבה מכונות.
+ לכן הושמו כמה עקרונות כדי לפתור בעיות כאלה.
+\end_layout
+
+\begin_layout Itemize
+שכבות היררכיות - כל שכבה מדברת רק עם השכבה מעליה ומתחתיה ולא מודעת/מתעניינת
+ באחרות.
+\end_layout
+
+\begin_layout Itemize
+עקרון קצה לקצה - הרשת מאפשר חיבוריות וזהו, כל דבר אחר )כמו הצפנה( יעשה בידי
+ המשתמשים עצמם.
+ בנוסף, היא לא מבטיחה שפקטה תגיע, או שתגיע בסדר הנכון ולכן אפליקציות צריכות
+ לדאוג גם לזה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+העקרון הזה נועד כדי לאפשר אפליקציות שאנחנו עוד לא יודעים שיהיו להן דרישות
+ אחרות לעשות מה שהן רוצות בצורה המיטבית ביותר.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+גורל משותף - אם החיבור נופל, כולם שוכחים ממנו ולא נדע שהוא היה קיים לפניכן
+ כי אנחנו לא שומרים מידע כזה, רק בנוגע למה שקורה עכשיו.
+\end_layout
+
+\begin_layout Description
+הערה העקרון השני והשלישי מופרים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י ספקי אינטרנט באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Firewalls
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכל מיני מנגנונים אחרים כמו בדיקה של מעבר פקטות בלינקים חלשים מאוד )כמו
+ סלולר(.
+ עם זאת, העקרונות האלה הם כן מנחים, רק לא ממומשים במציאות.
+\end_layout
+
+\begin_layout Standard
+נבנה את המשימות שלנו מלמטה למעלה.
+\end_layout
+
+\begin_layout Itemize
+העברת אלקטורנים על כבל.
+\end_layout
+
+\begin_layout Itemize
+העברת ביטים על כבל.
+\end_layout
+
+\begin_layout Itemize
+העברת פקטות על כבל.
+\end_layout
+
+\begin_layout Itemize
+העברת פקטות על רשת מקומית )
+\lang english
+LAN
+\lang hebrew
+( עם כתובות מקומיות באמצעות ברודקאסט.
+\end_layout
+
+\begin_layout Itemize
+העברת פקטות בין רשתות מקומיות שונות עם כותבות גלובליות.
+\end_layout
+
+\begin_layout Itemize
+להבטיח שהפקטות מגיעות ליעד.
+\end_layout
+
+\begin_layout Itemize
+לעשות משהו עם המידע הזה.
+\end_layout
+
+\begin_layout Standard
+יש פה רבה משימות שונות ולשם כך אנחנו צריכים מודולים שונים - שכבות - שיהיו
+ אחראים על כל משימה בנפרד.
+\end_layout
+
+\begin_layout Description
+דוגמה גם במציאות יש איזושהי שכבתיות.
+ מנכ
+\begin_inset Quotes xrd
+\end_inset
+
+ל א' שולח למנכ
+\begin_inset Quotes xrd
+\end_inset
+
+ל ב' מכתב.
+ המזכירה לקחה את המכתב, שמה אותו במעטפה, שלחה לחברת שליחויות.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+זו שמה בעוד מעטפה למעבר פנימי בתוך תשתיות החברה, מעבירה למזכירה של המנכ
+\begin_inset Quotes xrd
+\end_inset
+
+ל השני כשהיא הורידה את המעטפה הנוספת, המזכירה מוציאה מהמעטפה ונותנת את המכתב
+ למנכ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_layout Standard
+סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ המנכ
+\begin_inset Quotes xrd
+\end_inset
+
+ל שלח מידע והמנכ
+\begin_inset Quotes xrd
+\end_inset
+
+ל האחר קיבל מידע.
+ כל מה שנוסף הוא מטא-דאטא והמסלול שנוצר כאן הוא אנלוגי לחלוטין למה שקורה
+ לפקטות באינטרנט.
+\end_layout
+
+\begin_layout Standard
+מעבר לכך, כל שכבה תיקשרה באמצעות שפה ייחודית לה )מכתב, מעטפה ומעטפה פנימית(
+ וזה אנלוגי לפרוטוקולים השונים של השכבות.
+ אף שכבה לא צריכה להבין את השפה של אף שכבה אחרת.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+סוג מידע רלוונטי
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שפה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שכבה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+תוכן טקסטואלי
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מכתב
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מנכ
+\begin_inset Quotes xrd
+\end_inset
+
+ל
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+זהות הנמען
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מעטפה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מזכירה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מיקום הנמען
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מעטפה פנימית
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+חברת שליחויות
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+שבע המשימות שתיארנו למעלה מתאימות לחמש שכבות במודל השכבות באינטרנט.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Pysical Layer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- העברת ביטים )ואלקטרונים( בכבל.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Link Layer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- העברת פקטות ברשת מקומית )ובכבל(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Network Layer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- העברת פקטות בין רשתות מקומיות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Transport Layer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ווידוא הגעת הפקטות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Application Layer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לעשות משהו עם המידע.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Standard
+
+\color darkgray
+בתרגול חזרנו על הרבה מאוד הגדרות ומשפטים, אזכיר כאן את המרכזיים, להשלמות
+ ראו קובץ התרגול
+\end_layout
+
+\begin_layout Description
+הערה בווי-פיי כולם שולחם הודעות לכולם וכדי למדל נכון את הרשת ולפתור את בעיית
+ ההתנגשות, צריך הרבה הסת'.
+\end_layout
+
+\begin_layout Description
+הגדרה ההסת' של 
+\begin_inset Formula $A$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $B$
+\end_inset
+
+ היא 
+\begin_inset Formula $P\left(A\mid B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $P\left(B\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה הטלנו קוביה וקיבלנו מספר זוגי.
+ מה ההסת' לקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+? 
+\begin_inset Formula $P\left(\left\{ 2\right\} \mid\left\{ 2,4,6\right\} \right)=\frac{P\left(\left\{ 2\right\} \cap\left\{ 2,4,6\right\} \right)}{P\left(\left\{ 2,4,6\right\} \right)}=\frac{\frac{1}{6}}{\frac{1}{2}}=\frac{1}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $A$
+\end_inset
+
+ ו-
+\begin_inset Formula $B$
+\end_inset
+
+ הם ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת אם 
+\begin_inset Formula $P\left(A\cap B\right)=P\left(A\right)P\left(B\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )בייס( 
+\begin_inset Formula $P\left(A\mid B\right)=\frac{P\left(B\mid A\right)P\left(A\right)}{P\left(B\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )נוסחת ההסת' השלמה( עבור 
+\begin_inset Formula $\bigcup B_{i}=\Omega$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $P\left(A\right)=\sum P\left(A\mid B_{i}\right)P\left(B_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נתון סיב אופטי ששולחים עליו הודעות משני סוגים: הודעה טובה שהסיכוי
+ שלא תיפול אחרי זמן 
+\begin_inset Formula $T$
+\end_inset
+
+ היא 
+\begin_inset Formula $e^{-T}$
+\end_inset
+
+ והודעה רעה עם 
+\begin_inset Formula $e^{-1000T}$
+\end_inset
+
+.
+ ההסת' ליצירת פקטה טובה היא 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מה ההסת' שהודעה שנוצרה ב-
+\begin_inset Formula $T=0$
+\end_inset
+
+ תשרוד עד 
+\begin_inset Formula $T=t$
+\end_inset
+
+? מנוסחת ההסת' השלמה התשובה היא 
+\begin_inset Formula $pe^{-t}+\left(1-p\right)e^{-1000t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+בהינתן שהודעה שרדה 
+\begin_inset Formula $t$
+\end_inset
+
+ שניות, מה ההסת' שהיא פקטה טובה? מבייס,
+\begin_inset Formula 
+\[
+P\left(\text{טובה}\mid t\;\text{שרדה}\right)=\frac{P\left(\text{טובה}\right)P\left(t\;\text{שרדה}\mid\text{טובה}\right)}{P\left(t\;\text{שרדה}\right)}=\frac{p\cdot e^{-t}}{pe^{-t}+\left(1-p\right)e^{-1000t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה ישנם כל מיני מ
+\begin_inset Quotes xrd
+\end_inset
+
+מ בדידים ידועים, להלן סיכום שלהם בטבלה 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/table.png
+	lyxscale 30
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+טבלת להשוואת מ
+\begin_inset Quotes xrd
+\end_inset
+
+מ בדידים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה נניח שאנחנו שולחים הודעה מ-
+\begin_inset Formula $S$
+\end_inset
+
+ ל-
+\begin_inset Formula $D$
+\end_inset
+
+ דרך 
+\begin_inset Formula $n-1$
+\end_inset
+
+ תחנות ביניים, כאשר ההסת' שפקטה תיפול היא 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מה ההסת' שהפקטה תגיע ל-
+\begin_inset Formula $D$
+\end_inset
+
+? 
+\begin_inset Formula $\left(1-p\right)^{n}$
+\end_inset
+
+ ההסת' שכל הקפיצות כן יצליחו.
+\end_layout
+
+\begin_layout Enumerate
+בהינתן שאנחנו שולחים הודעה שוב ושוב עד שהיא תגיע, מה תוחלת מספר ההודעות
+ שנשלח?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $X$
+\end_inset
+
+ מספר ההודעות שנשלח עד שההודע התגיע.
+ מתקיים 
+\begin_inset Formula $X\sim\geo{\left(1-p\right)^{n}}$
+\end_inset
+
+ שתוחלתו 
+\begin_inset Formula $\frac{1}{\left(1-p\right)^{n}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+עתה כל תחנת ביניים )לא כולל 
+\begin_inset Formula $S$
+\end_inset
+
+( שולחת את הפקטה שוב ושוב עד שהפקטה מגיעה, מה ההסת' שנצליח?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $1-p$
+\end_inset
+
+ כי זה תלוי רק בהאם 
+\begin_inset Formula $S$
+\end_inset
+
+ הצליח להעביר לתחנה הראשונה.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+הגדרה נאמר כי 
+\begin_inset Formula $X\sim\exp\left(\la\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $f_{X}\left(x\right)=\begin{cases}
+\la e^{-\la x} & x>0\\
+0 & \text{אחרת}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה במטח מטאורים, מגיעים מטאורים בקצב של 
+\begin_inset Formula $\la=50\frac{\text{מטאורים}}{\text{שעה}}$
+\end_inset
+
+.
+ נוכל לאמר שהמטח הוא תהליך פואסוני בקצב 
+\begin_inset Formula $\la$
+\end_inset
+
+.
+ בהתאם, מספר המטאורים ב-
+\begin_inset Formula $t$
+\end_inset
+
+ שעות הוא מ
+\begin_inset Quotes xrd
+\end_inset
+
+מ פואסוני עם פרמטר 
+\begin_inset Formula $\la t$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $M\sim{\rm Pois}\left(50t\right)$
+\end_inset
+
+ )ל-
+\begin_inset Formula $50t$
+\end_inset
+
+ אין יחידות(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מה ההסת' שנצלם שני מטאורים במצלמה שנחשפה ל-
+\begin_inset Formula $15$
+\end_inset
+
+ שניות? נבחר 
+\begin_inset Formula $t=\frac{15}{60\cdot60}$
+\end_inset
+
+ ונחשב 
+\begin_inset Formula $P\left(M=2\right)\approx0.018$
+\end_inset
+
+ או בסימון חלופי 
+\begin_inset Formula $P_{k=2}\left(t=\frac{15}{60\cdot60}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מה הסהת' שנצלם יותר ממטאור אחד? נסמן 
+\begin_inset Formula $T=\frac{15}{3600}$
+\end_inset
+
+, לחשב 
+\begin_inset Formula $P\left(M>1\right)$
+\end_inset
+
+ ישירות דורש חישוב טור שזה לא נוח, לשם כך נחשב
+\begin_inset Formula 
+\begin{align*}
+P\left(M>1\right) & =1-P\left(M\leq1\right)\\
+ & =1-P_{k=0}\left(t=T\right)-P_{k=1}\left(t=T\right)\\
+ & \approx0.019
+\end{align*}
+
+\end_inset
+
+ונשים לב כי כל האפשרויות מעבר ל-
+\begin_inset Formula $M=3$
+\end_inset
+
+ תורמות לנו מעט מאוד להסת' )ככל שמרתחקים מהתוחלת דועכת ההסת' להיות שם(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה נסמן 
+\begin_inset Formula $P_{k=i}\left(t=T\right)=P\left(M=i\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M\sim\pois\left(Tt\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהיו 
+\begin_inset Formula $\left\{ X_{i}\right\} >0$
+\end_inset
+
+ שמגדירים זמן הגעה של הפקטה ה-
+\begin_inset Formula $i$
+\end_inset
+
+.
+ תהליך פואסוני
 \end_layout
 
 \end_body
