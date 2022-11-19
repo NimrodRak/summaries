@@ -341,6 +341,11 @@ LatexCommand tableofcontents
 
 
 \begin_inset FormulaMacro
+\newcommand{\pois}[1]{\textrm{Pois}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
 \newcommand{\geo}[1]{\textrm{Geo}\left(#1\right)}
 \end_inset
 
@@ -1697,7 +1702,7 @@ addcontentsline{toc}{section}{II
 \backslash
 ;
 \backslash
-; האינטרנט ומודל השכבות}
+; האינטרנט ועקרונות יסוד}
 \end_layout
 
 \end_inset
@@ -1712,7 +1717,7 @@ addcontentsline{toc}{section}{II
 \begin_inset Formula $\mathbb{II}$
 \end_inset
 
- | האינטרנט ומודל השכבות 
+ | האינטרנט ועקרונות יסוד 
 \size default
 
 \begin_inset ERT
@@ -2855,8 +2860,8 @@ addcontentsline{toc}{subsubsection}{מודולריות ומודל השכביות
 
 \end_deeper
 \begin_layout Itemize
-גורל משותף - אם החיבור נופל, כולם שוכחים ממנו ולא נדע שהוא היה קיים לפניכן
- כי אנחנו לא שומרים מידע כזה, רק בנוגע למה שקורה עכשיו.
+גורל משותף - בשיחה שמתקיימת, המקום היחיד שבו נשמר מידע על השיחה הוא בנקודות
+ הקצה ולא בשום ראוטר או קודקוד באמצע.
 \end_layout
 
 \begin_layout Description
@@ -2921,6 +2926,35 @@ Firewalls
 וכל מיני מנגנונים אחרים כמו בדיקה של מעבר פקטות בלינקים חלשים מאוד )כמו
  סלולר(.
  עם זאת, העקרונות האלה הם כן מנחים, רק לא ממומשים במציאות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מודל השכבות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+הדגמה ומוטיבציה למודל השכבות
 \end_layout
 
 \begin_layout Standard
@@ -3762,23 +3796,1402 @@ P\left(M>1\right) & =1-P\left(M\leq1\right)\\
 \end_inset
 
  כאשר 
-\begin_inset Formula $M\sim\pois\left(Tt\right)$
+\begin_inset Formula $M\sim\pois{\la T}$
+\end_inset
+
+, ההסת' שהגיעו 
+\begin_inset Formula $i$
+\end_inset
+
+ פקטות בתהליך פואסוני עם פרמטר 
+\begin_inset Formula $\la$
+\end_inset
+
+ אחרי זמן 
+\begin_inset Formula $T$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Description
-הגדרה יהיו 
-\begin_inset Formula $\left\{ X_{i}\right\} >0$
+הגדרה 
+\bar under
+תהליך סופר
+\bar default
+ )
+\lang english
+counting process
+\lang hebrew
+( מוגדר ע
+\begin_inset Quotes xrd
 \end_inset
 
- שמגדירים זמן הגעה של הפקטה ה-
-\begin_inset Formula $i$
+י 
+\begin_inset Formula $\left\{ N_{t}:t\geq0\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $N_{0}=0$
+\end_inset
+
+ ו-
+\begin_inset Formula $N_{t}\in\fldn_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall t\geq0$
+\end_inset
+
+ סופר את מספר האירועים שקרו עד זמן 
+\begin_inset Formula $t$
+\end_inset
+
+ )לכן זו פ' מונוטונית(.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+תהליך פואסוני
+\bar default
+ עם פרמטר 
+\begin_inset Formula $\la$
+\end_inset
+
+הוא תהליך סופר שבו מספר האירועים באינטרוולים זרים ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת מספר, ושמספר האירועים בכל אינטרוול באורך 
+\begin_inset Formula $t$
+\end_inset
+
+ מתפלג לפי מ
+\begin_inset Quotes xrd
+\end_inset
+
+מ פואסון עם פרמטר 
+\begin_inset Formula $\la t$
 \end_inset
 
 .
- תהליך פואסוני
+\end_layout
+
+\begin_layout Description
+דוגמה מספר האנשים שעולים על אוטובוס הוא לא תהליך פואסוני, כי מספר האנשים
+ תלוי בזמן )ולכן המ
+\begin_inset Quotes xrd
+\end_inset
+
+מ שמייצג אינטרוול לא יכול להיות תלוי רק באורך הקטע אלא גם במיקום שלו על
+ ציר הזמן(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{III
+\backslash
+;
+\backslash
+; מודל השכבות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{III}$
+\end_inset
+
+ | מודל השכבות 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Description
+הערה מתוך חמש השכבות, השתיים העליונות )
+\lang english
+Transport, Application
+\lang hebrew
+( ממומשות רק בקצוות ולא בשום מקום אחר.
+\end_layout
+
+\begin_layout Standard
+מסלול טיפוסי בין שני משתמשים נראה כך, כאשר העלייה והירידה באמצע מתארים את
+ העובדה שכל שני קודקודים ברשת )שאינם משתמשי קצה(, פותחים וסוגרים מעטפות
+ גם הם כדי להעביר הלאה את ההודעה.
+ כאן המעטפות הן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+header
+\lang hebrew
+-ים שנוספים לתוכן הפקטה.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/route.jpg
+	lyxscale 30
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+גרף להדגמת מעבר פקטה בין משתמשי קצה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{פרוטוקולים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פרוטוקולים
+\end_layout
+
+\begin_layout Description
+הגדרה פרוטוקול הוא הסכם איך לתקשר כדי להעביר מידע, או לתאם שימוש במשאב כלשהו.
+ פרוטוקולים מגדירים סינטקס )מה הפורמט שבו מעבירים מידע( וסמנטיקות )איך מגיבים
+ לאירועים והודעות מסוימות(.
+\end_layout
+
+\begin_layout Description
+הערה פרוטוקול, בשונה מאלג', לא מתאר איך בדיוק נעשה משהו, אלא מה אנחנו צריכים
+ שיעשה בכל מימוש של הפרוטוקול.
+\end_layout
+
+\begin_layout Description
+דוגמה הפרוטוקול הכי פופולרי בווב הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HTTP
+\lang hebrew
+, שיש לו סינטקס שמכיל הדרים, גוף הודעה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+endpoint
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בכתובת כלשהי וכו'.
+\end_layout
+
+\begin_layout Description
+דוגמה פקטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מכילה הרבה מאוד שדות ולכל אחד מהם גודל ומיקום מגודר.
+ אם נרצה להוסיף עוד שדה, להרחיב שדה וכו' וכו', נגיע לבעיה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+interoperability
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- יש הרבה מאוד שחקנים באינטרנט וקשה להגיע להסכמה כדי שכל השחקנים בדרך ישתפו
+ פעולה עם השינוי.
+\end_layout
+
+\begin_layout Description
+הערה ה-
+\lang english
+IETF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא ארגון שכל מטרתו לאגד וליצור סטנדרטים לפרוטוקולים.
+\end_layout
+
+\begin_layout Standard
+לכל שכבה יש כמה פרוטוקולים שונים )באפליקציה יש הרבה מאוד, בתעבורה יש הרבה
+ וביניהם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP, UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכו'(, למעט בשכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, שבה יש רק את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+חייבת להיות שכבה אחת שבה יש הסכמה בטוח על השפה שמדברים כי רק באמצעותה אפשר
+ לבסס הסכמה על הפרוטוקלים האחרים שבהם יש שונות.
+\end_layout
+
+\begin_layout Standard
+כל שכבה מקיימת את עקרון האנקספולציה - כל שכבה מכילה בתוך ההדרים שהיא מוסיפה
+ את המידע שהיא צריכה ומשתמשת בשכבות מתחתיה כקופסה שחורה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{אפיון חמשת השכבות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נאפיין כל שכבה במודל חמשת השכבות באמצעות כמה קריטריונים.
+\end_layout
+
+\begin_layout Itemize
+שירות - מה השכבה עושה.
+\end_layout
+
+\begin_layout Itemize
+ממשק השירות - איך ניגשים לשירות )לצורך השכבה שמעל(.
+\end_layout
+
+\begin_layout Itemize
+פרוטוקול - איך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+peers
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקשרים )ממשק הפרוטוקול, איך ה-
+\lang english
+peer
+\lang hebrew
+-ים משיגים את השירות, איך השכבה ממומשת בין קודקודים אבל לא בתוכם(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל שכבה יכולים להיות כמה מימושים שונים )כאן נכנסים חידושים והתאמות לצרכים
+ שונים(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size larger
+השכבה הפיזית
+\end_layout
+
+\begin_layout Itemize
+שירות - מעבירה ביטים בין שני קודקודים שמחוברים בקשר פיזי.
+\end_layout
+
+\begin_layout Itemize
+ממשק - מגדיר איך להעביר ולקבל ביטים )יש לספק את גודל ההודעה וכו'(.
+\end_layout
+
+\begin_layout Itemize
+פרוטוקולים - קידודים שמאפשרים ייצוג ביטים )עוצמת זרם חשמל וכו'(.
+\end_layout
+
+\begin_layout Itemize
+דוגמאות - סיב אופטי,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ גלי רדיו וכו'.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+שכבת ה-
+\lang english
+Link
+\end_layout
+
+\begin_layout Itemize
+שירות - לאפשר מעבר הודעות בין משתמשים באמצעות כתובות אבסטרקטיות מקומיות
+ ולא דרך חיבור פיזי בלבד.
+\end_layout
+
+\begin_layout Itemize
+ממשק - שליחת הודעות )מסגרות של ביטים( בין משתמשי קצה, קבלת ההודעות המיועדות
+ למשתמש הקצה הנכון.
+\end_layout
+
+\begin_layout Itemize
+פרוטוקולים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+routing
+\lang hebrew
+, כתובות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAC
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+דוגמאות - אתרנט, ווי-פי.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+שכבת הרשת
+\end_layout
+
+\begin_layout Itemize
+שירות - העברת פקטות לכתובת ספציפית עם כתובות אבסטרקטיות אבל גלובליות בין
+ רשתות )העברת פקטה מרשת אחת בשכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לרשת אחר בשכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(.
+\end_layout
+
+\begin_layout Itemize
+ממשק - איך לשלוח הודעות לרשתות אחרות ואיך לקבל הודעות שמיועדות לי.
+\end_layout
+
+\begin_layout Itemize
+פרוטוקלים - יצירת רשתות ניתוב שמכילות מידע על לאן להעביר הלאה הודעה שמיועדת
+ לכל כתובת גלובלית.
+\end_layout
+
+\begin_layout Itemize
+דוגמאות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלבד.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+שכבת התעבורה
+\end_layout
+
+\begin_layout Itemize
+שירות - תקשורת בין תהליכים, שמבחינה בין שיחות שונות שמתקיימות במקביל בין
+ משתמשים, מספקת אולי אמינות בשליחת הודעות, וויסות קצב הודעות.
+\end_layout
+
+\begin_layout Itemize
+ממשק - שליחת הודעות לתהליך ספציפי ביעד מסוים, העברת ההודעה המתקבלת לתהליך
+ בתוך המכונה.
+\end_layout
+
+\begin_layout Itemize
+פרוטוקול - הגדרת אמינות, פאקטיזציה של הודעות ארוכות, בקרת רצפים )שיגיעו
+ לפי הסדר(.
+\end_layout
+
+\begin_layout Itemize
+דוגמאות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP, UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אבל גם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SCTP, T/TCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ועוד.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+שכבת האפליקציה
+\end_layout
+
+\begin_layout Standard
+שכבה זו היא השכבה השביעית, כאשר דילגנו על שכבות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\numeric on
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מסיבות אנכרוניסטיות.
+\end_layout
+
+\begin_layout Itemize
+שירות - כל שירות שמוצע למשתמש הקצה.
+\end_layout
+
+\begin_layout Itemize
+ממשק - תלוי באפליקציה.
+\end_layout
+
+\begin_layout Itemize
+פרוטוקל - תלוי באפליקציה.
+\end_layout
+
+\begin_layout Itemize
+דוגמאות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HTTP, SMTP, BitTorrent, Skype
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ועוד.
+\end_layout
+
+\begin_layout Standard
+באיור הדגמה של 
+\begin_inset Quotes xld
+\end_inset
+
+מודל שעון החול
+\begin_inset Quotes xrd
+\end_inset
+
+ - שכבה אחת חייבת להיות קבועה כדי שהשאר יוכלו להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+interpolable
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/hour.jpg
+	lyxscale 30
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+גרף להדגמת מעבר פקטה בין משתמשי קצה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
