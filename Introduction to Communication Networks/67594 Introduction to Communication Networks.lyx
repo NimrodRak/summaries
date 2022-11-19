@@ -2070,7 +2070,7 @@ phantomsection
 
 
 \backslash
-addcontentsline{toc}{subsubsection}{פרצים וו-Statistical-Multiplexing}
+addcontentsline{toc}{subsubsection}{פרצים ו-Statistical-Multiplexing}
 \end_layout
 
 \end_inset
@@ -3907,7 +3907,7 @@ addcontentsline{toc}{section}{III
 \backslash
 ;
 \backslash
-; מודל השכבות}
+; מודל השכבות ותקשורת ב-LAN}
 \end_layout
 
 \end_inset
@@ -3922,7 +3922,11 @@ addcontentsline{toc}{section}{III
 \begin_inset Formula $\mathbb{III}$
 \end_inset
 
- | מודל השכבות 
+ | מודל השכבות ותקשורת ב-
+\lang english
+LAN
+\lang hebrew
+ 
 \size default
 
 \begin_inset ERT
@@ -4007,7 +4011,7 @@ status open
 \begin_inset Graphics
 	filename img/route.jpg
 	lyxscale 30
-	scale 70
+	scale 30
 
 \end_inset
 
@@ -4455,6 +4459,12 @@ addcontentsline{toc}{subsubsection}{אפיון חמשת השכבות}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+אפיון חמשת השכבות
 \end_layout
 
 \begin_layout Standard
@@ -5168,7 +5178,7 @@ status open
 \begin_inset Graphics
 	filename img/hour.jpg
 	lyxscale 30
-	scale 70
+	scale 30
 
 \end_inset
 
@@ -5192,6 +5202,868 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+תקשורת ב-
+\lang english
+LAN
+\end_layout
+
+\begin_layout Standard
+נתון לינק יחיד )בין אם כבל פיזי או תווך לוגי כמו ווי-פיי(, כיצד נאפשר גישה
+ מתואמת של כמה אנשים שונים?
+\end_layout
+
+\begin_layout Description
+הערה כדי לפתור את הבעיה של תקשורת ב-
+\lang english
+LAN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)שכבת ה-
+\lang english
+datalink
+\lang hebrew
+( נניח לעתה שיש לנו שכבה פיזית )נניח שקיימת(, שכבת ה-
+\lang english
+datalink
+\lang hebrew
+, ומעליה רק את האפליקציה.
+\end_layout
+
+\begin_layout Description
+הערה נקרא למשתמשי קצה קודקודים, לתווך הלוגי לינק ולפקטה בשכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פריים.
+\end_layout
+
+\begin_layout Standard
+הפתרון שלנו צריך לאפשר כמה שירותים כאמור, ביניהם גישה ללינק עם כתובות בהדר
+ הפריים והעברת מידע אמינה בין קודקודים )
+\lang english
+error detection
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכו'(.
+\end_layout
+
+\begin_layout Standard
+שכבת הלינק ממומשת בכרטיס הרשת שיש לנו במחשב/מכשיר, כך שרק כרטיסי רשת מדברים
+ ביניהם בשכבה הזו ואין לאף גורם אחר חלק כאן.
+\end_layout
+
+\begin_layout Description
+הערה שכבת הלינק פותרת את הבעיה שפתר ה-
+\lang english
+switch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רק בלי ה-
+\lang english
+switch
+\lang hebrew
+.
+ כשיש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+switch
+\lang hebrew
+, אין בעיה של שיתוף המשאב של הלינק כי כולם מחולקים כבר לשיחות.
+ המקום היחיד שבו יש עדיין דמוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+broadcast domain
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה בחלק של הכבל מכל קודקוד לסוויץ' )שם המחשב לכאורה מקבל ושולח מידע לכולם,
+ עד שהסוויץ' ממיין הכל(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{Multiple-Access-Protocol}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו מחפשים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Multiple Access Protocol
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אלג' מבוזר שקובע איך קודקודים מתקשרים ב-
+\lang english
+broadcast domain
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+ה-
+\lang english
+MAP
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+האידאלי
+\end_layout
+
+\begin_layout Itemize
+כשקודקוד רוצה לדבר, הוא יכול לדבר בקצב 
+\begin_inset Formula $R$
+\end_inset
+
+ )רוחב הפס המלא(.
+\end_layout
+
+\begin_layout Itemize
+כש-
+\begin_inset Formula $M$
+\end_inset
+
+ קודקודים רוצים לדבר, כל אחד יכול לדבר בקצב 
+\begin_inset Formula $\frac{R}{M}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+אין גורם ריכוזי שמתאם את השיחות.
+\end_layout
+
+\begin_layout Itemize
+אין תיאום של שעונים, יישור של ביטים, והאלג' פשוט.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פרוטוקולים לגישה אקראית
+\end_layout
+
+\begin_layout Standard
+כשלקודקוד יש פקטה לשלוח הוא שולח אותה בקצב המקסימלי האפשרי.
+ אם שני קודקודים משדרים יש התנגשות ואז פרוטוקולים מסוג זה צריכים להגדיר
+ איך לזהות התנגזויות ואיך לשחזר מהם מידע.
+\end_layout
+
+\begin_layout Standard
+דוגמה אחת לפרוטוקול כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Slotted ALOHA
+\lang hebrew
+.
+ נניח לשם פשטות 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ שכל הפריימים באותו הגודל; 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ שהזמן מחולק לסלוטים בגודל שווה )הזמן לשדר פריים יחיד(; 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ קודקודים מתחילים לשדר רק בתחילת סלוט; 
+\begin_inset Formula $\left(4\right)$
+\end_inset
+
+ קודקודים הם מסונכרנים; 
+\begin_inset Formula $\left(5\right)$
+\end_inset
+
+ ואם שני קודקודים מתנגשים, כולם מזהים התנגשות.
+\end_layout
+
+\begin_layout Standard
+תחת כל ההנחות הללו, כשנרצה לשלוח פקטה, נשלח אותה בסלוט הקרוב ואם הצלחנו
+ בלי התנגשות יופי, ואם יש התנגשות נשדר את הפריים מחדש בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+ עד שנצליח לשדר ללא התנגשות.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יתרונות
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אם רק קודקוד אחד מדבר הוא משדר בקצב המקסימלי
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מאוד מבוזר, כל מה שצריך זה שהקודקודים יהיו מסונכרנים
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פשוט
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Formula $\qquad$
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+חסרונות
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+כשיש התנגשויות מתחילים לבזבז הרבה סלוטים
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יש סלוטים ריקים
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אפשר לזהות התנגשות לפני שנגמר הסלוט אבל לא נעשה עם זה כלום
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אין לנו באמת יכולת לסנכרן
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar under
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\bar default
+\lang hebrew
+ הוא היחס של סלוטים מוצלחים )ללא התנגשות ועם פריים( מסך הסלוטים.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar under
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+throughput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא יחס הסלוטים עם פריים מסך הסלוטים.
+\end_layout
+
+\begin_layout Standard
+ננתח את האלג' כאשר עתה תמיד נשלח פריים בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+, גם בפעם הראשונה.
+ נניח שלכל קודקוד יש אינסוף פריימים לשלוח, יש לנו 
+\begin_inset Formula $N$
+\end_inset
+
+ קודקודים והסת' שליחה 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ההסת' שקודקוד יצליח לשלוח הודעה ללא התנגשות היא 
+\begin_inset Formula $p\left(1-p\right)^{N-1}$
+\end_inset
+
+ )הוא שולח וכל השאר לא(.
+ ההסת' שקודקוד כלשהו יצליח הוא 
+\begin_inset Formula $Np\left(1-p\right)^{N-1}$
+\end_inset
+
+ כי המאורעות שאנחנו מאחדים זרים.
+ בשביל יעילות מקסימלית נמצא 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+ שממקסם את הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, וכש-
+\begin_inset Formula $N$
+\end_inset
+
+ שואף לאינסוף הערך הזה נותן יעילות של 
+\begin_inset Formula $\frac{1}{e}\approx0.37$
+\end_inset
+
+ שזה די גרוע.
+\end_layout
+
+\begin_layout Standard
+כל הניתוח הזה לא פרקטי כי אין לנו סלוטים במציאות כי אין סינכרון כאמור, לשם
+ כך יש את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Pure ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כל קודקוד מתנהג כאילו אנחנו כן ב-
+\lang english
+slotted ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר ייתכן שהסלוטים של הקודקודים השונים לא מסוכנרים.
+ במקרה כזה, ההסת' להתנגשות עולה כי לא נקבל רק התנגשויות בתוך פריימים, אלא
+ גם בין פריימים.
 \end_layout
 
 \end_body
