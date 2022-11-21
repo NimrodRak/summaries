@@ -5493,7 +5493,7 @@ phantomsection
 
 
 \backslash
-addcontentsline{toc}{subsubsection}{Multiple-Access-Protocol}
+addcontentsline{toc}{subsubsection}{פרוטוקולי גישה אקראית}
 \end_layout
 
 \end_inset
@@ -6066,5 +6066,2783 @@ slotted ALOHA
  גם בין פריימים.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+תרגול
+\end_layout
+
+\begin_layout Description
+דוגמה בדומה לאנלוגיה למנכ
+\begin_inset Quotes xrd
+\end_inset
+
+ל והמזכירה, אפשר להסתכל על מודל השכבות בדומה לפעילות של דואר ישראל.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נרצה לשלוח הודעה מירושלים, ישראל לטוקיו, יפן.
+ קודם כל נצעק בשכונה האם מישהו מכיר את הנמען בטוקיו.
+ אם לא, נשלח למרכז איסוף עירוני ושם יבדקו האם הנמען נמצא בעיר אחרת בארץ.
+ אם לא, המכתב יועבר לנתב
+\begin_inset Quotes xrd
+\end_inset
+
+ג ומשם יעבור את המסלול ההפוך ביפן.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כעת נעסוק בשכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובפרט בפרוטוקולי גישה אקראית.
+\end_layout
+
+\begin_layout Description
+הערה נניח כמה הנחות משפטות: 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ כשקודקוד משדר הוא משדר ברוחב פס מלא; 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ אם יש התנגשות כל המידע אבד; 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ אפשר להתעלם מרעש בערוץ )אם יש כזה(.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+רוחב הפס
+\bar default
+ של ערוץ תקשורת כלשהו הוא כמות המידע שאנחנו יכולים לשלוח ליחידה זמן, נסמנו
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ ויחידותיו 
+\begin_inset Formula $\frac{bit}{sec}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה נסמן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב-
+\begin_inset Formula $\eta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה כמה זמן יקח לשדר פקטה כשפקטה היא בגודל 
+\begin_inset Formula $30$
+\end_inset
+
+ ביטים ורוחב הפס הוא 
+\begin_inset Formula $5$
+\end_inset
+
+ ביט/שנייה.
+ כמה זמן יקח לשדר את ההודעה? 
+\begin_inset Formula $\frac{\left|packet\right|}{B}=\frac{30}{5}=6$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מה רוחב הפס בערוץ שמצליח לשדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פקטות באורך 
+\begin_inset Formula $30$
+\end_inset
+
+ ביטים בתוך שתי שניות? 
+\begin_inset Formula $\frac{3\cdot30}{2}=45$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+לצורך ניתוח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ALOHA
+\lang hebrew
+, נסמן 
+\begin_inset Formula $T$
+\end_inset
+
+ הזמן לשליחת פקטה אחת, 
+\begin_inset Formula $X_{p}\sim Z$
+\end_inset
+
+ מספר הפקטות שנשלחות באינטרוול בגודל 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ב-
+\lang english
+ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כפי שלמדנו בהרצאה, ב-
+\lang english
+ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שולחים פריימים בסלוטים, כאשר ב-
+\lang english
+slotted
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מניחים שלכל הקודקודים יש שעון מסונכרן ולכן כל הסלוטים של כולם מתואמים, ואילו
+ ב-
+\lang english
+pure
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יתכן שלכל אחד שעון אחר.
+\end_layout
+
+\begin_layout Standard
+ננתח את האלג' במקרה הבינומי - 
+\begin_inset Formula $X_{p}\sim\bin{n,p}$
+\end_inset
+
+ )כל קודקוד משדר בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+( ובמקרה הפואסוני - 
+\begin_inset Formula $X_{p}\sim\pois{gT}$
+\end_inset
+
+ )יש אינסוף קודקודים, ובאופן טיפוסי נצפה ל-
+\begin_inset Formula $g$
+\end_inset
+
+ הודעות בשנייה, 
+\begin_inset Formula $T$
+\end_inset
+
+ גודל האינטרוול בשניות(.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+גישה בינומית )
+\lang english
+slotted
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Description
+דוגמה אם יש שלושה קודקודים, ההסת' ששניים יתנגשו היא 
+\begin_inset Formula $p^{2}\left(1-p\right)$
+\end_inset
+
+, ההסת' לסלוט ריק הוא 
+\begin_inset Formula $\left(1-p\right)^{3}$
+\end_inset
+
+ וכו'.
+\end_layout
+
+\begin_layout Standard
+ראשית נחשב את ההסת' לפקטה מוצלחת )
+\begin_inset Formula $p_{suc}$
+\end_inset
+
+( ללא התנגשויות.
+ לאחר מכן נסתכל על 
+\begin_inset Formula $P_{suc}$
+\end_inset
+
+ כמ
+\begin_inset Quotes xrd
+\end_inset
+
+מ אינדיקטור על האם סלוט היה ללא התנגשויות ועם הודעה ואז נחשב את תוחלתו,
+ וזה יהיה ה-
+\lang english
+goodput
+\lang hebrew
+.
+ נחזור על זה לארבעת המקרים
+\end_layout
+
+\begin_layout Standard
+כמו שראינו כבר כמה פעמים, ההסת' 
+\begin_inset Formula $p_{suc}$
+\end_inset
+
+ היא 
+\begin_inset Formula $np\left(1-p\right)^{n-1}$
+\end_inset
+
+ )בינומי קלאסי(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{suc}=TP_{suc}$
+\end_inset
+
+ הוא המ
+\begin_inset Quotes xrd
+\end_inset
+
+מ המייצג את זמן השידור המוצלח בסלוט מסוים, כאשר 
+\begin_inset Formula $P_{suc}\sim\ber{\desc{np\left(1-p\right)^{n-1}}{p_{suc}}}$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $E\left[T_{suc}\right]=Tp_{suc}$
+\end_inset
+
+ ולכן ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $\frac{T\cdot p_{suc}}{T}=p_{suc}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+גישה בינומית )
+\lang english
+pure
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+נסתכל על סלוט כלשהו, ונשים לב שעתה יכול להיות שמישהו נכנס לסלוט שלנו באמצע
+ )או שאנחנו נכנסו לו(.
+ נצטרך שגם ביחידת הזמן הזו )סלוט מהזווית שלנו( וגם בזו הקודמת אף אחד לא
+ שלח שום דבר, כלומר 
+\begin_inset Formula $p_{suc}=np\left(1-p\right)^{2\left(n-1\right)}$
+\end_inset
+
+.
+ ומשם שאר הניתוח זהה.
+ במקרה כזה 
+\begin_inset Formula $p$
+\end_inset
+
+ האופטימלי הוא 
+\begin_inset Formula $\frac{1}{2n}$
+\end_inset
+
+ שנותן 
+\begin_inset Formula $\frac{1}{2e}$
+\end_inset
+
+ שזה חצי מה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה-
+\lang english
+slotted
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+גישה פואסונית )
+\lang english
+slotted
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Description
+דוגמה מה ההסת' שעל פני שני סלוטים לא נשלחה אף הודעה? 
+\begin_inset Formula $P_{k=0}\left(t=2T\right)=\frac{g^{0}e^{-2gT}}{0!}=e^{-2gT}$
+\end_inset
+
+, לחלופין נוכל לחשב את זה כמכפלת מ
+\begin_inset Quotes xrd
+\end_inset
+
+מ ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת על שני הסלוטים.
+ נשים לב שבתהליך הפואסוני שלנו אכן אינטרוולים זרים הם בעלי התפלגות ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת על מספר ההודעות )כיאה לתהליך פואסוני(.
+\end_layout
+
+\begin_layout Standard
+מה ההסת' 
+\begin_inset Formula $p_{suc}$
+\end_inset
+
+ הפעם? על פני סלוט אחד, אנחנו מחפשים את ההסת' שנשלחה הודעה אחת רק, כלומר
+ 
+\begin_inset Formula $p_{suc}=P_{k=1}\left(t=T\right)=gTe^{-gT}$
+\end_inset
+
+ ומאותה סיבה כמו לפני, ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $\frac{E\left[T_{suc}\right]}{T}=\frac{TE\left[P_{suc}\right]}{T}=\frac{Tp_{suc}}{T}=p_{suc}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+גישה פואסונית )
+\lang english
+pure
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+מה היא 
+\begin_inset Formula $p_{suc}$
+\end_inset
+
+ הפעם? נסתכל שוב על יחידה אחד בגודל סלוט אחד, ונרצה שתשלח הודעה אחת בסלוט
+ הזה ו-
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באחד שלפני, ובגלל שזה תהליך פואסוני זה ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת ונוכל להכפיל את ההסת', כלומר
+\begin_inset Formula 
+\[
+p_{suc}=P_{k=0}\left(t=T\right)P_{k=1}\left(t=T\right)=e^{-gT}gTe^{-gT}=gTe^{-2gT}
+\]
+
+\end_inset
+
+וה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהתאם כמו לפני, הפעם 
+\begin_inset Formula $\eta_{max}=\frac{1}{2e}$
+\end_inset
+
+ בדומה ל-
+\lang english
+pure
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בבינומי.
+\end_layout
+
+\begin_layout Description
+שאלה הודעות מגיעות כתהליך פואסוני עם פרמטר 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ חלק מההודעות באורך 
+\begin_inset Formula $S$
+\end_inset
+
+ וחלק באורך 
+\begin_inset Formula $L>S$
+\end_inset
+
+ כאשר ההסת' ל-
+\begin_inset Formula $S$
+\end_inset
+
+ היא 
+\begin_inset Formula $p$
+\end_inset
+
+ )ו-
+\begin_inset Formula $1-p$
+\end_inset
+
+ ל-
+\begin_inset Formula $L$
+\end_inset
+
+(.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נניח שאנחנו משתמשים ב-
+\lang english
+slotted ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם סלוט בגודל 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ מה ה-
+\lang english
+goodput
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ההסת' לפקטה מוצלחת היא 
+\begin_inset Formula $p_{suc}=P_{k=1}\left(t=L\right)$
+\end_inset
+
+, ואז
+\begin_inset Formula 
+\[
+T_{suc}=\begin{cases}
+L & p_{suc,L}\\
+S & p_{suc,S}\\
+0 & \text{אחרת}
+\end{cases}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $p_{suc,L}$
+\end_inset
+
+ זו ההסת' ששלחנו הודעה ארוכה והצלחנו ו-
+\begin_inset Formula $p_{suc,S}$
+\end_inset
+
+ בהתאמה.
+ לכן 
+\begin_inset Formula $E\left[T_{suc}\right]=Lp_{L}+Sp_{S}$
+\end_inset
+
+ ואז ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\eta=\frac{E\left[T_{suc}\right]}{L}=\frac{1}{L}\left(Lp_{suc,L}+Sp_{suc,S}\right)=gLe^{-gL}\left(\left(1-p\right)+\frac{S}{L}p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נניח שאנחנו משתמשים ב-
+\lang english
+pure ALOHA
+\lang hebrew
+.
+ מה ה-
+\lang english
+goodput
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עתה כדי שנשלח הודעה מוצלחת בסלוט בגודל 
+\begin_inset Formula $L$
+\end_inset
+
+, נחלק למקרה הקצר והארוך.
+\end_layout
+
+\begin_layout Standard
+לשליחת הודעה ארוכה מוצלחת, נרצה 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ שתשלח הודעה אחת ארוכה בסלוט בגודל 
+\begin_inset Formula $L$
+\end_inset
+
+ שלנו; 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ הודעות בסלוט בגודל 
+\begin_inset Formula $S$
+\end_inset
+
+ לפני; 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $0$
+\end_inset
+
+ הודעות בסלוט בגודל 
+\begin_inset Formula $L-S$
+\end_inset
+
+ לפניכן שהן ארוכות כי רק הן מתנגשות עם הסלוט הנוכחי, הקצרות לא )כמו באיור(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ls.png
+	lyxscale 30
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+הדגמה של הסלוטים המועדים להתנגשות, ה-
+\begin_inset Formula $S$
+\end_inset
+
+ הימני הוא טעות ואמור להיות 
+\begin_inset Formula $L-S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ נקבל
+\begin_inset Formula 
+\begin{align*}
+p_{suc,L} & =\desc{P_{k=1}\left(t=L\right)\left(1-p\right)}{\left(1\right)}\cdot\desc{P_{k=0}\left(t=S\right)}{\left(2\right)}\cdot\desc{P_{k=0}\left(t=\left(L-S\right)\left(1-p\right)\right)}{\left(3\right)}\\
+ & =\left(1-p\right)gLe^{-gL}\cdot e^{-gS}\cdot e^{-g\left(1-p\right)\left(L-S\right)}\\
+ & =\left(1-p\right)gLe^{-g\left(2L\left(S-L\right)p\right)}
+\end{align*}
+
+\end_inset
+
+כאשר הכפלנו ב-
+\begin_inset Formula $\left(1-p\right)$
+\end_inset
+
+ בחוץ ב-
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ כי אנחנו שולחים הודעה ורק בהסת' 
+\begin_inset Formula $1-p$
+\end_inset
+
+ היא באורך 
+\begin_inset Formula $L$
+\end_inset
+
+ ובפנים ב-
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ כי אנחנו מעוניינים רק בהודעות באורך 
+\begin_inset Formula $L$
+\end_inset
+
+ שיכולות להשלח ולכן קצב ההודעות הרלוונטי משתנה מ-
+\begin_inset Formula $g$
+\end_inset
+
+ ל-
+\begin_inset Formula $g\left(1-p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עתה ההסת' שנשלח הודעה מוצלחת ביחידת זמן בגודל 
+\begin_inset Formula $S$
+\end_inset
+
+ מחושבת לפי ההסת' 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ שתשלח הודעה אחת אינטרוול בגודל 
+\begin_inset Formula $S$
+\end_inset
+
+; 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ שיהיו 
+\begin_inset Formula $0$
+\end_inset
+
+ הודעות בסלוט בגודל 
+\begin_inset Formula $S$
+\end_inset
+
+ לפני; 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ שיהיו 
+\begin_inset Formula $0$
+\end_inset
+
+ הודעות ארוכה בסלוט 
+\begin_inset Formula $L-S$
+\end_inset
+
+ לפני הסלוט הקודם.
+\end_layout
+
+\begin_layout Standard
+כלומר סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ אותו חישוב כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל רק עם 
+\begin_inset Formula $P_{k=1}\left(t=S\right)$
+\end_inset
+
+ במקום 
+\begin_inset Formula $P_{k=1}\left(t=L\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לסיכום,
+\begin_inset Formula 
+\[
+\eta=\frac{L\cdot p_{suc,L}}{L}+\frac{Sp_{suc,S}}{S}=p_{suc,L}+p_{suc,S}=\ldots
+\]
+
+\end_inset
+
+כאשר הפעם חילקנו כל אחד באורך ההודעה כי הודעה באורך 
+\begin_inset Formula $S$
+\end_inset
+
+ תורמת לנו 
+\begin_inset Formula $S$
+\end_inset
+
+ לרוחב הפס המנוצל בהצלחה והודעות ב-
+\begin_inset Formula $L$
+\end_inset
+
+ תורמות 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{IV
+\backslash
+;
+\backslash
+; שכבת הלינק לעומק}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{IV}$
+\end_inset
+
+ | שכבת הלינק
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לעומק
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+תרגול
+\end_layout
+
+\begin_layout Description
+דוגמה נניח שאנחנו מתקשרים עם סיב אופטי שלו 
+\begin_inset Formula $3$
+\end_inset
+
+ כבלים.
+ מחשב אחד לא יודע לתקשר בשלושת הסיבים בו זמנית אלא רק באחד, ובו הוא משתמש
+ בהצלחה 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מהזמן, אז ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיה 
+\begin_inset Formula $\frac{1}{6}$
+\end_inset
+
+ )למעשה הוא חסום מלמעלה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה מעתה, 
+\begin_inset Formula $\eta$
+\end_inset
+
+ )ה-
+\lang english
+goodput
+\lang hebrew
+( יהיה יחס הזמן המנוצל בהצלחה מסך הזמן, כפול השיקולים הפיזיקלים שנתונים
+ לנו מבחוץ.
+\end_layout
+
+\begin_layout Standard
+ראינו בתרגול הקודם את ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של גרסאות שונות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ALOHA
+\lang hebrew
+, להלן טבלה שמסכמת אותם
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הסת' תחת תהליך פואסוני
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הסת' כתלות ב-
+\begin_inset Formula $g,T$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Slotted
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{k=1}\left(t=T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $gTe^{-gT}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Pure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{k=1}\left(t=T\right)P_{k=0}\left(t=T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $gTe^{-2gT}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+שאלה נתונים תשעה כפרים על מאדים בסידור הבא
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל כפר יכול לשמוע את ארבעת הכפרים הסמוכים לו )למעלה, למטה, ימינה ושמאלה(,
+ אפע
+\begin_inset Quotes xrd
+\end_inset
+
+פ שהודעות מכוונות אך ורק לנמענים בתוך אותו הכפר.
+\end_layout
+
+\begin_layout Standard
+הכפרים האי-זוגיים מתקשרים )בתוך הכפר( עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slotted ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם פרמטר 
+\begin_inset Formula $g_{o}$
+\end_inset
+
+ והזוגיים ב-
+\lang english
+pure ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם פרמטר 
+\begin_inset Formula $g_{e}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניתן להניח כי בכל כפר יש אינסוף קודקודים )ולכן אפשר להזניח כל מיני תופעות
+ כמו העובדה שלא משנה איזו יחידת זמן בגודל 
+\begin_inset Formula $T$
+\end_inset
+
+ נבחר, עדיין קצב ההודעות יהיה 
+\begin_inset Formula $gT$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+מה ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של כל המושבה אם 
+\begin_inset Formula $g_{o}=0$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של כל מושבה זוגית הוא 
+\begin_inset Formula $p_{suc}$
+\end_inset
+
+ כפי שראינו בעבר, כאשר 
+\begin_inset Formula $p_{suc}$
+\end_inset
+
+ הוא )מהטבלה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל( 
+\begin_inset Formula $g_{o}Te^{-2g_{o}T}$
+\end_inset
+
+.
+ סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $4\cdot\left(\frac{1}{4}g_{o}Te^{-2g_{o}T}\right)=g_{o}Te^{-2g_{o}T}$
+\end_inset
+
+ כאשר אנחנו מכפילים ב-
+\begin_inset Formula $4$
+\end_inset
+
+ כי הניצול המוצלח שנוסף לנו הוא ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת לכן אפשר לסכום את כל הכפר והרבע שם כי כל כפר היא רבע מכלל המושבה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מה ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של כל מושבה אם 
+\begin_inset Formula $g_{e}=0$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בדומה לנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, 
+\begin_inset Formula $g_{e}Te^{-g_{e}T}$
+\end_inset
+
+ כי אנחנו ב-
+\lang english
+slotted
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מה ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במקרה הכללי?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נחלק את הכפרים לשלוש קטגוריות: פינה, צלע ומרכז.
+\end_layout
+
+\begin_layout Itemize
+פינתי: ההסת' ש-
+\begin_inset Formula $1$
+\end_inset
+
+ )בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ( ישדר בהצלחה היא
+\begin_inset Formula 
+\begin{align*}
+p_{suc,corn}=\desc{P_{k=1}^{g_{o}}\left(t=T\right)}{\text{הפינה משדרת}}\cdot\desc{\left(P_{k=0}^{g_{e}}\left(t=T\right)\right)^{2}}{\text{השכנים לא משדרים כרגע}}\cdot\desc{\left(P_{k=0}^{g_{e}}\left(t=T\right)\right)^{2}}{\text{השכנים לא משדרים קודם}} & =g_{o}Te^{-g_{o}T}e^{-4g_{e}T}\\
+ & =g_{0}e^{-T\left(g_{0}+4g_{e}\right)}
+\end{align*}
+
+\end_inset
+
+כאשר נשים לב להבחנה בין זוגיים לאי-זוגיים מבחינת ה-
+\lang english
+pure/slotted
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לצורכי חישוב ההסת'.
+\end_layout
+
+\begin_layout Itemize
+צלע: ההסת' ש-
+\begin_inset Formula $2$
+\end_inset
+
+ )בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ( ישדר בהצלחה היא
+\begin_inset Formula 
+\[
+p_{suc,side}\desc{P_{k=1}^{g_{e}}\left(t=T\right)}{\text{הצלע משדרת}}\cdot\desc{P_{k=0}^{g_{e}}\left(t=T\right)}{\text{הכפר לא משדר לפני}}\cdot\desc{\left(P_{k=0}^{g_{o}}\left(t=T\right)\right)^{3}}{\text{השכנים לא משדרים כרגע}}\cdot\desc{\left(P_{k=0}^{g_{o}}\left(t=T\right)\right)^{3}}{\text{השכנים לא משדרים לפני}}=g_{e}Te^{-2T\left(g_{e}+3g_{0}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאשר כאן אנחנו מסתכלים על המקרה הכללי שבו חלון הזמן שבחרנו לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+aligned
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בדיוק על הסלוט של ה-
+\lang english
+slotted
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)במקרה כזה לא היינו צריכים את הביטוי האחרון(.
+\end_layout
+
+\begin_layout Standard
+נוכל להתעלם מהמקרה הספציפי הזה כי יש אינסוף נקודות קצה ובגלל שהכל רציף לא
+ מסתכלים על חלון נקודתי.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מרכזי: ההסת' ש-
+\begin_inset Formula $5$
+\end_inset
+
+ ישדר בהצלחה היא
+\begin_inset Formula 
+\[
+p_{suc,mid}=\desc{P_{k=1}^{g_{o}}\left(t=T\right)}{\text{המרכז משדר}}\cdot\desc{\left(P_{k=0}^{g_{e}}\left(t=T\right)\right)^{4}}{\text{השכנים לא משדרים כרגע}}\cdot\desc{\left(P_{k=0}^{g_{e}}\left(t=T\right)\right)^{4}}{\text{השכנים לא משדרים קודם}}=g_{o}Te^{-T\left(g_{e}+8g_{o}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הכולל הוא 
+\begin_inset Formula $\frac{1}{9}\left(p_{suc,mid}+4\cdot p_{suc,corn}+4\cdot p_{suc,side}\right)=\ldots$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+הערה לכאורה אם נשלחה הודעה בידי אחד הקודקודים ביחידת הזמן הקודמת ב-
+\lang english
+pure ALOHA
+\lang hebrew
+, ההסת' שתשלח הודעה ביחידת הזמן הנוכחית ירדה ולכן ההסת' תלויות וכל החישובים
+ שלנו לא נכונים.
+ נראה הוכחה למה זה לא נכון.
+ נסמן 
+\begin_inset Formula $X_{suc,i}$
+\end_inset
+
+ מספר ההודעות ששלח הקודקוד ה-
+\begin_inset Formula $i$
+\end_inset
+
+ בהצלחה ביחידת זמן 
+\begin_inset Formula $T$
+\end_inset
+
+ )
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(.
+ בממוצע, על יחידת זמן בגודל 
+\begin_inset Formula $T$
+\end_inset
+
+, בממוצע ישלחו
+\begin_inset Formula 
+\[
+\sum E\left[X_{suc,i}\right]=E\left[\sum X_{suc,i}\right]=E\left[X_{suc}\right]=p_{suc}
+\]
+
+\end_inset
+
+כאשר השתמשנו בלינאריות התוחלת שמתקיימת גם כשהמ
+\begin_inset Quotes xrd
+\end_inset
+
+מ לא ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת ולכן סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ באמת קיבלנו שלא משנה איזה חלון נבחר, תמיד נקבל בממוצע 
+\begin_inset Formula $p_{suc}$
+\end_inset
+
+ הודעות בשנייה.
+\end_layout
+
+\begin_layout Description
+שאלה נתונה רשת עם שני סוגים של פקטות כאשר קצב השליחה מתנהג כתהליך פואסוני
+ 
+\begin_inset Formula $X_{p}\sim\pois{gT}$
+\end_inset
+
+.
+ פקטות מסוג 
+\begin_inset Formula $A$
+\end_inset
+
+ הן בגודל 
+\begin_inset Formula $S$
+\end_inset
+
+ ופקטות מסוג 
+\begin_inset Formula $B$
+\end_inset
+
+ הן בגודל 
+\begin_inset Formula $\alpha S$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+.
+ כולם משתמשים בפרוטוקול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slotted ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם סלוט 
+\begin_inset Formula $T=S$
+\end_inset
+
+.
+ בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+ נשלחת פקטה מסוג 
+\begin_inset Formula $A$
+\end_inset
+
+ ובהסת' 
+\begin_inset Formula $1-p$
+\end_inset
+
+ מסוג 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ יש אינסוף קודקודים.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מה הוא 
+\begin_inset Formula $p_{suc}$
+\end_inset
+
+, ההסת' לפקטה מוצלחת?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נוכל להסתכל על התהליך כשני תהליכים נפרדים, אחד 
+\begin_inset Formula $S_{p}^{\alpha}\sim\pois{\left(1-\alpha\right)g}$
+\end_inset
+
+ ואחד 
+\begin_inset Formula $S_{p}\sim\pois{pg}$
+\end_inset
+
+ בהתאם לסוגים.
+\end_layout
+
+\begin_layout Standard
+ההסת' לפקטה מוצלחת באורך 
+\begin_inset Formula $\alpha S$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\begin{align*}
+p_{suc}^{\alpha} & =\desc{P_{k=0}^{\alpha}\left(t=\left(\lceil\alpha\rceil-1\right)S\right)}{\text{אף ארוך לא יכנס לפני}}\cdot\desc{P_{k=1}^{\alpha}\left(t=S\right)}{\text{אנחנו היחידים כרגע}}\cdot\desc{P_{k=0}^{\alpha}\left(t=\left(\lceil\alpha\rceil-1\right)S\right)}{\text{אף ארוך לא מתחיל עד שנסיים}}\cdot\desc{P_{k=0}\left(t=\lceil\alpha\rceil S\right)}{\text{אף קצר לא מתחיל עד שנסיים}}\\
+ & =e^{-g\left(1-p\right)\left(\lceil\alpha\rceil-1\right)S}\cdot\left(1-p\right)gSe^{-\alpha g\left(1-p\right)S}\cdot e^{-\alpha g\left(1-p\right)\left(\lceil\alpha\rceil-1\right)S}\cdot e^{-\alpha gp\lceil\alpha\rceil S}
+\end{align*}
+
+\end_inset
+
+ההסת' לפקטה מוצלחת באורך 
+\begin_inset Formula $S$
+\end_inset
+
+ היא )בדומה לחישוב הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל(
+\begin_inset Formula 
+\[
+p_{suc}=P_{k=1}\left(t=S\right)P_{k=0}^{\alpha}\left(t=S\right)P_{k=0}^{\alpha}\left(t=\left(\lceil\alpha\rceil-1\right)S\right)
+\]
+
+\end_inset
+
+וההסת' לפקטה מוצלחת בכללי היא 
+\begin_inset Formula $p_{suc,tot}=p\cdot p_{suc}+\left(1-p\right)p_{suc}^{\alpha}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מה ה-
+\lang english
+goodput
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\eta=\frac{E\left[T_{suc}\right]}{\text{סך הזמן}}=\frac{S\alpha p_{suc}^{\alpha}}{S\lceil\alpha\rceil}+\frac{Sp_{suc}}{S}=\frac{\alpha}{\lceil\alpha\rceil}p_{suc}^{\alpha}+p_{suc}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\size larger
+תיקון שגיאות
+\end_layout
+
+\begin_layout Standard
+לעתים בערוץ יש רעש ואז צריך לתקן ולזהות את השגיאות.
+ ישנן כמה שיטות לזיהוי ותיקון שגיאות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+repetition code
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נחזור על כל ביט שלוש פעמים ונתייחס לביט לפי החלטת הרוב, כך נזהה כל אי
+ אחידות ונתקן נכון רק אם יש רוב לא הרוס.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נוכל להסתכל על שלושת הביטים כקוורדינטות בעולם תלת ממדי, ואז כל האפשרויות
+ ל-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים יוצרים קוביה תלת-ממדית.
+ יש רק שתי קוורדינטות נכונות ולמעשה כדי להכריע, עושים הטלה ולוקחים את התוצאה
+ )דמיינו גאומטרית(.
+ כאן התקורה היא 
+\begin_inset Formula $200\%$
+\end_inset
+
+ כי יש לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ ביטים ואנחנו שולחים 
+\begin_inset Formula $3n$
+\end_inset
+
+ ביטים.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+parity code
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נוסיף ביט אחד שהופך את ההודעה לזוגית )
+\begin_inset Formula $0$
+\end_inset
+
+ אם היא כבר זוגית ו-
+\begin_inset Formula $1$
+\end_inset
+
+ אם היא אי-זוגית(.
+ התקורה כאן היא 
+\begin_inset Formula $1+\frac{1}{n}$
+\end_inset
+
+.
+ שיטה זו נותנת לנו זיהוי של עד שגיאה אחת אבל אין לנו יכולת לשחזר את המקור.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עכשיו נחלק את ההודעה למטריצה ונוסיף לכל שורה ועמודה ביט זוגיות )
+\numeric on
+2-
+\numeric off
+\lang english
+d parity
+\lang hebrew
+(.
+ כך נוכל לזהות שלוש שגיאות ולתקן אחת
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
