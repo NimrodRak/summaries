@@ -8777,5 +8777,1656 @@ xy^{2}z=0^{j+2k}0^{l}1^{p}
 וברור שיש יותר אפסים מאחדים ולכן הניפוח לא בשפה סתירה.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{IV
+\backslash
+;
+\backslash
+; משפט מייהיל-נרוד}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{IV}$
+\end_inset
+
+ | משפט מייהיל-נרוד 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\forall L\subseteq\com^{*}$
+\end_inset
+
+, נגדיר יחס 
+\begin_inset Formula $\sim_{L}\subseteq\com^{*}\times\com^{*}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x,y\in\com^{*}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $x\sim_{L}y$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\forall z\in\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $y\cdot z\in L\iff x\cdot z\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה מילולית, 
+\begin_inset Formula $x\sim_{L}y$
+\end_inset
+
+ אם לא משנה איזו מילה נדביק לסוף של שתיהן, הן או שתיהן יהיו בשפה או שתיהן
+ לא.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L=\left(0+1\right)^{*}0\left(0+1\right)$
+\end_inset
+
+.
+ במקרה כזה 
+\begin_inset Formula $0\nsim_{L}1$
+\end_inset
+
+ כי 
+\begin_inset Formula $0$
+\end_inset
+
+ זנב מפריד )
+\begin_inset Formula $10\notin L$
+\end_inset
+
+ אבל 
+\begin_inset Formula $00\in L$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $1\sim_{L}11\sim_{L}\epsilon$
+\end_inset
+
+ כי 
+\begin_inset Formula $\forall z\in\com^{*}$
+\end_inset
+
+ , 
+\begin_inset Formula $11\cdot z\in L$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $z\in L$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $1\cdot z\in L$
+\end_inset
+
+ )מילה היא בשפה אם האות הלפני אחרונה היא 
+\begin_inset Formula $0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $01\nsim_{L}10$
+\end_inset
+
+ כי 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ זנב מפריד )המילים עצמן מופרדות כבר(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה לכל שפה 
+\begin_inset Formula $L$
+\end_inset
+
+, 
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+ היא יחס שקילות.
+\end_layout
+
+\begin_layout Proof
+רפלקסיביות: 
+\begin_inset Formula $\forall x$
+\end_inset
+
+, 
+\begin_inset Formula $x\sim_{L}x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+סימטרי: 
+\begin_inset Formula $\forall x_{1},x_{2}\in\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}\sim_{L}x_{2}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $x_{2}\sim_{L}x_{1}$
+\end_inset
+
+ כי התנאי עצמו סימטרי.
+\end_layout
+
+\begin_layout Proof
+טרנזיטיביות: 
+\begin_inset Formula $\forall x_{1},x_{2},x_{3}\in\com^{*}$
+\end_inset
+
+ אם 
+\begin_inset Formula $x_{1}\sim_{L}x_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x_{2}\sim_{L}x_{3}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $x_{1}\sim_{L}x_{3}$
+\end_inset
+
+ כי אם בשלילה 
+\begin_inset Formula $x_{1}\nsim_{L}x_{3}$
+\end_inset
+
+, קיים 
+\begin_inset Formula $z\in\com^{*}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x_{1}\cdot z\in L\iff x_{3}\cdot z\notin L$
+\end_inset
+
+ )בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ על המספור(, אבל
+\begin_inset Formula 
+\[
+x_{3}\cdot z\notin L\iff x_{1}\cdot z\in L\iff x_{2}\cdot z\in L\iff x_{3}\cdot z\in L
+\]
+
+\end_inset
+
+סתירה.
+\end_layout
+
+\begin_layout Description
+הערה נסמן 
+\begin_inset Formula $\left[w\right]$
+\end_inset
+
+ מחלקת השקילות של המילה 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, נמצא את מחלקות השקילות של היחס 
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ ו-
+\begin_inset Formula $0$
+\end_inset
+
+ לא מקיימים את היחס, והמילה 
+\begin_inset Formula $1$
+\end_inset
+
+ מפרידה ביניהם.
+ מתקיים 
+\begin_inset Formula $1\in\left[\epsilon\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $00$
+\end_inset
+
+ מחלקה חדשה, ומפורדת מהשתיים הראשונות ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ 
+\begin_inset Formula $01$
+\end_inset
+
+ גם מחלקה חדשה, וסה
+\begin_inset Quotes xrd
+\end_inset
+
+כ המחלקות הן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[0\right]=0,\com^{*}10\qquad\left[\epsilon\right]=\epsilon,1,\com^{*}11\qquad\left[00\right]=\com^{*}00\qquad\left[01\right]=\com^{*}01
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה נשים לב כי אם 
+\begin_inset Formula $x_{1}\sim_{L}x_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x_{3}\sim_{L}x_{4}$
+\end_inset
+
+, ו-
+\begin_inset Formula $z$
+\end_inset
+
+ מפריד בין 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, אז 
+\begin_inset Formula $z$
+\end_inset
+
+ מפריד בין 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ניתן לראות זאת בדוגמה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל עבור 
+\begin_inset Formula $0\sim_{L}10$
+\end_inset
+
+ ו-
+\begin_inset Formula $01\sim_{L}101$
+\end_inset
+
+ ו-
+\begin_inset Formula $z=\epsilon$
+\end_inset
+
+, אכן מתקיים ש-
+\begin_inset Formula $01\nsim_{L}10$
+\end_inset
+
+ בין היתר בזכות 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+משפט )מייהיל-נרוד( 
+\begin_inset Formula $\forall L\subseteq\com^{*}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $L\in\reg$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם יש ל-
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+ מספר סופי של מחלקות שקילות.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ נניח של-
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+ יש מספר סופי של חלקות שקילות.
+ נגדיר 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ 
+\begin_inset Formula $A=\left\langle \com,Q,q_{0},\delta,F\right\rangle $
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $L\left(A\right)=L$
+\end_inset
+
+ נבחר
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $Q$
+\end_inset
+
+ מחלקות השקילות של 
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{0}=\left[\epsilon\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta\left(\left[w\right],\sigma\right)=\left[w\cdot\sigma\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F=\left\{ \left[w\right]:w\in L\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שהגדרה של 
+\begin_inset Formula $\delta,F$
+\end_inset
+
+ לא תלויה בבחירת הנציג )
+\begin_inset Formula $w$
+\end_inset
+
+( כי הרבה מאוד מצבים הם בעלי אותו נציג )אם 
+\begin_inset Formula $y\sim_{L}w$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left[w\sigma\right]=\left[y\sigma\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\forall z$
+\end_inset
+
+ כי אחרת 
+\begin_inset Formula $\sigma z$
+\end_inset
+
+ מפריד של 
+\begin_inset Formula $y,w$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+נוכיח שלכל 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=\left[w\right]$
+\end_inset
+
+ ולכן מהגדרת 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=F$
+\end_inset
+
+ ונסיים.
+ באינדוקציה על 
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בסיס )
+\begin_inset Formula $w=\epsilon$
+\end_inset
+
+(: 
+\begin_inset Formula $w=\epsilon$
+\end_inset
+
+ ואכן 
+\begin_inset Formula $\delta^{*}\left(q_{0},\epsilon\right)=q_{0}=\left[\epsilon\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+צעד )
+\begin_inset Formula $\left|w\right|\to\left|w\right|+1$
+\end_inset
+
+(:
+\begin_inset Formula 
+\begin{align*}
+\delta^{*}\left(q_{0},u\cdot\sigma\right) & =\delta\left(\delta^{*}\left(q_{0},u\right),\sigma\right)\\
+ & \overset{\text{ה"א}}{=}\delta\left(\left[u\right],\sigma\right)\\
+ & \overset{\text{הגדרה}}{=}\left[u\sigma\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ נניח ש-
+\begin_inset Formula $A=\left\langle \com,Q,q_{0},\delta,F\right\rangle $
+\end_inset
+
+ הוא 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ שמזז את 
+\begin_inset Formula $L$
+\end_inset
+
+ ונראה של-
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+ מספר סופי של מחלקות שקילות.
+ נחסום את המספר הזה עם מספר המצבים ונסיים.
+\end_layout
+
+\begin_layout Proof
+נגדיר יחס 
+\begin_inset Formula $\sim_{A}\subseteq\com^{*}\times\com^{*}$
+\end_inset
+
+ ונאמר כי 
+\begin_inset Formula $x,y\in\com^{*}$
+\end_inset
+
+ מקיימות 
+\begin_inset Formula $x\sim_{A}y$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\delta^{*}\left(q_{0},x\right)=\delta^{*}\left(q_{0},y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $x\sim_{A}y$
+\end_inset
+
+ אז אין להן זנב מפריד כי 
+\begin_inset Formula $xz,yz$
+\end_inset
+
+ נפגשות אחרי 
+\begin_inset Formula $x,y$
+\end_inset
+
+ ומשם ממשיכות יחד בריצה על 
+\begin_inset Formula $z$
+\end_inset
+
+ ולכן תמיד יגיעו לאותו המקום, ולכן 
+\begin_inset Formula $x\sim_{L}y$
+\end_inset
+
+, ופורמלית, אם 
+\begin_inset Formula $x\sim_{A}y$
+\end_inset
+
+ אז 
+\begin_inset Formula $\forall z\in\com^{*}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\delta^{*}\left(q_{0},xz\right)=\delta^{*}\left(\delta^{*}\left(q_{0},x\right),z\right)=\delta^{*}\left(\delta^{*}\left(q_{0},y\right),z\right)=\delta^{*}\left(q_{0},yz\right)
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $xz\in L\iff yz\in L$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\sim_{L}y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מכאן שמספר מחלקות השקילות של 
+\begin_inset Formula $\sim_{A}$
+\end_inset
+
+ חוסם את מספר מחלקות השקילות של 
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+, והראשון חסום ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\left|Q\right|$
+\end_inset
+
+ ולכן גם האחרון ולכן הוא סופי.
+\end_layout
+
+\begin_layout Description
+דוגמה נפעיל את המשפט על הדוגמה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל )
+\begin_inset Formula $L=\left(0+1\right)^{*}0\left(0+1\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/naz.png
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט שמתאים לשפה 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר בנינו כל קשת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י בדיקה של היכן נמצא הנציג יחד עם האות על הקשת, לדוגמה 
+\begin_inset Formula $\left[01\right]$
+\end_inset
+
+ עם 
+\begin_inset Formula $0$
+\end_inset
+
+ הולך ל-
+\begin_inset Formula $0$
+\end_inset
+
+ כי 
+\begin_inset Formula $010$
+\end_inset
+
+ הוא במחלקת השקילות של 
+\begin_inset Formula $0$
+\end_inset
+
+, ושאר הקשתות בהתאם.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size larger
+שימושים של משפט
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MN
+\end_layout
+
+\begin_layout Enumerate
+סיווג ל-
+\begin_inset Formula $\reg$
+\end_inset
+
+ או לא 
+\begin_inset Formula $\reg$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L=\left\{ 0^{n}1^{n}:n\geq0\right\} $
+\end_inset
+
+ אינה רגולרית כי 
+\begin_inset Formula $\forall i\neq j\geq0$
+\end_inset
+
+, 
+\begin_inset Formula $0^{i}\nsim0^{j}$
+\end_inset
+
+ כי 
+\begin_inset Formula $1^{i}$
+\end_inset
+
+ זנב מפריד )
+\begin_inset Formula $0^{i}1^{i}\in L$
+\end_inset
+
+ אבל 
+\begin_inset Formula $0^{j}1^{j}$
+\end_inset
+
+ לא( ולכן יש אינסוף מחלקות שקילות ל-
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+ וסיימנו.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L=\left\{ 0^{i}1^{j}:\gcd\left(i,j\right)\neq1\right\} $
+\end_inset
+
+.
+ נראה שעבור שני ראשוניים, 
+\begin_inset Formula $p_{1}\neq p_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $0^{p_{1}}\nsim_{L}0^{p_{2}}$
+\end_inset
+
+ )כאן 
+\begin_inset Formula $j=0$
+\end_inset
+
+(.
+ נשים לב כי 
+\begin_inset Formula $1^{p_{1}}$
+\end_inset
+
+ הוא זנב מפריד )כי 
+\begin_inset Formula $0^{p_{1}}1^{p_{1}}\in L$
+\end_inset
+
+ אבל 
+\begin_inset Formula $0^{p_{2}}1^{p_{1}}$
+\end_inset
+
+ לא(.
+ לכן ל-
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+ 
+\begin_inset Formula $\infty$
+\end_inset
+
+ מח
+\begin_inset Quotes xrd
+\end_inset
+
+ש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+צמצום/מזעור 
+\begin_inset Formula $\dfa$
+\end_inset
+
+-ים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הרעיון הוא שאם לאוטומט יש יותר מצבים ממחלקות שקילות ל-
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+, אפשר לצמצם את ה-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ עוד.
+ נראה אלג' שבהנתן 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ 
+\begin_inset Formula $A=\left\langle \com,Q,q_{0},\delta,F\right\rangle $
+\end_inset
+
+, נחזיר 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ 
+\begin_inset Formula $A'$
+\end_inset
+
+ שקול ל-
+\begin_inset Formula $A$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ 
+\begin_inset Formula $A''$
+\end_inset
+
+, אם 
+\begin_inset Formula $L\left(A''\right)=L\left(A\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left|A'\right|\leq\left|A''\right|$
+\end_inset
+
+ )
+\begin_inset Formula $A'$
+\end_inset
+
+ 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ מינימלי עבור 
+\begin_inset Formula $L\left(A\right)$
+\end_inset
+
+(.
+ מעבר לכך, נראה שאוטומט זה הוא יחיד עד כדי שמות.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מזעור אוטומטים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מזעור אוטומטים
+\end_layout
+
+\begin_layout Standard
+נגדיר סדרה של יחסים 
+\begin_inset Formula $\sim_{i}Q\times Q$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i\geq0$
+\end_inset
+
+.
+ הרעיון הוא ש-
+\begin_inset Formula $s_{1}\sim_{i}s_{2}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\forall z\in\com^{*}$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|z\right|\leq i$
+\end_inset
+
+, 
+\begin_inset Formula $\delta^{*}\left(s_{1},z\right)\in F\iff\delta^{*}\left(s_{2},z\right)\in F$
+\end_inset
+
+.
+ כלומר אינטואיטיבית 
+\begin_inset Formula $s_{1}\sim_{i}s_{2}$
+\end_inset
+
+ אם 
+\begin_inset Formula $s_{1},s_{2}$
+\end_inset
+
+ מסכימות על אילו מילים עד אורך 
+\begin_inset Formula $i$
+\end_inset
+
+ מתקבלות )כשהריצה מתחילה מהן(.
+\end_layout
+
+\begin_layout Standard
+ככל ש-
+\begin_inset Formula $i$
+\end_inset
+
+ יותר גדול, כך יש יותר מילים שצריך שהתנאי הזה יתקיים עליהן ולכן מחלקות השקילות
+ שלו יגדלו )ומספרן יגדל(.
+ מתישהו נפסיק לעדן את מחלקות השקילות ומחלקות השקילות שנקבל יספקו לנו את
+ המצבים ל-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ המינימלי.
+ 
+\end_layout
+
+\begin_layout Description
+הגדרה נגדיר את הסדרה 
+\begin_inset Formula $\sim_{i}$
+\end_inset
+
+ באופן אינדוקטיבי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בסיס )
+\begin_inset Formula $i=0$
+\end_inset
+
+(: 
+\begin_inset Formula $s_{1}\sim_{0}s_{2}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $s_{1}\in F\iff s_{2}\in F$
+\end_inset
+
+ )ויש לו שתי מחלקות שקילות, כל המקבלים וכל הלא מקבלים(.
+\end_layout
+
+\begin_layout Standard
+צעד )
+\begin_inset Formula $i\to i+1$
+\end_inset
+
+(: נגדיר 
+\begin_inset Formula $s_{1}\sim_{i+1}s_{2}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $s_{1}\sim_{i}s_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\delta\left(s_{1},\sigma\right)\sim_{i}\delta\left(s_{2},\sigma\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\sigma\in\com^{*}$
+\end_inset
+
+ )כלומר אם 
+\begin_inset Formula $s_{1},s_{2}$
+\end_inset
+
+ מסכימים על מילים באורך 
+\begin_inset Formula $i$
+\end_inset
+
+ וגם על כל הארכה באורך 
+\begin_inset Formula $1$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה נביט באוטומט הבא שמזהה את השפה 
+\begin_inset Formula $L=\left(0+1\right)^{*}0\left(0+1\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/s4.png
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט שמתאים לשפה 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\sim_{0}$
+\end_inset
+
+, מחלקות השקילות שלנו הן
+\begin_inset Formula 
+\[
+\left\{ \left\{ s_{0},s_{1},s_{2}\right\} ,\left\{ s_{3},s_{4},s_{5}\right\} \right\} 
+\]
+
+\end_inset
+
+עבור מילים באורך 
+\begin_inset Formula $1$
+\end_inset
+
+, נעדן את מחלקת השקילות.
+ האם 
+\begin_inset Formula $s_{0}\sim_{1}s_{1}$
+\end_inset
+
+? מתקיים 
+\begin_inset Formula $s_{0}\sim_{0}s_{1}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $s_{1}=\delta\left(s_{0},0\right)\nsim_{0}\delta\left(s_{1},0\right)=s_{3}$
+\end_inset
+
+ ולכן התשובה היא לא.
+ עם זאת 
+\begin_inset Formula $s_{0}\sim_{1}s_{2}$
+\end_inset
+
+ כן מתקיים כי הפעלה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ו-
+\begin_inset Formula $1$
+\end_inset
+
+ מובילות אותנו למצבים שהם באותה מחלקת שקילות בהתאמה.
+ אחרי חישוב מקבלים שמחלקות השקילות ל-
+\begin_inset Formula $\sim_{1}$
+\end_inset
+
+ הן
+\begin_inset Formula 
+\[
+\left\{ \left\{ s_{0},s_{1}\right\} ,\left\{ s_{2}\right\} ,\left\{ s_{3},s_{5}\right\} ,\left\{ s_{4}\right\} \right\} 
+\]
+
+\end_inset
+
+ואז עבור 
+\begin_inset Formula $\sim_{2}$
+\end_inset
+
+ מקבלים את אותה מחלקת שקילות ושם נעצור )הגענו לנקודת שבת( ואכן ארבעת המחלקות
+ הללו נותנות לנו אוטומט מזערי.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Standard
+נביט בסדרת היחסים שהגדרנו 
+\begin_inset Formula $\left\{ \sim_{i}\right\} $
+\end_inset
+
+ )שכל אחד מהם אוסף זוגות של מצבים(.
+ בהכרח שעבור 
+\begin_inset Formula $i$
+\end_inset
+
+ גדול מספיר, נקבל 
+\begin_inset Formula $\sim_{i}=\sim_{i+1}$
+\end_inset
+
+ )שוויון בין קבוצות המוכלות ב-
+\begin_inset Formula $Q\times Q$
+\end_inset
+
+( כי אם 
+\begin_inset Formula $s_{1}\sim_{i+1}s_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $s_{1}\sim_{i}s_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\sim_{i}\subseteq\sim_{i+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכאן שאו שהגענו לנקודת שבת ונעצור, או שהורדנו לפחות זוג אחד מ-
+\begin_inset Formula $\sim_{i}$
+\end_inset
+
+, ולכן תוך לכל היותר 
+\begin_inset Formula $\left|Q\right|^{2}$
+\end_inset
+
+ איטרציות נעצור.
+\end_layout
+
+\begin_layout Standard
+בנוסף, המעבר מ-
+\begin_inset Formula $\sim_{i}$
+\end_inset
+
+ ל-
+\begin_inset Formula $\sim_{i+1}$
+\end_inset
+
+ מתבצע בזמן פולינומיאלי, שכן יש מספר פולינומיאלי של זוגות )לכל היותר 
+\begin_inset Formula $\left|Q\right|^{2}$
+\end_inset
+
+( וחישוב האם זוג עובר ליחס הבא או לא דורש זמן קבוע.
+\end_layout
+
+\begin_layout Description
+טענה לכל 
+\begin_inset Formula $i\geq0$
+\end_inset
+
+ ו-
+\begin_inset Formula $s_{1},s_{2}\in Q$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $s_{1}\sim_{i}s_{2}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם לכל מילה 
+\begin_inset Formula $w$
+\end_inset
+
+ באורך 
+\begin_inset Formula $i\geq$
+\end_inset
+
+, 
+\begin_inset Formula $\delta^{*}\left(s_{1},w\right)\in F\iff\delta^{*}\left(s_{2},w\right)\in F$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+הערה בתרגיל נוכיח שזה מספיק כדי להראות שמחלקות השקילות מהוות מצבים לאוטומט
+ המזערי.
+\end_layout
+
+\begin_layout Proof
+נראה באינדוקציה על 
+\begin_inset Formula $i$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+בסיס )
+\begin_inset Formula $i=0$
+\end_inset
+
+(: 
+\begin_inset Formula $w=\epsilon$
+\end_inset
+
+.
+ מההגדרה 
+\begin_inset Formula $s_{1}\sim_{0}s_{2}\iff\left(\delta^{*}\left(s_{1},\epsilon\right)=s_{1}\in F\iff\delta^{*}\left(s_{2},\epsilon\right)=s_{2}\in F\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+צעד )
+\begin_inset Formula $i\to i+1$
+\end_inset
+
+(:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ נניח ש-
+\begin_inset Formula $s_{1}\sim_{i+1}s_{2}$
+\end_inset
+
+ נוכיח שלכל מילה 
+\begin_inset Formula $w$
+\end_inset
+
+, אם 
+\begin_inset Formula $i+1\geq\left|w\right|$
+\end_inset
+
+, אז 
+\begin_inset Formula $\delta^{*}\left(s_{1},w\right)=\delta^{*}\left(s_{2},w\right)\in F$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $w$
+\end_inset
+
+ כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $i\geq\left|w\right|$
+\end_inset
+
+, 
+\begin_inset Formula $s_{1}\sim_{i+1}s_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $s_{1}\sim_{i}s_{2}$
+\end_inset
+
+ ולכן מה
+\begin_inset Quotes xrd
+\end_inset
+
+א הטענה מתקיימת עבור 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $i=\left|w\right|+1$
+\end_inset
+
+ אז 
+\begin_inset Formula $w=\sigma y$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\sigma\in\com,y\in\com^{*}$
+\end_inset
+
+ ומהגדרת 
+\begin_inset Formula $\sim_{i+1}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+s_{1}'=\delta\left(s_{1},\sigma\right)\sim_{i}\delta\left(s_{2},\sigma\right)=s_{2}'
+\]
+
+\end_inset
+
+ולכן מה
+\begin_inset Quotes xrd
+\end_inset
+
+א )עבור 
+\begin_inset Formula $y$
+\end_inset
+
+ שהיא באורך 
+\begin_inset Formula $i$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\delta^{*}\left(s_{1}',y\right)\in F\iff\delta^{*}\left(s_{2}',y\right)\in F
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\delta^{*}\left(s_{1},\sigma y\right)=\delta^{*}\left(\delta\left(s_{1},\sigma\right),y\right)\in F\overset{\text{הביטוי הנ"ל}}{\iff}\delta^{*}\left(\delta\left(s_{2},\sigma\right),y\right)\in F=\delta^{*}\left(s_{2},\sigma y\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $w$
+\end_inset
+
+ מקיימת את התנאי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ נניח ש-
+\begin_inset Formula $s_{1},s_{2}$
+\end_inset
+
+ מסכימים מילים עד לאורך 
+\begin_inset Formula $i+1$
+\end_inset
+
+ ונוכיח ש-
+\begin_inset Formula $s_{1}\sim_{i+1}s_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה ש-
+\begin_inset Formula $s_{1}\nsim_{i+1}s_{2}$
+\end_inset
+
+.
+ לכן או ש-
+\begin_inset Formula $s_{1}\nsim_{i}s_{2}$
+\end_inset
+
+ או שקיימת 
+\begin_inset Formula $\sigma\in\com$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\delta\left(s_{1},\sigma\right)\nsim_{i}\delta\left(s_{2},\sigma\right)$
+\end_inset
+
+ )מההגדרה(.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $s_{1}\nsim s_{2}$
+\end_inset
+
+, קיימת מילה 
+\begin_inset Formula $y$
+\end_inset
+
+ באורך 
+\begin_inset Formula $i\geq$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\delta\left(s_{2},y\right)\nsim_{i}\delta\left(s_{1},y\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $s_{1},s_{2}$
+\end_inset
+
+ לא מסכימים על מילה באורך 
+\begin_inset Formula $i$
+\end_inset
+
+ סתירה.
+\end_layout
+
+\begin_layout Standard
+אם קיימת 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\delta\left(s_{1},\sigma\right)\nsim_{i}\delta\left(s_{2},\sigma\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $\delta\left(s_{1},\sigma\right),\delta\left(s_{2},\sigma\right)$
+\end_inset
+
+ הם מצבים לא ביחס 
+\begin_inset Formula $\sim_{i}$
+\end_inset
+
+ ולכן מה
+\begin_inset Quotes xrd
+\end_inset
+
+א הם לא מסכימים על השפה עד אורך 
+\begin_inset Formula $i\geq$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר, קיימת 
+\begin_inset Formula $y$
+\end_inset
+
+ עם 
+\begin_inset Formula $i\geq\left|y\right|$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\delta^{*}\left(\delta\left(s_{1},\sigma\right),y\right)\in F$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\delta^{*}\left(\delta\left(s_{2},\sigma\right),y\right)\notin F$
+\end_inset
+
+ בסתירה לכך ש-
+\begin_inset Formula $s_{1},s_{2}$
+\end_inset
+
+ מסכימים על מילים באורך 
+\begin_inset Formula $i+1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
