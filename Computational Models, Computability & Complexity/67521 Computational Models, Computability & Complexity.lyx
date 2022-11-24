@@ -10428,5 +10428,1145 @@ s_{1}'=\delta\left(s_{1},\sigma\right)\sim_{i}\delta\left(s_{2},\sigma\right)=s_
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+טענה תהי 
+\begin_inset Formula $f:\fldn\to\fldn$
+\end_inset
+
+ מונוטונית עולה ממש כך ש-
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $\em\left(n\right)$
+\end_inset
+
+, אזי השפה 
+\begin_inset Formula $L_{f}=\left\{ a^{f\left(n\right)}:n\in\fldn\right\} $
+\end_inset
+
+ לא רגולרית.
+\end_layout
+
+\begin_layout Proof
+נשתמש בלמת הניפוח ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מציאה לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, מילה באורך בין 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ ל-
+\begin_inset Formula $f\left(n+1\right)$
+\end_inset
+
+, ונסיים.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+טענת
+\begin_inset Formula $\;$
+\end_inset
+
+עזר תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+ אזי 
+\begin_inset Formula $\forall K,N\in\fldn$
+\end_inset
+
+, קיים 
+\begin_inset Formula $n>N$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $f\left(n+1\right)-f\left(n\right)>K$
+\end_inset
+
+ )כלומר נצליח לחסום ממתחת את ההפרשים בין האיברים, עבור מספרים מספיק גדולים(.
+\end_layout
+
+\begin_layout Proof
+)של טענת העזר( נניח בשלילה שלא קיים, לכן קיימים 
+\begin_inset Formula $K,N\in\fldn$
+\end_inset
+
+ שעבורם 
+\begin_inset Formula $\forall n>N$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(n+1\right)-f\left(n\right)\leq K$
+\end_inset
+
+.
+ בפרט, קיים 
+\begin_inset Formula $M\in\fldn$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $f\left(n+1\right)-f\left(n\right)\leq M$
+\end_inset
+
+ )מקסימום ההפרשים עד 
+\begin_inset Formula $N$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+לכן מתקיים 
+\begin_inset Formula $f\left(2\right)-f\left(1\right)\leq M$
+\end_inset
+
+, ואז 
+\begin_inset Formula $f\left(3\right)\leq f\left(2\right)+M\le f\left(1\right)+2M$
+\end_inset
+
+ ובצעד ה-
+\begin_inset Formula $n$
+\end_inset
+
+-י, 
+\begin_inset Formula $f\left(n\right)\leq\left(n-1\right)M+f\left(1\right)$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\frac{f\left(n\right)}{n}\leq\frac{n-1}{n}M+\frac{f\left(1\right)}{n}\underset{n\to\infty}{\longrightarrow}M+0
+\]
+
+\end_inset
+
+ולכן ממונוטוניות הגבול, 
+\begin_inset Formula $\lim\limits _{n\to\infty}\frac{f\left(n\right)}{n}\leq M$
+\end_inset
+
+ בסתירה לכך שהגבול הזה הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+ מהגדרת 
+\begin_inset Formula $\em$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+נחזור לטענה.
+ נניח בשלילה שלמת הניפוח מתקיימת ויהי 
+\begin_inset Formula $p>0$
+\end_inset
+
+ קבוע הניפוח.
+ נבחר 
+\begin_inset Formula $N=K=p$
+\end_inset
+
+ ונביט במילה 
+\begin_inset Formula $a^{f\left(n\right)}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>p$
+\end_inset
+
+ שמטענת העזר, מקיים 
+\begin_inset Formula $f\left(n+1\right)-f\left(n\right)>k$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $w=xyz=a^{l}a^{m}a^{s}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $l+m+s=f\left(n\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l+m\leq p$
+\end_inset
+
+ ו-
+\begin_inset Formula $m>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נביט ב-
+\begin_inset Formula $xy^{2}z$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|xy^{2}z\right|=f\left(n\right)+m$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula 
+\[
+f\left(n\right)<f\left(n\right)+m\leq f\left(n\right)+p<f\left(n+1\right)
+\]
+
+\end_inset
+
+כאשר המעבר הראשון והשני נובעים מהתנאים של למת הניפוח על 
+\begin_inset Formula $l,m$
+\end_inset
+
+ והמעבר השלישי נובע מתטענת העזר )
+\begin_inset Formula $p=K$
+\end_inset
+
+(.
+ לכן 
+\begin_inset Formula $xy^{2}z\notin L$
+\end_inset
+
+ בסתירה ללמת הניפוח.
+\end_layout
+
+\begin_layout Proof
+למעשה המעבר המהותי הוא שניפחנו ב-
+\begin_inset Formula $m$
+\end_inset
+
+ את המילה, אבל 
+\begin_inset Formula $m$
+\end_inset
+
+ קטן מאשר החסם התחתון שמצאנו להפרש ולכן הוא לא במילה.
+\end_layout
+
+\begin_layout Description
+הערה בכתיבה מתמטית נטו, יחס השקילות שמוגדר במייהיל-נרוד מוגדר באופן הבא,
+\begin_inset Formula 
+\[
+\forall x,y\in\com^{*}\left(x\sim_{L}y\iff\left(\forall z\in\com^{*},xz\in L\iff yz\in L\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה נביט בשפה 
+\begin_inset Formula $L=\left\{ w\in\com\left\{ a,b\right\} ^{*}:a\text{מסתיימת ב-}\;w\right\} $
+\end_inset
+
+.
+ היא רגולרית כי האוטומט הבא מזהה אותה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/reg.png
+	lyxscale 40
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט שמתאים לשפה 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח זאת עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MN
+\lang hebrew
+.
+ נסתכל על המילים בשפה באופן שיטתי.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x,y\in\com^{*}$
+\end_inset
+
+ מסתיימות ב-
+\begin_inset Formula $a$
+\end_inset
+
+: 
+\begin_inset Formula $xz\in L$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $z=\epsilon$
+\end_inset
+
+ או ש-
+\begin_inset Formula $z$
+\end_inset
+
+ עצמה מסתיימת ב-
+\begin_inset Formula $a$
+\end_inset
+
+ )וזה אותו התנאי על 
+\begin_inset Formula $y$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $x\sim_{L}y$
+\end_inset
+
+ וזו מחלקת שקילות אחת.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x,y\in\com^{*}$
+\end_inset
+
+ לא מסתימות ב-
+\begin_inset Formula $a$
+\end_inset
+
+: 
+\begin_inset Formula $xz\in L$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $z$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $a$
+\end_inset
+
+ )באותו האופן על 
+\begin_inset Formula $y$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $x\sim_{L}y$
+\end_inset
+
+ וזו עוד קבוצה במחלקת שקילות, עדיין לא ידוע אם שונה מהקודמת.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x$
+\end_inset
+
+ לא מסתיימת ב-
+\begin_inset Formula $a$
+\end_inset
+
+ ו-
+\begin_inset Formula $y$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $a$
+\end_inset
+
+: 
+\begin_inset Formula $x\nsim_{L}y$
+\end_inset
+
+ כי 
+\begin_inset Formula $z=\epsilon$
+\end_inset
+
+ זנב מפריד, ולכן שתי מחלקות השקילות הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל שונות ומיפינו את כל המרחב לשתי מחלקות שקילות.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה נביט בשפה 
+\begin_inset Formula $L=\left\{ w:2\;\text{מאורך שאינו חזקה של}\;w\right\} $
+\end_inset
+
+.
+ מעל 
+\begin_inset Formula $\com=\left\{ a\right\} $
+\end_inset
+
+.
+ ראינו שהמשלימה של השפה הזו היא לא רגולרית ולכן נצפה שגם זו תהיה )אחרת נוכל
+ לבנות אוטומט עם מצבים מקבלים הפוכים(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נראה ש-
+\begin_inset Formula $L$
+\end_inset
+
+ לא רגולרית ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מציאת אינסוף מח
+\begin_inset Quotes xrd
+\end_inset
+
+ש ל-
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $m>n\in\fldn$
+\end_inset
+
+.
+ נביט במילים 
+\begin_inset Formula $x=a^{2^{n}},y=a^{2^{m}}$
+\end_inset
+
+, שתיהן ב-
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+ )ולא ב-
+\begin_inset Formula $L$
+\end_inset
+
+ אבל זה לא מעניין(.
+ נשים לב שעבור 
+\begin_inset Formula $z=a^{2^{n}}$
+\end_inset
+
+ נקבל ש-
+\begin_inset Formula $xz=a^{2^{m+1}}\in L$
+\end_inset
+
+ אבל 
+\begin_inset Formula $yz=a^{2^{n}\left(2^{m-n}+1\right)}\notin L$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\nsim_{L}y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר, לכל 
+\begin_inset Formula $m>n$
+\end_inset
+
+, 
+\begin_inset Formula $x,y$
+\end_inset
+
+ כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל מצאות במח
+\begin_inset Quotes xrd
+\end_inset
+
+ש שונות ויש אינסוף זוגות מספרים כאלה ולכן יש 
+\begin_inset Formula $\infty$
+\end_inset
+
+ מח
+\begin_inset Quotes xrd
+\end_inset
+
+ש ל-
+\begin_inset Formula $\sim_{L}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+תרגיל יהי 
+\begin_inset Formula $A=\left\langle Q,\left\{ 0,1\right\} ,q_{0},\delta,F\right\rangle $
+\end_inset
+
+ 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|Q\right|=r$
+\end_inset
+
+.
+ נתון ש-
+\begin_inset Formula $0^{r}1^{r}\in L\left(A\right)$
+\end_inset
+
+.
+ מה מהבאים נכון בהכרח?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $0^{*}1^{*}\subseteq L\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\left(A\right)\subseteq0^{*}1^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ לא בהכרח נכון אבל לכל 
+\begin_inset Formula $i\geq1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $0^{ir}1^{ir}\in L\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ לא בהכרח נכון אבל קיים 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+ שעבורו לכל 
+\begin_inset Formula $i\geq1$
+\end_inset
+
+, 
+\begin_inset Formula $0^{r+ik}1^{r+k}\in L\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+פתרון 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ לא נכון כי אוטומט עם שני מצבים לשפה שמכילה את כל המילים עם מספר זוגי של
+ אפסים.
+ אוטומט כזה יקבל את 
+\begin_inset Formula $0011$
+\end_inset
+
+ אבל לא את 
+\begin_inset Formula $00111$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ לא נכון כי עבור האוטומט הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, 
+\begin_inset Formula $010\in L\left(A\right)$
+\end_inset
+
+ )מספר זוגי של אפסים( אבל 
+\begin_inset Formula $010\notin0^{*}1^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ לא נכון כי עבור האוטומט באיור, שעבורו 
+\begin_inset Formula $r=3$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $0^{3}1^{3}\in L\left(A\right)$
+\end_inset
+
+ אבל 
+\begin_inset Formula $0^{6}1^{6}$
+\end_inset
+
+.
+ זה משום 
+\begin_inset Formula $0^{3}1^{3}$
+\end_inset
+
+ יגיע עד ל-
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ ויחזור ל-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, ואילו 
+\begin_inset Formula $0^{6}1^{6}$
+\end_inset
+
+ יגיע עד ל-
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ וילך הלוך ושוב ויסיים ב-
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ ולא יקבל.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/3.png
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אוטומט שמפריך את 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(4\right)$
+\end_inset
+
+ כן נכון, נוכיח עם למת הניפוח.
+ בריצות על המילים 
+\begin_inset Formula $0^{r}$
+\end_inset
+
+ ו-
+\begin_inset Formula $1^{r}$
+\end_inset
+
+, יש מצב שחוזר על עצמו )לפחות אחד( ולכן בריצה על 
+\begin_inset Formula $0^{r}$
+\end_inset
+
+ יש מעגל באורך 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ ובריצה על 
+\begin_inset Formula $1^{n}$
+\end_inset
+
+ יש מעגל באורך 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+את המעגלים האלה נוכל לשכפל עוד ועוד ולהגיע לאותו המצב.
+ נביט בריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ הדומה לזו על 
+\begin_inset Formula $0^{r}1^{r}$
+\end_inset
+
+ אבל רצה על המעגל של 
+\begin_inset Formula $0^{r}$
+\end_inset
+
+ 
+\begin_inset Formula $ik_{2}$
+\end_inset
+
+ פעמים ועל המעגל של 
+\begin_inset Formula $1^{r}$
+\end_inset
+
+ 
+\begin_inset Formula $ik_{1}$
+\end_inset
+
+ פעמים.
+ נסמן 
+\begin_inset Formula $k=k_{1}k_{2}$
+\end_inset
+
+ ואז הטענה מתקבלת )הוספנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\numeric on
+
+\begin_inset Formula $0^{r}$
+\end_inset
+
+
+\numeric off
+ 
+\begin_inset Formula $ik$
+\end_inset
+
+ אפסים וגם ל-
+\begin_inset Formula $1^{r}$
+\end_inset
+
+ 
+\begin_inset Formula $ik$
+\end_inset
+
+ אחדות ונשארנו בשפה(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+תרגיל נתון ה-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ כבאיור, 
+\begin_inset Formula $A$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/large.png
+	lyxscale 40
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+האוטומט 
+\begin_inset Formula $A$
+\end_inset
+
+ לתרגיל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי ל-
+\begin_inset Formula $L\left(A\right)$
+\end_inset
+
+ יש 
+\begin_inset Formula $4$
+\end_inset
+
+ מח
+\begin_inset Quotes xrd
+\end_inset
+
+ש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MN
+\lang hebrew
+.
+ מה אמור להיות במקום סימני השאלה באיור?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta\left(q_{5},a\right)=q_{2},\delta\left(q_{5},b\right)=q_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta\left(q_{5},a\right)=q_{5},\delta\left(q_{5},b\right)=q_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ נכונות.
+\end_layout
+
+\begin_layout Enumerate
+כל התשובות לא נכונות.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+פתרון נשים לב שמכך של-
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $4$
+\end_inset
+
+ מח
+\begin_inset Quotes xrd
+\end_inset
+
+ש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MN
+\lang hebrew
+, האלג' המצמצם אמור לאחד מצבים עד שנגיע ל-
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הצעד הראשון באלג' יגיע למח
+\begin_inset Quotes xrd
+\end_inset
+
+ש )לפי 
+\begin_inset Formula $F$
+\end_inset
+
+( 
+\begin_inset Formula $\left\{ q_{1},q_{2},q_{3}\right\} ,\left\{ q_{0},q_{4},q_{5}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+השלב השני יפריד עם זנב 
+\begin_inset Formula $a$
+\end_inset
+
+ לפחות ל-
+\begin_inset Formula $\left\{ q_{1},q_{2}\right\} ,\left\{ q_{3}\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $\left\{ q_{0},q_{4},q_{5}\right\} $
+\end_inset
+
+ עבור תשובות 
+\begin_inset Formula $\left(1\right),\left(2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בשלב השלישי, 
+\begin_inset Formula $ab$
+\end_inset
+
+ לא יפריד לנו שום דבר.
+ עבור זנב 
+\begin_inset Formula $aa$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $\left\{ q_{1},q_{2}\right\} ,\left\{ q_{3}\right\} ,\left\{ q_{0},q_{5}\right\} ,\left\{ q_{4}\right\} $
+\end_inset
+
+ כי 
+\begin_inset Formula $q_{4}$
+\end_inset
+
+ מגיע למצב לא מקבל ו-
+\begin_inset Formula $q_{0},q_{5}$
+\end_inset
+
+ למקבל )בשתי התשובות(.
+\end_layout
+
+\begin_layout Standard
+כאן נעצור כי הגענו ל-
+\begin_inset Formula $4$
+\end_inset
+
+ מחלקות שקילות ובגלל שתשובות 
+\begin_inset Formula $\left(1\right),\left(2\right)$
+\end_inset
+
+ מקיימות את המח
+\begin_inset Quotes xrd
+\end_inset
+
+ש האלה, אלה התשובות הנכונות ולכן 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ היא התשובה הנכונה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה נשים לב שאם היינו בוחרים זנבות אחרים, היינו יכולים להגיע למחלקות שקילות
+ אחרות אבל עדיין מספר מחלקות שקילות שווה.
+\end_layout
+
 \end_body
 \end_document
