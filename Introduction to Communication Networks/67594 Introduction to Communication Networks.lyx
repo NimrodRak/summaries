@@ -6521,6 +6521,29 @@ pure
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{ניתוח ה-goodput של ALOHA}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 ננתח את האלג' במקרה הבינומי - 
 \begin_inset Formula $X_{p}\sim\bin{n,p}$
 \end_inset
@@ -8840,9 +8863,3576 @@ parity code
 d parity
 \lang hebrew
 (.
- כך נוכל לזהות שלוש שגיאות ולתקן אחת
+ כך נוכל לזהות שלוש שגיאות ולתקן אחת.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{V
+\backslash
+;
+\backslash
+; CSMA ואלג' MAP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואלג'
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAP
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+אנחנו עדיין מנסים לתקשר בתווך משותף )רשתות ברודקאסט( שאין בו סוויץ' באמצע.
+ התוצאה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Slotted ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמניח הרבה דברים הייתה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $\frac{1}{e}=37\%$
+\end_inset
+
+, וב-
+\lang english
+Pure ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קיבלנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $\frac{1}{2e}=18\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם אנחנו יודעים לזהות התנגשות, אנחנו יודעים גם שכשנתחיל לדבר באמצע
+ סלוט של מישהו אחר אנחנו נתנגש איתו, לכן אין סיבה להתחיל לדבר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{CSMA}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Carrier Sense Multiple Access
+\end_layout
+
+\begin_layout Standard
+ב-
+\lang english
+CSMA
+\lang hebrew
+, נאזין לפני שנשדר, ואם נזהה שהערוץ שקט, נשדר פריים שלם, ואחרת נחכה עד שיתפנה.
+\end_layout
+
+\begin_layout Standard
+אם יש איזושהי הסטה מינימלית בין אנשים תמיד, אז לכאורה לא נוכל אף פעם לקבל
+ התנגשות )גם אם התחלנו לדבר באותו הזמן אחרי שהיה שקט אחד יזהה את האחר(.
+ עם זאת, ההאזנה ותחילת השידור לא קורים באותו הזמן, ואז יכול להיות שקודקוד
+ אחד התחיל לשדר אחרי ששמע שקט, והאחר גם לא שמע שום דבר 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ זמן אחריו כי השידור לא הגיע אליו עדיין ועכשיו שניהם מדברים.
+\end_layout
+
+\begin_layout Standard
+מעבר לזה, אם מצב כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל קורה, לא רציונאלי להמשיך את השידור כי הקודקוד השני יודע שהוא גורם להתנגשות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{CSMA/CD וזיהוי התנגשויות רחוקות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\size larger
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וזיהוי התנגשויות רחוקות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+CSMA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, כאשר נניח שאנחנו מזהים התנגשויות בזמן קצר, ומבטלים שידורים אם מזהים התנגשות
+ כדי למנוע בזבוז של הערוץ.
+ לאחר ביטול השידור נגריל זמן המתנה ונחזור לשלב ההמתנה לשקט.
+\end_layout
+
+\begin_layout Description
+הערה מודל כזה אפשרי ב-
+\lang english
+LAN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קווי אבל באלחוטי אין לנו דרך לדעת האם יש התנגשות בהכרח כי הסיגנל שלנו משמעותית
+ יותר חזק מזה שמגיע אלינו.
+\end_layout
+
+\begin_layout Standard
+במקרה שבו אנחנו מאוד רחוקים מקודקוד אחר שמתנגש איתנו, נוכל לשמוע על ההתנגשות
+ הרבה אחרי שסיימנו לשדר את הפריים וחשבנו שהוא היה מוצלח.
+\end_layout
+
+\begin_layout Standard
+במקרה הכי גרוע תחילת השידור של הקודקוד הרחוק היא ב-
+\begin_inset Formula $t=PROP-\epsilon$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $PROP$
+\end_inset
+
+ זמן פעפוע ביט מאיתנו לקודקוד הרחוק ביותר ברשת.
+ במקרה כזה הרחוק יזהה התנגשות ב-
+\begin_inset Formula $t=PROP$
+\end_inset
+
+, ונגלה אנחנו שהייתה התנגשות רק ב-
+\begin_inset Formula $t=2PROP-\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם כן, לאחר 
+\begin_inset Formula $2PROP$
+\end_inset
+
+ אם לא התוודענו על התנגשות ניתן להניח ששידרנו בהצלחה.
+ מכאן שכדי להשתמש ב-
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך אורך מינימלי של פריים כדי שיתקיים 
+\begin_inset Formula $B\cdot L>2\cdot PROP$
+\end_inset
+
+ כלומר שהזמן שלוקח לשדר פקטה )אורך כפול רוחב פס( יהיה יותר מ-
+\begin_inset Formula $2\cdot PROP$
+\end_inset
+
+, ואז נזהה את ההתנגשות לפני תום שידור הפריים ונדע אם צריך לשדר שוב או לא
+ ולא נאלץ לשמור פריימים לשידורים עתידיים וכו'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{חישוב ה-goodput של CSMA/CD}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+חישוב ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\end_layout
+
+\begin_layout Standard
+נחשב את ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ במקרה של 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\lang hebrew
+.
+ נניח שהזמן מחולק לסלוטים ושסלוט הוא פעמיים זמן הפעפוע המקסימלי ברשת )רק
+ בשביל החישוב התאורטי, לא קשור לפרוטוקול(.
+\end_layout
+
+\begin_layout Standard
+בכל רגע נתון, נשלח פריים בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+ )גם בפעם הראשונה וגם בשידורים מחדש(.
+ ההסת' שרק אחד שידר בסלוט היא
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\alpha\left(p\right)={N \choose 1}p\left(1-p\right)^{N-1}$
+\end_inset
+
+ וזה מקסימלי עבור 
+\begin_inset Formula $p=\frac{1}{N}$
+\end_inset
+
+, שאז נקבל 
+\begin_inset Formula $\alpha_{max}=\frac{1}{e}\approx0.4$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $A$
+\end_inset
+
+ מספר הסלוטים המבוזבזים בתוחלת לפני ששידרנו בהצלחה פריים, אז מתקיים 
+\begin_inset Formula $A=\alpha\cdot0+\left(1-\alpha\right)\left(1+A\right)$
+\end_inset
+
+ וכאשר 
+\begin_inset Formula $\alpha=\alpha_{max}$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $A=1.5$
+\end_inset
+
+ )מדובר בתוחלת של מ
+\begin_inset Quotes xrd
+\end_inset
+
+מ גאומטרי(.
+ לכן ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלנו הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\eta_{CSMA/CD} & =\frac{\text{זמן השידור של סלוט אחד}}{\text{כמות הסלוטים שנדרשו עד לשידור מוצלח כולל}}\\
+ & =\frac{TRANSP}{TRANSP+E\left[\text{מספר הסלוטים המבוזבזים לשידור מוצלח של פריים}\right]}\\
+ & =\frac{TRANSP}{TRANSP+A\left(2\cdot PROP\right)}\\
+ & =\frac{TRANSP}{TRANP+3\cdot PROP}\\
+a=\frac{PROP}{TRANSP}\quad & =\frac{1}{1+3a}
+\end{align*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $TRANSP$
+\end_inset
+
+ הוא זמן השידור של הודעה אחת )גודל הסלוט(.
+ במציאות מתקבל 
+\begin_inset Formula $\eta_{CSMA/CD}\approx\frac{1}{1+5a}$
+\end_inset
+
+.
+ כדי למקסם את ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נרצה למזער את 
+\begin_inset Formula $a$
+\end_inset
+
+, כלומר להקטין את היחס.
+ אם כן, ברשתות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LAN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ קטנות, 
+\begin_inset Formula $PROP$
+\end_inset
+
+ הוא קטן ואז אפשר להרשות לעצמנו 
+\begin_inset Formula $TRANSP$
+\end_inset
+
+ לא עצום )לא יקח שעה לשדר הודעה( שייתן 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+טוב.
+\end_layout
+
+\begin_layout Description
+הערה אם כל האינטרנט היה ברדוקאסט, היינו צריכים 
+\begin_inset Formula $TRANSP>2\cdot PROP$
+\end_inset
+
+ כלומר הרבה זמן לשידור הודעה, וגם 
+\begin_inset Formula $a\gg1$
+\end_inset
+
+ והיה לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נורא.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+כתובות
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAC
+\end_layout
+
+\begin_layout Standard
+לכל כרטיס רשת צרובה כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+48
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים.
+ כתובות כאלה נקראות כתובות פיזיות כי הן לא מספרות לנו שום דבר על המיקום
+ שלנו בעולם, אלא רק על מי ייצר את הכרטיס שלנו וכיוצ
+\begin_inset Quotes xrd
+\end_inset
+
+ב.
+ נשתמש ב-
+\lang english
+MAC
+\lang hebrew
+-ים ברשתות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LAN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לקבוע את המען של הפריים שלנו.
+ יש גוף שמרכז את חלוקת כתובות ה-
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לחברות שמייצרות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NIC
+\lang hebrew
+-ים.
+\end_layout
+
+\begin_layout Description
+הערה כיום כבר אין יותר מדי רשתות ברודקאסט טהורות, כשלרוב יש סוויצ'ים ששוברים
+ את התקשורת החופשית באמצע.
+ הפרוטוקול המרכזי שמתמשים בו בשכבת הלינק כיום הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Ethernet
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Ethernet
+\end_layout
+
+\begin_layout Standard
+האלג' של את'רנט עובד בדומה ל-
+\lang english
+CSMA/CD
+\lang hebrew
+, עם שינויים קלים.
+\end_layout
+
+\begin_layout Enumerate
+כרטיס הרשת מקבל פקטה משכבת הרשת ויוצר פריים מתאים לה.
+\end_layout
+
+\begin_layout Enumerate
+אם כרטיס הרשת מזהה שהערוץ פנוי, הוא משדר, אחרת יחכה שיהיה פנוי.
+\end_layout
+
+\begin_layout Enumerate
+אם הכרטיס שידר פריים שלם בלי לזהות התנגשות, סיימנו.
+\end_layout
+
+\begin_layout Enumerate
+אם זוהתה התנגשות, נפסיק לשדר ונשלח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+jam signal
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמוודא שאם שידרנו קצת מדי זמן האחרים יבינו שזה לא רעש אלא שידור שהפסיק באמצע.
+\end_layout
+
+\begin_layout Enumerate
+אחרי ביטול השידור בהתנגשות, נחכה זמן אקראי 
+\begin_inset Formula $k\in\left\{ 0,\ldots,2^{m-1}\right\} $
+\end_inset
+
+ לפני חזרה לשלב 
+\begin_inset Formula $2$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ מספר הפעמים שהתנגשנו עבור הפריים הנוכחי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+תרגול
+\end_layout
+
+\begin_layout Standard
+הבעיה ב-
+\lang english
+ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאמור היא שאנחנו לא מתנהלים עם התנגשויות כמו שצריך.
+ לצורך כך הומצא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA
+\lang hebrew
+, שמטפל בהתנגשויות באמצעות הפסקת שידור לאחר זיהוי התנגשות ובדיקה האם הערוץ
+ פנוי לפני שמתחילים לשדר.
+ נשווה בין כמה תתי-פרוטוקולים כאלה
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+השלכות
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הערוץ תפוס?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הערוץ פנוי?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פרוטוקול
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יש הסת' גבוהה להתנגשויות בערוצים עמוסים
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+המתן עד שפנוי ושלח מיד
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שלח הודעה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+1-persistent
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+נקבל ניצולת נמוכה בעומס נמוך
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+חכה פרק זמן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונסה שוב
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שלח הודעה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+non-persistent
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פשרה בין השניים הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+המתן עד שפנוי ושלח בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שלח בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+p-persistent
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{Exponential Backoff}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Exponential Backoff
+\end_layout
+
+\begin_layout Standard
+כמה זמן ראוי לחכות ב-
+\lang english
+non-persistent
+\lang hebrew
+? הדרך הכי פופלרית לחישוב זמן ההמתנה הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Exponential Backoff
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+יהי פרמטר 
+\begin_inset Formula $c$
+\end_inset
+
+ קבוע מראש )לרוב 
+\begin_inset Formula $2$
+\end_inset
+
+(.
+ אחרי הניסיון ה-
+\begin_inset Formula $k$
+\end_inset
+
+ לשידור פריים, נחכה 
+\begin_inset Formula $jT$
+\end_inset
+
+ יחידות זמן כאשר 
+\begin_inset Formula $j$
+\end_inset
+
+ מוגרל אחיד על 
+\begin_inset Formula $\left[0,c^{k}-1\right]$
+\end_inset
+
+.
+ בכל פעם שנצליח לשדר, נאפס את 
+\begin_inset Formula $k$
+\end_inset
+
+ שלנו.
+\end_layout
+
+\begin_layout Standard
+ברגע שזיהינו התנגשות עם אחרים, נשדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+jam signal
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי שאחרים ידעו שהתנגשנו ושאין מה להתחייס לפריים הנוכחי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{חישוב ה-goodput של CSMA/CD )יותר לעומק(}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+חישוב ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)יותר לעומק(
+\end_layout
+
+\begin_layout Standard
+נבצע את אותו הניתוח שעשינו בהרצאה, רק קצת יותר מפורט.
+ נניח שאין לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exponential backoff
+\lang hebrew
+, שיש לנו 
+\begin_inset Formula $N$
+\end_inset
+
+ תחנות, זמן השידור המקסימלי ברשת הוא 
+\begin_inset Formula $T_{prop}$
+\end_inset
+
+ וזמן השידור של פריים הוא 
+\begin_inset Formula $T_{trans}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח שהפרוטוקול משדר בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+, שהזמן )קונספטואלית( מחולק לסלוטים בגודל 
+\begin_inset Formula $2T_{prop}$
+\end_inset
+
+ יחידות זמן, ושלקודקודים תמיד יש מה לשדר.
+\end_layout
+
+\begin_layout Standard
+הפרוטוקול שלנו ישדר אם פנוי, אחרת יחכה לסלוט הבא, וכשיזהה התנגשות ישלח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+jam signal
+\lang hebrew
+, יפסיק את השידור וינסה בסלוט הבא בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לרשת יש שלושה מצבים אפשריים.
+\end_layout
+
+\begin_layout Itemize
+מתיחות - שני קודקודים משדרים ויגלו את ההתנגשות רק לאחר זמן לכל היותר 
+\begin_inset Formula $2T_{prop}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+שקט - אף אחד לא משדר
+\end_layout
+
+\begin_layout Itemize
+משדר - קודקוד אחד משדר בהצלחה פריים.
+\end_layout
+
+\begin_layout Standard
+ההסת' לשידור מוצלח כרגיל הוא 
+\begin_inset Formula $Np\left(1-p\right)^{N-1}$
+\end_inset
+
+, והיא מקסימלית כאשר 
+\begin_inset Formula $p=\frac{1}{N}$
+\end_inset
+
+, נסמן הסת' מקסימלית זו ב-
+\begin_inset Formula $S$
+\end_inset
+
+.
+ זה לא מספיק לנו כדי לשדר כי אנחנו צריכים להתחשב בזמן שמתבזבז כשאנחנו במצב
+ מתיחות.
+\end_layout
+
+\begin_layout Standard
+השאלה שלנו כאן היא מה ההסת' לאינטרוול מתיחות באורך 
+\begin_inset Formula $T-1$
+\end_inset
+
+ סלוטים, ולאחריו שידור מוצלח? לכן בתוחלת, הזמן הנדרש לשידור מוצלח הוא 
+\begin_inset Formula $2T_{prop}\cdot\frac{1}{S}$
+\end_inset
+
+ בתוחלת )מספר הסלוטים כפול תוחלת המ
+\begin_inset Quotes xrd
+\end_inset
+
+מ למספר הסלוטים עד לשידור מוצלח(, ולכן הזמן המבוזבז בתוחלת הוא 
+\begin_inset Formula $2T_{prop}\left(\frac{1}{S}-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכאן שה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\begin{align*}
+\eta & =\frac{T_{trans}}{T_{trans}+\text{זמן מבוזבז}}\\
+ & =\frac{T_{trans}}{T_{trans}+2T_{prop}\left(\frac{1}{S}-1\right)}\underset{n\to\infty}{\longrightarrow}\frac{1}{1+\frac{2T_{prop}}{T_{trans}}\left(e-1\right)}
+\end{align*}
+
+\end_inset
+
+וכאשר 
+\begin_inset Formula $T_{trans}\gg T_{prop}$
+\end_inset
+
+ נקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שואף לאחד.
+\end_layout
+
+\begin_layout Description
+הערה היינו יכולים לעשות את אותו הניתוח גם במקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slotted ALOHA
+\lang hebrew
+, כשאז היינו מציבים 
+\begin_inset Formula $T_{trans}=2T_{prop}$
+\end_inset
+
+ כי זמן השידור של הודעה הוא בדיוק גודל הסלוט.
+\end_layout
+
+\begin_layout Description
+שאלה נתונה רשת בפרוטוקול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם רוחב פס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+10 Mbps
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקצב פעפוע ביט של 
+\begin_inset Formula $2\cdot10^{8}\frac{m}{s}$
+\end_inset
+
+.
+ נרצה להוסיף עוד רשת דומה, מרוחקת מרחק של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ק
+\begin_inset Quotes xrd
+\end_inset
+
+מ מזו.
+ הרשתות מחוברות באותו התווך כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל והמרחק המקסימלי בין קודקודים הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ק
+\begin_inset Quotes xrd
+\end_inset
+
+מ.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+האם ניתן להריץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר גודל ההודעה הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+64
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתים?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לא! נצטרך ש-
+\begin_inset Formula $T_{trans}>2T_{prop}$
+\end_inset
+
+ אבל כאן יש לנו זמן פעפוע של ביט אחד לאורך הרשת של
+\begin_inset Formula 
+\[
+\tau=\frac{20km}{2\cdot10^{8}\frac{m}{s}}=10^{-4}s=100\mu sec
+\]
+
+\end_inset
+
+ואילו זמן השידור של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+64
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתים הוא
+\begin_inset Formula 
+\[
+\frac{8\cdot64}{10Mbps}=\frac{8\cdot64}{10^{7}\frac{b}{s}}=51.2\mu sec
+\]
+
+\end_inset
+
+שזה פחות מ-
+\begin_inset Formula $2\times$
+\end_inset
+
+ הזמן לשידור ביט לאורך הרשת.
+ אם נגדיל את גודל ההודעה פי 
+\begin_inset Formula $4$
+\end_inset
+
+, אז זמן השידור יגדל פי 
+\begin_inset Formula $4$
+\end_inset
+
+ ואז זה יהיה חוקי.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מה יהיה השינוי אם נגדיל את רוחב הפס ל-
+\begin_inset Formula $100Mbps$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+זמן השידור יקטן פי 
+\begin_inset Formula $10$
+\end_inset
+
+ ולכן נגדיל את ההודעה פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+שאלה נתונים שלושה קודקודים 
+\begin_inset Formula $A-B-C$
+\end_inset
+
+ )בסדר הזה( עם 
+\begin_inset Formula $5$
+\end_inset
+
+ ק
+\begin_inset Quotes xrd
+\end_inset
+
+מ מרחק בין כל שתי התחנות.
+ נניח רוחב פס 
+\begin_inset Formula $B=3Mbps$
+\end_inset
+
+ ומהירות פעפוע 
+\begin_inset Formula $v_{prop}=6\cdot10^{7}\frac{m}{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כדי ש-
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יעבוד כראוי, מה גודל הפקטה המינימלי כדי ש-
+\begin_inset Formula $A$
+\end_inset
+
+ יוכל לשלוח הודעות ל-
+\begin_inset Formula $C$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+T_{prop} & =\frac{10}{6\cdot10^{4}}s=\frac{1}{6}10^{-3}s\\
+T_{trans} & =\frac{x}{B}\geq2T_{prop}\iff x\geq2\frac{1}{6\cdot10^{4}}\cdot3\cdot10^{7}=10^{3}bit
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כדי ש-
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יעבוד כראוי, מה גודל הפריים המינימלי כדי ש-
+\begin_inset Formula $A$
+\end_inset
+
+ יוכל שלוח ל-
+\begin_inset Formula $B$
+\end_inset
+
+ הודעות כראוי?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אותו הדבר כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, עדיין יכולה להיות התנגשות עם 
+\begin_inset Formula $C$
+\end_inset
+
+ ולכן אין שינוי.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+שאלה נתונה רשת עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slotted ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בגודל סלוט 
+\begin_inset Formula $T_{trans}>2T_{prop}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נניח שנוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CD
+\lang hebrew
+(, האם זה תשפר את ה-
+\lang english
+goodput
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לא! ה-
+\lang english
+CSMA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ יגרום לנו לחכות עד שנראה ערוץ פנוי, אבל כולם יראו ערוץ פנוי בתחילת הסלוט
+ )או מיד אחריו( כי כולם 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+aligned
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכל הפחות לא נקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יותר גבוה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+האם הוספת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תשפר את ה-
+\lang english
+goodput
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+גם לא! אנחנו לא מתחילים לשדר עד הסלוט הבא ולכן גם אם נזהה התנגשות ונפסיק
+ לשדר, הסלוט הנוכחי מבוזבז כי לא נתחיל לשדר עד לתחילת הבא.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+האם הוספת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תשפר את ה–
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pure ALOHA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם אותם הנחות על הסלוט?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כן! לכל הפחות לא נהרוס שידורים קיימים ולכן נשפר את ה-
+\lang english
+goodput
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+האם הוספת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תשפר את ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעבר ל-
+\lang english
+CSMA
+\lang hebrew
+ לרשת נ
+\begin_inset Quotes xrd
+\end_inset
+
+ל?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+גם כן! נפסיק שידורים שכבר התנגשו בהם ונאפשר לאנשים שעוד לא התחילו לשדר הזדמנות
+ לשידור בסלוט מנקודת מבטם.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+מתי כדאי להשתמש ב-
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באופן כללי? כש-
+\begin_inset Formula $T_{prop}$
+\end_inset
+
+ קטן יחסית ביחס ל-
+\begin_inset Formula $T_{trans}$
+\end_inset
+
+, ואז כשמזהים התנגשות נפסיק את השידור די מהר ולא נבזבז )לפחות לא אנחנו אישית(
+ את הערוץ עם פריימים מושחתים.
+\end_layout
+
 \end_body
 \end_document
