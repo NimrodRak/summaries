@@ -12434,5 +12434,1469 @@ CSMA/CD
  את הערוץ עם פריימים מושחתים.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{VI
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{VI}$
+\end_inset
+
+ |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+נסיים לעסוק בשכבת הלינק, ונדון ב-
+\lang english
+Ethernet
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+ב-
+\lang english
+Ethernet
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחרי התנגשות מחקים זמן מוגרל אחיד על פני 
+\begin_inset Formula $\left\{ 0,\ldots,2^{m}-1\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ מספר ההתנגשויות ולכן ככל שנתנגש יותר, כך ההסת' להתנגשות יורדת, כי ההסת'
+ ששנינו חיכינו אותו הזמן הוא די קטן.
+ ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Ethernet
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $\eta=\frac{1}{1+5\frac{t_{prop}}{t_{trans}}}$
+\end_inset
+
+ שזה כמו ב-
+\lang english
+CSMA/CD
+\lang hebrew
+, די טוב, כי אם אנחנו שולטים בגודל הרשת והפקטות, נוכל להשיג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא רע בכלל.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+שכבת הלינק ברשתות אלחוטיות
+\end_layout
+
+\begin_layout Standard
+בתקשורת אלחוטית, בגלל שהאות שלנו כל כך הרבה יותר חזק מאותות שמגיעים, לא
+ נוכל לזהות התנגשות בזמן שאנחנו מדברים ולכן במקום לזהות התנגשויות, נצטרך
+ להימנע מהתנגשויות.
+\end_layout
+
+\begin_layout Standard
+בכל רשת תקשורת אלחוטית, יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Access Point
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהוא קודוקד מיוחד ברשת שיכול להוות סדרן לשאר הקודקודים )שהם משתמשים ברשת(.
+ ה-
+\lang english
+AP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יקבע מי רשאי לשדר, ואז נחלק את הפעולה של כל קודוקד למצב שידור ומצב האזנה.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $802.11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האלג' לשידור פריים ברשת אחלוטית בפרוטוקול 
+\begin_inset Formula $802.11$
+\end_inset
+
+ הוא כדילקמן )ומשתמש ב-
+\lang english
+CSMA/CA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיפורט בהמשך(:
+\end_layout
+
+\begin_layout Enumerate
+אם הערוץ פנוי לאיזשהו זמן )
+\lang english
+DIFS
+\lang hebrew
+(, נשדר את כל הפריים בלי לעצור ונחכה לאישור קבלה.
+ אם לא נקבל, נעבור ל-
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם הערוץ תפוס, נתחיל טיימר עם זמן אקראי שסופר אחורה כל פעם שיש פרק זמן שקט
+ בערוץ.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כשהשעון נגמר, נשדר ואם לא נקבל אישור קבלה, נגדיל את זמן ההמתנה ונחזור להתחלה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כל עוד לא מנסים לשלוח הודעה, ב-
+\begin_inset Formula $802.11$
+\end_inset
+
+ מאזינים ואם מקבלים פריים שלם טוב מאשרים קבלה.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+CSMA/CA
+\end_layout
+
+\begin_layout Standard
+איך נבצע את החלוקה למצב שידור והאזנה של הקודקודים?
+\end_layout
+
+\begin_layout Itemize
+אם קודקוד רוצה לשדר, הוא צריך לשלוח בקשת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Request-to-Send
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\lang english
+AP
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+אם יש אישור, ה-
+\lang english
+AP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Clear-to-Send
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ברשת וכולם שומעים את זה )עד כדי התנגשויות עם 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RTS
+\lang hebrew
+-ים אחרים אבל הם מאוד קצרים אז זה זניח(.
+ משם הקודקוד המשדר יכול להתחיל לשדר )לדוגמה באמצעות האלג' של 
+\begin_inset Formula $802.11$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה אם יש התנגשות ב-
+\lang english
+RTS
+\lang hebrew
+-ים, ה-
+\lang english
+AP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יזהה את זה ויאשר רק אחד מהם.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+סיכום שכבת הלינק
+\end_layout
+
+\begin_layout Standard
+למדנו בשכבת הלינק על כמה אלג', הפשוטים ביותר הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ALOHA, S-ALOHA, CSMA
+\lang hebrew
+.
+ ראינו שבמציאות משתמשים בברודקאסט חוטי ב-
+\lang english
+Ethernet
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובברדוקאסט אלחוטי ב-
+\begin_inset Formula $802.11$
+\end_inset
+
+ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CA
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Switch
+\end_layout
+
+\begin_layout Standard
+סיימנו לעסוק במה שקורה ברשתות ברודקאסט.
+ כיצד נחבר רשתות ברדוקאסט? ניזכר שסוויץ', כמו שהוא שובר רשתות ברודקאסט,
+ הוא גם מחבר אותן.
+ מה נדרוש שסוויץ' יעשה?
+\end_layout
+
+\begin_layout Itemize
+יעביר פריימים של את'רנט ועל בסיס ה-
+\lang english
+MAC address
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמופיע על הפקטה, יעביר הלאה למי שצריך את הפריים, כשהוא מתקשר עם יחידות אחרות
+ באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CSMA/CD
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+שקיפות - משתמשי קצה לא מודעים לקיום שלו וחושבים שהם שולחים ישירות למען שלהם
+ הודעה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+plug-and-play
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לא צריך לקנפג את הסוויץ' בשום דרך והוא ידע כבר בעצמו איך לנתב ברגע שיחובר
+ לרשת.
+\end_layout
+
+\begin_layout Standard
+לכל קודקוד יש חיבור מפורש לסוויץ' )כאשר החוט שמחבר בין השניים הוא רשת הברודקאסט
+ היחידה במקרה הזה(, וכך כמה אנשים שונים יכולים לשלוח פקטות למענים שונים
+ בלי התנגשויות.
+\end_layout
+
+\begin_layout Standard
+איך סוויץ' יודע איזו יציאה רלוונטית לאיזו כתובת? הוא שומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+switch table
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאומרת לו לכל חיבור אילו כתובות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתאימות לו.
+ כל רשומה מכילה את כתובת ה-
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של משתמש קצה, החיבור שאיתו מדברים איתו ו-
+\lang english
+Time To Live
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ - משך הזמן שעבורו הרשומה הזו רלוונטית.
+\end_layout
+
+\begin_layout Standard
+איך סוויץ' יוצר רשומות בטבלת הניתוב?
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Self-Learning
+\end_layout
+
+\begin_layout Standard
+ללמידה עצמית אין שום קשר ללמידת מכונה.
+ למידה עצמית היא התהליך שבו סוויץ' לומד אילו כתובות יש סביבו.
+\end_layout
+
+\begin_layout Itemize
+כשסוויץ' מקבל פריים, הוא מוסיף )או דורס אם צריך( רשומה לכתובת המקור של הפקטה
+ בטבלת הניתוב שלו לפי החיבור שממנו קיבל את ההודעה.
+\end_layout
+
+\begin_layout Itemize
+מעבירים הלאה את ההודעה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם אנחנו לא יודעים באיזה חיבור נמצא המען נשלח את ההודעה לכולם ונקווה שמתישהו
+ המען ישלח הודעה בעצמו ונוכל להוסיף אותו כרשומה )לרוב זה יקרה כי השכבות
+ העליונות מחייבות תשובה גם אם היא לא מכילה תוכן חדש(.
+\end_layout
+
+\begin_layout Itemize
+אם אנחנו כן יודעים באיזה חיבור נמצא המען:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם הוא נמצא באותו החיבור כמו הכתובת המקור, נזרוק את הפקטה )לא צריך להעביר
+ לאף אחד(.
+\end_layout
+
+\begin_layout Itemize
+אחרת נעביר אותה לחיבור הרלוונטי.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+אם יש לנו כמה סוויצ'ים מחוברים, בגלל שהסוויצ'ים שקופים, האלג' עדיין עובד!
+ 
+\end_layout
+
+\begin_layout Description
+דוגמה אם נרצה להעביר מידע מ-
+\begin_inset Formula $A$
+\end_inset
+
+ ל-
+\begin_inset Formula $G$
+\end_inset
+
+, כל החיבורים והסוויצ'ים יעבדו מעולה כי 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ לא מודע לזה שיש סוויצ'ים בדרך ל-
+\begin_inset Formula $G$
+\end_inset
+
+, מבחינתו אם 
+\begin_inset Formula $A$
+\end_inset
+
+ רוצה לשלוח ל-
+\begin_inset Formula $G$
+\end_inset
+
+ הודעה, הוא צריך לשלוח את זה דרך החיבור הימיני עליון שלו וזה יגיע לשם מתישהו
+ )כמובן אחרי שביצע למידה עצמית וגילה שאכן 
+\begin_inset Formula $G$
+\end_inset
+
+ שם(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/s1.png
+	lyxscale 30
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+טופולוגיה מורכבת של סוויצ'ים, הכל עדיין עובד כמו שצריך
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה כבר כאן אנחנו מבינים שכתובות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ אינן הפתרון האולטימטיבי לזיהוי משתמשי קצה כי אם כל אחד יצטרך לזכור את כל
+ הכתובות של כולם בלי אבסטרקציה, נצטרך מיליארדי רשומות בכל ראוטר פעוט.
+\end_layout
+
+\begin_layout Description
+דוגמה מה קורה אם יש לנו לולאה בסוויצ'ים? לדוגמה אם שני סוויצ'ים מחוברים
+ אחד לשני בשני ברודקאסט דומיינים שונים?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם קודקוד 
+\begin_inset Formula $A$
+\end_inset
+
+ ישלח הודעה בברודקאסט אחד, היא תגיע לשני הסוויצ'ים, ואז סוויץ' אחד ישלח
+ את ההודעה בברודקאסט האחר, זה יגיע לסוויץ' השני, הוא ידרוס את הרשומה של
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ אצלו.
+\end_layout
+
+\begin_layout Standard
+לאחר מכן, אם צריך להעביר משהו ל-
+\begin_inset Formula $A$
+\end_inset
+
+ זה לא יגיע אליו אף פעם וגם נשלח את הפקטה שוב ושוב בלי שום סיבה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה הבעיה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל קורת רק כשיש לנו מעגלים בטופולוגיית הסוויצ'ים.
+ אם לא היו לנו מעגלים, לא היה לנו שום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+redundancy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וזה לא טוב.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכן כן יהיו לנו פיזית מעגלים כלשהם בסוויצ'ים, אבל בפועל נשתמש רק בחיבורים
+ מסוימים כך שיהוו עץ פורש של גרף הסוויצ'ים שנוצר.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Spanning Tree Protocol
+\end_layout
+
+\begin_layout Standard
+כדי לגרום לסוויצ'ים לנוון פורטים )חיבורים( לשם הגעה לעץ פורש, צריך לתאם
+ בין הסוויצ'ים באמצעות פרוטוקול עץ פורש )
+\lang english
+STP
+\lang hebrew
+(.
+ האלג' שבו משתמשים מכיל שלושה שלבים )שבמציאות לא קורים אחד אחרי השני כי
+ הכל מבוזר(.
+\end_layout
+
+\begin_layout Enumerate
+בחירת שורש העץ.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+כל קודקוד יזכור את המספר הסידורי שלו )שהוא ייחודי(.
+\end_layout
+
+\begin_layout Enumerate
+בכל פעם שנקבל מספר סידורי מבחוץ, אם הוא נמוך יותר ממה שאנחנו מחזיקים כרגע
+ נבחר אותו.
+\end_layout
+
+\begin_layout Enumerate
+מדי פעם נשלח את המספר הכי נמוך שלנו לכל השכנים שלנו.
+\end_layout
+
+\begin_layout Standard
+מתישהו כל המערכת תתייצב על איזשהו מספר.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+חישוב המסלול הקצר ביותר לשורש.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ברגע שכל קודקוד ידע מה המסלול הקצר ביותר שלו לשורש, הגרף שנוצר מהמסלולים
+ הללו הוא עץ פורש.
+ נשתמש באלג' בלמן-פורד )מבוזר(.
+\end_layout
+
+\begin_layout Enumerate
+כל קודקוד ישלח לשכנים שלו מדי פעם את המרחק שלו מהשורש.
+\end_layout
+
+\begin_layout Enumerate
+כשקודקוד מקבל הודעה כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, הוא יעדכן את האב שלו לשכן הכי קרוב שלו לשורש.
+\end_layout
+
+\begin_layout Standard
+מתישהו התהליך הזה יתכנס וכולם ידעו מה האבא שלהם במסלול )שיהיה מוסכם על כולם
+ בסוף(.
+\end_layout
+
+\begin_layout Standard
+נוכל למשקל במשקולות אי-שליליים חיבורים )לדוגמה המרחק שצריך לעבור בהם( וככה
+ להשיג נקודת מבט אפילו יותר מדויקת על הטופולגיה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\end_layout
+
 \end_body
 \end_document
