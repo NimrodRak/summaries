@@ -292,6 +292,11 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\core}{\text{\ensuremath{\textrm{co-RE}}}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -694,6 +699,11 @@ LatexCommand tableofcontents
 
 \begin_inset FormulaMacro
 \newcommand{\cfl}{\textrm{CFL}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lsb}{\textrm{LSB}}
 \end_inset
 
 
@@ -14642,7 +14652,7 @@ addcontentsline{toc}{subsection}{הרצאה}
 \begin_inset Formula $uaqbv$
 \end_inset
 
- )ראו הדגמה( היא:
+ היא )ראו הדגמה, הקו כאן והדגמות הבאות הוא תקלה טכנית בלתי פתירה(:
 \end_layout
 
 \begin_deeper
@@ -15458,5 +15468,1061 @@ status open
 \end_deeper
 \end_deeper
 \end_deeper
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Standard
+נתונה 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט ומחליפים בין 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ ו-
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+.
+ האם מקבלים מכונה עם 
+\begin_inset Formula $\com^{*}\backslash L\left(M\right)$
+\end_inset
+
+? לא! אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עצרה על מילה 
+\begin_inset Formula $w$
+\end_inset
+
+ אז 
+\begin_inset Formula $w\notin L\left(M\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $w\notin L\left(\overline{M}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ אז ההחלפה כן הייתה משלימה את השפה.
+\end_layout
+
+\begin_layout Description
+מסקנה 
+\begin_inset Formula $\r$
+\end_inset
+
+ סגורה למשלים.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $L\in\core$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\overline{L}\in\re$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\core$
+\end_inset
+
+ היא מחלקת כל השפות שקיימת מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמזהה את המשלים שלהן.
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $\re\cap\core=\r$
+\end_inset
+
+ כלומר ניתן להכריע שפה אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם ניתן לזהות אותה ואת המשלים שלה.
+\end_layout
+
+\begin_layout Proof
+נוכיח הכלה דו-כיוונית.
+\end_layout
+
+\begin_layout Proof
+
+\bar under
+\begin_inset Formula $\r\subseteq\re\cap\core$
+\end_inset
+
+
+\bar default
+: מההגדרה מתקיים 
+\begin_inset Formula $\r\subseteq\re$
+\end_inset
+
+ )אם מכריעים גם מזהים(.
+ תהי 
+\begin_inset Formula $L\in\r$
+\end_inset
+
+.
+ מהיות 
+\begin_inset Formula $L\in\r$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\overline{L}\in\r$
+\end_inset
+
+ )החלפת 
+\begin_inset Formula $q_{acc},q_{rej}$
+\end_inset
+
+(, ולכן 
+\begin_inset Formula $\overline{L}\in\r\subseteq\re$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $L\in\core$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\bar under
+\begin_inset Formula $\re\cap\core\subseteq\r$
+\end_inset
+
+
+\bar default
+: תהי 
+\begin_inset Formula $L\in\re\cap\core$
+\end_inset
+
+.
+ לכן קיימת מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+ ו-
+\begin_inset Formula $\overline{M}$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ נבנה מכונה 
+\begin_inset Formula $M'$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נבנה מכונה שמריצה את שתי המכונות בו זמנית, ואז בטוח אחת מהן תעצור מתישהו
+ ולכן תמיד נעצור בעצמנו )ונחזיר תשובה בהתאמה לתוצאה שהתקבלה משתי המכונות(.
+ באופן מעט יותר פורמלי, עבור 
+\begin_inset Formula $i=1,2,\ldots$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הרץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ צעדים.
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ קיבלה את 
+\begin_inset Formula $w$
+\end_inset
+
+, עצור וקבל.
+\end_layout
+
+\begin_layout Enumerate
+הרץ את 
+\begin_inset Formula $\overline{M}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ צעדים.
+ אם 
+\begin_inset Formula $\overline{M}$
+\end_inset
+
+ קיבלה את 
+\begin_inset Formula $w$
+\end_inset
+
+, עצור ודחה.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $M'$
+\end_inset
+
+ עוצרת על כל קלט 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+זאת משם שאם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ אז לריצה המקבלת 
+\begin_inset Formula $r$
+\end_inset
+
+ של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ יש מספר 
+\begin_inset Formula $1\leq j<\infty$
+\end_inset
+
+ של צעדים ואז 
+\begin_inset Formula $M'$
+\end_inset
+
+ תעצור באיטרציה ה-
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אחרת, לריצה 
+\begin_inset Formula $\overline{M}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ יש מספר 
+\begin_inset Formula $1\leq k<\infty$
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $M'$
+\end_inset
+
+ תעצור ותדחה באיטרציה ה-
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $L\left(M'\right)=L\left(M\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $w\in L\left(M'\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $w$
+\end_inset
+
+ התקבלה בעקבות ריצה מקבלת של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $w\in L\left(M\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $w\in L\left(M\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $M'$
+\end_inset
+
+ תעצור בגלל זה ותקבל.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה כיצד נריץ דברים במקביל? בכל איטרציה נשכפל את המילה על הסרט ונפריד אותה
+ עם איזשהו סימן מפריד וערך של מונה שעולה בכל פעם.
+ לא כל כך חשוב להבין איך זה עובד, ונראה בקרוב שאפשר להניח שיש לנו כמה סרטים
+ שאנחנו רצים עליהם במקביל ושזה שקול.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+הערה בהגדרה של מכונת טיורינג אין לנו זיכרון, אבל הוא מגולם בתוך פ' המעברים
+ והמצבים שמאפשרים לנו לכתוב דברים שנשמרים על הסרט.
+\end_layout
+
+\begin_layout Description
+הערה אינטואטיבית, קופנ' מוגדרת כמידע המינימלי שנצטרך כדי שאם נכבה את המחשב,
+ נוכל לשחזר את המצב שהיינו בו לפני שכיבינו את המחשב.
+\end_layout
+
+\begin_layout Description
+הגדרה תהיינה מילה 
+\begin_inset Formula $w$
+\end_inset
+
+ ומ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $c_{1},\ldots,c_{k}$
+\end_inset
+
+ היא ריצה חלקית של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ אם 
+\begin_inset Formula $c_{1}=q_{0}w$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $i\in\left[k-1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ גוררת את 
+\begin_inset Formula $c_{i+1}$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה תהיינה 
+\begin_inset Formula $f:\fldn\to\fldn$
+\end_inset
+
+ ו-
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט.
+ נאמר כי מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט מחשבת את 
+\begin_inset Formula $f$
+\end_inset
+
+ אם בתחילת הריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ כתוב את 
+\begin_inset Formula $w$
+\end_inset
+
+ על הסרט ובסוף הריצה )המכונה אכן עוצרת( הסרט מכיל רק את 
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נתאר מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמחשבת את הפ' 
+\begin_inset Formula $f\left(n\right)=n+1$
+\end_inset
+
+ בייצוג הבינארי.
+ המכונה שלנו תתחיל בסימון התו הראשון בסרט ב-
+\begin_inset Formula $\$$
+\end_inset
+
+ ותזיז את הקלט תו אחד ימינה.
+ מכאן, אינטואטיבית נחליף את רצף ה-
+\begin_inset Formula $1$
+\end_inset
+
+-ים הראשון מימין )
+\begin_inset Formula $\lsb$
+\end_inset
+
+( ב-
+\begin_inset Formula $1$
+\end_inset
+
+ עם הרבה אפסים )
+\begin_inset Formula $\ldots111$
+\end_inset
+
+ הופך ל-
+\begin_inset Formula $\ldots1000$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+משם, במצב 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ ותסרוק את הסרט ימינה עד שתגיע ל-
+\begin_inset Formula $\spa$
+\end_inset
+
+ ואז תעבור ל-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+.
+ ב-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, אם 
+\begin_inset Formula $M$
+\end_inset
+
+ קוראת 
+\begin_inset Formula $1$
+\end_inset
+
+ היא משנה אותו ל-
+\begin_inset Formula $0$
+\end_inset
+
+ וממשיכה שמאלה.
+ אם היא רואה 
+\begin_inset Formula $0$
+\end_inset
+
+, היא משנה אותו ל-
+\begin_inset Formula $1$
+\end_inset
+
+ ועוצרת.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ קוראת 
+\begin_inset Formula $\$$
+\end_inset
+
+, הקלט היה 
+\begin_inset Formula $1\ldots1$
+\end_inset
+
+ )כי היינו עוצרים אם ראינו 
+\begin_inset Formula $0$
+\end_inset
+
+( ובמקרה כזה היא תשנה את התו הראשון ל-
+\begin_inset Formula $1$
+\end_inset
+
+ ותזיז את כל הסרט אחד ימינה ותכתוב 
+\begin_inset Formula $\$$
+\end_inset
+
+ בהתחלה )ככה יש לנו 
+\begin_inset Formula $1$
+\end_inset
+
+ והרבה אפסים(.
+\end_layout
+
+\begin_layout Standard
+התיאור הזה מספיק, חוץ מהעובדה שלא הסברנו איך להזיז את כל הסרט ימינה.
+ באיור ניתן לראות מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שהרעיון שלה הוא ש-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ הוא המצב שזוכר שהתו הקודם שקראנו הוא 
+\begin_inset Formula $a$
+\end_inset
+
+ ו-
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ זוכר שעכשיו קראנו 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כך, מ-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ לא משנה מה קוראים, נכתוב 
+\begin_inset Formula $a$
+\end_inset
+
+ ומ-
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ נכתוב 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ אם נקרא רווח נדע שסיימנו 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+ש
+\begin_inset Graphics
+	filename img/ab.jpg
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמזיזה ימינה את הסרט
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מודלים שקולים למ
+\begin_inset Quotes xrd
+\end_inset
+
+ט}
+\end_layout
+
+\end_inset
+
+
+\size larger
+מודלים שקולים למ
+\begin_inset Quotes xrd
+\end_inset
+
+ט
+\end_layout
+
+\begin_layout Itemize
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שסרטה לא חסום משמאל.
+\end_layout
+
+\begin_layout Itemize
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט עם 
+\begin_inset Formula $k$
+\end_inset
+
+ סרטים.
+\end_layout
+
+\begin_layout Itemize
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שיכולה להישאר במקום בנוסף לבחירה ימינה/שמאלה )
+\lang english
+Stay-TM
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Itemize
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שבמקום סרט יש לה גריד דו ממדי אינסופי.
+\end_layout
+
+\begin_layout Itemize
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט אי-דטרמיניסטית.
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר כי שתי מכונות חישוב 
+\begin_inset Formula $M,N$
+\end_inset
+
+ הן שקולות אם לכל 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $N$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $N$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $N$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה שני מודלים חישוביים 
+\begin_inset Formula $\x,\y$
+\end_inset
+
+ הם שקולים אם לכל מכונה מסוג 
+\begin_inset Formula $\y$
+\end_inset
+
+ יש מכונה שקולה מסוג 
+\begin_inset Formula $\x$
+\end_inset
+
+ ולהפך.
+\end_layout
+
+\begin_layout Description
+הגדרה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט עם שני סרטים היא מכונה רגילה, עם שני סרטים אינסופיים מימין, שני ראשים
+ קוראים ופ' מעברים המוגדרת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\delta:Q\times\Gamma^{2}\to Q\times\Gamma^{2}\times\left\{ L,R\right\} ^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה משמעות פ' המעברים כאן היא שאנחנו קוראים בכל פעם את התווים משני הראשים
+ הקוראי, ויחד עם המצב החדש קובעים לאיזה צד הולכים בכל סרט בנפרד.
+\end_layout
+
+\begin_layout Description
+משפט מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט עם שני סרטים היא מודל חישובי שקול למ
+\begin_inset Quotes xrd
+\end_inset
+
+ט קלאסי.
+\end_layout
+
+\begin_layout Proof
+ברור שלמ
+\begin_inset Quotes xrd
+\end_inset
+
+ט קלאסי יש מכונה עם שני סרטים שקולה )פשוט מנוונים את הסרט השני(.
+ נוכיח את הכיוון השני.
+\end_layout
+
+\begin_layout Proof
+תהי מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט עם שני סרטים 
+\begin_inset Formula $M=\left\langle Q,\com,\Gamma,\delta,q_{0},q_{acc},q_{rej}\right\rangle $
+\end_inset
+
+הרעיון הוא שנמיר את שני הסרטים לסרט אחד שבו א
+\begin_inset Quotes xrd
+\end_inset
+
+ב הסרט )העבודה( הוא מתוך 
+\begin_inset Formula $\Gamma^{2}\times\left\{ 0,1\right\} ^{2}$
+\end_inset
+
+ שייצג את האות בכל סרט והאם כל ראש קורא נמצא כרגע על התו ההוא.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $M'=\left\langle Q',\com',\Gamma',\delta',q_{0}',q_{acc}',q_{rej}'\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\Gamma'=\left(\Gamma\times\Gamma\times\left\{ 0,1\right\} \times\left\{ 0,1\right\} \right)\cup\left\{ \spa\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $M'$
+\end_inset
+
+ פועלת כך:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מתחילה עם סרט שעליו כתובה 
+\begin_inset Formula $w=\sigma_{1}\ldots\sigma_{n}$
+\end_inset
+
+ ומחחליפה לפי הסדר את 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ ב-
+\begin_inset Formula $\left(\sigma_{i},\spa,0,0\right)$
+\end_inset
+
+, לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, עד שמגיעה לסוף המילה ואז חוזרת לתחילת הסרט ומחליפה את התו הראשון ב-
+\begin_inset Formula $\left(\sigma_{1},\spa,1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M'$
+\end_inset
+
+ תסרוק את הסרט שלה עד שתמצא את המיקום של הראש הקורא הראשון בריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ )תזהה 
+\begin_inset Formula $\left(*,*,1,*\right)$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+משם תעבור למצב שמקודד את זה שנמצא הראש הראשון ונקראה אות כלשהי 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ במקום הזה בסרט הראשון של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+משם היא תחזור לראש הסרט ותתחיל לחפש באופן דומה את הראש השני ותזכור במצבים
+ איזו אות נקרא.
+\end_layout
+
+\begin_layout Standard
+משם, 
+\begin_inset Formula $M'$
+\end_inset
+
+ תביט בפ' המעברים של 
+\begin_inset Formula $M$
+\end_inset
+
+ ותתחיל לעדכן את הסרט שלה בהתאם - נסרוק שוב את הסרט כשנחפש את הראש הקורא
+ הראשון, תעדכן את האות במיקום הזה וגם את סמני הקוראים המדומים, תחזור לתחילת
+ הסרט, ותעשה את אותו הדבר עבור הראש הקורא השני.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Formula $\r$
+\end_inset
+
+ סגורה לאיחוד.
+\end_layout
+
+\begin_layout Proof
+נריץ את המכונה שמכריעה שפה אחת, אם היא תקבל נקבל ואם לא נריץ את המכונה השנייה
+ )נאפס את הסרט וכו'( ונקבל/נדחה בהתאם לה.
+ המזל כאן הוא ששתי המכונות תמיד עוצרות ולכן זה עובד.
+\end_layout
+
+\begin_layout Description
+הערה גם 
+\begin_inset Formula $\re$
+\end_inset
+
+ סגורה לאיחוד, אבל שם צריך להריץ את שתי המכונות במקביל וזה קצת יותר מורכב.
+\end_layout
+
 \end_body
 \end_document
