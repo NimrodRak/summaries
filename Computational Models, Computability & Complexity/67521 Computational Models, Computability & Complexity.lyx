@@ -16524,5 +16524,2236 @@ Stay-TM
  סגורה לאיחוד, אבל שם צריך להריץ את שתי המכונות במקביל וזה קצת יותר מורכב.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{VII
+\backslash
+;
+\backslash
+; אנמורציה ואי-כריעות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{VII}$
+\end_inset
+
+ | אנמורציה ואי-כריעות 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\end_layout
+
+\begin_layout Description
+הגדרה ספרן )
+\lang english
+Enumerator
+\lang hebrew
+( 
+\begin_inset Formula $E$
+\end_inset
+
+ הוא מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שלא מקבלת קלט ומדפיסה מילים )עם 
+\begin_inset Quotes xld
+\end_inset
+
+אנטרים
+\begin_inset Quotes xrd
+\end_inset
+
+ ביניהן(, ושפתה היא
+\begin_inset Formula 
+\[
+L\left(E\right)=\left\{ w:w\;\text{בסופו של דבר מדפיסה את}\;E\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $\forall L\subseteq\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $L\in\re$
+\end_inset
+
+ יש ספרן 
+\begin_inset Formula $E$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(E\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ נניח שיש ספרן 
+\begin_inset Formula $E$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(E\right)=L$
+\end_inset
+
+.
+ נייצר 
+\begin_inset Formula $M$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בהינתן מילה, 
+\begin_inset Formula $M$
+\end_inset
+
+ תריץ את 
+\begin_inset Formula $E$
+\end_inset
+
+ ובכל פעם שידפיס מילה 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ בודקת האם 
+\begin_inset Formula $y=w$
+\end_inset
+
+.
+ אם כן, עוצרת ומקבלת.
+ אם לא, ממשיכה להריץ את 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $M$
+\end_inset
+
+ אכן מזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+ כי אם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+ ידפיס את 
+\begin_inset Formula $w$
+\end_inset
+
+ בסופ של דבר ולכן נעצור ואז 
+\begin_inset Formula $M$
+\end_inset
+
+ תעצור ותקבל.
+ אם 
+\begin_inset Formula $w\notin L$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+ לא ידפיס את 
+\begin_inset Formula $w$
+\end_inset
+
+ ואז 
+\begin_inset Formula $M$
+\end_inset
+
+ תרוץ לנצח ולא תקבל את 
+\begin_inset Formula $w$
+\end_inset
+
+ )או שתעצור ותדחה אם 
+\begin_inset Formula $E$
+\end_inset
+
+ עוצר(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ נתונה 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+ ונייצר ספרן 
+\begin_inset Formula $E$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(E\right)=L$
+\end_inset
+
+.
+ נזכר ש-
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+ בת מניה, ולכן יש סידור 
+\begin_inset Formula $w_{1},w_{2},\ldots$
+\end_inset
+
+ של 
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+ )עבור 
+\begin_inset Formula $\com=\left\{ 0,1\right\} $
+\end_inset
+
+ הסידור 
+\begin_inset Formula $\epsilon,0,1,00,01,...$
+\end_inset
+
+ עובד(.
+\end_layout
+
+\begin_layout Proof
+לא נוכל להריץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על המילים אחד אחרי השני כי 
+\begin_inset Formula $M$
+\end_inset
+
+ מזהה ולא מכריעה ולכן ייתכן שלא נעצור ולא נגיע למילים אחרות.
+\end_layout
+
+\begin_layout Proof
+נריץ את כל המילים במקביל ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הרצה למשך 
+\begin_inset Formula $i$
+\end_inset
+
+ צעדים של 
+\begin_inset Formula $w_{1},\ldots,w_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ באופן איטרטיבי.
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $j\in\left[i\right]$
+\end_inset
+
+ במהלך הריצה, נדפיס את 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ אז 
+\begin_inset Formula $w$
+\end_inset
+
+ תודפס בסופו של דבר כי קיים 
+\begin_inset Formula $i$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w=w_{i}$
+\end_inset
+
+ ואז קיים 
+\begin_inset Formula $t$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ תוך 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים.
+ לכן 
+\begin_inset Formula $w$
+\end_inset
+
+ תדפיס בכל איטרציה 
+\begin_inset Formula $k\geq\max\left\{ i,t\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $w\notin L$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+ לא תדפיס את 
+\begin_inset Formula $w$
+\end_inset
+
+ מהגדרתה.
+\end_layout
+
+\begin_layout Standard
+הבעיה העשירית של הילברט היא הבעיה הבאה: תאר אלג', שבהינתן פולינום במספר
+ משתנים, יכריע האם יש לו שורש שלם.
+\end_layout
+
+\begin_layout Standard
+ב-
+\numeric on
+1970
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ הוכח שאין אלג' שיכריע את הבעיה במספר צעדים קבוע )כלומר לא ב-
+\begin_inset Formula $\r$
+\end_inset
+
+(.
+ עם זאת, 
+\begin_inset Formula $H=\left\{ \left\langle p\right\rangle :\text{שורש שלם}\;p\text{יש ל-}\right\} \in\re$
+\end_inset
+
+ כי אפשר לסדר את 
+\begin_inset Formula $\fldz^{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ מספר המשתנים ולבדוק האם כל אחד מה-
+\begin_inset Formula $n$
+\end_inset
+
+-יות היא שורש של האלג'.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+שלוש רמות לתיאור אלג'
+\end_layout
+
+\begin_layout Enumerate
+ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט, כאשר ניווכח שכל עצם קלט 
+\begin_inset Formula $A$
+\end_inset
+
+ ניתן לקודד כמילה 
+\begin_inset Formula $\left\langle A\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ אפשר לקודד כרשימה של קודקודים )עם מפריד 
+\begin_inset Formula $\#$
+\end_inset
+
+( ואז רשימה של קשתות בין קודקודים )עם מפריד 
+\begin_inset Formula $\$$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תיאור פעולות של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט )בסגנון 
+\begin_inset Quotes xld
+\end_inset
+
+זוז עם הראש הקורס שמאלה
+\begin_inset Quotes xrd
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Enumerate
+שפה עילית )
+\lang english
+pseudo-code
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+התזה של צ'רץ' וטיורינג קובעת שהכרעה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שקולה לאלג', כלומר כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תיאור ברמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שקול לתיאור ברמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Description
+הערה לא נוכיח שהתזה נכונה, אבל נעשה כמה דוגמאות שישכנעו אותנו.
+\end_layout
+
+\begin_layout Description
+דוגמה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמכריעה את 
+\begin_inset Formula $CG=\left\{ \left\langle G\right\rangle :\text{גרף לא מכוון קשיר}\;G\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+כיצד נתון גרף: נניח ש-
+\begin_inset Formula $G$
+\end_inset
+
+ נתון ע
+\begin_inset Quotes xrd
+\end_inset
+
+י רשימת קודקודים )מספרים בבסיס 
+\begin_inset Formula $2$
+\end_inset
+
+( מופרדים ב-
+\begin_inset Formula $\#$
+\end_inset
+
+ ורשימת קשתות מופרדות ב-
+\begin_inset Formula $\$$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אלג': )
+\lang english
+BFS
+\lang hebrew
+( נחזיק 
+\begin_inset Formula $C=\varnothing,T=\left\{ v_{0}\right\} $
+\end_inset
+
+ ואז:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כל עוד 
+\begin_inset Formula $T\neq\varnothing$
+\end_inset
+
+, נוציא 
+\begin_inset Formula $v$
+\end_inset
+
+ מ-
+\begin_inset Formula $T$
+\end_inset
+
+, נוסיף אותו ל-
+\begin_inset Formula $V$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $u\in V\backslash\left(C\cup T\right)$
+\end_inset
+
+, אם 
+\begin_inset Formula $E\left(u,v\right)$
+\end_inset
+
+, נוסיף את 
+\begin_inset Formula $u$
+\end_inset
+
+ ל-
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $C=V$
+\end_inset
+
+ נקבל אחרת נדחה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תיאור האלג' ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט: נבחר 
+\begin_inset Formula $\com=\left\{ 0,1,\#,\$\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma=\com\cup\left\{ \spa\right\} \cup\left\{ 0,1\right\} \times\left\{ C,T,A\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המכונה יכולה 
+\begin_inset Formula $T$
+\end_inset
+
+-לסמן קודקודים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הפיכת התו הראשון בקידוד שלהם לתו ב-
+\begin_inset Formula $0_{T}$
+\end_inset
+
+ או 
+\begin_inset Formula $1_{T}$
+\end_inset
+
+ )וכך גם 
+\begin_inset Formula $C,A$
+\end_inset
+
+-תסמן(.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T$
+\end_inset
+
+-סמן את הקודקוד הראשון.
+\end_layout
+
+\begin_layout Enumerate
+חזור כל עוד יש קודקודים 
+\begin_inset Formula $T$
+\end_inset
+
+ מסומנים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+-סמן קודקוד 
+\begin_inset Formula $T$
+\end_inset
+
+-מסומן )הוצא מ-
+\begin_inset Formula $T$
+\end_inset
+
+ קודקוד כלשהו(.
+\end_layout
+
+\begin_layout Enumerate
+עבור על רשימת הקודקודים, אם יש קודקוד לא מסומן )בשום דבר(, בדוק האם יש קשת
+ בינו ובין הקודקוד ה-
+\begin_inset Formula $A$
+\end_inset
+
+ מסומן.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם יש, 
+\begin_inset Formula $T$
+\end_inset
+
+-סמן את הקודקוד הנבדק.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $C$
+\end_inset
+
+-נסמן את הקודקוד ה-
+\begin_inset Formula $A$
+\end_inset
+
+-מסומן.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם כל הקודקודים 
+\begin_inset Formula $C$
+\end_inset
+
+-מסומנים נקבל, אחרת נדחה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $A_{DFA}=\left\{ \left\langle A,w\right\rangle :w\in L\left(A\right)\text{ו-}\;\dfa\;\text{הוא}\;A\right\} $
+\end_inset
+
+.
+ נקודד את הקלט כרצף אותיות, 
+\begin_inset Formula $\#$
+\end_inset
+
+, רצף מצבים, דולר, מצב התחלתי, מצבים מקבלים וכו' מופרדים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט תסמלץ ריצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ נשמור את המצב הנוכחי ואינדקס במילה, ובכל איטרציה נעדכן מצב ונגדיל אינדקס.
+ נבדוק בכל פעם מה 
+\begin_inset Formula $\delta$
+\end_inset
+
+ אומרת ואם נקבל בסוף נקבל ואחרת נדחה.
+\end_layout
+
+\begin_layout Standard
+אם היה מדובר ב-
+\begin_inset Formula $A_{NFA}$
+\end_inset
+
+, פשוט נריץ את ה-
+\begin_inset Formula $\nfa$
+\end_inset
+
+ כאשר נשמור את קבוצת המצבים שאליהם אפשר להגיע בריצה כלשהי )כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+subset construction
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ פונקציונאלי(.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{אי כריעות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+אי כריעות
+\end_layout
+
+\begin_layout Description
+משפט יש שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\notin R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+משיקולי ספירה: עבור א
+\begin_inset Quotes xrd
+\end_inset
+
+ב כלשהו, יש 
+\begin_inset Formula $2^{\aleph_{0}}$
+\end_inset
+
+ שפות ב-
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+.
+ עם זאת, יש רק 
+\begin_inset Formula $\aleph_{0}$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט, כי כל מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט ניתן לקודד באמצעות מספר סופי של תווים.
+\end_layout
+
+\begin_layout Proof
+לחלופין, כל תכנית בפייתון מגדירה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט, ויש 
+\begin_inset Formula $\aleph_{0}$
+\end_inset
+
+ תכניות פייתון סופיות שמגדירות מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט.
+\end_layout
+
+\begin_layout Proof
+ממשפט קנטור, 
+\begin_inset Formula $2^{\aleph_{0}}>\aleph_{0}$
+\end_inset
+
+ ולכן יש שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך שאין מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמכריעה אותה.
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נבנה קונסטרוקטיבית: נצביע על שפה 
+\begin_inset Formula $L\notin\r$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A_{TM}=\left\{ \left\langle M,w\right\rangle :w\in L\left(M\right)\text{מ"ט ו-}\;M\right\} $
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $A_{TM}\notin\r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ראשית 
+\begin_inset Formula $A_{TM}\in\re$
+\end_inset
+
+ כי מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט אוניברסלית מזהה את 
+\begin_inset Formula $A_{TM}$
+\end_inset
+
+ - בהינתן 
+\begin_inset Formula $M$
+\end_inset
+
+ ו-
+\begin_inset Formula $w$
+\end_inset
+
+ היא מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ועונה כמותה.
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אז תקבל גם.
+ יתכן שהיא תתקע וזה בסדר כי זה יקרה רק אם אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת.
+\end_layout
+
+\begin_layout Proof
+נניח בשלילה כי קיימת מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $H$
+\end_inset
+
+ מכריעה כך ש-
+\begin_inset Formula $L\left(H\right)=A_{TM}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $H\left(\left\langle M\right\rangle ,w\right)$
+\end_inset
+
+ מקבלת אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת על 
+\begin_inset Formula $w$
+\end_inset
+
+ ודוחה אם 
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה על 
+\begin_inset Formula $w$
+\end_inset
+
+ או לא עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נבנה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $D\left(\left\langle M\right\rangle \right)=H\left(\left\langle M\right\rangle ,\left\langle M\right\rangle \right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $D$
+\end_inset
+
+ מקבלת אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת על 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ )המילה שמקודדת את 
+\begin_inset Formula $M$
+\end_inset
+
+( ודוחה אחרת.
+\end_layout
+
+\begin_layout Proof
+נבנה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $\widetilde{D}$
+\end_inset
+
+ שמחליפה בין 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ ו-
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ של 
+\begin_inset Formula $D$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\widetilde{D}$
+\end_inset
+
+ מקבלת אם 
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה או לא עוצרת על 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ ודוחה אם היא מקבלת על 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+עתה מהו 
+\begin_inset Formula $\widetilde{D}\left(\left\langle \widetilde{D}\right\rangle \right)$
+\end_inset
+
+? מההגדרה, היא תריץ את 
+\begin_inset Formula $\widetilde{D}$
+\end_inset
+
+ על 
+\begin_inset Formula $\left\langle \widetilde{D}\right\rangle $
+\end_inset
+
+ ותקבל אם 
+\begin_inset Formula $\widetilde{D}$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $\widetilde{D}$
+\end_inset
+
+ ותדחה אחרת, סתירה!
+\end_layout
+
+\begin_layout Description
+הערה נשים לב שהנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל היא סוג של הוכחה בלכסון! 
+\begin_inset Formula $2^{\aleph_{0}}>\aleph_{0}$
+\end_inset
+
+ הוכחנו ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הנחה בשלילה האם יש סידור בן מנייה של 
+\begin_inset Formula $2^{\fldn}$
+\end_inset
+
+ לקבוצות 
+\begin_inset Formula $S_{1},S_{2},\ldots$
+\end_inset
+
+.
+ נסדר אותם בטבלה ואז נסתכל על קבוצה שמוגדרת הפוך מהאלכסון, כלומר 
+\begin_inset Formula $i\in S$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $i\notin s_{i}$
+\end_inset
+
+.
+ ואז 
+\begin_inset Formula $S$
+\end_inset
+
+ לא בטבלה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עתה נוכל לכל מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט לסדר את 
+\begin_inset Formula $\left\langle M_{i}\right\rangle $
+\end_inset
+
+ לפי האם היא מקבלת או לא, ואז 
+\begin_inset Formula $D$
+\end_inset
+
+ היא האלכסון ו-
+\begin_inset Formula $\widetilde{D}$
+\end_inset
+
+ היא הדואלי לאלכסון.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $HALT_{TM}=\left\{ \left\langle M,w\right\rangle :w\;\text{עוצרת על}\;M\right\} $
+\end_inset
+
+.
+ לו הייתה מכונה 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $HALT_{TM}$
+\end_inset
+
+, היינו יכולים לבנות מכונה 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $A_{TM}$
+\end_inset
+
+ סתירה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נעשה זאת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הרצת 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ עוצרת ולכן אם היא עצרה ודחתה, נעצור, אם היא עצרה וקיבלה, נריץ את 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ללא חשש שנתקע, ונחזיר מה ש-
+\begin_inset Formula $M$
+\end_inset
+
+ מחזירה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה מתקיים 
+\begin_inset Formula $A_{TM}\subseteq HALT_{TM}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+הגדרה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $REG_{TM}=\left\{ \left\langle M\right\rangle :L\left(M\in\reg\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $REG_{TM}\notin\r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+טענה אם 
+\begin_inset Formula $L_{1},L_{2}\in\re$
+\end_inset
+
+, אז 
+\begin_inset Formula $L_{1}\cdot L_{2}\in\re$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ראשית נתאר מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+ שמזהה את השפה 
+\begin_inset Formula $\left\{ u\#v:u\in L,v\in L_{2}\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+ תסמלץ את ריצת 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $u$
+\end_inset
+
+, אם 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $u$
+\end_inset
+
+, תסמלץ את 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ מקבלת אז 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+ תקבל.
+\end_layout
+
+\begin_layout Proof
+עתה נשתמש ב-
+\begin_inset Formula $M_{3}$
+\end_inset
+
+ כדי לבנות מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L_{1}\cdot L_{2}$
+\end_inset
+
+.
+ נשים לב כי אם 
+\begin_inset Formula $w\in L_{1}\cdot L_{2}$
+\end_inset
+
+ אז קיימת חלוקה 
+\begin_inset Formula $w=uv$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $u\in L_{1},v\in L_{2}$
+\end_inset
+
+ ובה
+\begin_inset Quotes xrd
+\end_inset
+
+כ החלוקה היא באינדקס 
+\begin_inset Formula $i$
+\end_inset
+
+ ואז 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+ תקבל את המילה 
+\begin_inset Formula $u\#v$
+\end_inset
+
+ אחרי מספר סופי 
+\begin_inset Formula $k$
+\end_inset
+
+ של צעדים.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $M$
+\end_inset
+
+ תפעל כך: תשמור את 
+\begin_inset Formula $w$
+\end_inset
+
+ במקום שמור בסרט, ואחריו 
+\begin_inset Formula $3$
+\end_inset
+
+ קאונטרים 
+\begin_inset Formula $i,j,k$
+\end_inset
+
+ )כמה צעדים לרוץ, באיזו חלוקה אנחנו, כמה צעדים רצנו עד כה, בהתאמה(.
+ בכל שלב בריצה, 
+\begin_inset Formula $M$
+\end_inset
+
+ תסמלץ את 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+ על החלוקה הנוכחית במשך 
+\begin_inset Formula $i$
+\end_inset
+
+ צעדים )תוך שימוש בקאונטר 
+\begin_inset Formula $j$
+\end_inset
+
+(.
+ אם 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+ מקבלת תקבל, אחרת תמשיך הלאה עד מיצוי כל החלוקה במשך 
+\begin_inset Formula $j$
+\end_inset
+
+ צעדים.
+ לאחר מכן נגדיל את 
+\begin_inset Formula $j$
+\end_inset
+
+ ב-
+\begin_inset Formula $1$
+\end_inset
+
+ ונאפס את מונה החלוקות ל-
+\begin_inset Formula $0$
+\end_inset
+
+ וכן 
+\begin_inset Formula $k=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם קיימת חלוקה של 
+\begin_inset Formula $w$
+\end_inset
+
+ ל-
+\begin_inset Formula $uv$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $u\in L_{1},v\in L_{2}$
+\end_inset
+
+ אז נקבל מתישהו, אחרת 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ לא תעצור או תדחה או ש-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ לא תעצור או תדחה ולכן אנחנו לא נעצור או נדחה.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+מכונת טיורינג אוניברסלית
+\bar default
+ היא מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמקבלת כקלט מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ ומילה 
+\begin_inset Formula $w$
+\end_inset
+
+ ומתנהגת בדיוק כמו 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+, כלומר היא מסמלצת את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ כאשר היא מקבלת/דוחה/לא עוצרת בהתאם ומסמלצת את תוכן הסרט.
+\end_layout
+
+\begin_layout Description
+הגדרה קידוד של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט הוא 
+\begin_inset Formula $w_{M}\in\left\{ 0,1,\#\right\} ^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נקודד את המצבים ב-
+\begin_inset Formula $Q$
+\end_inset
+
+ באמצעות מס' בינאריים בסדר עולה, מופרדים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\#$
+\end_inset
+
+ )
+\begin_inset Formula $0\#1\#00\#...$
+\end_inset
+
+(, לבסוף נוסיף 
+\begin_inset Formula $\#\#\#$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נקודד את 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ )וכך גם את 
+\begin_inset Formula $\com\subseteq\Gamma$
+\end_inset
+
+(.
+ נעשה זאת באמצעות קידוד בינארי, שהוא באורך 
+\begin_inset Formula $\lceil\log_{2}\left|\Gamma\right|\rceil$
+\end_inset
+
+, ולבסוף 
+\begin_inset Formula $\#\#\#$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נקודד את פ' המעברים 
+\begin_inset Formula $\delta$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\#\#\left\langle q\right\rangle \#\left\langle \sigma\right\rangle \#\left\langle q'\right\rangle \#\left\langle \sigma'\right\rangle \#\left\langle L/R\right\rangle \#\#$
+\end_inset
+
+ לכל מעבר 
+\begin_inset Formula $\delta\left(q,\sigma\right)=\left(q',\sigma',L/R\right)$
+\end_inset
+
+ )
+\begin_inset Formula $\left\langle \cdot\right\rangle $
+\end_inset
+
+ זה הקידוד של אובייקט כלשהו(, כאשר 
+\begin_inset Formula $\left\langle L\right\rangle =0,\left\langle L\right\rangle =R$
+\end_inset
+
+.
+ לבסוף נוסיף 
+\begin_inset Formula $\#\#\#$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נקודד את המצבים המיוחדים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\left\langle q_{0}\right\rangle \#\left\langle q_{acc}\right\rangle \#\left\langle q_{rej}\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נבנה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט אוניברסילת 
+\begin_inset Formula $U$
+\end_inset
+
+ שמקבלת כקלט 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ תהיה מכונה עם 
+\begin_inset Formula $3$
+\end_inset
+
+ סרטים.
+ בסרט הראשון יהיה שמור תיאור של 
+\begin_inset Formula $M$
+\end_inset
+
+, בסרט השני תתבצע סימולציה של הסרט של 
+\begin_inset Formula $M$
+\end_inset
+
+, והסרט השלישי ישמור את המצב הנוכחי שבו 
+\begin_inset Formula $M$
+\end_inset
+
+ נמצאת וישמש לחישובים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U$
+\end_inset
+
+ תפעל כך:
+\end_layout
+
+\begin_layout Enumerate
+תסרוק את סרט 
+\begin_inset Formula $1$
+\end_inset
+
+ ותמצא את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+תעתיק את 
+\begin_inset Formula $w$
+\end_inset
+
+ לסרט 
+\begin_inset Formula $2$
+\end_inset
+
+ ותחזיר את הראש הקורא השני לתחילת סרט 
+\begin_inset Formula $2$
+\end_inset
+
+ ואת הראש הראשון לתחילת הסרט הראשון.
+\end_layout
+
+\begin_layout Enumerate
+תסרוק את סרט 
+\begin_inset Formula $1$
+\end_inset
+
+, תמצא את 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ ותעתיק לסרט 
+\begin_inset Formula $3$
+\end_inset
+
+ ושוב תחזיר את ראש 
+\begin_inset Formula $1$
+\end_inset
+
+ להתחלה.
+\end_layout
+
+\begin_layout Enumerate
+בכל איטרציה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+תשווה את המצב בסרט 
+\begin_inset Formula $3$
+\end_inset
+
+ ל-
+\begin_inset Formula $q_{acc},q_{rej}$
+\end_inset
+
+ ותקבל/תדחה לפי הצורך.
+\end_layout
+
+\begin_layout Itemize
+תסרוק את סרט 
+\begin_inset Formula $1$
+\end_inset
+
+ ותמצא את תחילת התיאור של 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+תשווה את המצב בסרט 
+\begin_inset Formula $3$
+\end_inset
+
+ והאות מתחת לראש בסרט 
+\begin_inset Formula $2$
+\end_inset
+
+ לכל המעברים עד שתמצא את המעבר המתאים.
+\end_layout
+
+\begin_layout Itemize
+תחליף את האות מתחת לראש בסרט 
+\begin_inset Formula $2$
+\end_inset
+
+ בהתאם למעבר שנמצא ותעביר את ראש 
+\begin_inset Formula $2$
+\end_inset
+
+ ימינה/שמאלה בהתאם.
+\end_layout
+
+\begin_layout Itemize
+תחליף את המצב בסרט 
+\begin_inset Formula $3$
+\end_inset
+
+ לפי המעבר שנמצא.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה מכונת טיורינג א
+\begin_inset Quotes xrd
+\end_inset
+
+ד )
+\lang english
+NTM
+\lang hebrew
+( היא מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט עם 
+\begin_inset Formula $\delta:Q\backslash\left\{ q_{acc},q_{rej}\right\} \times\Gamma\to2^{Q\times\Gamma\times\left\{ L,R\right\} }\backslash\left\{ \varnothing\right\} $
+\end_inset
+
+.
+ ויתקיים 
+\begin_inset Formula $w\in L\left(N\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם קיימת ריצה מקבלת של 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בהינתן מילה 
+\begin_inset Formula $w\in L^{*}$
+\end_inset
+
+, 
+\bar under
+עץ הריצה של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד
+\bar default
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ הוא 
+\begin_inset Formula $T_{N,w}=\left\langle V,E\right\rangle $
+\end_inset
+
+ המוגדר כך: תהי 
+\begin_inset Formula $C$
+\end_inset
+
+ קבוצה כל הקונפ' האפשריותת בריצה כלשהי של 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V\subseteq C\times\left(\fldn\cup\left\{ 0\right\} \right)$
+\end_inset
+
+ כלומר כל קודקוד מגדיר קונפ' ומיקום בריצה.
+\end_layout
+
+\begin_layout Itemize
+שורש העץ הוא 
+\begin_inset Formula $\left\langle q_{0}w,0\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E\subseteq\bigcup\limits _{i\geq0}\left(C\times\left\{ i\right\} \right)\times\left(C\times\left\{ i+1\right\} \right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E\left(\left\langle c,i\right\rangle ,\left\langle d,i+1\right\rangle \right)$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $d$
+\end_inset
+
+ היא קונפ' עוקבת של 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה לכל מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד 
+\begin_inset Formula $N$
+\end_inset
+
+ קיימת מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטרמיניסטית 
+\begin_inset Formula $M$
+\end_inset
+
+ ששקולה לה.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $M$
+\end_inset
+
+ תפעל כך: בהינתן 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ תבנה במהלך הריצה את עץ הריצה של 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ שלב אחר שלב, תוך שהיא מבצעת חיפוש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BFS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על הקודקודים ומחפשת מצב מקבל.
+\end_layout
+
+\begin_layout Proof
+אם נמצא מצב מקבל, 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אם כל הענפים עצרו במצב דוחה, 
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אחרת, 
+\begin_inset Formula $M$
+\end_inset
+
+ תמשיך לרוץ ולא תעצור על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+קל לראות ש-
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת/דוחה/לא עוצרת אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $N$
+\end_inset
+
+ מקבלת/דוחה/לא עוצרת.
+\end_layout
+
+\begin_layout Description
+הערה הבנייה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל מתרגמת ב-
+\begin_inset Formula $\oo{\left|Q\right|^{\left|w\right|}}$
+\end_inset
+
+ את הריצה של 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ לא ידוע האם אפשר לעשות זאת בזמן קצר יותר.
+\end_layout
+
 \end_body
 \end_document
