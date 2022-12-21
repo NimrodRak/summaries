@@ -18755,5 +18755,2816 @@ BFS
  לא ידוע האם אפשר לעשות זאת בזמן קצר יותר.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{VIII
+\backslash
+;
+\backslash
+; רדוקציה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{VIII}$
+\end_inset
+
+ | רדוקציה 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $f:\com^{*}\to\com^{*}$
+\end_inset
+
+ היא 
+\bar under
+פונקציה ניתנת לחישוב
+\bar default
+ אם קיימת מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ שבהינתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+, עוצרת עם 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ על הסרט.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $f:\fldn\times\fldn\to\fldn$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(x,y\right)=x+y$
+\end_inset
+
+.
+ נניח ש-
+\begin_inset Formula $x,y$
+\end_inset
+
+ מקודדים באונרית, ואז נניח שקיבלנו את 
+\begin_inset Formula $x,y$
+\end_inset
+
+ בהפרדה של 
+\begin_inset Formula $\#$
+\end_inset
+
+, כל שנצטרך לעשות הוא להסיר את ה-
+\begin_inset Formula $\#$
+\end_inset
+
+ ולהזיז את 
+\begin_inset Formula $y$
+\end_inset
+
+ אחד שמאלה.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $f:\text{מ"ט}\to\text{מ"ט}$
+\end_inset
+
+ המוגדרת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(\left\langle M\right\rangle \right)=\left\langle M'\right\rangle $
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(M'\right)=L\left(M\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $M'$
+\end_inset
+
+ לא עוצרת על קלטים שאינם ב-
+\begin_inset Formula $L\left(M\right)$
+\end_inset
+
+.
+ נצטרך לקבל קידוד של מכונה, ואז לקודד מצב חדש 
+\begin_inset Formula $q_{loop}$
+\end_inset
+
+ עם חוג עצמי ולשנות את המעברים שהולכים ל-
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ ל-
+\begin_inset Formula $q_{loop}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה עבור שתי שפות 
+\begin_inset Formula $A,B\subseteq\com^{*}$
+\end_inset
+
+, נאמר כי 
+\begin_inset Formula $A$
+\end_inset
+
+ ניתנת לרדוקצית מיפוי ל-
+\begin_inset Formula $B$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $A\leq_{m}B$
+\end_inset
+
+ אם קיימת פ' ניתן לחישוב 
+\begin_inset Formula $f:\com^{*}\to\com^{*}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $w\in A\iff f\left(w\right)\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $A\leq_{m}B$
+\end_inset
+
+ אז נוכל במקום לשאול שאלות שייכות ל-
+\begin_inset Formula $A$
+\end_inset
+
+ נוכל לשאול לשייכות ב-
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $A=\left\{ x:\left|x\right|\leq5\right\} ,B=\left\{ x:\left|x\right|\leq10\right\} $
+\end_inset
+
+.
+ נניח שקשה לנו לחשב האם 
+\begin_inset Formula $w\in A$
+\end_inset
+
+, נוכל להגדיר 
+\begin_inset Formula $f\left(y\right)=2y$
+\end_inset
+
+ ועם הפ' הזו יתקיים 
+\begin_inset Formula $A\leq_{m}B$
+\end_inset
+
+ ונוכל להיעזר בשייכות ל-
+\begin_inset Formula $B$
+\end_inset
+
+ כדי להגיד דברים על 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )הרדוקציה( לכל 
+\begin_inset Formula $A,B$
+\end_inset
+
+, 
+\begin_inset Formula $A\leq_{m}B$
+\end_inset
+
+ ו-
+\begin_inset Formula $B\in R$
+\end_inset
+
+ אז 
+\begin_inset Formula $A\in R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהיו מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{B}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $B$
+\end_inset
+
+ ומ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ שמחשבת את הרדוקציה מ-
+\begin_inset Formula $A$
+\end_inset
+
+ ל-
+\begin_inset Formula $B$
+\end_inset
+
+.
+ נבנה 
+\begin_inset Formula $M_{A}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בהינתן 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{A}$
+\end_inset
+
+ מריצה את 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ואז מריצה את 
+\begin_inset Formula $M_{B}$
+\end_inset
+
+ על 
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+ ועונה כמוה.
+\end_layout
+
+\begin_layout Proof
+נשים לב ש-
+\begin_inset Formula $M_{A}$
+\end_inset
+
+ עוצרת על כל קלט והיא נכונה כי 
+\begin_inset Formula $w\in A\iff f\left(w\right)\in B\iff f\left(w\right)\in L\left(M_{B}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה אם 
+\begin_inset Formula $A\leq_{m}B$
+\end_inset
+
+ אז 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Quotes xld
+\end_inset
+
+קלה
+\begin_inset Quotes xrd
+\end_inset
+
+ מ-
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה נשתמש הרבה במשפט הרדוקציה כי אם 
+\begin_inset Formula $A\leq_{m}B$
+\end_inset
+
+ ו-
+\begin_inset Formula $A\notin R$
+\end_inset
+
+ אז 
+\begin_inset Formula $B\notin R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נראה שוב ש-
+\begin_inset Formula $HALT_{TM}\notin R$
+\end_inset
+
+ עם משפט הרדוקציה.
+ ידוע לנו ש-
+\begin_inset Formula $A_{TM}\notin R$
+\end_inset
+
+.
+ נראה ש-
+\begin_inset Formula $A_{TM}\leq_{m}HALT_{TM}$
+\end_inset
+
+ ונסיים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נצטרך גדיר פ' 
+\begin_inset Formula $f:\left\{ A_{TM}\text{קלטים ל-}\right\} \to\left\{ HALT_{TM}\text{קלטים ל-}\right\} $
+\end_inset
+
+ כך ש-
+\begin_inset Formula $f\left(\left\langle M\right\rangle ,w\right)=\left\langle M'\right\rangle ,w'$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $M'$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $w'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $\left\langle M\right\rangle ,w$
+\end_inset
+
+ הפ' 
+\begin_inset Formula $f$
+\end_inset
+
+ תחזיר 
+\begin_inset Formula $w'=w$
+\end_inset
+
+ ו-
+\begin_inset Formula $M'$
+\end_inset
+
+ מכונה שעוצרת רק כשהיא מקבלת ואחרת מתבדרת )כמו שראינו בדוגמה למעלה עם 
+\begin_inset Formula $q_{loop}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ אכן ניתן לחישוב.
+ וכן מתקיים 
+\begin_inset Formula $\left(\left\langle M\right\rangle ,w\right)\in A_{TM}\iff\left(\left\langle M'\right\rangle ,w'\right)\in HALT_{TM}$
+\end_inset
+
+ כי:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left\langle M\right\rangle ,w\in A_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M'$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left\langle M\right\rangle ,w\notin A_{TM}$
+\end_inset
+
+ אז אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עצרה על 
+\begin_inset Formula $w$
+\end_inset
+
+, 
+\begin_inset Formula $M'$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $w'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר אם 
+\begin_inset Formula $M$
+\end_inset
+
+ דחתה את 
+\begin_inset Formula $w$
+\end_inset
+
+, אז 
+\begin_inset Formula $M'$
+\end_inset
+
+ תגיע ל-
+\begin_inset Formula $q_{loop}$
+\end_inset
+
+ ותתקע על 
+\begin_inset Formula $w'$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $HALT_{TM}^{\epsilon}=\left\{ \left\langle M\right\rangle ,\epsilon\;\text{עוצרת על}\;M\right\} $
+\end_inset
+
+.
+ זו שפה ב-
+\begin_inset Formula $\re$
+\end_inset
+
+ כי אפשר פשוט להריץ ולקבל אם עוצרים )ואם נתקעים אז זה בסדר(.
+ נוכיח כי 
+\begin_inset Formula $HALT_{TM}^{\epsilon}\notin R$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הוכחת 
+\begin_inset Formula $HALT_{TM}^{\epsilon}\leq_{m}HALT_{TM}^{\epsilon}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f:\left\{ HALT_{TM}\text{קלטים ל-}\right\} \to\left\{ HALT_{TM}^{\epsilon}\text{קלטים ל-}\right\} $
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(\left\langle M\right\rangle ,w\right)=\left\langle M'\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M'$
+\end_inset
+
+ היא מכונה שמוחקת את מילת הקלט ומריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ )לא משנה מה הקלט, בפרט אם הוא 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+אכן 
+\begin_inset Formula $f$
+\end_inset
+
+ ניתן לחישוב כי כל מה שצריך לעשות זה למחוק כמה אותיות, להוסיף מילה קבועה
+ וללכת למצב ההתחלתי של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $M'$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ כי 
+\begin_inset Formula $M'$
+\end_inset
+
+ מסמלצת ריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ בהינתן כל קלט.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\reg_{TM}=\left\{ \left\langle M\right\rangle :L\left(M\right)\in\reg\right\} $
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $\reg_{TM}\notin\re$
+\end_inset
+
+ וגם לא 
+\begin_inset Formula $\reg_{TM}\notin\core$
+\end_inset
+
+.
+ ראשית נראה כי 
+\begin_inset Formula $\reg_{TM}\notin R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נראה כי 
+\begin_inset Formula $A_{TM}\leq_{m}\reg_{TM}$
+\end_inset
+
+, כלומר, נראה שיש פ' 
+\begin_inset Formula $f$
+\end_inset
+
+ שבהינתן 
+\begin_inset Formula $\left\langle M\right\rangle ,w$
+\end_inset
+
+ )קלט למ
+\begin_inset Quotes xrd
+\end_inset
+
+ט ב-
+\begin_inset Formula $A_{TM}$
+\end_inset
+
+(, מחזירה 
+\begin_inset Formula $\left\langle M'\right\rangle $
+\end_inset
+
+ )קלט למ
+\begin_inset Quotes xrd
+\end_inset
+
+ט ב-
+\begin_inset Formula $\reg_{TM}$
+\end_inset
+
+( כך ש-
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $L\left(M'\right)$
+\end_inset
+
+ רגולרית )
+\begin_inset Formula $w$
+\end_inset
+
+ לא ממש משנה כאן(.
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $\left\langle M\right\rangle ,w$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $M'$
+\end_inset
+
+ שמקבלת 
+\begin_inset Formula $x\in\left(0+1\right)^{*}$
+\end_inset
+
+ כך:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in\left\{ 0^{n}1^{n}:n\geq0\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $M'$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אחרת 
+\begin_inset Formula $M'$
+\end_inset
+
+ מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ועונה כמוה.
+\end_layout
+
+\begin_layout Standard
+הרדוקציה נכונה, כלומר 
+\begin_inset Formula $\left\langle M,w\right\rangle \in A_{TM}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\langle M'\right\rangle \in\reg_{TM}$
+\end_inset
+
+ כי:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אז נחזיר 
+\begin_inset Formula $M'$
+\end_inset
+
+ שמקבלת כל 
+\begin_inset Formula $x\in\left(0+1\right)^{*}$
+\end_inset
+
+ )או שנקבל בשלב הראשון או שבטוח מקבלת בשלב השני( כלומר 
+\begin_inset Formula $L\left(M'\right)=\left(0+1\right)^{*}$
+\end_inset
+
+ שזה אכן רגולרי.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אז נחזיר 
+\begin_inset Formula $M'$
+\end_inset
+
+ שמקבלת את 
+\begin_inset Formula $x\in\left(0+1\right)^{*}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $x\in\left\{ 0^{n}1^{n}:n\geq0\right\} $
+\end_inset
+
+ ואז 
+\begin_inset Formula $L\left(M'\right)=\left\{ 0^{n}1^{n}:n\geq0\right\} $
+\end_inset
+
+ שזה אכן לא רגולרי.
+\end_layout
+
+\begin_layout Standard
+נשים לב שלא בנינו כאן מבחין לשפות רגולריות, אלא רק התאמה בין השאלה )ה
+\begin_inset Quotes xrd
+\end_inset
+
+קלה
+\begin_inset Quotes xrd
+\end_inset
+
+( האם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ לשאלה )ה
+\begin_inset Quotes xrd
+\end_inset
+
+קשה
+\begin_inset Quotes xrd
+\end_inset
+
+( האם שפה של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט היא רגולרית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\left(M'\right)$
+\end_inset
+
+ היא אחת מבין שתי אפשרויות: 
+\begin_inset Formula $\left(0+1\right)^{*}$
+\end_inset
+
+ שהיא רגולרית ומייצגת קבלה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left\{ 0^{n}1^{n}\right\} $
+\end_inset
+
+ שמייצגת אי קבלה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ )שפות הדמה הן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+proxy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לשאלה הקבלה של 
+\begin_inset Formula $M$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $A_{TM}\leq_{m}\reg_{TM}$
+\end_inset
+
+ וידוע כי 
+\begin_inset Formula $A_{TM}\notin R$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\reg_{TM}\notin R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+משפט )הרדוקציה, גרסת 
+\begin_inset Formula $\re$
+\end_inset
+
+( אם 
+\begin_inset Formula $A\leq_{m}B$
+\end_inset
+
+ ו-
+\begin_inset Formula $B\in\re$
+\end_inset
+
+ אז 
+\begin_inset Formula $A\in\re$
+\end_inset
+
+ ואם 
+\begin_inset Formula $B\in\core$
+\end_inset
+
+ אז 
+\begin_inset Formula $A\in\core$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $A\leq_{m}B$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\overline{A}\leq_{m}\overline{B}$
+\end_inset
+
+ )באמצעות אותה פ' ניתנת לחישוב(.
+\end_layout
+
+\begin_layout Description
+דוגמה נמשיך עם 
+\begin_inset Formula $\reg_{TM}$
+\end_inset
+
+.
+ ידוע כי 
+\begin_inset Formula $A_{TM}\in\re\backslash\r$
+\end_inset
+
+ ולכן בהכרח 
+\begin_inset Formula $A_{TM}\notin\core$
+\end_inset
+
+ )אחרת 
+\begin_inset Formula $A_{TM}\in\re\cap\core=R$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכן מהיות 
+\begin_inset Formula $A_{TM}\leq_{m}\reg_{TM}$
+\end_inset
+
+ )הוכחנו למעלה( הרי ש-
+\begin_inset Formula $\reg_{TM}\notin\core$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהמשך לנימוק הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, 
+\begin_inset Formula $\overline{A_{TM}}\notin\re$
+\end_inset
+
+ ומספיק שנראה 
+\begin_inset Formula $\overline{A_{TM}}\leq_{m}\reg_{TM}$
+\end_inset
+
+ ואז מהיות 
+\begin_inset Formula $\overline{A_{TM}}\notin\re$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\reg_{TM}\notin\re$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לשם כך מספיק שנוכיח כי 
+\begin_inset Formula $A_{TM}\leq_{m}\overline{\reg_{TM}}$
+\end_inset
+
+ ואז מההערה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל נקבל את הנדרש.
+\end_layout
+
+\begin_layout Standard
+נמצא פ' ניתנת לחישוב שעבור 
+\begin_inset Formula $f\left(M,w\right)=M'$
+\end_inset
+
+ מתקיים ש-
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $L\left(M'\right)$
+\end_inset
+
+ לא רגולרית.
+\end_layout
+
+\begin_layout Standard
+על קלט 
+\begin_inset Formula $x\in\left(0+1\right)^{*}$
+\end_inset
+
+ המכונה 
+\begin_inset Formula $M'$
+\end_inset
+
+ תפעל כך:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in\left\{ 0^{n}1^{n}:n\geq0\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $M'$
+\end_inset
+
+ מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ועונה כמוה.
+\end_layout
+
+\begin_layout Enumerate
+אחרת תדחה את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הרדוקציה נכונה, כלומר 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת על 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $L\left(M\right)\notin\reg$
+\end_inset
+
+ כי:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(M'\right)=\left\{ 0^{n}1^{n}:n\geq0\right\} \notin\reg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אז נדחה ב-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תמיד וגם ב-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן 
+\begin_inset Formula $L\left(M'\right)=\varnothing\in\reg$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $A=\left(00\right)^{*},B=A_{TM}$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $\left(00\right)^{*}\leq_{m}A_{TM}$
+\end_inset
+
+ )אינטואיטיבית 
+\begin_inset Formula $\left(00\right)^{*}$
+\end_inset
+
+ מאוד קלה(.
+ נוכיח זאת.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+\left\langle M_{1}\right\rangle ,\epsilon & x\in\left(00\right)^{*}\\
+\left\langle M_{2}\right\rangle ,\epsilon & x\notin\left(00\right)^{*}
+\end{cases}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ תמיד עוצרת )קל לבנות( ו-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ נתקעת תמיד.
+\end_layout
+
+\begin_layout Standard
+לא מתקיים כמובן 
+\begin_inset Formula $A_{TM}\leq_{m}\left(00\right)^{*}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\left(00\right)^{*}\in\r$
+\end_inset
+
+ אבל כמובן ש-
+\begin_inset Formula $A_{TM}\notin\r$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה בבעיית הריצוף יש לנו אריחים עם ארבעה צבעים בכל כיוון ואנחנו רוצים
+ לרצף 
+\begin_inset Quotes xld
+\end_inset
+
+יפה
+\begin_inset Quotes xrd
+\end_inset
+
+.
+ פורמלית,
+\begin_inset Formula 
+\[
+TILE=\left\{ \left\langle T,H,V,t_{0}\right\rangle :1\leq n\;\text{לכל}\;n\times n\;\text{יש ריצוף חוקי}\right\} 
+\]
+
+\end_inset
+
+כאשר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $T=\left\{ t_{0},\ldots t_{k}\right\} $
+\end_inset
+
+ קבוצה סופית של אריחים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $H\subseteq T\times T$
+\end_inset
+
+ תנאי שכנות במאוזן )
+\begin_inset Formula $\left(t,t'\right)\in H$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם אפשר לשים את 
+\begin_inset Formula $t$
+\end_inset
+
+ משמאל ל-
+\begin_inset Formula $t'$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V\subseteq T\times T$
+\end_inset
+
+ תנאי שכנות במאונך.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ אריח התחלתי.
+\end_layout
+
+\begin_layout Standard
+וריצוף חוקי הוא 
+\begin_inset Formula $f:\left[n\right]\times\left[n\right]\to T$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $f\left(1,1\right)=t_{0}$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $H\left(f\left(i,j\right),f\left(i+1,j\right)\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\in\left[n-1\right],j\in\left[n\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $V\left(f\left(i,j\right),\left(i,j+1\right)\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\in\left[n\right],j\in\left[n-1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח כי 
+\begin_inset Formula $TILE\in\core$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\overline{TILE}\in\re$
+\end_inset
+
+, כלומר שקיימת מכונה שמזהה האם קיים 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ כך שאין ריצוף חוקי 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ המכונה פשוט תבדוק את כל 
+\begin_inset Formula $\left|T\right|^{n^{2}}$
+\end_inset
+
+ הריצופים 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ ואם אין עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ כלשהו, מקבלת, אחרת תמשיך ל-
+\begin_inset Formula $n$
+\end_inset
+
+ הבא.
+\end_layout
+
+\begin_layout Standard
+נוכיח ש-
+\begin_inset Formula $TILE\notin\r$
+\end_inset
+
+ )ומכוח כך גם 
+\begin_inset Formula $TILE\notin\re$
+\end_inset
+
+(.
+ נשים לב שהגדרה שקולה של 
+\begin_inset Formula $TILE$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+TILE=\left\{ \left\langle T,H,V,t_{0}\right\rangle :\text{יש ריצוף חוקי של רבע מישור}\right\} 
+\]
+
+\end_inset
+
+כאשר ריצוף חוקי על רבע מישור משמעו שקיימת 
+\begin_inset Formula $f:\fldn\times\fldn\to T$
+\end_inset
+
+ כך שמתקיימים יחסי שכנות חוקיים לכל 
+\begin_inset Formula $i,j\in\fldn$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה את שקילות ההגדרות באמצעות הלמה של קניג, לפיה בעץ מכוון אינסופי עם דרגת
+ פיצול סופית, יש מסלול אינסופי.
+ נגדיר עץ באופן הבא:
+\end_layout
+
+\begin_layout Standard
+השורש יהיה ריצוף 
+\begin_inset Formula $1\times1$
+\end_inset
+
+ והילדים שלו יהיו כל הריצופים החוקיים 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ שמכילים את הריצוף, והילדים שלהם יהיו כל הריצופים 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ שמכילים את ההורים שלהם וכו'.
+ מהלמה של קניג, יש כאן מסלול אינסופי ולכן יש שייכות ל-
+\begin_inset Formula $TILE$
+\end_inset
+
+ )נרד בעץ כמה שצריך עד שנגיע לריצוף שמכיל את 
+\begin_inset Formula $i,j$
+\end_inset
+
+ כדי לראות שהשכנות חוקית(.
+\end_layout
+
+\begin_layout Standard
+נחזור להוכחה ש-
+\begin_inset Formula $TILE\notin\r$
+\end_inset
+
+.
+ נראה ש-
+\begin_inset Formula $\overline{HALT_{TM}^{\epsilon}}$
+\end_inset
+
+ )כל המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שלא עוצרות על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+( ניתנת לרדוקציית מיפוי ל-
+\begin_inset Formula $TILE$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קונפ' של 
+\begin_inset Formula $M$
+\end_inset
+
+ היא מילה ב-
+\begin_inset Formula $\Gamma^{*}\cdot\left(Q\times\Gamma\right)\cdot\Gamma^{*}$
+\end_inset
+
+.
+ נגרום לכל קונפ' להיות שורה של אריחים ברבע מישור ונגדיר שכנות חוקית רק אם
+ קונפ' הן עוקבות בריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ לבסוף יהיה ריצוף חוקי אינסופי אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת אף פעם על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left\langle M\right\rangle \in\overline{HALT_{TM}^{\epsilon}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר את האריחים שיממשו את הרעיון:
+\end_layout
+
+\begin_layout Enumerate
+מרצפות השורה הראשונה: 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\stackrel[*]{\left(q_{0},\spa\right)}{*\quad\spa}$
+\end_inset
+
+ והשאר הם 
+\begin_inset Formula $\stackrel[*]{\spa}{\spa\quad\spa}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מרצפות שמתאימות לתזוזה של הראש.
+\end_layout
+
+\begin_layout Enumerate
+ריפוד: לכל 
+\begin_inset Formula $c\in\Gamma$
+\end_inset
+
+, נוסיף את המרצפת 
+\begin_inset Formula $\stackrel[c]{c}{*\quad*}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+משפט )הרדוקציה ל-
+\begin_inset Formula $\re$
+\end_inset
+
+( יהיו 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ שפות כך ש-
+\begin_inset Formula $L_{1}\leq_{m}L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{2}\in\re$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{1}\in\re$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{1}\in\core$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{2}\in\core$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+קיימת מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ ופ' ניתנת לחישוב 
+\begin_inset Formula $f:\com^{*}\to\com^{*}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x\in L_{1}\iff f\left(x\right)\in L_{2}$
+\end_inset
+
+ ולכן קיימת 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמחשבת את 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $N$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+: 
+\begin_inset Formula $N$
+\end_inset
+
+ תחשב את 
+\begin_inset Formula $f\left(X\right)$
+\end_inset
+
+ ותסמלץ את ריצת 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נשים לב כי 
+\begin_inset Formula $N$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $f\left(x\right)\in L_{2}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $x\in L_{1}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $N$
+\end_inset
+
+ מזהה את 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $L_{1}\in\re$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה כדי להוכיח רדוקציית מיפוי נבצע שלושה שלבים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נזהה את הצורה של הרדוקציה ונבחר פ' מיפוי.
+\end_layout
+
+\begin_layout Enumerate
+נוכיח שהפ' ניתן לחישוב.
+\end_layout
+
+\begin_layout Enumerate
+נוכיח נכונות של הרדוקציה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size larger
+סיווג שפות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ALL_{TM}=\left\{ \left\langle M\right\rangle :L\left(M\right)=\com^{*}\right\} $
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $ALL_{TM}\notin\overline{\re\cup\core}$
+\end_inset
+
+.
+ מספיק שנוכיח כי 
+\begin_inset Formula $A_{TM}\leq_{m}ALL_{TM}$
+\end_inset
+
+ )ואז 
+\begin_inset Formula $ALL_{TM}\notin\core$
+\end_inset
+
+ כי 
+\begin_inset Formula $A_{TM}\notin\core$
+\end_inset
+
+( וגם 
+\begin_inset Formula $\overline{A_{TM}}\leq_{m}ALL_{TM}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נראה ש-
+\begin_inset Formula $ALL_{TM}\notin\core$
+\end_inset
+
+.
+ נמצא פ' ניתנת לחישוב 
+\begin_inset Formula $f$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $x\in A_{TM}\iff f\left(x\right)\in ALL_{TM}$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+\left\langle M,w\right\rangle \in A_{TM}\iff f\left(\left\langle M,w\right\rangle \right)=\left\langle M'\right\rangle \in ALL_{TM}
+\]
+
+\end_inset
+
+נגדיר את 
+\begin_inset Formula $f$
+\end_inset
+
+ כך: 
+\begin_inset Formula $f$
+\end_inset
+
+ תמפה את 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+ ל-
+\begin_inset Formula $M'$
+\end_inset
+
+ שפועלת כך: בהינתן 
+\begin_inset Formula $x\in\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $M'$
+\end_inset
+
+ מתעלמת מ-
+\begin_inset Formula $x$
+\end_inset
+
+ ומסמלצת את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ומקבלת את )כל( 
+\begin_inset Formula $x$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נשים לב כי 
+\begin_inset Formula $f$
+\end_inset
+
+ ניתן לחישוב כי ניתן בזמן סופי לייצר את 
+\begin_inset Formula $M'$
+\end_inset
+
+ שמסמלצת את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \in A_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ )מההגדרה( ולכן 
+\begin_inset Formula $\forall x\in\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $M'$
+\end_inset
+
+ תקבל את 
+\begin_inset Formula $x$
+\end_inset
+
+ ואז 
+\begin_inset Formula $L\left(M'\right)=\com^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \in A_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מקבל את 
+\begin_inset Formula $w$
+\end_inset
+
+ ואז 
+\begin_inset Formula $M'$
+\end_inset
+
+ לא תקבל אף מילה כלומר 
+\begin_inset Formula $L\left(M'\right)=\varnothing$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $L\left(M'\right)\neq\com^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ קיבלנו 
+\begin_inset Formula $\left\langle M,w\right\rangle \in A_{TM}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\langle M'\right\rangle \in ALL_{TM}$
+\end_inset
+
+ כלומר הוכחנו נכונות של הרדיקוציה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נראה ש-
+\begin_inset Formula $ALL_{TM}\notin\re$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י רדוקציה מ-
+\begin_inset Formula $\overline{A_{TM}}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f$
+\end_inset
+
+ שבהינתן 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+, ממפה למ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M'$
+\end_inset
+
+ שפועלת כך: בהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+, נסמלץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ למשך 
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ צעדים ונדחה אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $M$
+\end_inset
+
+ קיבלה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ניתן לחישוב כי חישוב מילה אפשר לעשות בזמן סופי, ולהחזיר מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמסמלצת את הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל גם קורה בזמן סופי.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \in\overline{A_{TM}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מקבלת על 
+\begin_inset Formula $w$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $M'$
+\end_inset
+
+ תמיד תקבל )כי 
+\begin_inset Formula $M$
+\end_inset
+
+ אף פעם לא תקבל את 
+\begin_inset Formula $w$
+\end_inset
+
+ לא משנה כמה צעדים נריץ אותה( כלומר 
+\begin_inset Formula $L\left(M'\right)=\com^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \notin\overline{A_{TM}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $M'$
+\end_inset
+
+ תדחה מתישהו כי עבור קלט מספיק ארוך נסמלץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ מספיק צעדים כך שתקבל ואז נדחה.
+ לכן 
+\begin_inset Formula $L\left(M'\right)\neq\com^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ קיבלנו 
+\begin_inset Formula $\left\langle M,w\right\rangle \in\overline{A_{TM}}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\langle M'\right\rangle \in ALL_{TM}$
+\end_inset
+
+ כלומר הוכחנו נכונות של הרדיקוציה.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+U=USELESS=\left\{ \left\langle M\right\rangle :\text{שלא מבקרים בו לעולם}\;q_{acc}\text{ו-}\;q_{rej}\;\text{שאינו}\;M\text{יש מצד ב-}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נשים לב שגם אם יש בפ' המעברים מעבר למצב לא בהכרח שנגיע אליו.
+ נראה ש-
+\begin_inset Formula $U\in\core\backslash\re$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+ראשית נראה כי 
+\begin_inset Formula $U\in\core$
+\end_inset
+
+.
+ נבנה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $T$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $\overline{U}$
+\end_inset
+
+, כלומר אוסף המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שבהם כל המצבים משומשים, שתפעל כך:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+ תבדוק אם הקלט הוא קידוד תקין של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט, אם לא, תקבל.
+ אחרת נסמן 
+\begin_inset Formula $x=\left\langle M\right\rangle $
+\end_inset
+
+ ואז 
+\begin_inset Formula $T$
+\end_inset
+
+ תסמלץ את ריצת 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ במקביל באופן אינקרמנטלי )בסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minlex
+\lang hebrew
+( ותשמור על סרט נפרד את כל המצבים שבוקרו עד כה.
+ אם כל המצבים חוץ מ-
+\begin_inset Formula $q_{acc},q_{rej}$
+\end_inset
+
+ של 
+\begin_inset Formula $M$
+\end_inset
+
+ בוקרו, 
+\begin_inset Formula $T$
+\end_inset
+
+ תקבל את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ )אחרת נתקע(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+ נכונה כי אם 
+\begin_inset Formula $x\in\overline{L}$
+\end_inset
+
+ אז או ש-
+\begin_inset Formula $x$
+\end_inset
+
+ לא קידוד תקין של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט ואז 
+\begin_inset Formula $T$
+\end_inset
+
+ מקבלת או ש-
+\begin_inset Formula $x=\left\langle M\right\rangle $
+\end_inset
+
+ ו-
+\begin_inset Formula $M$
+\end_inset
+
+ מבקרת בכל המצבים שלה מתישהו כלומר 
+\begin_inset Formula $T$
+\end_inset
+
+ תקבל.
+ אם 
+\begin_inset Formula $x\notin\overline{L}$
+\end_inset
+
+ אז 
+\begin_inset Formula $x=\left\langle M\right\rangle $
+\end_inset
+
+ וב-
+\begin_inset Formula $M$
+\end_inset
+
+ יש מצב לא ישיג ולכן 
+\begin_inset Formula $T$
+\end_inset
+
+ אף פעם לא תקבל כלומר תרוץ לנצח.
+ לכן 
+\begin_inset Formula $L\left(T\right)=\overline{U}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נוכיח כי 
+\begin_inset Formula $U\notin\re$
+\end_inset
+
+.
+ נראה רדוקציית מיפוי מ-
+\begin_inset Formula $\overline{A_{TM}}$
+\end_inset
+
+ ל-
+\begin_inset Formula $U$
+\end_inset
+
+.
+ הרדוקציה תקיים 
+\begin_inset Formula 
+\[
+\left\langle M,w\right\rangle \in\overline{A_{TM}}\iff\left\langle M'\right\rangle =f\left(\left\langle M,w\right\rangle \right)\in U
+\]
+
+\end_inset
+
+כלומר, 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם יש ב-
+\begin_inset Formula $M'$
+\end_inset
+
+ מצב לא ישיג.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f$
+\end_inset
+
+ כך: 
+\begin_inset Formula $f$
+\end_inset
+
+ תמפה את 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+ ל-
+\begin_inset Formula $M'$
+\end_inset
+
+ שפועלת כך: בהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $M'$
+\end_inset
+
+ תסמלץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+, 
+\begin_inset Formula $M'$
+\end_inset
+
+ תיכנס למצב חדש שממנו תבקר בכל מצביה )של 
+\begin_inset Formula $M'$
+\end_inset
+
+( לא כולל 
+\begin_inset Formula $q_{acc},q_{rej}$
+\end_inset
+
+, אחרת 
+\begin_inset Formula $M'$
+\end_inset
+
+ דוחה )ולא עוברת במצב החדש(.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \in\overline{A_{TM}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מקבלת על 
+\begin_inset Formula $w$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $M'$
+\end_inset
+
+ לעולם לא תבקר במצב החדש כלומר 
+\begin_inset Formula $\left\langle M'\right\rangle \in U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \notin\overline{A_{TM}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת על 
+\begin_inset Formula $w$
+\end_inset
+
+ לכן 
+\begin_inset Formula $M'$
+\end_inset
+
+ עוברת על כל המצבים שלה כלומר 
+\begin_inset Formula $\left\langle M'\right\rangle \notin U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ניתן לחישוב כי סמלוץ היא פעולה חשיבה, לכן נותר להראות שניתן לממש את מצב
+ הטיול.
+ נוסיף 
+\begin_inset Formula $@$
+\end_inset
+
+ לא
+\begin_inset Quotes xrd
+\end_inset
+
+ב של 
+\begin_inset Formula $M'$
+\end_inset
+
+.
+ נגדיר מעבר ממצב טיול ל-
+\begin_inset Formula $@$
+\end_inset
+
+ למצב הראשון של 
+\begin_inset Formula $M'$
+\end_inset
+
+ ובכל מצב נוסיף מעבר עם 
+\begin_inset Formula $@$
+\end_inset
+
+ למעבר הבא בקידוד כשאנחנו לא מזיזים את הראש )ראינו שקל לעשות(.
+ להוסיף את הקידוד הזה אפשר לעשות בזמן לינארי במספר המצבים, שזה כמובן סופי.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+REP=REPEAT=\left\{ \left\langle M,w\right\rangle :\text{שחוזרת פעמיים}\;w\;\text{על}\;M\;\text{ויש קונפ' בריצת}\;w\;\text{מ"ט שלא עוצרת על}\;M\right\} 
+\]
+
+\end_inset
+
+נשים לב שאם יש קונפ' כזו, אף פעם לא נעצור )נחזור עליה שוב ושוב(.
+ בנוסף, קל לבנות מכונה שלא עוצרת אבל שאין לה קונפ' חוזרת )לדוגמה הולך ימינה
+ כל הזמן(.
+ נראה ש-
+\begin_inset Formula $REP\in\re\backslash\r$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $T$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמזהה את 
+\begin_inset Formula $REP$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ תפעל כך: בהינתן 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+ היא תסמלץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ תוך שמירת כל הקונפ' שבוקרו עד כה בסרט נפרד .
+ בכל שלב היא תסרוק את הקונפ' הקודמות ותשווה לנוכחית.
+ אם נמצאה חזרה, 
+\begin_inset Formula $T$
+\end_inset
+
+ תקבל את 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת אז 
+\begin_inset Formula $T$
+\end_inset
+
+ תיכנס ללולאה אינסופית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+ ניתן למימוש כי סמלוץ ראינו איך לעשות ומעקב קונפ' זו פעולה חשיבה.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \in REP$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+ ויש חזרה על קונפ' בריצת 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $T$
+\end_inset
+
+ במופע השני של הקונפ' תזהה את החזרה ותקבל את 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \notin REP$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ לא חוזרת על קונפ' בריצת 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $T$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נראה ש-
+\begin_inset Formula $REP\notin\core$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י רדוקציה 
+\begin_inset Formula $HALT_{TM}\leq_{m}REP$
+\end_inset
+
+.
+ צריך להתקיים
+\begin_inset Formula 
+\[
+\left\langle M,w\right\rangle \in HALT_{TM}\iff\left\langle N,w'\right\rangle \in REP
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם יש קונפ' שחוזרת בריצת 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w'$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f$
+\end_inset
+
+ שבהינתן 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+, מחזירה 
+\begin_inset Formula $\left\langle N,w'\right\rangle $
+\end_inset
+
+ שמסמלצת את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+, ואם היא עוצרת, 
+\begin_inset Formula $N$
+\end_inset
+
+ תחזור על קונפ' שלה )תיכנס ללולאה שלא משנה את הסרט(, ואחרת נתקע וכמובן לא
+ נחזור על קונפ'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ניתן לחישוב כי צריך רק להוסיף עוד מצב ללולאה של הקונפ' החוזרת לקידוד המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט.
+ נכונות נובעת ישירות.
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document
