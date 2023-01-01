@@ -438,7 +438,7 @@ LatexCommand tableofcontents
 
 
 \begin_inset FormulaMacro
-\newcommand{\mf}{\mathbb{\mathcal{F}}}
+\newcommand{\mf}[1]{\mathsf{#1}}
 \end_inset
 
 
@@ -543,7 +543,7 @@ LatexCommand tableofcontents
 
 
 \begin_inset FormulaMacro
-\newcommand{\ex}[1]{\textrm{Exp}\left(#1\right)}
+\newcommand{\ex}{\mathsf{EXPTIME}}
 \end_inset
 
 
@@ -704,6 +704,16 @@ LatexCommand tableofcontents
 
 \begin_inset FormulaMacro
 \newcommand{\lsb}{\textrm{LSB}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\np}{\mathsf{NP}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\p}{\mathsf{P}}
 \end_inset
 
 
@@ -21566,5 +21576,1426 @@ REP=REPEAT=\left\{ \left\langle M,w\right\rangle :\text{שחוזרת פעמיי�
 
 \end_deeper
 \end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{IX
+\backslash
+;
+\backslash
+; תורת הסיבוכיות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{IX}$
+\end_inset
+
+ | תורת הסיבוכיות 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\end_layout
+
+\begin_layout Standard
+נסיים את ההוכחה שבעיית הריצוף אינה כריעה.
+ ראינו ש-
+\begin_inset Formula $TILE$
+\end_inset
+
+ שקולה לריצוף חוקי של רבע מישור באמצעות הלמה של קניג.
+ נעשה רידוקציה מ-
+\begin_inset Formula $\overline{HALT_{TM}^{\epsilon}}$
+\end_inset
+
+ ל-
+\begin_inset Formula $TILE$
+\end_inset
+
+ וכך נוכיח ש-
+\begin_inset Formula $TILE\notin\r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מסוף ההרצאה הקודמת:
+\end_layout
+
+\begin_layout Quote
+נגרום לכל קונפ' להיות שורה של אריחים ברבע מישור ונגדיר שכנות חוקית רק אם
+ קונפ' הן עוקבות בריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ לבסוף יהיה ריצוף חוקי אינסופי אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת אף פעם על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left\langle M\right\rangle \in\overline{HALT_{TM}^{\epsilon}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האריחים בהם נשתמש הם כאלה:
+\end_layout
+
+\begin_layout Enumerate
+מרצפות השורה הראשונה: 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\boxo{\stackrel[*]{\left(q_{0},\spa\right)}{*\quad\spa}}$
+\end_inset
+
+ והשאר הם 
+\begin_inset Formula $\boxo{\stackrel[*]{\spa}{\spa\quad\spa}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מרצפות עבור מעברים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל מעבר 
+\begin_inset Formula $\delta\left(q,a\right)=\left(q',b,R\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $q\notin\left\{ q_{acc},q_{rej}\right\} $
+\end_inset
+
+, המרצפת 
+\begin_inset Formula $\boxo{\stackrel[\left(q,a\right)]{b}{*\quad\left(q',R\right)}}$
+\end_inset
+
+ ולכל אות 
+\begin_inset Formula $c\in\Gamma$
+\end_inset
+
+ גם 
+\begin_inset Formula $\boxo{\stackrel[c]{\left(q',c\right)}{\left(q',R\right)\quad*}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+לכל מעבר 
+\begin_inset Formula $\delta\left(q,a\right)=\left(q',b,L\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $q\notin\left\{ q_{acc},q_{rej}\right\} $
+\end_inset
+
+, הרמצפת 
+\begin_inset Formula $\boxo{\stackrel[\left(q,a\right)]{b}{\left(q',L\right)\quad*}}$
+\end_inset
+
+ ולכל אות 
+\begin_inset Formula $c\in\Gamma$
+\end_inset
+
+ גם 
+\begin_inset Formula $\boxo{\stackrel[c]{\left(q',c\right)}{*\quad\left(q',L\right)}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ריפוד: לכל 
+\begin_inset Formula $c\in\Gamma$
+\end_inset
+
+, נוסיף את המרצפת 
+\begin_inset Formula $\boxo{\stackrel[c]{c}{*\quad*}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב כי ב-
+\begin_inset Formula $T$
+\end_inset
+
+ יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מרצפות התחלתיות, 
+\begin_inset Formula $1+\left|\Gamma\right|$
+\end_inset
+
+ לכל מעבר ו-
+\begin_inset Formula $\left|\Gamma\right|$
+\end_inset
+
+ ריפוד כלומר מספר סופי פרופורציוני ל-
+\begin_inset Formula $\left|\Gamma\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נגדיר מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט עם 
+\begin_inset Formula $\Gamma=\left\{ \spa,b\right\} $
+\end_inset
+
+ ופ' מעברים 
+\begin_inset Formula $\delta\left(q_{0},\spa\right)=\left(q_{0},b,R\right)$
+\end_inset
+
+.
+ זו מכונה שלא עוצרת אף פעם )כל הזמן הולכת ימינה(.
+ נראה שאכן הרדוקציה מניבה ריצוף חוקי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ma.jpg
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+המרצפות ב-
+\begin_inset Formula $T$
+\end_inset
+
+ המתאים למ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שהגדרנו, בלי מרצפות הריפוד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהינתן הקונפ' ההתחלתית )השורה הראשונה, המוגדרת עם 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+(, ננסה לבנות ריצוף חוקי.
+ באיור נין לראות את הריצוף, כאשר השרוולים על הצלעות הצמודות מדגימות כיצד
+ הקונפ' מתבטאת בחיבור הזה.
+ נשים לב כי לאחר הקונפ' ההתחלתית, הדבר היחיד שאפשר לעשות זה להוסיף מעליה
+ שורה שמגדירה את הקונפ' 
+\begin_inset Formula $bq_{0}\spa$
+\end_inset
+
+, ואז בשורה הבאה בעיקרון אפשר לבחור משהו אחר עבור האריח השמאלי ביותר אבל
+ נתעלם לעתה מהמקרה הזה - אחד הריצופים החוקיים שניתן לשים הוא באמת הקונפ'
+ השלישית בריצת המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ וכן הלאה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/mal.jpg
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמת ריצוף לקונפ' המגדירות את ריצת המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם יש ריצוף חוקי של רבע מישור עם 
+\begin_inset Formula $T$
+\end_inset
+
+ המושרה מ-
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ זה עתה הראנו את הקונפ' שמאפשרות ריצוף שיכולה להמשיך עד אינסוף לדוגמה הספציפית
+ הזו, אבל זה מתקיים גם במקרה הכללי )פשוט לא נראה פורמלית(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ אם היינו עוצרים אז היה לנו 
+\begin_inset Formula $q_{acc}/q_{rej}$
+\end_inset
+
+ ואז לא היו לנו מרצפות חוקיות להמשיך איתן למעלה )המרצפות מוגדרות לכל 
+\begin_inset Formula $q\notin\left\{ q_{acc},q_{rej}\right\} $
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+ברמה העקרונית: אם היינו מוסיפים עוד ראש קורא באריח השמאלי באיזשהו שלב )אפשרי
+ מהגדרת האריחים(, היינו רק מקשים על עצמנו כי לכל הפחות שהיו לנו יותר מרצפות
+ לא חוקיות )כאלו עם 
+\begin_inset Formula $q_{acc},q_{rej}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+עד כה ראינו את 
+\begin_inset Formula $\r,\re,\core$
+\end_inset
+
+.
+ עתה נסתכל מה קורה בתוך 
+\begin_inset Formula $\r$
+\end_inset
+
+.
+ ראינו אפיון אחד והוא סיווג לפי 
+\begin_inset Formula $\reg,\cfl$
+\end_inset
+
+ וכו'.
+ האפיון הנוסף שניתן להביט בו על 
+\begin_inset Formula $\r$
+\end_inset
+
+ הוא כמות המשאבים שדרושים להכרעה )זמן, זכרון, אקראיות וכו'(.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L=\left\{ 0^{k}1^{k}:k\geq0\right\} $
+\end_inset
+
+.
+ כדי להכריע את השפה, ניתן להגדיר מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמכריע את השפה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מחיקה של ה-
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז ה-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הראשון וה-
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וה-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+השני וכו' עד שאין עוד אותיות.
+ הסיבוכיות של האלג' היא 
+\begin_inset Formula $\oo{k^{2}}$
+\end_inset
+
+ כי אנחנו עושים 
+\begin_inset Formula $k$
+\end_inset
+
+ איטרציות שכל אחת מהן דורשת 
+\begin_inset Formula $\oo k$
+\end_inset
+
+ צעדים.
+\end_layout
+
+\begin_layout Description
+הגדרה לכל 
+\begin_inset Formula $t:\fldn\to\fldn$
+\end_inset
+
+, נגדיר מחלקה 
+\begin_inset Formula 
+\[
+TIME\left(t\left(n\right)\right)=\left\{ L:\text{צעדים}\;\oo{t\left(\left|w\right|\right)}\;\text{תוך}\;w\;\text{ועוצרת על כל קלט}\;L\;\text{קיימת מ"ט דטרמיניסטית חד סרטית שמכריעה את}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה השפה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל היא ב-
+\begin_inset Formula $TIME\left(n^{2}\right)$
+\end_inset
+
+ ולמעשה גם ב-
+\begin_inset Formula $TIME\left(n\log n\right)$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מחיקה של חצי מהאותיות )וציפוף המילה( בכל פעם.
+ 
+\end_layout
+
+\begin_layout Description
+משפט אם ניתן להכריע את 
+\begin_inset Formula $L$
+\end_inset
+
+ ב-
+\begin_inset Formula $o\left(n\log n\right)$
+\end_inset
+
+ )פחות ממש מ-
+\begin_inset Formula $\oo{n\log n}$
+\end_inset
+
+( אז 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+\end_layout
+
+\begin_layout Description
+מסקנה השפה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל לא ניתנת להכרעה בפחות מ-
+\begin_inset Formula $\oo{n\log n}$
+\end_inset
+
+ צעדים.
+\end_layout
+
+\begin_layout Description
+הערה החד-סטריות חשובה כי אפשר לעשות כל מיני דברים במקביל שמגלמים בתוכם סיבוכויות
+ יותר מורכבת עם כמה סרטים.
+\end_layout
+
+\begin_layout Description
+טענה )שראינו בתרגול( לכל מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט רב סרטית דטר' שרצה בזמן 
+\begin_inset Formula $\oo{t\left(n\right)}$
+\end_inset
+
+ יש מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטר' שקולה שרצה בזמן 
+\begin_inset Formula $\oo{t^{2}\left(n\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה נגדיר את המחלקה 
+\begin_inset Formula $PTIME=\bigcup\limits _{i\geq0}TIME\left(n^{i}\right)$
+\end_inset
+
+, כלומר כל השפות שניתן להכריע בזמן פולינומיאלי, ונסמן 
+\begin_inset Formula $\np=NPTIME$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה בגלל שנסתכל על סיבוכיות פולינומיאלית לעומת לא פולינומיאלית, לא יעניין
+ אותנו עוד ריבוע על פולינום ולכן נוכל להניח שהמ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שלנו יכולה להיות גם רב סרטית.
+\end_layout
+
+\begin_layout Description
+הערה עבור מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד, נגדיר את זמן הריצה להיות המסלול הכי ארוך בעץ הריצה )וכמובן נאמר שהיא
+ מכריעה שפה אם כל הריצות שלה סופיות(.
+\end_layout
+
+\begin_layout Description
+טענה )שראינו בתרגול( לכל מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד שרצה בזמן 
+\begin_inset Formula $\oo{t\left(n\right)}$
+\end_inset
+
+, ישנה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטר' שקולה שרצה בזמן 
+\begin_inset Formula $2^{\oo{t\left(n\right)}}$
+\end_inset
+
+ )באמצעות סימלוץ כל הריצות יחד(.
+\end_layout
+
+\begin_layout Description
+הגדרה לכל 
+\begin_inset Formula $t:\fldn\to\fldn$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+NTIME\left(t\left(n\right)\right)=\left\{ L:\text{צעדים}\;\oo{t\left(\left|w\right|\right)}\;\text{תוך}\;w\;\text{ועוצרת על כל קלט}\;L\;\text{קיימת מ"ט א"ד חד סרטית שמכריעה את}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה נגדיר את המחלקה 
+\begin_inset Formula $NPTIME=\bigcup\limits _{i\geq0}NTIME\left(n^{i}\right)$
+\end_inset
+
+, כלומר כל השפות שניתן להכריע בזמן פולינומיאלי באמצעות ניחושים, ונסמן 
+\begin_inset Formula $\np=NPTIME$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\ex=\bigcup\limits _{i\geq0}TIME\left(2^{n^{i}}\right)$
+\end_inset
+
+ כלומר שניתן בסיבוכיות אקס' להכריע אותן עם מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטר'.
+\end_layout
+
+\begin_layout Description
+הערה מתקיים 
+\begin_inset Formula $\p\subseteq\np\subseteq\ex$
+\end_inset
+
+ אבל לא ידוע אילו מההכלות הן ממש ואיפה יש שוויון )לא ייתכנו שני שוויונים
+ כי ידועות שפות ב-
+\begin_inset Formula $L\in\ex\backslash\p$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+דוגמה בהינתן גרף 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+, מסלול אוילר ב-
+\begin_inset Formula $G$
+\end_inset
+
+ הוא מסלול שעובר בככל הקשתות ב-
+\begin_inset Formula $G$
+\end_inset
+
+ בדיוק פעם אחת ומסלול אוילר ב-
+\begin_inset Formula $G$
+\end_inset
+
+ הוא מסלול שעובר בכל הקודקודים ב-
+\begin_inset Formula $G$
+\end_inset
+
+ בדיוק פעם אחת.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר את המחלקות
+\begin_inset Formula 
+\[
+\mathsf{D-ST-HAMPATH}=\left\{ \left\langle G,s,t\right\rangle :t\;\text{ל-}\;s\text{גרף מכוון ויש מסלול המילטון מ-}\;G\right\} 
+\]
+
+\end_inset
+
+ו-
+\begin_inset Formula 
+\[
+\mathsf{U-HAMPATH}=\left\{ \left\langle G\right\rangle :\text{לא מכוון ומכיל מסלול המילטון}\;G\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא ידוע האם 
+\begin_inset Formula $\mathsf{D-ST-HAMPATH}\in\p$
+\end_inset
+
+ אבל ידוע שהיא ב-
+\begin_inset Formula $\np\subseteq\ex$
+\end_inset
+
+ כי יש מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטרמיניסטי שמכריעה אותה בזמן אקס' שפועלת באופן הבא: בהינתן 
+\begin_inset Formula $G,s,t$
+\end_inset
+
+, עוברת על כל המילים ב-
+\begin_inset Formula $V^{n}$
+\end_inset
+
+ ולכל מילה, בודקת האם מתחילה ב-
+\begin_inset Formula $s$
+\end_inset
+
+ מסתיימת ב-
+\begin_inset Formula $t$
+\end_inset
+
+ ומכילה את כל הקודקודים בדיוק פעם אחת ומהווה מסלול, ואם כן, מקבלת.
+\end_layout
+
+\begin_layout Standard
+עתה נוכיח כי 
+\begin_inset Formula $\mathsf{D-ST-HAMPATH}\in\np$
+\end_inset
+
+.
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד שמכריעה את השפה בזמן פולינומיאלי תפעל כך: בהינתן 
+\begin_inset Formula $G,s,t$
+\end_inset
+
+, מנחשת מילה 
+\begin_inset Formula $\pi$
+\end_inset
+
+ ב-
+\begin_inset Formula $V^{n}$
+\end_inset
+
+ ומקבלת אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\pi$
+\end_inset
+
+ היא מסלול המילטון מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הבדיקה על 
+\begin_inset Formula $\pi$
+\end_inset
+
+ דורשת זמן פולינומיאלי ולכן השפה דורשת זמן פולינומיאלי.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\mathsf{COMPOSITE}=\left\{ x\in\fldn:1\neq\exists p,q\in\fldn,n=pq\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ נתון בבינארית )כל הפריקים(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\mathsf{COMPOSITE}\in\ex$
+\end_inset
+
+ כי אפשר לעבור על כל המילים מ-
+\begin_inset Formula $1$
+\end_inset
+
+ ועד 
+\begin_inset Formula $2^{\left|x\right|}$
+\end_inset
+
+ )מספר הספרות הבינאריות בהן הוא נתון( ולראות אם הם מחלקים.
+ בנוסף 
+\begin_inset Formula $\mf{COMPOSITE}\in\np$
+\end_inset
+
+ כי אפשר להגדיר מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד שמכריעה את 
+\begin_inset Formula $\mf{COMPOSITE}$
+\end_inset
+
+ בזמן פולי' ע
+\begin_inset Quotes xrd
+\end_inset
+
+י כך שבהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+, היא תנחש 
+\begin_inset Formula $p\in\fldn$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $1<p<x-1$
+\end_inset
+
+ ותקבל אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $p$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $x$
+\end_inset
+
+ ללא שארית.
+\end_layout
+
+\begin_layout Standard
+פ' המעברים לחלק של הגרלת 
+\begin_inset Formula $p$
+\end_inset
+
+ תקיים 
+\begin_inset Formula $\delta\left(q,\spa\right)=\left\{ \left\langle 0\;\text{לכתוב}\right\rangle ,\left\langle 1\;\text{לכתוב}\right\rangle ,\left\langle \text{לסיים את הכתיבה}\right\rangle \right\} $
+\end_inset
+
+.
+ נשים לב כי אין לנו בדיקה ש-
+\begin_inset Formula $1<p<x-1$
+\end_inset
+
+ אבל פשוט נדחה אם זה המצב.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Description
+הערה בעיות ב-
+\begin_inset Formula $\np$
+\end_inset
+
+ מתאפיינות ע
+\begin_inset Quotes xrd
+\end_inset
+
+י התכונות הבאות )מודגמות על 
+\begin_inset Formula $\mf{D-ST-HAMPATH}$
+\end_inset
+
+ אבל נכונות לכולן(:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+קשה להכריע האם יש מסלול המילטוני בגרף.
+\end_layout
+
+\begin_layout Itemize
+קל לבדוק האם מועמד למסלול המילטוני אכן משכנע.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה לא ברור )אלא אם יש אפיון מתמטי( שאפשר לשכנע בקלות שאין מסלול המילטוני
+ )או כל בעיה אחרת(.
+\end_layout
+
+\begin_layout Description
+דוגמה לבדוק שמספר הוא פריק זה קל, לבדוק האם הוא ראשוני גם אפשר בזמן פולינומיאלי
+ אבל זו תוצאה מה-
+\numeric on
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שנים האחרונות.
+\end_layout
+
+\begin_layout Description
+דוגמה קריאת 
+\begin_inset Formula $x$
+\end_inset
+
+ והדפסת 
+\begin_inset Formula $*$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i=1$
+\end_inset
+
+ עד 
+\begin_inset Formula $x$
+\end_inset
+
+ היא בעלת סיבוכיות לינארית באורך הקלט אם 
+\begin_inset Formula $x$
+\end_inset
+
+ נתון בבסיס אונארי, ואילו בסיבוכיות אקס' אם 
+\begin_inset Formula $x$
+\end_inset
+
+ נתון בבסיס 
+\begin_inset Formula $b>1$
+\end_inset
+
+.
+ זאת משום שבמקרה כזה אורך הקלט הוא 
+\begin_inset Formula $\log_{b}x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+מוודא
+\bar default
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ עבור שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ הוא מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטר' כך ש-
+\begin_inset Formula $L=\left\{ w:\left(w,c\right)\;\text{מקבלת את}\;V\text{כך ש-}\;c\;\text{קיים}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נוכל להגדיר מוודא ל-
+\begin_inset Formula $\mf{HAMPATH}$
+\end_inset
+
+ כך ששפתו 
+\begin_inset Formula $L\left(V\right)=\left\{ \left(\desc{\left\langle G,s,t\right\rangle }w,\desc{\pi}c\right):t\;\text{ל-}\;s\;\text{מסלול}\text{המילטון}\text{מ-}\;\pi\text{גרף מכוון ו-}\;G\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\bar under
+
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמה
+\bar default
+ אם 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+ ואם 
+\begin_inset Formula $L\in\p$
+\end_inset
+
+ אז 
+\begin_inset Formula $\p=\np$
+\end_inset
+
+, כלומר שניתן להכריעם בזמן פולי' עם מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד, ואם נמצא אלג' בזמן פולי' דטר' להכרעת 
+\begin_inset Formula $L$
+\end_inset
+
+ נפתור בעיה פתוחה במדמ
+\begin_inset Quotes xrd
+\end_inset
+
+ח - 
+\begin_inset Formula $\p\overset{?}{=}\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמה אפשר להפסיק לחפש אלג' פולי' ל-
+\begin_inset Formula $L$
+\end_inset
+
+ כי חיפוש אלג' כזה פותר בעיה פתוחה ולא סביר שסתם נפתור עכשיו את 
+\begin_inset Formula $\p=\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה משתנה בוליאני הוא משתנה שמקבל ערכים מ-
+\begin_inset Formula $\left\{ T,F\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נוסחה בולינאית היא משתנה בוליאני, או 
+\begin_inset Formula $\lnot\varphi_{1},\varphi_{1}\land\varphi_{2},\varphi_{1}\lor\varphi_{2}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\varphi_{1},\varphi_{2}$
+\end_inset
+
+ נוסחאות בוליאניות.
+\end_layout
+
+\begin_layout Standard
+בהינתן השמה 
+\begin_inset Formula $f:X\to\left\{ T,F\right\} $
+\end_inset
+
+ למשתני הנוסחה, ניתן לחשב את ערך האמת של הנוסחה )באינדוקציה(.
+\end_layout
+
+\begin_layout Standard
+נוסחה 
+\begin_inset Formula $\theta$
+\end_inset
+
+ היא ב-
+\begin_inset Formula $\mf{CNF}$
+\end_inset
+
+ אם 
+\begin_inset Formula $\theta$
+\end_inset
+
+ מהצורה 
+\begin_inset Formula $\left(\ell_{1}^{1}\lor\ldots\lor\ell_{1}^{k_{1}}\right)\land\ldots\left(\ell_{m}^{1}\lor\ldots\lor\ell_{m}^{k_{m}}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\ell_{i}^{j}\in\left\{ x_{1},\ldots,x_{n},\overline{x_{1}},\ldots,\overline{x_{n}}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה שפת הנוסחאות הספיקות היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמה.
+\begin_inset Formula $\mf{SAT}=\left\{ \left\langle \phi\right\rangle :\mf{CNF}\;\text{נוסחהפ ספיקה}\;\phi\right\} $
+\end_inset
+
+.
+ משפט קוק-לוין הוכיח ש-
+\begin_inset Formula $\mf{SAT}\in\p$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\p=\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\mf{SAT}\in\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד עבור 
+\begin_inset Formula $\mf{SAT}$
+\end_inset
+
+ פשוט תנחש השמה 
+\begin_inset Formula $f$
+\end_inset
+
+ עבור המשתנים ומשערכת את הנוסחה לפי 
+\begin_inset Formula $f$
+\end_inset
+
+ ואם השתערכה ל-
+\begin_inset Formula $T$
+\end_inset
+
+, מקבלת.
+ בדומה, ניתן לוודא מועמד להשמה בזמן פולי' ולכן מהאפיון השקול עם מוודאים,
+ 
+\begin_inset Formula $\mf{SAT}$
+\end_inset
+
+ גם כן ב-
+\begin_inset Formula $\np$
+\end_inset
+
+ עם המוודא ששפתו
+\begin_inset Formula 
+\[
+L\left(V\right)=\left\{ \left\langle \theta,f\right\rangle :\theta\;\text{השמה מספקת עבור}\;f\text{ו-}\;\mf{CNF}\text{נוסחה ב-}\;\theta\right\} 
+\]
+
+\end_inset
+
+ 
+\end_layout
+
 \end_body
 \end_document

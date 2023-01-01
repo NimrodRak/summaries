@@ -30358,7 +30358,7 @@ resolver
 \uwave default
 \noun default
 \color inherit
-אלינו בכל השאלות על כתובות מהצורה 
+אלינו )הרשעים( בכל השאלות על כתובות מהצורה 
 \begin_inset Formula $*.google.com$
 \end_inset
 
@@ -30651,5 +30651,2308 @@ DNS
  חדשים לאינטרנט.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Standard
+נמשיך בחיפוש אחר אלג' מוצלח לשליחת הודעות אמינה מעל שכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{GBN}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Go Back N
+\end_layout
+
+\begin_layout Standard
+אלג'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Go Back N
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא גרסה משופרת של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+S&W
+\lang hebrew
+.
+ נניח שיש לנו חלון באיזושהו גודל.
+\end_layout
+
+\begin_layout Description
+המקבל בכל פעם שמקבל פקטה חדשה, אם היא ברצף עם ההודעות הקודמות שקיבל )לדוגמה
+ קיבלנו 
+\begin_inset Formula $1,2$
+\end_inset
+
+ ועכשיו 
+\begin_inset Formula $3$
+\end_inset
+
+(, שולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם מספר הפקטה +
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סימון לכך שהמקבל אומר לשולח 
+\begin_inset Quotes xld
+\end_inset
+
+קיבלתי את כל ההודעות עד 
+\begin_inset Formula $X$
+\end_inset
+
+ )לא כולל(
+\begin_inset Quotes xld
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+השולח מזיז את החלון בהתאם כשהוא מקבל את ה-
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ושולח בכל פעם את הודעות מהחלון לפי הסדר, ופותח טיימר על כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ פקטה, כאשר אם לא קיבל אישור אחרי איזשהו 
+\begin_inset Formula $T_{out}$
+\end_inset
+
+, הוא שולח את הפקטה שוב.
+\end_layout
+
+\begin_layout Standard
+אינטואטיבית, השולח שולח פקטות ועל כל אחת מהן יש לו טיימר נפרד שלפיו הוא
+ שולח שוב ושוב את הפקטה עד שהיא מגיעה, ואז כשמצליחים לשלוח, הוא מהטיימר
+ של הפקטות שיצאו מהחלון ויוצר טיימרים חדשים לפקטות החדשות שיש לשלוח.
+\end_layout
+
+\begin_layout Standard
+למה החלון עוזר לנו? אם פקטה נפלה בשליחה זה לא שונה מ-
+\lang english
+S&W
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ממוקבל.
+ אבל, אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהמקבל נפל - יקרה דבר אחר.
+ תלוי בגודל החלון והטיים-אוט, השולח יסיים לשלוח את כל החלון ולא יוכל להזיז
+ את החלון כי לא קיבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על הפקטה שנפלה באמצע.
+ לכן הוא ישלח שוב את הפקטה שלדעתו נפלה אבל מהר מאוד יקבל מהשולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ שלא נפל שמודיע לו שהוא יכול להזיז את החלון ביותר מצעד אחד.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+נפל ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של פקטה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אבל 
+\begin_inset Formula $4,5,6$
+\end_inset
+
+ התקבלו, אז המקבל ישלח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\lang hebrew
+ 
+\numeric on
+7
+\numeric off
+ וזה יגיע לשולח במוקדם או מאוחר והוא יוכל להזיז את החלון בכמה צעדים כבר.
+\end_layout
+
+\begin_layout Standard
+את הפקטות שאנחנו שולחים אנחנו ממספרים עם מספר כלשהו של ביטים 
+\begin_inset Formula $b$
+\end_inset
+
+ )מספר נמוך כי אנחנו לא רוצים שכל הפקטה יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+header
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של אינדקס(, ואז ממספרים את הפקטות מודולו 
+\begin_inset Formula $2^{b}$
+\end_inset
+
+ )פשוט אין יותר ביטים לייצוג המספר(.
+\end_layout
+
+\begin_layout Description
+דוגמה נראה למה צריך למספר את הפקטות במודולו גבוה מגודל החלון.
+ נניח שיש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חלון בגודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכל הפקטות הגיעו למקבל אבל כל ה-
+\lang english
+ACK
+\lang hebrew
+-ים לא התקבלו ע
+\begin_inset Quotes xrd
+\end_inset
+
+י השולח.
+ לכן השולח ישלח את כל הפקטות שוב, והשולח יחשוב שזה כבר רצף של הודעות חדשות
+ כי מבחינתו הוא אישר קבלה.
+ כך קורה שהשולח והמקבל כבר לא מסכימים על תוכן הפקטות ונהרס לנו המידע.
+\end_layout
+
+\begin_layout Standard
+מהדוגמה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל נובע בחלון בגודל 
+\begin_inset Formula $N$
+\end_inset
+
+, צריך לפחות 
+\begin_inset Formula $\lceil\log\left(N+1\right)\rceil$
+\end_inset
+
+ ביטים כדי בשביל אינדוקס הפקטות )ואז בדוגמה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל היה יוצא שהנשלח את הפקטה ה-
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והמקבל יודיע שהוא קיבל את כל האלה שלפני והם ידעו שהם מדברים על אותו הדבר(.
+\end_layout
+
+\begin_layout Description
+שאלה נסתכל על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+GBN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בוריאציה הבאה:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מצליח בהסת' 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, פקטה נופלת בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ כש-
+\lang english
+A
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מזהה כישלון )נגמר הטיים-אווט(, הוא שולח את הפקטה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+L
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים גם אם הוא מקבל עליה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כבר.
+ המקבל עונה רק פעם אחת על כל פקטה חדשה ומתעלם מהשאר.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בהינתן ש-
+\begin_inset Formula $L=2,T_{prop}=2,T_{packet}=1,T_{pt}=1$
+\end_inset
+
+, גודל החלון 
+\begin_inset Formula $6$
+\end_inset
+
+ ופקטה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נכשלת שלוש פעמים )והשאר מגיעות(, כיצד יראה תרשים התקשורת בין השולח למקבל?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ראשית 
+\begin_inset Formula $T_{out}=2T_{prop}+T_{pt}+T_{ack}=2\cdot2+1+0=5$
+\end_inset
+
+.
+ לכן הודעה מספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תיכשל, ולאחר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ פקטות אחרות שישלחו )
+\begin_inset Formula $3-7$
+\end_inset
+
+(, השולח יקבע שההודעה לא נשלחה בהצלחה וישלח את 
+\begin_inset Formula $2$
+\end_inset
+
+ פעמיים, אלו לא יגיעו, הוא ישלח שוב גם את השאר, ואז בפעם הבאה שישלח את 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמיים זה כן יצליח.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ab.jpg
+	lyxscale 30
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+תרשים התקשורת בין השולח והמקבל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מה ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הפרוטוקול?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+את ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשר לחשב או לפי הסתכלות על חלון זמן וחישוב כמה פקטות בתוחלת נשלח בהצלחה
+ בזמן הזה )
+\begin_inset Formula $T_{suc}$
+\end_inset
+
+(, או לפי הסתכלות על פקטה וחישוב כמה זמן יקח לה בתוחלת להישלח בהצלחה, אנחנו
+ נעשה לפי השיט השנייה.
+\end_layout
+
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula $\eta=\frac{T_{packet}}{E\left[T_{waste}\right]}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $T_{waste}$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+מ המייצג כמה זמן ביזבזנו כולל השליחה המוצלחת בסוף.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ ההסת' שהצלחנו לשדר בבליץ 
+\begin_inset Formula $L$
+\end_inset
+
+ ההודעות ה-
+\begin_inset Formula $k$
+\end_inset
+
+ ו-
+\begin_inset Formula $T_{waste,k}$
+\end_inset
+
+ הזמן שביבזבנו אם נכשלנו 
+\begin_inset Formula $k-1$
+\end_inset
+
+ בליצים ואז הצלחנו ב-
+\begin_inset Formula $k$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $E\left[T_{waste}\right]=\sum\limits _{k=0}^{\infty}p_{k}T_{waste,k}$
+\end_inset
+
+ )תוחלת שלמה(.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k=0$
+\end_inset
+
+, ההסת' היא 
+\begin_inset Formula $1-p$
+\end_inset
+
+.
+ ההסת' שנצליח אחרי בליץ השידור הראשון היא 
+\begin_inset Formula $p_{1}=p\left(1-p^{L}\right)$
+\end_inset
+
+ )לא הצלחנו פעם אחת, ואז לא נכשלנו לפחות פעם אחת(, ובצעד ה-
+\begin_inset Formula $k$
+\end_inset
+
+-י, 
+\begin_inset Formula $p_{k}=p\cdot\left(p^{L}\right)^{k-1}\left(1-p^{L}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הזמן שאנחנו מבזבזים לאחר 
+\begin_inset Formula $k$
+\end_inset
+
+ בליצים הוא 
+\begin_inset Formula $T_{packet}+k\left(T_{out}+LT_{packet}\right)$
+\end_inset
+
+ )טיימר הטיים-אווט מתחיל מסוף הבליץ(.
+ את הטור לא נחשב ונשאיר לסטודנטית המשקיעה, אבל נראה שהתוצאה הסופית יוצאת
+\begin_inset Formula 
+\[
+\eta=\frac{1-p^{L}}{1-p^{L}+p\left(a+L-1\right)}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $a=\frac{T_{out}+T_{packet}}{T_{packet}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מה ה-
+\lang english
+goodput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+GBN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קלאסי?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+זה פשוט המקרה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל עם 
+\begin_inset Formula $L=1$
+\end_inset
+
+! לכן התשובה היא 
+\begin_inset Formula $\frac{1-p}{1-p+pa}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{SR}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Selective Repeat
+\end_layout
+
+\begin_layout Standard
+נניח שלמקבל יש באפר )בגודל חלון השולח( שהוא שומר בו פקטות שקיבל, השולח שולח
+ בחלון זז, ו-
+\lang english
+ACK
+\lang hebrew
+-ים משמעם רק 
+\begin_inset Quotes xld
+\end_inset
+
+קיבלתי את ההודעה ה-
+\begin_inset Formula $i$
+\end_inset
+
+
+\begin_inset Quotes xrd
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ )ולא 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צובר כמו ב-
+\lang english
+GBN
+\lang hebrew
+(.
+ לאחר שהמקבל ממלא באפר )קיבל את כל ההודעות מהחלון הזה לפי הסדר(, הוא מעביר
+ הלאה את המידע ומפנה את החלון.
+\end_layout
+
+\begin_layout Description
+דוגמה נניח גודל חלון 
+\begin_inset Formula $N=4$
+\end_inset
+
+, ומספור פקטות עם 
+\begin_inset Formula $2N-1$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מספרים )מודולו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+(.
+ נראה למה 
+\begin_inset Formula $2N-1$
+\end_inset
+
+ פקטות זה לא מספיק.
+ בתרשים הבא השולח מצליח לשלוח את 
+\begin_inset Formula $1-4$
+\end_inset
+
+ ואז 
+\begin_inset Formula $5-7$
+\end_inset
+
+ נכשלות אבל 
+\begin_inset Formula $8=1\mod7$
+\end_inset
+
+ כן מצליח להישלח.
+ המקבל לא יודע האם ההודעה החדשה שממוספרת ב-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)ייתכן שה-
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלו לא התקבל( או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+!
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/8.jpg
+	lyxscale 30
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+תרשים התקשורת שגורם להתבדרות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכן נדרש לפחות 
+\begin_inset Formula $2N$
+\end_inset
+
+ מספרים בחלון, כלומר 
+\begin_inset Formula $\lceil\log2N\rceil$
+\end_inset
+
+ ביטים.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+שאלה נניח שיש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אופטימלי, כלומר, גודל חלון ובאפר אינסופי, אינסוף ביטים למספור הפקטות,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא נכשלים ו-
+\begin_inset Formula $T_{ack}$
+\end_inset
+
+ זניח.
+ בנוסף נניח שפקטות נופלות בהסת' 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מה ה-
+\lang english
+goodput
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מספיק לנתח לפקטה אחת )כי כל הפקטות ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת ומתפלגות אותו הדבר ולכן החישוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עובר הכללה טריוויאלית לאינסוף הודעות(.
+ נחשב ראשית באמצעות 
+\begin_inset Formula $\frac{T_{packet}}{E\left[T_{waste}\right]}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T_{waste}$
+\end_inset
+
+ מתפלג גאומטרית עם פרמטר 
+\begin_inset Formula $1-p$
+\end_inset
+
+ )ההסת' שמצליחים( כפול 
+\begin_inset Formula $T_{packet}$
+\end_inset
+
+ )
+\begin_inset Formula $T_{out}=T_{packet}$
+\end_inset
+
+ כי השאר זניח(, לכן תוחלתו 
+\begin_inset Formula $\frac{1}{1-p}T_{packet}$
+\end_inset
+
+ ואז 
+\begin_inset Formula $\eta=1-p$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document
