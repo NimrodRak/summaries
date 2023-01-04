@@ -22997,5 +22997,622 @@ L\left(V\right)=\left\{ \left\langle \theta,f\right\rangle :\theta\;\text{השמ
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+תרגיל 
+\begin_inset Formula $L=\left\{ \left\langle M_{1},M_{2}\right\rangle :\text{-מסכימות}10\;\text{הן}\;L\left(M_{1}\right),L\left(M_{2}\right)\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ שפות 
+\begin_inset Formula $10$
+\end_inset
+
+-מסכימות אם קיימות לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מילים ב-
+\begin_inset Formula $\com^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ w_{i}\right\} _{i=1}^{10}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w_{i}\in L_{1}\iff w_{i}\in L_{2}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\in\left[10\right]$
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $L\notin\overline{\re\cup\core}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נראה ש-
+\begin_inset Formula $L\notin\core$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י רדוקציה 
+\begin_inset Formula $\mf{HALT}_{TM}^{\epsilon}\leq L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f$
+\end_inset
+
+ באופן הבא: בהינתן 
+\begin_inset Formula $M$
+\end_inset
+
+, נחזיר שתי מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ מסמלצת את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ ועונה כמוה )אם היא עוצרת(, ו-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ מקבלת כל קלט.
+ ברור ש-
+\begin_inset Formula $f$
+\end_inset
+
+ חשיבה, נראה נכונות.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M\in\mf{HALT}_{TM}^{\epsilon}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ תקבל כל קלט וגם 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ ולכן ברור שהן 
+\begin_inset Formula $10$
+\end_inset
+
+-מסכימות כלומר 
+\begin_inset Formula $\left\langle M_{1},M_{2}\right\rangle \in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M\notin\mf{HALT}_{TM}^{\epsilon}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ לא תקבל אף קלט ו-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ כן תקבל כל קלט ולכן הן לא מסכימות על שום דבר כלומר 
+\begin_inset Formula $\left\langle M_{1},M_{2}\right\rangle \notin L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נראה ש-
+\begin_inset Formula $L\notin\re$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י רדוקציה 
+\begin_inset Formula $\overline{\mf{HALT}_{TM}^{\epsilon}}\leq L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f$
+\end_inset
+
+ באופן הבא: בהינתן 
+\begin_inset Formula $M$
+\end_inset
+
+, נחזיר שתי מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ מסמלצת את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ ועונה כמוה )אם היא עוצרת(, ו-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ דוחה כל קלט )אותה בנייה רק ש-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ הפוכה(.
+ ברור ש-
+\begin_inset Formula $f$
+\end_inset
+
+ חשיבה, נראה נכונות )הוכחה משלימה לנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל(.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M\in\overline{\mf{HALT}_{TM}^{\epsilon}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ לא תקבל אף קלט ו-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ גם לא תקבל אף קלט ולכן הן מסכימות על הכל ולכן 
+\begin_inset Formula $\left\langle M_{1},M_{2}\right\rangle \in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M\notin\overline{\mf{HALT}_{TM}^{\epsilon}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ תקבל כל קלט ו-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ לא תקבל אף קלט כלומר 
+\begin_inset Formula $\left\langle M_{1},M_{2}\right\rangle \notin L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+הגדרה 
+\bar under
+תכונה סמנטית
+\bar default
+ של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט היא קבוצה 
+\begin_inset Formula $P$
+\end_inset
+
+ של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט, כך שלכל זוג מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+, אם 
+\begin_inset Formula $L\left(M_{1}\right)=L\left(M_{2}\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $M_{1}\in P\iff M_{2}\in P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )רייס( נגדיר 
+\begin_inset Formula $L_{P}=\left\{ \left\langle M\right\rangle :M\in P\right\} $
+\end_inset
+
+ עבור 
+\begin_inset Formula $P$
+\end_inset
+
+ תכונה סמנטית, אזי 
+\begin_inset Formula $L_{\p}\notin\r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $L=\left\{ \left\langle M\right\rangle :\forall w\in\com^{*},w\in L\left(M\right)\iff ww^{R}ww^{R}\in L\left(M\right)\right\} $
+\end_inset
+
+.
+ כאן התכונה הסמנטית 
+\begin_inset Formula $P$
+\end_inset
+
+ מכילה את כל המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שעונות אותו הדבר על 
+\begin_inset Formula $w$
+\end_inset
+
+ ו-
+\begin_inset Formula $ww^{R}ww^{R}$
+\end_inset
+
+, ואז 
+\begin_inset Formula $L_{P}=L$
+\end_inset
+
+ )
+\begin_inset Formula $L$
+\end_inset
+
+ מכילה קידודים(.
+\end_layout
+
+\begin_layout Description
+טענה תהי 
+\begin_inset Formula $P$
+\end_inset
+
+ תכונה סמנטית לא טריוויאלית של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט כך ש-
+\begin_inset Formula $T_{\varnothing}\notin P$
+\end_inset
+
+ )המכונה עם השפה הריקה(, אזי 
+\begin_inset Formula $A_{TM}\leq L_{P}$
+\end_inset
+
+ )כלומר 
+\begin_inset Formula $L_{P}\notin\core$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+מהיות 
+\begin_inset Formula $P$
+\end_inset
+
+ לא טריוויאלית, קיימת 
+\begin_inset Formula $\left\langle H\right\rangle \in P$
+\end_inset
+
+ )כך ש-
+\begin_inset Formula $L\left(H\right)\neq\varnothing$
+\end_inset
+
+ כי 
+\begin_inset Formula $T_{\varnothing}\notin P$
+\end_inset
+
+(.
+ נרצה 
+\begin_inset Formula $f$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left\langle M,w\right\rangle \in A_{TM}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $f\left(\left\langle M,w\right\rangle \right)=\left\langle T\right\rangle \in L_{P}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $T\in P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $f$
+\end_inset
+
+ באופן הבא: בהינתן 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+, תחזיר 
+\begin_inset Formula $\left\langle T\right\rangle $
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שפועלת כך: בהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T$
+\end_inset
+
+ תסמלץ את ריצת 
+\begin_inset Formula $M$
+\end_inset
+
+ ע 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ דחה, 
+\begin_inset Formula $T$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ אחרת אם מקבלת.
+ נעבור לשלב הבא.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T$
+\end_inset
+
+ תסמלץ את ריצת 
+\begin_inset Formula $H$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ותענה כמוה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ חשיבה כי קל להניח מילה על הסרט ולסמלץ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט אחרת שנתון הקידוד שלה מראש, נראה נכונות.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \in A_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(T\right)=L\left(H\right)$
+\end_inset
+
+ כי תמיד נעבור לשלב השני.
+ 
+\begin_inset Formula $P$
+\end_inset
+
+ תכונה סמנטית ו-
+\begin_inset Formula $H\in P$
+\end_inset
+
+ ולכן מההגדרה 
+\begin_inset Formula $T\in P$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left\langle T\right\rangle \in L_{P}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \notin A_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(T\right)=\varnothing$
+\end_inset
+
+ כי נדחה תמיד בשלב הראשון אבל 
+\begin_inset Formula $L\left(H\right)\neq\varnothing$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L\left(H\right)\neq L\left(T\right)$
+\end_inset
+
+ כלומר מההגדרה 
+\begin_inset Formula $T\notin P$
+\end_inset
+
+.ען
+\end_layout
+
 \end_body
 \end_document
