@@ -31020,7 +31020,7 @@ ACK
 
 \begin_layout Standard
 אינטואטיבית, השולח שולח פקטות ועל כל אחת מהן יש לו טיימר נפרד שלפיו הוא
- שולח שוב ושוב את הפקטה עד שהיא מגיעה, ואז כשמצליחים לשלוח, הוא מהטיימר
+ שולח שוב ושוב את הפקטה עד שהיא מגיעה, ואז כשמצליחים לשלוח, הוא נפטר מהטיימר
  של הפקטות שיצאו מהחלון ויוצר טיימרים חדשים לפקטות החדשות שיש לשלוח.
 \end_layout
 
@@ -32059,7 +32059,7 @@ status open
 \begin_inset Graphics
 	filename img/ab.jpg
 	lyxscale 30
-	scale 90
+	scale 50
 
 \end_inset
 
@@ -32476,8 +32476,8 @@ ACK
 GBN
 \lang hebrew
 (.
- לאחר שהמקבל ממלא באפר )קיבל את כל ההודעות מהחלון הזה לפי הסדר(, הוא מעביר
- הלאה את המידע ומפנה את החלון.
+ המקבל, כמו השולח, מזיז את הבאפר שלו לאינדקס הראשון שעוד לא קיבל בכל פעם,
+ הוא מעביר הלאה את המידע שעתה קפץ מעליו בהזזת החלון.
 \end_layout
 
 \begin_layout Description
@@ -32549,7 +32549,7 @@ GBN
 \begin_inset Formula $2N-1$
 \end_inset
 
- פקטות זה לא מספיק.
+ אינדקסים לפקטות זה לא מספיק.
  בתרשים הבא השולח מצליח לשלוח את 
 \begin_inset Formula $1-4$
 \end_inset
@@ -32717,7 +32717,7 @@ status open
 \begin_inset Graphics
 	filename img/8.jpg
 	lyxscale 30
-	scale 90
+	scale 50
 
 \end_inset
 
@@ -32954,5 +32954,2594 @@ goodput
 
 \end_deeper
 \end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{X
+\backslash
+;
+\backslash
+; ניתוב תוך-ארגוני}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{X}$
+\end_inset
+
+ |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ניתוב תוך-ארגוני
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+כשחולקו כתובות 
+\begin_inset Formula $\ip$
+\end_inset
+
+, הן חולקו באופן לא הגיוני/שוויוני וזה יוצר כיום בעיות.
+ לשם כך המציאו את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IPv6
+\lang hebrew
+, בו יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+40
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים לכתובת במקום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+32
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ושינויים בפורמט ה-
+\lang english
+header
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כך שיהיה יותר מתאים לסוג התקשורת שיש כיום.
+\end_layout
+
+\begin_layout Standard
+בלתי אפשרי להשיג הסכמה בין כל הגורמים הנדרשים לשינוי הזה, והוא לא יכול לקרות
+ באופן פתאומי, אלא בהכרח באופן אבולוציוני - כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NIC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חדש שמיוצר תומך ב-
+\lang english
+IPv6
+\lang hebrew
+, אבל אף אחד לא יעז לעבור ברגע אחד לתקשורת עם העולם החיצון עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IPv6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי הפקטות שלו פשוט יפלו כי לא כולם תומכים.
+ מי שכן משתמשים בפרוטוקול כרגע הם ארגונים שיכולים לשלוט במה שקורה בתוכם
+ -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ISP
+\lang hebrew
+-ים, ארגונים כמו גוגל וכו'.
+\end_layout
+
+\begin_layout Standard
+למה כל האינטרנט לא יכול להיות רשת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחת גדולה? למה היינו צריכים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+STP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ולחבר ברודקאסטים באמצעות סוויצ'ים ולא פשוט לתקשר בשכבה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+? אין סיבה טובה! זה היה אולי אפילו עובד יותר טוב, אבל כבר מאוחר מדי - הרשת
+ התפתחה בדרך כלשהי ואכאמור אי אפשר לעשות שינוי מיידי, בטח לא בסדר גודל כזה.
+\end_layout
+
+\begin_layout Standard
+כשמאפיינים רשת, יש שני דברים שצריך להגדיר - הטופולוגיה של הרשת, כלומר איך
+ נראה הגרף שמחבר בין יחידות הקצה, ואלג' הניתוב - איך מעבירים בין יחידות
+ קצה את הפקטות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{טופולוגיה של רשת}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+טופולוגיה של רשת
+\end_layout
+
+\begin_layout Standard
+לכל רשת יש כמה מאפיינים חשובים ברמת הטופולוגיה:
+\end_layout
+
+\begin_layout Enumerate
+קוטר - המרחק הקצר ביותר הארוך ביותר בין שני קודקודים )לכל שני קודקודים יש
+ מרחק קצר ביותר, אז הזוג הכי רחוק במטריקה הזו(.
+\end_layout
+
+\begin_layout Enumerate
+דרגת קודקוד - כמה חיבורים )פורטים( יש לכל קודקוד.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Bisection Bandwith
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- רוחב הפס הנמוך ביותר שקיים כשחצי כלשהו של הרשת מנסה לשלוח מידע לחצי שני
+ של רשת )הכללה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Min Cut - Max Flow
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+רשת 
+\begin_inset Quotes xld
+\end_inset
+
+נוחה
+\begin_inset Quotes xrd
+\end_inset
+
+ היא רשת עם קוטר קטן )כולם קרובים אחד לשני(, דרגה נמוכה )יקר לייצר מכשירים
+ עם הרבה(, ו-
+\lang english
+Bisection Bandwith
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גבוה )מעבר תקשורת אופטימלי(, אבל כמובן שזה טריידוף כי השיקולים האלה מתנגשים
+ אחד בשני.
+\end_layout
+
+\begin_layout Standard
+בהינתן רשת, יש לנו 
+\begin_inset Formula $\frac{1}{2}{n \choose \frac{n}{2}}$
+\end_inset
+
+ אפשרויות לחלוקה לשתי קבוצות שוות )
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ בגלל המקרה הסימטרי(, כך שחישוב ה-
+\lang english
+Bisection Bandwith
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא לא יעיל.
+\end_layout
+
+\begin_layout Description
+דוגמה האם הרשת הבאה היא אופטימלית? כמובן שלא, כי יש צוואר בקבוק חמור בין
+ ארבעת הקודקודים מימין, לבין שאר הגרף המחובר.
+ עם זאת, אף חלוקה לשני חצאים של הרשת לצורכי חישוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Biscetion Bandwitch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא תתפוס את זה.
+ לעומת זאת, חלוקה לשליש-שני שליש כן תאפשר את האבחנה הזו.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/band.png
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+רשת מאוד לא אופטימלית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+מסקנה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bisection Bandwith
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ היא מטריקה לא מספיק מבחינה!
+\end_layout
+
+\begin_layout Description
+הגדרה ה-
+\lang english
+Edge Expansion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של גרף הוא
+\begin_inset Formula 
+\[
+\min_{S\subseteq V,0\left|S\right|\leq\frac{n}{2}}\frac{\left|\left\{ e:V\backslash S\text{ל-}\;S\;\text{צלע בין}\;e\right\} \right|}{\left|S\right|}
+\]
+
+\end_inset
+
+כאשר הנרמול מאפשר לנו לצפות מחלוקות עם צדדים מאוזנים ליותר צלעות מאשר חלוקות
+ מוטות מאוד.
+\end_layout
+
+\begin_layout Description
+הערה מיקסום של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Edge Expansion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא המטרה הסופית בבניית רשת טובה, אבל לא תמיד אפשר לעשות את זה.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+סוגי בניות
+\end_layout
+
+\begin_layout Itemize
+בנייה לא מפורשת - הגדרה של גרף באמצעות קודקודים וצלעות, כשלשמות האיברים
+ בקבוצות האלה אין משמעות אינהרנטית )אפשר לשנות אותם בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ( ואין תבנית בהכרח לפיה הקודקודים מחוברים.
+\end_layout
+
+\begin_layout Itemize
+בנייה מפורשת - קודקודים מחוברים עם תבנית/חוקיות כלשהי, כך שיש לגרף מבנה
+ כלשהו.
+ שמות של קודקודים אומרים הרבה מאוד עליהם ואפשר רק באמצעותם לבנות את כל הגרף
+ )ולכן אם משנים אותם הגרף משתנה(.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט בגרף הבא,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/lin.png
+	lyxscale 30
+	scale 50
+	BoundingBox 0bp 100bp 466bp 219bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+גרף מערך לינארי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הקוטר של הגרף הוא 
+\begin_inset Formula $3$
+\end_inset
+
+, הדרגה היא 
+\begin_inset Formula $2$
+\end_inset
+
+ וה-
+\lang english
+Bisection Bandwith
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מתקבל בחתך באמצע.
+ ניתן היה להגדיר את הגרף מפורשות על ידי מתן שמות לקודקודים 
+\begin_inset Formula $1,\ldots,N$
+\end_inset
+
+ והגדרת צלע בין כל קודקוד 
+\begin_inset Formula $i$
+\end_inset
+
+ ל-
+\begin_inset Formula $i+1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה היפר קוביה 
+\begin_inset Formula $n$
+\end_inset
+
+-ממדית היא גרף עם 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ קודקודים ממסופרים, עם צלע בין כל שני קודקודים שנבדלים בייצוג הבינארי שלהם
+ רק באחד )בין 
+\begin_inset Formula $010$
+\end_inset
+
+ ל-
+\begin_inset Formula $000$
+\end_inset
+
+ יהיה צלע(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הקוטר של הגרף הוא 
+\begin_inset Formula $n$
+\end_inset
+
+, כי כדי לעבור בין כל שני קודקודים נצטרך לכל היותר להפוך את כל הביטים של
+ הייצוג, ויש 
+\begin_inset Formula $n$
+\end_inset
+
+ כאלה.
+ הדרגה היא גם 
+\begin_inset Formula $n$
+\end_inset
+
+ כי כל ביט שמשתנה זה קודקוד שאנחנו מחוברים אליו.
+\end_layout
+
+\begin_layout Standard
+מה החתך הכי גרוע שיש? נביט בחתך שבצד אחד יש לו את כל הקודקודים עם 
+\begin_inset Formula $0$
+\end_inset
+
+ בקוורדינטה הראשונה, ובצד השני 
+\begin_inset Formula $1$
+\end_inset
+
+ בקוור' הראשונה.
+ כדי שתהיה צלע בין שני קודקודים בצדי החלוקה, הם צריכים להיות זהים בכל שאר
+ הקוור' שלהם, כי אנחנו בר יודעים שהקוור' הראשונה שלהם שונה.
+ לכן יש 
+\begin_inset Formula $2^{n-1}$
+\end_inset
+
+ צלעות ביניהם, שזה בפרט המקרה הכי גרוע שיש )כל מקרה אחר יאפשר לקודקודים
+ עם תנאים יותר נוחים להיות מחוברים(.
+\end_layout
+
+\begin_layout Standard
+אלג' ניתוב פשוט בין כל שני קודוקדים בקוביה הוא החלפה בכל פעם של הביט הראשון
+ ששונה בין הכתובת של התחנה לכתובת היעד )בהכרח יש צלע כי יש שינוי של בדיוק
+ ביט אחד(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה בעץ יש דרגה קבועה.
+ הקוטר שלו הוא 
+\begin_inset Formula $\log N$
+\end_inset
+
+ )מספר הקודקודים(, וה-
+\lang english
+Bisection Bandwith
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $\oo 1$
+\end_inset
+
+ כי אם נחלק את הקודקודים לשתי קבוצות, תהיה בדיוק צלע אחת שתחבר ביניהם כי
+ אחרת היה מעגל ואז זה לא היה עץ.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אלג' ניתוב קלאסי הוא לעלות למעלה )מהעלים הרחוקים מהשורש לשורש( עד שמגיעים
+ לאב קדמון משותף )במסלול אל השורש(, ואז לרדת למטה עד ליעד.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+למה כל זה מעניין אותנו? אנחנו מנסים בהינתן תתי-רשתות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתוך ארגון )כלומר רשת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+overlay
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעל רשתות בשכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(, לרשת אותן ביחד.
+ כלומר לעשות ניתוב אינטרה )בתוך( דומיין, באמצעות ראוטרים שמחוברים לתתי-הרשתות
+ שלהם.
+\end_layout
+
+\begin_layout Description
+הערה אלג' ניתוב מחליט על מסלולים להעברת פקטות בין יחידות ברשת, אבל ברמה
+ הפרקטית אלג' הניתוב נותן לנו מימוש/חוקים לפיהם ניצור טבלת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+forwarding
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שבה אנחנו )ובתקווה גם אחרים( יתנהגו, כדי לנתב בהצלחה פקטות.
+\end_layout
+
+\begin_layout Standard
+ברוב הארגונים מחשבים מסלולים קצרים ביותר באמצעות משקולות סטטיות שהוגדרו
+ מבחוץ בין תתי הרשתות.
+ בגלל שראוטרים הם מבוזרים ואין אף אחד מרכזי שמנהל את מעבר הפקטות, אנחנו
+ צריכים לדאוג שכל ראוטר יודע מה ה-
+\lang english
+next hop
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של כל סאבנט של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Description
+הערה נבחין שוב בין ניתוב שהיה אפשרי במקרה הריכוזי/ניתוח תאורטי, לבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+forwarding
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהוא הדרך להעביר פקטות כשמדובר בשת
+\begin_inset Quotes xrd
+\end_inset
+
+פ מבוזר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{סכמות ניתוב}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+סכמות ניתוב
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Distance Vector Routing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תהליך איטרטיבי שבו מחשבים עם בלמן-פורד מבוזר את המרחק הקצר ביותר בין כל
+ שתי יחידות קצה )בניגוד ל-
+\lang english
+STP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהיה ביחס לשורש בלבד(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $d_{x}\left(y\right)$
+\end_inset
+
+ הוא המרחק הקצר ביותר בין 
+\begin_inset Formula $x$
+\end_inset
+
+ ל-
+\begin_inset Formula $y$
+\end_inset
+
+, ומוגדר איטרטיבית ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $d_{x}\left(y\right)=\min\limits _{v}\left\{ w\left(x,v\right)+d_{x}\left(v\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האלג' בעייתי במקרה שמשנים משקלים ברשת.
+ נניח שבאופן דינמי מנהל הרשת שינה את המרחק בין שני ראוטרים.
+ הקודקוד יזהה את השינוי, יעדכן את המידע אצלו, יחשב את ה-
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחדש ויפעפע את השינוי לשכנים.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{Count-to-Infinity}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה נניח שנתונה לנו הרשת הבאה, שבה שונה המשקל מ-
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\numeric on
+60
+\numeric off
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/y.png
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מקרה קלאסי של 
+\lang english
+Count-to-Infinity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $y$
+\end_inset
+
+ ישנה את המסלול שלו ל-
+\begin_inset Formula $x$
+\end_inset
+
+ ללעבור דרך 
+\begin_inset Formula $z$
+\end_inset
+
+, כי 
+\begin_inset Formula $z$
+\end_inset
+
+ טוען שיש לו מסלול ל-
+\begin_inset Formula $x$
+\end_inset
+
+ באורך 
+\begin_inset Formula $5$
+\end_inset
+
+ )שזה שקר, אבל הוא לא יודע את זה(.
+ לאחר שעידכן אצלו את ה-
+\lang english
+DV
+\lang hebrew
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ יספר ל-
+\begin_inset Formula $z$
+\end_inset
+
+ שיש לו מסלול באורך 
+\begin_inset Formula $6$
+\end_inset
+
+ ל-
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $z$
+\end_inset
+
+ מקשיב לו, מעדכן את המידע אצלו, ומודיע ל-
+\begin_inset Formula $y$
+\end_inset
+
+ שיש לו מסלול במרחק 
+\begin_inset Formula $7$
+\end_inset
+
+ ל-
+\begin_inset Formula $x$
+\end_inset
+
+.
+ ככה זה ימשיך במשך 
+\begin_inset Formula $44$
+\end_inset
+
+ איטרציות לפני שזה יתייצב ו-
+\begin_inset Formula $z$
+\end_inset
+
+ יעבור לצלע עם 
+\begin_inset Formula $50$
+\end_inset
+
+, וזה לא תקין.
+ בין היתר כי פקטות ישלחו בלופ אינסופי ביניהם ויפלו.
+\end_layout
+
+\begin_layout Standard
+אפשר לפתור את הבעיה אם לא נעדכן את מי שעכשיו עידכן אותנו במצב, מה שנקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Poisoned Reverse
+\lang hebrew
+.
+ עם זאת זה לא פותר את הבעיה הכללית אלא הופך את מקרי הקצה שבהם זה לא עובד
+ ליותר מורכבים אך קיימים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+LS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמנע מהבעיה הזו כי קודקוד מחויב לספר לכל השאר על כל שינוי וכולם מעדכנים
+ אצלם באופן עצמאי את ה-
+\lang english
+forwarding table
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Link-State Routing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כל ראוטר מציף את השכנים שלו במידע כדי ללמוד את הטופולוגיה )כולה, לא רק
+ מרחקים קצרים(.
+ לאחר איסוף המידע, כל נתב מריץ דייקסטרה כדי לחשב את המסלולים הקצרים ביותר
+ שלו מאחרים.
+\end_layout
+
+\begin_layout Description
+הערה המקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Count-to-Infinity
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ זו דוגמה טובה לעיקרון 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Good News Travel Fast, Bad News Travel Slow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כשהכל בסדר האלג' עובד טוב אבל אם יש בעיות המצב יתייצב רק לאחר זמן רב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{אפיון אלג' ניתוב}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+אפיון אלג' ניתוב
+\end_layout
+
+\begin_layout Enumerate
+האם הניתוב מבוסס על מידע גלובלי או חלקי?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Distance Vector
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מבוסס על מידע חלקי )אני מקשיב רק לשכנים(, ואילו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Link-State
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ נותן לכל נתב את כל המידע, ושהוא יעשה איתו מה שהוא רוצה )בתקווה דברים טובים(.
+\end_layout
+
+\begin_layout Enumerate
+מורכבות התקשורת - כל שתי רשתות מספרות אחת לשנייה את המרחקים ביניהם ב-
+\lang english
+LS
+\lang hebrew
+, במקום רק מספר לינארי במספר הקודקודים ב-
+\lang english
+DV
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+רובוסטיות לנפילה של ראוטר ועוד.
+\end_layout
+
+\begin_layout Description
+דוגמה ברשת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ARPAnet
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של צבא ארה
+\begin_inset Quotes xrd
+\end_inset
+
+ב עדכנו בזמן אמת את המשקולות של חיבורים באמצעות טרנספורמציה לינארית על גודל
+ התור שהמתין לעבור בצלע.
+ השינויים התכופים וההריאקטייבים האלה גרמו לתגובותיות-יתר לעומס ומשם להתבדרות
+ ואוסיצליות בתעבורה, כמו גם העמסה על מסלולים לא יעילים מבחינת משאבים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עם השנים נוספו פלסטרים על גבי פלסטרים כדי לגרום לרשת להתנהל כמו שצריך, כשבסוף
+ הוחלט לעבור למשקלים סטטיים שמשתנים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י בני אדם.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מודל השכבות הוא שפותר לנו )בעקיפין( את הבעיה - אם שכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ויעול המשקולות הסטטיים הם תחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Traffic Engineering
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמאפשר ניתוב יעיל עד נקודה מסוימת, שכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופרוטוקולים שלא יודעים על עומס באמת אבל דואגים למתן את העומס שלנו עצמינו
+ הם אלה שמבצעים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Congestion Control
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+ניהול רשת מוצלח הוא תהליך איטרטיבי שלא נפסק שכולל הסתכלות על על המצב הנתון,
+ קביעת פרמטרים טובים יותר בהתאם למידע הנתון לנן, צפייה מהצד על ההשפעה של
+ השינוי וחוזר חלילה )ראו איור(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/model.png
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Measure, Model, and Control
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

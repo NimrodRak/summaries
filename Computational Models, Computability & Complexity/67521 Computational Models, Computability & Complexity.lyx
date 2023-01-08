@@ -23213,7 +23213,7 @@ addcontentsline{toc}{subsection}{תרגול}
 \begin_inset Formula $M_{2}$
 \end_inset
 
- כן תקבל כל קלט ולכן הן לא מסכימות על שום דבר כלומר 
+ תקבל כל קלט ולכן הן לא מסכימות על שום דבר כלומר 
 \begin_inset Formula $\left\langle M_{1},M_{2}\right\rangle \notin L$
 \end_inset
 
@@ -23374,7 +23374,7 @@ addcontentsline{toc}{subsection}{תרגול}
 \begin_inset Formula $P$
 \end_inset
 
- תכונה סמנטית, אזי 
+ תכונה סמנטית לא טריוויאלית, אזי 
 \begin_inset Formula $L_{\p}\notin\r$
 \end_inset
 
@@ -23496,7 +23496,7 @@ addcontentsline{toc}{subsection}{תרגול}
 \begin_inset Quotes xrd
 \end_inset
 
-ט שפועלת כך: בהינתן 
+ט שפועלת כך - בהינתן 
 \begin_inset Formula $x$
 \end_inset
 
@@ -23512,7 +23512,7 @@ addcontentsline{toc}{subsection}{תרגול}
 \begin_inset Formula $M$
 \end_inset
 
- ע 
+ על 
 \begin_inset Formula $w$
 \end_inset
 
@@ -23611,7 +23611,3015 @@ addcontentsline{toc}{subsection}{תרגול}
 \begin_inset Formula $T\notin P$
 \end_inset
 
-.ען
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+)משפט רייס( אם 
+\begin_inset Formula $T_{\varnothing}\notin P$
+\end_inset
+
+ אז מהלמה 
+\begin_inset Formula $L_{P}\notin\core$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L_{P}\notin\r$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $T_{\varnothing}\in P$
+\end_inset
+
+ אז 
+\begin_inset Formula $T_{\varnothing}\notin\overline{L_{P}}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\overline{L_{P}}\notin\core$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L_{P}\notin\r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה ניתן להשתמש במשפט רייס )בלמה בתוכו( כדי להוכיח ששפות לא ב-
+\begin_inset Formula $\r$
+\end_inset
+
+ )לא בדוגמה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל כי היא הכילה זוגות של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט ואנחנו יכולים להסתכל על שפה של קידודים של מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט יחידה(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $\mf{ALL}_{TM}=\left\{ \left\langle M\right\rangle :L\left(M\right)=\com^{*}\right\} \in\overline{\re\cup\core}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $P=\left\{ \com^{*}\;\text{כל מ"ט שהשפה שלהן היא}\right\} $
+\end_inset
+
+ היא תכונה סמנטית )מתייחס לשפות בלבד( וגם 
+\begin_inset Formula $T_{\varnothing}\notin P$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $L_{P}=\mf{ALL}_{TM}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A_{TM}\leq\mf{\mf{ALL}_{TM}}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\mf{ALL}_{TM}\notin\core$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\mf{COMPOSITE}=\left\{ w:\text{מספר בייצוג בינארי שאינו ראשוני}\;w\right\} $
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $\mf{COMPOSITE}\in\np$
+\end_inset
+
+: נבנה 
+\begin_inset Formula $NTM$
+\end_inset
+
+ שמכריעה את השפה - 
+\begin_inset Formula $T$
+\end_inset
+
+ תנחש גורם בין 
+\begin_inset Formula $1$
+\end_inset
+
+ ל-
+\begin_inset Formula $w$
+\end_inset
+
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ ותבדוק בכל ענף בנפרד אם 
+\begin_inset Formula $a$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ כל בדיקה נעשית בזמן פולינומיאלי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+דרך אחרת להסתכל על השפה )או המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט(, היא שזה אוסף המספרים שאפשר לבדוק בזמן פולינומיאלי האם הם בשפה באמצעות
+ גורם שייתנו לנו.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה תהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטר'.
+ נאמר כי 
+\begin_inset Formula $V$
+\end_inset
+
+ מוודא לשפה 
+\begin_inset Formula $L$
+\end_inset
+
+ אם
+\begin_inset Formula 
+\[
+L=\left\{ w:\left(\exists c:\left\langle w,c\right\rangle \in L\left(V\right)\right)\right\} 
+\]
+
+\end_inset
+
+ונאמר ש-
+\begin_inset Formula $V$
+\end_inset
+
+ מוודא פולי' אם
+\begin_inset Formula 
+\[
+L=\left\{ w:\left(\exists c:\left|w\right|\text{בגודל פולינומי ב-}\;\left|c\right|\;\text{וגם}\;\left\langle w,c\right\rangle \in L\left(V\right)\right)\right\} 
+\]
+
+\end_inset
+
+ו-
+\begin_inset Formula $V$
+\end_inset
+
+ רצה בזמן פולי' ב-
+\begin_inset Formula $w$
+\end_inset
+
+ על 
+\begin_inset Formula $\left\langle w,c\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )שקילות הגדרת 
+\begin_inset Formula $\np$
+\end_inset
+
+( 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם קיים לה מוודא פולי'.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ אם קיים ל-
+\begin_inset Formula $L$
+\end_inset
+
+ מוודא פולי' 
+\begin_inset Formula $V$
+\end_inset
+
+ אז מהיות 
+\begin_inset Formula $V$
+\end_inset
+
+ פולי', קיים 
+\begin_inset Formula $k\in\fldn$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $w$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $c$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ רץ על 
+\begin_inset Formula $\left\langle w,c\right\rangle $
+\end_inset
+
+ בזמן פולי' ב-
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד 
+\begin_inset Formula $N$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ תפעל כך: עבור קלט 
+\begin_inset Formula $w$
+\end_inset
+
+, תנחש 
+\begin_inset Formula $c$
+\end_inset
+
+ בגודל פולי' ב-
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+ ותסמלץ את 
+\begin_inset Formula $V$
+\end_inset
+
+ על הניחוש.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $V$
+\end_inset
+
+ רצה בזמן פולי' ולכן כל ענף בענף הריצות של 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ הוא באורך פולי'.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ יש מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד 
+\begin_inset Formula $N$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ נבנה מוודא 
+\begin_inset Formula $V$
+\end_inset
+
+ פולינומי ל-
+\begin_inset Formula $L$
+\end_inset
+
+: 
+\begin_inset Formula $V$
+\end_inset
+
+ יקבל 
+\begin_inset Formula $\left\langle w,c\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא תיאור של ענף בעץ הריצה של 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ יבדוק ש-
+\begin_inset Formula $c$
+\end_inset
+
+ היא אכן ריצה חוקית לפי פ' המעברים של 
+\begin_inset Formula $N$
+\end_inset
+
+ והאם היא מסתיימת במצב מקבל/דוחה, ותקבל/תדחה בהתאם.
+\end_layout
+
+\begin_layout Proof
+מהיות 
+\begin_inset Formula $N$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ בזמן פולי', ענף הריצה 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא באורך פולי' )
+\begin_inset Formula $\left|w\right|^{k}\geq$
+\end_inset
+
+ עבור איזשהו 
+\begin_inset Formula $k$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $V$
+\end_inset
+
+ רץ בזמן פולי' על 
+\begin_inset Formula $\left\langle w,c\right\rangle $
+\end_inset
+
+ )ולכן פולי' ב-
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{X
+\backslash
+;
+\backslash
+; שלמות ב-NP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{X}$
+\end_inset
+
+ | שלמות ב-
+\begin_inset Formula $\np$
+\end_inset
+
+ 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{רדוקציות פולינומיאליות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+רדוקציות פולינומיאליות
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $f:\com^{*}\to\com^{*}$
+\end_inset
+
+ היא פ' ניתנת לחישוב בזמן פולי' אם קיימת מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ שעל קלט 
+\begin_inset Formula $x$
+\end_inset
+
+, עוצרת תוך מספר פולי' ב-
+\begin_inset Formula $x$
+\end_inset
+
+ של צעדים עם 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ על הסרט.
+\end_layout
+
+\begin_layout Description
+הגדרה יהיו 
+\begin_inset Formula $A,B\subseteq\com^{*}$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $A$
+\end_inset
+
+ ניתנת לרדוקציה פולי' ל-
+\begin_inset Formula $B$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $A\leq_{p}B$
+\end_inset
+
+ אם קיימת 
+\begin_inset Formula $f:\com^{*}\to\com^{*}$
+\end_inset
+
+ ניתנת לחישוב בזמן פולי' כך שלכל 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $w\in A\iff f\left(w\right)\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )הרדוקציה עבור 
+\begin_inset Formula $\p$
+\end_inset
+
+( אם 
+\begin_inset Formula $A\leq_{p}B$
+\end_inset
+
+ ו-
+\begin_inset Formula $B\in\p$
+\end_inset
+
+ אז 
+\begin_inset Formula $A\in\p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בהינתן 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ שמחשבת את הרדוקציה ו-
+\begin_inset Formula $M_{B}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $B$
+\end_inset
+
+ בזמן פולי', נבנה 
+\begin_inset Formula $M_{A}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+ בזמן פולי': בהינתן 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+, המכונה 
+\begin_inset Formula $M_{A}$
+\end_inset
+
+ תריץ את 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+, תחשב )בזמן פולי'( את 
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+, תריץ את 
+\begin_inset Formula $M_{B}$
+\end_inset
+
+ על 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ )בזמן פולי' ב-
+\begin_inset Formula $\left|f\left(w\right)\right|$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|f\left(w\right)\right|$
+\end_inset
+
+ פולי' ב-
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+ ולכן זמן הריצה של 
+\begin_inset Formula $M_{A}$
+\end_inset
+
+ פולי' ו-
+\begin_inset Formula $M_{A}$
+\end_inset
+
+ נכונה לכן 
+\begin_inset Formula $A\in\p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה אם 
+\begin_inset Formula $A\leq_{p}B$
+\end_inset
+
+ ו-
+\begin_inset Formula $A\notin\p$
+\end_inset
+
+ אז 
+\begin_inset Formula $B\notin P$
+\end_inset
+
+ )קונטרה-פוזיטיב על משפט הרדוקציה(.
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר ששפה 
+\begin_inset Formula $L\subseteq\com^{*}$
+\end_inset
+
+ היא 
+\bar under
+
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמה
+\bar default
+ אם:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+)חסם עליון( 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+)חסם תחתון( 
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-קשה, כלומר שלכל שפה 
+\begin_inset Formula $L'\in\np$
+\end_inset
+
+, 
+\begin_inset Formula $L'\leq_{p}L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה אינטואיטיבית, החסם התחתון אומר שכל דבר רע שאפשר להגיד )פולי'( על כל
+ שפה ב-
+\begin_inset Formula $\np$
+\end_inset
+
+, אפשר להגיד גם על 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה נאמר שבעיה היא פתורה אם החסם התחתון והעליון שלנו הם שווים, לאמור שלמה
+ במחלקה כלשהי )ולא שהיא 
+\begin_inset Formula $\p$
+\end_inset
+
+-קשה ושייכת ל-
+\begin_inset Formula $\mf{EXPTIME}$
+\end_inset
+
+ לדוגמה, שזה לא מכריע לנו את סיבוכיות הבעיה(.
+\end_layout
+
+\begin_layout Description
+טענה אם 
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-קשה ו-
+\begin_inset Formula $L\in\p$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\p=\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+תהי 
+\begin_inset Formula $L'\in\np$
+\end_inset
+
+.
+ מהיות 
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\begin_inset Formula $\np$
+\end_inset
+
+-קשה, הרי ש-
+\begin_inset Formula $L'\leq_{p}L$
+\end_inset
+
+ ולכן אם 
+\begin_inset Formula $L\in\p$
+\end_inset
+
+ גם 
+\begin_inset Formula $L'\in P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה תהי 
+\begin_inset Formula $L''$
+\end_inset
+
+ שפה 
+\begin_inset Formula $\np$
+\end_inset
+
+-קשה, ו-
+\begin_inset Formula $L\subseteq\com^{*}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $L''\leq_{p}L$
+\end_inset
+
+ אז 
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-קשה )מטרנזיטיביות של רדוקציות(.
+\end_layout
+
+\begin_layout Description
+הערה זו הגדרה שקולה הרבה יותר נוחה להוכחת קושי ב-
+\begin_inset Formula $\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה אם 
+\begin_inset Formula $A\in\p$
+\end_inset
+
+ אז 
+\begin_inset Formula $A\leq_{p}B$
+\end_inset
+
+ לכל 
+\begin_inset Formula $B\neq\varnothing,\com^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ שתפעל כך: בהינתן 
+\begin_inset Formula $w$
+\end_inset
+
+, תבדוק )בזמן 
+\begin_inset Formula $\p$
+\end_inset
+
+( האם 
+\begin_inset Formula $w\in A$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $w_{Y}\in B,w_{N}\notin B$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $w\in A$
+\end_inset
+
+ אז 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ מחזירה 
+\begin_inset Formula $w_{Y}$
+\end_inset
+
+ אחרת 
+\begin_inset Formula $w_{N}$
+\end_inset
+
+.
+ זו פ' ניתנת לחישוב ונכונה ולכן 
+\begin_inset Formula $A\leq_{p}B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\mf{SAT=\left\{ \left\langle \theta\right\rangle :3\mf{CNF}\text{נוסחה ספיקה ב-}\theta\right\} }$
+\end_inset
+
+ )כאשר נוסחה היא 
+\begin_inset Formula $m$
+\end_inset
+
+ 
+\begin_inset Formula $\land$
+\end_inset
+
+-ים על פסוקיות עם 
+\begin_inset Formula $\lor$
+\end_inset
+
+ עם שלושה איברים מ-
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\{ x_{1},\ldots,x_{n},\overline{x_{1}},\ldots,\overline{x_{n}}\right\} $
+\end_inset
+
+( היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mf{CLIQUE}=\left\{ \left\langle G,k\right\rangle :k\;\text{גרף לא מכוון שיש בו קליקה בגודל}\;G\right\} $
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ הוא 
+\begin_inset Formula $k$
+\end_inset
+
+-קליקה ב-
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ אם 
+\begin_inset Formula $\left|S\right|=k$
+\end_inset
+
+ ו-
+\begin_inset Formula $E\left(v_{1},v_{2}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $v_{1},v_{2}\in S$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mf{CLIQUE}\in\np$
+\end_inset
+
+ כי אפשר לנחש את הקבוצה ולעשות לה ולידציה בזמן פולי' )יש 
+\begin_inset Formula $\left|V\right|^{2}$
+\end_inset
+
+ צלעות לכל היותר לבדוק(.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $3\mf{SAT}\leq_{p}\mf{CLIQUE}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $\theta=c_{1}\land\ldots\land c_{m}$
+\end_inset
+
+, 
+\begin_inset Formula $c_{i}=\ell_{i}^{1}\lor\ell_{i}^{2}\lor\ell_{i}^{3}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\ell_{i}^{j}\in\left\{ x_{1},\ldots,x_{n},\overline{x_{1}},\ldots,\overline{x_{n}}\right\} $
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f$
+\end_inset
+
+ באופן הבא: בהינתן 
+\begin_inset Formula $\theta$
+\end_inset
+
+, נחזיר 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ ו-
+\begin_inset Formula $k=m$
+\end_inset
+
+ כאשר: 
+\begin_inset Formula $V=\left\{ \ell_{1}^{1},\ell_{1}^{2},\ell_{1}^{3},\ell_{2}^{1},\ldots,\ell_{m}^{1},\ell_{m}^{2},\ell_{m}^{3}\right\} $
+\end_inset
+
+ )ולכן 
+\begin_inset Formula $\left|V\right|=3m$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+את 
+\begin_inset Formula $E$
+\end_inset
+
+ נגדיר כך ש-
+\begin_inset Formula $3$
+\end_inset
+
+-קליקה תשרה השמה מספקת של 
+\begin_inset Formula $\theta$
+\end_inset
+
+, מילולית מדובר בכל זוג קודקודים שאינם מאותה הפסוקית או משתנה והשלילה שלו,
+ מתמטית, 
+\begin_inset Formula 
+\[
+E=V\times V\backslash\left(\left\{ \left(v_{1},v_{2}\right):\text{מזוהים עם משתנה ושלילתו}\;v_{2}\text{ו-}\;v_{1}\right\} \cup\left\{ \left(v_{1},v_{2}\right):\text{מזוהים עם ליטרלים של אותה הפסוקית}\;v_{2}\text{ו-}\;v_{1}\right\} \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\theta=\left(x_{1}\lor x_{1}\lor x_{2}\right)\land\left(\overline{x_{1}}\lor\overline{x_{2}}\lor\overline{x_{2}}\right)\land\left(\overline{x_{1}}\lor x_{2}\lor x_{2}\right)$
+\end_inset
+
+.
+ זו נוסחה ספיקה עבור 
+\begin_inset Formula $x_{1}=F,x_{2}=T$
+\end_inset
+
+.
+ הגרף שמושרה מ-
+\begin_inset Formula $\theta$
+\end_inset
+
+ הוא כבאיור
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/clique.png
+	lyxscale 40
+	scale 18
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+גרף המושרה מהנוסחה 
+\begin_inset Formula $\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נשים לב שעתה 
+\begin_inset Formula $\ell_{1}^{3},\ell_{3}^{1},\ell_{2}^{1}$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $m$
+\end_inset
+
+-קליקה ב-
+\begin_inset Formula $G$
+\end_inset
+
+.
+ הדוגמה כאן היא מקרה פרטי שבו 
+\begin_inset Formula $m=3$
+\end_inset
+
+, אבל נשים לב שזה עובר הכללה )אז יהיו לנו יותר צדדים של שלשות בגרף(.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Proof
+הרדוקציה פולינומיאלית כי יש 
+\begin_inset Formula $3m$
+\end_inset
+
+ קודקודים, ועוברים על 
+\begin_inset Formula $\left(3m\right)^{2}$
+\end_inset
+
+ קשתות אפשריות בהגדרה של 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ נוכיח נכונות.
+\end_layout
+
+\begin_layout Proof
+נניח ש-
+\begin_inset Formula $\theta\in3\mf{SAT}$
+\end_inset
+
+, אז קיימת 
+\begin_inset Formula $g:X\to\left\{ T,F\right\} $
+\end_inset
+
+ כך ש-
+\begin_inset Formula $g$
+\end_inset
+
+ מספקת את 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ בכל פסוקית 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ יש לפחות ליטרל אחד 
+\begin_inset Formula $\ell_{i}^{j_{i}}$
+\end_inset
+
+ ש-
+\begin_inset Formula $g$
+\end_inset
+
+ מספקת.
+ נטען ש-
+\begin_inset Formula $V\supseteq S=\left\{ \ell_{1}^{j_{1}},\ldots,\ell_{m}^{j_{m}}\right\} $
+\end_inset
+
+ היא 
+\begin_inset Formula $m$
+\end_inset
+
+-קליקה )כלומר שיש קשת בין כל שני ליטרלים מסופקים בפסוקיות השונות(.
+\end_layout
+
+\begin_layout Proof
+לכל 
+\begin_inset Formula $u_{1},u_{2}\in S$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $E\left(u_{1},u_{2}\right)$
+\end_inset
+
+ כי הם מזוהים עם ליטרלים מפסוקיות שונות )מהגדרת 
+\begin_inset Formula $\ell_{i}^{j_{i}}$
+\end_inset
+
+( שלא מזוהים עם משתנה ושלילתו, כי 
+\begin_inset Formula $g$
+\end_inset
+
+ היא השמה ולכל 
+\begin_inset Formula $i\in\left[n\right]$
+\end_inset
+
+ או שרק ליטרלים עם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מופיעים ב-
+\begin_inset Formula $S$
+\end_inset
+
+ או רק כאלה עם 
+\begin_inset Formula $\overline{x_{i}}$
+\end_inset
+
+ )אחרת היו לנו 
+\begin_inset Formula $T,\overline{T}$
+\end_inset
+
+ מסופקים שניהם וזה לא אפשרי(.
+\end_layout
+
+\begin_layout Proof
+נניח שיש ב-
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+-קליק 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ בהכרח לכל פסוקית 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ יש ב-
+\begin_inset Formula $S$
+\end_inset
+
+ רק נציג אחד 
+\begin_inset Formula $\ell_{i}^{1},\ell_{i}^{2}$
+\end_inset
+
+ או 
+\begin_inset Formula $\ell_{i}^{3}$
+\end_inset
+
+ )קודקודים מזוהים עם ליטרלים מאותה הפסוקית לא מחוברים בקשת(.
+ מהיות 
+\begin_inset Formula $\left|S\right|=m$
+\end_inset
+
+, לכל פסוקית בדיוק נציג אחד.
+ הקליק משרה השמה שכן לכל משתנה לא ייתכן שיש לנו מופע חיובי וגם מופע שלילי
+ )אין קשת בין ליטרלים שמזוהים לא כולם עם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ או כולם עם 
+\begin_inset Formula $\overline{x_{i}}$
+\end_inset
+
+(.
+ המשתנים שלא מופיעים בקליק אפשר להשים 
+\begin_inset Formula $T/F$
+\end_inset
+
+ באופן שרירותי כי יש לנו השמה מספקת באופן ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת בהם )יש לנו ליטרל אחד חיובי בכל פסוקית, סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ כל הפסקויות מסופקות(.
+\end_layout
+
+\begin_layout Proof
+לכן 
+\begin_inset Formula $\theta\in3\mf{SAT}\iff\left\langle G,k\right\rangle \in\mf{CLIQUE}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $3\mf{SAT}\leq_{p}\mf{CLIQUE}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $3\mf{SAT}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-קשה, כלומר 
+\begin_inset Formula $L\leq_{p}3\mf{SAT}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה ב-
+\begin_inset Formula $\np$
+\end_inset
+
+, לכן קיימת מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד 
+\begin_inset Formula $M$
+\end_inset
+
+ ופולי' 
+\begin_inset Formula $t:\fldn\to\fldn$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $M$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+, ולכל מילה 
+\begin_inset Formula $w$
+\end_inset
+
+, כל הריצות של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ עוצרות תוך 
+\begin_inset Formula $t\left(\left|w\right|\right)$
+\end_inset
+
+ צעדים.
+\end_layout
+
+\begin_layout Proof
+בהינתן 
+\begin_inset Formula $w$
+\end_inset
+
+, נייצר נוסחה 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mf{CNF}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w\in L$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ספיקה.
+ הרעיון הוא ש-
+\begin_inset Formula $\varphi$
+\end_inset
+
+ תגיד האם יש ריצה מקבלת של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ כלומר שיש סדרה 
+\begin_inset Formula $c_{0},\ldots,c_{m}$
+\end_inset
+
+ של קונפ' כך ש-
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ הקונפ' ההתחלתית של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+, לכל 
+\begin_inset Formula $0\leq i\leq m-1$
+\end_inset
+
+ 
+\begin_inset Formula $c_{I+1}$
+\end_inset
+
+ עוקבת ל-
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ ו-
+\begin_inset Formula $c_{m}$
+\end_inset
+
+ קונפ' מקבלת.
+ 
+\end_layout
+
+\begin_layout Proof
+נשים לב שלכל 
+\begin_inset Formula $m\leq t\left(\left|w\right|\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, התאים מעבר לתא 
+\begin_inset Formula $t\left(\left|w\right|\right)+1$
+\end_inset
+
+ הם כולם 
+\begin_inset Formula $\spa$
+\end_inset
+
+ כי הראש לא מגיע אליהם.
+ לכן ניתן לייצג ריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מטריצה שבכל קומה תהיה קונפ' )בדומה לריצוף(, ושבכל כתובת יש לה אות מ-
+\begin_inset Formula $S=\Gamma\cup Q\cup\left\{ \#\right\} $
+\end_inset
+
+.
+ נתאר קונפ' ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מילה ב-
+\begin_inset Formula $\#\Gamma^{*}Q\Gamma^{*}\#$
+\end_inset
+
+.
+ המטריצה אם כן תהיה בממדים 
+\begin_inset Formula $\left(t\left(n\right)+3\right)\times t\left(n\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n=\left|w\right|$
+\end_inset
+
+ )אורך הייצוג של קונפ' עם ריפוד על מספר הקונפ' לכל היותר(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\varphi$
+\end_inset
+
+ תגיד האם אפשר למלא מטריצה 
+\begin_inset Formula $\left(t\left(n\right)+3\right)\times t\left(n\right)$
+\end_inset
+
+ באותיות מ-
+\begin_inset Formula $S$
+\end_inset
+
+ באופן שמתאר ריצה מקבלת חוקית.
+\end_layout
+
+\begin_layout Proof
+המשתנים שלנו יהיו 
+\begin_inset Formula $x_{i,j,s}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $i\in\left[t\left(n\right)+3\right],j\in\left[t\left(n\right)\right],s\in S$
+\end_inset
+
+, וערכם יהיה 
+\begin_inset Formula $T$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $g\left(i,j\right)=S$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ המטריצה.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ ההשמה למשתנים תשרה מטריצה 
+\begin_inset Formula $g$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $g\left(i,j\right)=s\iff f\left(x_{ijs}\right)=T$
+\end_inset
+
+ )משרה הכוונה שכך נגדיר את 
+\begin_inset Formula $g$
+\end_inset
+
+, לאחר שנראה שהיא מגדירה היטב מטריצה(.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $\varphi=\varphi_{cell}\land\varphi_{init}\land\varphi_{acc}\land\varphi_{move}$
+\end_inset
+
+ )כך שאם 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ סופקה, 
+\begin_inset Formula $f$
+\end_inset
+
+ משרה מטריצה 
+\begin_inset Formula $g$
+\end_inset
+
+ מוגדרת היטב, שמגדירה ריצה מקבלת של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+( כאשר:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{cell}$
+\end_inset
+
+ תוודא שההשמה אכן מתארת את המטריצה חוקית, כלומר שבכל תא יש אות אחת ורק אות
+ אחת, ופורמלית
+\begin_inset Formula 
+\[
+\varphi_{cell}=\bigwedge\limits _{i\in\left[t\left(n+3\right)\right],j\in\left[t\left(n\right)\right]}\left(\left(\bigvee\limits _{s\in S}x_{ijs}\right)\land\left(\bigwedge\limits _{s_{1}\neq s_{2}\in S}\overline{x_{ijs_{1}}}\land\overline{x_{ijs_{2}}}\right)\right)
+\]
+
+\end_inset
+
+או מילולית, יש לפחות אות אחת ב-
+\begin_inset Formula $g\left(i,j\right)$
+\end_inset
+
+ )שמושרת מההשמה 
+\begin_inset Formula $f$
+\end_inset
+
+(, ושאין יותר משתי אותיות מושמות באותו התא.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{init}$
+\end_inset
+
+ תוודא שהשורה הראשונה במטריצה מקודדת את 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+, כלומר שהשורה הראשונה היא 
+\begin_inset Formula $\#q_{0}w_{1}\ldots w_{n}\#$
+\end_inset
+
+, ופורמלית
+\begin_inset Formula 
+\[
+\varphi_{init}=x_{11\#}\land x_{12q_{0}}\bigwedge_{i\in\left[\left|w\right|\right]}x_{1iw_{i+2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ גרף.
+ נאמר כי 
+\series bold
+
+\begin_inset Formula $C\subseteq V$
+\end_inset
+
+ 
+\series default
+\bar under
+כיסוי קודקודי
+\bar default
+ ב-
+\begin_inset Formula $G$
+\end_inset
+
+ אם לכל צלע 
+\begin_inset Formula $e=\left\{ u,v\right\} \in E$
+\end_inset
+
+, לפחות אחד הקודקודים של 
+\begin_inset Formula $e$
+\end_inset
+
+ נמצא ב-
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\mf{VC}=\left\{ \left\langle G,k\right\rangle :k\;\text{כיסוי קודקודי מגודל לכל היותר}\;G\text{גרף לא מכוון ויש ב-}\;G\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה באלגו ראינו אלג' 
+\begin_inset Formula $2$
+\end_inset
+
+-מקרב לבעיית הכיסוי הקודקודי.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\mf{VC}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמה.
+\end_layout
+
+\begin_layout Proof
+נראה ראשית ש-
+\begin_inset Formula $\mf{VC}$
+\end_inset
+
+ ב-
+\begin_inset Formula $\np$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מציאת מוודא פולי' לה.
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ יקבל 
+\begin_inset Formula $\left\langle G,k\right\rangle $
+\end_inset
+
+ ו-
+\begin_inset Formula $c$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $c$
+\end_inset
+
+ היא תת-קבוצה של קודקודי 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ יספור את 
+\begin_inset Formula $\left|c\right|$
+\end_inset
+
+ויוודא שאכן 
+\begin_inset Formula $\left|c\right|\leq k$
+\end_inset
+
+ וכן ש-
+\begin_inset Formula $c$
+\end_inset
+
+ מוכלת בקודקודי 
+\begin_inset Formula $G$
+\end_inset
+
+, אם לא, ידחה.
+ אם שתי הבדיקות עוברת, 
+\begin_inset Formula $V$
+\end_inset
+
+ יעבור על כל הצלעות ב-
+\begin_inset Formula $G$
+\end_inset
+
+ ויוודא שיש לכל צלע לפחות קודקוד אחד ב-
+\begin_inset Formula $c$
+\end_inset
+
+, ויקבל אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם זה מתקיים.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $V$
+\end_inset
+
+ רץ בזמן פולי' כי שתי הבדיקות הראשונות הן בזמן פולי' ב-
+\begin_inset Formula $c$
+\end_inset
+
+ )שהוא פולי' לכל היותר ב-
+\begin_inset Formula $k$
+\end_inset
+
+ כי אחרת נדחה, כאשר 
+\begin_inset Formula $k$
+\end_inset
+
+ פולי' ב-
+\begin_inset Formula $\left|G\right|$
+\end_inset
+
+ אם הוא תקין(, והבדיקה השלישית לוקחת 
+\begin_inset Formula $\oo{\left|E\right|\cdot\left|V\right|}$
+\end_inset
+
+.
+ בנוסף 
+\begin_inset Formula $V$
+\end_inset
+
+ מוודא נכון )ברור(.
+ לכן 
+\begin_inset Formula $\mf{VC}\in\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נראה ש-
+\begin_inset Formula $\mf{VC}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{NPH}$
+\end_inset
+
+ )
+\begin_inset Formula $\np$
+\end_inset
+
+-קשה( ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הרדוקציה 
+\begin_inset Formula $\mf{CLIQUE}\leq_{p}\mf{VC}$
+\end_inset
+
+.
+ כלומר נחפש 
+\begin_inset Formula $f$
+\end_inset
+
+ פולי' כך ש-
+\begin_inset Formula $\left\langle G,k\right\rangle \in\mf{CLIQUE}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם יש ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ 
+\begin_inset Formula $k'$
+\end_inset
+
+-קליקה.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+טענת
+\begin_inset Formula $\;$
+\end_inset
+
+עזר יש ב-
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+-קליקה אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם יש ב-
+\begin_inset Formula $\overline{G}$
+\end_inset
+
+ כיסוי קודקודי בגודל 
+\begin_inset Formula $n-k$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ מספר הקודקודים ב-
+\begin_inset Formula $G$
+\end_inset
+
+ ו-
+\begin_inset Formula $\overline{G}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $G$
+\end_inset
+
+ עם הצלעות ההפוכות - 
+\begin_inset Formula $e\notin E\left(G\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $e\in E\left(\overline{G}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ נניח שיש ב-
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+-קליקה ונסמנה ב-
+\begin_inset Formula $C$
+\end_inset
+
+.
+ נביט ב-
+\begin_inset Formula $\overline{C}=V\left(G\right)\backslash C$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\left|\overline{C}\right|=n-k$
+\end_inset
+
+ ונראה ש-
+\begin_inset Formula $\overline{C}$
+\end_inset
+
+ כיסוי קודקודי ב-
+\begin_inset Formula $\overline{G}$
+\end_inset
+
+ ונסיים.
+ נניח בשלילה ש-
+\begin_inset Formula $\overline{C}$
+\end_inset
+
+, אינו כיסוי קודקודי, ותהי 
+\begin_inset Formula $\left\{ x,y\right\} \in\overline{E}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x,y\notin\overline{C}$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $x,y\in C$
+\end_inset
+
+ אבל 
+\begin_inset Formula $C$
+\end_inset
+
+ קליקה ב-
+\begin_inset Formula $G$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\{ x,y\right\} \in E$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left\{ x,y\right\} \notin E$
+\end_inset
+
+ סתירה.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ נניח שיש ב-
+\begin_inset Formula $\overline{G}$
+\end_inset
+
+ כיסוי קודקודי בגודל 
+\begin_inset Formula $n-k$
+\end_inset
+
+ ונסמנו ב-
+\begin_inset Formula $\overline{S}$
+\end_inset
+
+.
+ נראה ש-
+\begin_inset Formula $S$
+\end_inset
+
+ היא 
+\begin_inset Formula $k$
+\end_inset
+
+-קליקה ב-
+\begin_inset Formula $G$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $x,y\in S$
+\end_inset
+
+ ונניח בשלילה ש-
+\begin_inset Formula $\left\{ x,y\right\} \notin E$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left\{ x,y\right\} \in\overline{E}$
+\end_inset
+
+, לכן או ש-
+\begin_inset Formula $x\notin\overline{S}$
+\end_inset
+
+ או ש-
+\begin_inset Formula $y\notin\overline{S}$
+\end_inset
+
+ ובפרט לא מתקיים 
+\begin_inset Formula $x,y\in\overline{S}$
+\end_inset
+
+ סתירה להיות 
+\begin_inset Formula $\overline{S}$
+\end_inset
+
+ כיסוי קודקודי )מצאנו צלע שפיספס(.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+נסיים את הוכחת הטענה.
+ הרדוקציה של 
+\begin_inset Formula $f$
+\end_inset
+
+ תפעל כך.
+ בהינתן 
+\begin_inset Formula $\left\langle G,k\right\rangle $
+\end_inset
+
+, תחזיר 
+\begin_inset Formula $\left\langle \overline{G},n-k\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\overline{G}$
+\end_inset
+
+ מתקבל מ-
+\begin_inset Formula $G$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הפיכת כל הצלעות ו-
+\begin_inset Formula $n=\left|V\left(G\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f$
+\end_inset
+
+ פולינומית כי הפיכת הצלעות לוקחת 
+\begin_inset Formula $\oo{E\left(G\right)}$
+\end_inset
+
+ וחישוב 
+\begin_inset Formula $n-k$
+\end_inset
+
+ לוקח 
+\begin_inset Formula $\oo{V\left(G\right)}$
+\end_inset
+
+ כלומר סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $\oo{\left|G\right|}$
+\end_inset
+
+.
+ הרדוקציה נכונה מהלמה שכן 
+\begin_inset Formula $\left\langle G,k\right\rangle \in\mf{CLIQUE}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\langle \overline{G},n-k\right\rangle \in\mf{VC}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ גרף.
+ נאמר כי 
+\begin_inset Formula $D\subseteq V$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar under
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dominating Set
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ אם לכל 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ או ש-
+\begin_inset Formula $v\in D$
+\end_inset
+
+ או ש-
+\begin_inset Formula $V$
+\end_inset
+
+ חלק מצלע שהקצה השני שלה ב-
+\begin_inset Formula $D$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $D$
+\end_inset
+
+ קבוצה של קודקודים כך שכל קודקוד במרחק לכל היותר 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקודקוד כלשהו ב-
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר את השפה
+\begin_inset Formula 
+\[
+\mf{DS}=\left\{ \left\langle G,k\right\rangle :k\geq\;\text{בגודל}\;DS\;G\text{יש ב-}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Formula $\mf{DS}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{NPC}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח כי 
+\begin_inset Formula $\mf{DS}\in\np$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מציאת מוודא פולי' 
+\begin_inset Formula $V$
+\end_inset
+
+ שיפעל כך: 
+\begin_inset Formula $V$
+\end_inset
+
+ יקבל 
+\begin_inset Formula $\left\langle G,k\right\rangle $
+\end_inset
+
+ ו-
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\begin_inset Formula $V$
+\end_inset
+
+יבדוק ש-
+\begin_inset Formula $D\subseteq V\left(G\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|D\right|\leq$
+\end_inset
+
+.
+ לאחר מכן יעבור על כל קודקוד ב-
+\begin_inset Formula $G$
+\end_inset
+
+ ויבדוק לכל קודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ האם הוא ב-
+\begin_inset Formula $D$
+\end_inset
+
+, ואם לא יעבור על הצלעות ב-
+\begin_inset Formula $G$
+\end_inset
+
+ ש-
+\begin_inset Formula $u$
+\end_inset
+
+ חלק מהן ויבדוק אם הקצה השני של הצלע ב-
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אם לו אף צלע כזו, ידחה.
+ אחרת לאחר מעבר מוצלח על כל הקודקודים, יקבל.
+ הסיבוכיות של 
+\begin_inset Formula $V$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+\oo{\left|V\left(G\right)\right|\left|V\left(G\right)\right|\left|E\left(G\right)\right|\left|V\left(G\right)\right|}
+\]
+
+\end_inset
+
+שזה פולינומי באורך הקלט ו-
+\begin_inset Formula $V$
+\end_inset
+
+ נכון.
+\end_layout
+
+\begin_layout Proof
+עתה נראה כי 
+\begin_inset Formula $\mf{DS}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{NPH}$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י כך שנראה רדוקציה 
+\begin_inset Formula $\mf{VC}\leq_{p}\mf{DS}$
+\end_inset
+
+.
+ כלומר רוצים 
+\begin_inset Formula $g$
+\end_inset
+
+ פולינומית כך ש-
+\begin_inset Formula $\left\langle G,k\right\rangle \in\mf{VC}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\langle G',k'\right\rangle \in\mf{DS}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בהינתן 
+\begin_inset Formula $\left\langle G,k\right\rangle $
+\end_inset
+
+, הרדוקציה 
+\begin_inset Formula $g$
+\end_inset
+
+ תחזיר 
+\begin_inset Formula $\left\langle G',k'\right\rangle $
+\end_inset
+
+ כך ש-
+\begin_inset Formula $G'$
+\end_inset
+
+ מתקבל מ-
+\begin_inset Formula $G$
+\end_inset
+
+ באופן הבא: לכל צלע 
+\begin_inset Formula $\left\{ x,y\right\} =e\in E\left[G\right]$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ תוסיף קודקוד חדש 
+\begin_inset Formula $v_{e}$
+\end_inset
+
+ ושתי צלעות חדשות 
+\begin_inset Formula $\left\{ x,v_{e}\right\} ,\left\{ y,v_{e}\right\} $
+\end_inset
+
+ )כל צלע הופכת למשולש 
+\begin_inset Formula $x,v_{e},y$
+\end_inset
+
+(.
+ פורמלית
+\begin_inset Formula 
+\begin{align*}
+V\left(G'\right) & =V\left(G\right)\cup\bigcup_{e\in E\left(G\right)}v_{e}\\
+E\left(G\right) & =E\left(G\right)\cup\left\{ \left\{ x,v_{e}\right\} ,\left\{ y,v_{e}\right\} :\left\{ x,y\right\} \in E\left(G\right)\right\} 
+\end{align*}
+
+\end_inset
+
+לבסוף, 
+\begin_inset Formula $g$
+\end_inset
+
+ תסיר את מס' הקודקודים המבודדים ב-
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ ותחזיר 
+\begin_inset Formula $\left\langle G',k'\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k'=f+k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $g$
+\end_inset
+
+ רצה בזמן פולי' כי ספירת קודקודים מבודדים לוקח 
+\begin_inset Formula $\oo{\left|V\left(G\right)\right|}$
+\end_inset
+
+, הוספת קודקודים לכל צלע 
+\begin_inset Formula $\oo{E\left(G\right)}$
+\end_inset
+
+ והוספת צלעות חדשות גם 
+\begin_inset Formula $\oo{E\left(G\right)}$
+\end_inset
+
+.
+ נראה נכונות, כלומר ש-
+\begin_inset Formula $\left\langle G,k\right\rangle \in\mf{VC}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\langle G',k'\right\rangle \in\mf{DS}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ נניח שיש ב-
+\begin_inset Formula $G$
+\end_inset
+
+ כיסוי קודקודי 
+\begin_inset Formula $C$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ נראה שיש ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ קבוצה דומיננטית 
+\begin_inset Formula $D$
+\end_inset
+
+ מגודל לכל היותר 
+\begin_inset Formula $k+f$
+\end_inset
+
+ )
+\begin_inset Formula $f$
+\end_inset
+
+ גודל אוסף הקודקודים המבודדים, 
+\begin_inset Formula $F$
+\end_inset
+
+(.
+ נביט ב-
+\begin_inset Formula $D=C\cup F$
+\end_inset
+
+ ונראה ש-
+\begin_inset Formula $D$
+\end_inset
+
+ היא 
+\begin_inset Formula $DS$
+\end_inset
+
+ ב-
+\begin_inset Formula $G'$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $\left|D\right|\leq\left|C\right|+\left|F\right|=k'$
+\end_inset
+
+ )אולי יש חפיפה בין 
+\begin_inset Formula $C,F$
+\end_inset
+
+(.
+ נוכיח כי 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $DS$
+\end_inset
+
+ ב-
+\begin_inset Formula $G'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $v\in V\left(G'\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $v\in F$
+\end_inset
+
+ אז 
+\begin_inset Formula $v\in D$
+\end_inset
+
+ )מהגדרת 
+\begin_inset Formula $D$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $v\in V\left(G\right)\backslash F$
+\end_inset
+
+ אז 
+\begin_inset Formula $v$
+\end_inset
+
+ חלק מצלע מקורית ב-
+\begin_inset Formula $G$
+\end_inset
+
+ ולכן הוא במרחק 
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל היותר מ-
+\begin_inset Formula $C$
+\end_inset
+
+ ולכן גם מ-
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $v\in V\left(G'\right)\backslash V\left(G\right)$
+\end_inset
+
+, בהכרח ש-
+\begin_inset Formula $v$
+\end_inset
+
+ הוא מהצורה 
+\begin_inset Formula $v=xy$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\left\{ x,y\right\} \in E\left(G\right)$
+\end_inset
+
+.
+ לכן מכך ש-
+\begin_inset Formula $C$
+\end_inset
+
+ כיסוי קודקודי ב-
+\begin_inset Formula $G$
+\end_inset
+
+, או ש-
+\begin_inset Formula $x$
+\end_inset
+
+ או ש-
+\begin_inset Formula $y$
+\end_inset
+
+ ב-
+\begin_inset Formula $C$
+\end_inset
+
+ ובפרט ב-
+\begin_inset Formula $D$
+\end_inset
+
+.
+ בנוסף 
+\begin_inset Formula $v_{xy}$
+\end_inset
+
+ מחובר בצלע גם ל-
+\begin_inset Formula $x$
+\end_inset
+
+ וגם ל-
+\begin_inset Formula $y$
+\end_inset
+
+, ולכן במרחק 
+\begin_inset Formula $1$
+\end_inset
+
+ לכל היותר מ-
+\begin_inset Formula $D$
+\end_inset
+
+ )אולי אפילו פעמיים!(.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ נניח שיש ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ קבוצה דומיננטית 
+\begin_inset Formula $D'$
+\end_inset
+
+ מגודל 
+\begin_inset Formula $k'=k+f$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $D=D'\backslash F$
+\end_inset
+
+ ונוכיח כי 
+\begin_inset Formula $D$
+\end_inset
+
+ הוא כיסוי קודקודי בגודל 
+\begin_inset Formula $k\geq$
+\end_inset
+
+ ב-
+\begin_inset Formula $G'$
+\end_inset
+
+.
+\begin_inset Formula $F\subseteq D$
+\end_inset
+
+ )אין קשת שתקרב את הקודקודים המבודדים ל-
+\begin_inset Formula $D$
+\end_inset
+
+ אם הם לא כבר שם( ולכן 
+\begin_inset Formula $\left|D\right|=\left|D'\right|-\left|F\right|\leq k'-f=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח כי בה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $D\subseteq V\left(G\right)$
+\end_inset
+
+.
+ נניח שקיים קודקוד ב-
+\begin_inset Formula $D$
+\end_inset
+
+ שאינו ב-
+\begin_inset Formula $G$
+\end_inset
+
+.
+ הקודקודים היחידים שאינם ב-
+\begin_inset Formula $G$
+\end_inset
+
+ הם מהצורה 
+\begin_inset Formula $v_{e}$
+\end_inset
+
+.
+ לכן אם 
+\begin_inset Formula $v_{xy}\in D$
+\end_inset
+
+ אז הוא נוגע רק ב-
+\begin_inset Formula $x$
+\end_inset
+
+ וב-
+\begin_inset Formula $y$
+\end_inset
+
+ ולכן אם נחליף את 
+\begin_inset Formula $v_{xy}$
+\end_inset
+
+ ב-
+\begin_inset Formula $x$
+\end_inset
+
+ או 
+\begin_inset Formula $y$
+\end_inset
+
+ נוכל רק להגדיל את מספר הצלעות בהן 
+\begin_inset Formula $D$
+\end_inset
+
+ נוגעת.
+\end_layout
+
+\begin_layout Proof
+נסיים בכך שנוכיח ש-
+\begin_inset Formula $D$
+\end_inset
+
+ כיסוי קודקודי ב-
+\begin_inset Formula $G$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\left\{ x,y\right\} \in E\left(G\right)$
+\end_inset
+
+.
+ מהיות 
+\begin_inset Formula $D'$
+\end_inset
+
+ קבוצה דומיננטית ב-
+\begin_inset Formula $G'$
+\end_inset
+
+, כל קודקוד ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ הוא במרחק לכל היותר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ-
+\begin_inset Formula $D'$
+\end_inset
+
+ ומהיות 
+\begin_inset Formula $D\subseteq V\left(G\right)$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+ כיסוי קודקודי ב-
+\begin_inset Formula $G$
+\end_inset
+
+, כי 
+\begin_inset Formula $D$
+\end_inset
+
+ כולל קודקוד מכל צלע ב-
+\begin_inset Formula $G$
+\end_inset
+
+ מהיותו נגזרת של קבוצה דומיננטית )של גרף שמכיל את 
+\begin_inset Formula $G$
+\end_inset
+
+(, להוציא מקודקודים מבודדים שרלוונטיים רק להגדרת קבוצה הדומיננטית ולא להגדרת
+ הכיסוי הקודקודי.
 \end_layout
 
 \end_body
