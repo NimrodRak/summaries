@@ -25282,7 +25282,7 @@ status open
 , ופורמלית
 \begin_inset Formula 
 \[
-\varphi_{init}=x_{11\#}\land x_{12q_{0}}\bigwedge_{i\in\left[\left|w\right|\right]}x_{1iw_{i+2}}
+\varphi_{init}=x_{11\#}\land x_{12q_{0}}\land\bigwedge_{i\in\left[\left|w\right|\right]}x_{1\left(i+2\right)w_{i}}\land\bigwedge_{i=n+3}^{t\left(n\right)+2}x_{1i\spa}\land x_{1t\left(n+3\right)\#}
 \]
 
 \end_inset
@@ -26620,6 +26620,1594 @@ E\left(G\right) & =E\left(G\right)\cup\left\{ \left\{ x,v_{e}\right\} ,\left\{ y
 
 (, להוציא מקודקודים מבודדים שרלוונטיים רק להגדרת קבוצה הדומיננטית ולא להגדרת
  הכיסוי הקודקודי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{XI
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{XI}$
+\end_inset
+
+ | 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נמשיך את הוכחת משפט קוק-לוין.
+ נסיים את הגדרת 
+\begin_inset Formula $\varphi=\varphi_{cell}\land\varphi_{init}\land\varphi_{acc}\land\varphi_{move}$
+\end_inset
+
+, נוסחת ה-
+\begin_inset Formula $3\mf{SAT}$
+\end_inset
+
+ אליה נעתיק את 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+ ברדוקציה הפולי'.
+ את 
+\begin_inset Formula $\varphi_{cell}$
+\end_inset
+
+ הגדרנו כך שנוכל לאכוף ש-
+\begin_inset Formula $f$
+\end_inset
+
+ מגדירה היטב את המטריצה 
+\begin_inset Formula $g$
+\end_inset
+
+, ואת 
+\begin_inset Formula $\varphi_{init}$
+\end_inset
+
+ הגדרנו כך שהנוכל לאכוף שהשורה הראשונה היא הקונפ' ההתחלתית של ריצת 
+\begin_inset Formula $M$
+\end_inset
+
+ )מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+( על 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{acc}$
+\end_inset
+
+ תוודא שאנחנו משבצים באחת הקונפ', כלומר 
+\begin_inset Formula $\varphi_{acc}=\bigvee\limits _{i\in\left[t\left(n\right)+3\right],j\in\left[t\left(n\right)\right]}x_{ijq_{acc}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{move}$
+\end_inset
+
+ תוודא שהקונפ' באמת עוקבות אחת אחר השנייה.
+ מספיק שנבדוק שכל חלון 
+\begin_inset Formula $3\times2$
+\end_inset
+
+ במטריצה הוא תקין )משום שהקשן קורה רק על פני לכל היותר שלוש משבצות הצמודות
+ לאיפה שהמצב נמצא וכל השאר נשאר זהה.
+\begin_inset Formula 
+\[
+\varphi_{move}=\bigvee\limits _{i\in\left[t\left(n\right)-1\right],j\in\left[t\left(n\right)\right]-1}legal\left(i,j\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $legal\left(i,j\right)$
+\end_inset
+
+ הנוסחה שמוודאת שהחלון מ-
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ עד ל-
+\begin_inset Formula $\left(i+2,j+1\right)$
+\end_inset
+
+ )כולל( חוקי, כלומר בודקת האם החלון הוא אחד מבין החלונות החוקיים האפשריים
+\begin_inset Formula 
+\[
+legal\left(i,j\right)=\bigvee_{\left(s_{1},\ldots,s_{6}\right)\in W}\left(x_{ijs_{1}}\land x_{\left(i+1\right)js_{2}}\land\ldots\land x_{\left(i+2\right)\left(j+1\right)s_{6}}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $W$
+\end_inset
+
+ קבוצת החלונות החוקיים.
+ 
+\begin_inset Formula $W$
+\end_inset
+
+ מוגדרת באופן הבא:
+\end_layout
+
+\begin_layout Itemize
+לכל מעבר 
+\begin_inset Formula $\delta\left(q,a\right)=\left(q',b,R\right)$
+\end_inset
+
+, נוסיף את החלונות ) 
+\begin_inset Formula $c_{2,3,4,5}$
+\end_inset
+
+ כל האותיות ב-
+\begin_inset Formula $\Gamma$
+\end_inset
+
+( 
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|}
+\hline c_{2} & c_{3} & b\\
+\hline c_{2} & c_{3} & q
+\\\hline \end{array}\quad\begin{array}{|c|c|c|}
+\hline c_{3} & b & q'\\
+\hline c_{3} & q & a
+\\\hline \end{array}\quad\begin{array}{|c|c|c|}
+\hline b & q' & c_{4}\\
+\hline q & a & c_{4}
+\\\hline \end{array}\quad\begin{array}{|c|c|c|}
+\hline q' & c_{4} & c_{5}\\
+\hline a & c_{4} & c_{5}
+\\\hline \end{array}
+\]
+
+\end_inset
+
+כי אנחנו מסתכלים על החלון הכללי הבא שבו קורה האקשן:
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|c|}
+\hline c_{2} & c_{3} & b & q' & c_{4} & c_{5}\\
+\hline c_{2} & c_{3} & q & a & c_{4} & c_{5}
+\\\hline \end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל מעבר 
+\begin_inset Formula $\delta\left(q,a\right)=\left(q',b,L\right)$
+\end_inset
+
+ נוסיף בדומה את החלונות
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|}
+\hline c_{1} & c_{2} & q'\\
+\hline c_{1} & c_{2} & c_{3}
+\\\hline \end{array}\quad\begin{array}{|c|c|c|}
+\hline c_{2} & q' & c_{3}\\
+\hline c_{2} & c_{3} & q
+\\\hline \end{array}\quad\begin{array}{|c|c|c|}
+\hline q' & c_{3} & b\\
+\hline c_{3} & q & a
+\\\hline \end{array}\quad\begin{array}{|c|c|c|}
+\hline c_{3} & b & c_{4}\\
+\hline q & a & c_{4}
+\\\hline \end{array}\quad\begin{array}{|c|c|c|}
+\hline b & c_{4} & c_{5}\\
+\hline a & c_{4} & c_{5}
+\\\hline \end{array}
+\]
+
+\end_inset
+
+כי אחנו מסתכלים על החלון הבא שבו קורה האקשן
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|c|c|}
+\hline c_{1} & c_{2} & q' & c_{3} & b & c_{4} & c_{5}\\
+\hline c_{1} & c_{2} & c_{3} & q & a & c_{4} & c_{5}
+\\\hline \end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $c_{1,}c_{2},c_{3}\in\Gamma$
+\end_inset
+
+ נוסיף את החלון
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|}
+\hline c_{1} & c_{2} & c_{3}\\
+\hline c_{1} & c_{2} & c_{3}
+\\\hline \end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב כי 
+\begin_inset Formula $legal$
+\end_inset
+
+ אינה ב-
+\begin_inset Formula $\mf{CNF}$
+\end_inset
+
+ כי היא מהצורה 
+\begin_inset Formula $\left(\land\ldots\land\right)\lor\left(\land\ldots\land\right)$
+\end_inset
+
+ אבל אפשר באמצעות דיסטריבויטיביות להגיע ל-
+\begin_inset Formula $\mf{CNF}$
+\end_inset
+
+ )
+\begin_inset Formula $a\lor\left(b\land c\right)=\left(a\lor b\right)\land\left(a\lor c\right)$
+\end_inset
+
+(.
+ בנוסף יש מספר קבוע של משבצות )כי 
+\begin_inset Formula $M$
+\end_inset
+
+ נתונה(.
+\end_layout
+
+\begin_layout Standard
+הראנו כבר בהרצאה הקודמת שהרדוקציה פולי', עתה נוכיח כי 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ספיקה, כלומר שהרדוקציה נכונה.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ יש ריצה מקבלת של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ולכן המטריצה שמתארת אותה משרה השמה שמספקת את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ספיקה ולכן ישנה 
+\begin_inset Formula $f$
+\end_inset
+
+ השמה מספקת.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מהיות 
+\begin_inset Formula $\varphi_{cell}$
+\end_inset
+
+ מסופקת, 
+\begin_inset Formula $f$
+\end_inset
+
+ מתארת מטריצה מוגדרת היטב.
+\end_layout
+
+\begin_layout Itemize
+מהיות 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ מסופקת, השורה הראשונה במטריצה מתארת את הקונפ' התחלתית של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+לפי 
+\begin_inset Formula $\varphi_{move}$
+\end_inset
+
+ ידוע לנו שמעבר בין שורות במטריצה מתאים למעבר בין קונפ' עוקבות.
+ 
+\end_layout
+
+\begin_layout Itemize
+מ-
+\begin_inset Formula $\varphi_{acc}$
+\end_inset
+
+ הריצה, שהיא חוקית, מקבלת מתישהו.
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה לא התייחסנו לעובדה שאנחנו יוצרים נוסחאות ב-
+\begin_inset Formula $\mf{CNF}$
+\end_inset
+
+ ולא ב-
+\begin_inset Formula $3\mf{CNF}$
+\end_inset
+
+.
+ למעשה מה שצריך להוכיח זה שאפשר לעשותר דוקציה 
+\begin_inset Formula $\mf{CNF}\;\text{פסיקות}\leq_{p}3\mf{SAT}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל פסוקית 
+\begin_inset Formula $\theta=\ell_{1}\lor\ldots\lor\ell_{k}$
+\end_inset
+
+ אם 
+\begin_inset Formula $k\leq3$
+\end_inset
+
+ אפשר לרפד ואין בעיה.
+ אם 
+\begin_inset Formula $k>3$
+\end_inset
+
+, נוסיף 
+\begin_inset Formula $k-3$
+\end_inset
+
+ משתנים חדשים 
+\begin_inset Formula $y_{1},\ldots,y_{k-3}$
+\end_inset
+
+ ונחזיר את הנוסחה 
+\begin_inset Formula 
+\[
+\theta'=\left(\ell_{1}\lor\ell_{2}\lor\ell_{1}\right)\land\left(\overline{y_{1}}\lor\ell_{3}\lor y_{2}\right)\land\ldots\land\left(\overline{y_{k-3}}\lor\ell_{k-1}\lor\ell_{k}\right)
+\]
+
+\end_inset
+
+נפנף ידיים למה 
+\begin_inset Formula $\theta$
+\end_inset
+
+ ספיקה אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\theta'$
+\end_inset
+
+ ספיקה: בכיוון הלוך, הרעיון הוא שאם 
+\begin_inset Formula $\ell_{i}=T$
+\end_inset
+
+ בהשמה מספקת ל-
+\begin_inset Formula $\theta$
+\end_inset
+
+ אז כך יהיה גם בהשמה מספקת ל-
+\begin_inset Formula $\theta'$
+\end_inset
+
+ אז עבור 
+\begin_inset Formula $j\leq i-2$
+\end_inset
+
+ , 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ יהיו משוחררים להיות מה שהם רוצים )יהיו 
+\begin_inset Formula $T$
+\end_inset
+
+ לדוגמה( ואילו לכל 
+\begin_inset Formula $i+1\leq j$
+\end_inset
+
+, 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ יהיו 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ או משהו.
+ ראו בתרגול.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה בעיית ה-
+\lang english
+subset sum
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבלת כקלט קבוצה )יתכן עם חזרות( של טבעיים 
+\begin_inset Formula $A=\left\{ a_{1}\ldots,a_{n}\right\} \subseteq\fldn$
+\end_inset
+
+ ומספר יעד 
+\begin_inset Formula $s$
+\end_inset
+
+, וצריכה לענות כפלט האם יש 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $s=\sum\limits _{a_{i}\in B}a_{i}$
+\end_inset
+
+.
+ פורמלית נגדיר את השפה
+\begin_inset Formula 
+\[
+\mf{SS}=\left\{ \left\langle A,s\right\rangle \in2^{\fldn}\times\fldn:\left(\exists B\subseteq A:\sum\limits _{a_{i}\in B}a_{i}=s\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\mf{SS}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמה.
+\end_layout
+
+\begin_layout Proof
+ראשית 
+\begin_inset Formula $\mf{SS}\in\np$
+\end_inset
+
+ כי מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט כולה לנחש את 
+\begin_inset Formula $B$
+\end_inset
+
+ ולבדוק האם היא נסכמת ל-
+\begin_inset Formula $s$
+\end_inset
+
+, או לחלופין מוודא פולי' מקבל את 
+\begin_inset Formula $B$
+\end_inset
+
+ ובודק אותו.
+ נשים לב שהבעיה עדיין ב-
+\begin_inset Formula $\mf{NP}$
+\end_inset
+
+ גם עבור ייצוג אונארי כמו עבור בסיס 
+\begin_inset Formula $b>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נוכיח כי היא 
+\begin_inset Formula $\mf{NPH}$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י רדוקציה פולי' מ-
+\begin_inset Formula $3\mf{SAT}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f$
+\end_inset
+
+ שבהינתן נוסחה ב-
+\begin_inset Formula $3\mf{CNF}$
+\end_inset
+
+, נחזיר קלט ל-
+\begin_inset Formula $\mf{SS}$
+\end_inset
+
+ )
+\begin_inset Formula $\left\langle A,s\right\rangle $
+\end_inset
+
+(, כך שלכל 
+\begin_inset Formula $\theta\in3\mf{CNF}$
+\end_inset
+
+ , 
+\begin_inset Formula $\theta$
+\end_inset
+
+ ספיקה אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\left\langle A,s\right\rangle \in\mf{SS}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+תהי 
+\begin_inset Formula $\theta$
+\end_inset
+
+ מעל 
+\begin_inset Formula $X=\left\{ x_{1},\ldots,x_{n}\right\} $
+\end_inset
+
+ עם 
+\begin_inset Formula $m$
+\end_inset
+
+ פסוקיות 
+\begin_inset Formula $c_{1},\ldots,c_{m}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ תחזיר 
+\begin_inset Formula $s=\desc{1\ldots1}n\;\desc{3\ldots3}m$
+\end_inset
+
+ ותייצר 
+\begin_inset Formula $A$
+\end_inset
+
+ עם 
+\begin_inset Formula $2\left(n+m\right)$
+\end_inset
+
+ מספרים בבסיס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)לכל בסיס של ייצוג של הקלט(, כשבכל אחד 
+\begin_inset Formula $n+m$
+\end_inset
+
+ ספרות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל משתנה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ נגדיר מספרים 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ ו-
+\begin_inset Formula $f_{i}$
+\end_inset
+
+, כך שההגדרה שלהם תאכוף ספיקות של 
+\begin_inset Formula $\theta$
+\end_inset
+
+ אם 
+\begin_inset Formula $\left\langle A,s\right\rangle \in\mf{SS}$
+\end_inset
+
+.
+ הספרה ה-
+\begin_inset Formula $i$
+\end_inset
+
+-ית )הביט הראשון הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MSB
+\lang hebrew
+( של 
+\begin_inset Formula $f_{i},t_{i}$
+\end_inset
+
+ היא 
+\begin_inset Formula $1$
+\end_inset
+
+, ועבור 
+\begin_inset Formula $1\leq j\leq m$
+\end_inset
+
+ הספרה היא 
+\begin_inset Formula $n+j$
+\end_inset
+
+ היא:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ב-
+\begin_inset Formula $t_{i}$
+\end_inset
+
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ אם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מופיע חיובי ב-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ב-
+\begin_inset Formula $f_{i}$
+\end_inset
+
+: 
+\begin_inset Formula $1$
+\end_inset
+
+ אם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מופיע שלילי ב-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לכל פסוקית 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ נגדיר בנוסף שני מספרים 
+\begin_inset Formula $q_{j},p_{j}$
+\end_inset
+
+, שיהיו ריפוד: הספרה ה-
+\begin_inset Formula $j$
+\end_inset
+
+-ית של 
+\begin_inset Formula $p_{j,}q_{j}$
+\end_inset
+
+ היא 
+\begin_inset Formula $1$
+\end_inset
+
+ והשאר אפס.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula 
+\[
+\theta=\left(x_{1}\lor x_{2}\lor x_{3}\right)\land\left(\overline{x_{1}}\lor\overline{x_{2}}\lor x_{3}\right)\land\left(\overline{x_{1}}\lor x_{2}\lor\overline{x_{3}}\right)\land\left(x_{1}\lor\overline{x_{2}}\lor\overline{x_{2}}\right)
+\]
+
+\end_inset
+
+כאן 
+\begin_inset Formula $n=3,m=4$
+\end_inset
+
+, ולכן אנחנו מגדירים מספרים עם 
+\begin_inset Formula $7$
+\end_inset
+
+ ספרות, המספרים שיוגדרו הם )כל מקום שלא כתוב מספר הכוונה היא ל-
+\begin_inset Formula $0$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|c|c|c|c|c|}
+ & 1 & 2 & 3 & 1\left(4\right) & 2\left(5\right) & 3\left(6\right) & 4\left(7\right)\\
+\hline t_{1} & 1 &  &  & 1 &  &  & 1\\
+\hline f_{1} & 1 &  &  &  & 1 & 1 & \\
+\hline t_{2} &  & 1 &  & 1 &  & 1 & \\
+\hline f_{2} &  & 1 &  &  & 1 &  & 1\\
+\hline t_{3} &  &  & 1 & 1 & 1 &  & \\
+\hline f_{3} &  &  & 1 &  &  & 1 & \\
+\hline p_{1} &  &  &  & 1 &  &  & \\
+\hline q_{1} &  &  &  & 1 &  &  & \\
+\hline p_{2} &  &  &  &  & 1 &  & \\
+\hline q_{2} &  &  &  &  & 1 &  & \\
+\hline p_{3} &  &  &  &  &  & 1 & \\
+\hline q_{3} &  &  &  &  &  & 1 & \\
+\hline p_{4} &  &  &  &  &  &  & 1\\
+\hline q_{4} &  &  &  &  &  &  & 1\\
+\hline s & 1 & 1 & 1 & 3 & 3 & 3 & 3
+\end{array}
+\]
+
+\end_inset
+
+כאשר חשוב לזכור שמדובר במספרים עשרוניים )מיליון...(.
+ אינטואטיבית כדי להגיע לסכום למטה, נהיה חייבים לבחור או את 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ או את 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ אבל לא את שניהם )אחרת לא יסכם( כך שההשמה מוגדרת היטב.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+הרדוקציה פולי' ולכן נותר להוכיח נכונות, כלומר שניתן להגיע ל-
+\begin_inset Formula $s=\desc{1\ldots1}n\;\desc{3\ldots3}m$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left\{ t_{1},f_{1},\ldots,t_{n},f_{n},p_{1},q_{1},\ldots,p_{m},q_{m}\right\} $
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\theta$
+\end_inset
+
+ ספיקה.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ השמה מספקת.
+ נכניס ל-
+\begin_inset Formula $B$
+\end_inset
+
+ את המספרים הבאים: לכל 
+\begin_inset Formula $i\in\left[n\right]$
+\end_inset
+
+, אם 
+\begin_inset Formula $f\left(x_{i}\right)=T$
+\end_inset
+
+ אז את 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ אחרת את 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $j\in\left[m\right]$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ מספקת 
+\begin_inset Formula $3$
+\end_inset
+
+ ליטרלים, לא נכניס את 
+\begin_inset Formula $p_{j,}q_{j}$
+\end_inset
+
+, אם 
+\begin_inset Formula $2$
+\end_inset
+
+ נכניס רק את 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+ואם רק אחד אז את 
+\begin_inset Formula $p_{j},q_{j}$
+\end_inset
+
+.
+ קל לראות שאכן מגיעים לסכום הנדרש )מהדוגמה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ אם 
+\begin_inset Formula $\left\langle A,s\right\rangle $
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $f:X\to\left\{ T,F\right\} $
+\end_inset
+
+ באופן הבא: יהי 
+\begin_inset Formula $B$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $s=\sum B$
+\end_inset
+
+.
+ מובטח שלכל 
+\begin_inset Formula $i\in\left[n\right]$
+\end_inset
+
+, בדיוק אחד מתוך 
+\begin_inset Formula $t_{i},f_{i}$
+\end_inset
+
+ ב-
+\begin_inset Formula $B$
+\end_inset
+
+ ולכן נוכל להגדיר את 
+\begin_inset Formula $f\left(x_{i}\right)$
+\end_inset
+
+ היטב בהתאם למה שנבחר.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ אכן מספק כי כדי להגיע ל-
+\begin_inset Formula $3$
+\end_inset
+
+, לכל פסוקית 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ נתרם לפחות 
+\begin_inset Formula $1$
+\end_inset
+
+ מהשורות של 
+\begin_inset Formula $x$
+\end_inset
+
+ )
+\begin_inset Formula $t_{i},f_{i}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Description
+הגדרה תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטר', חד סטרית שעוצרת על כל קלט.
+ 
+\bar under
+סיבוכיות הזיכרון
+\bar default
+ של 
+\begin_inset Formula $M$
+\end_inset
+
+ היא פ' 
+\begin_inset Formula $s:\fldn\to\fldn$
+\end_inset
+
+ כך שעל קלט באורך 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ משתמש לכל היותר ב-
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+ תאים, ונאמר ש-
+\begin_inset Formula $M$
+\end_inset
+
+ רצה בשטח 
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה עבור פ' 
+\begin_inset Formula $s$
+\end_inset
+
+, נגדיר
+\begin_inset Formula 
+\[
+\mf{SPACE}\left(s\left(n\right)\right)=\left\{ L:L\;\text{שמכריע את}\;\oo{s\left(n\right)}\;\text{יש מ"ט עם סיבוכיות זכרון}\right\} 
+\]
+
+\end_inset
+
+ואז 
+\begin_inset Formula $\mf{NSPACE}$
+\end_inset
+
+ המקבילה הא
+\begin_inset Quotes xrd
+\end_inset
+
+ד להגדרה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_layout Description
+הערה נניח שנוכל לקנות מכונה שרצה בזמן לינארי או מקום לינארי, מה נעדיף? מקום
+ לינארי! כי עבור 
+\begin_inset Formula $f:\fldn\to\fldn$
+\end_inset
+
+, מתקיים
+\begin_inset Formula 
+\[
+\mf{TIME}\left(f\left(n\right)\right)\subseteq\mf{SPACE}\left(f\left(n\right)\right)
+\]
+
+\end_inset
+
+כי אם 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת תוך 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ צעדים, היא לא יכולה להגיע מעבר לתא ה-
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+-י.
+\end_layout
+
+\begin_layout Description
+טענה עבור 
+\begin_inset Formula $f:\fldn\to\fldn$
+\end_inset
+
+ ההכלה 
+\begin_inset Formula $\mf{SPACE}\left(f\left(n\right)\right)\subseteq\mf{TIME}\left(2^{\oo{f\left(n\right)}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ראשית מכונה דטר' שעוצרת לא מבקרת באותה קונפ' פעמיים )אחרת הייתה נכנסת ללולאה
+ אינסופית(.
+ לכן אם עסקנו ב-
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ תאים, לכל היותר עברנו בכל הקונפ' שרלוונטיות לתאים האלה פעם אחת בדיוק לכל
+ אחת, ויש מספר אקספ' ב-
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ של קונפ' כאלה.
+\end_layout
+
+\begin_layout Proof
+כמה קונפ' שונות יש למכונה עם סיבוכיות זיכרון 
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+? קונפ' מתוארת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $Q\times\left[s\left(n\right)\right]\times\Gamma^{s\left(n\right)}$
+\end_inset
+
+ )מצב, מיקומו בסרט, תוכן הסרט(, ואם נסמן 
+\begin_inset Formula $\left|Q\right|=c_{1},\left|\Gamma\right|=c_{2}$
+\end_inset
+
+, אז מספר הקונפ' הוא 
+\begin_inset Formula $c_{1}s\left(n\right)c_{2}^{s\left(n\right)}$
+\end_inset
+
+, שזה אכן 
+\begin_inset Formula $2^{\oo{s\left(n\right)}}$
+\end_inset
+
+ מאינפי.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\mf{PSPACE}=\bigcup\limits _{k}\mf{SPACE}\left(n^{k}\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $\mf{NPSPACE}=\bigcup\limits _{k}\mf{NSPACE}\left(n^{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה מההערה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, 
+\begin_inset Formula $\p\subseteq\mf{PSPACE}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\p\subseteq\np\subseteq\mf{PSPACE}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נוכיח כי 
+\begin_inset Formula $\mf{SAT}\in\mf{PSPACE}$
+\end_inset
+
+.
+ זה נכון כי 
+\begin_inset Formula $\mf{SAT}$
+\end_inset
+
+ ניתנת להכרעה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטג' שרצה בשטח לינארי.
+ הרעיון הוא ש-
+\begin_inset Formula $M$
+\end_inset
+
+ תעבור על כל ההשמות האפשריות, ותקבל אם אחת מהן מספקת את הנוסחה.
+ אחרת, תדחה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נשתמש 
+\begin_inset Formula $g:2^{X}\to2^{X}\cup\left\{ \perp\right\} $
+\end_inset
+
+ פ' שממפה השמות להשמות עוקבות באופן שמכסה את כל 
+\begin_inset Formula $2^{X}$
+\end_inset
+
+ , כלומר שקיים סידור 
+\begin_inset Formula $f_{1},\ldots,f_{2^{\left|X\right|}}$
+\end_inset
+
+ של 
+\begin_inset Formula $2^{X}$
+\end_inset
+
+ )לקסיקוגרפי נגיד( כך שלכל 
+\begin_inset Formula $i<2^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(f_{i}\right)=f_{i+1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $g\left(f_{2^{N}}\right)=\perp$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אכן קיימת 
+\begin_inset Formula $g$
+\end_inset
+
+ כזו שניתנת לחישוב בשטח לינארי )למשל סידור לקסיגורפי, שעוברים לפי סדר הביטים
+ וכל פעם הופכים בהתאם את הערכים למספר הבא בתור(.
+\end_layout
+
+\begin_layout Standard
+לסיום, פורמלית, 
+\begin_inset Formula $M$
+\end_inset
+
+ בהינתן נוסחה 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ מעל 
+\begin_inset Formula $X$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+כותבת על הסרט את 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+משערכת את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ לפי ההשמה שכתובה על הסרט.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם השתערכה ל-
+\begin_inset Formula $T$
+\end_inset
+
+ מקבלת.
+\end_layout
+
+\begin_layout Enumerate
+אם השתערכה ל-
+\begin_inset Formula $F$
+\end_inset
+
+, מחשבת 
+\begin_inset Formula $g\left(f_{i}\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\perp$
+\end_inset
+
+ דוחה )לא מצאנו השמה מספקת(, ואחרת עוברת ל-
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Proof
+תהי 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+.
+ לכן יש מוודא דטר' ל-
+\begin_inset Formula $L$
+\end_inset
+
+ שרץ בסיבוכיות 
+\begin_inset Formula $t\left(n\right)$
+\end_inset
+
+ פולי' כך ש-
+\begin_inset Formula $\left|c\right|\leq\left(\left|w\right|\right)$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+L=\left\{ w:\left(w,c\right)\;\text{מקבלת את}\;V\;c\in\com^{*}\;\text{קיימת מילה}\right\} 
+\]
+
+\end_inset
+
+נראה מכונה שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $c_{1},\ldots,c_{k}$
+\end_inset
+
+ סידור המילים ב-
+\begin_inset Formula $\com^{t\left(\left|w\right|\right)}$
+\end_inset
+
+.
+ המכונה עוברת על כל העדים ומריצה את 
+\begin_inset Formula $V$
+\end_inset
+
+ על 
+\begin_inset Formula $\left(w,c_{i}\right)$
+\end_inset
+
+ על כל עד 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+.
+ אם יש עד 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+כך ש-
+\begin_inset Formula $V$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $\left(w,c_{i}\right)$
+\end_inset
+
+, המכונה תעצור ומתקבל, אחרת תעצור ותדה לאחר כל ההרצות.
+\end_layout
+
+\begin_layout Proof
+סיבוכיות הזיכרון היא כמובן פולי' כי אנחנו עוברים על כל העדים )עם 
+\begin_inset Formula $g$
+\end_inset
+
+ אפשרי במקום לינארי(, והרצה של 
+\begin_inset Formula $V$
+\end_inset
+
+ )שרץ בזמן פולי' בקלט שהוא פולי' בקלט, לכן גם עם שטח פולי'(.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $\mf{EMPTY}_{\nfa}=\left\{ \left\langle A\right\rangle :L\left(A\right)=\varnothing,\nfa\;\text{הוא}\;A\right\} $
+\end_inset
+
+ היא שפה ב-
+\begin_inset Formula $\p$
+\end_inset
+
+ כי צריך פשוט לראות אם יש איזשהו מסלול ממצב התחלתי למקבל.
+ לעומת זאת 
+\begin_inset Formula $\mf{ALL}_{\nfa}=\left\{ \left\langle A\right\rangle :L\left(A\right)=\com^{*},\nfa\;\text{הוא}\;A\right\} $
+\end_inset
+
+ היא שפה 
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+-שלמה.
 \end_layout
 
 \end_body
