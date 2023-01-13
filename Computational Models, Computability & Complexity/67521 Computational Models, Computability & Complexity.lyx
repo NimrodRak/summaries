@@ -717,6 +717,11 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\conp}{\mf{coNP}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -28208,6 +28213,311 @@ L=\left\{ w:\left(w,c\right)\;\text{מקבלת את}\;V\;c\in\com^{*}\;\text{ק�
 \end_inset
 
 -שלמה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר כי 
+\begin_inset Formula $L\in\conp$
+\end_inset
+
+ אם 
+\begin_inset Formula $\overline{L}\in\np$
+\end_inset
+
+, וש-
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $\conp$
+\end_inset
+
+-קשה אם לכל 
+\begin_inset Formula $K\in\conp$
+\end_inset
+
+, 
+\begin_inset Formula $L\leq_{p}L$
+\end_inset
+
+ וש-
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $\conp$
+\end_inset
+
+-שלמה אם היא 
+\begin_inset Formula $\conp$
+\end_inset
+
+-קשה וגם ב-
+\begin_inset Formula $\conp$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמה אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\conp$
+\end_inset
+
+ שלמה.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ נניח כי 
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $\np$
+\end_inset
+
+ שלמה.
+ לכן לכל 
+\begin_inset Formula $K\in\np$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $K\leq_{p}L$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\overline{K}\leq_{p}\overline{L}$
+\end_inset
+
+ )ראינו בעבר(, כלמר לכל 
+\begin_inset Formula $\overline{K}\in\conp$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{K}\leq_{p}\overline{L}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\conp$
+\end_inset
+
+-קשה ומהיות 
+\begin_inset Formula $L$
+\end_inset
+
+ ב-
+\begin_inset Formula $\np$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{L}\in\conp$
+\end_inset
+
+ כלורמ האי 
+\begin_inset Formula $\conp$
+\end_inset
+
+-קשה.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ אותו הדבר.
+\end_layout
+
+\begin_layout Description
+הערה נוכיח בתרגיל כי אם 
+\begin_inset Formula $\np\neq\conp$
+\end_inset
+
+ אז 
+\begin_inset Formula $\p\neq\np$
+\end_inset
+
+, ולכן העולם יכול להיות בשלושה מצבים שונים
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/conp.png
+	lyxscale 40
+	scale 18
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+שלושת האפשרויות למציאות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\overline{\mf{SAT}}=\mf{CONTRADICTION}=\left\{ \left\langle \varphi\right\rangle :\text{לא ספיקה}\;\mf{CNF}\;\text{נוסחת}\;\varphi\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\mf{TAUTOLOGY}=\left\{ \left\langle \varphi\right\rangle :\mf{CNF}\;\text{טאוטולוגיה בצורת}\;\varphi\right\} $
+\end_inset
+
+ )טאוטולוגיה היא נוסחה שמסופקת מכל השמה(.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\mf{TAUTOLOGY}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{coNPH}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\mf{TAUTOLOGY}$
+\end_inset
+
+ היא ב-
+\begin_inset Formula $\conp$
+\end_inset
+
+ כי אפשר פשוט לנחש השמה ולבדוק אותה, ולקבל אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם היא לא מספקת.
+ נראה רדוקציה פולי' 
+\begin_inset Formula $f$
+\end_inset
+
+ מ-
+\begin_inset Formula $\mf{CONTRADICTION}$
+\end_inset
+
+ ל-
+\begin_inset Formula $\mf{TAUTOLOGY}$
+\end_inset
+
+ ואז בעזרת הטענה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל נקבל ש-
+\begin_inset Formula $\mf{TAUTOLOGY}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\conp$
+\end_inset
+
+-קשה.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ תפעל כך: לכל 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ נוסחת 
+\begin_inset Formula $\mf{CNF}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(\varphi\right)=\lnot\varphi$
+\end_inset
+
+.
+ ברור שהרדוקציה נכונה ופולי' )אם 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ היא סתירה אז 
+\begin_inset Formula $f\left(\varphi\right)$
+\end_inset
+
+ טאוטולוגיה ואחרת לא(.
 \end_layout
 
 \end_body
