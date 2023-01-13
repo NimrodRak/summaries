@@ -26646,7 +26646,7 @@ addcontentsline{toc}{section}{XI
 \backslash
 ;
 \backslash
-; }
+; מחלקות NP-שלמות}
 \end_layout
 
 \end_inset
@@ -26661,7 +26661,11 @@ addcontentsline{toc}{section}{XI
 \begin_inset Formula $\mathbb{XI}$
 \end_inset
 
- | 
+ | מחלקות 
+\begin_inset Formula $\np$
+\end_inset
+
+-שלמות 
 \size default
 
 \begin_inset ERT
@@ -28392,7 +28396,7 @@ addcontentsline{toc}{subsection}{תרגול}
 \end_layout
 
 \begin_deeper
-\begin_layout Description
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -28405,7 +28409,7 @@ status open
 \begin_inset Graphics
 	filename img/conp.png
 	lyxscale 40
-	scale 18
+	scale 55
 
 \end_inset
 
@@ -28431,11 +28435,15 @@ status open
 
 \end_deeper
 \begin_layout Description
-הגדרה 
-\begin_inset Formula $\overline{\mf{SAT}}=\mf{CONTRADICTION}=\left\{ \left\langle \varphi\right\rangle :\text{לא ספיקה}\;\mf{CNF}\;\text{נוסחת}\;\varphi\right\} $
+הגדרה שפת השפות שלא ניתנות לסיפוק היא
+\begin_inset Formula 
+\[
+\overline{\mf{SAT}}=\mf{CONTRADICTION}=\left\{ \left\langle \varphi\right\rangle :\text{לא ספיקה}\;\mf{CNF}\;\text{נוסחת}\;\varphi\right\} 
+\]
+
 \end_inset
 
-, 
+ושפת הטאולולוגיות היא 
 \begin_inset Formula $\mf{TAUTOLOGY}=\left\{ \left\langle \varphi\right\rangle :\mf{CNF}\;\text{טאוטולוגיה בצורת}\;\varphi\right\} $
 \end_inset
 
@@ -28518,6 +28526,955 @@ status open
 \end_inset
 
  טאוטולוגיה ואחרת לא(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{שפות לגרפים המילטוניים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+שפות לגרפים המילטוניים
+\end_layout
+
+\begin_layout Description
+הגדרה השפות המרכזיות לגרפים המילטוניים הן
+\begin_inset Formula 
+\begin{align*}
+\mf{D-ST-HAMPATH} & =\left\{ \left\langle G,s,t\right\rangle :t\;\text{ל-}\;s\text{גרף מכוון ויש מסלול המילטון מ-}\;G\right\} \\
+\mf{D-HAMPATH} & =\left\{ \left\langle G\right\rangle :\text{מסלול מכוון המילטוני}\;G\text{מכוון ויש ב-}\;G\right\} \\
+\mf{D-HAMCYCLE} & =\left\{ \left\langle G\right\rangle :\text{מעגל מכוון המילטוני}\;G\text{מכוון ויש ב-}\;G\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לשלושת אלה יש מקבילות לא מכוונות.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Formula $\mf{D-ST-HAMPATH}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{NPC}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ראשית 
+\begin_inset Formula $\mf{D-ST-HAMPATH}$
+\end_inset
+
+ היא ב-
+\begin_inset Formula $\np$
+\end_inset
+
+ באמצעות מוודא 
+\begin_inset Formula $V$
+\end_inset
+
+ שיפעל כך: בהינתן 
+\begin_inset Formula $\left\langle G,s,t\right\rangle $
+\end_inset
+
+ וקבצות קודקודים 
+\begin_inset Formula $c$
+\end_inset
+
+, יבדוק האם 
+\begin_inset Formula $c\subseteq V\left(G\right)$
+\end_inset
+
+, אח
+\begin_inset Quotes xrd
+\end_inset
+
+כ ש-
+\begin_inset Formula $\left|c\right|=\left|V\left(G\right)\right|$
+\end_inset
+
+.
+ אם אחת הבדיקות נכשלות נדחה.
+ אחרת 
+\begin_inset Formula $V$
+\end_inset
+
+ יעבור על כל זוגות עוקבים ב-
+\begin_inset Formula $c$
+\end_inset
+
+ ויוודא שקיימת ביניהם צלע ב-
+\begin_inset Formula $G$
+\end_inset
+
+.
+ כמו כן נוודא שהקדוקדו הראשון ב-
+\begin_inset Formula $c$
+\end_inset
+
+ הוא 
+\begin_inset Formula $s$
+\end_inset
+
+ והאחרון 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ אם כל הבדיקות מצליחות נקבל, אחרת נדחה.
+\end_layout
+
+\begin_layout Proof
+נראה רדוקציה 
+\begin_inset Formula $3\mf{SAT}\leq_{p}\mf{HAMPATH}$
+\end_inset
+
+ ונסיק ש-
+\begin_inset Formula $\mf{HAMPATH}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{NPH}$
+\end_inset
+
+.
+ נחפש רדוקציה שבהינתן נוסחה ב-
+\begin_inset Formula $3\mf{CNF}$
+\end_inset
+
+, נחזיר גרף ושני קודקודים, כך שהנוסחה ספיקה אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם בגרף יש מסלול המילטוני בין שני הקודקודים הללו.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f$
+\end_inset
+
+ תפעל כך: בהינתן 
+\begin_inset Formula $\theta$
+\end_inset
+
+ נוסחה ב-
+\begin_inset Formula $3\mf{CNF}$
+\end_inset
+
+ עם משתנים 
+\begin_inset Formula $x_{1},\ldots,x_{l}$
+\end_inset
+
+, פסוקיות 
+\begin_inset Formula $c_{1},\ldots,c_{k}$
+\end_inset
+
+וליטרלים 
+\begin_inset Formula $\ell_{i}^{j}\in\left\{ x_{1},\ldots,x_{l},\overline{x_{1}},\ldots,\overline{x_{l}}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ תחזיר 
+\begin_inset Formula $\left\langle G_{\varphi},s,t\right\rangle $
+\end_inset
+
+ באופן הבא.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל משתנה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ב-
+\begin_inset Formula $\theta$
+\end_inset
+
+ נתאים 
+\begin_inset Quotes xld
+\end_inset
+
+מבנה יהלום
+\begin_inset Quotes xrd
+\end_inset
+
+ ב-
+\begin_inset Formula $G$
+\end_inset
+
+ שנראה כבאיור, כאשר שורת הקודקודים מכילה 
+\begin_inset Formula $3k+1$
+\end_inset
+
+ קודקודים פנימיים ועוד שניים בקצוות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/xi.jpg
+	lyxscale 40
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מבנה היהלום
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את מבני היהלום נחבר באופן הבא: הקודקוד העליון ביהלום 
+\begin_inset Formula $1$
+\end_inset
+
+ יהיה 
+\begin_inset Formula $s$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $i>1$
+\end_inset
+
+ הקודקוד העליון ביהלום 
+\begin_inset Formula $i$
+\end_inset
+
+ יהיה הקודקוד התחתון של 
+\begin_inset Formula $i-1$
+\end_inset
+
+, והקודקוד התחתון של 
+\begin_inset Formula $k$
+\end_inset
+
+ הוא 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ מעבר לכך לכך נוסיף עוד 
+\begin_inset Formula $k$
+\end_inset
+
+ קודקודים לכל פסוקית 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחשוב על כל שורה ביהלום כך: לכל פסוקית 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ יתאימו זוג קודקודים בשורה וקודקוד נוסף מפריד )כלומר השורה מחולקת לשלשות
+ - זוג לפסוקית ה-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ ומפריד בין הזוג של 
+\begin_inset Formula $j$
+\end_inset
+
+ ושל 
+\begin_inset Formula $j+1$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+כעת, נחבר בין קודקודי פסוקית ויהלומים של משתנים כך: אם הליטרל 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מופיע ב-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+, נחבר את היהלום של 
+\begin_inset Formula $x$
+\end_inset
+
+ ל-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ כבאיור משמאל, ואם הליטרל 
+\begin_inset Formula $\overline{x_{i}}$
+\end_inset
+
+ מופיע ב-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+, נחבר את היהלום כבאיור מימין )ההבדל הוא האם החץ יוצא מהראשון ונכנס אל השני
+ או הפוך(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/cjn.jpg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Formula $\qquad$
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/cj.jpg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+חיווטים בעת נוכחות ליטרל למשתנה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ לפסוקית 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+: משמאל 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ומימין 
+\begin_inset Formula $\overline{x_{i}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראשית הבנייה הזו פולי' כי אנחנו בונים גרף עם לכל היותר פי 
+\begin_inset Formula $4k$
+\end_inset
+
+ קודקודים מהפסוקית, שזה כמובן פולי' בגודל הקלט.
+ נראה נכונות, כלומר שיש ב-
+\begin_inset Formula $G_{\varphi}$
+\end_inset
+
+ מסלול המילטוני אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם יש ב-
+\begin_inset Formula $\varphi$
+\end_inset
+
+ השמה מספקת.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ קיימת השמה מספקת ל-
+\begin_inset Formula $\varphi$
+\end_inset
+
+, כלומר לכל פסוקית 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ יש ליטרל אחד לפחות שמקבל 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ מסלול המילטוני מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+ יראה כך: נתחיל ב-
+\begin_inset Formula $s$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+, אם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מקבל 
+\begin_inset Formula $T$
+\end_inset
+
+ בהשמה המספקת של 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, נטייל על היהלום של 
+\begin_inset Formula $x$
+\end_inset
+
+ מלמעלה למטה כך שנכנסים בצד השמאלי ויוצאים בצד הימני )זיג-זאג(.
+ אם 
+\begin_inset Formula $\overline{x_{i}}$
+\end_inset
+
+ מקבל 
+\begin_inset Formula $T$
+\end_inset
+
+ בהשמה )
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $F$
+\end_inset
+
+(, נטייל על היהלום 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מימין לשמאל )זאג-זיג(.
+\end_layout
+
+\begin_layout Proof
+היות ולכל 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ קיים לפחות ליטרל אחד שמקבל 
+\begin_inset Formula $T$
+\end_inset
+
+, נוכל לקחת מעקפים לכל 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מופיע ב-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ והוא 
+\begin_inset Formula $T$
+\end_inset
+
+, נעשה זיגיזאג עם קפיצה ל-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ וחזרה לשרשרת, ואם 
+\begin_inset Formula $\overline{x_{i}}$
+\end_inset
+
+ מופיע ב-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ והוא 
+\begin_inset Formula $T$
+\end_inset
+
+, נעשה זאג-זיג עם קפיצה ל-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ וחזרה לשרשרת.
+\end_layout
+
+\begin_layout Proof
+נשים לב שמאופן ההגדרה של הקפיצה, נוכל לעשות את המעקף הזה באופן חוקי כי הוא
+ מסודר באופן שמתאים להאם הליטרל מופיע בחיוב או בשלילה.
+ כלומר, אם הליטרל מופיע בחיוב אז הקפיצה היא משמאל ויורדת לקודקוד הימני,
+ בהתאם לעובדה שאנחנו מטיילים משמאל לימין, ואם מופיע בשלילה אז אנחנו מטיילים
+ מימין לשמאל וקפוצים מימין ונוחתים שמאלה יותר, כנדרש.
+\end_layout
+
+\begin_layout Proof
+נשים לב כי המסלול הזה לא מוגדר ביחידות )בכל פסוקית אשפר לבחור אחד משלושה
+ קודקודים שיקפצו עליו במסלול( אבל בטוח קיים יותר מאחד כזה בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ נניח שיש ב-
+\begin_inset Formula $G_{\varphi}$
+\end_inset
+
+ מסלול המילטוני בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+.
+ אם יש מסלול המילטוני מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+ והוא נורמלי, כלומר מטייל על היהלום לפי הסדר ויוצא למעקף דרך קודקוד בזוג
+ שמתאים ל-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ ב-
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ואז חוזר לקודקוד הבא באותו הזוג, אז נדע שיש השמה מספקת ל-
+\begin_inset Formula $\varphi$
+\end_inset
+
+, בדיוק לפי כיוון הטיול )שמאל לימין - נבחר 
+\begin_inset Formula $T$
+\end_inset
+
+, ימין לשמאל - 
+\begin_inset Formula $F$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+מסלול לא נורמלי הוא מסלול שבו המסלול יוצא למעקף אבל חוזר לקודקוד מחוץ לזוג
+ שדרכו נכנס למעקף, כבאיור
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/a1.jpg
+	lyxscale 40
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מעקף במסלול המילטוני לא נורמלי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב כי או 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ או 
+\begin_inset Formula $a_{3}$
+\end_inset
+
+ הם קודקודים מפרידים:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ מפריד, אפשר להגיע אליו דרך 
+\begin_inset Formula $a_{3}$
+\end_inset
+
+ או 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ לא מפריד, אפשר להגיע אליו דרך 
+\begin_inset Formula $a_{3}$
+\end_inset
+
+ או 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אבל זה אומר שהמסלול ההימלטוני חייב להיכנס ל-
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ דרך 
+\begin_inset Formula $a_{3}$
+\end_inset
+
+ )כי כבר ביקרנו ב-
+\begin_inset Formula $a_{1},c$
+\end_inset
+
+( אבל אז הוא נתקע ולעולם לא מגיע ל-
+\begin_inset Formula $t$
+\end_inset
+
+ ולכן זה לא מסלול המילטוני בסתירה להנחה.
+ לכן כל מסלול המילטוני ב-
+\begin_inset Formula $G_{\varphi}$
+\end_inset
+
+ הוא נורמלי ולכן משרה השמה מספקת של 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Formula $\mf{U-ST-HAMPATH}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{NPC}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ברור שהיא ב-
+\begin_inset Formula $\np$
+\end_inset
+
+.
+ נראה רדוקציה 
+\begin_inset Formula $\mf{D-ST-HAMPATH}\leq_{p}\mf{U-ST-HAMPATH}$
+\end_inset
+
+.
+ הרדוקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ תפעל כך: בהינתן 
+\begin_inset Formula $\left\langle G,s,t\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $G$
+\end_inset
+
+ מכוון, נחזיר 
+\begin_inset Formula $\left\langle G',s',t'\right\rangle $
+\end_inset
+
+ כאשר לכל קודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ ב-
+\begin_inset Formula $G$
+\end_inset
+
+ יהיו שלושה קודקודים 
+\begin_inset Formula $v_{in},v_{mid},v_{out}$
+\end_inset
+
+ ב-
+\begin_inset Formula $G'$
+\end_inset
+
+, ולכל צלע 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ נגדיר את הצלע 
+\begin_inset Formula $\left\{ u_{out},v_{in}\right\} $
+\end_inset
+
+.
+ ובנוסף נחבר את 
+\begin_inset Formula $v_{mid}$
+\end_inset
+
+ ל-
+\begin_inset Formula $v_{in}$
+\end_inset
+
+ ו-
+\begin_inset Formula $v_{out}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ פורמלית יש לנו
+\begin_inset Formula 
+\[
+V\left(G'\right)=\left\{ v_{in},v_{mid},v_{out}:v\in V\left(G\right)\right\} ,E\left(G'\right)=\left\{ \left\{ v_{in},v_{mid}\right\} ,\left\{ v_{mid},v_{out}\right\} :v\in V\right\} \cup\left\{ \left\{ u_{out},v_{in}\right\} :\left(u,v\right)\in E\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ברור שהבנייה פולי'.
+ נראה נכונות.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Rightarrow$
+\end_inset
+
+ אם יש מסלול המילטוני 
+\begin_inset Formula $s,v_{1},\ldots,v_{k},t$
+\end_inset
+
+ ב-
+\begin_inset Formula $G$
+\end_inset
+
+ אז המסלול 
+\begin_inset Formula $s_{in},s_{mid},s_{out},v_{in}^{1},v_{mid}^{1},v_{out}^{1},\ldots,v_{in}^{k},v_{mid}^{k},v_{out}^{k},t_{in},t_{mid},t_{out}$
+\end_inset
+
+ המילטוני בין 
+\begin_inset Formula $s_{in}$
+\end_inset
+
+ ל-
+\begin_inset Formula $t_{out}$
+\end_inset
+
+ ב-
+\begin_inset Formula $G'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $:\Leftarrow$
+\end_inset
+
+ נניח שיש מסלול המילטוני בין 
+\begin_inset Formula $s_{in}$
+\end_inset
+
+ ל-
+\begin_inset Formula $t_{out}$
+\end_inset
+
+ ב-
+\begin_inset Formula $G'$
+\end_inset
+
+.
+ נניח בשלילה שיש במסלול ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ )הגרף לא מכוון אבל המסלול כן( צלע 
+\begin_inset Formula $\left(v_{in},u_{out}\right)$
+\end_inset
+
+ )כלומר נכנסים הפוך( ונניח שזו הצלע הראשונה מהצורה הזו במסלול.
+ אם כבר המסלול ביקר קודם ב-
+\begin_inset Formula $v_{mid}$
+\end_inset
+
+, אז המסלול חייב היה להגיע אליו דרך 
+\begin_inset Formula $v_{out}$
+\end_inset
+
+, אבל זאת אומרת שהמסלול הגיע אליו דרך איזו 
+\begin_inset Formula $x_{in}$
+\end_inset
+
+ )
+\begin_inset Formula $*_{in}$
+\end_inset
+
+ מחובר רק ל-
+\begin_inset Formula $*_{out}$
+\end_inset
+
+ אחרים בהגדרת 
+\begin_inset Formula $E'$
+\end_inset
+
+(, סתירה לכך שזו הפעם הראשונה למעבר 
+\begin_inset Quotes xld
+\end_inset
+
+הפוך
+\begin_inset Quotes xrd
+\end_inset
+
+ שכזה.
+ לכן מבקרים ב-
+\begin_inset Formula $v_{mid}$
+\end_inset
+
+ אחרי 
+\begin_inset Formula $v_{in}$
+\end_inset
+
+, כלומר שחייבים להיכנס אליו מ-
+\begin_inset Formula $v_{out}$
+\end_inset
+
+, אבל אז נתקעים ולא מגיעים ל-
+\begin_inset Formula $t_{out}$
+\end_inset
+
+ ולכן זה לא מסלול המילטוני.
 \end_layout
 
 \end_body

@@ -34744,7 +34744,7 @@ status open
 \begin_inset Graphics
 	filename img/y.png
 	lyxscale 30
-	scale 50
+	scale 90
 
 \end_inset
 
@@ -35543,5 +35543,4622 @@ Measure, Model, and Control
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+הערה חשוב לשים לב שאפע
+\begin_inset Quotes xrd
+\end_inset
+
+פ שפרוטוקול כלשהו עוזר לנו לניהול שכבה כלשהי, הוא לא בהכרח קורה בשכבה הזו,
+ לדוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DNS
+\lang hebrew
+ּ עוזר לשכבה 
+\begin_inset Formula $3$
+\end_inset
+
+ אבל קיים בשכבת האפליקציה.
+\end_layout
+
+\begin_layout Standard
+אנחנו עוסקים עכשיו באיך לנתב באופן אופטימלי פקטות בטופולוגיית ראוטרים שמחוברים
+ בחיבורים ממשוקלים ידנית ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מנהל הרשת.
+\end_layout
+
+\begin_layout Description
+הערה הפלט של אלג' הניתוב הוא טבלת ניתוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)עם רשומה פר-ראוטר( שבה ניוועץ לאיזה 
+\series bold
+שכן 
+\series default
+נעביר את הפקטה, בכל פעם שנתבקש להעביר פקטה לראוטר כלשהו )שהוא לא בהכרח שכן(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{Distance-Vector}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Distance Vector
+\end_layout
+
+\begin_layout Standard
+אלג' ניתוב דינמי, שממומש כיום ב-
+\lang english
+RIP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)מריץ את האלג' כל חצי דקה(.
+ נריץ בלמן-פורד מבוזר שהתוצאה שלו תהיה וקטור )מתעדכן עד שמתייצבים( של מרחקים
+ שלו מכל קודקוד אחר, ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $D_{s}\left(y\right)=\min\limits _{v\in\Gamma}\left\{ c\left(s,v\right)+D_{v}\left(y\right)\right\} $
+\end_inset
+
+ )המסלול הקצר ביותר דרך שכן כלשהו(.
+\end_layout
+
+\begin_layout Standard
+במהלך ריצת האלג' נשמור טבלה עם שורה לוקטור של כל אחד מהשכנים שלנו )ואחת
+ שלנו(, שהוא עצמו מכיל עמודה לכל קודקוד אחר בגרף, אילוסטרטיבית יראה כך:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מרחק מקוד'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ברשת
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מרחק קוד'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ברשת
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ldots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הוקטור שלי
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הוקטור של שכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הוקטור של שכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ldots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את הטבלה נאתחל עם 
+\begin_inset Formula $\infty$
+\end_inset
+
+ בכל הערכים, חוץ מבשורת הוקטור שלנו שם ידוע לנו המרחק שלנו מהשכנים שלנו.
+\end_layout
+
+\begin_layout Standard
+איטרציה באלג' מכילה שני שלבים: הפצת הוקטור שלנו ועדכון הוקטור שלנו באמצעות
+ וקטורים של אחרים.
+ בכל עדכון שנקבל של וקטור שכן כלשהו, נעדכן בשורה ראשונה )הוקטור שלנו(, אם
+ צריך, את הערך בעמודה כך שיתאים למציאות החדשה )אם המרחק המינימלי ירד או
+ עלה(.
+\end_layout
+
+\begin_layout Standard
+נפסיק את התהליך כשנתייצב, ומשם נייצא טבלת ניתוב שמתאימה לכל קדוקוד ברשת
+ את השכן שלנו שדרכו נשלח פקטה לאותו הקודקוד, ואת המרחק עד לקודקוד )המחיר(
+ - הלא זו טבלת הניתוב.
+\end_layout
+
+\begin_layout Description
+דוגמה נציג בעיה ב-
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשינוי לרעה של משקלים.
+ נביט בשינוי הבא במשקלים
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/pec.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמה לכשל ב-
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשינוי משקלים לרעה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח שכבר קרה השינוי מ-
+\begin_inset Formula $10$
+\end_inset
+
+ ל-
+\begin_inset Formula $1$
+\end_inset
+
+ וכולם התייצבו, ועכשיו שינו את 
+\begin_inset Formula $b-c$
+\end_inset
+
+ ל-
+\begin_inset Formula $70$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+באיטרציה הראשונה, 
+\begin_inset Formula $c$
+\end_inset
+
+ ו-
+\begin_inset Formula $b$
+\end_inset
+
+ ישימו לב שיש שינוי במשקולות שלהם ויעדכנו את המסלולים שלהם: 
+\begin_inset Formula $c$
+\end_inset
+
+ יעדכן את המסלול ל-
+\begin_inset Formula $a$
+\end_inset
+
+ שיהיה ישיר )מחיר 
+\begin_inset Formula $40$
+\end_inset
+
+(, ו-
+\begin_inset Formula $b$
+\end_inset
+
+ יעדכן את המסלול ל-
+\begin_inset Formula $c$
+\end_inset
+
+ שיעבור דרך 
+\begin_inset Formula $a$
+\end_inset
+
+ )מחיר 
+\begin_inset Formula $22$
+\end_inset
+
+, כי עושים 
+\begin_inset Formula $b,a,b,c$
+\end_inset
+
+ - שזה לא קורה במציאות(.
+ כאמור המסלול 
+\begin_inset Formula $b,a,b,c$
+\end_inset
+
+ הוא לא מסלול אמיתי ולכן יש לנו חישוב לא נכון.
+ בפעם הבאה יעלה ל-
+\begin_inset Formula $a$
+\end_inset
+
+ להגיע -
+\begin_inset Formula $c$
+\end_inset
+
+ 
+\begin_inset Formula $23$
+\end_inset
+
+ )
+\begin_inset Formula $1$
+\end_inset
+
+ ועוד 
+\begin_inset Formula $b$
+\end_inset
+
+ ל-
+\begin_inset Formula $c$
+\end_inset
+
+(.
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ יעדכן שלוקח לו 
+\begin_inset Formula $24$
+\end_inset
+
+.
+ התלות הזו בין 
+\begin_inset Formula $a$
+\end_inset
+
+ ל-
+\begin_inset Formula $b$
+\end_inset
+
+ תמשיך עד שנגיע ל-
+\begin_inset Formula $40$
+\end_inset
+
+, ואז 
+\begin_inset Formula $a$
+\end_inset
+
+ יעדיף לעבור דרך 
+\begin_inset Formula $c$
+\end_inset
+
+ ונגמרת התלות.
+ התופעה הזו נקראת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Count to Infinity
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מקור הבעיה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל הוא שכל אחד מצביע לשני ולא מודעים שהשכן עובר דרך עצמו.
+ לכן אפשר להגיד לשכנים אם אנחנו בונים עליהם במסלולים שלנו ואז זה יפתור את
+ התלות הזו שנקראת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Poisoned Reverse
+\lang hebrew
+.
+ טכנית, כשנפיץ את הוקטור שלנו לכל שכן 
+\begin_inset Formula $y$
+\end_inset
+
+, אם המחיר שחושב לקודקוד כלשהו ברשת 
+\begin_inset Formula $z$
+\end_inset
+
+ עובר דרך 
+\begin_inset Formula $y$
+\end_inset
+
+ )בקפיצה הקרובה ברשת(, אז נשים בעמודה של 
+\begin_inset Formula $z$
+\end_inset
+
+ בוקטור שנשלח 
+\begin_inset Formula $\infty$
+\end_inset
+
+ )כך 
+\begin_inset Formula $y$
+\end_inset
+
+ לא יעבור דרכנו בשליחה ל-
+\begin_inset Formula $z$
+\end_inset
+
+(.
+ בשאר הערכים לא ניגע.
+\end_layout
+
+\begin_layout Standard
+הפאץ' הזה פותר את הדוגמה הפשוטה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל עם שלושה קודקודים, אבל זה עדיין יכול לא להיות יציב אף פעם.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט בגרף בטופולוגיה הבאה, כאשר נניח שהרצנו את האלג' על הרשת המקורית,
+ התייצבנו, ואז הוסר החיבור בין 
+\begin_inset Formula $z$
+\end_inset
+
+ ל-
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sh.jpg
+	lyxscale 30
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמה לכשל ב-
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גם מניעת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Poisoned Reverse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+באיטרציה הראשונה, 
+\begin_inset Formula $z$
+\end_inset
+
+ יודיע ל-
+\begin_inset Formula $x$
+\end_inset
+
+ ו-
+\begin_inset Formula $y$
+\end_inset
+
+ שהוא לא יכול להגיע ל-
+\begin_inset Formula $h$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ ו-
+\begin_inset Formula $y$
+\end_inset
+
+ יעדכנו אצלהם את הנתונים על בסיס המידע שיש להם כרגע בלי תקשורת ביניהם, כלומר
+ ש-
+\begin_inset Formula $x$
+\end_inset
+
+ יעדכן שיש לו מסלול ל-
+\begin_inset Formula $h$
+\end_inset
+
+ דרך 
+\begin_inset Formula $y$
+\end_inset
+
+ באורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)כי עוד לא סיפר לו 
+\begin_inset Formula $y$
+\end_inset
+
+ שאין לו מסלול( וכך יעשה גם 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+באיטרציה הבאה 
+\begin_inset Formula $x$
+\end_inset
+
+ יספר ל-
+\begin_inset Formula $z$
+\end_inset
+
+ שיש לו מסלול באורך 
+\begin_inset Formula $3$
+\end_inset
+
+ )לא דרכו בקפיצה הראשונה( ולכן 
+\begin_inset Formula $z$
+\end_inset
+
+ יעדכן שיש לו מסלול באורך 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+באיטרציה הבאה 
+\begin_inset Formula $y$
+\end_inset
+
+ מעדכן אצלו שיש לו מסלול באורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרך 
+\begin_inset Formula $y$
+\end_inset
+
+ )שהוא לא יודע שעובר דרכו(.
+\end_layout
+
+\begin_layout Standard
+כל זה ימשיך עד אינסוף ואף פעם לא יתייצב!
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{Link-State}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\size larger
+\lang english
+Link-State
+\end_layout
+
+\begin_layout Standard
+אלג' גלובאלי, ממומש כיום ב-
+\lang english
+OSPF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)מריץ את האלג' כל חצי שעה(.
+ כל ראוטר יאסוף את המרחק של כל ראוטר מכל ראוטר אחר ברשת ויריץ דייקסטרה בעצמנו
+ וכך נקבע את טבלת הניתוב.
+\end_layout
+
+\begin_layout Standard
+בכל איטרציה, לא נריץ את דייקסטרה כולו שוב, אלא נשתמש בטריק הבא: נשמור אוסף
+ של קודקודים שעברנו דרכם שאנחנו בטוחים במסלולים הקצרים ביותר שלנו אליהם,
+ 
+\begin_inset Formula $N'$
+\end_inset
+
+.
+ בכל איטרציה נמצא את הקודקוד עם המרחק המינימלי )שידוע לנו כרגע באמצעות 
+\begin_inset Formula $N'$
+\end_inset
+
+ ושכניהם( שלא ב-
+\begin_inset Formula $N'$
+\end_inset
+
+, נוסיף אותו ל-
+\begin_inset Formula $N'$
+\end_inset
+
+, ונעדכן את המרחקים של כל השכנים של הקודקוד הזה שלא ב-
+\begin_inset Formula $N'$
+\end_inset
+
+ עדיין.
+ כך באינווריאנטה אנחנו מיוצבים כבר על כל מה שב-
+\begin_inset Formula $N'$
+\end_inset
+
+, ואחר מספיק איטרציות כל הקודקודים יהיו ב-
+\begin_inset Formula $N'$
+\end_inset
+
+ ונסיים את הריצה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{XI
+\backslash
+;
+\backslash
+; ניהול תעבורה ו-ECMP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{XI}$
+\end_inset
+
+ |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ניהול תעבורה ו-
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{בעיות אופטימיזציה להנדסת תעבורה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לקבוע ניתוב מוצלח, צריך מישקול מוצלח של החיבורים בין ראוטרים.
+ נאפטם את המשקולות בשלושה שלבים: מדידת הזרימה במציאות, בדיקת שינויים שונים,
+ השמה השינויים.
+\end_layout
+
+\begin_layout Standard
+התאוריה שלנו לבעיה הזו היא תורת מקסום זרימה.
+ זו לא בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Max-Flow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קלאסית כי אין לנו רק שני קודקודים שמדברים אלא כל שני קודקודים, וכי הפתרון
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Max-Flow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא בהכרח ניתן למידול כמסלולים קצרים ביותר )כמו שעושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DV
+\lang hebrew
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LS
+\lang hebrew
+( אלא כמסלולים יותר מורכבים שאי אפשר להשתמש בהם במציאות.
+\end_layout
+
+\begin_layout Description
+הגדרה בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Max Flow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבלת רשת 
+\begin_inset Formula $G=\left\langle V,E,c\right\rangle $
+\end_inset
+
+ ופולטת 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה עם 
+\begin_inset Formula $\left|f\right|=\sum\limits _{v}f\left(s,v\right)$
+\end_inset
+
+ מקסימלי.
+\end_layout
+
+\begin_layout Description
+הערה מלבד הבעיה שהמסלולים קשים למידול ושיש לנו הרבה קודקודים ולא רק שניים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Max Flow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יכול להרעיב קודקודים מסוימים כדי להשיג זרימה יותר טובה, שזה מאוד גרוע.
+ 
+\end_layout
+
+\begin_layout Description
+הגדרה בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Max Multicommodity Flow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבלת רשת 
+\begin_inset Formula $G=\left\langle V,E,c\right\rangle $
+\end_inset
+
+ ומטריצת ביקוש 
+\begin_inset Formula $D\in\fldr_{+}^{\left|V\right|\times\left|V\right|}$
+\end_inset
+
+ ופולטת 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה כך ש-
+\begin_inset Formula $\sum\limits _{v}\left|f_{v}\right|$
+\end_inset
+
+ מקסימלי )
+\begin_inset Formula $f_{v}$
+\end_inset
+
+ הזרימה מקודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+(, כשאנחנו לא עולים על הביקוש.
+\end_layout
+
+\begin_layout Description
+הערה הרעיון הוא שאין סיבה להעביר יותר זרימה מהביקוש, כי נוכל ליפול לזרימות
+ מאוד גבוהות שמספקות ביקוש מאוד גבוה בצד אחד ונמוך במקום אחר וזה לא טוב
+ - אין סיבה להתאמץ מעבר לביקוש שיש.
+\end_layout
+
+\begin_layout Description
+הערה בניגוד ל-
+\lang english
+Max-Flow = Min-Cut
+\lang hebrew
+, אין בעיה דואלית שימושית ל-
+\lang english
+Max Multicommodity Flow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן קשה לעבוד איתה בהנדסת תעבורה.
+\end_layout
+
+\begin_layout Description
+הגדרה בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Minimize Congestion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מקבלת 
+\begin_inset Formula $G=\left\langle V,E,c\right\rangle $
+\end_inset
+
+ וממזערת את העומס על הצלע הכי עמוסה, כלומר למזער 
+\begin_inset Formula $\max\limits _{e}\frac{f\left(e\right)}{c\left(e\right)}$
+\end_inset
+
+ כשמספקים את כל הביקוש, אולי עם חריגה מעל לקיבולת.
+\end_layout
+
+\begin_layout Description
+הערה הבעיה הזו שימושית וקיבלה הרבה התייחסות אפע
+\begin_inset Quotes xrd
+\end_inset
+
+פ שלכאורה אין לנו באמת את הקיבולת הנדרשת, כי אנחנו מניחים כאן שמישהו תכנן
+ לפניכן את הרשת כך שנוכל לעמוד בקיבולת בצורה כזו או אחרת.
+\end_layout
+
+\begin_layout Standard
+יש עוד הרבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פ' מטרה שונות שאפשר למקסם, כמו הוגנות )נמקסם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ שעבורו כל אחד שלח לפחות 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מההודעות שלו בהצלחה תוך 
+\begin_inset Formula $\ldots$
+\end_inset
+
+ זמן(.
+\end_layout
+
+\begin_layout Description
+הערה בעוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Multicommodity flow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מצליח לאפטם )גם אם לא פרקטית( מסלולים בין מקור ויעד ואיך עומס מתפלג על
+ פני מסלולים, ניתוב 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באמצעות האלג' שראינו מנסה לעשות את שני הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, רק בסיבוכיות משמעותית יותר נמוכה )אפילו שכל הבעיות שעכשיו הזכרנו הן ב-
+\lang english
+LP
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+כל הבעיות האלה כאמור בתאוריה הן נחמדות, אבל הדבר הפרקטי היחיד שמנהל רשת
+ יכול לעשות הוא לקבוע משקולות סטטיים ולתת ל-
+\lang english
+OPSF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואח' לנתב את התעבורה בהתאם למשקולות הללו.
+\end_layout
+
+\begin_layout Description
+הערה מזעור עומס הוא חשוב גם מבחינת עמידות, לדוגמה מפני כשל בחיבור אחד קריטי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{ECMP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Equal-Cost Multipath
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא אלג' שמחליט בהינתן משקולות הרשת לאיזה ראוטר להעביר הודעה.
+ האלג' רץ בראוטר 
+\begin_inset Formula $i$
+\end_inset
+
+ ומחשב מרחקים קצרים ביותר לכל ראוטר 
+\begin_inset Formula $j$
+\end_inset
+
+, כך שבסוף הוא חישב את 
+\begin_inset Formula $\mathsf{nxt}_{ij}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ שהוא אוסף השכנים של 
+\begin_inset Formula $i$
+\end_inset
+
+ שהם השלב הבא במסלול קצר ביותר ל-
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במהלך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+forwarding
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של פקטות ל-
+\begin_inset Formula $j$
+\end_inset
+
+, הוא יפזר את הפקטות באופן אחיד על פני כל השכנים ב-
+\begin_inset Formula $\mathsf{nxt}_{ij}$
+\end_inset
+
+ )כל פעם יבחר שכן אחר כך שהעומס יהיה שווה(.
+\end_layout
+
+\begin_layout Description
+הגדרה בעיית האופטימיזציה של קביעת המשקולות הסטטיים מקבלת גרף עם קיבולות
+ 
+\begin_inset Formula $G=\left\langle V,E,c\right\rangle $
+\end_inset
+
+ ומטריצת ביקוש 
+\begin_inset Formula $D\in\fldr_{+}^{\left|V\right|\times\left|V\right|}$
+\end_inset
+
+, ומוציאה משקולות לכל חיבור כך שזרימה תחת שימוש ב-
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ תהיה אופטימלית )תחת פ' מטרה כלשהי(.
+\end_layout
+
+\begin_layout Standard
+האם אפשר להשיג פתרון אופטימלי לכל פ' מטרה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Description
+דוגמה נבדוק האם אפשר לקבוע משקולות כך ש-
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ימזער עומס )
+\begin_inset Formula $\frac{f\left(e\right)}{c\left(e\right)}$
+\end_inset
+
+( על הצלע העמוסה ביותר.
+ נביט בדוגמה הבאה, בה יש לנו רק מקור אחד )
+\begin_inset Formula $s$
+\end_inset
+
+( ויעד אחד )
+\begin_inset Formula $t$
+\end_inset
+
+( במטריצת הביקוש
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/nv.jpg
+	lyxscale 30
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+רשת בצורת מניפה שמכשיל את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערך האופטימלי שאפשר לקבל על עומס הצלע העמוסה ביותר הוא פחות מ-
+\begin_inset Formula $1$
+\end_inset
+
+ כי אפשר להזרים מ-
+\begin_inset Formula $s$
+\end_inset
+
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ דרך כל צלע עם קיבולת 
+\begin_inset Formula $1$
+\end_inset
+
+, ואת שאר התעבורה להעביר הלאה בקודקודים בשורה למעלה, כך שבכל פעם הזרימה
+ שעוברת לקודקוד הבא תפחת באחד.
+ העומס המקסימלי כאן הוא 
+\begin_inset Formula $1$
+\end_inset
+
+ והוא מתקבל על הצלעות ל-
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יעשה? נראה שלא משנה אילו משקלים נקבע,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ינתב באופן שמשיג עומס מירבי של לפחות 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+ )מאוד רע, משמעותית גדול מ-
+\begin_inset Formula $1$
+\end_inset
+
+(.
+ נניח שקבענו משקולות.
+ לכן כשתעבורה יוצאת מ-
+\begin_inset Formula $s$
+\end_inset
+
+, או שהיא תתחלק חצי-חצי על הצלע עם 
+\begin_inset Formula $c=1$
+\end_inset
+
+ או שהכל יעבור ימינה.
+ אם האפשרות הראשונה - הרי לנו עומס מרבי של לפחות 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+.
+ אם השנייה, נמשיך הלאה - בצומת הבאה או שנתפצל או שנלך עם הכל ימינה.
+ זה במקרה הגרוע ימשיך עד לקודקוד האחרון ואז כל התעבורה תעבור בצלע האחרונה
+ עם קיבולת 
+\begin_inset Formula $1$
+\end_inset
+
+, כך שלא משנה מה יש לנו לפחות צלע אחת בקיבולת 
+\begin_inset Formula $1$
+\end_inset
+
+ עם עומס 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה הדוגמה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל מראה שאנחנו לא יכולים להשיג ביצועים טובים בגלל מגבלת סיבוכיות, אלא בגלל
+ מגבלת אקספרסיביות )בדומה לפער בין מכונת טיורינג לאוטומט(.
+\end_layout
+
+\begin_layout Description
+הגדרה בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Link-Weight
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבלת כקלט גרף עם קיבולות 
+\begin_inset Formula $G=\left\langle V,E,c\right\rangle $
+\end_inset
+
+ ומטריצת ביקוש, ומחזירה משקולות לחיבורים שהם אופטימליים מבחינת היותם קרובים
+ ביותר לפתרון האופטימלי אם לא היינו כפופים ל-
+\lang english
+ECMP
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Description
+הערה בעיית ה-
+\lang english
+Link-Weight
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא באמת מה שאנחנו רוצים לפתור, רק שהיא 
+\begin_inset Formula $\mathsf{NP}$
+\end_inset
+
+-קשה, ואפשר גם להוכיח שהיא 
+\begin_inset Formula $\mathsf{NP}$
+\end_inset
+
+-קשה אם יש רק מקור ויעד אחד, ואם מנסים לקרב מינימום עומס מירבי עם כל קבוע
+ שהוא.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עם זאת הקושי של הבעיה בתאוריה מגיע מכל מיני דוגמאות פתולוגיות, אפע
+\begin_inset Quotes xrd
+\end_inset
+
+פ שבמקרה הממוצע אפשר לקרב לא רע בכלל עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה לסיכום כל הקונספטים יחד: מנהל הרשת קובע משקולות כך שכשכל ראוטר יריץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז כשיקבל פקטות ויריץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהינתן הנתונים שיש לו, נקבל זרימה עם עומס מירבי מינימלי על כל צלע שהיא ברשת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מפצל באופן אחיד על פני ה-
+\lang english
+next-hops
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלו את התעבורה, אבל במציאות התעבורה היא פקטות.
+ פקטות מאותו המקור חשוב שיעברו את אותו המסלול כי לדוגמה בשיחת וידאו, אם
+ פקטות סובלות מפערי שידור שונים, זה פוגע משמעותית ב-
+\lang english
+QoS
+\lang hebrew
+, לכן חשוב שיעברו את אותו המסלול.
+\end_layout
+
+\begin_layout Standard
+לשם פיזור התעבורה באופן הזה, נשתמש בפ' האש על ה-
+\lang english
+header
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של פקטה )לפחות על השדות הרלוונטיים ליעד( ובהתאם לערך שיצא )מודולו מספר החיבורים
+ ב-
+\begin_inset Formula $\mathsf{nxt}_{ij}$
+\end_inset
+
+(, נשלח ל-
+\lang english
+next-hop
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הרלוונטי את ההודעה.
+ הרעיון כאן הוא שכל הפקטות של שיחת זום אחת יהיו בעלות אותם שדות ב-
+\lang english
+header
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן ינותבו לאותו המקום.
+\end_layout
+
+\begin_layout Description
+דוגמה אם יש לנו מעט זרימות קטנות והרבה זרימות גדולות, יכו ללקרות מצב שההאש
+ ימפה לנו שתי זרימות גדולות לאותו החיבור ואז יהיה עומס לא מאוזן, ועל כל
+ זה יש מחקר רלוונטי עד היום.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{שכבה 4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Transport Layer
+\end_layout
+
+\begin_layout Standard
+נעלה עוד שלב בהיררכיה - נניח שיש לנו דרך לתקשר בתוך ארגון עם ניתוב )בתקווה(
+ אופטימלי.
+ שכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ממומשת אצל משתמשי הקצה.
+ המטרה של שכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא להתאים תהליכים במחשב המקור לתהליכים במחשב היעד, בהנחה שיש לנו חיבור
+ ישיר בין שני משתמשי קצה )או אבסטרקציה של חיבור כזה, כשכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ היא שמאפשרת את האבסטרקציה הזו באמצעות 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+ECMP
+\lang hebrew
+ וכיוצ
+\begin_inset Quotes xrd
+\end_inset
+
+ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(.
+\end_layout
+
+\begin_layout Standard
+שכבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יכולה לשרת כמה מטרות שונות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+TCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שליחה אמינה ועם סדר של פקטות, מתבטאת בניהול עומס התקשורת, ניהול זרימה
+ ויצירת הקשר.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תקשורת לא אמינה בלי סדר - המינימום שצריך מעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי שאולי יגיעו הפקטות )יותר מהיר ככלל(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\ldots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אף אחד מהפרוטוקולים האלה לא יכולים להבטיח לנו דיליי מקסימלי כלשהו, או רוחב
+ פס כלשהו, כי זה לא תלוי בכלל במשתמשי הקצה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{MinCong ו-MaxMCF}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניהול תעבורה חולק היסטורית לשני חלקים שונים - מוצאים דרך קצרה ביותר באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DV, LS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהינתן משקולות 
+\begin_inset Formula $w$
+\end_inset
+
+, ואז מוצאים זרימה אופטי' בהינתן המסלולים.
+ מהי זרימה אופטי'?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+MinCong
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מזעור הצלע העמוסה ביותר, כלומר מציאת 
+\begin_inset Formula $\underset{f}{\textrm{argmin}}\max\limits _{e}\frac{f\left(e\right)}{c\left(e\right)}$
+\end_inset
+
+, בהינתן שקיימנו את כל דרישות הביקוש על חשבון חריגה מקיבול.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+MaxMCF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מקסום הזרימה הכוללת, כלומר 
+\begin_inset Formula $\underset{f}{\textrm{argmax}}\;\sum\limits _{v}\left|f_{v}\right|$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\sum\limits _{u}f\left(v,u\right)$
+\end_inset
+
+ הזרימה לכל השכנים מ-
+\begin_inset Formula $v$
+\end_inset
+
+, כשלא בהכרח משיגים את הביקוש הנדרש אבל לא חורגים מהקיבול.
+\end_layout
+
+\begin_layout Description
+הערה שתי הבעיות הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל הן בעיות תכנון לינארי, כלומר 
+\begin_inset Formula $\underset{x}{\textrm{argmin}}\;c\cdot x$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $Ax\leq b$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $b,c$
+\end_inset
+
+ וקטורים, 
+\begin_inset Formula $A$
+\end_inset
+
+ מטריצה.
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ יהיה 
+\begin_inset Formula $1\ldots1$
+\end_inset
+
+ ותהיה לנו קוור' ב-
+\begin_inset Formula $x$
+\end_inset
+
+ צלע והאילוצים יהיו כמו של בעיות הזרימה במקור - 
+\begin_inset Formula $f_{e}\geq0$
+\end_inset
+
+ ו-
+\begin_inset Formula $\sum f_{e,in}=\sum f_{e,out}$
+\end_inset
+
+ לכל צלע 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ נשים לב שאנחנו לא אוכפים את הקיבול כי אנחנו מניחים שהקיבולים שנתונים לנו
+ הם מספיקים.
+\end_layout
+
+\begin_layout Description
+שאלה נניח שיש לנו את הקומודיטים הבאים, מסודרים כטאפלים של מקור, יעד וביקוש:
+ 
+\begin_inset Formula $\left(A,C,5\right),\left(C,E,3\right)$
+\end_inset
+
+ ואת הטופולוגיה הבאה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/c.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+טופולוגיה עם קיבולים מסומנים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מה הפתרון האופטימלי ל-
+\lang english
+Max-MCF
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נצטרך למצוא את זרימה שמקיימת את הביקוש, כלומר סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ זרימה בגודל 
+\begin_inset Formula $8$
+\end_inset
+
+ )
+\begin_inset Formula $5$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $A$
+\end_inset
+
+ ו-
+\begin_inset Formula $3$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $C$
+\end_inset
+
+(.
+ אם מתעלמים מהקיבולים, אפשר להשיג הרבה זרימות שמספקות את הביקוש.
+ נוכיח עתה כי אי אפשר לספק את הביקוש עם תנאי הקיבול.
+\end_layout
+
+\begin_layout Standard
+ראשית נשים לב כי הזרימה הבאה היא חוקית, ונוכיח שהיא אופטימלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ace.jpg
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+זרימה אופטימלית תחת אילוצי הקיבול
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על חתך מוכלל, שהוא קבוצה של קודקודים, כך שלכל קומודיטי יש נציג אחד
+ בלבד )כלומר לא גם המקור וגם היעד( בקבוצה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ C,E\right\} $
+\end_inset
+
+ הוא לא חתך מוכלל כי לקומודיטי השני יש שני נציגים.
+ 
+\begin_inset Formula $\left\{ B,C\right\} $
+\end_inset
+
+ הוא חתך מוכלל, והזרימה שלו, כלומר הזרימה דרך כל הצלעות בין קודוקדיו לאלו
+ שמחוצה לו, היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $6$
+\end_inset
+
+.
+ גם 
+\begin_inset Formula $\left\{ C\right\} $
+\end_inset
+
+ הוא חתך מוכלל חוקי, והזרימה דרכו שווה לקיבול דרכו, מה שאומר שהזרימה אופטימלית
+ )כן יש דואליות בין חתך מוכלל ל-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MCF
+\lang hebrew
+(.
+ לכן לא תיתכן זרימה יותר טוב מהזרימה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל כי אז היינו חורגים מהקיבול.
+ בתרגיל עדיף קודם למצוא חתך עם קיבול מינימלי ואז לנסות למצוא זרימה שממלאת
+ את הקיבול הזה )כאן עשו הפוך(.
+\end_layout
+
+\begin_layout Standard
+השאלה הזו לא קשורה בכלל לאיך שהאלג' שלמדנו עובדים כי היא עוסקת בתאוריה ובמציאות
+ יש משקולות ועושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכו'.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+האם אפשר למשקל בעזרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OSPF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לצורך העניין( את הרשת כך ש-
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יניב זרימה אופטימלית? אם כן הראו אותה ואם לא הסבירו מדוע.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נביט בזרימה הבאה, שאינטואטיבית מפזרת את 
+\begin_inset Formula $A\to C$
+\end_inset
+
+ על פני הרשת ו-
+\begin_inset Formula $C\to E$
+\end_inset
+
+ באופן ישיר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/abc.jpg
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+משקול הרשת לצורך פיזור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוצלח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקבל במקרה הזה שני מסלולים קצרים ביותר מ-
+\begin_inset Formula $A$
+\end_inset
+
+ ל-
+\begin_inset Formula $C$
+\end_inset
+
+ ואחד מ-
+\begin_inset Formula $C$
+\end_inset
+
+ ל-
+\begin_inset Formula $E$
+\end_inset
+
+, כך שבסופו של דבר נקבל את אותה הזרימה שהראנו בסעיף הקודם כלומר אכן השגנו
+ זרימה אופטימלית.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נניח עתה שהקומודיטים שלנו הם 
+\begin_inset Formula $\left(B,D,5\right),\left(C,E,3\right)$
+\end_inset
+
+.
+ מה הפתרון האופטימלי לבעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MinCong
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/c.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+אותה הטופולוגיה שוב לנוחות הקריאה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחפש את החתך עם הקיבול הקטן ביותר שוב, תחת הקומודיטים החדשים.
+ הפעם זה 
+\begin_inset Formula $\left\{ B,C\right\} $
+\end_inset
+
+ )הסטודנטית המשקיעה תבדוק שזה אכן כך(.
+ גודל הקיבול הוא 
+\begin_inset Formula $6$
+\end_inset
+
+.
+ נחפש זרימה עם גודל 
+\begin_inset Formula $6$
+\end_inset
+
+.
+ מהגדרת החתך, נהיה חייבים לעבור דרך הצלעות שבחתך, והעומס המינימלי יתקבל
+ אם נפזר באופן אחיד ככל הניתן את העומס על פני הצלעות )בפרט כי הקיבול של
+ כולן זהה(.
+ לכן הפתרון האופטימלי נותן לנו עומס מרבי של 
+\begin_inset Formula $\frac{8}{6}$
+\end_inset
+
+ )מפזרים אחיד זרימה כוללת של 
+\begin_inset Formula $8$
+\end_inset
+
+ על פני קיבול כולל של 
+\begin_inset Formula $6$
+\end_inset
+
+(, כלומר שהצלעות 
+\begin_inset Formula $\left\{ A,B\right\} ,\left\{ E,C\right\} ,\left\{ D,C\right\} $
+\end_inset
+
+ יהיו שלושתן בעומס 
+\begin_inset Formula $\frac{4}{3}$
+\end_inset
+
+ )בפרט עם זרימה דרכן של 
+\begin_inset Formula $\frac{4}{3}\cdot2=\frac{8}{3}$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+האם יש משקול כך ש-
+\lang english
+ECMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יניב פתרון אופטימלי?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לא! נסתכל על התעבורה שיוצאת מ-
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם הוא מזרים את כל 
+\begin_inset Formula $5$
+\end_inset
+
+ היחידות שלו דרך צלע אחת ב-
+\lang english
+ECMP
+\lang hebrew
+ קיבלנו עומס 
+\begin_inset Formula $\frac{5}{2}>\frac{4}{3}$
+\end_inset
+
+ שזה לא אופטימלי.
+\end_layout
+
+\begin_layout Itemize
+אם הוא מזרים את 
+\begin_inset Formula $5$
+\end_inset
+
+ היחידות בשתי צלעות, סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ הזרימה שיוצאת מ-
+\begin_inset Formula $C$
+\end_inset
+
+ תהיה 
+\begin_inset Formula $2.5$
+\end_inset
+
+ שהוא מקבל מ-
+\begin_inset Formula $5$
+\end_inset
+
+ ועוד 
+\begin_inset Formula $3$
+\end_inset
+
+ שיוצא מעצמו, כלומר סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $5.5$
+\end_inset
+
+, שזה נותן עומס 
+\begin_inset Formula $\frac{5.5}{4}>\frac{4}{3}$
+\end_inset
+
+ שזה גם לא אופטימלי.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
