@@ -40160,5 +40160,2680 @@ ECMP
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{XII
+\backslash
+;
+\backslash
+; שכבה 4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{XII}$
+\end_inset
+
+ |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ שכבה
+ 
+\family default
+\series default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+השכבה 
+\begin_inset Formula $4$
+\end_inset
+
+ היא השכבה הראשונה שבה יחידות הקצה הם תהליכים )אפליקציות(, שמאפשרים הפרדה
+ לוגית של המידע המתוקשר.
+ שכבה 
+\begin_inset Formula $3$
+\end_inset
+
+ )לכאורה, נראה בהמשך למה לא( לא מועדת להפרדה הזו.
+\end_layout
+
+\begin_layout Description
+הערה העובדה ששכבה 
+\begin_inset Formula $4$
+\end_inset
+
+ ממומשת בקצוות היא בעייתית במקרה שבו פקטה נופלת מילמטר לפני שהיא מגיעה ביעד.
+ במקרה כזה עדיף שהלינק ישלח הלאה ממש קצת את הפקטה שוב.
+ מצד שני יש אפליקציות שלא צריכות את השירות הזה )פקטה ישנה לא רלוונטית כבר(
+ וזה מוסיף הרבה מורכבות, כך שכבר עדיף להיצמד לעיקרון ה-
+\lang english
+End-to-End
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+שכבה 
+\begin_inset Formula $4$
+\end_inset
+
+ עושה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+(De-)Multiplexing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- השולח עושה דימולטיפלקסינג, כלומר מאחד את כל התקשורות מכל התהליכים שלו
+ לפקטות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מעל פקטות 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+, כשאנחנו מזהים את האפליקציות עם פורטים, והמקבל צריך להפריד את ההודעות לפי
+ הפורטים המזהים ולהעביר אותם לתהלכיים הרלוונטיים אצלו.
+\end_layout
+
+\begin_layout Standard
+הממשק של שכבה 
+\begin_inset Formula $4$
+\end_inset
+
+ אצל תהליכים הוא סוקטים, ומערכת ההפעלה מסדרת פקטות שהיא מקבלת ומעבירה אותם
+ לפורטים הרלוונטיים.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ב-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מופיע ב-
+\lang english
+header
+\lang hebrew
+ כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופורט רק של היעד, כך שאם שני תהליכים שולחים לאותו היעד דרך סוקטים זהים )מבחינת
+ פורט ו-
+\lang english
+IP
+\lang hebrew
+(, לא ניתן יהיה להבחין בין השיחות.
+ זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Connectionless demultiplexing
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+ב-
+\lang english
+TCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מזהים כל פקטה עם כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מקור ויעד ופורט מקור ויעד, ולכן סוקטים של תהליכים שונים מגדירים שיחות שונות.
+ זה נקרא 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Connection-oriented demux
+\lang hebrew
+, שכן רק באמצעות זיהוי של שני הגורמים בשיחה אפשר להגדיר שיחה )
+\lang english
+connection
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{ניהול שיחות ב-TCP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+ניהול שיחות ב-
+\lang english
+TCP
+\end_layout
+
+\begin_layout Standard
+בגלל שמדובר בשיחה ולא שליחה שרירותית של הודעות, לפני שאפשר לדבר, ב-
+\lang english
+TCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לבסס את השיחה והזיכרון שלה אצל הלקוח והשרת, באמצעות לחיצת היד המשולשת.
+\end_layout
+
+\begin_layout Enumerate
+הלקוח שולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP SYN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sequence number
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ התחלתי אקראי )לצורכי אבטחה(.
+\end_layout
+
+\begin_layout Enumerate
+השרת עונה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SYNACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם מספר סידורי התחלתי שלו ומקצה אצלו זיכרון לשיחה.
+\end_layout
+
+\begin_layout Enumerate
+הלקוח עונה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SYNACK
+\lang hebrew
+, שכבר יכול להחיל מידע של השיחה.
+\end_layout
+
+\begin_layout Standard
+כשהשיחה נגמרת )האפליקציה סוגרת סוקט(, צריך לשחרר את המשאבים שהוקצו.
+\end_layout
+
+\begin_layout Enumerate
+הלקוח שולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP FIN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לשרת.
+\end_layout
+
+\begin_layout Enumerate
+השרת עונה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\lang hebrew
+, סוגר את הסוקט אצלו ושולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FIN
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Description
+הערה ב-
+\lang english
+UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אין שום דבר מהסוג הזה כי אין שיחה ולכן לא צריך לפתוח או לסגור אותה.
+ עם זאת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חשוב כאמור בכל אפליקציה שהיא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Real Time
+\lang hebrew
+, וגם במקרים שיש שאילתות קטנות לא צריך את התקורה המוגזמת של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)לדוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DNS
+\lang hebrew
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יותר חשוב מהנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל, חייב להיות פרוטוקול שלא צריך לזהות את עצמנו, כי אז אי אפשר לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DHCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לדוגמה.
+ כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא פרוטוקול בוטסראפינג, ולכן קריטי לאינטרנט!
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מלבד התחלת וסיום השיחה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מספק גם סטרים ביטים אמין ולפי הסדר )הוא דואג לסדר מחדש אם צריך(, והוא 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pipelined
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כלומר הוא דואג לניהול העומס וגודל הפקטות )הגודל המקסימלי נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MSS
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Description
+הערה גם כשיש לקוח ושרת ורק הלקוח שולח הודעות, התקשורת עדיין דו-כיוונית )צריך
+ לענות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\lang hebrew
+-ים וכו'(.
+\end_layout
+
+\begin_layout Description
+דוגמה נניח ששרת מריץ אפליקציה פשוטה שמקבלת קלט ועונה את אותו הפלט.
+ התקשורת תראה כך )נניח שכבר עשינו לחיצת יד משולשת(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/data.png
+	lyxscale 30
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמה לתקשורת דו כיוונית ב-
+\lang english
+TCP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שבכל שליחת הודעה, אנחנו מודיעים מה המספר הסידורי של הפקטה שאנחנו
+ שולחים )
+\lang english
+seq
+\lang hebrew
+(, ומה המספר הסידורי האחרון שקיבלנו מהצד השני )שדה ה-
+\lang english
+ACK
+\lang hebrew
+(.
+ גם אחרי שכל הדאטא נשלח, משתמש 
+\begin_inset Formula $A$
+\end_inset
+
+ עדיין עונה ל-
+\begin_inset Formula $B$
+\end_inset
+
+ שהוא קיבל את ההודעה, גם אם אין לו ערך מוסף בצורת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לשלוח לו.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה מעתה נניח שיש לקוח ששולח הודעות בתקשורת חד כיוונית והשרת רק נותן פידבק,
+ אפע
+\begin_inset Quotes xrd
+\end_inset
+
+פ שזה לא באמת מה שקורה, כי זה יקל על הניתוח.
+ בנוסף, נניח שהמספר הסידורי הוא מספר הפקטה, אפילו שבפועל הוא מספר הבתים
+ שנשלחו מתוכן ההודעה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מצבי השולח ב-TCP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מצבי השולח ב-
+\lang english
+TCP
+\end_layout
+
+\begin_layout Itemize
+מידע התקבל מהאפליקציה: צור סגמנט עם מספר סידורי, התחל טיימר להודעה האחרונה
+ שעוד לא קיבלנו עליה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם לא רץ כבר.
+\end_layout
+
+\begin_layout Itemize
+טיים-אוט: אם הטיימר נגמר ולא קיבלנו אישור, שדר מחדש את הסגמנט והתחל מחדש
+ את הטיימר.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+התקבל: אם מתייחס לסגמנטים שלא קיבלו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עדיין, עדכן את המצב אצלי, ואם עדיין יש פקטות שלא התקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עליהם )שהם לא מה שעכשיו אושר(, התחל את הטיימר שוב.
+\end_layout
+
+\begin_layout Description
+הערה בגלל שיש לנו טיימר אחד לכל פקטה, המנגנון האחרון שתואר גורם לכך שנוכל
+ לחכות לפקטה אחת יותר מאינטרוול טיים-אוט אחד )נחכה קצת לפקטה שלפני, ואז
+ עוד אינטרוול טיים-אוט שלם לנוכחי(.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט בשלוש דוגמאות לכשל ברשת.
+ משמאל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\lang hebrew
+ נפל ואכן לאחר שנגמר הטיים-אוט נשלח שוב את ההודעות וזה יעבוד.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בדוגמה השנייה הטיים-אוט על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $100$
+\end_inset
+
+ )כלומר השולח קיבל את מספר סידורי 
+\begin_inset Formula $92$
+\end_inset
+
+ שהכיל 
+\begin_inset Formula $8$
+\end_inset
+
+ בתים( לא הגיעה בזמן ולכן השולח שלח אותה שוב, אבל כשישלח שוב יקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהמקבל של 
+\begin_inset Formula $120$
+\end_inset
+
+, כי המקבל כבר קיבל את מספר סידורי 
+\begin_inset Formula $100$
+\end_inset
+
+ שהוא בוגדל 
+\begin_inset Formula $20$
+\end_inset
+
+ בתים, כלומר טיפלנו כמו שצריך כמה בבעיה הזו.
+\end_layout
+
+\begin_layout Standard
+בדוגמה השלישית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ראשון נופל אבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שני מגיע בזמן בגלל שהוא קומולטטיבי, הוא מכפה על ה-
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקודם שנפל וממשיכים הלאה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ack.png
+	lyxscale 30
+	scale 14
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/in.png
+	lyxscale 30
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמאות לבעיות ברשת והטיפול של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TCP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה חשוב לזכור שה-
+\lang english
+ACK
+\lang hebrew
+ הוא קומולוטטיבי, וכך מפשט מאוד מה כל צד צריך לזכור.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{חישוב הטיים-אוט ב-TCP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+חישוב הטיים-אוט ב-
+\lang english
+TCP
+\end_layout
+
+\begin_layout Standard
+איך נקבע את הטיים-אוט? נרצה שזה יהיה לא קצר מדי נגד שידורים מיותרים ולא
+ ארוך מדי נגד תגובותיות איטית.
+ התשובה היא זמן ה-
+\lang english
+RTT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ה-
+\lang english
+Round Trip Time
+\lang hebrew
+.
+ כדי לחשב את הזמן הזה, נחשב כמה זמן לוקחת התקשורת בין כל פקטה ו-
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלה.
+ הדגימות האלו יהיו די רועשות, ולכן נרצה לשערך את ה-
+\lang english
+RTT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ באופן עדין.
+ החישוב שעושים במציאות הוא
+\begin_inset Formula 
+\[
+\mathrm{EsteimatedRTT}=\left(1-\alpha\right)\cdot\mathrm{EstimatedRTT}+\alpha\cdot\mathrm{SampleRTT}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\alpha=0.125$
+\end_inset
+
+ לרוב.
+ ההשפעה של דגימות קודמות קטנה אקספוננציאלית ולכן מצד אחד כן נגיב למצב האקטואלי,
+ אבל גם לא נעשה אוסילציות כל הזמן.
+\end_layout
+
+\begin_layout Standard
+זה לא מסיים את החישוב של הטיים-אוט, כי צריך עדיין לקבוע את הקשר שלו ל-
+\lang english
+RTT
+\lang hebrew
+.
+ לשם כך נחשב את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DevRTT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהוא הסטייה המצופה מה-
+\lang english
+RTT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הממוצע, שיחושב בדומה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+\mathrm{DevRTT}=\left(1-\beta\right)\cdot\mathrm{DevRTT}+\beta\cdot\left|\mathrm{SampleRTT}-\mathrm{EstimatedRTT}\right|
+\]
+
+\end_inset
+
+ואז לסיכום נקבע
+\begin_inset Formula 
+\[
+\mathrm{TimeoutInterval}=\mathrm{EstimatedRTT}+4\cdot\mathrm{DevRTT}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב-
+\lang english
+TCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש רעיון שנקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Fast Retransmit
+\lang hebrew
+.
+ לרוב הטיים-אוט הוא די ארוך, ולכן נוכל לקבל כמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\lang hebrew
+-ים מפקטות אחרות לפני שנקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ או לא נקבל על הפקטה הנוכחית.
+ נשים לב שאם קיבלנו כמה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK
+\lang hebrew
+-ים זהים )על מספר סידורי קודם(, כנראה שזה אומר שהפקטה שאנחנו מחכים שתגיע
+ לא הגיעה.
+\end_layout
+
+\begin_layout Standard
+לכן לאחר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\lang english
+ACK
+\lang hebrew
+-ים על אותו המספר הסידורי, כל סגמנט אחרי המספר הזה נחשב כנאבד ושולחים שוב
+ את ההודעות.
+ היתרון בזה זה שזה יכול לקרות גם לפני שהטיימר )הארוך יחסית( נגמר.
+\end_layout
+
+\begin_layout Description
+דוגמה נניח ש-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הגיע אבל 
+\begin_inset Formula $2$
+\end_inset
+
+ נפל )והשאר גם הגיעו(.
+ לאחר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\lang english
+ACK
+\lang hebrew
+-ים משוכפלים, נשלח שוב את 
+\begin_inset Formula $2$
+\end_inset
+
+ גם אם הטיים-אוט לא נגמר.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/nack.png
+	lyxscale 30
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+דוגמה ל-
+\lang english
+Fast Retransmit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
