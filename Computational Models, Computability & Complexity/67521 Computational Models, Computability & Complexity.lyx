@@ -29477,5 +29477,1277 @@ V\left(G'\right)=\left\{ v_{in},v_{mid},v_{out}:v\in V\left(G\right)\right\} ,E\
  ולכן זה לא מסלול המילטוני.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{XII
+\backslash
+;
+\backslash
+; מחלקות סיבוכיות מקום}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{XII}$
+\end_inset
+
+ | מחלקות סיבוכיות מקום 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+
+\color gray
+חלק א' של ההרצאה
+\end_layout
+
+\begin_layout Description
+הגדרה המחלקות המתאימות לבעיית הריקנות והאוניברסליות הן
+\begin_inset Formula 
+\begin{align*}
+\mf{EMPTY}_{\nfa} & =\left\{ \left\langle A\right\rangle :L\left(A\right)=\varnothing\text{ו-}\;\nfa\;\text{הוא}\;A\right\} \\
+\mf{ALL}_{\nfa} & =\left\{ \left\langle A\right\rangle :L\left(A\right)=\com^{*}\text{ו-}\;\nfa\;\text{הוא}\;A\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה כזכור, עבור אוטומט דטר', הפיכת המצבים המקבלים תניב את האוטומט המשלים.
+ הטריק הזה לא יעבוד עבור אוטומט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד ובונים את המשלים באמצעות ה-
+\lang english
+subset construction
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Description
+הערה מתקיים 
+\begin_inset Formula $\mf{EMPTY}_{\nfa}\in\p$
+\end_inset
+
+ כי 
+\begin_inset Formula $\overline{\mf{EMPTY}_{\nfa}}\in\p$
+\end_inset
+
+ באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BFS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)בודקים אם יש מסלול למצב מקבל( ו-
+\begin_inset Formula $\p$
+\end_inset
+
+ סגורה להשלמה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בנוסף 
+\begin_inset Formula $\mf{ALL}_{\dfa}\in\p$
+\end_inset
+
+ כי בניית המשלים נעשת בזמן פולי' )ועליו בודקים האם 
+\begin_inset Formula $L\left(\overline{D}\right)\in\mf{EMPTY}_{\dfa}$
+\end_inset
+
+ בזמן פולי'(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נראה איך לבדוק 
+\begin_inset Formula $w\in L\left(A\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ בזמן פולי': ניתן להגדיר 
+\begin_inset Formula $A_{w}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfa$
+\end_inset
+
+ עם 
+\begin_inset Formula $L\left(A_{w}\right)=\left\{ w\right\} $
+\end_inset
+
+ )שרוך של המילה( בזמן פולי', ובנוסף לחשב אוטומט מכפלה של 
+\begin_inset Formula $A_{w}$
+\end_inset
+
+ ו-
+\begin_inset Formula $A$
+\end_inset
+
+ לוקח זמן פולי' ואז נכריע ש-
+\begin_inset Formula $w\in L\left(A\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $L\left(A\right)\cap L\left(A_{w}\right)\neq\varnothing$
+\end_inset
+
+ )באמצעות השפה של אוטומט המכפלה(.
+\end_layout
+
+\begin_layout Description
+הערה לכאורה אפשר להכניס את המחלקה ל-
+\begin_inset Formula $\np$
+\end_inset
+
+ באמצעות עד שהוא מילה שלא בשפה ואז לבדוק שהוא לא בשפה באמצעות השיטה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+ הבעיה היא שהעד המינימלי יכול להיות באורך אקספ' ואז האלג' כבר לא פולי'.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\overline{\mf{ALL}_{\nfa}}\in\mf{NPSPACE}$
+\end_inset
+
+ )האוטומטים הא
+\begin_inset Quotes xrd
+\end_inset
+
+ד עם שפה לא אוניברסלית(.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $L\left(A\right)\neq\com^{*}$
+\end_inset
+
+ אז יש מילה 
+\begin_inset Formula $w$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|w\right|\leq2^{\left|Q\right|}$
+\end_inset
+
+ )מסלול פשוט ב-
+\lang english
+SS-construction
+\lang hebrew
+( ו-
+\begin_inset Formula $w\notin L\left(A\right)$
+\end_inset
+
+, כי 
+\begin_inset Formula $w$
+\end_inset
+
+ כזו היא עד לחוסר הריקנות של 
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נבנה מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט א
+\begin_inset Quotes xrd
+\end_inset
+
+ד שמכריעה את 
+\begin_inset Formula $\overline{\mf{ALL}_{\nfa}}$
+\end_inset
+
+ בשטח פולי', שמסמלץ את ה-
+\lang english
+SS-construction
+\lang hebrew
+ 
+\lang english
+on-the-fly
+\lang hebrew
+, כלומר לא נבנה את כולו אבל לוגית הוא יהיה האלג':
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נאתחל 
+\begin_inset Formula $S=Q_{0},c=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+כל עוד 
+\begin_inset Formula $c\leq2^{\left|Q\right|}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $S\cap F=\varnothing$
+\end_inset
+
+ נעצור ונקבל )כל הריצות לא מקבלות(.
+\end_layout
+
+\begin_layout Enumerate
+אחרת, נחש אות 
+\begin_inset Formula $\sigma\in\com$
+\end_inset
+
+ ונחשב 
+\begin_inset Formula $S=\delta\left(S,\sigma\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $c++$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נכונות: אם 
+\begin_inset Formula $L\left(A\right)\neq\com^{*}$
+\end_inset
+
+ אז יש 
+\begin_inset Formula $w\notin L\left(A\right)$
+\end_inset
+
+ והיא באורך 
+\begin_inset Formula $2^{\left|Q\right|}\geq$
+\end_inset
+
+, ולכן יש ריצה של האלג' שתנחש את 
+\begin_inset Formula $w$
+\end_inset
+
+ )ותקבל ב-
+\begin_inset Formula $2\left(a\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c=\left|w\right|-1$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+פולי' זיכרון: בכל רגע המכונה שומרת על הסרט את 
+\begin_inset Formula $S\subseteq Q$
+\end_inset
+
+ )פולי'( ומונה 
+\begin_inset Formula $c$
+\end_inset
+
+ שסופר על 
+\begin_inset Formula $2^{\left|Q\right|}$
+\end_inset
+
+ ולכן באורך 
+\begin_inset Formula $\log_{2}2^{\left|Q\right|}$
+\end_inset
+
+ )שזה פולי'(.
+\end_layout
+
+\begin_layout Description
+הערה ההוכחה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל רצה בזמן אקס' )
+\begin_inset Formula $2^{\left|Q\right|}$
+\end_inset
+
+( ולכן לא הכנסנו את השפה ל-
+\begin_inset Formula $\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה בתרגול נוכיח ש-
+\begin_inset Formula $\mf{NSPACE}\left(s\left(n\right)\right)\subseteq\mf{SPACE}\left(s^{2}\left(n\right)\right)$
+\end_inset
+
+ ומשם נסיק 
+\begin_inset Formula $\mf{NPSPACE}=\mf{PSPACE}$
+\end_inset
+
+, וגם ש-
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה עד כה יש לנו
+\begin_inset Formula 
+\[
+\begin{matrix}\mf{coP} &  &  &  & \mf{coPSPACE} & \overset{\text{סביץ'}}{=} & \mf{coNPSPACE} &  & \mf{coEXPTIME}\\
+\overset{||}{\p} & \subseteq & \np & \subseteq & \overset{||}{\mf{PSPACE}} & \underset{\text{סביץ'}}{=} & \overset{||}{\mf{NPSPACE}} & \subseteq & \overset{||}{\ex}\\
+ & \subseteq & \conp & \subseteq
+\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר כי שפה שלמה ב-
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\in\mf{PSPACE}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+)
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+-קשה( לכל 
+\begin_inset Formula $L'\in\mf{PSPACE}$
+\end_inset
+
+, 
+\begin_inset Formula $L'\leq_{p}L$
+\end_inset
+
+ )רדוקציה בזמן פולי'(.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\overline{\mf{ALL}_{\nfa}}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+-קשה.
+\end_layout
+
+\begin_layout Proof
+נראה לכל שפה 
+\begin_inset Formula $L\in\mf{PSPACE}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\overline{L}\leq_{p}\mf{ALL}_{\nfa}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)ומשם 
+\begin_inset Formula $L\leq_{p}\overline{\mf{ALL}_{\nfa}}$
+\end_inset
+
+(.
+ כלומר נבנה פ' שבהינתן 
+\begin_inset Formula $w\in\com^{*}$
+\end_inset
+
+, מחזירה 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w\notin L$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $L\left(N\right)=\com^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטר' שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ בשטח 
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+ פולי' באורך הקלט.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ שנחזיר יקבל 
+\begin_inset Formula $x$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $x$
+\end_inset
+
+ לא קידוד חוקי של ריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+או 
+\begin_inset Formula $x$
+\end_inset
+
+ קידוד של ריצה דוחה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כך אם 
+\begin_inset Formula $w\notin L$
+\end_inset
+
+, אין אף ריצה מקבלת ולכן אין אף קידוד חוקי של ריצה מקבלת, לכן תמיד נקבל.
+\end_layout
+
+\begin_layout Standard
+הא
+\begin_inset Quotes xrd
+\end_inset
+
+ב של 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\com'=\Gamma\cup\left(Q\times\Gamma\right)\cup\left\{ \#\right\} $
+\end_inset
+
+.
+ קידוד חוקי של ריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ הוא מילה מעל 
+\begin_inset Formula $\com'$
+\end_inset
+
+, שהיא רצף קונפ' עוקבות כאשר קונפ' מקודדת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\#\gamma_{1}\ldots\left(q,r_{i}\right)\ldots\gamma_{s\left(n\right)}\#$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+איך נבדוק שקונפ' הן עוקבות? נסמן 
+\begin_inset Formula $next\left(\sigma_{i-1},\sigma_{i},\sigma_{i+1}\right)=\sigma_{I}'$
+\end_inset
+
+ מה אנחנו מצפים לראות במקום ה-
+\begin_inset Formula $i$
+\end_inset
+
+ בקונפ' עוקבת לקונפ' שבמקומות 
+\begin_inset Formula $i-1,i,i+1$
+\end_inset
+
+ שלה יש את 
+\begin_inset Formula $\sigma_{i-1},\sigma_{i},\sigma_{i+1}$
+\end_inset
+
+.
+ אפשר לחשב את הערך הזה בזמן ושטח פולי' בהינתן 
+\begin_inset Formula $\delta$
+\end_inset
+
+ )לראות איפ הראש הקורא צריך להיות והאם משתנות אותיות(.
+\end_layout
+
+\begin_layout Itemize
+לבדיקת הקידוד הלא חוקי, 
+\begin_inset Formula $A$
+\end_inset
+
+ יקבל את 
+\begin_inset Formula $x$
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x$
+\end_inset
+
+ לא מתחילה ב-
+\begin_inset Formula $\#\left(q_{0},a_{1}\right)a_{2}\ldots a_{n}\spa\ldots\spa$
+\end_inset
+
+.
+ ואפשר לבנות לזה שרוך ב-
+\begin_inset Formula $\nfa$
+\end_inset
+
+ )דורשים 
+\begin_inset Formula $\#$
+\end_inset
+
+ אחרת בור דוחה, ואז 
+\begin_inset Formula $\left(q_{0},a_{1}\right)$
+\end_inset
+
+ אחרת בור דוחה וכו'(.
+\end_layout
+
+\begin_layout Enumerate
+יש ב-
+\begin_inset Formula $x$
+\end_inset
+
+ הפרה של 
+\begin_inset Formula $next$
+\end_inset
+
+: נעשה חוג עצמי על מצב לכל 
+\begin_inset Formula $\com'$
+\end_inset
+
+, אבל ננחש גם הפרה: לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, נוסיף את שרוך הניחוש שבאיור, כך שאם הקונפ' לא עוקבת, תהיה ריצה שתנחש את
+ ההפרה הזו שתגיע לבור המקבל.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/snn.png
+	lyxscale 40
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+שרוך המייצג הפרה של 
+\begin_inset Formula $next$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+לבדיקת האם הריצה מקבלת, 
+\begin_inset Formula $A$
+\end_inset
+
+ תקבל מילה שמכילה אות מהצורה 
+\begin_inset Formula $\left\{ q_{acc}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+השרוך הראשון הוא באורך לינארי ב-
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+ ויש 
+\begin_inset Formula $\oo{3s\left(n\right)}$
+\end_inset
+
+ שרוכים באורך לינארי ב-
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+.
+ כלומר סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ בנייה בזמן פולי' ב-
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+.
+ נכונות ברורה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\color gray
+חלק ב' של ההרצאה
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mf{CONT}_{\nfa}=\left\{ \left\langle A_{1},A_{2}\right\rangle :L\left(A_{1}\right)\subseteq L\left(A_{2}\right)\;\text{-ים ו-}\nfa\;A_{2}\text{ו-}\;A_{1}\right\} $
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $A\cap\overline{B}=\varnothing$
+\end_inset
+
+, ולכן אפשר לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SS-construction
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז אוטומט המכפלה, כך שהשפה ב-
+\begin_inset Formula $\ex$
+\end_inset
+
+ )גודל אוטומט המכפלה 
+\begin_inset Formula $\left|Q_{1}\times2^{Q_{2}}\right|$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula $\mf{CONT}_{\nfa}\in\mf{PSPACE}$
+\end_inset
+
+ אבל לא נראה את זה.
+ כן נראה שהשפה היא 
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+-קשה.
+ נוכיח 
+\begin_inset Formula $\mf{ALL}_{\nfa}\leq_{p}\mf{CONT}_{\nfa}$
+\end_inset
+
+.
+ כלומר נמצא 
+\begin_inset Formula $f$
+\end_inset
+
+ שבהינתן 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ מחזירה זוג 
+\begin_inset Formula $\nfa$
+\end_inset
+
+-ים כך שהקלט אוני' אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם השפה של האוטומט הראשון מוכלת בשל השני.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ יקבל 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ ויחזיר 
+\begin_inset Formula $\left\langle A_{\com^{*}},A\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $A_{\com^{*}}$
+\end_inset
+
+ אוטומט טריוויאלי שמקבל כל מילה.
+ כמובן שהרדוקציה פולי', וגם שהיא נכונה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mf{CONT}_{\dfa,\nfa}=\left\{ \left\langle A_{1},A_{2}\right\rangle :L\left(D_{1}\right)\subseteq L\left(A_{2}\right)\text{ו-}\;\nfa\;A_{2}\text{ו-}\;\dfa\;D_{1}\right\} $
+\end_inset
+
+.
+ זו שפה קלה יותר מ-
+\begin_inset Formula $\mf{CONT}_{\nfa}$
+\end_inset
+
+ ולכן היא גם ב-
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+.
+ נשים לב שהרדוקציה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל עובדת בדיוק אותו הדבר ולכן זו שפה 
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+-קשה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mf{CONT}_{\nfa,\dfa}=\left\{ \left\langle A_{1},A_{2}\right\rangle :L\left(A_{1}\right)\subseteq L\left(D_{2}\right)\text{ו-}\;\dfa\;D_{2}\text{ו-}\;\nfa\;A_{1}\right\} $
+\end_inset
+
+.
+ עדיין ב-
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+.
+ הפעם הרדוקציה לא עובדת כי אי אפשר להעתיק את ה-
+\begin_inset Formula $\nfa$
+\end_inset
+
+ אל תוך הסלוט השני כי מצופה ל-
+\begin_inset Formula $\dfa$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+למעשה השפה לא 
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+-קשה כי השפה ב-
+\begin_inset Formula $\p$
+\end_inset
+
+: ניתן להכריע 
+\begin_inset Formula $L\left(A_{1}\right)\cap\overline{L\left(D_{2}\right)}=\varnothing$
+\end_inset
+
+ בזמן פולי' בגודל הקלט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)משלים ל-
+\begin_inset Formula $\dfa$
+\end_inset
+
+ ניתן לחישוב פולי'(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mf{MIN}_{\dfa}=\left\{ \left\langle D,k\right\rangle :\text{מצבים}\;k\;\text{שקול עם לכל היותר}\;\dfa\;\text{ויש}\;k\in\fldn\;,\dfa\;D\right\} $
+\end_inset
+
+.
+ נשים לב שלא משנה אם 
+\begin_inset Formula $k$
+\end_inset
+
+ מיוצג באונארית או בינארית כי קלט מעניין רק אם 
+\begin_inset Formula $\left|D\right|>k$
+\end_inset
+
+ ואז הקלט בכל מקרה גדול מהייצוג האונארי של 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+השפה היא ב-
+\begin_inset Formula $\p$
+\end_inset
+
+ כי ראינו אלג' צמצום עם מחלקות השקילות של מייהיל-נרוד.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mf{MIN}_{\nfa}=\left\{ \left\langle D,k\right\rangle :\text{מצבים}\;k\;\text{שקול עם לכל היותר}\;\nfa\;\text{ויש}\;k\in\fldn\;,\nfa\;D\right\} $
+\end_inset
+
+.
+ בתרגיל נוכיח כי השפה ב-
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+ )כי ב-
+\begin_inset Formula $\mf{NPSPACE}$
+\end_inset
+
+ באמצעות עד שהוא 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ שאמור להיות שקול וקטן מספיק(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נוכיח כי 
+\begin_inset Formula $\mf{MIN}_{\nfa}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mf{PSPACE}$
+\end_inset
+
+-קשה.
+ נוכיח 
+\begin_inset Formula $\mf{ALL}_{\nfa}\leq_{p}\mf{MIN}_{\nfa}$
+\end_inset
+
+.
+ הרעיון יהיה שאם ל-
+\begin_inset Formula $\nfa$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ יש מצב אחד אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $L\left(A\right)=\com^{*}\lor L\left(A\right)=\varnothing$
+\end_inset
+
+ אז נבחר תמיד 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ תחזיר את 
+\begin_inset Formula $B$
+\end_inset
+
+ כך שיש ל-
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\begin_inset Formula $\nfa$
+\end_inset
+
+ שקול עם מצב אחד אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $A$
+\end_inset
+
+ אוניברסלי, כלומר, נחזיר 
+\begin_inset Formula $\left\langle A_{\varnothing},1\right\rangle $
+\end_inset
+
+ אם 
+\begin_inset Formula $L\left(A\right)=\varnothing$
+\end_inset
+
+ ואחרת 
+\begin_inset Formula $\left\langle A_{\com^{*}},1\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+את בעיית הריקנות אפשר להכריע עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BFS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאמור ולכן זה חשיב, וגם נכון.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
