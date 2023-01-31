@@ -50217,5 +50217,519 @@ CP
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Distance Vector
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא יעבוד במקרה הגלובלי, כי ברשת העולמית יש אינטרסים כלכליים וחלוקה מנהלית
+ שונה שלא מאפשרת מסלול קצר ביותר כאלג' ניתוב.
+ מעבר לכך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא עושה סקייל כמו שצריך.
+\end_layout
+
+\begin_layout Standard
+כשנשלח לאילו מרחבי כתובות יש לנו גישה, נפרסם את:
+\end_layout
+
+\begin_layout Itemize
+הלקוחות שלנו לכולם )בשביל זה הם משלמים לנו(.
+\end_layout
+
+\begin_layout Itemize
+ספקים רק ללקוחות )אחרת ינתבו דרכנו על חשבון הבית(.
+\end_layout
+
+\begin_layout Itemize
+עמיתים לאף אחד )הוא ינתב בעצמו דרך העמית, אבל אם עמית אחד מקושר יותר מאחר
+ הוא ינוצל באופן לא הוגן ושוויוני(.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $85\%$
+\end_inset
+
+ מכל ה-
+\lang english
+AS
+\lang hebrew
+-ים הם לקוחות בלבד )
+\lang english
+stubs
+\lang hebrew
+(, מעבר לכך יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1000
+\numeric off
+ 
+\lang english
+AS
+\lang hebrew
+-ים מדרגה שניה )לאומיים, מחוזיים( ו-
+\numeric on
+10-12
+\numeric off
+ 
+\lang english
+AS
+\lang hebrew
+-ים מדרגה ראשונה )חברות ענק(.
+\end_layout
+
+\begin_layout Standard
+ב-
+\lang english
+BGP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש שני סוגי הודעות: הכרזה )הוספת מסלול למרחב כתובות( והסגה )הסרת מסלול שהוכרז
+ בעבר(.
+\end_layout
+
+\begin_layout Description
+שאלה איך נמנעים ב-
+\lang english
+BGP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ממעגלים? שולחים את המסלולים המלאים לכל יעד.
+\end_layout
+
+\begin_layout Description
+הערה 
+\lang english
+BGP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LS
+\lang hebrew
+! לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DV
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי שולחים מסלולים מלאים, ולא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ כי שולחים מסלולים לא רק של שכנים אלא כל קודקוד ישיג.
+\end_layout
+
+\begin_layout Standard
+בגלל שהעולם כרגע עונה לשלושת התניות ליציבות שהגדרנו בהרצאה )רובן נובעות
+ באופן ישיר מהיגיון כלכלי(, העולם כרגע בטוח מבחינת יציבות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BGP
+\lang hebrew
+.
+ בפרט אם יש רק מצב אחד יציב תמיד נהיה בטוחים מבחינת יציבות.
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+סוף.
+\end_layout
+
 \end_body
 \end_document
