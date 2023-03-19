@@ -1,0 +1,2743 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{dsfont}
+\usepackage{polynom}
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\setcounter{page}{1}
+\usepackage{qtree}
+\newcommand*{\defeq}{\stackrel{\mathsmaller{\mathsf{def}}}{=}}
+
+\usepackage{tikz}
+\usepackage[pdfpagelabels]{hyperref}
+\hypersetup{
+    linktoc=all,
+    colorlinks,
+	linkcolor=teal,
+    bookmarksopen=true,         
+    bookmarksopenlevel=2
+}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "Arial"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.1cm
+\topmargin 2.1cm
+\rightmargin 2.1cm
+\bottommargin 2.1cm
+\secnumdepth 2
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 1
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size giant
+בדיקה הסתברותית של הוכחות |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+67790
+\numeric off
+
+\begin_inset VSpace 40bp
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+הרצאות | פרופ' גיא קינדלר
+\size giant
+ 
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size larger
+כתיבה | נמרוד רק
+\size giant
+
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size large
+תשפ
+\begin_inset Quotes erd
+\end_inset
+
+ג סמסטר ב'
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+
+\size giant
+\begin_inset VSpace 30bp
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\size default
+השבוע הראשון הושלם באדיבותו )הרבה( של 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{https://www.linkedin.com/in/david-keisar-schmidt-a54b0422a/}{דויד קיסר-שמידט}
+\end_layout
+
+\end_inset
+
+ ו
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{https://deychev.com/}{סיכומו}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset FormulaMacro
+\newcommand{\desc}[2]{\underset{#2}{\underline{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oh}{\mathcal{O}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oo}[1]{\oh\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\om}[1]{\Omega\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ot}[1]{\Theta\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldr}{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldc}{\mathbb{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\em}{\omega}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\k}{\mathcal{K}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\c}{\mathcal{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\m}{\mathcal{M}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dist}{\textrm{dist}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\aut}[1]{\textrm{Aut}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mf}[1]{\mathsf{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset FormulaMacro
+\newcommand{\fldn}{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldz}{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mez}[1]{\mathds{#1}}
+{\boldsymbol{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\boxo}[1]{\begin{array}{|c|}
+\hline #1\\\hline \end{array}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\var}[1]{\textrm{var}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\left\Vert #1\right\Vert }
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xy}[2]{\left(\begin{smallmatrix}#1\\
+ #2 
+\end{smallmatrix}\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\lambda}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\corr}[1]{\textrm{corr}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bin}[1]{\textrm{Bin}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ber}[1]{\textrm{Ber}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\geo}[1]{\textrm{Geo}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\unif}[1]{\textrm{Unif}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dx}{dx}
+{\mathsf{dx}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dt}{\;\textrm{dt}}
+{\textrm{dt}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\d}[1]{\;\mathrm{d#1}}
+{\textrm{\mathrm{d#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ift}{\mathbb{\mathcal{\int\limits _{-\infty}^{\infty}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\disn}{\dist_{\norm{\cdot}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\textrm{d}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\diam}{\textrm{diam}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rad}{\textrm{rad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\va}{\varangle\,}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ox}[2]{\underset{x\to#1}{\mathcal{O}}\left(#2\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xx}[3]{\underset{x\to#2}{#1}\left(#3\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\so}[2]{\underset{x\to#1}{o}\left(#2\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\len}{\textrm{length}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vol}{\textrm{vol}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\td}[3]{\left.#1\right|_{#3}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\po}{\underset{\left|p\right|\to0}{o}\left(1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\udesc}[2]{\overset{#2}{\overline{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dn}[2]{d^{#1}#2}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}{df}
+{\mathsf{df}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sp}{\textrm{sp}\,}
+{\textrm{sp}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\one}{\mathds{1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\mathcal{X}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sgn}{\textrm{sign}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{{\rm tr}\,}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\reg}{\textrm{REG}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dfa}{\textrm{DFA}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nfa}{\textrm{NFA}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\regex}{\textrm{REGEX}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cfg}{\textrm{CFG}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cfl}{\textrm{CFL}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lsb}{\textrm{LSB}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\np}{\mathsf{NP}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\p}{\mathsf{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\conp}{\mf{coNP}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\l}{\mf L}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nl}{\mf{NL}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ls}{\mf{logspace}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\udesc}[2]{\overset{#2}{\overline{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\r}{\text{\ensuremath{\textrm{R}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fldq}{\mathbb{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\spa}{\_}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\re}{\text{\ensuremath{\textrm{RE}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\core}{\text{\ensuremath{\textrm{co-RE}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\com}{\Sigma}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\Sigma^{*}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\boxo}[1]{\begin{array}{|c|}
+\hline #1\\\hline \end{array}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\n}{\mathcal{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\y}{\mathcal{Y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sat}{\mf{3SAT}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\gms}{\mf{gap-MAX-3SAT}\left[1,s\right]}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\gm}[1]{\mf{gap-MAX-3SAT}\left[1,#1\right]}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\gmcs}{\mf{gap-MAX-3SAT}\left[c,s\right]}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\val}[1]{\mathrm{val}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\suc}{\text{\ensuremath{\mathrm{success}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pcp}{\text{\ensuremath{\mf{PCP}}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+שבוע -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+, הרצאה/תרגול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+, מסקנות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{part}{הצפנה סימטרית}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{I
+\backslash
+;
+\backslash
+; מבוא לקריפטוגרפיה מודרנית}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ |
+\end_layout
+
+\begin_layout Plain Layout
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{א | }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{I
+\backslash
+;
+\backslash
+; מבוא}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ | מבוא
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+מכונת טיורינג
+\bar default
+ היא אוטומט עם סרט זיכרון שהיא יכולה לנוע עליו.
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת שפה 
+\begin_inset Formula $L\subseteq\st$
+\end_inset
+
+ אם היא מסיימת במצב מקבל על 
+\begin_inset Formula $x$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט חישוב
+\bar default
+ זו מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שיש לה מצב עוצר שכשהיא מגיעה אליו הערך שרשום על הסרט הוא הפלט שלה.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\p=\left\{ L:\text{בזמן פולי'}\;L\;\text{קיימת מ"ט המכריעה את}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר כי 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+ אם קיימת שפה 
+\begin_inset Formula $L^{\pi}$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L^{\pi}\in\p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+המילים ב-
+\begin_inset Formula $L^{\pi}$
+\end_inset
+
+ הן מהצורה 
+\begin_inset Formula $\left(x,w\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|w\right|\leq\mf{poly}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ קיים 
+\begin_inset Formula $w$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left(x,w\right)\in L^{\pi}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה בעיות הכרעה של שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ הן למעשה חלוקה של 
+\begin_inset Formula $\st$
+\end_inset
+
+ ל-
+\begin_inset Formula $\left(\y,\n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+בעיית הבטחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+promise problem
+\lang hebrew
+( היא חלוקה 
+\begin_inset Formula $L=\left(\y,\st\backslash\left(\y\cup\n\right),\n\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $\st$
+\end_inset
+
+.
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+ מקבלת ודוחה נכונה מילים ב-
+\begin_inset Formula $\y,\n$
+\end_inset
+
+ בהתאמה )מבטיחה את התשובה עליהם( ומילים ב-
+\begin_inset Formula $\st\backslash\left(\y\cup\n\right)$
+\end_inset
+
+ יכולות להתקבל, להדחות או שהמ
+\begin_inset Quotes xrd
+\end_inset
+
+ט לא תעצור )אין ערובה לתוצאת הריצה(.
+\end_layout
+
+\begin_layout Description
+הערה בעיית הכרעה של שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ היא בעיית הבטחה מהצורה 
+\begin_inset Formula $\left(L,\varnothing,\st\backslash L\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה רדוקציה חשיבה לבעיות הבטחה מוגדרת בדומה לרדוקציה בבעיות הכרעה.
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר כי 
+\begin_inset Formula $L\in\mf{NPH}$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $L'\in\np$
+\end_inset
+
+ קיימת רדוקציה פולי' מ-
+\begin_inset Formula $L'$
+\end_inset
+
+ ל-
+\begin_inset Formula $L$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $L$
+\end_inset
+
+ בעיית הבטחה(.
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר כי 
+\begin_inset Formula $L\in\mf{NPC}$
+\end_inset
+
+ אם 
+\begin_inset Formula $L\in\mf{NPH}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה בעיית 
+\begin_inset Formula $\mf{MAX-3SAT}$
+\end_inset
+
+ מקבלת קלט חוקי 
+\begin_inset Formula $I\in\mf{3CNF}$
+\end_inset
+
+ )נוסחה המורכבת מהסגרים( והמטרה היא לתת השמה שתספק כמה שיותר הסגרים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עבור קלט חוקי 
+\begin_inset Formula $I$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\mathrm{opt}\left(I\right)$
+\end_inset
+
+ )מסומן לעתים 
+\begin_inset Formula $\mathrm{val}\left(I\right)$
+\end_inset
+
+( האחוז המקסימלי של הסגרים שניתן לספק ב-
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה 
+\begin_inset Formula $\mf{3SAT}\in\np$
+\end_inset
+
+ היא שפת כל הקלטים החוקיים שהערך שלהם הוא 
+\begin_inset Formula $1$
+\end_inset
+
+ )נוסחה הניתנת לסיפוק במלואה(.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $\mf{MAX-3SAT}$
+\end_inset
+
+ אינה בעיית הכרעה או הבטחה ולכן לעת עתה ההוכחה )העד( אינה מוגדרת היטב.
+\end_layout
+
+\begin_layout Description
+הערה ל-
+\begin_inset Formula $3\mf{SAT}$
+\end_inset
+
+ יש כמה מאפיינים מיוחדים מבחינת בדיקת הוכחות.
+ ראשית ניתן לבדוק הוכחה במקביל על כל ההסגרים אם נתון לנו כוח חישוב מקבילי
+ מספיק.
+ ניתן לנצל מנגנון זה לצורכי בדיקה הסת' של השמה: אם 
+\begin_inset Formula $I\in\mf{3SAT}$
+\end_inset
+
+ אז בהגרלת הסגרת, ההסת' שיסופק היא 
+\begin_inset Formula $P\left(\y\right)=1$
+\end_inset
+
+ אבל אם 
+\begin_inset Formula $I\notin\mf{3SAT}$
+\end_inset
+
+ אז 
+\begin_inset Formula $P\left(\y\right)\leq1-\frac{1}{m}$
+\end_inset
+
+ )לפחות הסגר אחד לא מסופק(.
+ כלומר ניתן להגדיר מוודא הסת' לבעיה.
+\end_layout
+
+\begin_layout Description
+הגדרה מוודא הסת' לבעיית הבטחה הוא מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט שמקיים את התנאים הבאים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+)לוקליות( המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט מבצעת מספר גישות קבוע לעד )
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים בלבד מתוך העד(.
+\end_layout
+
+\begin_layout Itemize
+)רנדומיות( המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט מגרילה 
+\begin_inset Formula $\oo{\log n}$
+\end_inset
+
+ ביטים.
+\end_layout
+
+\begin_layout Itemize
+)שלמות( המ
+\begin_inset Quotes xrd
+\end_inset
+
+ט מקבלת קלט בשפה בהסת'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)המוודא מושלם(.
+\end_layout
+
+\begin_layout Itemize
+)תקפות,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Soundness
+\lang hebrew
+( קיים לו חסם מלעל להסת' לקבלת קלט שאינו בשפה )במקרה שלנו 
+\begin_inset Formula $1-\ot{\frac{1}{n}}$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה לכל 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+ קיים מוודא הסת' עם פרמטרים כמו שכתבנו למעלה.
+\end_layout
+
+\begin_layout Proof
+ממשפט קוק-לוין, יש רדוקציה מ-
+\begin_inset Formula $L$
+\end_inset
+
+ ל-
+\begin_inset Formula $\mf{3SAT}$
+\end_inset
+
+ ולכן מספיק לבדוק הסת' את הקלט המתקבל ל-
+\begin_inset Formula $\mf{3SAT}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט )
+\lang english
+PCP
+\lang hebrew
+ בניסוח 
+\begin_inset Formula $\mf{3SAT}$
+\end_inset
+
+( לכל 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+ קיים מוודא הסת' עם פרמטרים כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל ו-
+\begin_inset Formula $\mf{soundness}<\mf{const}<1$
+\end_inset
+
+ )ישנו חסם מלעל קבוע קטן ממש מאחד לתקפות(.
+\end_layout
+
+\begin_layout Description
+הערה כדי לקיים את הדרישה על התקפות צריך שהרדוקציה מהשפה לנוסחה ב-
+\begin_inset Formula $\mf{3CNF}$
+\end_inset
+
+ תיתן נוסחה שהיא בהסת' נמוכה ספיקה.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $\mf{gap-MAX-3SAT}\left[c,s\right]$
+\end_inset
+
+ היא בעיית ההבטחה עם
+\begin_inset Formula 
+\begin{align*}
+\y & =\left\{ I:\mf{3SAT}\;\text{קלט חוקי לבעיית}\;I\;\land\;\mathrm{val}\left(I\right)\geq c\right\} \\
+\n & =\left\{ I:\mf{3SAT}\;\text{קלט חוקי לבעיית}\;I\;\land\;\mathrm{val}\left(I\right)\leq s\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה אינטואטיבית, 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא המשלים )אחד פחות-( אחוז ה-
+\lang english
+false negative
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאנחנו מוכנים לסבול ו-
+\begin_inset Formula $s$
+\end_inset
+
+ הוא אחוז ה-
+\lang english
+false postiive
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאנחנו מוכנים לסבול.
+\end_layout
+
+\begin_layout Description
+משפט )ניסוח מחדש של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם 
+\begin_inset Formula $\mf{gap-MAX-3SAT}$
+\end_inset
+
+( קיים 
+\begin_inset Formula $s<1$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\mf{gap-MAX-3SAT}\left[1,s\right]\in\mf{NPH}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה הניסוח החדש מספיק כי ל-
+\begin_inset Formula $\mf{gap-MAX-3SAT}\left[1,s\right]$
+\end_inset
+
+ יש מוודא הסת' שעונה על הקריטריונים האמורים לעיל ולכן עם רדוקציה מכל 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+ נקבל את משפט ה-
+\lang english
+PCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המקורי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המוודא מקבל 
+\begin_inset Formula $I=c_{1}\land\ldots\land c_{m}$
+\end_inset
+
+ נוסחה חוקית ו-
+\begin_inset Formula $f$
+\end_inset
+
+ השמה )העד(, מגריל 
+\begin_inset Formula $i\in\left[m\right]$
+\end_inset
+
+ ובודק האם 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ מסופקת ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $f$
+\end_inset
+
+ )צריך לבדוק את שלושת הביטים ב-
+\begin_inset Formula $f$
+\end_inset
+
+ המתאימים לליטרלים ב-
+\begin_inset Formula $c_{i}$
+\end_inset
+
+(.
+ אם הפסוקית מסופקת יענה 
+\begin_inset Formula $\y$
+\end_inset
+
+ ואחרת 
+\begin_inset Formula $\n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $I\in\y$
+\end_inset
+
+ אז יש השמה מספקת ולכן המוודא יענה 
+\begin_inset Formula $\y$
+\end_inset
+
+ על איזשהו עד )לכן תמיד נסווג נכון 
+\begin_inset Formula $I\in\y$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $I\in\n$
+\end_inset
+
+ אז 
+\begin_inset Formula $s\cdot m$
+\end_inset
+
+ פסוקיות לכל היותר מסופקות ע
+\begin_inset Quotes xrd
+\end_inset
+
+י כל השמה ולכן ההסת' שניפול על אחת מסופקת )שתגרום לנו לחשוב ש-
+\begin_inset Formula $I$
+\end_inset
+
+ כן ספיקה( היא 
+\begin_inset Formula $s$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $s$
+\end_inset
+
+ הוא קבוע התקפות במקרה הזה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה אלג' 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-מקרב ל-
+\begin_inset Formula $\mf{MAX-3SAT}$
+\end_inset
+
+ )עבור 
+\begin_inset Formula $\alpha\in\left[0,1\right]$
+\end_inset
+
+( הוא אלג' שמקבל כקלט נוסחת 
+\begin_inset Formula $3\mf{CNF}$
+\end_inset
+
+ חוקית 
+\begin_inset Formula $I$
+\end_inset
+
+ ומחזיר מספר 
+\begin_inset Formula $b$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $\alpha\;{\rm val}\left(I\right)\leq b\leq{\rm val}\left(I\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה )ממשפט ה-
+\lang english
+PCP
+\lang hebrew
+( אם 
+\begin_inset Formula $\p\neq\np$
+\end_inset
+
+ אז לא קיים אלג' 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-מקרב פוליונמי ל-
+\begin_inset Formula $\mf{MAX-3SAT}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\alpha>s$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)כאשר 
+\begin_inset Formula $s$
+\end_inset
+
+ הקבוע ממשפט ה-
+\lang english
+PCP
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Proof
+נניח בשלילה שקיים אלג' כזה.
+ תהי 
+\begin_inset Formula $L\in\np$
+\end_inset
+
+, לכן קיימת רדוקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ מ-
+\begin_inset Formula $L$
+\end_inset
+
+ ל-
+\begin_inset Formula $\gms$
+\end_inset
+
+.
+ יהי קלט 
+\begin_inset Formula $w$
+\end_inset
+
+ לבעיית ההכרעה 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ נריץ את אלג' הקירוב על 
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+\alpha\;{\rm val}\left(f\left(w\right)\right)\leq b\leq{\rm val}\left(f\left(w\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ אז 
+\begin_inset Formula $b\geq\alpha\desc{{\rm val}\left(f\left(w\right)\right)}{\geq1}\geq\alpha>s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w\notin L$
+\end_inset
+
+ אז 
+\begin_inset Formula $b\leq{\rm val}\left(f\left(w\right)\right)\leq s$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+כלומר השוואה של 
+\begin_inset Formula $b$
+\end_inset
+
+ ל-
+\begin_inset Formula $s$
+\end_inset
+
+ תכריע האם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ ולכן מ
+\begin_inset Quotes xrd
+\end_inset
+
+ט דטר' פולי' בזמן יכולה להכריע את 
+\begin_inset Formula $L$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $L\in\p$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\p=\np$
+\end_inset
+
+ סתירה.
+\end_layout
+
+\begin_layout Description
+מסקנה אם 
+\begin_inset Formula $\gmcs\in\mf{NPH}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\p\neq\np$
+\end_inset
+
+ אז אין אלג' קירוב עם פרמטר גדול מ-
+\begin_inset Formula $\frac{s}{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{דוגמאות לאלג' קירוב לבעיות קשות ב-NP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+דוגמאות לאלג' קירוב לבעיות קשות ב-
+\begin_inset Formula $\np$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ראינו באלגו' אלג' 
+\begin_inset Formula $\frac{7}{8}$
+\end_inset
+
+-מקרב ל-
+\begin_inset Formula $\sat$
+\end_inset
+
+ )מגרילים הרבה השמות עד שאחת מספקת לפחות 
+\begin_inset Formula $\frac{7}{8}$
+\end_inset
+
+ מהפסוקיות(.
+\end_layout
+
+\begin_layout Itemize
+בעיית 
+\begin_inset Formula $\mf{MAX-Exact3-LIN2}$
+\end_inset
+
+ היא בעיית האופטימיזציה מעל מערכת 
+\begin_inset Formula $n$
+\end_inset
+
+ משוואות, בכל אחת שלושה משתנים )שניתן לשים בהם 
+\begin_inset Formula $0,1$
+\end_inset
+
+( שערכה הוא המספר המקס' של משוואות שניתן לספק במערכת.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אלג' 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+-מקרב לבעיה )שראינו באלגו'( בודק לכל משתנה איזו השמה עדיפה )לפי תוחלת סיפוק
+ המשוואה( ובוחר באופן חמדני את ההשמה העדיפה.
+\end_layout
+
+\begin_layout Standard
+ידוע כי 
+\begin_inset Formula $\mf{gap-MAX-E3-LIN2}\left[1-\epsilon,\frac{1}{2}+\epsilon\right]$
+\end_inset
+
+ היא בעיה קשה ב-
+\begin_inset Formula $\np$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ )כלומר אינטואיטיבית ממש קשה להבדיל בין מערכות משוואות שניתן לספק כמעט את
+ כל המשוואות בהן לבין מערכות שניתן לספק קצת יותר מחצי ממשוואותיהן(.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בעיית 
+\begin_inset Formula $\mf{MAX-IS}$
+\end_inset
+
+ לכל גרף מחזירה את גודל קבוצת הקודקודים הבת
+\begin_inset Quotes xrd
+\end_inset
+
+ל )אף שני קודקודים בקבוצה אינם מחוברים בצלע( המקסימלית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ידוע כי 
+\begin_inset Formula $\mf{gap-MAX-IS}\left[1-\frac{1}{\sqrt{2}}-\epsilon,\epsilon\right]$
+\end_inset
+
+ קשה ב-
+\begin_inset Formula $\np$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ )ראו הסבר אינטואיטיבי לעיל(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{קווים לדמותו של PCP - משחק עם שני שחקנים
+ חזקים ומוודא חלש}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+קווים לדמותו של 
+\begin_inset Formula $\pcp$
+\end_inset
+
+ - משחק עם שני שחקנים חזקים ומוודא חלש
+\end_layout
+
+\begin_layout Standard
+נתונים שני שחקנים )חזקים חישובית( שמשחקים משחק: בהינתן נוסחה, הם מתאמים
+ עמדות )בוחרים השמה( ואז מופרדים.
+\end_layout
+
+\begin_layout Standard
+שחקן אחד מקבל פסוקית ושחקן נוסף משתנה בפסוקית.
+ הראשון מחזיר השמה למשתנים בפסוקית והאחרון השמה למשתנה.
+\end_layout
+
+\begin_layout Standard
+הם מנצחים אם ההשמה של הראשון מספקת את הפסוקית ואם שני השחקנים מסכימים על
+ הערך המושם במשתנה שניתן לאחרון מתוך הפסוקית.
+\end_layout
+
+\begin_layout Description
+הערה הרעיון מאחורי המשחק הזה הוא שקילות ה-
+\lang english
+PCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למצב בו שני שחקנים חזקים חישובית מנסים להראות הסת' למוודא חלש מאוד שניתן
+ לספק את נוסחה מסוימת.
+\end_layout
+
+\begin_layout Description
+טענה בהינתן 
+\begin_inset Formula $\val I\leq\alpha$
+\end_inset
+
+ )שיעור הפסוקיות שניתנות לסיפוק בו זמנית המקסימלי(, ההסת' שינצחו היא 
+\begin_inset Formula $P\left(\suc\right)\leq1-\frac{1-\alpha}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נניח שהשחקנים משחקים באסטרטגיה עם שיעור הצלחה 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\begin{align*}
+E_{c\in I}\left[\mez 1_{\left\{ c\;\text{מפסידים על}\right\} }\right] & \overset{\left(*\right)}{\leq}E_{c\in I}\left[\mez 1_{s_{1}\left(c\right)\neq s_{2}\left(c\right)}\right]\\
+ & \overset{\left(**\right)}{\leq}3\cdot E{}_{c\in I}\left[\frac{\sum\limits _{i=1}^{3}\mez 1_{s_{1}\left(c_{i}\right)\neq s_{2}\left(c_{i}\right)}}{3}\right]\\
+ & \overset{\left(***\right)}{=}3\cdot\left(1-\beta\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ מונוטוניות ההסת': השחקנים אידאליים ולכן אם הפסוקית ניתנת להשמה תחת ההשמה
+ )אסטרטגיה( שהוסכמה בהתחלה, שניהם ייתנו אותה.
+ אם היא לא מסופקת תחת ההשמה שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ידע את זה וישנה את ההשמה )שתספק ובתקווה תהיה זהה להשמת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למשתנה(.
+ לכן אם הם מפסידים הם בהכרח לא מסכימים על ההשמה לפסוקית )של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זו החדשה שהמציא עכשיו ממנה הוא חושף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ערכים למוודא ושל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא המוסכמת במקור ממנה הוא חושף ערך אחד למוודא(.
+ 
+\begin_inset Formula $s_{1}\left(c\right),s_{2}\left(c\right)$
+\end_inset
+
+ הן וקטורים ב-
+\begin_inset Formula $\left\{ 0,1\right\} ^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+ הכפלה וחלוקה ב-
+\begin_inset Formula $3$
+\end_inset
+
+ וגם חסם האיחוד על אי ההסכמה על ההסגר )לפחות אחד מהליטרלים לא מוסכם(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(***\right)$
+\end_inset
+
+ הצלחה היא לשכנע את המוודא שניתן לספק את הפסוקית )במרמה או לאו(, ואי הסכמה
+ יש רק כשההשמה המקורית לא מספקת את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הפסוקית )כלומר הנוסחה לא ספיקה(.
+ לכן ההסת' לכישלון 
+\begin_inset Formula $1-\beta$
+\end_inset
+
+ היא ההסת' לאי הסכמה בין השחקנים, שזה בדיוק תוחלת ממוצע אי ההסכמה במשוואה
+ למעלה.
+\end_layout
+
+\begin_layout Proof
+ולכן
+\begin_inset Formula 
+\[
+P\left(\suc\right)=\beta\leq1-\frac{E_{c\in I}\left[\mez 1_{\left\{ \text{לא מסופק}\;c\right\} }\right]}{3}\leq1-\frac{1-\alpha}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה משחק בין שני שחקנים עם סיבוב אחד )
+\lang english
+2 Player 1 Round Game
+\lang hebrew
+( הוא שלשה 
+\begin_inset Formula $G=\left\langle V,P_{1},P_{2}\right\rangle $
+\end_inset
+
+ כאשר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $P_{1}=\left\langle Q_{1},\com_{1}\right\rangle ,P_{2}=\left\langle Q_{2},\com_{2}\right\rangle $
+\end_inset
+
+ הם השחקנים כאשר 
+\begin_inset Formula $Q_{1},Q_{2}$
+\end_inset
+
+ אוסף שאלות ו-
+\begin_inset Formula $\com_{1},\com_{2}$
+\end_inset
+
+ אוסף תשובות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V=\left\langle D,P\right\rangle $
+\end_inset
+
+ הוא מוודא כאשר 
+\begin_inset Formula $D$
+\end_inset
+
+ התפלגות מעל 
+\begin_inset Formula $Q_{1}\times Q_{2}$
+\end_inset
+
+ )לא בהכרח ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת( ו-
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\begin_inset Quotes xld
+\end_inset
+
+פרדיקט
+\begin_inset Quotes xrd
+\end_inset
+
+ שהוא פ' 
+\begin_inset Formula $Q_{1}\times Q_{2}\times\com_{1}\times\com_{2}\mapsto\left\{ 0,1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ערך ההצלחה של המשחק הוא 
+\begin_inset Formula $\val G=\sup\limits _{\mf{strategies}}P\left(\suc\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה נניח שאנחנו משחקים את המשחק למעלה עם שני השחקנים והנוסחה 
+\begin_inset Formula $I$
+\end_inset
+
+ שעבורה מתקיים 
+\begin_inset Formula $\val I=\alpha$
+\end_inset
+
+.
+ אז ניתן לחשב את 
+\begin_inset Formula $\val G$
+\end_inset
+
+ בזמן סופי.
+\end_layout
+
+\begin_layout Proof
+תוחלת ההצלחה במשחק היא 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ )ההסת' שניפול על פסוקית שסופקה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י ההשמה המקסימלית שלנו( כלומר 
+\begin_inset Formula 
+\[
+\alpha=E\left[\mez 1_{\suc}\right]=E_{r_{1},r_{2}}\left[E_{\mf{strategies}}\left[\mez 1_{\suc}\right]\right]
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $r_{1},r_{2}$
+\end_inset
+
+ סרטי ביטים אקראיים )ככה ממודלת גישה לערכים אקראיים(, והאסטרטגיות בתוחלת
+ הפנימית למעשה עוברות דטרמיניזציה כי בהינתן סרט עם הערכים האקראיים שלו,
+ האסטרטגיה נהפכת לדטר'.
+ מתכונות התוחלת, יש לפחות אסטרטגיה אחת )א
+\begin_inset Quotes xrd
+\end_inset
+
+ד שנהיית דטר' תחת סרט מקרי כלשהו( עם לפחות ערך 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, שזה הכי הרבה שאנחנו יכולים להשיג.
+ לכן מספיק שנעבור על כל האסטרטגיות הדטר' ונקבל 
+\begin_inset Formula $\val G=\max\limits _{\mathrm{det'\;strategies}}P\left(\suc\right)$
+\end_inset
+
+ כלומר שהאסטרטגיה שמשיגה 
+\begin_inset Formula $\sup$
+\end_inset
+
+ היא מתוך קבוצה סופית.
+\end_layout
+
+\end_body
+\end_document
