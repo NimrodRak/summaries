@@ -644,6 +644,11 @@ LatexCommand tableofcontents
 
 
 \begin_inset FormulaMacro
+\newcommand{\f}{\text{\ensuremath{\mathbb{F}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
 \newcommand{\gm}[1]{\mf{gap-MAX-3SAT}\left[1,#1\right]}
 \end_inset
 
@@ -2737,6 +2742,1275 @@ P\left(\suc\right)=\beta\leq1-\frac{E_{c\in I}\left[\mez 1_{\left\{ \text{לא �
 \end_inset
 
  היא מתוך קבוצה סופית.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{II
+\backslash
+;
+\backslash
+; קודים לתיקון שגיאות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{II}$
+\end_inset
+
+ | קודים לתיקון שגיאות
+\end_layout
+
+\begin_layout Standard
+כל טענה מתמטית ניתן לקודד באופן שמחשב יוכל להבין אותו )מעל א
+\begin_inset Quotes xrd
+\end_inset
+
+ב כלשהו(, ולכן בהינתן טענה 
+\begin_inset Formula $S$
+\end_inset
+
+, נוכל לכתוב הוכחה 
+\begin_inset Formula $\pi$
+\end_inset
+
+ שגם אותה נוכל לקודד.
+ מעבר לכך ישנו אלג' שרץ בזמן פולי' )באורך הטענה וההוכחה( שמוודא את ההוכחה.
+ עם זאת מציאת הוכחה לטענה נתונה היא לא כריעה.
+\end_layout
+
+\begin_layout Description
+טענה בהינתן טענה 
+\begin_inset Formula $S$
+\end_inset
+
+ וסטרינג אונרי 
+\begin_inset Formula $1^{n}$
+\end_inset
+
+, הבעיה האם יש תווים שמחליפים את 
+\begin_inset Formula $1^{n}$
+\end_inset
+
+ כך שהם מהווים הוכחה חוקית ל-
+\begin_inset Formula $S$
+\end_inset
+
+, היא ב-
+\begin_inset Formula $\np$
+\end_inset
+
+ )אפשר לוודא עד פולי'(, ובפרט היא שלמה ב-
+\begin_inset Formula $\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה ממשפט ה-
+\lang english
+PCP
+\lang hebrew
+, נוכל לבנות מוודא הסת' שדוגם מספר קבוע של ביטים מהוכחה לטענה מתמטית כלשהי
+ )לא רק נוסחת 
+\begin_inset Formula $\mf{3SAT}$
+\end_inset
+
+( וקובע האם היא תקינה או לא.
+ כלומר הבדיקה הלוקאלית היא להוכחות כלליות ולא לבעיה ספציפית!
+\end_layout
+
+\begin_layout Description
+הערה קידוד הוא מחרוזת מוארכת מהמקורית שכולל יתירות כדי שיהיה אפשר לשחזר
+ אותו לאחר שהושחת.
+ קודים הם אוסף הקידודים של המילים )לאחר שקודדו(, שמהם אפשר לבחור אחד שיעזור
+ לשחזר תוכן מקורי וכו'.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $\com$
+\end_inset
+
+ אלפבית.
+ 
+\bar under
+קוד
+\bar default
+ מעל 
+\begin_inset Formula $\com$
+\end_inset
+
+ הוא 
+\begin_inset Formula $C\subseteq\com^{n}$
+\end_inset
+
+ ויש לו ארבעה פרמטרים 
+\begin_inset Formula $\left(n,d,R,q\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $n$
+\end_inset
+
+ - אורך המילים המקודדות )
+\lang english
+block length
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d$
+\end_inset
+
+ - המרחק של הקוד, שערכו 
+\begin_inset Formula $\min\limits _{u\neq w\in C}\left\{ h\left(u,w\right)\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $h\left(u,w\right)=\underset{i\in\left[n\right]}{P}\left(u_{i}\neq w_{i}\right)$
+\end_inset
+
+ )שיעור הקוורדינטות עליהן הוקטורים מסכימים(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R$
+\end_inset
+
+ - הקצב )
+\lang english
+rate
+\lang hebrew
+( שערכו 
+\begin_inset Formula $\frac{\log\left|C\right|}{\log\left|\com^{n}\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q$
+\end_inset
+
+ - גודל הא
+\begin_inset Quotes xrd
+\end_inset
+
+ב, 
+\begin_inset Formula $q=\left|\com\right|$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה אם 
+\begin_inset Formula $u$
+\end_inset
+
+ ו-
+\begin_inset Formula $w$
+\end_inset
+
+ בקוד מאוד רחוקות אחת מהשנייה לפי מרחק האמינג.
+ אם נשדר את 
+\begin_inset Formula $u$
+\end_inset
+
+ וחלק מהמידע מושחת כך שהתקבל 
+\begin_inset Formula $u'$
+\end_inset
+
+, נוכל לשחזר אותה ל-
+\begin_inset Formula $u$
+\end_inset
+
+ כי כל מילה אחרת בקוד יותר רחוק מ-
+\begin_inset Formula $u'$
+\end_inset
+
+ מאשר 
+\begin_inset Formula $u$
+\end_inset
+
+.
+ למעשה כל מרחק פחות מ-
+\begin_inset Formula $\frac{d}{2}$
+\end_inset
+
+ ניתן לשחזר נכונה.
+\end_layout
+
+\begin_layout Description
+הערה הערך העליון בקצב, אם נסתכל בבסיס 
+\begin_inset Formula $\left|\com\right|$
+\end_inset
+
+ נותן לנו את מספר האותיות ב-
+\begin_inset Formula $\com$
+\end_inset
+
+ שנדרשות כדי לייצג את כל המילים ב-
+\begin_inset Formula $C$
+\end_inset
+
+ )אם 
+\begin_inset Formula $\log_{\left|\com\right|}\left|C\right|=17$
+\end_inset
+
+ אז נוכל לקודד את כל המילים באורך 
+\begin_inset Formula $17$
+\end_inset
+
+(.
+ לכן היחס למעשה מגדיר את היעילות של הקוד - כמה גדול הניפוח ממספר הביטים
+ של האותיות שאנחנו רוצים לייצג )
+\begin_inset Formula $\log_{\left|\com\right|}\left|C\right|$
+\end_inset
+
+( לאורך הקוד שלנו בסוף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\begin_inset Formula $\log_{\left|\com\right|}\left|\com\right|^{n}=n$
+\end_inset
+
+(.
+ לכן, 
+\begin_inset Formula $R$
+\end_inset
+
+ גבוה הוא תכונה רצויה.
+\end_layout
+
+\begin_layout Description
+הגדרה בהינתן קוד 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $B_{w}^{n}\left(\alpha\right)=\left\{ u\in\com^{n}:h\left(u,w\right)\leq\alpha\right\} $
+\end_inset
+
+ הוא אוסף המילים במרחק )האמינג( לכל היותר 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה עבור 
+\begin_inset Formula $\com=\f_{q}$
+\end_inset
+
+ )שדה מודולו מעל 
+\begin_inset Formula $q$
+\end_inset
+
+ ראשוני(, 
+\begin_inset Formula $C\subseteq\com^{n}=\f_{q}^{n}$
+\end_inset
+
+ הוא 
+\bar under
+קוד לינארי
+\bar default
+ אם 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא מרחב וקטורי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)ת
+\begin_inset Quotes xrd
+\end_inset
+
+מ של 
+\begin_inset Formula $\com^{n}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה במקרה כזה,
+\begin_inset Formula 
+\[
+d\left(C\right)=\min\limits _{u\neq w\in C}\left\{ h\left(u,w\right)\right\} \overset{\left(*\right)}{=}\min\limits _{u\in C\backslash\left\{ 0\right\} }\left\{ h\left(u,0\right)\right\} \overset{\left(**\right)}{=}\min\limits _{u\in C\backslash0}\left|u\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ 
+\begin_inset Formula $h\left(u,w\right)=h\left(u-w,0\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+ כך נגדיר ערך מוחלט.
+\end_layout
+
+\begin_layout Standard
+בנוסף, 
+\begin_inset Formula $R=\frac{\dim C}{n}$
+\end_inset
+
+ כי כל איבר של 
+\begin_inset Formula $C$
+\end_inset
+
+ ניתן לייצג ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\dim C$
+\end_inset
+
+ מספרים )שהם הקוורדינטות של וקטורי בסיס של 
+\begin_inset Formula $C$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה בהינתן בסיס 
+\begin_inset Formula $\left\{ M_{1},\ldots,M_{Rn}\right\} $
+\end_inset
+
+ )של וקטורים עומדים( לקוד 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $M=\left(M_{1}\;\ldots\;M_{Rn}\right)$
+\end_inset
+
+ נקראת המטריצה היוצרת של 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה באמצעות המטריצה היוצרת ניתן לקודד בקלות וביעילות ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $Mx$
+\end_inset
+
+ מפני שתמונת 
+\begin_inset Formula $M$
+\end_inset
+
+ היא 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $1\geq R+\frac{d}{2}+o_{\left|\com\right|}\left(1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\left|\com\right|^{n}\overset{\left(i\right)}{\geq}\left|C\right|\cdot\left|B_{0}\left(\frac{d}{2}\right)\right|\overset{\left(ii\right)}{\geq}\left|C\right|{n \choose \frac{1}{2}dn-1}\left|\com\right|^{\frac{dn}{2}}\overset{\left(iii\right)}{\geq}\left|\com\right|^{Rn+\frac{dn}{2}}2^{\oo n}\overset{\left|\com\right|\to\infty}{=}\left|\com\right|^{Rn+\frac{dn}{2}+o\left(n\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ כל מילה ב-
+\begin_inset Formula $w$
+\end_inset
+
+ נמצאת בכדור ברדיוס 
+\begin_inset Formula $\frac{d}{2}$
+\end_inset
+
+ שבו היא נמצאת ללא מילים אחרות בקוד.
+ לכן נוכל למלא את 
+\begin_inset Formula $\left|\com\right|^{n}$
+\end_inset
+
+ בכדורים ברדיוס 
+\begin_inset Formula $\frac{d}{2}$
+\end_inset
+
+ סביב כל המילים ב-
+\begin_inset Formula $C$
+\end_inset
+
+ ועדיין לא למלא את כל 
+\begin_inset Formula $\com^{n}$
+\end_inset
+
+ )או בדיוק כן למלא(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ המילים ב-
+\begin_inset Formula $B_{0}\left(\frac{d}{2}\right)$
+\end_inset
+
+ הם המילים על לכל היותר 
+\begin_inset Formula $\frac{d}{2}$
+\end_inset
+
+ אותיות שאינם 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ לכן קומבינטורית, נבחר את 
+\begin_inset Formula $\frac{1}{2}dn$
+\end_inset
+
+ האותיות שנשנה )אחד פחות כדי למנוע התנגשויות(, ונקבע בהם את הערכים החדשים
+ )בפרט יכולים להיות גם 
+\begin_inset Formula $0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(iii\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\log\left|C\right|=Rn$
+\end_inset
+
+ וחסם עליון ל-
+\lang english
+choose
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהצורה 
+\begin_inset Formula ${n \choose \frac{1}{2}dn}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $2^{\oo n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ומשם ניקח 
+\begin_inset Formula $\log_{\left|\com\right|}$
+\end_inset
+
+ על שני האגפים, נחלק ב-
+\begin_inset Formula $n$
+\end_inset
+
+ ונקבל את הנדרש.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{קודי Reed-Solomon}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+קודי
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Reed-Solomon
+\end_layout
+
+\begin_layout Standard
+בהינתן שתי פרובולות, אנחנו יודעים שהן נפגשות לכל היותר בשתי נקודות, ולכן
+ מבחינת הערכים שלהן הן די שונות.
+ באותו האופן פולינומים ממעלה נמוכה גם כן כשאינם זהים אינם חולקים ערכים רבים.
+\end_layout
+
+\begin_layout Description
+הגדרה נקבע את דרגת הפולינומים מעל 
+\begin_inset Formula $\f_{q}$
+\end_inset
+
+ )
+\begin_inset Formula $q$
+\end_inset
+
+ ראשוני כי זה שדה( איתם נעבוד להיות 
+\begin_inset Formula $d\leq n\leq q$
+\end_inset
+
+ ונבחר 
+\begin_inset Formula $a_{1},\ldots,a_{n}\in\f_{q}$
+\end_inset
+
+.
+ הקוד של ריד-סולומן הוא
+\begin_inset Formula 
+\[
+RS_{d,a_{1},\ldots,a_{n},q}=\left\{ f\left(a_{1}\right),\ldots,f\left(a_{n}\right)\mid\deg f\leq d\;\text{פוליונם עם}\;f:\f_{q}\to\f_{q}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה זהו קוד לינארי מסגירות הפולינומים מדרגה לכל היותר 
+\begin_inset Formula $d$
+\end_inset
+
+ לחיבור.
+\end_layout
+
+\begin_layout Standard
+נחשב את הפרמטרים של הקוד.
+\end_layout
+
+\begin_layout Itemize
+אורך הקוד הוא 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+מרחק הקוד הוא 
+\begin_inset Formula $1-\frac{d}{n}$
+\end_inset
+
+ כי שני פולינומים שונים הם לכל היותר שווים ב-
+\begin_inset Formula $d$
+\end_inset
+
+ נקודות.
+\end_layout
+
+\begin_layout Itemize
+קצב הקוד הוא 
+\begin_inset Formula $\frac{d+1}{n}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\dim C=d+1$
+\end_inset
+
+ וזהו קוד לינארי.
+\end_layout
+
+\begin_layout Itemize
+גודל הא
+\begin_inset Quotes xrd
+\end_inset
+
+ב הוא 
+\begin_inset Formula $q=\left|\com_{q}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם נבחר 
+\begin_inset Formula $d\leq\frac{n}{2}$
+\end_inset
+
+ נקבל קצב ומרחק 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ שזה מה שרצינו, וגודל א
+\begin_inset Quotes xrd
+\end_inset
+
+ב בין 
+\begin_inset Formula $n$
+\end_inset
+
+ ל-
+\begin_inset Formula $2n$
+\end_inset
+
+ )שם בהכרח יש ראשוני(.
+\end_layout
+
+\begin_layout Standard
+כרגע יש לנו 
+\begin_inset Formula $n^{n}$
+\end_inset
+
+ מילים ב-
+\begin_inset Formula $\left|\com\right|^{n}$
+\end_inset
+
+.
+ נרצה משהו עם משמעותית פחות אותיות.
+ אם נבחר קוד עם 
+\begin_inset Formula $n$
+\end_inset
+
+ מילים, נוכל לבחור כל מילה לייצג אות אחרת ב-
+\begin_inset Formula $\com$
+\end_inset
+
+ וכך לייצג קודים ב-
+\begin_inset Formula $C$
+\end_inset
+
+ באמצעות מילים מהקוד הקטן יותר, ובתקווה עדיין לשמר את אותן התכונות.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרכבת קודים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+הרכבת קודים
+\end_layout
+
+\begin_layout Description
+הגדרה יהיו 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ קוד 
+\begin_inset Formula $\left(n_{1},d_{1},r_{1},q_{1}\right)$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\com$
+\end_inset
+
+ ו-
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ קוד 
+\begin_inset Formula $\left(n_{2},d_{2},r_{2},q_{2}\right)$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\com'$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $q_{1}\gg q_{2}$
+\end_inset
+
+.
+ נדרוש 
+\begin_inset Formula $\left|C_{2}\right|\geq q_{1}$
+\end_inset
+
+ וקיום 
+\begin_inset Formula $E:\com\overset{\text{חח"ע}}{\to}C_{2}$
+\end_inset
+
+ )קידוד אותיות למילים בקוד 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+(.
+ נגדיר את 
+\bar under
+ההרכבה של הקודים
+\bar default
+ 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ להיות
+\begin_inset Formula 
+\[
+C_{1}\circ C_{2}=\left\{ \left(E\left(x_{1}\right)||\ldots||E\left(x_{n_{1}}\right)\right):x_{1}\ldots x_{n_{1}}\in C_{1}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פרמטרים של הרכבה
+\end_layout
+
+\begin_layout Itemize
+אורך הקוד הוא 
+\begin_inset Formula $n_{1}\cdot n_{2}$
+\end_inset
+
+ )יש לנו 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+ מילים משורשות, כל אחת באורך 
+\begin_inset Formula $n_{2}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+מרחק הקוד הוא 
+\begin_inset Formula $d\left(C_{1}\circ C_{2}\right)\geq d_{1}\cdot d_{2}$
+\end_inset
+
+ כי כשנדגום קוורדינטה מקרית נדגום קודם קוורדינטה מהמילים המקוריות ב-
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ לפני שתורגמו, שם הסיכוי לשוויון הוא 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+, ואז לאחר שנתרגם הסיכוי לשוויון בקוורדינטה הוא 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+קצב הקוד הוא 
+\begin_inset Formula $R_{1}\cdot R_{2}$
+\end_inset
+
+ )עד כדי קבוע קטן( מהחישוב
+\begin_inset Formula 
+\begin{align*}
+R\left(C_{1}\circ C_{2}\right) & =\frac{\log\left|C_{1}\right|}{\log\left(q_{2}^{n_{1}\cdot n_{2}}\right)}\\
+ & =\frac{\log\left|C_{1}\right|}{\log\left(q_{1}^{n1}\right)}\cdot\frac{\log\left(q_{1}^{\cancel{n_{1}}}\right)}{\log\left(q_{2}^{\cancel{n_{1}}\cdot n_{2}}\right)}\\
+ & =R_{1}\cdot R_{2}
+\end{align*}
+
+\end_inset
+
+כאשר באופן אופטימלי 
+\begin_inset Formula $\left|C_{2}\right|$
+\end_inset
+
+ קרוב כמה שיותר )מלמעלה( ל-
+\begin_inset Formula $q_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה הרכבת קידודים לינאריים עם 
+\begin_inset Formula $E$
+\end_inset
+
+ לינארית היא קוד לינארי.
+\end_layout
+
+\begin_layout Description
+משפט קיים קוד מעל הא
+\begin_inset Quotes xrd
+\end_inset
+
+ב 
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+ עם מרחק וקצב קבוע ואורך מילה 
+\begin_inset Formula $\log\log\log n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נבחר 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ קוד עם פרמטרים 
+\begin_inset Formula $\left(n,\frac{1}{2},\frac{1}{2},n\right)$
+\end_inset
+
+ )ריד-סולומון עם 
+\begin_inset Formula $d=\frac{n}{2},q=n$
+\end_inset
+
+(.
+ יש ב-
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $n^{\frac{n}{2}}$
+\end_inset
+
+ איברים, כי כל 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+-יה של ערכים ב-
+\begin_inset Formula $\f_{q}$
+\end_inset
+
+ ניתנת להשגה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י פולינום ממשפט האינטרפולציה, נניח כי 
+\begin_inset Formula $q=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נבחר 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ עם פרמטרים 
+\begin_inset Formula $\left(\log n,\frac{1}{2},\frac{1}{2},\log n\right)$
+\end_inset
+
+ )ריד סולומון עם 
+\begin_inset Formula $q=k$
+\end_inset
+
+ ו-
+\begin_inset Formula $d=\frac{k}{2}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k=\log n$
+\end_inset
+
+( לכן יש בו 
+\begin_inset Formula $k^{\frac{k}{2}}=\left|C_{2}\right|\geq n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+עתה 
+\begin_inset Formula $C=C_{1}\circ C_{2}$
+\end_inset
+
+ הוא קוד עם פרמטרים 
+\begin_inset Formula $\left(n\log n,\frac{1}{4},\frac{1}{4},\log n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכל להפעיל זאת שוב עם 
+\begin_inset Formula $C_{3}$
+\end_inset
+
+ שלו פרמטרים 
+\begin_inset Formula $\left(\log\log n,\frac{1}{2},\frac{1}{2},\log\log n\right)$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $C\circ C_{3}$
+\end_inset
+
+ עם פרמטרים 
+\begin_inset Formula $\left(n\log n\log\log n,\frac{1}{8},\frac{1}{8},\log\log n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בטווח הארוך אמנם, אנחנו מאבדים ביצועים ולא מתקרבים ל-
+\begin_inset Formula $q=2$
+\end_inset
+
+.
+ נצטרך גישה אחרת.
+\end_layout
+
+\begin_layout Proof
+אם קיים קוד 
+\begin_inset Formula $C_{4}$
+\end_inset
+
+ עם פרמטרים 
+\begin_inset Formula $\left(\log\log\log n,\frac{1}{100},\frac{1}{100},2\right)$
+\end_inset
+
+ ואז נוכל להרכיב אותו עם 
+\begin_inset Formula $C\circ C_{3}$
+\end_inset
+
+ ולקבל קוד עם קצב, מרחק וגודל א
+\begin_inset Quotes xrd
+\end_inset
+
+ב קבוע, ומספר מילים בקוד קרוב מאוד ל-
+\begin_inset Formula $n$
+\end_inset
+
+, שזו המטרה הסופית שלנו.
+\end_layout
+
+\begin_layout Proof
+בנוסף, מספר תתי הקבוצות של מילים באורך 
+\begin_inset Formula $\log\log\log n$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $2^{2^{\log\log\log n}}=\log n$
+\end_inset
+
+ כלומר נוכל בזמן פולי' לעשות ברוט פורס על כל הקבוצות עד שנגיע לאחת שהיא
+ קוד עם פרמטרים מספקים.
+ כל שנותר הוא להוכיח שיש קוד כזה.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{השגת קוד עם פרמטרים קבועים וא
+\begin_inset Quotes xrd
+\end_inset
+
+ב בגודל 2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+השגת קוד עם פרמטרים קבועים וא
+\begin_inset Quotes xrd
+\end_inset
+
+ב בגודל 
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טענה לכל 
+\begin_inset Formula $n\in\fldn$
+\end_inset
+
+ קיים קוד מעל 
+\begin_inset Formula $\left\{ 0,1\right\} ^{N}$
+\end_inset
+
+ עם פרמטרים 
+\begin_inset Formula $\left(N,\frac{1}{100},c,2\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c\in\left[0,1\right]$
+\end_inset
+
+ קבוע.
+\end_layout
+
+\begin_layout Proof
+נראה אלג' שמוצא קוד שמוכל ב-
+\begin_inset Formula $\left\{ 0,1\right\} ^{N}$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $w_{1}\in\left\{ 0,1\right\} ^{N}$
+\end_inset
+
+ ונשלול את כל מה שבכדור ברדיוס 
+\begin_inset Formula $\frac{1}{100}$
+\end_inset
+
+ שלה.
+ נבחר מילה נוספת זמינה ונשלול את מה שברדיוס שלה, וחוזר חלילה.
+ מובטח לנו המרחק של לפחות 
+\begin_inset Formula $\frac{1}{100}$
+\end_inset
+
+ בין כל שתי מילים.
+ האלג' יפסיק כשאין עוד מילים זמינות.
+\end_layout
+
+\begin_layout Proof
+ברור שלקוד מרחק 
+\begin_inset Formula $\frac{1}{100}$
+\end_inset
+
+ לפחות.
+ נוכיח שיש לקוד קצב קבוע.
+ נניח שמצאנו 
+\begin_inset Formula $k$
+\end_inset
+
+ מילות קוד ואז נתקענו.
+ מתקיים 
+\begin_inset Formula $2^{N}\leq k\cdot\left|B_{0}\left(\frac{1}{100}\right)\right|$
+\end_inset
+
+ כי בכל פעם לכל היותר שללנו 
+\begin_inset Formula $\left|B_{0}\left(\frac{1}{100}\right)\right|$
+\end_inset
+
+ מילים, ולכן 
+\begin_inset Formula 
+\[
+k\geq\frac{2^{N}}{\left|B_{0}\left(\frac{1}{100}\right)\right|}\geq\frac{2^{N}}{{N \choose \frac{N}{100}-1}}\overset{\left(*\right)}{\geq}2^{c\cdot N}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula ${N \choose \alpha N}\approx2^{N\left(\log_{2}\frac{1}{\alpha}+\log_{2}\frac{1}{1-\alpha}\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+לכן 
+\begin_inset Formula $R=\frac{\log k}{\log2^{N}}=c$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c$
+\end_inset
+
+ קבוע.
 \end_layout
 
 \end_body
