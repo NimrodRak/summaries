@@ -4756,5 +4756,451 @@ overflow
 הוא הוספת ביטים כך שיגדל טווח הייצוג.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{II
+\backslash
+;
+\backslash
+; שערים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{II}$
+\end_inset
+
+ | שערים
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Description
+הערה כל שער שנבנה נבנה סימטרית מבחינת השימוש ב-
+\lang english
+PMOS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+NMOS
+\lang hebrew
+, לכן השערים עם טרנזיסטורים אלה נקראים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Complementary MOS
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Description
+הערה לעולם לא נרצה להזרים זרם אל תוך טרנזיסטור אחר דלוק )מהכיוון הלא נכון(
+ כי זה גורם לקצר.
+\end_layout
+
+\begin_layout Standard
+שער אחד בפני עצמו זה נחמד, אבל מעבדים בונים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י חיבור שערים.
+ את השערים נחבר עם חומר מוליך בין הקלט של שער אחד לפלט של השער שממנו אנחנו
+ לוקחים את התוצאה.
+\end_layout
+
+\begin_layout Standard
+בין שער למקור, בין מקור לשפך ובין שער לשפך נוצרים קבלים אפקטיביים )לא הוספנו
+ שום דבר, פשוט יש רכיבים פיזיים שמוצאים עצמם מחזיקים מתח בין הצדדים(.
+ את הקבלים האלה לוקח זמן לטעון או לפרק ממתח בעת שינוי מצב )שינוי הזרם מהשער,
+ הזרם מהמקור(.
+ לכן במצבים רגעיים יש זרימה שאנחנו לא בהכרח מצפים לה במהלך המעבר )
+\begin_inset Formula $10^{-15}$
+\end_inset
+
+ של שנייה(.
+ ראו באיור באדום את הקבלים שנוצרים.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/cap.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השער היסודי שמאפשר לבנות את כל שער השערים הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+Not And
+\lang hebrew
+( - שנותן 
+\begin_inset Formula $0$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם שני הפלטים 
+\begin_inset Formula $1$
+\end_inset
+
+ )ואחרת 
+\begin_inset Formula $1$
+\end_inset
+
+(, ומסומן כך 
+\begin_inset Graphics
+	filename img/NAND.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לבנות את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CMOS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באופן הבא )הריצו פלטים כדי לראות שזה עובד(.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/nandtrans.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדומה ניתן לבנות שער
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ באופן הבא )קו אלכסוני הוא 
+\begin_inset Formula ${\rm V}\left(1\right)$
+\end_inset
+
+ כלומר מתח קבוע דלוק וחץ הוא 
+\begin_inset Formula ${\rm GND}\left(0\right)$
+\end_inset
+
+ כלומר הארקה(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/nor.png
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

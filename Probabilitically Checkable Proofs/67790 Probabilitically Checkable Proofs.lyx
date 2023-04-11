@@ -3707,6 +3707,49 @@ R\left(C_{1}\circ C_{2}\right) & =\frac{\log\left|C_{1}\right|}{\log\left(q_{2}^
  לינארית היא קוד לינארי.
 \end_layout
 
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{השגת קוד עם פרמטרים קבועים וא
+\begin_inset Quotes xrd
+\end_inset
+
+ב בגודל 2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+השגת קוד עם פרמטרים קבועים וא
+\begin_inset Quotes xrd
+\end_inset
+
+ב בגודל 
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 משפט קיים קוד מעל הא
 \begin_inset Quotes xrd
@@ -3873,49 +3916,6 @@ R\left(C_{1}\circ C_{2}\right) & =\frac{\log\left|C_{1}\right|}{\log\left(q_{2}^
  כלומר נוכל בזמן פולי' לעשות ברוט פורס על כל הקבוצות עד שנגיע לאחת שהיא
  קוד עם פרמטרים מספקים.
  כל שנותר הוא להוכיח שיש קוד כזה.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing single
-\noindent
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-phantomsection
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addcontentsline{toc}{subsection}{השגת קוד עם פרמטרים קבועים וא
-\begin_inset Quotes xrd
-\end_inset
-
-ב בגודל 2}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size larger
-השגת קוד עם פרמטרים קבועים וא
-\begin_inset Quotes xrd
-\end_inset
-
-ב בגודל 
-\begin_inset Formula $2$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Description
