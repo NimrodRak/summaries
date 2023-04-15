@@ -4922,7 +4922,8 @@ Complementary MOS
 \begin_inset Graphics
 	filename img/cap.png
 	lyxscale 30
-	scale 30
+	scale 35
+	rotateAngle -90
 
 \end_inset
 
@@ -5007,6 +5008,7 @@ Not And
 (, ומסומן כך 
 \begin_inset Graphics
 	filename img/NAND.png
+	scale 15
 
 \end_inset
 
@@ -5132,6 +5134,7 @@ CMOS
 	filename img/nandtrans.png
 	lyxscale 30
 	scale 40
+	rotateAngle -90
 
 \end_inset
 
@@ -5196,11 +5199,8336 @@ NOR
 \align center
 \begin_inset Graphics
 	filename img/nor.png
+	scale 80
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Description
+הגדרה פ' בולינאית היא פ' שמקבלת קלטים בולינאני )משתנה שיכול לקבל אחד מבין
+ שני ערכים, ביטים לדוגמה( ופולטת פלט בוליאני אחד בדיוק.
+\end_layout
+
+\begin_layout Description
+הערה מעתה נסמן 
+\begin_inset Formula $x'$
+\end_inset
+
+ להיות ההפוך ל-
+\begin_inset Formula $x$
+\end_inset
+
+ )כלומר שהפעלנו עליו שער
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $F=xy'$
+\end_inset
+
+ היא פ' שבהינתן 
+\begin_inset Formula $x,y$
+\end_inset
+
+, פולטת פלט שערכו 
+\begin_inset Formula $x$
+\end_inset
+
+ וגם לא 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{סכום מכפלות ומכפלת סכומים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+סכום מכפלות ומכפלת סכומים
+\end_layout
+
+\begin_layout Description
+הגדרה בהינתן משתנים בולינאים לפ' בולינאית כלשהי, 
+\lang english
+minterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא מכפלה )
+\lang english
+AND
+\lang hebrew
+( של ליטרלים, כאשר ליטרל הוא משתנה או היפוכו וכל משתנה מופיע בדיוק פעם אחת
+ כליטרל או בתוך ליטרל מהופך.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור שלושה משתנים וההשמה 
+\begin_inset Formula $x=1,y=1,z=0$
+\end_inset
+
+, ה-
+\lang english
+minterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ היחיד שערכו 
+\begin_inset Formula $1$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיה 
+\begin_inset Formula $m_{6}=xyz'$
+\end_inset
+
+, ועבור 
+\begin_inset Formula $x=1,y=1,z=1$
+\end_inset
+
+ זה יהיה 
+\begin_inset Formula $m_{7}=xyz$
+\end_inset
+
+ )אינדקס ה-
+\lang english
+minterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם ערך 
+\begin_inset Formula $1$
+\end_inset
+
+ מתקבל ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הערך הדצימלי של הסטרינג הבינארי המתקבל מהצמדת ההשמות במשתנים(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נשים לב ש-
+\lang english
+minterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מקבל 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ערך 
+\begin_inset Formula $1$
+\end_inset
+
+ בבדיוק שורה אחת 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+של טבלת אמת מלאה על המשתנים.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה בהינתן השמה במשתנים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+maxterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא סכום )
+\lang english
+OR
+\lang hebrew
+( של המשתנים או היפוכהם כך שכל משתנה מופיע פעם אחת בדיוק.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור שלושה משתנים עם ההשמה 
+\begin_inset Formula $x=1,y=1,z=0$
+\end_inset
+
+, ה-
+\lang english
+maxterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ היחיד שמקבל ערך 
+\begin_inset Formula $0$
+\end_inset
+
+ הוא 
+\begin_inset Formula $M_{6}=x'+y'+z$
+\end_inset
+
+ וכו'.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ משלים ל-
+\begin_inset Formula $M_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Sum of Products
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא סכום מכפלות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minterm
+\lang hebrew
+-ים ו-
+\lang english
+Product of Sums
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא מכפלת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+maxterm
+\lang hebrew
+-ים.
+\end_layout
+
+\begin_layout Description
+דוגמה הפ' 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ עם טבלת האמת הבאה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/f1.jpg
+	lyxscale 10
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתנת לייצור ע
+\begin_inset Quotes xrd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+F_{1}\left(x,y,z\right)=m_{1}+m_{3}+m_{4}+m_{6}=x'y'z+x'yz+xy'z'+xyz'
+\]
+
+\end_inset
+
+הטכניקה הייתה לסכום את כל ה-
+\lang english
+minterm
+\lang hebrew
+-ים שמקבלים 
+\begin_inset Formula $1$
+\end_inset
+
+ בפ' )בכחול(.
+\end_layout
+
+\begin_layout Standard
+לחלופין נוכל לייצג את הפ' עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PoS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הכפלת כל ה-
+\lang english
+maxterm
+\lang hebrew
+-ים שמקבלים ערך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)באדום( כלומר
+\begin_inset Formula 
+\[
+F_{1}\left(x,y,z\right)=M_{0}\cdot M_{2}\cdot M_{5}\cdot M_{7}
+\]
+
+\end_inset
+
+כלומר הצגנו בצורה קנונית פ' לכאורה מורכבת!
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה למה משמשים כל הייצוגים השונים )טבלת אמת,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PoS
+\lang hebrew
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SoP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומפת קרנו שנלמד בתרגול(? נרצה בסופו של דבר את הייצוג המינימלי, כך שנדרש
+ למספר הקטן ביותר של שערים כדי לממש אותו.
+\end_layout
+
+\begin_layout Description
+דוגמה מולטיפלסקר )
+\lang english
+MUX
+\lang hebrew
+( מקבל שלושה קלטים: 
+\begin_inset Formula $S(elect),D0,D1$
+\end_inset
+
+ שפלטו 
+\begin_inset Formula $D0$
+\end_inset
+
+ אם 
+\begin_inset Formula $S=0$
+\end_inset
+
+ ואחרת 
+\begin_inset Formula $D1$
+\end_inset
+
+.
+ בטבלה 
+\begin_inset Formula $X$
+\end_inset
+
+ משמעו 
+\begin_inset Quotes xld
+\end_inset
+
+לא משנה מה הערך
+\begin_inset Quotes xrd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/mux.jpg
+	lyxscale 30
+	scale 34
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וניתן לרשום את הפ' כ-
+\begin_inset Formula ${\rm MUX}\left(S,D_{0},D_{1}\right)=S\cdot D_{1}+S'D_{0}$
+\end_inset
+
+, ואת זה ניתן לממש באמצעות שערים שכבר בנינו.
+ עם זאת, ניתן לממש את המעגל עם פחות טרנזיסטורים מאשר במימוש נאיבי עם שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\lang hebrew
+-ים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+NOT
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Full Adder
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ הוא מעגל שמקבל 
+\begin_inset Formula $x,y,C_{in}$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $C_{in}$
+\end_inset
+
+ נשא מסכימה קודמת( ופולט 
+\begin_inset Formula $S,C_{out}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא הסכום ו-
+\begin_inset Formula $C_{out}$
+\end_inset
+
+ הוא הנשא )
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+overflow
+\lang hebrew
+(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ מתוך הסכום )ראו טבלת אמת(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/fa.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח את 
+\begin_inset Formula $x=0,y=1,C_{in}=1$
+\end_inset
+
+, אז 
+\begin_inset Formula $x+y+C_{in}=0+1+0=\left(10\right)_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $S=0,C_{out}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למעשה, בגלל שיש למעגל שני פלטים, הרי שהוא מורכב משתי פ' בוליאניות.
+ כרגיל אפשר לממש את המעגל באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SoP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)סכימת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minterm
+\lang hebrew
+-ים(, ובמימוש הבא צמצמנו כמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minterm
+\lang hebrew
+-ים באמצעות מפות קרנו שנלמד בהמשך )בנוסף מופיע במעגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OR
+\lang hebrew
+עם שלושה וארבע כניסות - הסטודנטית המשקיעה תראה כיצד ניתן לעשות זאת עם פי
+ 
+\begin_inset Formula $2$
+\end_inset
+
+ טרנזיסטורים ממספר הכניסות(.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/faa.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה קל לשרשר כמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FA
+\lang hebrew
+-ים כדי לקבל מעגל שסוכם מספרים עם מספר ביטים גדול יותר )לוקחים את 
+\begin_inset Formula $C_{out}$
+\end_inset
+
+ של ה-
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על זוג הביטים הראשונים, מכניסים אותו ל-
+\lang english
+FA
+\lang hebrew
+ וחוזר חלילה(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{יחידות סטנדרטיות במעגלים לוגים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+יחידות סטנדרטיות במעגלים לוגים
+\end_layout
+
+\begin_layout Enumerate
+מפענח )
+\lang english
+Decoder
+\lang hebrew
+(: הקלט הוא 
+\begin_inset Formula $n$
+\end_inset
+
+ ביטים 
+\begin_inset Formula $x_{0},\ldots,x_{n-1}$
+\end_inset
+
+ והפלט הוא 
+\begin_inset Formula $d_{0},\ldots,d_{k-1}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k=2^{n}$
+\end_inset
+
+ ו
+\begin_inset Formula 
+\[
+d_{j}=\begin{cases}
+1 & \left(j\right)_{10}=\left(x_{n-1}\ldots x_{0}\right)_{2}\\
+0 & \text{אחרת}
+\end{cases}
+\]
+
+\end_inset
+
+כלומר פורש וקטור של 
+\begin_inset Formula $n$
+\end_inset
+
+ ביטים על 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ ביטים שכל אחד מייצג מספר מתוך 
+\begin_inset Formula $\left\{ 0,\ldots,2^{n}-1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ברגע שיש לנו בלוק של מפענח, אפשר להשתמש בו כדי לממש פ' בולינאית באופן טריוויאלי,
+ כי כל מה שצריך לעשות זה לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על כל ה-
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ שמייצגים 
+\begin_inset Formula $x_{0},\ldots,x_{n-1}$
+\end_inset
+
+ שמקבל ערך 
+\begin_inset Formula $1$
+\end_inset
+
+ בטבלת האמת של הפ' הבוליאנית.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מפלג )
+\lang english
+DeMultiplexer
+\lang hebrew
+(: הקלט הוא 
+\begin_inset Formula $x,s_{0},\ldots,s_{n-1}$
+\end_inset
+
+ כל אחד בגודל ביט והפלט הוא 
+\begin_inset Formula $f_{0},\ldots,f_{k-1}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k=2^{n}$
+\end_inset
+
+ ו
+\begin_inset Formula 
+\[
+f_{j}=\begin{cases}
+x & \left(j\right)_{10}=\left(s_{n-1}\ldots s_{0}\right)_{2}\\
+0 & \text{אחרת}
+\end{cases}
+\]
+
+\end_inset
+
+כלומר בהינתן ביט, מחזיר מחרוזת שבה הכל אפסים חוץ מאולי הביט ה-
+\begin_inset Formula $\left(s_{n-1}\ldots s_{0}\right)_{2}$
+\end_inset
+
+ שערכו 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מקודד )
+\lang english
+Encoder
+\lang hebrew
+(: הקלט הוא ביטים 
+\begin_inset Formula $x_{0},\ldots,x_{k-1}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k=2^{n}$
+\end_inset
+
+ והפלט הוא ביטים 
+\begin_inset Formula $e_{0},\ldots e_{n}$
+\end_inset
+
+ כאשר אם 
+\begin_inset Formula $x_{i}=1$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i$
+\end_inset
+
+ אחר בדיוק )וכל השאר אפסים( אז 
+\begin_inset Formula $\left(e_{n-1}\ldots e_{0}\right)_{2}=\left(i\right)_{10}$
+\end_inset
+
+, כלומר מחזיר את האינדקס )בבינארי( של הביט היחיד הדלוק בקלט.
+\end_layout
+
+\begin_layout Enumerate
+מרבב )
+\lang english
+Multiplexer
+\lang hebrew
+(: הקלט הוא 
+\begin_inset Formula $k=2^{n}$
+\end_inset
+
+ ביטים 
+\begin_inset Formula $x_{0},\ldots,x_{k-1}$
+\end_inset
+
+ וביטים 
+\begin_inset Formula $s_{0},\ldots,s_{n-1}$
+\end_inset
+
+ והפלט הוא 
+\begin_inset Formula $f$
+\end_inset
+
+ שהוא ערך הביט עם אינדקס 
+\begin_inset Formula $\left(s_{n-1}\ldots s_{0}\right)_{2}$
+\end_inset
+
+ ב-
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מעגלים סדרתיים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מעגלים סדרתיים
+\end_layout
+
+\begin_layout Description
+הגדרה מעגל סדרתי הוא מעגל קומבינטורי שחלק מהקלטים שלו הם פלטים של יחידת
+ זיכרון שמחזיק השער )ראו איור(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/st.jpg
+	lyxscale 10
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מעגלים סדרתיים אסינכרונים יכולים לשנות מצב בכל זמן, ואילו מעגלים סינכרוניים
+ משנים מצב בהתאם לשעון.ד
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה שעון סיגנל בצורת גל מחזורי )
+\begin_inset Formula $0$
+\end_inset
+
+ ואז 
+\begin_inset Formula $1$
+\end_inset
+
+ ואז 
+\begin_inset Formula $0$
+\end_inset
+
+ ואז 
+\begin_inset Formula $1$
+\end_inset
+
+ וכו'(.
+\end_layout
+
+\begin_layout Description
+דוגמה כיצד השער הבא יתנהג?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ii.jpg
+	lyxscale 10
+	scale 17
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הקלט בהתחלה הוא 
+\begin_inset Formula $X=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $Y=1$
+\end_inset
+
+ ואז 
+\begin_inset Formula $X=0$
+\end_inset
+
+ ונקבל מצב יציב של 
+\begin_inset Formula $\left(X,Y\right)=\left(0,1\right)$
+\end_inset
+
+.
+ בדומה עבור 
+\begin_inset Formula $X=0,Y=1$
+\end_inset
+
+.
+ כלומר, יש לנו מערכת דו-יציבה )עם שני מצבים יציבים(, שיכולה לשמש אותנו לאכסון
+ זכרון.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה נביט בשער הבא, שנקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SR Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)נזכיר שהשערים במעגל הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOR
+\lang hebrew
+-ים(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sr.jpg
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפ' הזו מקיימת 
+\begin_inset Formula $X\left(t+1\right)=\left(A+Y\left(t\right)\right)',Y\left(t+1\right)=\left(B+X\left(t\right)\right)'$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $X\left(t\right)$
+\end_inset
+
+ הוא ערכו של 
+\begin_inset Formula $X$
+\end_inset
+
+ לאחר שינוי קלטים מסונכרן עם שעון שביצע 
+\begin_inset Formula $t$
+\end_inset
+
+ טיקים(, או בטבלת אמת עמוסה
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/srt.jpg
+	lyxscale 10
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואם נשלוף רק את הערכים המעניינים, נוכל להביט בתופעה מעניינת )חצים מעגליים
+ משמע לאחר טיק נשאר באותם הערכים וחצים אומרים שנעבור לזוג ערכים אחר(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ab.jpg
+	lyxscale 10
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונשים לב שאם 
+\begin_inset Formula $X=Y$
+\end_inset
+
+ נקבל מצב לא יציב )לא משנה מה ערכי 
+\begin_inset Formula $A,B$
+\end_inset
+
+ תמיד יש חץ שיזיז אותנו למצב אחר( ולכן תמיד נניח שאנחנו משתמשים ב-
+\lang english
+SR Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר 
+\begin_inset Formula $Y=X'$
+\end_inset
+
+ )זה דומה למצב בדוגמה הקודמת שבו 
+\begin_inset Formula $X=Y=0$
+\end_inset
+
+ שזה לא מוגדר בכלל כי יש לנו מהפך עם אותו הערך משני הצדדים(.
+\end_layout
+
+\begin_layout Standard
+אם כן, עבור 
+\begin_inset Formula $\left(A,B\right)=\left(0,0\right)$
+\end_inset
+
+, נקבל ש-
+\begin_inset Formula $\left(X,Y\right)$
+\end_inset
+
+ שומר על ערכו )כזכור אנחנו מתעלמים מ-
+\begin_inset Formula $X=Y$
+\end_inset
+
+(, ואם 
+\begin_inset Formula $\left(A,B\right)=\left(0,1\right)$
+\end_inset
+
+ אז אנחנו מאפסים את 
+\begin_inset Formula $Y$
+\end_inset
+
+ , ואם 
+\begin_inset Formula $\left(A,B\right)=\left(1,0\right)$
+\end_inset
+
+ אז מדליקים את 
+\begin_inset Formula $Y$
+\end_inset
+
+ ואם 
+\begin_inset Formula $\left(A,B\right)=\left(1,1\right)$
+\end_inset
+
+ נקבל מצב לא מוגדר שנתעלם ממנו.
+\end_layout
+
+\begin_layout Standard
+לכן, באמצעות 
+\begin_inset Formula $\left(S,R\right)=\left(A,B\right)$
+\end_inset
+
+ נוכל לשלוט בערכו של 
+\begin_inset Formula $Y$
+\end_inset
+
+ כשיש לנו זכרון של המצב הקודם, עם טבלת אמת מצומצת נוחה ביותר, כאשר 
+\begin_inset Formula $Q\left(t\right)=Y\left(t\right)=X\left(t\right)'$
+\end_inset
+
+ )בהתעלם מהמקרים הלא חוקיים(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/qt.jpg
+	lyxscale 30
+	scale 29
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה מעגל סדרתיים ניתן לייצג באמצעות טבלת עירור )הטבלה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל( וטבלת מעברים, שעונה על השאלה 
+\begin_inset Quotes xld
+\end_inset
+
+אילו קלטים נדרשים כדי לעבור בין מצב כלשהו לאחר
+\begin_inset Quotes xrd
+\end_inset
+
+ )
+\begin_inset Formula $\Phi$
+\end_inset
+
+ הוא ערך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Don't care
+\lang hebrew
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/srq.jpg
+	lyxscale 30
+	scale 27
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה יש היגיון בשמות הביטים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+S,R
+\lang hebrew
+ - אם רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+S(et)
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דלוק, קובעים את הפלט להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אם רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+R(eset)
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דלוק קובעים את הפלט להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, ואם לא זה ולא זה דלוקים לא עושים כלום, כלומר שומרים על המצב כמות שהיה.
+ כמובן שתחת סימולים אלה, גם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+S
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וגם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+R
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דלוקים זה לא מוגדר היטב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מעגלים סדרתיים מורכבים על בסיס SR-Latch}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מעגלים סדרתיים מורכבים על בסיס
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SR Latch
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\series bold
+\lang english
+Gated SR Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא שער שמונע פליטת ערכים לא חוקיים מ-
+\lang english
+SR Latch
+\lang hebrew
+, והוא מקבל קלטים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+S,R
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+G
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+G
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא ביט שער שאם הוא דלוק אז המעגל מתפקד כ-
+\lang english
+SR Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רגיל, ואם כבוי אז הפלטים לא משתנים לא משנה מה.
+ המימוש הוא די פשוט, וכולל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+S,R
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+G
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ לפני הכניסה למעגל הפנימי )ראו איור(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/gsr.jpg
+	lyxscale 30
+	scale 27
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\series bold
+\lang english
+Gated D-Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא גרסה אפילו יותר בטוחה ל-
+\lang english
+Gated SR Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- במקום לקבל קלטי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+S,R
+\lang hebrew
+, נקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+D
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיהיה מחובר ל-
+\lang english
+S
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ודרך מהפך ל-
+\lang english
+R
+\lang hebrew
+, וכך לא נקבל מצב של 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+, וכדי לקבל 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ אפשר פשוט לכבות את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+G
+\lang hebrew
+ )ראו איור(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dsr.jpg
+	lyxscale 30
+	scale 32
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה לרוב נחבר את השעון ל-
+\lang english
+G
+\lang hebrew
+, כלומר אפשר לשנות את הערך רק כשהשעון בטיק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שערכו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Description
+דוגמה בהינתן שעון שמחובר ל-
+\lang english
+G
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וביט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+D
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שערכו משתנה, נוכל לחשב מה יהיה הפלט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Q
+\lang hebrew
+, כפ' של הזמן.
+ השטח המקוקוו בהתחלה פירושו שלא ידוע לנו מה הערך של 
+\begin_inset Formula $Q$
+\end_inset
+
+ שכן הוא לא מוגדר בשלב הזה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/gdq.jpg
+	lyxscale 30
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{DFF}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+D Flip Flop
+\end_layout
+
+\begin_layout Standard
+נבנה מעגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Shifter
+\lang hebrew
+, שהוא מעגל שבו ביט הקלט זז צעד אחד ימינה בכל מחזור.
+ אם נשרשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+D Latch
+\lang hebrew
+-ים שכל ה-
+\lang english
+G
+\lang hebrew
+-ים שלהם מחוברים לשעון, הקלט יופיע מיד בסוף השרשור )למעט זמן פעפוע של החשמל
+ שהוא זניח(.
+\end_layout
+
+\begin_layout Standard
+הפתרון לזה הוא להוסיף מהפך בין השעון ל-
+\lang english
+Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+השני כך שכשהשעון ב-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ רק ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הראשון יוכל לשנות את ערכו וכשהשעון ב-
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רק ה-
+\lang english
+Latch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+השני ישנה את ערכו והראשון לא ישתנה.
+ שער כזה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+D Flip Flop
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dff.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן רק בעת ירידת השעון נקבל שינוי של הפלט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Q
+\lang hebrew
+, כי לאחר העליה ה-
+\lang english
+Master
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ישנה את הפלט ולאחר הירידה ה-
+\lang english
+Slave
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ישנה את הערך, הלא הוא פלט המעגל כולו.
+ כל עוד השעון לא ירד, הערך ישאר זהה לערך שקיבל בירידת השעון האחרונה.
+\end_layout
+
+\begin_layout Description
+הערה ניתן לבנות מעגל שישתנה רק בעליה באמצעות הזזת המהפך ללפני השער של המאסטר
+ ולא העבד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+הגדרה אלגברה בוליאנית היא מבה אלגברי המוגדר על קבוצת איברים 
+\begin_inset Formula $B$
+\end_inset
+
+ עם שני אופרטורים בינאריים 
+\begin_inset Formula $+,\cdot$
+\end_inset
+
+ כשלכל 
+\begin_inset Formula $x,y,z\in B$
+\end_inset
+
+ מתקיימות אקסיומות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Huntington
+\lang hebrew
+: סגירות לכפל וחיבור, קיום איברי יחידה לכפל וחיבור, קומטטיביות בחיבור וכפל,
+ דיסטריוטיביות )שני הנוסחים(, קיום משלים )כך ש-
+\begin_inset Formula $x\cdot x'=0,x+x'=1$
+\end_inset
+
+( ו-
+\begin_inset Formula $\left|B\right|\geq2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה אלגברה בוליאנית דו-ערכית מוגדרת על קבוצה בת שני איברים 
+\begin_inset Formula $B=\left\{ 0,1\right\} $
+\end_inset
+
+ עם האופרטורים 
+\begin_inset Formula $x\cdot y={\rm AND}\left(x,y\right),x+y={\rm OR}\left(x,y\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $x'={\rm Not}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה באלגברה בולינאית דו ערכית מתקיימות התכונות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אידמפוטנטיות: 
+\begin_inset Formula $x\cdot x=x+x=x$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x\cdot0=0,x+1=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אסוציאטיביות לחיבור וכפל.
+\end_layout
+
+\begin_layout Itemize
+חוק הצמצום: 
+\begin_inset Formula $x\left(x+y\right)=x,x+xy=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(x'\right)'=x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה סדר האופטורים בחישוב ביטוי בוליאני הוא קודם סוגריים, אז
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\lang hebrew
+, אז
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OR
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+דרכים לבטא פונקציה בוליאנית
+\end_layout
+
+\begin_layout Itemize
+ביטוי בוליאני )ביטוי על המשתנים עם שני האופרטורים ושלילה(.
+\end_layout
+
+\begin_layout Itemize
+טבלת אמת: לטבלה יהיו 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ שורות כאשר יש 
+\begin_inset Formula $n$
+\end_inset
+
+ קלטים.
+\end_layout
+
+\begin_layout Itemize
+סכום מכפלות: מספיק שמכפלה אחת תהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי שהסכום יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ כדי להגיע לייצוג סכום מכפלות, סוכמים את כל המכפלות הסטנדרטיות )
+\lang english
+minterm
+\lang hebrew
+( שמקבלות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בטבלת האמת.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המשתנה ה-
+\lang english
+j
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבל שלילה ב-
+\lang english
+minterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+i
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם הביט ה-
+\begin_inset Formula $j$
+\end_inset
+
+ ב-
+\begin_inset Formula $\left(i\right)_{2}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מכפלת סכומים: מספיק שסכום אחד יהיה 
+\begin_inset Formula $0$
+\end_inset
+
+ ואז כל המכפלה היא 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ כדי להגיע לייצוג, מכפילים את כל הסכומים הסטנדרטיים שמקבלים 
+\begin_inset Formula $0$
+\end_inset
+
+ בטבלת האמת.
+ ניתן להגיע לשקילות לסכום מכפלות עם שלילה על הביטוי ושימוש בשני כללי דה-מורגן.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המשתנה ה-
+\lang english
+j
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבל שלילה ב-
+\lang english
+maxterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+i
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם הביט ה-
+\begin_inset Formula $j$
+\end_inset
+
+ ב-
+\begin_inset Formula $\left(i\right)_{2}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נרצה לצמצם את מספר הליטרלים שלנו )מספר השערים(.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט ב-
+\begin_inset Formula $F1\left(x,y,z\right)=x'y'z+x'yz+xy'$
+\end_inset
+
+ ו-
+\begin_inset Formula $F2\left(x,y,z\right)=xy'+x'z$
+\end_inset
+
+.
+ את הפ' השניה ניתן לממש עם משמעותית פחות שערים לוגיים )יש הרבה פחות פעולות(
+ אבל הפ' שקולות ולכן נעדיף את השניה תמיד!
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+את השקילות אפשר להראות עם טבלת אמת או באמצעות אלגברה בוליאנית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+xy'z+x'yz+x' & =x'zy'+x'zy+xy'\\
+ & =x'z\desc{\left(y'+y\right)}1+xy'\\
+ & =x'z+xy'\\
+ & =F2\left(x,y,z\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה נפשט עוד פ'
+\begin_inset Formula 
+\begin{align*}
+F\left(x,y,z\right) & =\left(x+y\right)\left[x'\left(y'+z'\right)\right]'+x'y'+x'z'\\
+\text{דה מורגן} & =\left(x+y\right)\left[x+\left(y'+z'\right)'\right]+x'y'+x'z'\\
+\text{דה מורגן} & =\left(x+y\right)\left(x+yz\right)+x'y'+x'z'\\
+\text{דיסריבוטיביות} & =\left(xx+xyz+yx+yyz\right)+x'y'+x'z'\\
+ & =\ldots=1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{מפות קרנו}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מפות קרנו
+\end_layout
+
+\begin_layout Standard
+מפת קרנו בונים פעם אחת לכל הפ' הבוליאניות ב-
+\begin_inset Formula $n$
+\end_inset
+
+ משתנים.
+ ל-
+\begin_inset Formula $n$
+\end_inset
+
+ משתנים יש מפת קרנו עם 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ משבצות.
+\end_layout
+
+\begin_layout Standard
+ראשית נבנה טבלת אמת לפ' הבוליאנית, ואז נציב את ה-
+\lang english
+minterm
+\lang hebrew
+-ים בשבלונה של מפת הקרנו אם נצליח לשנן אותה.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/karno0.jpg
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לחלופין נוכל לבנות מחדש את הטבלה עם האינטואיציה שבסימנים הכחולים למשתנים,
+ באמצעות ערכי 
+\begin_inset Formula $x$
+\end_inset
+
+ ו-
+\begin_inset Formula $yz$
+\end_inset
+
+ ניתן להסיק בקלות את ה-
+\lang english
+minterm
+\lang hebrew
+-ים )יש לשים לב שערכי 
+\begin_inset Formula $yz$
+\end_inset
+
+ הם לא לפי סדר לקסיקוגרפי(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/karno1.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה ארבעת המשבצות ש-
+\begin_inset Formula $z$
+\end_inset
+
+ מסומן עליהן נסכום לליטרל יחיד שהוא 
+\begin_inset Formula $z$
+\end_inset
+
+, כך גם על 
+\begin_inset Formula $y$
+\end_inset
+
+, וכך גם השורה התחתונה נסכמת ל-
+\begin_inset Formula $x$
+\end_inset
+
+.
+ נשים לב גם כי כל שני ריבועים סמוכים נבדלים בליטרל אחד בלבד.
+\end_layout
+
+\begin_layout Standard
+כדי לבצע צמצמום נמצא קבוצות של ריבועים סמוכים שערכם בטבלת האמת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור הפ', כשגודל הקבוצה חייב להיות חזקה של 
+\begin_inset Formula $2$
+\end_inset
+
+ )כולל 
+\begin_inset Formula $1$
+\end_inset
+
+( ועלינו לבחור קבוצות גדולות ככל האפשר.
+ קבוצות יכולות לחפוף וצריך לכסות את כל הריבועים.
+ הטבלה היא מעגלית ולכן מלבן יכול לחצות את הקצה מימין ולהמשיך משמאל.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $F\left(x,y,z\right)=\sum\left(2,3,4,5\right)$
+\end_inset
+
+ )סכום מכפלות עם אינדקסים(.
+ מפת הקרנו שלנו היא הבאה, כאשר הגענו אליה או באמצעות השבלונה או באופן הבא:
+ הסימונים של 
+\begin_inset Formula $x,y$
+\end_inset
+
+ ו-
+\begin_inset Formula $z$
+\end_inset
+
+ אומרים לנו איפה המשתנה מקבל ערך 
+\begin_inset Formula $1$
+\end_inset
+
+, ולכן במשבצת השנייה מימין בשורה העליונה לדוגמה, גם 
+\begin_inset Formula $y$
+\end_inset
+
+ וגם 
+\begin_inset Formula $z$
+\end_inset
+
+ הם 
+\begin_inset Formula $1$
+\end_inset
+
+ אבל 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא 
+\begin_inset Formula $0$
+\end_inset
+
+, כלומר מדובר במקרה של 
+\begin_inset Formula $\left(0,1,1\right)$
+\end_inset
+
+ שבמקרה שלנו זה 
+\begin_inset Formula $1$
+\end_inset
+
+ )כי זהו ערכו של ה-
+\lang english
+minterm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+השלישי שמהגדרת הפ' הוא 
+\begin_inset Formula $1$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig1.jpg
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לצמצם את הטבלה עכשיו נכסה את הטבלה עם שני מלבנים, אחד משמאל למטה ואחד
+ מימין למעלה וכך נקבל ייצוג מינימלי של הפ' הבוליאנית שהוא 
+\begin_inset Formula $F\left(x,y,z\right)=x'y+xy'$
+\end_inset
+
+ )במלבן משמאל משותף הכל חוץ מ-
+\begin_inset Formula $z$
+\end_inset
+
+ וכך גם במלבן מימין(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $F\left(x,y,z\right)=\sum\left(0,2,4,5,6\right)$
+\end_inset
+
+.
+ הביטוי הלא מצומצם מכיל 
+\begin_inset Formula $5$
+\end_inset
+
+ ביטויים.
+ נמלא איכשהו את הטבלה ונקבל
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig2.jpg
+	lyxscale 10
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בחפיפות וגם במעגליות ונקבל מלבן אחד משמאל למטה ועוד מלבן שכולל את
+ העמודה השמאלית והעמודה הימנית יחד, ואז הביטוי המינימלי הוא 
+\begin_inset Formula $F\left(x,y,z\right)=xy'+z'$
+\end_inset
+
+ )בשמאל למטה נופל 
+\begin_inset Formula $z$
+\end_inset
+
+ ובמעגלי נופלים 
+\begin_inset Formula $x$
+\end_inset
+
+ ו-
+\begin_inset Formula $y$
+\end_inset
+
+, פשוט עוברים על זוג ריבועים אופקי וזוג אנכי ורואים מה משתנה בהם, ומה משותף
+ בהם(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מפת קרנו בארבעה משתנים נראת כך, כאשר אפשר לזכור אותה באמצעות העובדה שערכי
+ הצירים שלה )גם אופקי וגם אנכי( הם 
+\begin_inset Formula $0,1,3,2$
+\end_inset
+
+ )הייצוג הבינארי של המספרים(.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/wxyz.jpg
+	lyxscale 10
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $F\left(x,y,z\right)=\left(0,1,2,4,5,6,8,9,12,13,14\right)$
+\end_inset
+
+ מקבלת מפת קרנו עם הערכים הבאים )לא משנה איך מגיעים לזה(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig3.jpg
+	lyxscale 10
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחר את חצי המפה השמאלית כי זו שמיניה והמלבן הגדול ביותר שיש, ובשביל הערכים
+ מימין נבחר שתי רביעיות מעגליות )אי אפשר את כולם ביחד כי זה נותן לא חזקה
+ של 
+\begin_inset Formula $2$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+החצי השמאלי נבדל ב-
+\begin_inset Formula $z,w$
+\end_inset
+
+ ו-
+\begin_inset Formula $x$
+\end_inset
+
+, ו-
+\begin_inset Formula $y$
+\end_inset
+
+ מקבל 
+\begin_inset Formula $0$
+\end_inset
+
+ כלומר הביטוי הראשון הוא 
+\begin_inset Formula $y'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הרביעיה המעגלית העליונה נבדלת ב-
+\begin_inset Formula $x$
+\end_inset
+
+ ו-
+\begin_inset Formula $y$
+\end_inset
+
+ ו-
+\begin_inset Formula $z,w$
+\end_inset
+
+ מקבלים ערכים 
+\begin_inset Formula $0$
+\end_inset
+
+ שניהם, כלומר יש לנו 
+\begin_inset Formula $z'w'$
+\end_inset
+
+ והרביעיה המעגלית התחתונה שונה ב-
+\begin_inset Formula $w$
+\end_inset
+
+ ו-
+\begin_inset Formula $y$
+\end_inset
+
+ ו-
+\begin_inset Formula $x$
+\end_inset
+
+ ו-
+\begin_inset Formula $z$
+\end_inset
+
+ מקבלים ערכים 
+\begin_inset Formula $1$
+\end_inset
+
+ ו-
+\begin_inset Formula $0$
+\end_inset
+
+ בהתאמה, כלומר הביטוי הוא 
+\begin_inset Formula $xz'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ קיבלנו 
+\begin_inset Formula $F\left(x,y,z,w\right)=y'+z'w'+xz'$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה לפעמים עבור צירופים מסוימים, לא יהיה אכפת לנו מה הוא פלט הפ', צירופים
+ כאלה נקראים 
+\bar under
+צירופים אדישים
+\bar default
+ וניתן להשתמש בערך שיותר נוח לנו איתו כך שיבוטלו ליטרלים רבים ככל האפשר.
+ נסמן צירוף כזה ב-
+\begin_inset Formula $\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה 
+\begin_inset Formula $F\left(x,y,z\right)=\sum\left(0,2,4,5,6\right)$
+\end_inset
+
+ היא הפ' הבוליאנית והצירופים האדישים הם 
+\begin_inset Formula $d\left(x,y,z\right)=\sum\left(7\right)$
+\end_inset
+
+ )כלומר רק 
+\begin_inset Formula $\left(1,1,1\right)$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig4.jpg
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עתה נוכל לבחור מלבנים יותר נוחים )ראו איור( מאשר בהיעדר הצירוף האדיש כי
+ אז לא היינו יכולים לבחור את השורה התחתונה כמלבן והיו לנו אמנם עדיין שני
+ ביטויים אבל עם יותר ליטרלים, כלומר יותר שערים שזה פחות טוב.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה צירוף אדיש מתקבל לדוגמה כשברכיב אלקטרוני איזשהו מעגל בכל מקרה מחובר
+ להארקה כך שלא משנה ערכו עבור צירוף מסוים כלשהו.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט במפת הקרנו הבאה עם שני צירופים אדישים.
+ הבחירה הכי נוחה היא 
+\begin_inset Formula $0$
+\end_inset
+
+ לשמאלי ו-
+\begin_inset Formula $1$
+\end_inset
+
+ לימני כי כל קומבינציה אחרת היתה דורשת מאיתנו יותר משני מלבנים או מלבנים
+ קטנים יותר )יותר ליטרלים( *שזה פחות אידאלי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig5.jpg
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה אפשר להשתמש במפת קרנו גם כדי לצמצמם מכפלה של סכומים.
+ נביט ב-
+\begin_inset Formula $F\left(x,y,z\right)=\sum\left(0,1,2,3,4,6,7\right)=\Pi\left(5\right)$
+\end_inset
+
+.
+ כפי שניתן לראות, צמצום של סכום המכפלות דורש לפחות 
+\begin_inset Formula $3$
+\end_inset
+
+ נסכמים ואילו מכפלת סכומים דורש בדיוק ליטרל אחד.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig6.jpg
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כשמצמצמים פ' בוליאנית לפי מכפלת סכומים, מבצעים בדיוק את התהליך של סכום מכפלות
+ רק שמסכים 
+\begin_inset Formula $0$
+\end_inset
+
+-ים במקום 
+\begin_inset Formula $1$
+\end_inset
+
+-ים.
+ לאחר הכיסוי, ממירים את הכיסוי למכפלה של סכומים, כאשר כל סכום מתאים למלבן
+ אחד.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה ניתן להוכיח נכונות של צמצום לפי מפת קרנו למכפלת סכומים או באמצעות דה-מורגן
+ לצמצום של סכום מכפלות, או פשוט באופן ישיר מטבלת האמת ונכונות ייצוג ה-
+\lang english
+maxterm
+\lang hebrew
+-ים.
+\end_layout
+
+\begin_layout Description
+דוגמה נתונה הפ' הבוליאנית
+\begin_inset Formula 
+\[
+F\left(w,x,y,z\right)=\sum\left(1,2,3,11,12,13,15\right)+d\left(w,x,y,z\right),\quad d\left(w,x,y,z\right)=\sum\left(5,9,10,14\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ציירו את מפת קרנו עבור הפ' 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המפה תראה כך
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig8.jpg
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כמה פ' שונות מיוצגות ע
+\begin_inset Quotes xrd
+\end_inset
+
+י המפה?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $2^{4}=16$
+\end_inset
+
+ כי אפשר לבחור ערכים שרירותיים עבור כל אחד מהצירופים האדישים שהוא ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת באחרים.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+רשמו סכום מכפלות מינימאי עבור 
+\begin_inset Formula $F$
+\end_inset
+
+, האם הסכום יחיד?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הכי נוח יהיה שהשורה השניה תהיה כולה 
+\begin_inset Formula $0$
+\end_inset
+
+ והשלישית כולה 
+\begin_inset Formula $1$
+\end_inset
+
+, ובשורה הרביעית כמה שיותר 
+\begin_inset Formula $1$
+\end_inset
+
+-ים כדי שנקבלים מלבנים של רביעיות במקום זוגות.
+ כך נקבל סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ את הכיסוי הבא
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig82.jpg
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שנותן לנו את הביטוי 
+\begin_inset Formula $wx+x'y+x'z$
+\end_inset
+
+.
+ זה לא ביטוי מינימלי כי אפשר לבחור שכל הצירופים האדישים יהיו 
+\begin_inset Formula $1$
+\end_inset
+
+ חוץ מ-
+\begin_inset Formula $\left(1,1,1,0\right)$
+\end_inset
+
+ ואז נקבל את הכיסוי הבא עם אותו מספר ליטרלים
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dig83.jpg
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{פונקציות שלמות}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פונקציות שלמות
+\end_layout
+
+\begin_layout Description
+הגדרה קבוצה 
+\begin_inset Formula $F$
+\end_inset
+
+ של פ' בוליאניות נקראת שלמה אם ניתן לממש כל פ' בוליאנית בעזרת פ' בקבוצה.
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $\left\{ +,\cdot,'\right\} $
+\end_inset
+
+ היא שלמה.
+\end_layout
+
+\begin_layout Proof
+כל פ' בוליאנית ניתנת להצגה כסכום מכפלות שדורש רק את שלושת הפעולות הללו.
+\end_layout
+
+\begin_layout Description
+מסקנה 
+\begin_inset Formula $\left\{ +,'\right\} ,\left\{ \cdot,'\right\} $
+\end_inset
+
+ הן שלמות.
+\end_layout
+
+\begin_layout Proof
+עם דה-מורגן אפשר לייצר 
+\begin_inset Formula $+$
+\end_inset
+
+ עם 
+\begin_inset Formula $\cdot,'$
+\end_inset
+
+ ול-
+\begin_inset Formula $\cdot$
+\end_inset
+
+ עם 
+\begin_inset Formula $+,'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAND
+\lang hebrew
+, כלומר 
+\begin_inset Formula $\left(x\cdot y\right)'$
+\end_inset
+
+ היא פ' שלמה.
+ ראשית ניתן להשיג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ )
+\begin_inset Formula $'$
+\end_inset
+
+( באמצעות 
+\begin_inset Formula $\left(x\cdot x\right)'=x'$
+\end_inset
+
+ ו-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\begin_inset Formula $\cdot$
+\end_inset
+
+( אפשר להשיג באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAND
+\lang hebrew
+, ששניהם כבר יש לנו.
+\end_layout
+
+\begin_layout Description
+דוגמה הוכיחו כי 
+\begin_inset Formula $f\left(x,y,z\right)=x'+yz$
+\end_inset
+
+ והפ' הקבועות 
+\begin_inset Formula $0,1$
+\end_inset
+
+ הן קבוצה שלמה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ראשית ל-
+\lang english
+NOT
+\lang hebrew
+ לניתן להגיע באמצעות 
+\begin_inset Formula $f\left(x,0,0\right)=x'+0\cdot0=x'$
+\end_inset
+
+.
+ ל-
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשר להגיע ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(1,x,y\right)$
+\end_inset
+
+.
+ לכן ניתן לייצר קבוצה שלמה כלומר הקבוצה המקורית היא שלמה.
+ אפשר גם להגיע ל-
+\lang english
+OR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(f\left(x,0,0\right),y,1\right)=\left(x'\right)'+y\cdot1=x+y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למעשה לא צריך את שני הקבועים כי ברגע שיש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם אחד הקבועים אפשר להגיע לקבוע אחר עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על הקבוע שכן יש לנו.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{III
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{III}$
+\end_inset
+
+ |
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Description
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ נתונה הפ' עם טבלת האמת הבאה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/mux1.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+נממש את הפ' עם 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MUX
+\lang hebrew
+ 
+\begin_inset Formula $8\to1$
+\end_inset
+
+ יחיד.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כל מה שצריך לעשות זה לחבר את 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ ל-
+\begin_inset Formula $s_{0},s_{1},s_{2}$
+\end_inset
+
+ בהתאמה ולהציב בקלטים 
+\begin_inset Formula $x_{0},\ldots,x_{7}$
+\end_inset
+
+ של ה-
+\lang english
+MUX
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+את ערכי 
+\begin_inset Formula $f$
+\end_inset
+
+ בטבלת האמת לפי הסדר.
+ כך נבחר עבור כל צירוף 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+ בדיוק את התוצאה מתוך ערכי טבלת האמת של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+עתה נממש עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MUX
+\lang hebrew
+ 
+\begin_inset Formula $4\to1$
+\end_inset
+
+ יחיד ועוד שער אחד כלשהו.
+ כאן צריך יותר להתאמץ.
+ ראשית נביט בטבלה כאשר 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ מופרדים מ-
+\begin_inset Formula $z$
+\end_inset
+
+, כך שלכל 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ יש שני צירופים עם 
+\begin_inset Formula $z$
+\end_inset
+
+ עם ערכים אפשריים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/tab1.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MUX
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יחיד עם סלקטורים 
+\begin_inset Formula $x,y$
+\end_inset
+
+ ובקלט ה-
+\begin_inset Formula $i$
+\end_inset
+
+ נשים או קבוע אם שני הצירופים עם 
+\begin_inset Formula $z$
+\end_inset
+
+ נותנים את אותו הערך, או 
+\begin_inset Formula $z$
+\end_inset
+
+ או 
+\begin_inset Formula $z'$
+\end_inset
+
+ בהתאם לערך שהערך משתנה )שכנעו עצמכם שאכן אלו כל האפשרויות(.
+ כך נקבל את השער הבא
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/mux41.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו מקיימים את הדרישות כי יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MUX
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד ושער אחד שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על הקלט השני ל-
+\lang english
+MUX
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+דוגמה נממש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)שמקבל 
+\begin_inset Formula $x,y,C_{in}$
+\end_inset
+
+ ופולט 
+\begin_inset Formula $S,C_{out}$
+\end_inset
+
+ כזכור( שיש לו את טבלת האמת הבאה )לצורך נוחות( עם:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/fa1.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מפענח 
+\begin_inset Formula $8\to3$
+\end_inset
+
+ ושערי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OR
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבחר קלטים למפענח 
+\begin_inset Formula $x,y,C_{in}$
+\end_inset
+
+, ואז על הפלטים נצמיד שער
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד לפלט 
+\begin_inset Formula $S$
+\end_inset
+
+ ואחד לפלט 
+\begin_inset Formula $C_{out}$
+\end_inset
+
+.
+ סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ זה יראה כך )רק 
+\begin_inset Formula $\left(1,1,1\right)$
+\end_inset
+
+ מוציא חוט לשני ה-
+\lang english
+OR
+\lang hebrew
+-ים, בהתאם לטבלת האמת(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dec.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+MUX
+\lang hebrew
+-ים 
+\begin_inset Formula $8\to1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבחר את הסלקטורים להיות 
+\begin_inset Formula $x,y,C_{in}$
+\end_inset
+
+ ונשבץ בשמונת הקלטים של ה-
+\lang english
+MUX
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+את ערכי 
+\begin_inset Formula $S$
+\end_inset
+
+ בטבלת האמת לכל צירוף של הסלקטורים )הקלטים(, ואותו הדבר שוב עם 
+\begin_inset Formula $C_{out}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+MUX
+\lang hebrew
+-ים 
+\begin_inset Formula $4\to1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+זה כבר יותר מורכב, ודורש פירוק של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לשני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Half Adder
+\lang hebrew
+-ים שלא הזכרנו כאן, אבל הם שערים שמקבלים 
+\begin_inset Formula $x,y$
+\end_inset
+
+ ופולטים 
+\begin_inset Formula $S,C_{out}$
+\end_inset
+
+.
+ מימוש די פשוט ניתן לראות בתוך המלבן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HA1
+\lang hebrew
+, הסכום הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקלטים והנשא הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על הקלטים.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ha.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך נוכל לחבר יחד שנים כאלו כדי לחשב 
+\begin_inset Formula $x+y+C_{in}=\left(x+y\right)+C_{in}$
+\end_inset
+
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ הוא מעגל עם שני קלטים ולכן קל לממש אותו עם 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MUX
+\lang hebrew
+ 
+\begin_inset Formula $4\to1$
+\end_inset
+
+ )משבצים את ערכי טבלת האמת כאמור( וכל שנותר הוא להרכיב שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לאחד יותר גדול )ראו איור(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ha2.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+לאחר ראינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF
+\lang hebrew
+, שמקבל קלט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+D
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ושעון ומשנה את פלטו בעת עליית השעון לערך של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+D
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)זו וריאציית ה-
+\lang english
+Positive Edge
+\lang hebrew
+( נוכל על בסיס יחידה זו לבנות יחידות יותר מורכבות.
+\end_layout
+
+\begin_layout Description
+דוגמה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Toggle FF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+T
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ושעון ומחשב בכל עליית שעון 
+\begin_inset Formula $Q\left(t+1\right)={\rm XOR}\left(T,Q\left(t\right)\right)$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י חיווט הפלט 
+\begin_inset Formula $Q$
+\end_inset
+
+ יחד עם 
+\begin_inset Formula $T$
+\end_inset
+
+ אל תוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ שמוזן ל-
+\begin_inset Formula $D$
+\end_inset
+
+ )קלט ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הפנימי(.
+\end_layout
+
+\begin_layout Description
+דוגמה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+JK-FF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבל 
+\begin_inset Formula $J,K$
+\end_inset
+
+ ושעון ומחשב בכל עליית שעון 
+\begin_inset Formula $Q\left(t+1\right)=JQ'\left(t\right)+K'Q\left(t\right)$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הרכבת 
+\begin_inset Formula $J,K$
+\end_inset
+
+ והפלט 
+\begin_inset Formula $Q$
+\end_inset
+
+ בשער לוגי שתוצאתו מוזנת -
+\begin_inset Formula $D$
+\end_inset
+
+ של ה-
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הפנימי.
+\end_layout
+
+\begin_layout Description
+דוגמה נממש ספרן, שסופר את מספר עליות השעון.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/counter.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרעיון כאן הוא פשוט אבל המימוש לא כל כך: בכל עליית שעון, ה-
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הימני ביותר מכניס עוד ערך 
+\begin_inset Formula $1$
+\end_inset
+
+ לסכום שמוחזק ע
+\begin_inset Quotes xrd
+\end_inset
+
+י כל המעגל.
+ הסכום מפועפע בכל עליית שעון ל-
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הבא )וה-
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המתאים לו(, וכך ה-
+\lang english
+DFF
+\lang hebrew
+-ים מחזיקים שלושה ביטים שמייצגים מספר שערכו עולה באחד בכל עליית שעון )הסטודנטית
+ המשקיעה תריץ את שלושת המחזורים בראש/על נייר ותראה שזה אכן עובד(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{FSM}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Finite State Machine
+\end_layout
+
+\begin_layout Description
+הגדרה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FSM
+\lang hebrew
+ הוא מודל חישובי עם מספר סופי של מצבים, מצב התחלתי, מספר סופי של קלטים ופלטים,
+ פ' מעברים 
+\begin_inset Formula $\left\{ \text{מצבים}\right\} \times\left\{ \text{קלטים}\right\} \to\left\{ \text{מצבים}\right\} $
+\end_inset
+
+ ופ' פלט.
+\end_layout
+
+\begin_layout Description
+דוגמה שער מסתובב )
+\lang english
+Turnstile
+\lang hebrew
+( יכול להיות פתוח או סגור, אם הוא מקבל מטבע והוא נעול, הוא נפתח, אם הוא
+ לא נעול ונדחף, הוא ננעל וכו'.
+ כן המצבים הם 
+\begin_inset Quotes xld
+\end_inset
+
+פתוח
+\begin_inset Quotes xrd
+\end_inset
+
+ ו
+\begin_inset Quotes xrd
+\end_inset
+
+נעול
+\begin_inset Quotes xrd
+\end_inset
+
+, הקלטים הם מטבע ודחיפה, הפלט עבור 
+\begin_inset Quotes xld
+\end_inset
+
+פתוח
+\begin_inset Quotes xrd
+\end_inset
+
+ הוא 
+\begin_inset Quotes xld
+\end_inset
+
+אפשר לעבור
+\begin_inset Quotes xrd
+\end_inset
+
+ ובהתאמה עבור 
+\begin_inset Quotes xld
+\end_inset
+
+נעול
+\begin_inset Quotes xrd
+\end_inset
+
+.
+ נוכל לייצג את ה-
+\lang english
+FSM
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם גרף
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/graph.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+או טבלה )יש כמה דרכים(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/table1.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה מכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא מכונה כבאיור )
+\lang english
+NS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+CS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הם המצב הבא והנוכחי בהתאמה(, שמה שמייחד אותה הוא שהפלטים תלויים אך ורק במצב
+ הנוכחי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/moore.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שהרגיסטר שמורכב מ-
+\lang english
+FF
+\lang hebrew
+-ים מחזיק את המצב הנוכחי, וערכו מחווט חזרה פנימה לחישוב המצב הבא שיכנס לרגיסטר
+ במחזור הבא.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה מכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\lang hebrew
+ היא מכונה שבה הפלטים תלויים גם במצב וגם בקלטים, והארכיטקטורה שלו היא כבאיור
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/mealy.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה את הייצוג של הגרפי של מכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מציירים כמו אוטומט רגיל, רק ששם כל מצב )מעגל( מכיל גם את הפלטים שהוא משרה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+את הייצוג הגרפי של מכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מציירים כמו אוטומט רגיל, רק שעל החצים )המעברים( נוסיף את הפלטים שהקלטים
+ על החץ יחד עם המצב שעוברים אליו משרים )ראו איור(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה הפלטים יושפעו מהקלט מהר יותר ב-
+\lang english
+Mealy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי הם מחוברים ישירות לפ' הפלטים, בעוד ב-
+\lang english
+Moore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נדרשת עליית שעון כדי שישתנה המצב שמשרה פלט.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sta.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה אפשר לכתוב מכונות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ששקולות למכונות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם פחות מצבים, אבל החסרון הוא ש-
+\lang english
+Mealy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גורם לבעיות עם תזמונים )שנלמד בהמשך(.
+\end_layout
+
+\begin_layout Description
+דוגמה נחזור לדוגמת השער המסתובב.
+ נגדיר 
+\begin_inset Formula $0$
+\end_inset
+
+ השער נעול ו-
+\begin_inset Formula $1$
+\end_inset
+
+ הוא פתוח.
+ לכן המעגל של פ' הפלט הוא חוט ישיר מהמצב לפלט כי הפלט זהה למצב.
+ את המעברים ניתן לראות בטבלת האמת הבאה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/rot.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+והמימוש של המעגל למעבר למצב הבא הוא די פשוט: אם 
+\begin_inset Formula $Q$
+\end_inset
+
+ הוא המצב הנוכחי ו-
+\begin_inset Formula $D$
+\end_inset
+
+ המצב הבא )הקלט ל-
+\lang english
+DFF
+\lang hebrew
+( אז 
+\begin_inset Formula $D={\rm Coin}\cdot Q'+{\rm Push}'\cdot Q$
+\end_inset
+
+ שזה ניתן למימוש עם שערים מאוד פשוטים.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Program Counter
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ נותן למעבד בכל פעם את הכתובת בזיכרון ממנה צריך לקרוא את הפקודה הבאה.
+ הספרן פולט כתובת באורך 
+\begin_inset Formula $32$
+\end_inset
+
+ ביטים שקופצת בקפיצות של 
+\begin_inset Formula $4$
+\end_inset
+
+ )אלא אם הייתה קפיצה למיקום אחר( בגלל שכל מילה היא באורך 
+\begin_inset Formula $32$
+\end_inset
+
+ ביטים )בית הוא 
+\begin_inset Formula $8$
+\end_inset
+
+ ביט(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המימוש הוא די פשוט: נחזיק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+32
+\numeric off
+ 
+\lang english
+DFF
+\lang hebrew
+-ים שיחזיקו את הכתובת, נחווט ישירות את ה-
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\numeric on
+32
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הפלטים והמעגל לחישוב המצב הבא הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם 
+\begin_inset Formula $x=4$
+\end_inset
+
+ ו-
+\begin_inset Formula $y=Q$
+\end_inset
+
+ )
+\begin_inset Formula $Q$
+\end_inset
+
+ המצב הנוכחי(, או באיור ברזולוציה נמוכה משום מה זה יראה כך
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/clk.jpg
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+זוהי מכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\lang hebrew
+, שערכה מתעדכן פעם אחת בכל מחזור.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
