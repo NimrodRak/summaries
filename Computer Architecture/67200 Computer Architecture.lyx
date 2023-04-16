@@ -12658,7 +12658,7 @@ FSM
 \begin_inset Graphics
 	filename img/graph.jpg
 	lyxscale 20
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -12807,7 +12807,7 @@ CS
 \begin_inset Graphics
 	filename img/moore.jpg
 	lyxscale 20
-	scale 30
+	scale 35
 
 \end_inset
 
@@ -12864,7 +12864,7 @@ Mealy
 \begin_inset Graphics
 	filename img/mealy.jpg
 	lyxscale 20
-	scale 30
+	scale 35
 
 \end_inset
 
@@ -13060,7 +13060,7 @@ Moore
 \begin_inset Graphics
 	filename img/sta.jpg
 	lyxscale 20
-	scale 30
+	scale 35
 
 \end_inset
 
@@ -13489,7 +13489,7 @@ FA
 \begin_inset Graphics
 	filename img/clk.jpg
 	lyxscale 20
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -13529,6 +13529,3457 @@ Moore
 , שערכה מתעדכן פעם אחת בכל מחזור.
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{תזמון מעבד והגדרות זמני פעפוע}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+תזמון מעבד
+\end_layout
+
+\begin_layout Description
+הגדרה ה
+\bar under
+תדר
+\bar default
+ של מעבד הוא מספר המחזורים של השעון בשנייה )ביחידות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hz
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+טעינה ופריקה של מטען לוקחים זמן ולכן מעבר או חסימת מעבר של זרם בתוך טרנזיסטור
+ אינם מיידים )אלא מאוד מהירים(.
+ פרק הזמן הזה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Propogation Delay
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+פרמטרים של זמן פעפוע
+\end_layout
+
+\begin_layout Itemize
+זמן הפעפוע מנמוך לגבוה )
+\begin_inset Formula $t_{{\rm PLH}}$
+\end_inset
+
+(: זמן הפעפוע כשהפלט עובר מנמוך )
+\begin_inset Formula $0$
+\end_inset
+
+( לגבוה )
+\begin_inset Formula $1$
+\end_inset
+
+(.
+ מודדים אותו החל משינוי ניכר בקלט ועד לעליית הפלט ל-
+\begin_inset Formula $50\%$
+\end_inset
+
+ מתח.
+ בפועל מתח נחשב גבוה )ומתפרש כ-
+\begin_inset Formula $1$
+\end_inset
+
+( רק כשהוא 
+\begin_inset Formula $90\%$
+\end_inset
+
+ ומעלה מערכו המקסימלי, וכאן יש הנחה סמויה שהעליה והירידה של המתח הם מאוד
+ מהירים ולכן מ-
+\begin_inset Formula $50\%$
+\end_inset
+
+ ל-
+\begin_inset Formula $90\%$
+\end_inset
+
+ אין הבדל משמעותי.
+\end_layout
+
+\begin_layout Itemize
+זמן הפעפוע מגבוה לנמוך )
+\begin_inset Formula $t_{{\rm PHL}}$
+\end_inset
+
+(: זמן הפעפוע כשהפלט עובר מגבוה לנמוך, מחושב ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הפרש הזמנים בין שינוי ניכר בקלט ועד לירידת הפלט למתחת ל-
+\begin_inset Formula $50\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+זמן עלייה )
+\lang english
+, 
+\series bold
+R
+\series default
+ise
+\lang hebrew
+
+\begin_inset Formula $t_{r}$
+\end_inset
+
+(: הזמן שלוקח לעלות מ-
+\begin_inset Formula $10\%$
+\end_inset
+
+ מתח ל-
+\begin_inset Formula $90\%$
+\end_inset
+
+ מתח.
+\end_layout
+
+\begin_layout Itemize
+זמן ירידה )
+\lang english
+, 
+\series bold
+F
+\series default
+all
+\lang hebrew
+
+\begin_inset Formula $t_{f}$
+\end_inset
+
+(: הזמן שלוקח לרדת מ-
+\begin_inset Formula $90\%$
+\end_inset
+
+ ל-
+\begin_inset Formula $10\%$
+\end_inset
+
+ מתח.
+\end_layout
+
+\begin_layout Itemize
+זמן פעפוע )
+\begin_inset Formula $t_{pd}$
+\end_inset
+
+(: כש-
+\begin_inset Formula $t_{{\rm PLH}}=t_{{\rm PHL}}$
+\end_inset
+
+, נקרא להם 
+\begin_inset Formula $t_{pd}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $t_{r},t_{f}$
+\end_inset
+
+ הם מאוד קטנים )ננו-שניות(.
+\end_layout
+
+\begin_layout Description
+דוגמה בשער
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כלשהו מקבלים את הגרף הבא של הפלט כתלות בקלט.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/tph.png
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נשים לב שהשינוי הוא לא מיידי.
+ במקרה הזה השינוי הניכר בקלט הוא חצייתו )מלמעלה או מלמטה( של הקלט את רף
+ 
+\begin_inset Formula $50\%$
+\end_inset
+
+ המתח.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה עבור 
+\begin_inset Formula $t_{pd}$
+\end_inset
+
+ יש ערך טיפוסי, ערך מקסימלי )
+\begin_inset Formula $t_{pd-max}$
+\end_inset
+
+( שאומר אחרי כמה זמן בטוח הפלטים כבר ישתנו וערך מינימלי )
+\begin_inset Formula $t_{pd-min}$
+\end_inset
+
+( שמבטיח מתחת לאיזה רף בטוח הערכים לא ישתנו.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $t_{pd-min/max}$
+\end_inset
+
+ יכולים להיות שונים עבור שינוי בקלטים שונים )קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ משפיע יותר מהר מ-
+\begin_inset Formula $y$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+דוגמה נתון השער
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MUX
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שממומש באופן הבא
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/d1.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+וחסמי זמן פעפוע לשערים
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{pd-max}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{pd-min}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שער
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5ns$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2ns$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+NOT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $8ns$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4ns$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+AND
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10ns$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5ns$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+OR
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מהו 
+\begin_inset Formula $t_{pd-max}$
+\end_inset
+
+ של השער כולו?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עבור ההשפעה 
+\begin_inset Formula $D_{1}\to Y$
+\end_inset
+
+ )כמה זמן לאחר שינוי 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+ ישתנה( נצטרך לעבור דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+OR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כלומר סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $18ns$
+\end_inset
+
+, וכך גם עבור 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $S\to Y$
+\end_inset
+
+ זמן הפעפוע המקסימלי הוא 
+\begin_inset Formula $\max\left({\rm AND+OR,NOT+AND+OR}\right)=\max\left(18,23\right)=23$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+זמן הפעפוע של השער כולו הוא המקסימום של כל המסלולים, כלומר 
+\begin_inset Formula $23ns$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מהו 
+\begin_inset Formula $t_{pd-min}$
+\end_inset
+
+ של השער כולו?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עתה נבחר את המסלול הקצר ביותר, שהוא כמובן 
+\begin_inset Formula $D_{0}\to Y$
+\end_inset
+
+ )או 
+\begin_inset Formula $D_{1}\to Y$
+\end_inset
+
+( שדורש 
+\begin_inset Formula $4ns+5ns=9ns$
+\end_inset
+
+, וזהו 
+\begin_inset Formula $t_{pd-min}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+הגדרה זמן הפעפוע של 
+\begin_inset Formula $D$
+\end_inset
+
+ ל-
+\begin_inset Formula $Q$
+\end_inset
+
+ מחושב )מוגדר( החל מעלייה של השעון ל-
+\begin_inset Formula $50\%$
+\end_inset
+
+ ועד לשינוי 
+\begin_inset Formula $Q$
+\end_inset
+
+ והוא נקרא 
+\begin_inset Formula $t_{v}$
+\end_inset
+
+ )או 
+\begin_inset Formula $t_{{\rm PCQ}}$
+\end_inset
+
+( והוא למעשה מגדיר אחרי כמה זמן לאחר עליית השעון נוכל להחשיב את הקלט כחוקי.
+ 
+\begin_inset Formula $t_{v-min}$
+\end_inset
+
+ מבטיח עד מתי 
+\begin_inset Formula $Q$
+\end_inset
+
+ ישאר בערכו הקודם ו-
+\begin_inset Formula $t_{v-max}$
+\end_inset
+
+ מבטיח החל ממתי יהיה הערך החדש.
+\end_layout
+
+\begin_layout Description
+הגדרה כדי ש-
+\begin_inset Formula $Q$
+\end_inset
+
+ יהיה תקין, 
+\begin_inset Formula $D$
+\end_inset
+
+ צריך להיות יציב ולא להשתנות למשך פרק זמן לפני עליית השעון, זהו 
+\begin_inset Formula $t_{s}$
+\end_inset
+
+ )
+\series bold
+\lang english
+S
+\series default
+etup
+\lang hebrew
+(, וגם לאחר עליית השעון, זהו 
+\begin_inset Formula $t_{h}$
+\end_inset
+
+ )
+\series bold
+\lang english
+H
+\series default
+old
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $t_{s}>0$
+\end_inset
+
+ כי בתוך ה-
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Master
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משנה את ערכו קצת לפני ה-
+\lang english
+Slave
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן הערך שם צריך לא להשתנות כדי של-
+\lang english
+Slave
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיה את הערך הנכון.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט בקונסטרוקציה הבאה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dgd.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נניח שזמן מחזור השעון הוא 
+\begin_inset Formula $t_{cyc}$
+\end_inset
+
+ )הזמן בין עליית שעון אחת לשניה(, לכן קצב השעון הוא 
+\begin_inset Formula $f=\frac{1}{t_{cyc}}$
+\end_inset
+
+.
+ נניח כי זמן הפעפוע המקסימלי של השער הוא 
+\begin_inset Formula $t_{pd-max}$
+\end_inset
+
+.
+ מהו זמן המחזור המינימלי כדי שהמעגל יהיה תקין, כלומר כדי שהתוצאה תגיע מהקלט
+ ל-
+\lang english
+DFF1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד לפלט של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תוך שני מחזורים )בראשון הקלטים עוברים את השער ובשני הם כבר מופיעים בצד השני(?
+\end_layout
+
+\begin_layout Itemize
+זמן המחזור צריך לקיים את הדרישה
+\begin_inset Formula 
+\[
+t_{cyc}\geq t_{v-max}+t_{pd-max}+t_{setup}
+\]
+
+\end_inset
+
+כי צריך קודם לחכות שהפלט של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיה חוקי )
+\begin_inset Formula $t_{v-max}$
+\end_inset
+
+(, אז לתת לו לעבור את כל השער )
+\begin_inset Formula $t_{pd-max}$
+\end_inset
+
+( ואז שהפלט יהיה יציב מספיק זמן לפני עליית השעון הבאה כדי שיעבור בהצלחה
+ ל-
+\begin_inset Formula $Q$
+\end_inset
+
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF
+\numeric on
+\lang hebrew
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ לאחר העליה.
+\end_layout
+
+\begin_layout Itemize
+מה צריך להיות 
+\begin_inset Formula $t_{h}$
+\end_inset
+
+ כדי שהשער יהיה תקין?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בפעם השנייה שבה ישתנה הערך, נצטרך ש-
+\begin_inset Formula $t_{h}$
+\end_inset
+
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיה פחות מהזמן שלוקח ל-
+\begin_inset Formula $D$
+\end_inset
+
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+להשתנות בהשפעת ה-
+\begin_inset Formula $Q$
+\end_inset
+
+ החדש של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF1
+\lang hebrew
+.
+ כלומר, חייב להתקיים
+\begin_inset Formula 
+\[
+t_{h}\leq t_{v-min}+t_{pd-min}
+\]
+
+\end_inset
+
+כי הזמן שלוקח לקלט לעבור מ-
+\begin_inset Formula $Q\left(DFF1\right)$
+\end_inset
+
+ ל-
+\begin_inset Formula $D\left(DFF2\right)$
+\end_inset
+
+ חסום מלמטה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הזמן המינימלי שעבורו 
+\begin_inset Formula $Q\left(DFF1\right)$
+\end_inset
+
+ לא ישתנה לאחר עליית השעון )
+\begin_inset Formula $t_{v-min}$
+\end_inset
+
+( ועוד הזמן המינימלי שעבורו 
+\begin_inset Formula $D\left(DFF2\right)$
+\end_inset
+
+ לא יקבל ערך חדש כפלט של המעגל )
+\begin_inset Formula $t_{pd-min}$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ מהלך התזמונים כפ' של השעון הוא באיור
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/tpd.png
+	lyxscale 20
+	scale 75
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה אם אין לנו דרך לשלוט ב-
+\begin_inset Formula $t_{h}$
+\end_inset
+
+ ונרצה עדיין מעגל חוקי, אפשר לחייב את 
+\begin_inset Formula $t_{pd-min}$
+\end_inset
+
+ להיות יותר גדול ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הוספת שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\lang hebrew
+-ים למסלול הקצר ביותר במעגל )ְהוא לרוב לא הארוך ביותר( וכך לא להשפיע על
+ התוצאות אבל כן על התזמון המינימלי.
+\end_layout
+
+\begin_layout Description
+דוגמה נתונה הקונסטרוקציה הבאה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MUX
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+, שלו )הכל ביחידות 
+\begin_inset Formula $ns$
+\end_inset
+
+( 
+\begin_inset Formula $t_{pd-min}=9,t_{pd-max}=23$
+\end_inset
+
+ ו-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלו 
+\begin_inset Formula $t_{v-min}=2,t_{v-max}=7,t_{s}=3,t_{h}=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מהו זמן המחזור המינימלי האפשרי?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כדי שהמעגל יהיה תקין, צריך שמסלול הפעפוע הארוך ביותר במבנה יהיה כולו מוכל
+ במחזור אחד.
+ המסלול הארוך ביותר הוא משינוי ב-
+\begin_inset Formula $Q\left(/S0\right)$
+\end_inset
+
+, דרך חישוב ה-
+\lang english
+MUX
+\lang hebrew
+ ועד לשינוי הערך ב-
+\begin_inset Formula $D$
+\end_inset
+
+, כשצריך לקחת בחשבון שלפני תחילת המחזור הבא נצטרך ש-
+\begin_inset Formula $D$
+\end_inset
+
+ יהיה יציב ל-
+\begin_inset Formula $t_{setup}$
+\end_inset
+
+ ננו-שניות.
+ סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ נצטרך שיתקיים )בדומה לדוגמה הקודמת(
+\begin_inset Formula 
+\[
+t_{cyc}\geq t_{v\left(max\right)}+t_{pd\left(max\right)}+t_{setup}=7+23+3=33
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מהי הדרישה על 
+\begin_inset Formula $t_{h}$
+\end_inset
+
+ כדי לקבל מבנה תקין?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נצטרך שהערך של 
+\begin_inset Formula $D$
+\end_inset
+
+ לא ישתנה מוקדם מדי לאחר עליית השעון, בפרט שזמן שינוי הערך 
+\begin_inset Formula $Q$
+\end_inset
+
+ וחישוב ה-
+\lang english
+MUX
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יקחו יותר מאשר 
+\begin_inset Formula $t_{h}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $t_{h}\leq t_{v\left(min\right)}+t_{pd\left(min\right)}=2+9$
+\end_inset
+
+ ואכן הנתונים מקיימים את הנדרש )
+\begin_inset Formula $t_{h}=5\leq9$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $T_{cyc\left(min\right)}=33ns$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $F_{max}=\frac{1}{33ns}=30MHz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עד כה התעמלנו מהקלט האמיתי של המעגל שמחובר ל-
+\begin_inset Formula $S1$
+\end_inset
+
+.
+ הוא עצמו גם חייב לקיים דרישה על השינוי שלו ביחס לשעון וכך נוכל להתייחס
+ אליו כסיגנל שמגיע מפלט אחר והניתוח יהיה כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כל קלט למעגל אחד הוא פלט של מעגל אחר, ולכן יכולים להיות להם ערכי 
+\begin_inset Formula $t_{v},t_{v-min}$
+\end_inset
+
+ שמושרים ממעגל אחר.
+\end_layout
+
+\begin_layout Standard
+כל פלט למעגל כלשהו הוא קלט למעגל אחר ולכן הפלטים צריכים לענות על דרישות
+ 
+\begin_inset Formula $t_{h},t_{s}$
+\end_inset
+
+ מסוימות גם כן.
+\end_layout
+
+\begin_layout Description
+הערה כשננתח תזמון של מעגל, נסתכל על כל המסלולים שמתחילים בכניסה ל-
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונגמ
+\end_layout
+
+\begin_layout Description
+דוגמה נסתכל על המבנה הבא, כשנתון 
+\begin_inset Formula $t_{v\left(max\right)}^{x}=15,t_{v\left(min\right)}^{x}=0$
+\end_inset
+
+ והדרישות על הפלט 
+\begin_inset Formula $t_{setup}=9,t_{hold}=0$
+\end_inset
+
+ )
+\begin_inset Formula $z$
+\end_inset
+
+ צריך להיות יציב למשך 
+\begin_inset Formula $9ns$
+\end_inset
+
+ לפני עליית השעון, ו-
+\begin_inset Formula $0ns$
+\end_inset
+
+ אחרי(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/path.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+עם הנתונים
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/tab2.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מהו 
+\begin_inset Formula $T_{cyc-min}$
+\end_inset
+
+? ננתח את כל המסלולים שנגמרים בפלט )כי לפלט יש דרישות ביחס לשעון, בפרט ל-
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש 
+\begin_inset Formula $t_{setup}$
+\end_inset
+
+ טכני ולפלט יש כזה שנדרש מאיתנו(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מסלולים שנגמרים ב-
+\begin_inset Formula $z$
+\end_inset
+
+: המסלול המקסימלי הוא באורך
+\begin_inset Formula 
+\[
+t_{setup}+t_{pd}^{AND}+\max\left\{ t_{v}^{FF1},t_{v}^{FF0},t_{v}^{x}\right\} =9+3+\max\left\{ 4,4,15\right\} =27ns
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $z$
+\end_inset
+
+ צריך להיות יציב 
+\begin_inset Formula $t_{setup}$
+\end_inset
+
+ זמן לפני עליית השעון, ערכו מחושב ע
+\begin_inset Quotes xrd
+\end_inset
+
+י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ אז מוסיפים את זמן הפעפוע דרכו, וקלט ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הם פלטי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FF1, FF0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\begin_inset Formula $x$
+\end_inset
+
+ בהתאמה, שערכם מתעדכן למחזור הנוכחי לאחר ה-
+\begin_inset Formula $t_{v}$
+\end_inset
+
+ של כל אחד מהם )כאן אנחנו מסמנים 
+\begin_inset Formula $t_{v}=t_{v\left(max\right)}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+מסלולים שנגמרים ב-
+\begin_inset Formula $T\left(FF1\right)$
+\end_inset
+
+: המסלול המקסימלי הוא באורך
+\begin_inset Formula 
+\[
+t_{setup}^{FF1}+t_{pd\left(\to S\right)}^{FA}+\max\left\{ t_{v}^{FF1},t_{v}^{FF0},x_{valid}\right\} =7+12+\max\left\{ 4,4,15\right\} =34ns
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מסלולים שנגמרים ב-
+\begin_inset Formula $T\left(FF0\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+t_{setup}^{FF0}+t_{pd\left(\to C_{0}\right)}^{FA}+\max\left\{ t_{v}^{FF1},t_{v}^{FF0},x_{valid}\right\} =7+8+\max\left\{ 4,4,15\right\} =30ns
+\]
+
+\end_inset
+
+ולכן סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ נצטרך 
+\begin_inset Formula $T_{cyc-min}\geq\max\left\{ 27,34,30\right\} =34ns$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+האם מתקיימת הדרישה על ה-
+\lang english
+Min Delay
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כן! עבור 
+\begin_inset Formula $z$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $t_{h}^{z}=0ns$
+\end_inset
+
+ והזמן המינימלי לפעפוע הוא
+\begin_inset Formula 
+\[
+t_{pd\left(min\right)}^{AND}+\max\left\{ t_{v\left(min\right)}^{x},t_{v\left(min\right)}^{FF}\right\} =1+\min\left\{ 0,0\right\} =1ns
+\]
+
+\end_inset
+
+כלומר מתקיימת הדרישה ועבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FF0, FF1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש 
+\begin_inset Formula $t_{h}^{FF}=2ns$
+\end_inset
+
+ והזמן המינימלי לפעפוע הוא
+\begin_inset Formula 
+\[
+t_{fpd\left(min\right)}^{FA}+\min\left\{ t_{v\left(min\right)}^{FF},t_{v\left(min\right)}^{x}\right\} =3ns
+\]
+
+\end_inset
+
+)כי הערך החדש צריך לעבור דרך ה-
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולהגיע או משינוי ב-
+\begin_inset Formula $x$
+\end_inset
+
+ או משינוי ב-
+\begin_inset Formula $Q$
+\end_inset
+
+ של אחד ה-
+\lang english
+FF
+\lang hebrew
+-ים( ולכן מתקיימת הדרישה גם כן.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Description
+הגדרה מעגל צירופי )קומבינטורי( הוא מעגל שיש לו כניסות ויציאות כאשר האחרונות
+ תלויות בכל ערך רגעי של הראשונות.
+ מעגל סדרתי הוא מעגל שפלטיו תלויים גם ביחידת זכרון שמחוברת לשעון.
+\end_layout
+
+\begin_layout Description
+דוגמה כיצד נממש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Full Adder
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)כזכור קלטים 
+\begin_inset Formula $x,y,C_{in}$
+\end_inset
+
+ ופלטים 
+\begin_inset Formula $S,C_{out}$
+\end_inset
+
+(? ראשית נמלא את טבלת הקרנו לפלט 
+\begin_inset Formula $S$
+\end_inset
+
+ )משמאל( ו-
+\begin_inset Formula $C_{out}$
+\end_inset
+
+ )מימין(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/cout.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename img/cin.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+ולכן אפשר לממש את 
+\begin_inset Formula $S$
+\end_inset
+
+ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על ארבעה פלטי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)שכוללים קלטים שעוברים דרך מהפך( ואת 
+\begin_inset Formula $C_{out}$
+\end_inset
+
+ אפשר קצת יותר יעיל.
+ ראינו בהרצאה שהמימוש של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כולל בתוכו שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HA
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה מחסרים מחשבים חיסור ספרות בינאריות.
+ עתנ נפלוט את ההפרש )
+\series bold
+בערך מוחלט
+\series default
+( ו-
+\lang english
+Borrow Out
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיגיד לנו כמה נותר לחסר מעבר להפרש.
+ הסטודנטית המשקיעה תממש חצי-מחסר ומחסר מלא.
+\end_layout
+
+\begin_layout Description
+הגדרה משווים הם מעגלים שבודקים איזה קלט יותר גדול.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+דרך אחת לממש זאת היא באמצעות השוואה מה-
+\lang english
+MSB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\lang english
+LSB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר בפעם הראשונה שיש אי-שוויון בביטים נבחר את האחד שקלטו גדול יותר )
+\begin_inset Formula $1$
+\end_inset
+
+ לעומת 
+\begin_inset Formula $0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+דרך אחרת היא באמצעות מחסרים: 
+\begin_inset Formula $A>B\iff A-B>0$
+\end_inset
+
+ וכו'.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה נתונים הקלטים 
+\begin_inset Formula $A=a_{2}a_{1}a_{0},B=b_{2}b_{1}b_{0}$
+\end_inset
+
+ ממשו עם מחסרים מעגל שפלט ביטים 
+\begin_inset Formula $G,E,L$
+\end_inset
+
+ שערך כל אחד מהם 
+\begin_inset Formula $1$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $A>B,A=B,A<E$
+\end_inset
+
+ בהתאמה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נממש את המעגל כבאיור
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/a2.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A<B$
+\end_inset
+
+ בהכרח ישאר לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Borrow Out
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי אם 
+\begin_inset Formula $a_{2}=b_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $a_{1}a_{0}<b_{1}b_{0}$
+\end_inset
+
+ ואז יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BO
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מלפני שימשיך הלאה ואחרת 
+\begin_inset Formula $a_{2}<b_{2}$
+\end_inset
+
+ ולכן בוודאי שיהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BO
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אם כל הביטים זהים נצטרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על כל הפרשים )כל החיסורים פולטים 
+\begin_inset Formula $0$
+\end_inset
+
+( ואכן זה מה שבנינו.
+\end_layout
+
+\begin_layout Standard
+בשיטת האלימנציה, 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא 
+\begin_inset Formula $1$
+\end_inset
+
+ אם 
+\begin_inset Formula $A\neq B$
+\end_inset
+
+ וגם 
+\begin_inset Formula $A\geq B$
+\end_inset
+
+, כלומר אם ה-
+\lang english
+OR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $1$
+\end_inset
+
+ וגם ה-
+\begin_inset Formula $L$
+\end_inset
+
+ הוא 
+\begin_inset Formula $0$
+\end_inset
+
+ וכך אכן מופיע במעגל.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה השימוש ב-
+\begin_inset Formula $10\%$
+\end_inset
+
+ ו-
+\begin_inset Formula $90\%$
+\end_inset
+
+ כרף לחישובי תזמון נובע מכך שקשה לאפיין את פריקת הקבל כתהליך לינארי בקצוות,
+ ולכן מתעלמים מהם.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט בפ' 
+\begin_inset Formula $X_{1}*X_{2}+X_{3}'$
+\end_inset
+
+ שממומשת באופן הבא
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/p.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula $t_{pd}\left(A\right)=\max\left\{ t_{{\rm PLH}}\left(A\right),t_{{\rm PHL}}\left(A\right)\right\} $
+\end_inset
+
+ ובדומה עבור 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ יש לנו שני מסלולים במעגל, הראשון מ-
+\begin_inset Formula $X_{1},X_{2}$
+\end_inset
+
+ ל-
+\begin_inset Formula $Y$
+\end_inset
+
+ והשני מ-
+\begin_inset Formula $X_{3}$
+\end_inset
+
+ ל-
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $t_{pd}\left(\text{מסלול ראשון}\right)=t_{pd}\left(A\right)+t_{pd}\left(C\right)$
+\end_inset
+
+ ובהתאמה 
+\begin_inset Formula $t_{pd}\left(\text{מסלול שני}\right)=t_{pd}\left(B\right)+t_{pd}\left(C\right)$
+\end_inset
+
+ תחת הנתונים הבאים )כאשר 
+\begin_inset Formula $t_{cd}=t_{tp-min}$
+\end_inset
+
+ מלשון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+C
+\series default
+ontamination
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/tcd.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב את ה-
+\begin_inset Formula $t_{pd}$
+\end_inset
+
+ של המעגל כולו.
+ עבור כל שער, 
+\begin_inset Formula $t_{pd}=\max\left\{ t_{{\rm PHL}},t_{{\rm PLH}}\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $t_{pd}^{p1}=110+100=210ns$
+\end_inset
+
+ וכן 
+\begin_inset Formula $t_{pd}^{p2}=90+100=190ns$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחשב את ה-
+\begin_inset Formula $t_{pd\left(min\right)}$
+\end_inset
+
+ של המעגל.
+ 
+\begin_inset Formula $t_{pd\left(min\right)}^{p1}=12+10=22ns$
+\end_inset
+
+ וכן 
+\begin_inset Formula $t_{pd\left(min\right)}^{p2}=8+10=18ns$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה נתונים המעגל והנתונים הבאים
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/tout.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המסלולים של שערים מהקלטים לפלטים הם 
+\begin_inset Formula $D\to E$
+\end_inset
+
+, 
+\begin_inset Formula $A\to B\to C\to E$
+\end_inset
+
+ ו-
+\begin_inset Formula $B\to C\to E$
+\end_inset
+
+ שלהם 
+\begin_inset Formula $t_{pd}$
+\end_inset
+
+ 
+\begin_inset Formula $80$
+\end_inset
+
+, 
+\begin_inset Formula $75$
+\end_inset
+
+ ו-
+\begin_inset Formula $60$
+\end_inset
+
+ בהתאמה ו-
+\begin_inset Formula $t_{pd\left(min\right)}$
+\end_inset
+
+ 
+\begin_inset Formula $15$
+\end_inset
+
+, 
+\begin_inset Formula $20$
+\end_inset
+
+ ו-
+\begin_inset Formula $15$
+\end_inset
+
+ בהתאמה.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $t_{pd}=80$
+\end_inset
+
+ ו-
+\begin_inset Formula $t_{pd\left(min\right)}=15$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה כל עוד אין מעגלים סדרתיים, חישוב 
+\begin_inset Formula $t_{pd}$
+\end_inset
+
+ נעשה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מקסימום הזמנים על כל המסלולים מפלטים לקלטים ו-
+\begin_inset Formula $t_{pd\left(min\right)}$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י מינימום.
+\end_layout
+
+\begin_layout Description
+הערה עבור כל מעגל סדרתי חייב להתקיים 
+\begin_inset Formula $t_{hold}\leq t_{v\left(min\right)}^{FF}+t_{pd\left(min\right)}^{\text{לוגיקה}}$
+\end_inset
+
+ כדי שהשינוי הכי מהיר במעגל יקח יותר מאשר הזמן שהפלט צריך להישאר זהה אחרי
+ עליית השעון.
+\end_layout
+
+\begin_layout Description
+הערה הקלט למעגל חייב להתייצב לאחר לכל היותר 
+\begin_inset Formula $t_{pd}^{\text{לוגיקה}}+t_{setup}$
+\end_inset
+
+ זמן כדי שה-
+\lang english
+FF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יוכל לחשב באופן תקין את 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נתון המעגל הסדרתי הבא עם הנתונים תחתיו
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/dqy.png
+	lyxscale 20
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי להשלים את הניתוח של תזמון המעגל נצטרך את האילוצים על ה-
+\lang english
+DFF
+\lang hebrew
+ 
+\begin_inset Formula $t_{v}=10ns$
+\end_inset
+
+, 
+\begin_inset Formula $t_{v\left(min\right)}=5ns$
+\end_inset
+
+ , 
+\begin_inset Formula $t_{setup}=10ns$
+\end_inset
+
+, 
+\begin_inset Formula $t_{hold}=25ns$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+האם המעגל תקין?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לא! חייב להתקיים 
+\begin_inset Formula $25=t_{hold}\leq5+t_{pd\left(min\right)}=5+t_{pd\left(min\right)}^{D\to E}=5+10+5=20$
+\end_inset
+
+ סתירה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כיצד נפתור את הבעיה?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נוסיף דיליי על המסלול הקצר ביותר, בפרט נוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NOT
+\lang hebrew
+-ים על החוט בין 
+\begin_inset Formula $Q$
+\end_inset
+
+ לקלט העליון של 
+\begin_inset Formula $D$
+\end_inset
+
+ )ושל 
+\begin_inset Formula $A$
+\end_inset
+
+(.
+ עכשיו המסלול הקצר ביותר יש לו 
+\begin_inset Formula $t_{pd\left(min\right)}=25$
+\end_inset
+
+ ועכשיו נקבל 
+\begin_inset Formula $25=t_{hold}\leq5+25=30$
+\end_inset
+
+ כלומר זה כן תקין.
+ החסרון הוא שהתדר המקסימלי האפשרי ירד כי זמן המחזור המינימלי עלה כתוצאה
+ מהוספת שני ה-
+\lang english
+NOT
+\lang hebrew
+-ים.
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
