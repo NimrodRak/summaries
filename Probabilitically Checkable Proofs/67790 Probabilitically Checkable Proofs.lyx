@@ -1427,7 +1427,7 @@ promise problem
 \lang english
 Soundness
 \lang hebrew
-( קיים לו חסם מלעל להסת' לקבלת קלט שאינו בשפה )במקרה שלנו 
+( קיים חסם מלעל להסת' לקבלת קלט שאינו בשפה )במקרה שלנו 
 \begin_inset Formula $1-\ot{\frac{1}{n}}$
 \end_inset
 
@@ -4011,6 +4011,1125 @@ k\geq\frac{2^{N}}{\left|B_{0}\left(\frac{1}{100}\right)\right|}\geq\frac{2^{N}}{
 \end_inset
 
  קבוע.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{III
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{III}$
+\end_inset
+
+ | בודקים-מקומיים
+\end_layout
+
+\begin_layout Description
+הערה נשתמש בקודים כדי לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בגרסתו הפשוטה יותר: בהינתן וקטור בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+ )שהוא אסימפטוטית גדול(, נרצה להחליט האם הוא מילת קוד או לא באמצעות דגימת
+ מספר קבוע של ביטים מתוכו.
+\end_layout
+
+\begin_layout Description
+הערה ב-
+\begin_inset Formula $\pcp$
+\end_inset
+
+ אנחנו עושים 
+\begin_inset Quotes xld
+\end_inset
+
+בדיקה
+\begin_inset Quotes xrd
+\end_inset
+
+ לוקאלית של 
+\begin_inset Quotes xld
+\end_inset
+
+נכונות הוכחה
+\begin_inset Quotes xrd
+\end_inset
+
+ כאשר הבדיקה במרכאות כי היא הסת' ונכונות ההוכחה במרכאות כי בודקים את נכונות
+ הטענה: בהינתן טענה, אם היא ספיקה אז בסבירות גבוהה הביטים שנדגום יספקו הסגר
+ )ב-
+\begin_inset Formula $\sat$
+\end_inset
+
+(, אבל זה לא אומר שההוכחה הספציפית הזו דווקא נכונה.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{בדקן-מקומי לקוד}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+בדקן-מקומי לקוד
+\end_layout
+
+\begin_layout Standard
+לכאורה אפשר לדחות מילה 
+\begin_inset Formula $w\in\com^{n}$
+\end_inset
+
+ אם הרישא שלה )בגודל קבוע( לא נכללת מבין רישאות מילות הקוד.
+ זה לא עובד כי מספיק שנחליף אות אחת מקוד חוקי מקרית ובהסת' גבוהה )אסימפטוטית(
+ נחליף ביט שאנחנו לא בודקים ובגלל שהמרחק בין קודים גדול הרי שהשינוי לא יהיה
+ ב-
+\begin_inset Formula $C$
+\end_inset
+
+ אבל כן נאשר אותו.
+\end_layout
+
+\begin_layout Standard
+עם זאת השיטה שבה נשתמש שכן תעבוד תדחה בהסת' 
+\begin_inset Formula $\delta$
+\end_inset
+
+ את 
+\begin_inset Formula $w\in\com^{n}$
+\end_inset
+
+ אם 
+\begin_inset Formula $\epsilon\leq\Delta\left(w,C\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\epsilon,\delta$
+\end_inset
+
+ קבועים כלשהם, 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ פ' מרחק ו-
+\begin_inset Formula $\Delta\left(w,C\right)=\min\limits _{c\in C}\Delta\left(w,c\right)$
+\end_inset
+
+.
+ כאן בגלל שקודים אמורים להיות רחוקים אחד מהשני וממילים מקריות שלא בקוד,
+ הרי שמילים לא בקוד נדחה בסבירות גבוהה.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $n\in\fldn$
+\end_inset
+
+ ו- 
+\begin_inset Formula $C\subseteq\com^{n}$
+\end_inset
+
+ קוד.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ אלג' רנדומי הוא 
+\begin_inset Formula $\left(\epsilon,\delta,h\right)\mathsf{-local-tester}$
+\end_inset
+
+ ל-
+\begin_inset Formula $C$
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הוא מבצע 
+\begin_inset Formula $h$
+\end_inset
+
+ גישות אורקל למילה נתונה 
+\begin_inset Formula $w$
+\end_inset
+
+ )שאילתות מהצורה 
+\begin_inset Quotes xrd
+\end_inset
+
+תן לי את האות באינדקס 
+\begin_inset Formula $i$
+\end_inset
+
+
+\begin_inset Quotes xrd
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $w\in C$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(w\;\text{מקבל את}\;T\right)=1$
+\end_inset
+
+ )שלמות היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במונחי 
+\begin_inset Formula $\pcp$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $w$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\Delta\left(w,C\right)\geq\epsilon$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(w\;\text{דוחה את}\;T\right)\geq\delta$
+\end_inset
+
+ )התקפות היא לכל היותר 
+\begin_inset Formula $1-\delta$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה 
+\begin_inset Formula $T$
+\end_inset
+
+ תלוי ב-
+\begin_inset Formula $C$
+\end_inset
+
+ ו-
+\begin_inset Formula $C$
+\end_inset
+
+ יכול להשתנות לפי 
+\begin_inset Formula $n$
+\end_inset
+
+ )כי כל קוד הוא למעשה משפחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Expander
+\lang hebrew
+-ים( אבל נתעלם מהפער הזה.
+\end_layout
+
+\begin_layout Description
+הערה עם 
+\begin_inset Formula $h=1$
+\end_inset
+
+ אין אלג' שנותנים שלמות, 
+\begin_inset Formula $h=2$
+\end_inset
+
+ יש אלג' עם כמעט שלמות 
+\begin_inset Formula $1$
+\end_inset
+
+ ו-
+\begin_inset Formula $h=3$
+\end_inset
+
+ כבר יש שלמות 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{local-tester עבור קוד ריד-סולומון}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $\mathsf{local-tester}$
+\end_inset
+
+ עבור קוד ריד-סולומון
+\end_layout
+
+\begin_layout Standard
+יהי קוד 
+\begin_inset Formula $C=RS_{d,a_{1},\ldots,a_{n},q}\subseteq\mathbb{F}_{q}^{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $d<n\leq q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה קודים עם 
+\begin_inset Formula $d=2$
+\end_inset
+
+ הם שערוך פרבולה ב-
+\begin_inset Formula $n$
+\end_inset
+
+ הנקודות.
+ עם 
+\begin_inset Formula $q=4$
+\end_inset
+
+ אפשר לדגום שלושה ערכים, הם מגדירים לנו את פרבולה )שהיא הפולינום של מילת
+ הקוד אם זו אכן מילת קוד( ואז נקודה רביעית, ונבדוק האם הפרבולה שחזינו זהה
+ לערך במילה, ונקבל אם כן.
+ זה יתקיים לכל מילת קוד )וגם למילים שהן לא מילות קוד שבמקרה הנקודות שדגמנו
+ חוזות נכונה את הנקודה האחרונה(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+במקרה הכללי עם 
+\begin_inset Formula $d+2$
+\end_inset
+
+ נקודות אפשר לבנות בדקן-מקומי כזה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י דגימת 
+\begin_inset Formula $d+1$
+\end_inset
+
+ נקודות שקובעות את הפולינום המשרה את המילה )לכאורה( ואז חיזוי האות ה-
+\begin_inset Formula $d+1$
+\end_inset
+
+ עם הפולינום ובדיקת שוויון עם מה שיש במילה באמת )מקבלים אם כן, דוחים אחרת(.
+ נקרא למבחן זה מבחן האינטרפולציה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה 
+\begin_inset Quotes xld
+\end_inset
+
+מבחן האינטרפולציה
+\begin_inset Quotes xrd
+\end_inset
+
+ הוא בוחן לוקאלי עבור 
+\begin_inset Formula $C$
+\end_inset
+
+ עם פרמטרים 
+\begin_inset Formula $\left(\epsilon,\delta,h\right)=\left(2\delta,\delta,d+2\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\delta<\frac{1}{4\left(d+1\right)^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה הקשר הפרופורציוני בין 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ ל-
+\begin_inset Formula $\delta$
+\end_inset
+
+ הוא הגיוני כי ככל שהמילים המטעות שלנו יותר קרובות למילות קוד אמיתיות, הסיכוי
+ שנדגום אותיות שחושפות את את היות המילה לא בקוד יורד )כי רוב האותיות משותפות
+ עם מילת קוד אמיתית(.
+\end_layout
+
+\begin_layout Proof
+ברור שאנחנו מבצעים רק 
+\begin_inset Formula $h=d+2$
+\end_inset
+
+ בקשות וברור שאם 
+\begin_inset Formula $w\in C$
+\end_inset
+
+ אז נקבל בהסת' 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם הסיכוי לקבל את 
+\begin_inset Formula $w$
+\end_inset
+
+ הוא 
+\begin_inset Formula $1$
+\end_inset
+
+ אז 
+\begin_inset Formula $w\in C$
+\end_inset
+
+ )נכונות הפרמטרים עבור 
+\begin_inset Formula $\delta=0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $b_{1}\neq\ldots\neq b_{d+1}\subseteq\left\{ a_{1},\ldots,a_{n}\right\} $
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $g:\mathbb{F}_{q}\to\mathbb{F}_{q}$
+\end_inset
+
+ הפולינום היחיד מדרגה 
+\begin_inset Formula $d\geq$
+\end_inset
+
+ שמסכים עם 
+\begin_inset Formula $w$
+\end_inset
+
+ על 
+\begin_inset Formula $b_{1},\ldots,b_{d+1}$
+\end_inset
+
+ )קל להוכיח יחידות(.
+ לכל 
+\begin_inset Formula $a\in\left\{ a_{1},\ldots,a_{n}\right\} $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $a\in\left\{ b_{1},\ldots,b_{d+1}\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $g$
+\end_inset
+
+ מסכים עם 
+\begin_inset Formula $w$
+\end_inset
+
+ על 
+\begin_inset Formula $a$
+\end_inset
+
+ מהגדרתו.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $a\notin\left\{ b_{1},\ldots,b_{d+1}\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $g$
+\end_inset
+
+ מסכים עם 
+\begin_inset Formula $w$
+\end_inset
+
+ על 
+\begin_inset Formula $a$
+\end_inset
+
+ )כי מקבלים בהסת' 
+\begin_inset Formula $1$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula $g$
+\end_inset
+
+ הוא פולינום מדרגה 
+\begin_inset Formula $d\geq$
+\end_inset
+
+ שמשרה את 
+\begin_inset Formula $w$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $w\in C$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\Delta\left(w,C\right)=\delta$
+\end_inset
+
+ אז ההסת' לדחות את 
+\begin_inset Formula $w$
+\end_inset
+
+ היא לפחות 
+\begin_inset Formula $>0$
+\end_inset
+
+ )נכונות התכונה השלישית(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח שהבדיקה בוחרת 
+\begin_inset Formula $b_{0}\neq\ldots\neq b_{d+1}\in\left\{ a_{1},\ldots a_{n}\right\} $
+\end_inset
+
+ ועושה אינטרפולציה לערך 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ לפי שאר הערכים.
+ תהי 
+\begin_inset Formula $w\in\com^{n}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\Delta\left(w,C\right)=\delta>0$
+\end_inset
+
+.
+ נביט במאורע
+\begin_inset Formula 
+\[
+E=\left\{ \exists w\in C:w\left(b_{0}\right)\neq w'\left(b_{0}\right)\land w\left(b_{i}=w'\left(b_{i}\right)\;\;\forall i\in\left[d+1\right]\right)\right\} 
+\]
+
+\end_inset
+
+ במקרה כזה המבחן ידחה.
+\begin_inset Formula 
+\[
+P\left(E\right)\geq\delta\left(1-\left(d+1\right)\delta\right)
+\]
+
+\end_inset
+
+כי ראשית נדגום את 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ שהוא בהסת' 
+\begin_inset Formula $\delta$
+\end_inset
+
+ )בדיוק( נקודת שוני בין 
+\begin_inset Formula $w,w'$
+\end_inset
+
+, ואז נטען שההסת' ש-
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ אחד לפחות הוא נקודת שוני היא לכל היותר 
+\begin_inset Formula $\left(d+1\right)\delta$
+\end_inset
+
+ )ואז נסתכל על המשלים(.
+ זה נכון מחסם האיחוד כי ההסת' לכל אחד מה-
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ )בנפרד( להיות נקודת שוני היא 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+זה לא מסיים את ההוכחה כי אם המילים מאוד שונות אי אפשר לבצע את אותו הניתוח
+ כי אי אפשר להניח שנוכל להשיג 
+\begin_inset Formula $\left\{ b_{i}\right\} _{i=1}^{d+1}$
+\end_inset
+
+ שכן יסכימו עם מילת קוד כלשהי.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+הגדרה יהי קוד 
+\begin_inset Formula $C=RS_{d,0,\ldots,\left(n-1\right),q}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $d<n=q$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left\{ a_{i}\right\} =\f_{q}$
+\end_inset
+
+.
+ 
+\bar under
+מבחן האינטרפולציה האריתמטי
+\bar default
+ הוא המבחן הבא: נבחר 
+\begin_inset Formula $b_{0}\in\f_{q}$
+\end_inset
+
+ מקרי ו-
+\begin_inset Formula $r\in\f_{q}\backslash\left\{ 0\right\} $
+\end_inset
+
+ ונעשה אינטרפולציה בנקודה 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ בעזרת הנקודות 
+\begin_inset Formula $b_{0}+r,b_{0}+2r,\ldots,b_{0}+\left(d+1\right)r$
+\end_inset
+
+ )ונקבל אם החיזוי נכון ואחרת לא(.
+\end_layout
+
+\begin_layout Description
+הערה המשפט הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל הוא נכון עבור מבחן האינטרפולציה האריתמטי, ולא מבחן האינטרפולציה הרגיל.
+\end_layout
+
+\begin_layout Description
+הערה המבחן הזה לא טוב כי כדי לקודד מילים באורך 
+\begin_inset Formula $k$
+\end_inset
+
+ צריך קוד עם 
+\begin_inset Formula $d\approx k$
+\end_inset
+
+, והקוד ריד-סולומון שראינו עם תכונות טובות היה לו 
+\begin_inset Formula $d=\frac{n}{2}$
+\end_inset
+
+ או איזשהו אחוז קבוע מ-
+\begin_inset Formula $n$
+\end_inset
+
+ כלומר הלוקאליות שלנו היא לא משהו, כי אנחנו קוראים אחוז קבוע של המילה שהיא
+ באורך 
+\begin_inset Formula $n$
+\end_inset
+
+, שהוא אסימפטוטית גדול מאוד.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{קודי ריד-מולר והדמארד}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+קודי ריד-מולר והדמארד
+\end_layout
+
+\begin_layout Description
+הגדרה יהיו 
+\begin_inset Formula $m,d<q\in\fldn$
+\end_inset
+
+ 
+\bar under
+קוד ריד-מולר
+\bar default
+ הוא
+\begin_inset Formula 
+\[
+RM_{m,d,q}=\left\{ \left(f\left(v_{1},\ldots,v_{m}\right)\right)_{\left(v_{1},\ldots,v_{m}\right)\in\f_{q}^{m}}\mid d\geq\text{פולי' ממעלה טוטאלית}\;f:\f_{q}^{m}\to\f_{q}\right\} \subseteq\f_{q}^{q^{m}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה מילת הקוד פשוט כוללת את כל הערכים של פולינום רב-משתנים כלשהו.
+ נשערך לפי
+\begin_inset Formula 
+\[
+f\left(x_{1},\ldots,x_{m}\right)=\sum\limits _{\vec{i}:i_{1}+\ldots+i_{m}\leq d}c_{\vec{i}}x^{\vec{i}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $x^{\vec{i}}=x_{1}^{i_{1}}\cdot\ldots\cdot x_{m}^{i_{m}}$
+\end_inset
+
+ ו-
+\begin_inset Formula $d$
+\end_inset
+
+ המעלה הטוטאלית של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפרמטרים של הקוד הם 
+\begin_inset Formula $\left(n,d,R,q\right)=\left(q^{m},1-\frac{d}{q},\frac{{d+m+1 \choose d}}{q^{m}},q\right)$
+\end_inset
+
+ כאשר המרחק נכון כי שני פולינומים שונים ב-
+\begin_inset Formula $m$
+\end_inset
+
+ משתנים ממעלה טוטאלית 
+\begin_inset Formula $d$
+\end_inset
+
+ מסכימים על לכל היותר 
+\begin_inset Formula $d$
+\end_inset
+
+ ערכים ממשפט שוורץ-זיפל והקוד לינארי ו-
+\begin_inset Formula $\left\{ x^{\vec{i}}\right\} _{\vec{i}}$
+\end_inset
+
+ הוא בסיס למרחב המולטינומים ויש 
+\begin_inset Formula ${d+m+1 \choose d}$
+\end_inset
+
+ מונומים כי יש לנו 
+\begin_inset Formula $m-1$
+\end_inset
+
+ מחיצות )המפרידות בין חזקות 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+( שביניהן אנחנו מחלקים 
+\begin_inset Formula $d$
+\end_inset
+
+ כדורים )כל כדור מייצג אינסטנס אחד של אחד המשתנים(.
+\end_layout
+
+\begin_layout Description
+הערה אם נבחר 
+\begin_inset Formula $d=q$
+\end_inset
+
+ אז נוכל לקודד מספר אקספ' של מילים ב-
+\begin_inset Formula $d$
+\end_inset
+
+ ולכן נקבל ביצועים טובים לבדקן-לוקאלי אבל הפרמטרים של הקוד יהיו לא טובים.
+\end_layout
+
+\begin_layout Standard
+המבחן שלנו יהיה בחירת ישר אפיני מקרי מתוך הקוביה שהיא מילת הקוד )ממימד 
+\begin_inset Formula $m$
+\end_inset
+
+(, והרצת המבחן של ריד-סולומון כרגיל )נבחר 
+\begin_inset Formula $d+1$
+\end_inset
+
+ נקודות ואז נחזה את הנקודה הבאה ונבדוק שוויון למילה הנבחנת(.
+ זאת משום שהישר נותן לנו 
+\begin_inset Formula $q$
+\end_inset
+
+ נקודות מהצורה 
+\begin_inset Formula $\left\{ v+tu:t\in\f_{q}\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $u,v\in\f_{q}^{m}$
+\end_inset
+
+ והצבת 
+\begin_inset Formula $v+tu$
+\end_inset
+
+ בפולינום רב-משתני נותן פולינום במשתנה אחד 
+\begin_inset Formula $t$
+\end_inset
+
+, הלא הוא הפולינום המשרה את הישר האפיני אם הקוביה היא מילת קוד.
+\end_layout
+
+\begin_layout Standard
+הוכחת הנכונות של המבחן מתבססת על נכונות המבחן לסולומון-ריד יחד עם התכונה
+ הגאומטרית לפיה לשתי נקודות סיכוי שווה להיות על ישר אפיני מקרי מתוך קוביה
+ 
+\begin_inset Formula $n$
+\end_inset
+
+-ממדית.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\bar under
+קוד הדמארד
+\bar default
+ הוא קוד ריד-מולר עם 
+\begin_inset Formula $q=2,d=1$
+\end_inset
+
+ ובלי המקדם החופשי, כלומר 
+\begin_inset Formula $H_{m}=\left\{ f:f\left(x\right)=\sum\limits _{i=1}^{m}a_{i}x_{i},\;a_{i}\in\f_{q}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה עתה הקוד מכיל פ' ולא וקטורים כי זה שקול לחלוטין כי ב-
+\begin_inset Formula $RM$
+\end_inset
+
+ דוגמים את כל ערכי הפ' )כלומר הוקטור פשוט מייצג את הפ'( ולכן נשתמש בשמות
+ לחלופין מעתה.
+\end_layout
+
+\begin_layout Description
+הערה נבחר 
+\begin_inset Formula $m$
+\end_inset
+
+ גדול כרצוננו כדי שבקוד יהיו הרבה אותיות ביחס למספר האותיות שנדגום במבחן
+ וכך נקבל לוקאליות טובה.
+ עם זאת נקבל קצב נורא.
+\end_layout
+
+\begin_layout Standard
+הפרמטרים של קוד האדמארד הם 
+\begin_inset Formula $\left(n,d,R,q\right)=\left(2^{m},\frac{1}{2},\frac{m}{2^{m}},2\right)$
+\end_inset
+
+ כאשר הקצב נובע מהיות הקוד לינארי )הוא הרחבה של קוד ריד-מולר שהוא הרחבה
+ של קוד ריד-סולומון שהוא לינארי(.
+\end_layout
+
+\begin_layout Description
+טענה נגדיר מבחן 
+\begin_inset Formula $T$
+\end_inset
+
+ באופן הבא: נבחר באקראי 
+\begin_inset Formula $x,y\in\left(\f_{2}\right)^{m}$
+\end_inset
+
+ ונבדוק האם 
+\begin_inset Formula $f\left(x+y\right)=f\left(x\right)+f\left(y\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $T$
+\end_inset
+
+ הוא בודק-לוקאלי עם פרמטרים 
+\begin_inset Formula $\left(2\epsilon,\epsilon,3\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $H_{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\epsilon<\frac{1}{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+המבחן מקיים שלמות מהיות כל הקודים פולינומים בכמה משתנים לינאריים.
+\end_layout
+
+\begin_layout Proof
+ראשית נוכיח את נכונות הפרמטרים עבור 
+\begin_inset Formula $\epsilon=0$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $P\left(\text{מתקבל}\;f\right)=1$
+\end_inset
+
+ אז מלינארית 
+\begin_inset Formula $f$
+\end_inset
+
+ פ' לינארי )פשוט מוכיחים אם כל שני וקטורים מקיימים לינאריות( ולכן 
+\begin_inset Formula $f\in H$
+\end_inset
+
+.
 \end_layout
 
 \end_body
