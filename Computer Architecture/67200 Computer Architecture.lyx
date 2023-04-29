@@ -12262,6 +12262,23 @@ DFF
 \noun default
 \color inherit
 הפנימי(.
+ כלומר 
+\begin_inset Formula $Q\left(t+1\right)$
+\end_inset
+
+ יהיה 
+\begin_inset Formula $Q\left(t\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $T=0$
+\end_inset
+
+ ו-
+\begin_inset Formula $Q\left(t\right)'$
+\end_inset
+
+ אחרת.
 \end_layout
 
 \begin_layout Description
@@ -22285,5 +22302,1513 @@ $s
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Standard
+להדגמת ההבדל בין מכונות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\lang english
+Mealy
+\lang hebrew
+, ראו האיור הבא כאשר בשחור מכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובאדום התוספת שהופכת אותה למכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/meal.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{אנליזה של מעגלים סינכרוניים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+אנליזה של מעגלים סינכרוניים
+\end_layout
+
+\begin_layout Standard
+בהינתן מעגל, נרצה להבין מה הוא עושה )איזו מכונה הוא מייצג, איך הוא מתנהג(.
+ השלבים לאנליזה הם:
+\end_layout
+
+\begin_layout Enumerate
+הצגת הקלטים לזיכרון ופלטי המעגל באמצעות הפלטים מהזכרון והקלטים למעגל.
+\end_layout
+
+\begin_layout Enumerate
+כתיבת טבלת מעברים.
+\end_layout
+
+\begin_layout Enumerate
+כתיבת טבלת מעברים סימבולית )טבלה עם שמות למצבים(.
+\end_layout
+
+\begin_layout Enumerate
+רישום אוטומט מצבים.
+\end_layout
+
+\begin_layout Enumerate
+ניתוח האוטומט באמצעות סדרת בוחן.
+\end_layout
+
+\begin_layout Description
+דוגמה נתון המעגל הבא
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/q1.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+בקלטי הזכרון מתקיים 
+\begin_inset Formula $D_{1}=In,D_{2}=Q_{1}$
+\end_inset
+
+ ובפלט המעגל מתקיים 
+\begin_inset Formula $Out=\left(Q_{1}+Q_{2}\right)'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+טבלת המעברים תראה כך, כאשר אנחנו עוברים על כל אפשרות ל-
+\begin_inset Formula $In,Q_{1},Q_{2},D_{1},D_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/a1.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+כאשר חלק מהקומבינציות לא הגיוניות, אבל עדיין נכתוב אותן.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ניתן שמות למצבים, כאשר מצב מוגדר ע
+\begin_inset Quotes xrd
+\end_inset
+
+י קיבוע ערכים של כל פלטי רכיבי הזכרון, במקרה הזה יש לנו רק שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFF
+\lang hebrew
+-ים
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/b1.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ועכשיו נוכל לחשב את הפלט של המעגל בהינתן הקלט והמצב הנוכחי בטבלת המצבים
+ הבאה )
+\lang english
+PS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המצב הנוכחי ו-
+\lang english
+NS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המצב הבא(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ns.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+עתה נבנה אוטומט, כאשר נצטרך להחליט האם לבנות אוטומט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\lang hebrew
+, ובשלב הראשון עוד יכולנו לשים לב שהמעגל הלוגי שמגדיר את הפלט תלוי רק בזיכרון
+ ולא בקלט ולכן נסתפק באוטומט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/m1.jpg
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ננתח אוטומט, כשמה שמעניין אותנו בסופו של דבר היא באילו מקרים המכונה פולטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ נשתמש בסדרת בוחן, כלומר טבלה עם שלוש שורות: מצב, פלט, והקלט שאיתו נעבור
+ למצב הבא בשורה.
+ נדאג שהמעברים בין כל שני תאים סמוכים בשורת המצבים יכסו את כל המעברים הקיימים
+ באוטומט )כל הקשתות( לפחות פעם אחת.
+ אין חשיבות לסדר המעבר.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/c1.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר שני הפלטים הראשונים הם 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ כי כל עוד לא עברו שתי יחידות זמן, לא נוכל לדעת מה הפלט של רכיב הזכרון השני
+ )כי הקלט שלו מוגדר רק אחרי המחזור הראשון( שמוביל לפלט ולכן הפלט לא מוגדר.
+\end_layout
+
+\begin_layout Standard
+עתה נחפש את ה-
+\begin_inset Formula $1$
+\end_inset
+
+-ים בפלטים, ונשים לב שכדי לקבל 
+\begin_inset Formula $1$
+\end_inset
+
+ בפלט, צריך שהקלטים בשני מחזורי השעון הקודמים יהיו 
+\begin_inset Formula $0$
+\end_inset
+
+, וזהו כלל השינוי! נשים לב שהקלט בזמן המחזור הנוכחי לא משנה כי מדובר במכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Moore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+איך נדע שצריך רק את שני הביטים שלפני המחזור הנוכחי ולא יותר או פחות? אפשר
+ לבדוק כללי שינוי מורכבים יותר )שמורכבים משלושה ביטים לדוגמה( ולשים לב שהם
+ לא מתקיימים, כי אפשר לקבל 
+\begin_inset Formula $1$
+\end_inset
+
+ גם עם 
+\begin_inset Formula $100$
+\end_inset
+
+ )זה קורה בסדרת הבוחן( וגם באמצעות 
+\begin_inset Formula $000$
+\end_inset
+
+ )ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הישארות ב-
+\begin_inset Formula $A$
+\end_inset
+
+ שוב ושוב(.
+ הכלל האופטימלי והמינימלי הוא זה שמעניין אותנו.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+דוגמה נתון המעגל הבא
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/la.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר הפלט היחיד הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Out
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)והחצים למעלה חסרי משמעות(.
+\end_layout
+
+\begin_layout Enumerate
+נייצג את הפלטים והקלטים לזכרון.
+ 
+\begin_inset Formula $D_{1}=y_{1}\cdot y_{2}'+y_{2}y_{1}'In$
+\end_inset
+
+ ו-
+\begin_inset Formula $D_{2}=y_{2}\cdot y_{1}\cdot In+y_{2}'\cdot\left(y_{1}\oplus In\right)$
+\end_inset
+
+ ובנוסף 
+\begin_inset Formula $Out=y_{2}\cdot y_{1}\cdot In$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מהצבת הערכים נקבל את טבלת המצבים
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/t1.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נבחר שמות למצבים )קיבוע פלטי הזכרון( כרגיל
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/b1.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ועתה באמצעות הצבה של השמות בטבלת המצבים נקבל כאשר הפעם הקלט כן משפיע על
+ הפלט, כלומר מדובר במכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ns2.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כדי לבנות את האוטומט נצטרך עכשיו להשתמש באוטומט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\lang hebrew
+, כלומר שעל הקשת נכתוב איזה קלט מעביר אותנו למצב הבא ואיזה פלט הוא מספק
+ לנו
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/in.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+עתה נרשום סדרת בוחן שתראה אותו הדבר, רק שהפעם בחיפוש אחר כלל השינוי נצטרך
+ להתחשב גם בערך הנוכחי של הקלט
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sd.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקבל רק כאשר הקלט בזמנים 
+\begin_inset Formula $t,\ldots,t+3$
+\end_inset
+
+ היה 
+\begin_inset Formula $1,1,0,1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsubsection}{סינתזה של מעגלים סינכרוניים}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+סינתזה של מעגלים סינכרוניים
+\end_layout
+
+\begin_layout Standard
+בהינתן אפיון, נרצה לממש מעגל סינכרוני שמקיים את הדרישות.
+ נשתמש בסכמה הבאה:
+\end_layout
+
+\begin_layout Enumerate
+בניית אוטומט בהתאם לדרישות.
+\end_layout
+
+\begin_layout Enumerate
+טבלת מצבים.
+\end_layout
+
+\begin_layout Enumerate
+קידוד מצבים ובחירת סוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FF
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+טבלת מעברים ופלט.
+\end_layout
+
+\begin_layout Enumerate
+הגדרת פ' הכניסות של רכיבי הזכרון ויציאת המעגל.
+\end_layout
+
+\begin_layout Enumerate
+בניית המעגל.
+\end_layout
+
+\begin_layout Description
+דוגמה נרצה לבנות מסכם בינארי טורי, כלומר מעגל שמקבל קלטים 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ וזמן 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ מחשב את הביט ה-
+\begin_inset Formula $i$
+\end_inset
+
+ )מכיוון ה-
+\lang english
+LSB
+\lang hebrew
+( בסכימת המספרים המתהווים על הסרט הנע של 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ )כל מחזור מקבלים שני ביטים חדשים, שכאילו מתווספים כ-
+\lang english
+MSB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למספרים שאנחנו סוכמים(.
+ ראו איור )כל פעם סוכמים את הביטים המתאימים, כמובן עם נשא מהסכימות הקודמות(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/lsb.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ראשית נבנה אוטומט שמקיים את הדרישות, כאשר הקלט )מימן ל-
+\begin_inset Formula $/$
+\end_inset
+
+( הוא שני הביטים מ-
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ בהתאמה.
+ נבחר שהמצבים שלנו ייצגו האם יש לנו נשא מהחישוב הקודם, וכך נשמור את המידע
+ הזה בזכרון למעשה.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ מייצג מצב שאין בו נשא מהחישוב הקודם ו-
+\begin_inset Formula $B$
+\end_inset
+
+ מייצג מצב שבו יש נשא מהחישוב הקודם.
+ בכל פעם נחשב את הסכימה יחד עם הנשא )אם יש כזה(, ונבחר מה הפלט של התוצאה
+ ובנוסף האם יש לנו נשא ונעבור מצב בהתאם.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/b2.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נבנה טבלת מצבים, שמכילה גם את הפלט במצב אליו עוברים כי הפלט תלוי בקלט הנוכחי
+ כי זו מכונת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mealy
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ps.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר נשים לב שהקלטים לא מסודרים לקסיקוגרפית אלא כמו בטבלת קרנו!
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+קידוד המצבים דורש בחירת ייצוג בינארי למצבים, וכאשר יש שניים זה די קל - מספיק
+ ביט אחד שייצג את 
+\begin_inset Formula $A$
+\end_inset
+
+ כשהוא 
+\begin_inset Formula $0$
+\end_inset
+
+ ואת 
+\begin_inset Formula $B$
+\end_inset
+
+ כשהוא 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+נחליף את 
+\begin_inset Formula $A$
+\end_inset
+
+ ו-
+\begin_inset Formula $B$
+\end_inset
+
+ בטבלה בביטים המתאימים להם ונקבלת טבלת מעברים ופלט שמכילה רק ביטים
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/karno.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נפצל את הטבלה לשתי מפות קרנו )אחת ל-
+\begin_inset Formula $D$
+\end_inset
+
+, הקלט ל-
+\lang english
+DFF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיחזיק את המצב הבא ואחת לפלט( ונכסה את הטבלה כמו שעשינו בתרגול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/karno3.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך שנקבל בסופו של דבר 
+\begin_inset Formula $D=x_{1}x_{2}+Qx_{1}+Qx_{2}$
+\end_inset
+
+ ו-
+\begin_inset Formula $Out=Qx_{1}'x_{2}'+Q'x_{1}'x_{2}+Qx_{1}x_{2}+Q'x_{1}x_{2}'$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הסטודנטית הערנית תשים לב שהחישובים האלה הם בדיוק הפלטים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ולכן )באופן שדי מתאים לאפיון( נקבל שנממש את המעגל כך
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/fad.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
