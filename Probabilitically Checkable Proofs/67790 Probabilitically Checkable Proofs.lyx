@@ -4032,7 +4032,7 @@ addcontentsline{toc}{section}{III
 \backslash
 ;
 \backslash
-; }
+; בודקים-מקומיים}
 \end_layout
 
 \end_inset
@@ -4557,7 +4557,7 @@ addcontentsline{toc}{subsection}{local-tester עבור קוד ריד-סולומ�
 \end_inset
 
  הוא הגיוני כי ככל שהמילים המטעות שלנו יותר קרובות למילות קוד אמיתיות, הסיכוי
- שנדגום אותיות שחושפות את את היות המילה לא בקוד יורד )כי רוב האותיות משותפות
+ שנדגום אותיות שחושפות את היות המילה לא בקוד יורד )כי רוב האותיות משותפות
  עם מילת קוד אמיתית(.
 \end_layout
 
@@ -4827,11 +4827,8 @@ P\left(E\right)\geq\delta\left(1-\left(d+1\right)\delta\right)
 \end_layout
 
 \begin_layout Description
-הערה המשפט הנ
-\begin_inset Quotes xrd
-\end_inset
-
-ל הוא נכון עבור מבחן האינטרפולציה האריתמטי, ולא מבחן האינטרפולציה הרגיל.
+הערה המשפט נכון עם מבחן האינטרפולציה האריתמטי ולא המבחן הרגיל, ואת ההוכחה
+ לכך נראה לאחר שנוכיח נכונות של בדקן-מקומי לקודי הדמארד.
 \end_layout
 
 \begin_layout Description
@@ -5062,7 +5059,28 @@ f\left(x_{1},\ldots,x_{m}\right)=\sum\limits _{\vec{i}:i_{1}+\ldots+i_{m}\leq d}
 
  גדול כרצוננו כדי שבקוד יהיו הרבה אותיות ביחס למספר האותיות שנדגום במבחן
  וכך נקבל לוקאליות טובה.
- עם זאת נקבל קצב נורא.
+ עם זאת נקבל קצב נורא, שהוא 
+\begin_inset Formula $\frac{m}{2^{m}}$
+\end_inset
+
+ כי ייצוג של מילה דורש 
+\begin_inset Formula $2^{m}$
+\end_inset
+
+ ביטים )ערך לכל קלט לפ'(, גם אם כשהמילה היא מילת קוד היא אכן מושרת מוקטור
+ עם 
+\begin_inset Formula $m$
+\end_inset
+
+ ביטים ומספר מילות הקוד הוא 
+\begin_inset Formula $m$
+\end_inset
+
+ )אחת לכל וקטור ב-
+\begin_inset Formula $M_{1\times m}\left(\f_{2}\right)$
+\end_inset
+
+(.
 \end_layout
 
 \begin_layout Standard
@@ -5074,26 +5092,335 @@ f\left(x_{1},\ldots,x_{m}\right)=\sum\limits _{\vec{i}:i_{1}+\ldots+i_{m}\leq d}
  של קוד ריד-סולומון שהוא לינארי(.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{IV
+\backslash
+;
+\backslash
+; הבודק הלינארי לקודי הדמארד וריד-סולומון}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{IV}$
+\end_inset
+
+ | הבודק הלינארי לקודי הדמארד וריד-סולומון
+\end_layout
+
+\begin_layout Standard
+מעתה נתייחס לקודי ריד-סולומון עם כל המספרים ב-
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+ בלבד, כלומר 
+\begin_inset Formula $RS_{d,q}$
+\end_inset
+
+ הוא למעשה 
+\begin_inset Formula $RS_{d,0,\ldots,q-1,q}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $q$
+\end_inset
+
+ תמיד ראשוני.
+\end_layout
+
 \begin_layout Description
-טענה נגדיר מבחן 
-\begin_inset Formula $T$
+הערה בהסתכלות על מילות קוד כפ' מתקיים
+\begin_inset Formula 
+\begin{align*}
+RS_{d,q} & =\left\{ f:\f_{q}\to\f_{q}:\deg f\leq d\right\} \\
+RM_{m,d,q} & =\left\{ f:\f_{q}^{m}\to\f_{q}:\deg f\leq d\right\} \\
+H_{m} & =\left\{ f:\f_{2}^{m}\to\f_{2}:\exists M\in M_{1\times m}\left(\f_{2}\right),f\left(x\right)=Mx,\forall x\right\} 
+\end{align*}
+
 \end_inset
 
- באופן הבא: נבחר באקראי 
-\begin_inset Formula $x,y\in\left(\f_{2}\right)^{m}$
+
+\end_layout
+
+\begin_layout Description
+הערה לפ' אין דרגה, גם אם הן ניתנות לייצוג ע
+\begin_inset Quotes xrd
 \end_inset
 
- ונבדוק האם 
-\begin_inset Formula $f\left(x+y\right)=f\left(x\right)+f\left(y\right)$
+י פולינום, ולכן 
+\begin_inset Formula $\deg f$
+\end_inset
+
+ משמעו דרגת הפולינום מהדרגה הנמוכה ביותר שמייצג את הפ' )במקרה שלנו אין כמה
+ פולינומים אבל עקרונית זו ההגדרה(.
+\end_layout
+
+\begin_layout Standard
+ככלל אמנם נדמה שהקצב לעתים הוא גרוע )אקספ' ב-
+\begin_inset Formula $d$
+\end_inset
+
+(, אבל 
+\begin_inset Formula $d$
+\end_inset
+
+ לא אמור לעניין אותנו יותר מדי.
+ יותר מעניין להסתכל על הקצב כפ' של 
+\begin_inset Formula $n$
+\end_inset
+
+, שמייצג את מספר המילים שאנחנו מקודדים.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור קוד ריד-מולר עם 
+\begin_inset Formula $m=d,q=2d$
+\end_inset
+
+, נקבל קצב שהוא בקירוב )
+\begin_inset Formula $5$
+\end_inset
+
+ סתם לשם הדגמה( 
+\begin_inset Formula $\frac{{2d \choose d}}{q^{d}}\approx\frac{c^{d}}{\left(5c\right)^{d}}$
+\end_inset
+
+ כאשר למעשה הקודים שאנחנו מייצגים מושרים מפולינומים שדורשים 
+\begin_inset Formula $n=c^{d}$
+\end_inset
+
+ לייצוג, ומפיתוח קצר מקבלים שזה פולינומי קטן ב-
+\begin_inset Formula $n$
 \end_inset
 
 .
- אזי 
-\begin_inset Formula $T$
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לעומת זאת קוד הדמארד נותן קצב 
+\begin_inset Formula $\frac{m}{2^{m}}$
 \end_inset
 
- הוא בודק-לוקאלי עם פרמטרים 
-\begin_inset Formula $\left(2\epsilon,\epsilon,3\right)$
+ שהוא אקספוננציאלי קטן ב-
+\begin_inset Formula $m$
+\end_inset
+
+ שזה רע מאוד, כי קצב גבוה הוא טוב.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{בדקן-מקומי לקודי הדמארד}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+בדקן-מקומי לקודי הדמארד
+\end_layout
+
+\begin_layout Description
+הערה אי אפשר להכליל את מה שאמרנו על ריד-מולר )שם בחרנו ישר דרך הקוביה והרצנו
+ את הבדקן של ריד-סולומון על הישר( להדמארד כי כדי לעשות מבחן אינטרפולציה
+ צריך לפחות 
+\begin_inset Formula $3$
+\end_inset
+
+ נקודות על אותו ישר, וב-
+\begin_inset Formula $\f_{2}$
+\end_inset
+
+ יש רק שני איברים ולכן אין שלושה איברים על אותו ישר.
+\end_layout
+
+\begin_layout Standard
+נבדוק שהפ' מקיימת 
+\begin_inset Formula $f\left(x\right)=f\left(y\right)+f\left(x+y\right)$
+\end_inset
+
+ )בגלל שאנחנו ב-
+\begin_inset Formula $\f_{q}$
+\end_inset
+
+ 
+\begin_inset Formula $+$
+\end_inset
+
+ ו-
+\begin_inset Formula $-$
+\end_inset
+
+ מבצעים את אותה הפעולה(.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ היא מילת קוד חוקית אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם המשוואה מתקיימת בהסת' 
+\begin_inset Formula $1$
+\end_inset
+
+ על פני 
+\begin_inset Formula $x,y\in_{R}\f_{2}^{m}$
+\end_inset
+
+ )כאשר ההגרלה היא אחידה, כלומר מתקיים לכל 
+\begin_inset Formula $x,y$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $f$
+\end_inset
+
+ נקראת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+random-self-reducable
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ אם היא מקיימת שלכל 
+\begin_inset Formula $x$
+\end_inset
+
+, בהסת' גבוהה מתקיים 
+\begin_inset Formula $f\left(x\right)=f\left(y\right)+f\left(x+y\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $y$
+\end_inset
+
+ מוגרל באקראי.
+\end_layout
+
+\begin_layout Description
+הערה התכונה שימושית כי אם נרצה לחשב את 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ כאשר ידועים לנו ערכים אחרים של הפ', נגריל 
+\begin_inset Formula $y$
+\end_inset
+
+ אקראי ונחשב 
+\begin_inset Formula $f\left(x\right)=f\left(y\right)+f\left(x+y\right)$
+\end_inset
+
+ כאשר אמנם 
+\begin_inset Formula $y,x+y$
+\end_inset
+
+ תלויים אחד בשני מאוד, כל אחד מהם בנפרד מתפלג אחיד.
+\end_layout
+
+\begin_layout Description
+הגדרה ה
+\bar under
+בודק הלינארי
+\bar default
+ בוחר באקראיבאקראי 
+\begin_inset Formula $x,y\in\f_{2}^{m}$
+\end_inset
+
+ ומחזיר
+\begin_inset Formula 
+\[
+B\left(x,y\right)=B_{f}\left(x,y\right)=\mez 1_{\left\{ x,y:f\left(x\right)=f\left(y\right)+f\left(x+y\right)\right\} }\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טענה הבודק הלינארי הוא בודק-לוקאלי עם פרמטרים 
+\begin_inset Formula $\left(\epsilon,\delta,h\right)=\left(\epsilon,2\epsilon,3\right)$
 \end_inset
 
  עבור 
@@ -5107,29 +5434,606 @@ f\left(x_{1},\ldots,x_{m}\right)=\sum\limits _{\vec{i}:i_{1}+\ldots+i_{m}\leq d}
 .
 \end_layout
 
-\begin_layout Proof
-המבחן מקיים שלמות מהיות כל הקודים פולינומים בכמה משתנים לינאריים.
+\begin_layout Description
+הערה לצורך הוכחת המשפט נשתמש באינטואיציה הבאה: אם במקרה ידוע לנו ש-
+\begin_inset Formula $f$
+\end_inset
+
+ היא פ' 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-קרובה לפ' 
+\begin_inset Formula $g$
+\end_inset
+
+ לינארית, אז 
+\begin_inset Formula $f\left(x\right)=f\left(y\right)+f\left(x+y\right)$
+\end_inset
+
+ בהסת' גבוהה כי 
+\begin_inset Formula $P\left(f\left(y\right)=g\left(y\right)\right)\geq1-\epsilon$
+\end_inset
+
+ וכך גם עבור 
+\begin_inset Formula $x+y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $P\left(f\left(x\right)=g\left(x\right)\right)\geq1-2\epsilon$
+\end_inset
+
+ מחסם האיחוד.
+ אם לא ידוע לנו ש-
+\begin_inset Formula $f$
+\end_inset
+
+ קרובה לפ' לינארית, נצטרך לפעול בצורה אחרת.
 \end_layout
 
 \begin_layout Proof
-ראשית נוכיח את נכונות הפרמטרים עבור 
-\begin_inset Formula $\epsilon=0$
+ברור שהבודק מקבל מילים בקוד ושהוא דוגם רק שלושה ערכים.
+ נוכיח את התכונה השלישית בקונטרה פוזיטיב, כלומר שאם מילה עוברת את המבחן
+ בהסת' גבוהה, אז היא קרובה למילה בקוד.
+ תהי 
+\begin_inset Formula $f:\f_{2}^{m}\to\f_{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $P_{x,y}\left(B_{f}\left(x,y\right)\right)\geq1-\epsilon$
+\end_inset
+
+.
+ נרצה למצוא את 
+\begin_inset Formula $g:\f_{2}^{m}\to\f_{2}$
+\end_inset
+
+ הלינארית הקרובה ל-
+\begin_inset Formula $f$
+\end_inset
+
+.
+ נגדיר את 
+\begin_inset Formula $g$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\f_{2}^{m}$
+\end_inset
+
+ ע
+\begin_inset Quotes xrd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+g\left(x\right)=\underset{y\in\f\f_{2}^{m}}{{\rm Maj}}\left(f\left(y\right)+f\left(x+y\right)\right)
+\]
+
+\end_inset
+
+כאשר הרעיון הוא שבגלל שרוב הערכים של 
+\begin_inset Formula $f$
+\end_inset
+
+ מתנהגים כמו פ' לינארית, אז חישוב ערכו של 
+\begin_inset Formula $g$
+\end_inset
+
+ באמצעות דעת הרוב של 
+\begin_inset Formula $f$
+\end_inset
+
+ )על ערכים שונים מ-
+\begin_inset Formula $x$
+\end_inset
+
+ אמנם( תיתן תוצאות מיטיבות ואכן כך.
+ נוכיח כי 
+\begin_inset Formula ${\rm dist}\left(f,g\right)\leq2\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{align*}
+1-\epsilon & \leq P_{x,y}\left(f\left(x\right)=f\left(y\right)+f\left(x+y\right)\right)\\
+\text{התוחלת השלמה} & =E_{x}\left[P_{y}\left(B_{f}\left(x,y\right)\mid x\right)\right]\\
+\left(*\right) & \leq P_{x}\left(M\right)\cdot1+\left(1-P_{x}\left(M\right)\right)\frac{1}{2}\\
+ & =\frac{1}{2}+\frac{1}{2}P_{x}\left(M\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $M=\left\{ x:P_{y}\left(B_{f}\left(x,y\right)\right)\geq\frac{1}{2}\right\} $
+\end_inset
+
+ ונשתמש בנוסחת ההסת' השלמה )משמאל כל הסת' קטנה מ-
+\begin_inset Formula $1$
+\end_inset
+
+ ומימין ההסת' תחת 
+\begin_inset Formula $M^{C}$
+\end_inset
+
+ ל-
+\begin_inset Formula $B_{f}\left(x,y\right)$
+\end_inset
+
+ היא לכל היותר 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מהגדרת 
+\begin_inset Formula $M$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+ומהעברת אגפים נקבל 
+\begin_inset Formula $\frac{1}{2}P_{x}\left(M\right)\geq\frac{1}{2}-\epsilon$
+\end_inset
+
+ כלומר
+\begin_inset Formula 
+\[
+P_{x}\left(f\left(x\right)=g\left(x\right)\right)=P_{x}\left(M\right)\geq1-2\epsilon
+\]
+
+\end_inset
+
+כלומר של-
+\begin_inset Formula $1-2\epsilon$
+\end_inset
+
+ מה-
+\begin_inset Formula $x$
+\end_inset
+
+-ים לפחות חצי מה-
+\begin_inset Formula $y$
+\end_inset
+
+-ים מקיימים את המבחן, ומכך נובע שהמרחק אכן חסום ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $2\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נרצה לחזק את המשוואה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל עד כדי הוכחת התכונה השלישית
+\end_layout
+
+\begin_layout Proof
+נאמר כי 
+\begin_inset Formula $\left(x,y,x+y\right)$
+\end_inset
+
+ חופשית אם 
+\begin_inset Formula $x,y\in_{R}\f_{2}^{m}$
+\end_inset
+
+, מעוגנת אם 
+\begin_inset Formula $x$
+\end_inset
+
+ קבוע ו-
+\begin_inset Formula $y\in_{R}\f_{2}^{m}$
+\end_inset
+
+ וקבועה אם 
+\begin_inset Formula $x,y$
+\end_inset
+
+ קבועים.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+טענת
+\begin_inset Formula $\;$
+\end_inset
+
+ביניים
+\begin_inset Formula $\;$
+\end_inset
+
+קטנה לכל 
+\begin_inset Formula $x$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(\star\right)=P_{y^{1},y^{2}}\left(f\left(y^{1}\right)+f\left(x+y^{1}\right)=f\left(y^{2}\right)+f\left(x+y^{2}\right)\right)\geq1-2\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+מתקיים ש-
+\begin_inset Formula $y_{1},y_{2},y_{1}+y_{2}$
+\end_inset
+
+ היא חופשית, וכך גם 
+\begin_inset Formula $x+y_{1},x+y_{2},y_{1}+y_{2}$
+\end_inset
+
+ ולכן מהתנאי שדרשנו לעצמנו בתחילת ההוכחה הכללית, ההסת' שכל אחת מהמשוואות
+ הבאות לא מתקיימות הוא לכל היותר 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(y^{1}\right) & =f\left(y^{2}\right)+f\left(y^{1}+y^{2}\right)\\
+f\left(x+y^{1}\right) & =f\left(x+y^{2}\right)+f\left(y^{1}+y^{2}\right)
+\end{align*}
+
+\end_inset
+
+ולכן השוויון הבא מתקיים בהסת' לפחות 
+\begin_inset Formula $1-\epsilon-\epsilon=1-2\epsilon$
+\end_inset
+
+ )המשלים להסת' שאחד האי שוויונות לא מתקיים, שנחסם מחסם האיחוד(
+\begin_inset Formula 
+\begin{align*}
+f\left(y^{1}\right)+f\left(x+y^{1}\right) & =f\left(y^{1}\right)+f\left(x+y^{2}\right)+f\left(y^{1}+y^{2}\right)\\
+ & =f\left(y^{2}\right)+f\left(y^{1}+y^{2}\right)+f\left(x+y^{2}\right)+f\left(y^{1}+y^{2}\right)\\
+ & =f\left(y^{2}\right)+f\left(x+y^{2}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טענת
+\begin_inset Formula $\;$
+\end_inset
+
+ביניים
+\begin_inset Formula $\;$
+\end_inset
+
+גדולה לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ )לא רק 
+\begin_inset Formula $1-2\epsilon$
+\end_inset
+
+ מתוך כולם(, 
+\begin_inset Formula $P_{y}\left(g\left(x\right)=f\left(x+y\right)+f\left(y\right)\right)\geq1-2\epsilon$
+\end_inset
+
+ )כלומר יש רוב מוחץ של 
+\begin_inset Formula $y$
+\end_inset
+
+-ים שנותנים ערך 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $x\in\f_{2}^{m}$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $p=P_{y}\left(f\left(y\right)+f\left(x+y\right)\right)=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $g\left(x\right)=0$
+\end_inset
+
+ אם 
+\begin_inset Formula $p>\frac{1}{2}$
+\end_inset
+
+ ואחרת 
+\begin_inset Formula $g\left(x\right)=1$
+\end_inset
+
+.
+ לכן מתקיים
+\begin_inset Formula 
+\[
+1-2\epsilon\leq\left(\star\right)=p^{2}+\left(1-p\right)^{2}=1-2p\left(1-p\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $p\left(1-p\right)\leq\epsilon$
 \end_inset
 
 .
  אם 
-\begin_inset Formula $P\left(\text{מתקבל}\;f\right)=1$
+\begin_inset Formula $p<\frac{1}{2}$
 \end_inset
 
- אז מלינארית 
-\begin_inset Formula $f$
+ אז 
+\begin_inset Formula $\frac{1}{2}p<p\left(1-p\right)$
 \end_inset
 
- פ' לינארי )פשוט מוכיחים אם כל שני וקטורים מקיימים לינאריות( ולכן 
-\begin_inset Formula $f\in H$
+ כלומר 
+\begin_inset Formula $p\leq2\epsilon$
+\end_inset
+
+ ואחרת 
+\begin_inset Formula $1-p\leq2\epsilon$
 \end_inset
 
 .
+ זה אומר ש-
+\begin_inset Formula $p\geq1-2\epsilon$
+\end_inset
+
+ או ש-
+\begin_inset Formula $1-p\geq1-2\epsilon$
+\end_inset
+
+.
+ המקרה הראשון משמעו שברוב של 
+\begin_inset Formula $1-2\epsilon$
+\end_inset
+
+ האינטרפולציה תיתן 
+\begin_inset Formula $0$
+\end_inset
+
+ והשני שבאותו רוב היא נקבל 
+\begin_inset Formula $1$
+\end_inset
+
+, כך שכך או כך, חישוב 
+\begin_inset Formula $g$
+\end_inset
+
+ הוא ברוב מוחץ על פני האינטרפולציות.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+נסיים את הוכחת הטענה הכללית ע
+\begin_inset Quotes xrd
+\end_inset
+
+י הוכחה ש-
+\begin_inset Formula $g\left(x\right)=g\left(z\right)+g\left(x+z\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x,z$
+\end_inset
+
+, כלומר ש-
+\begin_inset Formula $g$
+\end_inset
+
+ אכן לינארית.
+ נביט בנקודות הבאות
+\begin_inset Formula 
+\[
+\begin{matrix}x & y^{1} & x+y^{1}\\
+z & y^{2} & z+y^{2}\\
+x+z & y^{1}+y^{2} & x+z+y^{1}+y^{2}
+\end{matrix}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $y^{1},y^{2}$
+\end_inset
+
+ מקריים, שלושת השורות הן שלשות מעוגנות )סכום ביטים מתפלגים אחיד מתפלג אחיד(
+ ושתי העמודות הימניות הן שלשות חופשיות.
+ לכן בהסת' לפחות 
+\begin_inset Formula $0<1-8\epsilon=1-\left(2\epsilon+2\epsilon+\epsilon+\epsilon+2\epsilon\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+g\left(z\right)+g\left(x+z\right) & =f\left(y^{2}\right)+f\left(z+y^{2}\right)+g\left(x+z\right)\\
+ & =f\left(y^{2}\right)+f\left(z+y^{2}\right)+f\left(y^{1}+y^{2}\right)+f\left(x+z+y^{1}+y^{2}\right)\\
+ & =f\left(y^{1}\right)+f\left(x+y^{1}\right)\\
+ & =g\left(x\right)
+\end{align*}
+
+\end_inset
+
+כאשר כל מעבר מתקיים לא בהסת' 
+\begin_inset Formula $1$
+\end_inset
+
+ אלא בהסת'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמוכה מ-
+\begin_inset Formula $1$
+\end_inset
+
+ ולכן לכאורה השוויון מתקיים בהסת' נמוכה מ-
+\begin_inset Formula $1$
+\end_inset
+
+, אבל מאחר שאין לנו פה הסת' לנוסחה הסופית )שכוללת רק את 
+\begin_inset Formula $x,z$
+\end_inset
+
+ שהם קבועים(, הרי שהמשוואה מתקיימת תמיד ולכן 
+\begin_inset Formula $g$
+\end_inset
+
+ לינארית.
+ לסיום הראנו ש-
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\begin_inset Formula $2\epsilon$
+\end_inset
+
+-קרובה ל-
+\begin_inset Formula $g$
+\end_inset
+
+ שהיא לינארית, כלומר מילת קוד חוקית.
+\end_layout
+
+\begin_layout Description
+הערה ההוכחה היא הדרגתית: קודם הוכחנו ש-
+\begin_inset Formula $f$
+\end_inset
+
+ קרובה ל-
+\begin_inset Formula $g$
+\end_inset
+
+ בהסת' גבוהה לשלשות חופשיות, ואז בהסת' גבוהה לשלשות מעוגנות ואז בהסת' 
+\begin_inset Formula $1$
+\end_inset
+
+ לשלשות קבועות.
+\end_layout
+
+\begin_layout Standard
+ נספק הוכחה בראשי פרקים )אנלוגית לחלוטין להוכחה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל( לכך שבדקן לריד סולומון עם מבחן האינטרפולציה האריתמטי הוא אכן בדקן-מקומי.
+\end_layout
+
+\begin_layout Standard
+נגדיר לכל 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(x\right)=\underset{r\in_{R}\f_{q}}{{\rm plur}}\sum a_{i}f\left(x+r\cdot i\right)$
+\end_inset
+
+.
+ ניתן להוכיח כי 
+\begin_inset Formula $g$
+\end_inset
+
+ 
+\begin_inset Formula $d\epsilon$
+\end_inset
+
+-קרוב ל-
+\begin_inset Formula $f$
+\end_inset
+
+.
+ משם נראה שהאינטרפולציות עבור 
+\begin_inset Formula $r_{1},r_{2}$
+\end_inset
+
+ מקריים שוות בהסת' קרובה ל-
+\begin_inset Formula $1$
+\end_inset
+
+ )כלומר שוויון על סדרות חופשיות, זו טענת הביניים הקטנה(.
+ משם ניתן להוכיח שהשוויון בין 
+\begin_inset Formula $g$
+\end_inset
+
+ ו-
+\begin_inset Formula $f$
+\end_inset
+
+ מתקיים לסדרות מעוגנות בהסת' 
+\begin_inset Formula $1-d^{2}\epsilon\approx$
+\end_inset
+
+ באמצעות טיעון מהסת' שלא קשור לקודים )החישוב עם 
+\begin_inset Formula $p$
+\end_inset
+
+(.
+ לסיום אפשר להוכיח ש-
+\begin_inset Formula $f$
+\end_inset
+
+ שווה ל-
+\begin_inset Formula $g$
+\end_inset
+
+ עבור סדרות קבועות בהסת' קרובה ל-
+\begin_inset Formula $1$
+\end_inset
+
+.
+ זה מוכיח ש-
+\begin_inset Formula $g$
+\end_inset
+
+ מקיים את האינטרפולציות לכל סדרה חשבונית, ובתרגיל הוכחנו שתחת שדה ראשוני
+ זה מספיק כדי להוכיח ש-
+\begin_inset Formula $g$
+\end_inset
+
+ הוא פולינום.
 \end_layout
 
 \end_body
