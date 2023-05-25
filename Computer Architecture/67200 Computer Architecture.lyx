@@ -10774,7 +10774,7 @@ addcontentsline{toc}{section}{III
 \backslash
 ;
 \backslash
-; }
+; תזמון מעגלים}
 \end_layout
 
 \end_inset
@@ -10789,7 +10789,7 @@ addcontentsline{toc}{section}{III
 \begin_inset Formula $\mathbb{III}$
 \end_inset
 
- |
+ | תזמון מעגלים
 \end_layout
 
 \begin_layout Standard
@@ -19597,7 +19597,7 @@ MIPS
 \begin_inset Graphics
 	filename img/shift.jpg
 	lyxscale 30
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -25855,7 +25855,7 @@ PC
 \begin_inset Graphics
 	filename img/mem.png
 	lyxscale 30
-	scale 30
+	scale 65
 
 \end_inset
 
@@ -26512,7 +26512,7 @@ PC
 \begin_inset Graphics
 	filename img/pc.png
 	lyxscale 30
-	scale 30
+	scale 50
 
 \end_inset
 
@@ -26588,7 +26588,7 @@ IR
 \begin_inset Graphics
 	filename img/opc.png
 	lyxscale 30
-	scale 30
+	scale 60
 
 \end_inset
 
@@ -27169,7 +27169,7 @@ WriteEnable
 \begin_inset Graphics
 	filename img/comp.png
 	lyxscale 30
-	scale 30
+	scale 55
 
 \end_inset
 
@@ -27190,7 +27190,7 @@ Register File
 \begin_inset Graphics
 	filename img/gpr.png
 	lyxscale 30
-	scale 30
+	scale 45
 
 \end_inset
 
@@ -27238,7 +27238,7 @@ Arithmetic Logic Unit
 \begin_inset Graphics
 	filename img/alu.png
 	lyxscale 30
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -27405,7 +27405,7 @@ R-Type
 \begin_inset Graphics
 	filename img/rt.png
 	lyxscale 30
-	scale 30
+	scale 65
 
 \end_inset
 
@@ -28309,7 +28309,7 @@ R
 \begin_inset Graphics
 	filename img/reg.png
 	lyxscale 30
-	scale 30
+	scale 60
 
 \end_inset
 
@@ -28323,6 +28323,35 @@ R
 
 \lang english
 memory access
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+write back
 \lang hebrew
 : השלב הזה חיוני למימוש כתיבה וקריאה, כאשר בשתי הפקודות מעתיקים את הערך
  של 
@@ -28334,7 +28363,11 @@ memory access
 \end_inset
 
  או להפך, בהתאמה.
- כדי לממש את הפעולה נשתמש ברכיב הזכרון
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כדי לממש את הפעולה נשתמש ברכיב הזכרון
 \family roman
 \series medium
 \shape up
@@ -28500,7 +28533,7 @@ Din
 \uwave default
 \noun default
 \color inherit
-ביט( ו-
+ביט כל אחד( ו-
 \lang english
 WE
 \family roman
@@ -28723,7 +28756,6 @@ Dout
 מכיל את תוכן הקריאה ואחרת הפלט לא מעניין אותנו.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 בשביל הקריאה וגם הכתיבה ניתן ל-
 \lang english
@@ -28850,9 +28882,8 @@ ALU
 (.
 \end_layout
 
-\end_deeper
 \begin_layout Standard
-האיור הבא מדגים את המעבד שבנינו עד כה, שיכול להריץ כל פקוד מסוג
+האיור הבא מדגים את המעבד שבנינו עד כה, שיכול להריץ כל פקודה מסוג
 \family roman
 \series medium
 \shape up
@@ -28942,13 +28973,14 @@ I
 \begin_inset Graphics
 	filename img/mem2.png
 	lyxscale 30
-	scale 30
+	scale 55
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -29353,11 +29385,11 @@ A[6]
 \begin_deeper
 \begin_layout Standard
 \noindent
-\align center
+\align left
 \begin_inset Graphics
 	filename img/do.png
 	lyxscale 30
-	scale 30
+	scale 45
 
 \end_inset
 
@@ -29370,11 +29402,11 @@ A[6]
 
 \begin_layout Standard
 \noindent
-\align center
+\align left
 \begin_inset Graphics
 	filename img/loop.png
 	lyxscale 30
-	scale 30
+	scale 45
 
 \end_inset
 
@@ -29454,7 +29486,7 @@ A
 \begin_inset Graphics
 	filename img/a4.png
 	lyxscale 30
-	scale 30
+	scale 60
 
 \end_inset
 
@@ -30074,7 +30106,7 @@ bne $t0, $0, label
 \begin_inset Graphics
 	filename img/addi.png
 	lyxscale 30
-	scale 30
+	scale 45
 
 \end_inset
 
@@ -30091,7 +30123,7 @@ bne $t0, $0, label
 \begin_inset Graphics
 	filename img/algo.png
 	lyxscale 30
-	scale 30
+	scale 45
 
 \end_inset
 
@@ -30405,7 +30437,7 @@ $s0
 \begin_inset Graphics
 	filename img/mult.png
 	lyxscale 30
-	scale 30
+	scale 60
 
 \end_inset
 
@@ -30603,11 +30635,5373 @@ a
 \begin_inset Graphics
 	filename img/ll.png
 	lyxscale 30
-	scale 30
+	scale 60
 
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{V
+\backslash
+;
+\backslash
+; מעבד Multi-Cycle}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעבד
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Multi-Cycle
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+הרצאה
+\end_layout
+
+\begin_layout Standard
+עד כה בנינו מעבד שיכול להריץ כל פקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+R
+\lang hebrew
+, כך שכל שנותר הוא קפיצות והתניות.
+ נממש באופן הבא:
+\end_layout
+
+\begin_layout Enumerate
+נקרא את הפקודה מזכרון הפקודות.
+\end_layout
+
+\begin_layout Enumerate
+נקרא את הרגיסטרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+rs, rt
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מה-
+\lang english
+register file
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+נחשב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sign extend
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונכפיל ב-
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+shift
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמאלה( את ההיסט אליו צריך לקפוץ אם מתקיים התנאי.
+\end_layout
+
+\begin_layout Enumerate
+נחשב את הכתובת הבא אם לא נקפוץ, ונקבע את הכתובת אליה אולי נקפוץ להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\left({\rm PC}+4\right)+\left({\rm offset}\ll2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+ה-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ישווה את הרגיסטרים לפי בהתאם לסוג ההשוואה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\rm PC}$
+\end_inset
+
+ יעודכן ל-
+\begin_inset Formula ${\rm PC}+4$
+\end_inset
+
+ או לכתובת במקרה הקפיצה, בהתאם לתוצאת ההשוואה.
+\end_layout
+
+\begin_layout Description
+דוגמה הפקודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family typewriter
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+beq $t1, $t2, -0x0040
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תבצע
+\begin_inset Formula 
+\[
+{\rm PC}=\left(\left({\rm Reg\left[\$t1\right]-{\rm Reg\left[\$t2\right]}}==0\right)\right)\;?\;\left(\left({\rm PC}+4\right)+\left(-0x0040\right)\ll2\right)\;:\;\left({\rm PC}+4\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מבחינת החיווט החדש שנדרש, באדום ניתן לראות את הרכיבים שנוספו לנו כדי לספק
+ את התיאור הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ss.png
+	lyxscale 30
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פקודות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+J-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נממש בדומה, כאשר עתה נעדכן
+\begin_inset Formula 
+\[
+{\rm PC}=\left({\rm PC}+4\right)\left[31-28\right].\left({\rm offset}\ll2\right)
+\]
+
+\end_inset
+
+כאשר ה-
+\begin_inset Formula $.$
+\end_inset
+
+ היא פעולת הצמדה )
+\lang english
+concatenation
+\lang hebrew
+( וה-
+\lang english
+offset
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא תרגום של הפרש הכתובות בין כתובת הפקודה הנוכחית לכתוב ה-
+\lang english
+label
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+לסיכום המעבד השלם שלנו נראה כך 
+\series bold
+הוספת תמונה
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+יחידת השליטה
+\end_layout
+
+\begin_layout Standard
+עד כה המעבד שלנו כולל כל מיני ביטים שמשמשים כסלקטורים ל-
+\lang english
+Mux
+\lang hebrew
+-ים ורכיבים אחרים )מסומנים בכחול ולא מגיעים משום מקום(.
+ את כולם אנחנו מחשבים על בסיס שלב הפענוח של הפקודה.
+ היחידה שלוקחת את ה-
+\lang english
+opcode
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)ובמקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+R-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גם את ה-
+\lang english
+funct
+\lang hebrew
+( ומחשבת את השדות השונים ששולטים על הריצה נקרא ה-
+\lang english
+Control Unit
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ctrl.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה להלן טבלת אמת שכוללת את ערכי השדות שמחשב ה-
+\lang english
+Control Unit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור מספר פקודות
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/merg.png
+	lyxscale 30
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה בהתעלם מפקודות אריתמטיות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I-Type
+\lang hebrew
+, ניתן לממש ביעילות את המולטי-פונקציה הזו באמצעות שערי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AND
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיזהו את סוג הפקודה ו-
+\lang english
+OR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיחשבו את ערך השדה על בסיס סוג הפקודה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/or.png
+	lyxscale 30
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השיטה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Logic Array
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה גם את ה-
+\lang english
+Control
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתוך ה-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)האם התוצאה היא אפס, שלילית וכו'( ניתן לממש באופן דומה ולא מעניין.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מעבד רב-מחזורי
+\end_layout
+
+\begin_layout Standard
+נממש את המעבד בדרך אחרת תחת אותן פקודות.
+\end_layout
+
+\begin_layout Standard
+הבעיה ב-
+\lang english
+Single Cycle MIPS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא שהכל קורה בזמן מחזור אחד, כלומר זמן המחזור חסום מלמטה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י ה-
+\begin_inset Formula $t_{pd}$
+\end_inset
+
+ של המסלול הקריטי )שהוא פקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sw
+\lang hebrew
+( כלומר
+\begin_inset Formula 
+\[
+t_{cycle}\geq t_{fetch}+t_{decode}+t_{execute}+t_{memory}+t_{writeback}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל פקודה ב-
+\lang english
+ISA
+\lang hebrew
+ נגדיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Cycle per Instruction
+\lang hebrew
+, שסופר את מספר המחזורים שנדרשים לביצוע פקודה.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Single Cycle MIPS
+\lang hebrew
+, ה-
+\lang english
+CPI
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל פקודה.
+\end_layout
+
+\begin_layout Standard
+הזמן שלוקח להריץ תכנית היא 
+\begin_inset Formula ${\rm IC}\times{\rm CPI}\times t_{cycle}$
+\end_inset
+
+ כאשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Instruction Count
+\lang hebrew
+, כלומר מספר הפקודות בתוכנה.
+\end_layout
+
+\begin_layout Standard
+המטרה שלנו היא למזער את זמן הריצה של תוכנה, גם אם מספר המחזורים לפקודה עלה
+ )כי זה יכול לאפשר לנו להוריד את זמן המחזור משמעותית(.
+\end_layout
+
+\begin_layout Itemize
+כדי למזער את 
+\begin_inset Formula $t_{cycle}$
+\end_inset
+
+ צריך לממש את המעבד באופן יותר יעיל, או להפריד כל פקודה ליותר מחזורים.
+\end_layout
+
+\begin_layout Itemize
+כדי למזער את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CPI
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לממש פקודות בפחות מחזורים.
+\end_layout
+
+\begin_layout Itemize
+כדי למזער
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לממש קומפיילר יותר חכם שמצמצם פעולות מיותרות.
+\end_layout
+
+\begin_layout Standard
+איך נחשב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CPI
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של תוכנה מסוימת? נחשב כך
+\begin_inset Formula 
+\[
+{\rm CPI}=\frac{\#cycles}{IC}=\frac{\sum\limits _{i}CPI_{i}\cdot IC_{i}}{IC}=\sum_{i}CPI_{i}\cdot\frac{IC_{i}}{IC}=\sum_{i}CPI_{i}\cdot F_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה 
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+שיטות השוואת ביצועי מעבדים
+\end_layout
+
+\begin_layout Itemize
+הרצה על חומרה אמיתית: קל להריץ על פני הרבה זמן, קשה לנתח לעומק.
+ מה נשווה בין מעבדים?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לרוב נריץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+benchmark
+\lang hebrew
+-ים סטנדרטיים של פעולות מקבולות כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+compression
+\lang hebrew
+, תוכנות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+office
+\lang hebrew
+, קומפיילרים ואינטרפרטרים.
+\end_layout
+
+\begin_layout Enumerate
+אפשר לחשב ביצועים מקסימליים )
+\lang english
+MIPS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+MFLOPS
+\lang hebrew
+( אבל הם לרוב לא ריאליסטיים כי אי אפשר להגיע אליהם בריצה סטנדרטית.
+\end_layout
+
+\begin_layout Enumerate
+אפשר, אבל בפועל קשה, להשוות את ה-
+\lang english
+CPI
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וה-
+\lang english
+IC
+\lang hebrew
+ אחד-לאחד עם מעבדים אחרים כי אם ה-
+\lang english
+ISA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משתנה אז ההשוואה חסרת תוכן.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+סימולטורים: יותר איטי מביצועים במציאות ומגביל את אורך הריצה ושאר המשאבים.
+\end_layout
+
+\begin_layout Itemize
+אנליזה: חישוב תאורטי של ביצועים על פני תבניות שימוש שונות.
+\end_layout
+
+\begin_layout Standard
+אם נפריד סוגי פקודות שונות ונבדוק את זמן הריצה שלהם )מסלולים לא קריטיים
+ של 
+\begin_inset Formula $t_{pd}$
+\end_inset
+
+(, נגלה שחלק מהפקודות אפשר לממש ביעילות כי זמן נשרף )לדוגמה פקודות שלא כותבות
+ לזיכרון(.
+ נחלק כל פקודה לחמישה חלקים )החלקים הקנוניים של ביצוע פקודה שראינו בהרצאה
+ שעברה(.
+\end_layout
+
+\begin_layout Description
+דוגמה נפצל את הפקודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+lw
+\lang hebrew
+ למחזור שונה לכל שלב, כלומר במקום מחזור אחד לחמישה שלבים, מחזור אחד לכל
+ שלב.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/alu2.png
+	lyxscale 30
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שנקבל תדירות הרבה יותר גבוהה אבל מבחינת ביצועים עבור השלבים שאינם
+ הארוכים ביותר, אנחנו מבזבזים זמן עכשיו, כלומר הרצת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+lw
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לוקחת יותר זמן.
+ לעומת זאת, פקודות אחרות לא ידרשו את כל השלבים ולכן כן יהיו יותר קצרים.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כדי לאפשר את הריצה עם במספר שלבים, נצטרך לזכור מה קרה בשלב הקודם, ונעשה
+ זאת באמצעות רגיסטרים שיחזיקו את תוצאת הפקודות בכל שלב )ראו איור(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/ma.png
+	scale 65
+	BoundingBox 0bp 0bp 1140bp 674bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך הגענו להפרדה הזו? נביט במסלול של פקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+R-Type
+\lang hebrew
+: מתחילים ב-
+\lang english
+fetch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז קריאה מרגיסטרים, מעבר ב-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולסיום כתיבה חזרה לרגיסטר.
+ לכן נפריד 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ בין ה-
+\lang english
+fetch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לקריאה; 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ בין הקריאה לחישוב; 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ בין החישוב לכתיבה חזרה לרגיסטרים; 
+\begin_inset Formula $\left(4\right)$
+\end_inset
+
+ ולפני כתיבה מהזיכרון לרגיסטרים.
+\end_layout
+
+\begin_layout Description
+הערה כרגע חסרה לנו לוגיקה עדיין שדואגת שהמעבד יבצע רק את השלב שצריך כרגע.
+ כי אחרת ה-
+\lang english
+fetch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קורה בכל מחזור שעון ולא רק במחזורים שמוקצים ל-
+\lang english
+fetch
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+איחודי יחידות
+\end_layout
+
+\begin_layout Itemize
+ה-
+\lang english
+fetch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קורא מהזכרון אבל גם עושה אינקרמנט ב-
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בכל פעם.
+ במקום שיהיה לנו מחבר נפרד שדורש טרנזיסטורים, נשתמש ב-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שבכל מקרה כרגע לא פעיל )ראו חוטים חדשים בסגול(, וזה יעזור לנו לקיצרו פעולות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+branch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בעתיד.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/pink.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בשביל הבנת המעבד, הפרדנו את הזכרון של הכתובות והדאטא, אבל אין באמת סיבה
+ לעשות את זה וזה מאוד יקר.
+ נשים לב שברגע שאנחנו ב-
+\lang english
+multicycle
+\lang hebrew
+, לעולם לא נשתמש בשתי יחידות הזכרון באותו זמן מחזור, ולכן אפשר פשוט לאחד
+ אותן עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+mux
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמבטא איזה מידע אנחנו רוצים, משמאל איור לפני ומימין איור אחרי השינוי.
+ עדיין נפריד את התוצאה לרגיסטרים השונים כי נרצה לזכור מה המצב שלנו כמו שצריך
+ ואם הכתובת והדאטא היו באותו הרגיסטר המצב לא היה מוגדר היטב.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/fetch.png
+	scale 65
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/mem3.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size larger
+מספר המחזורים לפי סוגי פקודות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+R-Type
+\lang hebrew
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים )
+\lang english
+fetch
+\lang hebrew
+, פענוח וקריאה מהרגיסטרים, חישוב ב-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכתיבה חזרה לרגיסטרים(, במקום חמישה כי אנחנו לא קוראים מהזכרון - חסכנו זמן!
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+lw
+\lang hebrew
+: כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המחזורים )
+\lang english
+fetch
+\lang hebrew
+, פענוח, קריאה מהרגיסטרים, חישוב ב-
+\lang english
+ALU
+\lang hebrew
+, קריאה מהזכרון וכתיבה חזרה לרגיסטרים(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+sw
+\lang hebrew
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים )
+\lang english
+fetch
+\lang hebrew
+, פענוח, קריאה מהרגיסטרים, חישוב ב-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכתיבה לזכרון(, כאמור שוב במקום חמישה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+beq
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים )
+\lang english
+fetch
+\lang hebrew
+, פענוח, קריאה מהרגיסטרים, חישוב התנאי ב-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באמצעות דגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה-
+\numeric on
+0
+\numeric off
+, אולי חישוב הכתובת עם ההיסט במקרה של קפיצה וכתיבה ל-
+\lang english
+PC
+\lang hebrew
+(, כאשר חיבור ה-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\lang english
+PC
+\lang hebrew
+, כפי שראינו באיחוד היחידות, מאפשר לנו לחשב את ההיסט מ-
+\lang english
+PC
+\lang hebrew
+.
+ הבעיה כרגע היא שאם התנאי מתקיים זה לוקח שלב אחד יותר מאשר אם הוא לא, ונרצה
+ שזה יקח מספר פעולות קבוע.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכן נוכל לחשב את ההיסט )שדורש רק את ה-
+\lang english
+imm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הפקודה( בזמן הפענוח ונשמור את התוצאה ב-
+\lang english
+ALUout
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ )שבו כרגע אף אחד לא משתמש(, ואז נחשב את התנאי, ורק אז נכתוב ל-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או את הכתובת המחושבת או סתם אינקרמנט ב-
+\numeric on
+4
+\numeric off
+.
+ חשוב לשים לב שאין לנו דרך לשים את החישוב באותו זמן מחזור ב-
+\lang english
+PC
+\lang hebrew
+.
+ כך ירדנו ל-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים )
+\lang english
+fetch
+\lang hebrew
+, פענוח וחישוב ההיסט וחישוב ב-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכתיבה ל-
+\lang english
+PC
+\lang hebrew
+(.
+ הסטודנטית המשקיעה תסתכל על המעבד החדש שנבנה )באיור( ותווכח שאכן נדרשים
+ רק שלושה מחזורים כדי לבצע את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+beq
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/beq.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+J-Type
+\lang hebrew
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים )
+\lang english
+fetch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופענוח וקפיצה( כאשר בין הפענוח לחישוב הערך שיכנס ל-
+\lang english
+PC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במחזור הבא אין אף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Flip-Flop
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחר כך ולכן זה קורה באותו המחזור.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/pink2.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+במהלך ניתוח כל אחת מהפקודות, בנינו בצד מכונת מצבים שמייצגת את המעבד, כי
+ בסופו של דבר בעת מימוש המעבד באמצעות תהליך הסינתזה שלממדנו צריך לבנות מכונת
+ מצבים.
+ להלן הטבלה, שתואמת בדיוק לניתוח הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל של כל אחד מהשלבים.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/state.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרכיב היחיד שעוד לא התייחסנו אליו זה הקונטרול, שדואג לכל המוקסים ולשליטה
+ על השלבים השונים, והוא מוטמע במעבד הקיים )כמובן בלי הפרטים המלאים בתוך
+ הרכיב( באופן הבא.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/pic.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכונת המצבים יחד עם הקונטרול שמגדיר באיזה שלב אנחנו בכל פעם נראת כך
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/stat.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לסיכום כל שלב ומה הוא עושה, ללא מידע חדש
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/adr.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{תרגול}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+תרגול
+\end_layout
+
+\begin_layout Standard
+נסקור מחדש את מעבד ה-
+\lang english
+MIPS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במחזור אחד.
+ להלן האיור המלא של המעבד, יחד עם יחידת הבקרה )והפרדה לוגית בלבד בין שלבי
+ ביצוע פקודה(
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/skip.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה המעבד שהגדרנו בהרצאה )וזה שרואים כאן באיור( תומך רק בפעולות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+lw, sw, add, sub, and, or, slt, beq, j
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אבל לא תומך ב-
+\lang english
+bne, addi, jal
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכו'.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+דגלי יחידת הבקרה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+ALUop
+\lang hebrew
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים המחזיקים את קוד הפעולה שכרגע נבצע )חיבור, חיסור, להתסכל על ה-
+\lang english
+funct
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+MemToReg
+\lang hebrew
+: ביט שקובע האם במחזור הנוכחי ניקח את המילה שנקראה מיחידת הזכרון )
+\numeric on
+1
+\numeric off
+( או את התוצאה )
+\numeric on
+0
+\numeric off
+( מה-
+\lang english
+ALU
+\lang hebrew
+ ונכתוב אותה ל-
+\lang english
+Register File
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)או שנתעלם ממנה(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+MemRead
+\lang hebrew
+: ביט שקובע האם במחזור הנוכחי קוראים מהזכרון )ונכנס לרכיב הזכרון(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+MemWrite
+\lang hebrew
+: ביט שקובע האם כותבים לזכרון )ונכנס לרכיב הזכרון(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Branch
+\lang hebrew
+: האם הפקודה היא פעולת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+branch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)ולכן יש לשקול קפיצה להיסט(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+ALUSrc
+\lang hebrew
+: האם הקלט השני ל-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא רגיסטר )
+\numeric on
+1
+\numeric off
+( או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+immediate
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שעשו לו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Sign Extend
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\numeric on
+0
+\numeric off
+(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+RegWrite
+\lang hebrew
+: ביט שקובע האם לכתוב את המילה שנכנסת לחוט הדאטא לכתיבה ל-
+\lang english
+Register File
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לאחד הרגיסטרים בו )או להתעלם ממנה(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Jump
+\lang hebrew
+: האם הפקודה הנוכחית היא קפיצה לא מותנת.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+RegDst
+\lang hebrew
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ האם הרגיסטר אליו כותבים )אם כותבים( את תוצאת הפעולה הוא השני שמוגדר בפקודה
+ )
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+( 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+או השלישי )
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(.
+\end_layout
+
+\begin_layout Standard
+נוסף על כל אלו, יש ל-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יחידת בקרה משל עצמו, שמקבל את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חמשת הביטים מיחידת הבקרה המרכזית שמגדירים את ה-
+\lang english
+ALUop
+\lang hebrew
+, יחד עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חמשת הביטים שמייצגים )רק במקרה של פקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+R-Type
+\lang hebrew
+( את ה-
+\lang english
+funct
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובהתאם ל-
+\lang english
+opcode
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחליט איזה חישוב צריך לעשות ה-
+\lang english
+ALU
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נחשב את הדגלים בפקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+add
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula ${\rm RegDst}=1$
+\end_inset
+
+ כי נשתמש ברגיסטר השלישי בפקודה כיעד החישוב.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm Branch}=0$
+\end_inset
+
+ כי מדובר בפעולה אריתמטית ולא קפיצה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemRead}=0$
+\end_inset
+
+ כי אנחנו לא מתעסקים עם הזכרון בסכימה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemToReg}=0$
+\end_inset
+
+ כי כאמור לא נרצה השפעה של הזכרון ונרצה את תוצאת ה-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לרגיסטר היעד.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm ALUop}=10$
+\end_inset
+
+ כי זה הקוד לפקודות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+R-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וה-
+\lang english
+funct
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $100000$
+\end_inset
+
+ )לא אמורים לזכור(, ואז ה-
+\lang english
+ALU Control
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יחשב את הקוד שה-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מבין ונקבל 
+\begin_inset Formula $0010$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemWrite}=0$
+\end_inset
+
+ כי כאמור אין לנו עיסוק בזכרון.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm ALUSrc}=0$
+\end_inset
+
+ כי אנחנו רוצים לחשב סכום על שני רגיסטרים ולא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+immediate
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm RegWrite}=1$
+\end_inset
+
+ כי אנחנו כן רוצים לכתוב את תוצאת החישוב חזרה ל-
+\lang english
+Register File
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה נחשב את הדגלים בפקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+lw
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula ${\rm RegDst}=0$
+\end_inset
+
+ כי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+lw
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא פקודה מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן היעד הוא הרגיסטר השני שמסופק.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm Branch}=0$
+\end_inset
+
+ כי מדובר בפעולה אריתמטית ולא קפיצה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemRead}=1$
+\end_inset
+
+ כי אנחנו רוצים לקרוא מהזכרון ולכתוב לרגיסטר.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemToReg}=1$
+\end_inset
+
+ כי כאמור אנחנו רוצים לקרוא מהזכרון ולהשתמש במידע הזה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm ALUop}=01$
+\end_inset
+
+ כי זה הקוד לפקודות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז ה-
+\lang english
+ALU Control
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יחשב את הקוד שה-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מבין לסכימה )לכל ה-
+\lang english
+I-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה מה שמשתמשים( ונקבל 
+\begin_inset Formula $0010$
+\end_inset
+
+.
+\begin_inset Formula $\todo$
+\end_inset
+
+ לסיים את הקידודים למעלה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemWrite}=0$
+\end_inset
+
+ כי אנחנו קוראים ולא כותבים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm ALUSrc}=1$
+\end_inset
+
+ כי אנחנו רוצים לחשב את הכתובת לפי סכימה של רגיסטר עם ה-
+\lang english
+immediate
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ לכתובת הקריאה.
+ 
+\begin_inset Formula $\todo$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm RegWrite}=1$
+\end_inset
+
+ כי אנחנו כן רוצים לכתוב את תוצאת הקריאה מהזכרון חזרה ל-
+\lang english
+Register File
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה נחשב את הגדלים בפקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+beq
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula ${\rm RegDst}=0$
+\end_inset
+
+ כי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+lw
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא פקודה מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן היעד הוא הרגיסטר השני שמסופק.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm Branch}=1$
+\end_inset
+
+ כי מדובר בפעולת קפיצה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemToReg}$
+\end_inset
+
+ לא משנה כי כל עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RegWrite
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כל ערך שלו לא ישפיע על מצב הרגיסטרים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemRead}$
+\end_inset
+
+ כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm ALUop}=01$
+\end_inset
+
+ כי זה הקוד לפקודות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז ה-
+\lang english
+ALU Control
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יחשב את הקוד שה-
+\lang english
+ALU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מבין לסכימה )לכל ה-
+\lang english
+I-Type
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה מה שמשתמשים( ונקבל 
+\begin_inset Formula $0010$
+\end_inset
+
+.
+\begin_inset Formula $\todo$
+\end_inset
+
+ לסיים את הקידודים למעלה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm MemWrite}=0$
+\end_inset
+
+ כי אנחנו לא קוראים ולא כותבים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm ALUSrc}=0$
+\end_inset
+
+ כי אנחנו רוצים להשוות את הרגיסטר עם ה-
+\lang english
+immediate
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ לחישוב התנאי.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\rm RegWrite}=0$
+\end_inset
+
+ כי אנחנו לא צריכים לכתוב שום דבר חזרה ל-
+\lang english
+Register File
+\lang hebrew
+.
 \end_layout
 
 \end_deeper

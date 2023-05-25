@@ -6036,5 +6036,1534 @@ g\left(z\right)+g\left(x+z\right) & =f\left(y^{2}\right)+f\left(z+y^{2}\right)+g
  הוא פולינום.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{IV
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ | 
+\end_layout
+
+\begin_layout Description
+הגדרה יהי הטור 
+\begin_inset Formula $p\left(x_{1},\ldots,x_{m}\right)=\sum\limits _{\alpha\in\fldn_{0}^{m}}a_{\alpha}\Pi_{i=1}^{n}x_{i}^{\alpha_{i}}$
+\end_inset
+
+.
+ אם המקדמים של 
+\begin_inset Formula $p$
+\end_inset
+
+ מתאפסים מחוץ לתחום חסום, נגדיר את המעלה הטוטאלית של 
+\begin_inset Formula $p$
+\end_inset
+
+ להיות
+\begin_inset Formula 
+\[
+\deg p=\max\limits _{\alpha:a_{\alpha}\neq0}\sum\limits _{i=1}^{m}\alpha_{i}
+\]
+
+\end_inset
+
+ואת המעלה האינדיווידואלית להיות
+\begin_inset Formula 
+\[
+\deg'p=\max_{\alpha:a_{\alpha}\neq0}\norm{\alpha}_{\infty}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $x_{1}x_{2}x_{3}+x_{1}x_{2}x_{7}^{2}$
+\end_inset
+
+, הדרגה הטוטאלית היא 
+\begin_inset Formula $4$
+\end_inset
+
+ והאינדיבידואלית היא 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה נגדיר 
+\begin_inset Formula $RM'_{d,m,q}=\left\{ f:\f_{q}^{m}\to\f_{q}:\deg'f\leq d\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה מתקיים 
+\begin_inset Formula $RM_{d,m,q}\subseteq RM'_{d,m,q}\subseteq RM_{dm,m,q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה כיצד נקודד עם 
+\begin_inset Formula $RS_{d,m,q}$
+\end_inset
+
+? נרצה לקודד את המילה 
+\begin_inset Formula $\left(a_{0},\ldots,a_{d}\right)$
+\end_inset
+
+.
+ נשתמש בה כמקדמים של הפולינום המושרה ואז נשערך ב-
+\begin_inset Formula $0,\ldots,q-1$
+\end_inset
+
+ וזו תהיה מילת הקוד שלנו.
+ הבעיה היא שאין לנו דרך לשחזר ממילת הקוד את המילה המקורית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $\left(a_{0},\ldots,a_{d}\right)$
+\end_inset
+
+, נגדיר פולינום באמצעות אינטרפולציה ביחידות ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(i\right)=a_{i}$
+\end_inset
+
+ ואז 
+\begin_inset Formula $f$
+\end_inset
+
+ תהיה מילת הקוד שלנו 
+\series bold
+איך היא מויצגת??
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+איך נכליל זאת לפולינום בכמה משתנים? לדרגה טוטאלית 
+\begin_inset Formula $d$
+\end_inset
+
+ יש לנו 
+\begin_inset Formula ${d+m \choose m}$
+\end_inset
+
+ מקדמים, לכן נצטרך לבחור קבוצה 
+\begin_inset Formula $S\subseteq\f_{q}^{m}$
+\end_inset
+
+ בגודל 
+\begin_inset Formula ${d+m \choose d}$
+\end_inset
+
+ שבו נשערך וזו תהיה מילת הקוד שלנו.
+ 
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $S$
+\end_inset
+
+ היא 
+\bar under
+קבוצת אינטרפולציה
+\bar default
+ לקוד 
+\begin_inset Formula $C$
+\end_inset
+
+ )שמכיל פ' 
+\begin_inset Formula $\f_{q}^{m}\mapsto\f_{q}$
+\end_inset
+
+( אם לכל פ' חלקית 
+\begin_inset Formula $\tilde{f}:S\to\f_{q}$
+\end_inset
+
+ קיימת הרחבה יחידה ל-
+\begin_inset Formula $f:\f_{q}^{m}\to\f_{q}$
+\end_inset
+
+ שהיא פ' ב-
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $m=1$
+\end_inset
+
+, 
+\begin_inset Formula $S=\left\{ 0,\ldots,d\right\} $
+\end_inset
+
+ היא קבוצת אינטרפולציה )ישיר ממשפט האינטרפולציה(.
+\end_layout
+
+\begin_layout Description
+דוגמה למה לא כל קבוצה היא קבוצת אינטרפולציה? נביט ב-
+\begin_inset Formula $m\gg1$
+\end_inset
+
+ ו-
+\begin_inset Formula $d=2$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left|S\right|\approx m^{2}$
+\end_inset
+
+.
+ נבחר ישר ועליו נדרוש ש-
+\begin_inset Formula $\tilde{f}$
+\end_inset
+
+ יהיה 
+\begin_inset Formula $0$
+\end_inset
+
+ על כל הערכים חוץ מ-
+\begin_inset Formula $1$
+\end_inset
+
+ שיהיה 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $m>4$
+\end_inset
+
+ ולכן יש לפחות שלושה אפסים על הישר, ובגלל שכל פולינום רב משתני ממעלה טוטאלית
+ לכל היותר 
+\begin_inset Formula $d$
+\end_inset
+
+ הוא מדרגה 
+\begin_inset Formula $d$
+\end_inset
+
+ על כל ישר )אם נחליף את הפרמטרים ב-
+\begin_inset Formula $u+tv$
+\end_inset
+
+ אז זה פולינום במשתנה יחיד מדרגה לכל היותר 
+\begin_inset Formula $d$
+\end_inset
+
+(, זה בהכרח פולינום האפס.
+ עם זאת כמובן שיש לנו ערך שונה מאפס שדרשנו לכן לא נוכל להרחיב את 
+\begin_inset Formula $\tilde{f}$
+\end_inset
+
+ לפולינום בקוד.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Low-Degree Extension
+\end_layout
+
+\begin_layout Standard
+נרצה לבצע קידוד אינטרפולציה ל-
+\begin_inset Formula $RM'_{d,m,q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה נבחר 
+\begin_inset Formula $H\subseteq\f_{q}$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $d+1$
+\end_inset
+
+ )לדוגמה 
+\begin_inset Formula $H=\left\{ 0,\ldots,1,d\right\} $
+\end_inset
+
+( ו-
+\begin_inset Formula $S=H^{m}\subseteq\f_{q}^{m}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $f:S\to\f_{q}$
+\end_inset
+
+ קיימת הרחבה יחידה 
+\begin_inset Formula $\hat{f}:\f_{q}^{m}\to\f_{q}$
+\end_inset
+
+ שהיא מילת בקוד 
+\begin_inset Formula $RM'_{d,m,q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה במקרה כזה נאמר כי 
+\begin_inset Formula $\hat{f}$
+\end_inset
+
+ היא ה-
+\lang english
+low-degree extension
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $x^{0}\in S$
+\end_inset
+
+.
+ נסתכל על 
+\begin_inset Formula $\mez 1_{x^{0}}:S\to\f_{q}$
+\end_inset
+
+.
+ עבור כל 
+\begin_inset Formula $i$
+\end_inset
+
+ נגדיר את 
+\begin_inset Formula $f_{i}:\f_{q}\to\f_{q}$
+\end_inset
+
+ להיות הפולינום היחיד מדרגה 
+\begin_inset Formula $d\geq$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $f_{i}\left(y\right)=\mez 1_{\left\{ y=x_{i}^{0}\right\} }$
+\end_inset
+
+ לכל 
+\begin_inset Formula $0\leq y\leq d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+עתה נגדיר 
+\begin_inset Formula $f\left(x\right)=\prod\limits _{i=1}^{m}f_{i}\left(x_{i}\right)$
+\end_inset
+
+.
+ לפולינום הזה יש דרגה אינדבידואלית 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+כל פ' היא קומבינציה לינארית של פ' מהצורה 
+\begin_inset Formula $\mez 1_{x}$
+\end_inset
+
+ ולכן גם ניתן להרחיבה.
+ 
+\series bold
+להוסיף על יחידות
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+בדיקת סכום ומכפלה על אורקל פולינומי
+\end_layout
+
+\begin_layout Standard
+נניח שיש לנו 
+\begin_inset Quotes xld
+\end_inset
+
+קופסה פולינומית
+\begin_inset Quotes xrd
+\end_inset
+
+ שמציגה ממשק 
+\begin_inset Formula $f_{d,m,q}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f:\f_{q}^{m}\to\f_{q}$
+\end_inset
+
+ פ' מדרגה טוטאלית לכל היותר 
+\begin_inset Formula $d$
+\end_inset
+
+ ונוכל להגיש שאילתות לחישוב ערכי 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה שערוך מקרי בפולינום )שנקבע מראש( מדרגה טוטאלית 
+\begin_inset Formula $dm\geq$
+\end_inset
+
+ מתאפס בסיכוי 
+\begin_inset Formula $1$
+\end_inset
+
+ )פולינום האפס( או בסיכוי לכל היותר 
+\begin_inset Formula $\frac{dm}{q}\geq$
+\end_inset
+
+ )ממשפט שוארץ-זיפל(.
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $f_{d,m,q}$
+\end_inset
+
+ ו-
+\begin_inset Formula $g_{d,m,q}$
+\end_inset
+
+ ו-
+\begin_inset Formula $h_{2d,m,q}$
+\end_inset
+
+, נרצה לבדוק האם 
+\begin_inset Formula $f+g=h$
+\end_inset
+
+ או 
+\begin_inset Formula $f\cdot g=h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נביט במבחן בדיקת סכום פולינומי: עבור 
+\begin_inset Formula $x\in_{R}\f_{q}^{m}$
+\end_inset
+
+ נוודא כי 
+\begin_inset Formula $f\left(x\right)+g\left(x\right)=h\left(x\right)$
+\end_inset
+
+.
+ השלמות היא 
+\begin_inset Formula $1$
+\end_inset
+
+ כי אם 
+\begin_inset Formula $f+g=h$
+\end_inset
+
+ אז תמיד נקבל שוויון, והנאותות היא 
+\begin_inset Formula $\frac{dm}{q}$
+\end_inset
+
+ )כי גם אם 
+\begin_inset Formula $\left(f+g\right)-h$
+\end_inset
+
+ אינו פולינום האפס, הוא עדיין מתאפס בהסת' לכל היותר 
+\begin_inset Formula $\frac{dm}{q}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה אם זה היה דטרמיניסטי היינו צריכים להשוות 
+\begin_inset Formula $d^{m}$
+\end_inset
+
+ ערכים.
+\end_layout
+
+\begin_layout Description
+הערה כדי לקבל נאותות 
+\begin_inset Formula $0$
+\end_inset
+
+ נצטרך להשוות את הערכים של הקופסאות על קבוצת אינטרפולציה ועל כל קבוצה אחרת
+ גם אם כל השוויונות יתקבלו לא נוכל להכריע בהסת' 
+\begin_inset Formula $1$
+\end_inset
+
+ האם באמת מתקיים שוויון.
+\end_layout
+
+\begin_layout Standard
+עתה מבחן בדיקת מכפלה פולינומית: עבור 
+\begin_inset Formula $x\in_{R}\f_{q}^{m}$
+\end_inset
+
+ נוודא כי 
+\begin_inset Formula $f\left(x\right)\cdot g\left(x\right)=h\left(x\right)$
+\end_inset
+
+.
+ השלמות היא שוב 
+\begin_inset Formula $1$
+\end_inset
+
+ והנאותות היא 
+\begin_inset Formula $\frac{2dm}{q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מבחן ה-
+\lang english
+sum-check
+\end_layout
+
+\begin_layout Description
+הגדרה נתונות קופסאות 
+\begin_inset Formula $f_{d,m,q}^{0},f_{d,m-1,q}^{1},\ldots,f_{d,1,q}^{m-1},f^{m}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f^{m}\in\f_{q}$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $\left(f^{0},\ldots,f^{m}\right)$
+\end_inset
+
+ מקיימת את תכונת הסכום אם
+\begin_inset Formula 
+\[
+f^{i}\left(x_{i+1},\ldots,x_{m}\right)=\sum_{y=0}^{d}f^{i-1}\left(y,x_{i+1},\ldots,x_{m}\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $i\in\left[m\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left(x_{1},\ldots,x_{m}\right)\in\f_{q}^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נרצה לחשב סכום של 
+\begin_inset Formula $d^{m}$
+\end_inset
+
+ ערכים בזמן תת-אקספ'.
+ נגדיר לכל מספר אינדקס מהקבוצה 
+\begin_inset Formula $S=\left\{ 0,\ldots,d\right\} ^{m}$
+\end_inset
+
+ )נסדרם על קוביה 
+\begin_inset Formula $m$
+\end_inset
+
+-ממדית(, זה מגדיר פ' 
+\begin_inset Formula $f:S\to\f_{q}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f^{0}=\hat{f}$
+\end_inset
+
+, הרחבת ה-
+\lang english
+low-degree
+\lang hebrew
+ ל-
+\begin_inset Formula $\f_{q}^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח שיש לנו 
+\begin_inset Formula $\left(f^{0},\ldots,f^{m}\right)$
+\end_inset
+
+ שמקיימים את תכונת הסכום.
+ הסכום של כל הערכים של 
+\begin_inset Formula $f^{0}$
+\end_inset
+
+ במרחב )מיושר לצירים, אנכי לאחד הממדים( שווה לערך אחד של 
+\begin_inset Formula $f^{1}$
+\end_inset
+
+ בקוביה 
+\begin_inset Formula $m-1$
+\end_inset
+
+ ממדית.
+ כדי לסכום את כל הערכים בקוביה 
+\begin_inset Formula $S$
+\end_inset
+
+ )שהם ערכי הפולינום 
+\begin_inset Formula $f^{0}$
+\end_inset
+
+ בכל נקודה(, מספיק שנסכום רק את כל הערכים בקוביה ה-
+\begin_inset Formula $m-1$
+\end_inset
+
+ ממדית של ערכי 
+\begin_inset Formula $f^{1}$
+\end_inset
+
+.
+ באותו האופן, כל סכום ערכי ישר בקוביה של ערכי 
+\begin_inset Formula $f^{1}$
+\end_inset
+
+ הוא ערך אחד בקוביה של 
+\begin_inset Formula $f^{2}$
+\end_inset
+
+ וחוזר חלילה.
+ לסיום 
+\begin_inset Formula $f^{m}$
+\end_inset
+
+ יהיה סכום הערכים שלנו.
+\end_layout
+
+\begin_layout Standard
+המהלך הסופי שלנו הוא כזה: נרצה לחשב סכום של 
+\begin_inset Formula $d^{m}$
+\end_inset
+
+ ערכים.
+ ניתן לכוח על לתת לנו 
+\begin_inset Formula $\left(f^{0},\ldots,f^{m}\right)$
+\end_inset
+
+ פולינומים שלכאורה מקיימים את תכונת הסכום ו-
+\begin_inset Formula $f^{0}$
+\end_inset
+
+ מכיל את הערכים שנרצה לסכום.
+ נבדוק האם ה-
+\begin_inset Formula $m$
+\end_inset
+
+-יה מקיימת את תכונת הסכום, ואם כן סכום המספרים יהיה 
+\begin_inset Formula $f^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המבחן שלנו יהיה כזה: לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, נגריל 
+\begin_inset Formula $\left(x_{i},\ldots,x_{m}\right)$
+\end_inset
+
+ חדשה ונבדוק האם המשוואה בהגדרת תכונת הסכום מתקיימת עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ ו-
+\begin_inset Formula $i$
+\end_inset
+
+ )כלומר האם המעבר מ-
+\begin_inset Formula $f^{i-1}$
+\end_inset
+
+ ל-
+\begin_inset Formula $i$
+\end_inset
+
+ עובד(.
+ כל בדיקה דורשת 
+\begin_inset Formula $d+2$
+\end_inset
+
+ קריאות כלומר סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ 
+\begin_inset Formula $\approx dm$
+\end_inset
+
+ קריאות.
+ למבחן הזה יש שלמות 
+\begin_inset Formula $1$
+\end_inset
+
+ ונאותות 
+\begin_inset Formula $\frac{dm}{q}$
+\end_inset
+
+ )המקרה המאתגר ביותר הוא עבור טעות במעבר יחיד ב-
+\begin_inset Formula $m$
+\end_inset
+
+-יה, והיא בין 
+\begin_inset Formula $f^{0}$
+\end_inset
+
+ ל-
+\begin_inset Formula $f^{1}$
+\end_inset
+
+, ושם ההסת' שיעבדו עלינו היא 
+\begin_inset Formula $\frac{dm}{q}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה הבעיה עם להגריל 
+\begin_inset Formula $x$
+\end_inset
+
+ לכל שלב היא שיש לנו מספר בדיקות אפשריות מאוד גדולה 
+\begin_inset Formula $q^{m}q^{m-1}\ldots q^{1}\approx q^{m^{2}}$
+\end_inset
+
+ ובשביל רדוקציה ב-
+\lang english
+PCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה הרבה אילוצים.
+\end_layout
+
+\begin_layout Standard
+מבחן עם פחות בדיקות אפשריות יקבע את 
+\begin_inset Formula $x$
+\end_inset
+
+ בהתחלה ואז בכל שלב יבצע את הבדיקה על 
+\begin_inset Formula $\left(x_{i},\ldots,x_{m}\right)$
+\end_inset
+
+.
+ למבחן זה יש שלמות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונאותות 
+\begin_inset Formula $\frac{dm}{q}$
+\end_inset
+
+ ולוקאליות 
+\begin_inset Formula $m\left(d+2\right)$
+\end_inset
+
+.
+ זהו מבחן ה-
+\lang english
+sum-check
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Description
+הערה עתה מספר הבדיקות השונות שהמבחן יכול לעשות הוא 
+\begin_inset Formula $q^{m}$
+\end_inset
+
+ )רק את 
+\begin_inset Formula $x$
+\end_inset
+
+ מגרילים פעם אחת(.
+\end_layout
+
+\begin_layout Description
+הגדרה הבעיה 
+\begin_inset Formula $QS_{n,q}$
+\end_inset
+
+ מקבלת קלט של אוסף משוואות מדרגה טוטאלית 
+\begin_inset Formula $2$
+\end_inset
+
+ ב-
+\begin_inset Formula $n$
+\end_inset
+
+ משתנים מעל 
+\begin_inset Formula $\f_{q}$
+\end_inset
+
+ ובכל משוואה 
+\begin_inset Formula $h\geq$
+\end_inset
+
+ משתנים שונים.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $q=11$
+\end_inset
+
+ מערכת המשוואות הבא היא קלט תקין לבעיה 
+\begin_inset Formula $\begin{cases}
+x_{1}x_{2}+x_{3}^{2}-7=0\\
+x_{7}x_{3}+x_{2}^{2}-1=0\\
+\vdots
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט לכל ראשוני 
+\begin_inset Formula $q$
+\end_inset
+
+, 
+\begin_inset Formula $QS_{3,q}\in\mathsf{NPH}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם נוכיח כי 
+\begin_inset Formula $\mathsf{gap}\left(1,\frac{1}{2}\right)-QS_{c,q}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\np$
+\end_inset
+
+-קשה עבור 
+\begin_inset Formula $c,q$
+\end_inset
+
+ קבועים, זה נותן לנו את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PCP
+\lang hebrew
+: נעשה רדוקציה פולי' מ-
+\begin_inset Formula $\sat$
+\end_inset
+
+ ל-
+\begin_inset Formula $QS_{c,q}$
+\end_inset
+
+ כך שניתן יהיה לספק את הקלט ל-
+\begin_inset Formula $\sat$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם ניתן לספק את הקלט ל-
+\begin_inset Formula $QS_{c,q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח 
+\begin_inset Formula $\sat\leq_{p}QS_{4,q}$
+\end_inset
+
+.
+ בהינתן הסגר 
+\begin_inset Formula $x_{1}\lor x_{2}\lor x_{3}$
+\end_inset
+
+ נסתכל עליו כ-
+\begin_inset Formula $x_{1}+x_{2}+x_{3}$
+\end_inset
+
+.
+ נרצה משוואה שתקבל 
+\begin_inset Formula $0$
+\end_inset
+
+ אם הסכום מקבל 
+\begin_inset Formula $0$
+\end_inset
+
+ ו-
+\begin_inset Formula $1$
+\end_inset
+
+ אם הוא מקבל 
+\begin_inset Formula $1,2,3$
+\end_inset
+
+.
+ נעשה אינטרפולציה ונקבל פולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמקיים זאת.
+ לחלופין מעקרון ההכלה וההדחה נקבל שהמשוואה היא
+\begin_inset Formula 
+\[
+x_{1}\lor x_{2}\lor x_{3}=x_{1}+x_{2}+x_{3}-x_{1}x_{2}-x_{2}x_{3}-x_{1}x_{3}+x_{1}x_{2}x_{3}=1
+\]
+
+\end_inset
+
+קל לקבל משוואה דומה להסגרים עם ליטרלים עם שלילה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כדי לאכוף ש-
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, נוסיף משוואות 
+\begin_inset Formula $x_{i}^{2}-x_{i}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+כדי להוריד את הדרגה הטוטאלית של המשוואות המרכזיות ל-
+\begin_inset Formula $2$
+\end_inset
+
+, נגדיר לכל 
+\begin_inset Formula $ij$
+\end_inset
+
+ 
+\begin_inset Formula $x_{ij}$
+\end_inset
+
+ שיחליף מכפלה של המשתנים 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{j}$
+\end_inset
+
+, ונוסיף לכל 
+\begin_inset Formula $ij$
+\end_inset
+
+ את המשוואה 
+\begin_inset Formula $x_{ij}=x_{i}\cdot x_{j}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+אכן יש לכל היותר 
+\begin_inset Formula $4$
+\end_inset
+
+ משתנים במשוואה כי יש רק מונום אחד עם דרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואותו נוריד לדרגה 
+\begin_inset Formula $2$
+\end_inset
+
+ עם משתנה נוסף, כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משתני הסגרים ומשתנה איחוי אחד.
+ במשוואות האכיפה האחרות ברור שאנחנו מתחת ל-
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נחזיר את מערכת המשוואות שכוללת את כל המשוואות משלושת הסוגים.
+\end_layout
+
+\begin_layout Standard
+עתה נרצה להוכיח 
+\begin_inset Formula $QS_{4,q}\leq_{p}\mathsf{gap}\left(1,\frac{1}{\sqrt{q}}\right)-QS_{n,q}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $q=\log^{2}n$
+\end_inset
+
+.
+ כלומר נרצה בהינתן מערכת משוואות 
+\begin_inset Formula $\left(\begin{smallmatrix}p_{1}=0\\
+\vdots\\
+p_{k}=0
+\end{smallmatrix}\right)$
+\end_inset
+
+ להעביר אותה למערכת משוואות 
+\begin_inset Formula $\left(\begin{smallmatrix}r_{1}=0\\
+\vdots\\
+r_{k^{10}}=0
+\end{smallmatrix}\right)$
+\end_inset
+
+ כך שאם אחת מהמשוואות 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ לא ספיקה, הרבה מאוד מ-
+\begin_inset Formula $r_{j}$
+\end_inset
+
+ לא יהיו ספיקות.
+ נבצע את הטרנס' עם הכפלה במטריצה 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ היא מטריצה יוצרת של קוד וכך נקבל את התכונה הבאה: אם יש השמה מספקת למשוואות
+ אז הכפלת 
+\begin_inset Formula $M$
+\end_inset
+
+ בשערוך היא 
+\begin_inset Formula $M\cdot0=0$
+\end_inset
+
+.
+ אם ההשמה לא מספקת, אז מילת הקוד היא לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובגלל שזה קוד )אידאלית טוב(, היא רחוקה מאוד ממילת הקוד 
+\begin_inset Formula $0$
+\end_inset
+
+ ולכן הרבה משוואות לא ישתערכו ל-
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+כדי להוריד את מספר המשתנים שאנחנו צריכים לשערך, נשתמש בשיטה שלנו לסכום הרבה
+ מספרים )לכל משוואה בנפרד(.
+\end_layout
+
 \end_body
 \end_document
