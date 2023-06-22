@@ -673,6 +673,16 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\ms}{\text{\ensuremath{\mathcal{S}}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lde}{\text{\ensuremath{\mf{LDE}}}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5955,7 +5965,7 @@ g\left(z\right)+g\left(x+z\right) & =f\left(y^{2}\right)+f\left(z+y^{2}\right)+g
 \end_layout
 
 \begin_layout Standard
- נספק הוכחה בראשי פרקים )אנלוגית לחלוטין להוכחה הנ
+נספק הוכחה בראשי פרקים )אנלוגית לחלוטין להוכחה הנ
 \begin_inset Quotes xrd
 \end_inset
 
@@ -6051,7 +6061,7 @@ phantomsection
 
 
 \backslash
-addcontentsline{toc}{section}{IV
+addcontentsline{toc}{section}{V
 \backslash
 ;
 \backslash
@@ -6452,9 +6462,31 @@ low-degree extension
 \end_inset
 
  ולכן גם ניתן להרחיבה.
- 
-\series bold
-להוסיף על יחידות
+ יחידות מתקבלת כי אם 
+\begin_inset Formula $\hat{f},\hat{f}'$
+\end_inset
+
+ פולינומים שונים שעונים על התנאים בטענה, אז הם מדרגה לכל היותר 
+\begin_inset Formula $d$
+\end_inset
+
+, ובנוסף הם מסכימים על כל 
+\begin_inset Formula $H$
+\end_inset
+
+ שהיא מגודל 
+\begin_inset Formula $d+1$
+\end_inset
+
+, ולכן הם אינם שווים )הוכחנו טענה זו בשאלה 
+\begin_inset Formula $6\left(b\right)$
+\end_inset
+
+ של התרגיל עבור 
+\begin_inset Formula $m=2$
+\end_inset
+
+(.
 \end_layout
 
 \begin_layout Standard
@@ -7004,7 +7036,7 @@ x_{7}x_{3}+x_{2}^{2}-1=0\\
 \end_inset
 
 , 
-\begin_inset Formula $QS_{3,q}\in\mathsf{NPH}$
+\begin_inset Formula $QS_{4,q}\in\mathsf{NPH}$
 \end_inset
 
 .
@@ -7563,6 +7595,2547 @@ r_{k^{10}}=0
 \begin_layout Standard
 כדי להוריד את מספר המשתנים שאנחנו צריכים לשערך, נשתמש בשיטה שלנו לסכום הרבה
  מספרים )לכל משוואה בנפרד(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{VI
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{VI}$
+\end_inset
+
+ | 
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $f:\f^{m}\to\f$
+\end_inset
+
+, נרצה לבדוק האם היא פולינום מדרגה נמוכה )
+\begin_inset Formula $\lde$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה נניח ש-
+\begin_inset Formula $f$
+\end_inset
+
+ מיוצג לנו באמצעות טבלת ערכים 
+\begin_inset Formula $B^{0}$
+\end_inset
+
+, וכן שיש לנו את 
+\begin_inset Formula $B^{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $B^{2}$
+\end_inset
+
+ שהן טבלאות פולינומים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)חד- ודו-משתניים בהתאמה( לכל ישר ומישור בהתאמה.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+בדיקות דרגה-נמוכה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Line Test
+\lang hebrew
+: לבחור ישר מקרי ב-
+\begin_inset Formula $\f^{m}$
+\end_inset
+
+ )קוביה 
+\begin_inset Formula $m$
+\end_inset
+
+-ממדית( ולבדוק שכל הישר מקבל את הערכים של הפולינום שמשרות 
+\begin_inset Formula $d+1$
+\end_inset
+
+ הנקודות הראשונות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Line v.
+ Point Test
+\lang hebrew
+: לבחור ישר מקרי ב-
+\begin_inset Formula $\f^{m}$
+\end_inset
+
+ ולבדוק שנקודה מקרית לא על הישר מסכימה עם הפולינום המתאים לישר ב-
+\begin_inset Formula $B_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Plane v.
+ Point Test
+\lang hebrew
+: לבחור מישור מקרי וההמשך כנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Plane v.
+ Plane (Line) Test
+\lang hebrew
+: לבחור שני מישורים ולבדוק האם הפולינומים המתאימים להם ב-
+\begin_inset Formula $B^{2}$
+\end_inset
+
+ מסכימים על הישר שהוא החיתוך שלהם.
+\end_layout
+
+\begin_layout Description
+הערה כל הטסטים האלה שקולים מבחינת החוזק שלהם, אבל את האחרון הכי קל להוכיח,
+ ספציפית עבור 
+\begin_inset Formula $m=3$
+\end_inset
+
+ ומשם באינדוקציה.
+\end_layout
+
+\begin_layout Description
+משפט נקבע 
+\begin_inset Formula $m=3$
+\end_inset
+
+ ו-
+\begin_inset Formula $\delta$
+\end_inset
+
+ כלשהי ונניח שמתקיים
+\begin_inset Formula 
+\[
+P_{p_{1},p_{2}}\left(\desc{B^{2}\left[p_{1}\right]|_{p_{1}\cap p_{2}}=B^{2}\left[p_{2}\right]|_{p_{1}\cap p_{2}}}{\mathcal{S}}\right)\geq\epsilon
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+ מישורים )ולכן 
+\begin_inset Formula $p_{1}\cap p_{2}$
+\end_inset
+
+ ישר או הקבוצה הריקה(.
+ אזי יש רשימה קצרה של פולינומים 
+\begin_inset Formula $f_{1},\ldots,f_{\frac{1}{\delta}}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\deg f\leq d$
+\end_inset
+
+ ו-
+\begin_inset Formula 
+\[
+P\left(\ms\land\exists i:B^{2}\left[p_{1}\right]=f_{i}|_{p_{1}}\land B^{2}\left[p_{2}\right]=f_{i}|_{p_{2}}\right)\geq\epsilon-\delta-2\sqrt{\frac{d+1}{q}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה אין לנו בעיה ש-
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+ לא יסכימו, אבל נרצה שאם הם מסכימים אז זה יהיה בהכרח כי הם שווים לאחד מה-
+\begin_inset Formula $f_{i}$
+\end_inset
+
+-ים.
+\end_layout
+
+\begin_layout Description
+הערה כאן 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ הוא מהותית כמה שיותר קרוב ל-
+\begin_inset Formula $1$
+\end_inset
+
+, וגם 
+\begin_inset Formula $\delta=C\cdot\frac{d+1}{q}$
+\end_inset
+
+, ומעבר לכך 
+\begin_inset Formula $q$
+\end_inset
+
+ גדול מחזקה קבועה של 
+\begin_inset Formula $d$
+\end_inset
+
+ ו-
+\begin_inset Formula $n\approx\log n$
+\end_inset
+
+ כך שסה
+\begin_inset Quotes xrd
+\end_inset
+
+כ קיבלנו חסם פולילוגריתמי ב-
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהי 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ גרף לא מכוון.
+ נאמר כי 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\bar under
+טרנזיטיבי
+\bar default
+ אם לכל 
+\begin_inset Formula $\left(v,u\right),\left(u,w\right)\in E$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(v,w\right)\in E$
+\end_inset
+
+.
+ בנוסף נגדיר לכל 
+\begin_inset Formula $\left(u,w\right)\notin E$
+\end_inset
+
+ את
+\begin_inset Formula 
+\[
+\beta\left(u,w\right)=P_{v\in V}\left(\left(v,u\right)\in E\land\left(v,w\right)\in E\right)
+\]
+
+\end_inset
+
+ולגרף כולו נגדיר 
+\begin_inset Formula $\beta\left(G\right)=\max\limits _{\left(u,w\right)\notin E}\beta\left(u,w\right)$
+\end_inset
+
+ )האי-צלע שעבורה כמה שיותר קודקודים לא מקיימים טרנזטיביות על שלושת הקודקודים(.
+\end_layout
+
+\begin_layout Description
+הערה גרף טרנזטיבי הוא איחוד זר של קליקות )רכיבי הקישרות(.
+\end_layout
+
+\begin_layout Description
+טענה בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ מספיק למחוק לכל היותר 
+\begin_inset Formula $2\sqrt{\beta\left(G\right)}\left|V\right|^{2}$
+\end_inset
+
+ קשתות כדי להפכו לטרנזיטיבי.
+\end_layout
+
+\begin_layout Proof
+נציג אלג' להפיכת 
+\begin_inset Formula $G$
+\end_inset
+
+ לגרף טרנזיטיבי ונוכיח שהורדנו את כמות הקשתות המותרת.
+ האלג' הוא הבא:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ עם 
+\begin_inset Formula $d\left(v\right)\leq\sqrt{\beta}\left|V\right|$
+\end_inset
+
+ )מספר השכנים שלו(, נוריד את כל הקשתות שיוצאות ממנו.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ שנשארו )עם שכנים(, נמחק קשתות בין שכנים של 
+\begin_inset Formula $v$
+\end_inset
+
+ לאי-שכנים של 
+\begin_inset Formula $v$
+\end_inset
+
+ )אם 
+\begin_inset Formula $\left(v,u\right)\in E$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left(v,w\right)\notin E$
+\end_inset
+
+, נוריד את 
+\begin_inset Formula $\left(u,w\right)\notin E$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+נובע ישירות משלב 
+\begin_inset Formula $2$
+\end_inset
+
+ ש-
+\begin_inset Formula $G$
+\end_inset
+
+ לאחר מחיקת הקשתות הוא טרנזטיבי.
+\end_layout
+
+\begin_layout Proof
+נשים לב כי לכל 
+\begin_inset Formula $v$
+\end_inset
+
+ שעבורו נמחק צלעות בשלב השני, אוסף הצלעות שנמחקות )בריצת האלג', כלומר זה
+ לא סטטי אלא תלוי בסדר הריצה על הקודקודים( הוא
+\begin_inset Formula 
+\[
+E_{remove}^{v}=\left\{ \left(u,w\right)\in E:w\in C\left(v\right)\backslash\left(N\left(v\right)\cup v\right)\land u\in N\left(v\right)\right\} 
+\]
+
+\end_inset
+
+כלומר כל הצלעות 
+\begin_inset Formula $\left(u,w\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $u$
+\end_inset
+
+ שכן של 
+\begin_inset Formula $v$
+\end_inset
+
+ אבל 
+\begin_inset Formula $w$
+\end_inset
+
+ באותו רכיב קישרות )אבל אינו 
+\begin_inset Formula $v$
+\end_inset
+
+ או שכניו(.
+\end_layout
+
+\begin_layout Proof
+בדומה נסמן את אוסף זוגות הקודקודים שאילו היו צלעות היו נמחקות בשלב 
+\begin_inset Formula $2$
+\end_inset
+
+ על 
+\begin_inset Formula $v$
+\end_inset
+
+, כלומר שאנחנו 
+\begin_inset Quotes xld
+\end_inset
+
+מסתכלים
+\begin_inset Quotes xrd
+\end_inset
+
+ עליהם לצורך מחיקה בשלב השני
+\begin_inset Formula 
+\[
+E_{non}^{v}=\left\{ \left(u,w\right):w\in C\left(v\right)\backslash\left(N\left(v\right)\cup v\right)\land u\in N\left(v\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+מתקיים
+\begin_inset Formula 
+\[
+\left|E_{remove}^{v}\right|\leq\left|C\left(v\right)\backslash\left(N\left(v\right)\cup v\right)\right|\cdot\beta\cdot\left|V\right|
+\]
+
+\end_inset
+
+כי ל-
+\begin_inset Formula $w$
+\end_inset
+
+ יש 
+\begin_inset Formula $\left|C\left(v\right)\backslash\left(N\left(v\right)\cup v\right)\right|$
+\end_inset
+
+ אפשרויות ולכל 
+\begin_inset Formula $w$
+\end_inset
+
+ יש לכל היותר 
+\begin_inset Formula $\beta\left|V\right|$
+\end_inset
+
+ 
+\begin_inset Formula $u$
+\end_inset
+
+-ים כך ש-
+\begin_inset Formula $\left(v,u\right)\in E$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left(u,w\right)\in E$
+\end_inset
+
+ אבל כאמור 
+\begin_inset Formula $\left(v,w\right)\notin E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בנוסף מתקיים
+\begin_inset Formula 
+\[
+\left|E_{non}^{v}\right|\geq\sqrt{\beta}\left|V\right|\cdot\left|C\left(v\right)\backslash\left(N\left(v\right)\cup v\right)\right|
+\]
+
+\end_inset
+
+כי בשלב הראשון הורדנו את כל הקודקודים עם 
+\begin_inset Formula $d\left(v\right)\leq\sqrt{\beta}\left|V\right|$
+\end_inset
+
+ ובשלב השני אנחנו מורידים את כל הצלעות של כל השכנים של 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+לסיום
+\begin_inset Formula 
+\[
+\sum_{v\in V}\left|E_{remove}^{v}\right|\leq\sum_{v\in V}\sqrt{\beta}\left|E_{non}^{v}\right|\overset{\left(*\right)}{\leq}\sqrt{\beta}\left|V\right|^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ נטען כי לכל 
+\begin_inset Formula $\left(u,w\right)\in E$
+\end_inset
+
+ קיים לכל היותר 
+\begin_inset Formula $v$
+\end_inset
+
+ יחיד עבורו 
+\begin_inset Formula $\left(u,w\right)\in E_{non}^{v}$
+\end_inset
+
+, כי אם הוא הופיע ב-
+\begin_inset Formula $E_{non}^{v_{1}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $u$
+\end_inset
+
+ שכן של 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $w$
+\end_inset
+
+ לא )אבל כן ברכיב הקשירות(, ולכן כל 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ אחר ש-
+\begin_inset Formula $u$
+\end_inset
+
+ שכן שלו, הוא ברכיב הקישרות של 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ ולכן לא באותו רכיב קשירות כמו 
+\begin_inset Formula $w$
+\end_inset
+
+ כי הוצאנו את 
+\begin_inset Formula $w$
+\end_inset
+
+ מרכיב הקישרות שלהם בהורדה כשראינו את 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ לפני 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה יהיו 
+\begin_inset Formula $m,q$
+\end_inset
+
+.
+ גרף המישורים הוא 
+\begin_inset Formula $G_{p}=\left\langle V_{p},E_{p}\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $V_{p}=\left\{ \f^{m}\;\text{מישורים ב-}\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $\left(p_{1},p_{2}\right)\in E_{p}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם מתקיים 
+\begin_inset Formula $B^{2}\left[p_{1}\right]|_{p_{1}\cap p_{2}}=B^{2}\left[p_{2}\right]|_{p_{1}\cap p_{2}}$
+\end_inset
+
+ )המאורע 
+\begin_inset Formula $\ms$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\beta\left(G_{p}\right)\leq\frac{d+1}{q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+תהי 
+\begin_inset Formula $\left(p_{1},p_{2}\right)\notin E_{p}$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $p_{3}$
+\end_inset
+
+ מישור נוסף.
+ בסיכוי נמוך מאוד, 
+\begin_inset Formula $p_{3}$
+\end_inset
+
+ מקביל ל-
+\begin_inset Formula $p_{1}\cap p_{2}$
+\end_inset
+
+ )כלומר לאחד מ-
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+(.
+ הסיכוי הזה הוא 
+\begin_inset Formula $\frac{1}{q}$
+\end_inset
+
+ כי אם המישור מוגדר ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\left\{ v:wv^{T}=a\right\} $
+\end_inset
+
+ אז ישר 
+\begin_inset Formula $u$
+\end_inset
+
+ מקביל למישור אם 
+\begin_inset Formula $wu=0$
+\end_inset
+
+ ובגלל שהכל מתפלג אחיד זה 
+\begin_inset Formula $\frac{1}{q}$
+\end_inset
+
+.
+ אחרת, 
+\begin_inset Formula $p_{1}\cap p_{2}$
+\end_inset
+
+ נחתך עם 
+\begin_inset Formula $p_{3}$
+\end_inset
+
+, הלא זו נקודת חיתוך של שלושת המישורים.
+ הנקודה הזו מתפלגת אחיד על 
+\begin_inset Formula $p_{1}\cap p_{2}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+ לא מסכימים על אותו פולינום בישר המשותף )מ-
+\begin_inset Formula $B_{2}$
+\end_inset
+
+(, אז הפולינומים שלהם מסכימים על לכל היותר 
+\begin_inset Formula $\frac{d+1}{q}$
+\end_inset
+
+ נקודות )קונטרה-פוזיטיב לשוורץ
+\numeric on
+-
+\numeric off
+זיפל( ולכן מהיות נקודת המפגש מתפלגת אחיד, הרי שהסיכוי ש-
+\begin_inset Formula $p_{3}$
+\end_inset
+
+ מסכים עם 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ וגם עם 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ בנקודה הזו הוא לכל היותר 
+\begin_inset Formula $\frac{d+1}{q}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\beta\left(p_{1},p_{2}\right)\leq\frac{d+1}{q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{VII
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{VII}$
+\end_inset
+
+ | 
+\end_layout
+
+\begin_layout Standard
+נמשיך את הוכחת הטענה מההרצאה הקודמת.
+ אם שני מישורים מסכימים, יש בדיוק שלוש אפשרויות:
+\end_layout
+
+\begin_layout Itemize
+הסרנו את צלע ההסכמה שלהם מהגרף 
+\begin_inset Formula $G_{p}$
+\end_inset
+
+ - נוכיח שזה קורה בהסת' קטנה )הודות למספר קטן של צלעות שהאלג' שלנו מסיר(.
+ זה קורה בהסת' 
+\begin_inset Formula $\sqrt{\frac{d+1}{q}}\geq$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+יש ביניהם צלע והם יחד בקליקה ב-
+\begin_inset Formula $G_{p}$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $\delta\geq$
+\end_inset
+
+ - נשים לב להבחנות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יש לכל היותר 
+\begin_inset Formula $\frac{1}{\delta}$
+\end_inset
+
+ קליקות בגודל 
+\begin_inset Formula $\delta\leq$
+\end_inset
+
+ )מהקודקודים(, כי אנחנו בגרף איחוד זר של קליקות.
+\end_layout
+
+\begin_layout Enumerate
+הסיכוי ששני צמתים מקריים ב-
+\begin_inset Formula $G_{p}$
+\end_inset
+
+ יהיו שייכים לאותה קליקה בגודל 
+\begin_inset Formula $\delta\geq$
+\end_inset
+
+ הוא לכל היותר 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+נגריל את הצומת הראשון, הוא נמצא בקליקה כלשהי.
+ עתה נגריל את הצומת השני, ובגלל שבקליקה המקורית יש 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מהקודקודים רק בסיכוי 
+\begin_inset Formula $\delta\geq$
+\end_inset
+
+ גם הצומת השני יהיה שם.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+לכן הם ביחד בקליקה )בגודל פחות מ-
+\begin_inset Formula $\delta$
+\end_inset
+
+( בהסת' 
+\begin_inset Formula $\delta$
+\end_inset
+
+ )מ-
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+יש ביניהם צלע והם ביחד בקליקה ב-
+\begin_inset Formula $G_{p}$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $\delta\leq$
+\end_inset
+
+.
+ זה המקרה הטוב, כלומר שהם מסכימים וגם שווים לפולינום מהרשימה הקצרה.
+\end_layout
+
+\begin_layout Standard
+עתה ידוע לנו שהמאורע הרע שלנו, הסיכוי ששני מישורים מסכימים על החיתוך שלהם
+ אבל לא חברים בקליקה גדולה, מתחלק לאחת משתי אפשרויות זרות )שתי הראשונות(.
+ לכן ההסת' שהוא יקרה חסומה מלמעלה ע
+\begin_inset Quotes xrd
+\end_inset
+
+י סכום ההסת' של שני המקרים, כלומר 
+\begin_inset Formula $\delta+2\sqrt{\frac{d+1}{q}}$
+\end_inset
+
+.
+ כלומר
+\begin_inset Formula 
+\[
+P\left(\ms\land\nexists i:B^{2}\left[p_{1}\right]=f_{i}|_{p_{1}}\land B^{2}\left[p_{2}\right]=f_{i}|_{p_{2}}\right)\geq\delta+2\sqrt{\frac{d+1}{q}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נותר להוכיח שכל קליקה גדולה מתאימה לפולינום גלובלי יחיד.
+ 
+\end_layout
+
+\begin_layout Description
+טענה נניח כי 
+\begin_inset Formula $\delta\geq\frac{2\left(d+1\right)}{q}$
+\end_inset
+
+ תהי 
+\begin_inset Formula $K$
+\end_inset
+
+ קליקה של לפחות 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מישורים עם השמות שהן פולינום מדרגה 
+\begin_inset Formula $\delta\geq$
+\end_inset
+
+ מסכימים )בחיתוך של כל זוג(.
+ לכן קיים 
+\begin_inset Formula $f:\f_{q}^{3}\to\f$
+\end_inset
+
+ מדרגה 
+\begin_inset Formula $d\geq$
+\end_inset
+
+ שמסכים עם כולם.
+\end_layout
+
+\begin_layout Proof
+נטען שעבור ישר מקרי יש בתוחלת 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מישורים מאונכים לכיוון הזה כי
+\begin_inset Formula 
+\[
+\delta\overset{\left(*\right)}{\leq}P_{\text{כיוון, מישור}}\left(\text{מישור}+\text{כייון}\in K\right)=E_{\text{כיוון}}P_{\text{מישור}}\left(\left\{ \text{מישור}+\la\text{כיוון}\in K:\la\in q\right\} \right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ כיוון )הזזה אפינית( עם מישור )אפיני( נותנים מישור מקרי מתפלג אחיד.
+\end_layout
+
+\begin_layout Proof
+לכן מהמונוטוניות ההפוכה של התוחלת, קיים כיוון ומישור עבורם לפחות 
+\begin_inset Formula $\delta$
+\end_inset
+
+ )חלקיות( מהמישורים שהם הזזות של המישור לפי הכיוון הם בקליקה, כלומר 
+\begin_inset Formula $q\cdot\delta\geq2\left(d+1\right)$
+\end_inset
+
+.
+ נסמן את 
+\begin_inset Formula $d+1$
+\end_inset
+
+ ערכי 
+\begin_inset Formula $x$
+\end_inset
+
+ )ציר מיושר לכיוון שלנו( שעבורם הזזת המישור לפי הכיוון היא בקליקה ב-
+\begin_inset Formula $\left\{ \xi_{1},\ldots,\xi_{d+1}\right\} $
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\varphi_{i}:\f_{q}\to\f_{q}$
+\end_inset
+
+ פולי' מדרגה 
+\begin_inset Formula $d$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $\varphi_{i}\left(\xi_{j}\right)=\delta_{ij}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f_{i}\left(y,z\right)$
+\end_inset
+
+ להיות ההשמה של המישור הניצב ל-
+\begin_inset Formula $x$
+\end_inset
+
+ ועובר ב-
+\begin_inset Formula $x=\xi_{i}$
+\end_inset
+
+.
+ לסיום נגדיר
+\begin_inset Formula 
+\[
+f\left(x,y,z\right)=\sum_{i=0}^{d}\varphi_{i}\left(x\right)f_{i}\left(y,z\right)
+\]
+
+\end_inset
+
+בגלל ש-
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ ו-
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ הם מדרגה לכל היותר 
+\begin_inset Formula $d$
+\end_inset
+
+ כל אחד, 
+\begin_inset Formula $f$
+\end_inset
+
+ מדרגה לכל היותר 
+\begin_inset Formula $2d$
+\end_inset
+
+.
+ קיים כיוון )לא נוכיח למה( שאינו 
+\begin_inset Formula $x$
+\end_inset
+
+ ומישור שחותך את המישור שמצאנו בישר שלהם יש לפחות 
+\begin_inset Formula $2d+1$
+\end_inset
+
+ הזזות שלהם שבקליקה 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ כל מישור בסט השני של הזזות חותך את הסט הראשון בבדיוק 
+\begin_inset Formula $d+1$
+\end_inset
+
+ נקודות ולכן שני הסטים מסכימים על 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+לכאורה זה לא מספיק כי הפולינום הוא מדרגה 
+\begin_inset Formula $2d$
+\end_inset
+
+ ויש לנו הסכמה רק ב-
+\begin_inset Formula $d+1$
+\end_inset
+
+ חיתוכים.
+ עם זאת, הפולינום הגלובלי הוא רק מדרגה 
+\begin_inset Formula $d$
+\end_inset
+
+ )כשמסתכלים עליו כפולינום במשתנה אחד( בכיוון 
+\begin_inset Formula $x$
+\end_inset
+
+ ולכן עבור נקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ על מישור מהסט השני, נוכל להעביר ישר מ-
+\begin_inset Formula $p$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $x$
+\end_inset
+
+ שיחתוך את 
+\begin_inset Formula $d+1$
+\end_inset
+
+ המישורים מהסט הראשון.
+ מכאן ש-
+\begin_inset Formula $p$
+\end_inset
+
+ חייבת לקבל את הערך של הפולינום הגלובלי כי הדרגה היא 
+\begin_inset Formula $d$
+\end_inset
+
+ ויש לנו 
+\begin_inset Formula $d+1$
+\end_inset
+
+ הסכמות עם הפולינום הגלובלי על המישור מהסט השני בכיוון 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בנוסף, לכן מטיעון גאומטרי שלא נוכיח, כל מישור ב-
+\begin_inset Formula $\f_{q}^{3}$
+\end_inset
+
+ חותך את 
+\begin_inset Formula $3\left(d+1\right)$
+\end_inset
+
+ המישורים בבדיוק 
+\begin_inset Formula $d+1$
+\end_inset
+
+ נקודות ולכן כל ה-
+\begin_inset Formula $3d+2$
+\end_inset
+
+ מסכימים על הישרים שבחיתוכים שלהם.
+ לכן כל המרחב מסכים על 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נותר להוכיח ש-
+\begin_inset Formula $f$
+\end_inset
+
+ הוא בעצם מדרגה 
+\begin_inset Formula $d$
+\end_inset
+
+ )כדי שבאינדוקציה על 
+\begin_inset Formula $m$
+\end_inset
+
+ הדרגה לא תעלה(.
+ הטיעון הוא שבגלל שהפולינום הגלובלי שווה להשמה בכל מישור, התכונה הגלובלית
+ של דרגה 
+\begin_inset Formula $d<$
+\end_inset
+
+ מתקיימת עבור מישור כלשהו )לא נוכיח שקיים(, ולכן אחת ההשמות היא מדרגה גדולה
+ מ-
+\begin_inset Formula $d$
+\end_inset
+
+ בסתירה לכך שכולן בדרגה לכל היותר 
+\begin_inset Formula $d$
+\end_inset
+
+ )כך מסופקת לנו 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+נרצה שהערכים שאנחנו משתמשים בהם ב
+\lang english
+sum-check
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)שבודקים שהמשוואה ב-
+\lang english
+QS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיימת לאחר פירוק( יובטח לנו שהם מאחד מבין רשימה קצרה של פולינומים גלובליים
+ מדרגה נמוכה.
+ מבחן ה-
+\lang english
+PvP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נותן לנו רק שייכות של השמה לפולינום גלובלי על הערכים שאנחנו בודקים )המישורים
+ המקריים המוגרלים(, אבל אנחנו רוצים לבדוק ב-
+\lang english
+sum-check
+\lang hebrew
+ ערך ספציפי שלא בהכרח נופל על המישור של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PvP
+\lang hebrew
+.
+ לשם כך נגריל שני מישורים ונקבל )בהסת' גבוהה( ישר שהוא החיתוך שלהם.
+ הנקודה שנרצה לשערך בה יחד עם הישר מגדירים לנו מישור.
+ 
+\series bold
+מה הלאה
+\series default
+.
+\end_layout
+
+\begin_layout Description
+הערה כל מה שקורה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+התחלנו מעד לנוסחת 
+\begin_inset Formula ${\rm 3SAT}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+עשינו רדוקציה ל-
+\lang english
+QS-GAP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והוכחנו שלא ניתן לספק את 
+\begin_inset Formula $\sat$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם אפשר לספק לכל היותר 
+\begin_inset Formula $\epsilon_{1}$
+\end_inset
+
+ משוואות ב-
+\lang english
+QS
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+פרקנו כל משוואה ב-
+\lang english
+QS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+להרבה משוואות באמצעות ה-
+\lang english
+sum-check
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וטענו שאם יש פולינום גלובלי אחד מאחורי הקופסאות ב-
+\lang english
+sum-check
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז אפשר לספק לכל היותר 
+\begin_inset Formula $\epsilon_{2}>\epsilon_{1}$
+\end_inset
+
+ משוואות )כל משוואה פורקה לכמה משוואות, ואלו שלא ניתן לספק הוסיפו כמה משוואות
+ קטנות שניתנות לסיפוק(.
+ 
+\series bold
+איך פרקנו משוואות
+\end_layout
+
+\begin_layout Itemize
+הסרנו את ההנחה שמאחורי הקופסאות יש פולינום גלובלי אחד עם ה-
+\lang english
+Plane v.
+ Plane Test
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במחיר של הסת' 
+\begin_inset Formula $\delta$
+\end_inset
+
+ )וקבוע( שעבורו ההשמה למשתנים היא לא פולינום מהרשימה הקצרה של פולינומים
+ גלובליים.
+ בנוסף במקרה הגרוע נספק 
+\begin_inset Formula $\epsilon_{2}k$
+\end_inset
+
+ משוואות כאשר 
+\begin_inset Formula $k$
+\end_inset
+
+ גודל הרשימה הקצרה כי נוכל לספק 
+\begin_inset Formula $\epsilon_{2}$
+\end_inset
+
+ משתנים עם כל פולינום ברשימה בכל צמצום ב-
+\lang english
+sum-check
+\lang hebrew
+ ובמקרה הגרוע הם זרים.
+ 
+\series bold
+מה קורה כאן
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{VIII
+\backslash
+;
+\backslash
+; }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{VIII}$
+\end_inset
+
+ | 
+\end_layout
+
+\begin_layout Standard
+בהאדמארד ראינו מבחן פשוט שמקבל פ' 
+\begin_inset Formula $f:\left\{ 0,1\right\} ^{n}\to\left\{ 0,1\right\} $
+\end_inset
+
+ ובודק האם מתקיים 
+\begin_inset Formula $f\left(x\right)+f\left(y\right)=f\left(x+y\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x,y\in_{R}\left\{ 0,1\right\} ^{n}$
+\end_inset
+
+.
+ נשתמש בזה כדי להוכיח ש-
+\begin_inset Formula $3{\rm Lin}2$
+\end_inset
+
+ הוא קשה ב-
+\begin_inset Formula $\np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה נרצה לעבור מחיבור לכפל.
+ נמפה 
+\begin_inset Formula $1\mapsto-1,0\mapsto1$
+\end_inset
+
+ ונעבור מחיבור לכפל, ונקבל בדיוק את אותו המבחן עם שינוי שמות )
+\begin_inset Formula $"0"$
+\end_inset
+
+ שהוא עכשיו 
+\begin_inset Formula $"1"$
+\end_inset
+
+ עדיין לא משפיע על החישוב, כ-
+\numeric on
+
+\begin_inset Formula $0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בחיבור ו-
+\begin_inset Formula $1$
+\end_inset
+
+ בכפל(.
+ 
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר כי 
+\begin_inset Formula $\chi:\left\{ -1,1\right\} ^{n}\to\left\{ -1,1\right\} $
+\end_inset
+
+ היא 
+\bar under
+כפלית
+\bar default
+ )
+\lang english
+multiplicative character
+\lang hebrew
+( אם 
+\begin_inset Formula $\chi\left(x\right)\chi\left(y\right)=\chi\left(x\cdot y\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x,y\in\left\{ -1,1\right\} ^{n}$
+\end_inset
+
+ כאשר כפל הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pair-wise
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $\chi$
+\end_inset
+
+ היא הומומורפיזם מ-
+\begin_inset Formula $\left\{ -1,1\right\} ^{n}$
+\end_inset
+
+ לחבורה הכפלית 
+\begin_inset Formula $\left\{ -1,1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הגדרה נסמן 
+\begin_inset Formula $L_{2}\left(\left\{ -1,1\right\} ^{n}\right)=\fldr^{\left\{ -1,1\right\} ^{n}}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $f\in L_{2}\left(\left\{ -1,1\right\} ^{n}\right)$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+\norm f_{2}=\sqrt{\frac{1}{2^{n}}\sum\limits _{x\in\left\{ -1,1\right\} ^{n}}f^{2}\left(x\right)}=\sqrt{E_{x_{R}\in\left\{ -1,1\right\} ^{n}}\left[f^{2}\left(x\right)\right]}
+\]
+
+\end_inset
+
+ו-
+\begin_inset Formula $\ip fg=E_{x}\left[f\left(x\right)g\left(x\right)\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה היתרון בשינוי השקוף בשמות הוא שההרחבה ל-
+\begin_inset Formula $\fldr$
+\end_inset
+
+ הוא הרבה יותר נוח )אחרת 
+\begin_inset Formula $1+1=2$
+\end_inset
+
+ ב-
+\begin_inset Formula $\fldr$
+\end_inset
+
+ וזה עושה בעיות(.
+\end_layout
+
+\begin_layout Description
+דוגמה עבור 
+\begin_inset Formula $\chi$
+\end_inset
+
+ כפלית נקבל ש-
+\begin_inset Formula $\norm{\chi}_{2}=1$
+\end_inset
+
+ כי זה ממוצע הערכים של 
+\begin_inset Formula $\chi$
+\end_inset
+
+ )בערך מוחלט(, שהם כולם 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\in\left\{ 0,1\right\} ^{n}\to\left\{ 0,1\right\} $
+\end_inset
+
+ היא פ' לינארית, אז מתקיים
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\sum_{i=1}^{n}a_{i}x_{i}=\sum_{i\in S\subseteq\left[n\right]}x_{i}
+\end{align*}
+
+\end_inset
+
+עתה לכל 
+\begin_inset Formula $S\subseteq\left[n\right]$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\chi_{S}\left(x\right)=\prod\limits _{i\in S}x_{i}$
+\end_inset
+
+ ולכן אוסף כל הפ' הכפליות הוא 
+\begin_inset Formula $\left\{ \chi_{S}\right\} _{S\subseteq\left[n\right]}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\chi_{S}\cdot\chi_{T}=\chi_{S\triangle T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+למה.
+\end_layout
+
+\begin_layout Description
+מסקנה 
+\begin_inset Formula 
+\[
+\ip{\chi_{S}}{\chi_{T}}=E_{x}\left[\chi_{S}\left(x\right)\chi_{T}\left(x\right)\right]=E_{x}\left[\chi_{S\triangle T}\left(x\right)\right]=\begin{cases}
+1 & S=T\\
+0 & S\neq T
+\end{cases}
+\]
+
+\end_inset
+
+כי אם 
+\begin_inset Formula $S=T$
+\end_inset
+
+ אז 
+\begin_inset Formula $S\triangle T=\varnothing$
+\end_inset
+
+ ואז כל המכפלות הן 
+\begin_inset Formula $1$
+\end_inset
+
+ ואחרת יש מספר שווה של 
+\begin_inset Formula $n$
+\end_inset
+
+-יות שנותנות 
+\begin_inset Formula $-1$
+\end_inset
+
+ ו-
+\begin_inset Formula $1$
+\end_inset
+
+ ולכן זה מצטמצמם )יש 
+\begin_inset Formula $2^{\left|S\triangle T\right|}$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+-יות כאלה, חצי מהן נותנות 
+\begin_inset Formula $1$
+\end_inset
+
+ והחצי השני 
+\begin_inset Formula $-1$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+מסקנה אוסף הפ' הכפליות הוא קבוצה אורתונ', ובפרט הוא בסיס אורתונ' של 
+\begin_inset Formula $f:\left\{ \pm1\right\} ^{n}\to\left\{ \pm1\right\} $
+\end_inset
+
+ )לכל 
+\begin_inset Formula $y\in\left\{ \pm1\right\} ^{n}$
+\end_inset
+
+ אפשר להגדיר 
+\begin_inset Formula $S_{y}=\left\{ i:y_{i}=-1\right\} $
+\end_inset
+
+ ואז נסכום 
+\begin_inset Formula $\chi_{S_{y}}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $y\in\left\{ \pm1\right\} ^{n}$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $f\left(y\right)=-1$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בהתאם, לכל 
+\begin_inset Formula $f$
+\end_inset
+
+ קיים 
+\begin_inset Formula $S$
+\end_inset
+
+ יחיד עבורו 
+\begin_inset Formula $f=\sum\limits _{S\subseteq\left[n\right]}\hat{f}\left(S\right)\chi_{S}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\hat{f}\left(S\right)=\ip f{\chi_{S}}\in\left[-1,1\right]$
+\end_inset
+
+ )תכונה של בסיסים אורתונ'(.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טענה ככל ש-
+\begin_inset Formula $f,g$
+\end_inset
+
+ יותר קרובות, כך המכ
+\begin_inset Quotes xrd
+\end_inset
+
+פ שלהן יותר קרוב ל-
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מהגדרת המכ
+\begin_inset Quotes xrd
+\end_inset
+
+פ ש-
+\begin_inset Formula $\dist\left(f,g\right)=P_{x}\left(f\left(x\right)\neq g\left(x\right)\right)$
+\end_inset
+
+ ואז עבור 
+\begin_inset Formula $f,g:\left\{ \pm1\right\} ^{n}\to\left\{ \pm1\right\} $
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\ip fg & =E\left[f\left(x\right)g\left(x\right)\right]=1\cdot P_{x}\left(f\left(x\right)=g\left(x\right)\right)+\left(-1\right)P_{x}\left(f\left(x\right)\neq g\left(x\right)\right)\\
+ & =1-2\dist\left(f,g\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה לכל 
+\begin_inset Formula $f:\left\{ \pm1\right\} ^{n}\to\left\{ \pm1\right\} $
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f=\chi_{S}$
+\end_inset
+
+ אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $\hat{f}\left(S\right)=1$
+\end_inset
+
+ כי 
+\begin_inset Formula $1=\norm f_{2}^{2}=\sum_{S}\hat{f}^{2}\left(S\right)=1$
+\end_inset
+
+ )מההגדרה( ואז אם יש 
+\begin_inset Formula $S$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\hat{f}\left(S\right)=1$
+\end_inset
+
+ אז כל השאר מתאפסים.
+\end_layout
+
+\begin_layout Description
+מסקנה אם 
+\begin_inset Formula $\ip f{\chi_{S}}=\hat{f}\left(S\right)>1-\epsilon$
+\end_inset
+
+ אז 
+\begin_inset Formula $\dist\left(f,\chi_{S}\right)\leq\frac{1}{2}\epsilon$
+\end_inset
+
+ )מהטענה הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל(.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מבחן הכפליות
+\end_layout
+
+\begin_layout Description
+טענה אם 
+\begin_inset Formula $P_{x,y}\left(f\left(x\right)f\left(y\right)=f\left(x\cdot y\right)\right)>1-\epsilon$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $S$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\hat{f}\left(S\right)>1-c\cdot\epsilon$
+\end_inset
+
+ )ו-
+\begin_inset Formula $\dist\left(f,\chi_{S}\right)\leq\frac{c}{2}\cdot\epsilon$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה הוכחנו את זה במקרה של מבחן הלינאריות, עתה נוכיח אותה שוב עם כלים אחרים.
+\end_layout
+
+\begin_layout Proof
+מההנחה, 
+\begin_inset Formula $f\left(x\right)f\left(y\right)f\left(x\cdot y\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $1$
+\end_inset
+
+ בהסת' לפחות 
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+ ו-
+\begin_inset Formula $-1$
+\end_inset
+
+ בהסת' לכל היותר 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+, לכן מתקיים
+\begin_inset Formula 
+\begin{align*}
+1-2\epsilon & <E_{x,y}\left[f\left(x\right)f\left(y\right)f\left(x\cdot y\right)\right]\\
+ & =E_{x,y}\left[\left(\sum_{S}\hat{f}\left(S\right)\chi_{S}\left(x\right)\right)\left(\sum_{T}\hat{f}\left(T\right)\chi_{T}\left(y\right)\right)\left(\sum_{R}\hat{f}\left(R\right)\chi_{R}\left(x\cdot y\right)\right)\right]\\
+ & =\sum_{S,R,T}\hat{f}\left(S\right)\hat{f}\left(R\right)\hat{f}\left(T\right)E_{x,y}\left[\chi_{S}\left(x\right)\chi_{T}\left(y\right)\chi_{R}\left(x\cdot y\right)\right]\\
+ & =\sum_{S,R,T}\hat{f}\left(S\right)\hat{f}\left(R\right)\hat{f}\left(T\right)E_{x,y}\left[\chi_{S}\left(x\right)\chi_{T}\left(y\right)\chi_{R}\left(x\right)\chi_{R}\left(y\right)\right]\\
+ & =\sum_{S,R,T}\hat{f}\left(S\right)\hat{f}\left(R\right)\hat{f}\left(T\right)E_{x}\left[\chi_{S}\left(x\right)\chi_{R}\left(x\right)\right]E_{y}\left[\chi_{T}\left(y\right)\chi_{R}\left(y\right)\right]\\
+ & =\sum_{S,R,T}\hat{f}\left(S\right)\hat{f}\left(R\right)\hat{f}\left(T\right)\delta_{S,R}\delta_{T,R}\\
+ & =\sum_{S}\hat{f}^{3}\left(S\right)
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula 
+\begin{align*}
+1-2\epsilon & \leq\sum_{S}\hat{f}^{3}\left(S\right)\leq\max_{S}\left\{ \hat{f}\left(S\right)\right\} \sum_{S}\hat{f}^{2}\left(S\right)\\
+ & \leq\max_{S}\left\{ \hat{f}\left(S\right)\right\} 
+\end{align*}
+
+\end_inset
+
+ולכן קיים 
+\begin_inset Formula $S$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $1-2\epsilon\leq\hat{f}\left(S\right)$
+\end_inset
+
+, ומכאן גם ש-
+\begin_inset Formula $\dist\left(f,\chi_{S}\right)\leq\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+מסקנה אם 
+\begin_inset Formula $P_{x,y}\left(f\left(x\right)f\left(y\right)=f\left(x\cdot y\right)\right)=\frac{1}{2}+\epsilon$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $S$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\dist\left(f,\chi_{S}\right)\leq\frac{1}{2}-\epsilon$
+\end_inset
+
+.
+ כלומר, גם אם הסיכוי לשוויון הוא ממש קצת מעל זה של פ' מקרית, אז 
+\begin_inset Formula $f$
+\end_inset
+
+ כבר הרבה יותר קרובה לפ' ב
+\begin_inset Quotes xrd
+\end_inset
+
+קוד
+\begin_inset Quotes xrd
+\end_inset
+
+ מאשר פ' מקרית.
+\end_layout
+
+\begin_layout Description
+הערה מספר ה-
+\begin_inset Formula $S$
+\end_inset
+
+-ים עבורם 
+\begin_inset Formula $\hat{f}\left(S\right)=\ip f{\chi_{S}}\ge2\epsilon$
+\end_inset
+
+ הוא לכל היותר 
+\begin_inset Formula $\frac{1}{4\epsilon^{2}}$
+\end_inset
+
+ כי 
+\begin_inset Formula $1=\sum\hat{f}^{2}\left(S\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מבחן ה-
+\lang english
+Long-Code
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g:\left\{ \pm1\right\} ^{n}\to\left\{ \pm1\right\} $
+\end_inset
+
+.
+ נרצה מבחן שאם עוברים אותו בהסת' 
+\begin_inset Formula $\frac{1}{2}+\delta<$
+\end_inset
+
+ אז יהיה 
+\begin_inset Formula $S$
+\end_inset
+
+ עבורו 
+\begin_inset Formula 
+\[
+\hat{g}\left(S\right)>\varphi_{1}\left(\delta\right)\land\left|\hat{f}\left(S\right)\right|>\varphi_{2}\left(\delta\right)\land0<\left|S\right|\leq\varphi_{3}\left(\delta\right)
+\]
+
+\end_inset
+
+כלומר ש-
+\begin_inset Formula $g$
+\end_inset
+
+ תהיה קרובה למילת קוד, 
+\begin_inset Formula $f$
+\end_inset
+
+ תהיה קרובה למילת קוד או מינוס מילת קוד, ומילת הקוד לא תהיה ריקה אבל גודלה
+ חסום.
+\end_layout
+
+\begin_layout Standard
+נצטרך לוותר על השלמות, בפרט עבור 
+\begin_inset Formula $f=\chi_{\left\{ i\right\} }$
+\end_inset
+
+ )
+\begin_inset Formula $\left|S\right|=1$
+\end_inset
+
+ הטסט יעבור בסיכוי 
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $\chi_{\left\{ i\right\} }\left(x\right)=x_{i}$
+\end_inset
+
+, כלומר זה קידוד של 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ הקוד 
+\begin_inset Formula $\left\{ \chi_{\left\{ i\right\} }\right\} _{i\in\left[n\right]}$
+\end_inset
+
+ נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Long Code
+\lang hebrew
+, ויש לו קצב 
+\begin_inset Formula $\frac{1}{2^{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמה נביט במבחן הבא: נבחר 
+\begin_inset Formula $x,y\in_{R}\left\{ \pm1\right\} ^{n}$
+\end_inset
+
+ ונבדוק 
+\begin_inset Formula $f\left(x\right)g\left(y\right)=f\left(xy\right)$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $f,g$
+\end_inset
+
+ המתאימים ל-
+\begin_inset Formula $\chi_{\varnothing}$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $1\cdot1=1$
+\end_inset
+
+ כך שנעבור את המבחן בהסת' 
+\begin_inset Formula $1$
+\end_inset
+
+ בניגוד לכך שלא קיימת 
+\begin_inset Formula $S$
+\end_inset
+
+ שמקיימת את התנאים שנרצה שיתקיימו.
+\end_layout
+
+\begin_layout Description
+דוגמה נשפר את המבחן הקודם: נבחר 
+\begin_inset Formula $x,y\in_{R}\left\{ \pm1\right\} ^{n}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\mu\in_{R}\left\{ \pm1\right\} $
+\end_inset
+
+ ונבדוק 
+\begin_inset Formula $\mu f\left(\mu x\right)g\left(y\right)=f\left(xy\right)$
+\end_inset
+
+, עתה 
+\begin_inset Formula $\chi_{\varnothing}$
+\end_inset
+
+ לא עובר את המבחן בהסת' 
+\begin_inset Formula $1$
+\end_inset
+
+ אלא בהסת' 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+, רק עבור 
+\begin_inset Formula $\mu=1$
+\end_inset
+
+ )עבור 
+\begin_inset Formula $\mu=-1$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $-1\cdot1\cdot1\neq1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x,y$
+\end_inset
+
+(.
+ הבעיה היא שעדיין 
+\begin_inset Formula $f,g$
+\end_inset
+
+ שמקיימות את שתי התכונה הראשונות אבל עם 
+\begin_inset Formula $S$
+\end_inset
+
+ גדולה יעברו את המבחן בהסת' גבוהה, לכן נוסיף רעש שיוריד את ההסת' הזו.
+\end_layout
+
+\begin_layout Standard
+המבחן הסופי יהיה הבא: נבחר 
+\begin_inset Formula $x,y\in_{R}\left\{ \pm1\right\} ^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\mu\in_{R}\left\{ \pm1\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $z\in\left\{ \pm1\right\} ^{n}$
+\end_inset
+
+ כאשר
+\begin_inset Formula 
+\[
+P\left(z_{i}=1\right)=1-\epsilon,\;P\left(z_{i}=-1\right)=\epsilon
+\]
+
+\end_inset
+
+ואז נבדוק 
+\begin_inset Formula $\mu\cdot f\left(\mu\cdot x\right)g\left(y\right)=f\left(z\cdot x\cdot y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שמילת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Long Code
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חוקית עוברת ב-
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+ )ההסת' ש-
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i$
+\end_inset
+
+ הקוורדינטה המקודדת היא 
+\begin_inset Formula $1$
+\end_inset
+
+, כי ב-
+\begin_inset Formula $-1$
+\end_inset
+
+ המבחן נכשל(.
+\end_layout
+
+\begin_layout Standard
+נניח ש-
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{2}+\delta & \leq P\left(\mu\cdot f\left(\mu\cdot x\right)g\left(y\right)=f\left(z\cdot x\cdot y\right)\right)
+\end{align*}
+
+\end_inset
+
+לכן מכפלת האגפים תהיה 
+\begin_inset Formula $1$
+\end_inset
+
+ בהסת' לפחות 
+\begin_inset Formula $\frac{1}{2}+\delta$
+\end_inset
+
+ ו-
+\begin_inset Formula $-1$
+\end_inset
+
+ בהסת' לכל היותר 
+\begin_inset Formula $\frac{1}{2}-\delta$
+\end_inset
+
+ ובמעבר לתוחלת נקבל
+\begin_inset Formula 
+\begin{align*}
+2\delta & \leq E\left[\mu\cdot f\left(\mu\cdot x\right)g\left(y\right)f\left(z\cdot x\cdot y\right)\right]\\
+ & =E\left[\mu\left(\sum_{S}\hat{f}\left(S\right)\chi_{S}\left(\mu\cdot x\right)\right)\left(\sum_{T}\hat{g}\left(T\right)\chi_{T}\left(y\right)\right)\left(\sum_{R}\hat{f}\left(R\right)\chi_{R}\left(z\cdot x\cdot y\right)\right)\right]\\
+ & =\sum_{S,T,R}\hat{f}\left(S\right)\hat{g}\left(T\right)\hat{f}\left(R\right)\cdot E\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\chi_{S}\left(x\right)\chi_{T}\left(y\right)\chi_{R}\left(z\right)\chi_{R}\left(x\right)\chi_{R}\left(y\right)\right]\\
+ & =\sum_{S,T,R}\hat{f}\left(S\right)\hat{g}\left(T\right)\hat{f}\left(R\right)\cdot E_{\mu}\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\right]\cdot E\left[\chi_{S}\left(x\right)\chi_{R}\left(x\right)\right]\cdot E_{y}\left[\chi_{T}\left(y\right)\chi_{R}\left(y\right)\right]E_{z}\left[\chi_{R}\left(z\right)\right]\\
+ & =\sum_{S,T,R}\hat{f}\left(S\right)\hat{g}\left(T\right)\hat{f}\left(R\right)\cdot E_{\mu}\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\right]\cdot\delta_{S,R}\cdot\delta_{T,R}\cdot E_{z}\left[\chi_{R}\left(z\right)\right]\\
+ & =\sum_{S}\hat{f}\left(S\right)^{2}\hat{g}\left(S\right)\cdot E_{\mu}\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\right]E\left[\chi_{S}\left(z\right)\right]\\
+\left(*\right) & =\sum_{S:2\nmid\left|S\right|}\hat{f}\left(S\right)^{2}\hat{g}\left(S\right)\cdot E\left[\chi_{S}\left(z\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\left|S\right|$
+\end_inset
+
+ זוגי מתקיים 
+\begin_inset Formula $E_{\mu}\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\right]=E_{\mu_{R}\in\left\{ \pm1\right\} ^{n}}\left[\mu^{\left|S\right|+1}\right]=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אם למבחן הייתה שלמות של 
+\begin_inset Formula $1$
+\end_inset
+
+ היינו מקבלים שלפתור מערכת משוואות לינאריות זה קשה ב-
+\lang english
+NP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שזה לא פשוט לא נכון )תהליך גאוס-ז'ורדן(.
 \end_layout
 
 \end_body
