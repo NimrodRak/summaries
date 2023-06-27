@@ -59532,7 +59532,7 @@ TLB
 \lang english
 Direct Mapped
 \lang hebrew
-.
+?
 \end_layout
 
 \begin_deeper
@@ -59671,7 +59671,7 @@ TLB
 \lang english
 Direct Mapped
 \lang hebrew
-.
+?
 \end_layout
 
 \begin_deeper
@@ -59691,6 +59691,2481 @@ Direct Mapped
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{XI
+\backslash
+;
+\backslash
+; חישוב במקביל}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{XI}$
+\end_inset
+
+ |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חישוב במקביל
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{subsection}{הרצאה}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה להאיץ את ביצועי התכנית שלנו.
+ נוכל או להריץ סריאלית )סדרתית( יותר מהר )לקצר את זמן המחזור, שימוש במטמון
+ ועוד(, או לפרק את התכנית להרבה חלקים קטנים שניתן להריץ במקביל.
+\end_layout
+
+\begin_layout Description
+הערה העניין שלנו במקבול עולה כי הגענו לרוויה מבחינת שיפור הביצועים של ליבה
+ אחת )מבחינת חשמל לביצועים, שטח לביצועים ועוד(.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+טקסונומיה של מקבול
+\end_layout
+
+\begin_layout Itemize
+מקבול מערכת: פירוק המשימות השונות מתוך המחשב כולו כמערכת )תהליכים לדומה(
+ והרצתן במקביל.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמה במשחק מחשב יש הרבה רכיבי תוכנה שונים: מעבד ללוגיקה, מעבד לגרפיקה,
+ מעבד למידע שמגיע מהאינטרנט )במשחק מקוון(.
+ נוכל להריץ את התכניות האלה במקביל ויתקשרו אחת עם השנייה בעת הצורך - רוב
+ הזמן, אין סיבה שיחכו אחת לשנייה לזמן עיבוד.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מקבול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Task Pipeline
+\lang hebrew
+: פירוק תכניות למשימות באותה תוכנה והרצתן במשאבי עיבוד שונים.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמה במעבד גרפי יש כמה שלבים ב
+\lang english
+pipeline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד לתצוגה, כאשר היחידה האטומית בגרפיקה היא פוליגונים, שהופכים לפרגמנטים,
+ וכו'.
+ כל הפעולות כאן אמנם תלויות אחת בשנייה, אבל כל שלב דורש סוג חישוב/פקודות
+ שונות מאוד, ולכן רכיבי עיבוד שונים עובדים בשלבים שונים ואת זה ניתן למקבל.
+ מסיבה זו במחשבים רבים יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+GPU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהוא מעבד ספציפי לגרפיקה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מקבול תת-משימות: פירוק תכנית להרבה משימות אחידות וקטנות הרצתן למקביל.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמה בעת שאילתה למסד נתונים, כל מעבד יריץ את השאילתה על חלק אחר במסד, כאשר
+ המשימות )וזמן הריצה שלהן( זהות לחלוטין.
+\end_layout
+
+\begin_layout Standard
+אם המשימות לא אחידות אבל יש לנו מעבדים אחידים, אפשר לבנות תור משימות שכל
+ מעבד יקח ממנו משימה ברגע שיסיים את הקודמת, ואז בתוחלת נקבל ביצועים שווים
+ בין המעבדים.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מקבול פקודות: הרצת פקודות אסמבלי במקביל.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמה במעבדים מודרניים מריצים כמה פקודות במקביל כי יש להם כמה יחידות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+execution
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכמה יחידות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+issue
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ )פענוח(.
+\end_layout
+
+\begin_layout Standard
+ההבדל ביחס למקבולים האחרים היא שהמקבול הוא ברמת המעבד, והתכנית עצמה לא משתנה
+ )זה שקוף למשתמש(.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מקבול דאטה: הרצה במקביל של משימה על חלקים שונים במידע.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמה סכימת שני וקטורים ניתנת לביצוע במקבול מלא )כל שני איברים נסכמים בנפרד
+ ובאופן ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת מאחרים(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+במציאות מערבבים את כל הפתרונות האלה: יש לנו הרצת במקביל בכל ליבה, הרצת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OOO
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיכולה להריץ עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בפקודות בכל זמן מחזור, יש מעבדים שונים לגרפיקה וכו'.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+הטקסונומיה של
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Flynn
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Single Instruction Stream, Single Data Stream
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+SISD
+\lang hebrew
+(: מעבד יחיד.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Single Instruction Stream, Multiple Data Stream
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+SIMD
+\lang hebrew
+(: יכולת עיבוד של וקטורים )
+\lang english
+Vector Machines, CM-2
+\lang hebrew
+( בליבה אחת -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Data-Level
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Multiple Instruction Stream, Multiple Data Stream
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+MIMD
+\lang hebrew
+(: חישוב בקלאסטרים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Thread-Level
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Multiple Instruction Stream, Single Data Stream
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+MISD
+\lang hebrew
+(: לא שימושי לשום דבר חוץ מאולי אבטחה, אז נרצה להריץ כמה תוכנות שונות שעושות
+ את אותו הדבר ונבדוק שהן קיבלו את אותן התוצאות, במטוסים למשל.
+\end_layout
+
+\begin_layout Standard
+בעת הרצה במקביל של ת'רדים, הבעיה המרכזית שצריך לפתור היא סנכרון )ניהול גישה
+ למשאבים משותפים במקביל(.
+ פתרונות סנכרון מאיטים את הריצה של ת'רד אחד, אבל שומרים על חוקיות הדאטה,
+ ולכן אי אפשר למקבל כל דבר כי לפעמים הסנכרון יעלה את זמן הריצה ליותר זמן
+ מאשר הרצה בת'רד אחד.
+ ת'רדים הם תת-יחידות חישוב שמוכלים יחד בתהליכים, כך שמשותף להם מרחב זכרון.
+\end_layout
+
+\begin_layout Standard
+תהליכים חדשים נוצרים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י קריאה ל-
+\lang english
+syscall
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שנקרא 
+\lang english
+fork
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בזמן ריצת התהליך.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fork
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יוצר תהליך זהה לחלוטין לזה שיצר אותו, מבחינת המקום בתכנית שממנו ממשיכים
+ והזכרון של התכנית, מלבד ה-
+\lang english
+pid
+\lang hebrew
+, שבאמצעותו מזהים האם אנחנו תהליך אב או בן.
+ החל מהפיצול, שינויים במרחב הזכרון של תהליך אחד לא משפיעים על האחר.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מודלי זכרון משותף ב-
+\lang english
+Multi-Processing
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Symmetric Multi-Processing
+\lang hebrew
+: לכל המעבדים יש זכרון יחיד משותף.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+במודל כזה גישה היא מהירה ויעילה אבל בסקייל זה נהיה איטי.
+ בנוסף, קל למשתמש לפתח תחת מודל זה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+Non-Uniform Memory Access
+\lang hebrew
+: לכל מעבד יש זכרון משל עצמו וגם גישה לזכרון משותף.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+במודל כזה גישה היא יותר מורכבת )המפתח צריך לדעת מתי לגשת לזכרון שלו ומתי
+ למשותף(, אבל בסקייל עובדת הרבה יותר טוב )רוב הזמן המעבדים יעבדו עם הזכרון
+ שלהם, ורק חלק מהזמן יגשו לזכרון המשותף שלו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+throughput
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוגבל(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size larger
+כלים לניהול זכרון בין תהליכים
+\end_layout
+
+\begin_layout Itemize
+ה-
+\lang english
+PT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאפשר למרחב זכרון פרטי שונה לכל תהליך, כי לכל תהליך יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משל עצמו.
+\end_layout
+
+\begin_layout Itemize
+תקשורת בין תהליכים נעשת באמצצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pipe
+\lang hebrew
+-ים, שהם אובייקטים שהתהליכים כותבים וקוראים להם, ויכולים לחכות למידע בהם
+ וכו'.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מה צריך בשביל לעבוד עם
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Multi-Threading
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Itemize
+פעולות אטומיות בעת ריצת ת'רדים במקביל של אותו התהליך מאפשרות שמירה על חוקיות
+ המידע )פעולות שאי אפשר לעצור באמצע(.
+\end_layout
+
+\begin_layout Itemize
+זכרון משותף לכמה ת'רדים, שהוא הזכרון המרכזי של התהליך.
+\end_layout
+
+\begin_layout Itemize
+מערכת הפעלה שתנהל הכל, לרבות מימוש אינטראפטיםלהערה או הרדמה של תהליכים,
+ שמשמשים אותנו בהקשר הזה לעדכון תהליכים שונים על סיום הכנת המידע לתהליך
+ אחר.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+הרצה במקביל של ת'רדים במעבד
+\end_layout
+
+\begin_layout Itemize
+מעבד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+superscalar
+\lang hebrew
+ עם ת'רד יחיד מריץ בכל מחזור שעון את אותו הת'רד, אבל כמה פקודות שלו במקביל
+ )זו ההגדרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+superscalar
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Itemize
+מעבד עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Fine-grained Multi-Threading
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מריץ בכל מחזור שעון פקודה אחת או יותר של ת'רד אחד, ועושה לת'רדים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+interleaving
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ברמת המחזור.
+\end_layout
+
+\begin_layout Itemize
+מעבד עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Corase-grained Multi-Threading
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מריץ תכנית עד שהיא נתקעת, ואז עובר לתכנית אחרת עד שהיא נתקעת וחוזר חלילה.
+ כמו הנ
+\begin_inset Quotes xrd
+\end_inset
+
+ל רק שההחלפה קורת ברמת הבלוקים של קוד ולא ברמת הפקודה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\lang english
+GPU
+\lang hebrew
+-ים עובדים ב-
+\lang english
+Coarse-Grain
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומעבדי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+General Purpose
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ עובדים ב-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Fine-Grain
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מעבד רב-ליבתי מריץ בכל ליבה )מעבד בפני עצמו( תוכנה אחרת, ולא מערבב בין ת'רדים
+ באותה ליבה.
+\end_layout
+
+\begin_layout Itemize
+מעבד עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Simultaneous Multi-Threading
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מנסה לשבץ פקודות בליבות כמה שיותר צפוף, לעתים אפילו פקודות של כמה ת'רדים
+ באותו מחזור.
+ למנגנון זה נצטרך להחזיק רגיסטרים לכל אחד מהת'רדים שלנו, וארכיטקטורית זה
+ מאוד מאתגר אבל עובד מאוד טוב.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+מודלים לגישה משותפת לזכרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לכל המעבדים יש זכרון אחד גדול ומשותף, והמקבול בזכרון הוא בגישת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SMP
+\lang hebrew
+.
+ לכל אחד יש מטמון משלו מעל הזכרון, שאליו ניגשים כולם דרך אותו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+bus
+\lang hebrew
+, שהוא צוואר הבקבוק כאן.
+ במודל כזה קשה להריץ הרבה תהליכים שניגשים לזכרון כי מהר מאוד מגיעים לרוויה
+ בביצועים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+היתרון במימוש כזה של מקבול הוא שהגישה לזכרון היא אחידה, ולא נדרשים פרטי
+ מימוש מאתגרים מעבר לפתרון בעיות סנכרון.
+ החסרו
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יהיה לנו מעבד אחד שמריץ הרבה ת'רדים במקביל, כך שלכל הת'רדים יש מטמון משותף
+ ומשאבי חישוב משותפים )לרבות זכרון משותף(.
+ היתרון כאן הוא שבזמן שת'רד אחד מחכה לתשובה מהזכרון, נריץ ת'רד אחר.
+\end_layout
+
+\begin_layout Enumerate
+יהיו לנו כמה מעבדים, כל אחד מריץ תהליך עם מטמון משלו, והם ניגשים לזכרון
+ משותף )לוגית( דרך שממומש כזכרונות שונים )פיזית( שניגשים אליהם דרך רשת )במקום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+bus
+\lang hebrew
+(.
+ נוכל לגשת לכמה זכרונות במקביל דרך הרשת.
+ כדי להצדיק את התקורה של הרשת, נצטרך בלוקים מאוד גדולים ב-
+\lang english
+cache
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כך שה-
+\lang english
+latency
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בכל גישה יהיה קטן ביחס לזמן של העברת המידע עצמה.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה נניח שה-
+\lang english
+bus
+\lang hebrew
+ יכול להעביר בכל פעם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+32
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים של מידע מהזכרון.
+ כדי להביא שורה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+512
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים למטמון, ה-
+\lang english
+bus
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יחזיר לנו את המידע בנגלות של 
+\begin_inset Formula $32$
+\end_inset
+
+ ביט, כשכל סט של נגלות נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Burst
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)פרץ(.
+ ה-
+\lang english
+bus
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאוד יקר חומרתית כי הוא צריך להיות מאוד מהיר על פני מרחקים מאוד גדולים,
+ ולכן הוא עדיין נחשב צוואר בקבוק.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+קוהרנטיות מטמון
+\end_layout
+
+\begin_layout Standard
+לאחר ביצוע פעולות על כתובות בזכרון, יש במטמון ובזכרון ערכים שונים.
+ כשיש מעבד אחד עם מטמון אחד וזכרון אחד, זו לא בעיה.
+ כשיש שני מעבדים, זה יוצר מצב של חוסר-קוהרנטיות - מעבד אחד קורא מידע לא
+ מעודכן מהזכרון שנמצא כרגע רק במטמון.
+ יש לנו שתי דרישות:
+\end_layout
+
+\begin_layout Itemize
+קוהרנטיות סדרתית: כל רמות הזכרות מחזיקות באותו ערך לאותה כתובת בזכרון )או
+ לפחות המימוש חושף ממשק שמקיים זאת(.
+\end_layout
+
+\begin_layout Itemize
+כתיבות לזכרון נעשות באופן סדרתי: אם שני תהליכים כותבים לזכרון )קודם למטמון
+ שלהם(,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+A
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולאחריו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+B
+\lang hebrew
+, אז הערך של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+B
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא זה שיופיע בזיכרון.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+עקרונות במימוש קוהרנטיות
+\end_layout
+
+\begin_layout Itemize
+מיגרציה: ברגע שתהליך כותב, המידע עובר באופן שקוף לתהליכים אחרים.
+\end_layout
+
+\begin_layout Itemize
+רפליקציה: ברגע שתהליך קורא, כל העותקים של המידע שהוא רוצה הם העדכניים ביותר.
+\end_layout
+
+\begin_layout Description
+דוגמה נממש קוהרנטיות עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+bus
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משותף בסגנון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Snoop-Invalidate
+\lang hebrew
+.
+ כשתהליך יכתוב לזכרון, תשלח ב-
+\lang english
+bus
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הודעת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+snoop
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמודיעה לכל )המטמונים של( התהליכים שהערך של הכתובת שאליה כתבו השתנה והעותק
+ שלהם כבר לא ולידי.
+ לאחר מכן, בפעם הבאה שתהליך אחר יקרא את הכתובת הוא יראה שהכניסה במטמון כבר
+ לא ולידית ויקרא אותה מחדש מהזכרון.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ההנחה פה היא שהמטמון הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Write-Thru
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי שהעדכון של הזכרון יהיה מיד בגישה ולא רק בגירוש.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמה פרוטוקולים מוכללים לזה שמאפשרים שימוש במטמוני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Write-Back
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ נקראים 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MESI
+\lang hebrew
+, שמאפשרים לכתובת להיות באחד מארבעה מצבים הנראים באיור.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/valid.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_body
 \end_document

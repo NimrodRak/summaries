@@ -1659,15 +1659,65 @@ PCP
 \end_layout
 
 \begin_layout Description
-הערה הניסוח החדש מספיק כי ל-
-\begin_inset Formula $\mf{gap-MAX-3SAT}\left[1,s\right]$
+הערה נראה שהניסוח החדש גורר את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המקורי על 
+\begin_inset Formula $L=\mf{gap-MAX-3SAT}\left[1,s\right]$
 \end_inset
 
- יש מוודא הסת' שעונה על הקריטריונים האמורים לעיל ולכן עם רדוקציה מכל 
-\begin_inset Formula $L\in\np$
-\end_inset
-
- נקבל את משפט ה-
+ ומשם עם רדוקציה מכל שפה אחרת נקבל את משפט ה-
 \lang english
 PCP
 \family roman
@@ -1697,11 +1747,29 @@ PCP
 \noun default
 \color inherit
 המקורי.
+ לכן מספיק שנציג מוודא הסת' עם תקפות 
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $L$
+\end_inset
+
+ ונסיים.
+ חשוב לשים לב ש-
+\begin_inset Formula $L$
+\end_inset
+
+ כאן היא רק מתווכת לכל שפה והקושי הוא בהוכחת הקשיות שלה ב-
+\begin_inset Formula $\np$
+\end_inset
+
+, ואילו המוודא ההסת' הוא טריוויאלי )והנה הוא(.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-המוודא מקבל 
+המוודא ההסת' מקבל 
 \begin_inset Formula $I=c_{1}\land\ldots\land c_{m}$
 \end_inset
 
@@ -1782,11 +1850,7 @@ PCP
 \begin_inset Formula $s$
 \end_inset
 
-, כלומר 
-\begin_inset Formula $s$
-\end_inset
-
- הוא קבוע התקפות במקרה הזה.
+.
 \end_layout
 
 \end_deeper
