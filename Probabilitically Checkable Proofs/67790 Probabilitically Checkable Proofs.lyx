@@ -2554,7 +2554,33 @@ E_{c\in I}\left[\mez 1_{\left\{ c\;\text{מפסידים על}\right\} }\right] &
 \uwave default
 \noun default
 \color inherit
-זו החדשה שהמציא עכשיו ממנה הוא חושף
+זו החדשה שהמציא עכשיו ממ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+c,s
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נה הוא חושף
 \family roman
 \series medium
 \shape up
@@ -9740,15 +9766,6 @@ Long Code
 \end_inset
 
 .
- נשתמש בזה כדי להוכיח ש-
-\begin_inset Formula $3{\rm Lin}2$
-\end_inset
-
- הוא קשה ב-
-\begin_inset Formula $\np$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Description
@@ -9983,6 +10000,15 @@ pair-wise
 \begin_layout Description
 טענה 
 \begin_inset Formula $\chi_{S}\cdot\chi_{T}=\chi_{S\triangle T}$
+\end_inset
+
+.
+ נשתמש בזה כדי להוכיח ש-
+\begin_inset Formula $3{\rm Lin}2$
+\end_inset
+
+ הוא קשה ב-
+\begin_inset Formula $\np$
 \end_inset
 
 .
@@ -10466,7 +10492,7 @@ Long Code
  עבורה
 \begin_inset Formula 
 \[
-\hat{g}\left(S\right)>\varphi_{1}\left(\delta\right)\land\left|\hat{f}\left(S\right)\right|>\varphi_{2}\left(\delta\right)\land0<\left|S\right|\leq\varphi_{3}\left(\delta\right)
+\hat{g}\left(S\right)>\varphi_{1}\left(\delta\right)\;\land\;\left|\hat{f}\left(S\right)\right|>\varphi_{2}\left(\delta\right)\;\land\;0<\left|S\right|\leq\varphi_{3}\left(\delta\right)
 \]
 
 \end_inset
@@ -10847,7 +10873,9 @@ P\left(\mu\cdot f\left(\mu\cdot x\right)g\left(y\right)=f\left(z\cdot x\cdot y\r
  & =\sum_{S,T,R}\hat{f}\left(S\right)\hat{g}\left(T\right)\hat{f}\left(R\right)\cdot E_{\mu}\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\right]\cdot E\left[\chi_{S}\left(x\right)\chi_{R}\left(x\right)\right]\cdot E_{y}\left[\chi_{T}\left(y\right)\chi_{R}\left(y\right)\right]E_{z}\left[\chi_{R}\left(z\right)\right]\\
  & =\sum_{S,T,R}\hat{f}\left(S\right)\hat{g}\left(T\right)\hat{f}\left(R\right)\cdot E_{\mu}\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\right]\cdot\delta_{S,R}\cdot\delta_{T,R}\cdot E_{z}\left[\chi_{R}\left(z\right)\right]\\
  & =\sum_{S}\hat{f}\left(S\right)^{2}\hat{g}\left(S\right)\cdot E_{\mu}\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\right]E\left[\chi_{S}\left(z\right)\right]\\
-\left(*\right) & =\sum_{S:2\nmid\left|S\right|}\hat{f}\left(S\right)^{2}\hat{g}\left(S\right)\cdot E\left[\chi_{S}\left(z\right)\right]
+\left(*\right) & =\sum_{S:2\nmid\left|S\right|}\hat{f}\left(S\right)^{2}\hat{g}\left(S\right)\cdot E\left[\chi_{S}\left(z\right)\right]\\
+\left(**\right) & =\sum_{S:2\nmid\left|S\right|}\hat{f}\left(S\right)^{2}\hat{g}\left(S\right)\cdot\prod_{i\in S}E\left[z_{i}\right]\\
+ & =\sum_{S:2\nmid\left|S\right|}\hat{f}\left(S\right)^{2}\hat{g}\left(S\right)\cdot\left(1-2\epsilon\right)^{\left|S\right|}
 \end{align*}
 
 \end_inset
@@ -10862,6 +10890,155 @@ P\left(\mu\cdot f\left(\mu\cdot x\right)g\left(y\right)=f\left(z\cdot x\cdot y\r
 
  זוגי מתקיים 
 \begin_inset Formula $E_{\mu}\left[\mu\cdot\chi_{S}\left(\mu\cdot1^{n}\right)\right]=E_{\mu_{R}\in\left\{ \pm1\right\} ^{n}}\left[\mu^{\left|S\right|+1}\right]=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+ 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ מוגרלים ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת ולכן כפליות התוחלת מתקיימת ובנוסף 
+\begin_inset Formula $\chi_{S}\left(z\right)=\prod\limits _{i\in S}z_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $\varphi_{3}\left(\delta\right)=\log_{1-2\epsilon}\delta$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\begin{align*}
+\sum_{S:2\nmid\left|S\right|}\hat{f}\left(S\right)^{2}\hat{g}\left(S\right)\cdot\left(1-2\epsilon\right)^{\left|S\right|} & =\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)\cdot\left(1-2\epsilon\right)^{\left|S\right|}+\sum\limits _{\begin{array}{c}
+S:2\nmid\left|S\right|\\
+\left|S\right|>\varphi_{3}
+\end{array}}\hat{f}\left(S\right)^{2}\cdot\desc{\hat{g}\left(S\right)}{\leq1}\cdot\desc{\left(1-2\epsilon\right)^{\left|S\right|}}{<\delta\;\left(*\right)}\\
+ & \leq\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)\cdot\left(1-2\epsilon\right)^{\left|S\right|}+\delta\desc{\sum\limits _{\begin{array}{c}
+S:2\nmid\left|S\right|\end{array}}\hat{f}\left(S\right)^{2}}{\leq1}\\
+\text{} & \leq\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\desc{\hat{g}\left(S\right)}{\in\left[-1,1\right]}\cdot\desc{\left(1-2\epsilon\right)^{\left|S\right|}}{\leq1}+\delta\\
+ & \leq\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\desc{\hat{g}\left(S\right)}{\geq0}\cdot\desc{\left(1-2\epsilon\right)^{\left|S\right|}}{\leq1}+\delta\\
+ & \leq\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\delta
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(1-2\epsilon\right)^{x}$
+\end_inset
+
+ היא פ' יורדת ב-
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נגדיר 
+\begin_inset Formula $\varphi_{1}\left(\delta\right)=\frac{\delta}{2}$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\begin{align*}
+\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\delta & \leq\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\udesc{\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}>\hat{g}\left(S\right)
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}}{\leq1}\cdot\desc{\hat{g}\left(S\right)}{<\frac{\delta}{2}}+\delta\\
+ & \leq\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\delta+\frac{\delta}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+מתקיים 
+\begin_inset Formula $1\geq\sum\limits _{\hat{g}\left(S\right)>\varphi_{1}}\hat{g}\left(S\right)^{2}\geq\varphi_{1}\sum\limits _{\hat{g}\left(S\right)>\varphi_{1}}\hat{g}\left(S\right)$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\varphi_{2}\left(\delta\right)=\sqrt{\varphi_{1}\cdot\frac{\delta}{4}}$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\begin{align*}
+\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\delta+\frac{\delta}{2} & \le\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)\land\left|\hat{f}\left(S\right)\right|\geq\varphi_{2}
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)\land\left|\hat{f}\left(S\right)\right|<\varphi_{2}
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\delta+\frac{\delta}{2}\\
+ & \leq\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)\land\left|\hat{f}\left(S\right)\right|\geq\varphi_{2}
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\frac{1}{\varphi_{1}}\udesc{\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)\land\left|\hat{f}\left(S\right)\right|<\varphi_{2}
+\end{smallmatrix}}\hat{g}\left(S\right)\varphi_{1}}{\leq1}\cdot\desc{\hat{f}\left(S\right)^{2}}{\leq\varphi_{1}\cdot\frac{\delta}{4}}+\delta+\frac{\delta}{2}\\
+ & \leq\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)\land\left|\hat{f}\left(S\right)\right|\geq\varphi_{2}
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)+\delta+\frac{\delta}{2}+\frac{\delta}{4}
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\sum\limits _{\begin{smallmatrix}S:2\nmid\left|S\right|\\
+\left|S\right|\leq\varphi_{3}\land\hat{g}\left(S\right)\geq0\\
+\varphi_{1}\leq\hat{g}\left(S\right)\land\left|\hat{f}\left(S\right)\right|\geq\varphi_{2}
+\end{smallmatrix}}\hat{f}\left(S\right)^{2}\cdot\hat{g}\left(S\right)\geq\frac{\delta}{4}>0$
+\end_inset
+
+ ובגלל שכל הנסכמים הם חיוביים, בהכרח שקיים 
+\begin_inset Formula $S$
+\end_inset
+
+ שמקיים את תנאי הסכום, כלומר 
+\begin_inset Formula $\varphi_{1}\leq\hat{g}\left(S\right),\;\varphi_{2}\leq\left|\hat{f}\left(S\right)\right|,\;\left|S\right|\leq\varphi_{3}$
 \end_inset
 
 .
@@ -10902,6 +11079,1211 @@ NP
 \noun default
 \color inherit
 שזה לא פשוט לא נכון )תהליך גאוס-ז'ורדן(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{IX
+\backslash
+;
+\backslash
+; UGC וקשיות 3Lin2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+שבוע 
+\begin_inset Formula $\mathbb{IX}$
+\end_inset
+
+ |
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UGC
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקשיות
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+3Lin2
+\end_layout
+
+\begin_layout Description
+הגדרה תהי 
+\begin_inset Formula $h:\left\{ \pm1\right\} ^{n}\to\left\{ \pm1\right\} $
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $L_{\eta,k}=\bigcup\limits _{\begin{smallmatrix}\left|S\right|\leq k\\
+\left|\hat{h}\left(S\right)\right|\geq\eta
+\end{smallmatrix}}S$
+\end_inset
+
+, כלומר איחוד הקבוצות שאינן גדולות מדי )לא יותר מ-
+\begin_inset Formula $k$
+\end_inset
+
+( ומקדם הפורייה שלהן ביחס ל-
+\begin_inset Formula $h$
+\end_inset
+
+ הוא לא קטן מדי )לא פחות מ-
+\begin_inset Formula $\eta$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הערה 
+\begin_inset Formula $\left|L_{\eta,k}\left(h\right)\right|\leq\frac{k}{\eta^{2}}$
+\end_inset
+
+ כי כל קבוצה היא בגודל לכל היותר 
+\begin_inset Formula $k$
+\end_inset
+
+, ו-
+\begin_inset Formula $\eta^{2}\left|\left\{ S:\hat{h}\left(S\right)\geq\eta\right\} \right|\leq\sum\limits _{\left|\hat{h}\left(S\right)\right|\geq\eta}\hat{h}\left(S\right)^{2}\leq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה יהיו 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פ' שעוברות את המבחן בהסת' 
+\begin_inset Formula $\frac{1}{2}+\delta\leq$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $L\left(f\right)=L_{\frac{\delta}{4},\varphi_{3}}\left(f\right),\;L\left(g\right)=L_{\frac{\delta}{4},\varphi_{3}}\left(g\right)$
+\end_inset
+
+ ונבחר 
+\begin_inset Formula $i\in_{R}L\left(f\right),\;j\in_{R}L\left(g\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $P\left(i=j\right)\geq\left(\frac{\delta^{2}}{\varphi_{3}\left(\delta\right)\cdot16}\right)^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $L\left(f\right)\cap L\left(g\right)\neq\varnothing$
+\end_inset
+
+ כי הראנו בסוף ההרצאה הקדומת שקיימת 
+\begin_inset Formula $S$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|\hat{f}\left(S\right)\right|,\hat{g}\left(S\right)$
+\end_inset
+
+ גדולים ככל שנרצה )כי 
+\begin_inset Formula $f,g$
+\end_inset
+
+ עוברות את המבחן בהסת' מספקת(.
+ נסמן 
+\begin_inset Formula $k\in L\left(f\right)\cap L\left(g\right)$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+P\left(i=j\right)\geq P\left(i=k=j\right)=\frac{1}{L\left(f\right)}\cdot\frac{1}{L\left(g\right)}\geq\left(\frac{1}{\frac{\varphi_{3}}{\left(\frac{\delta}{4}\right)^{2}}}\right)^{2}>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+מסקנה בהינתן פ' שעוברות את הבחינה, נוכל לבחור קוורדינטה מתוך 
+\begin_inset Formula $f$
+\end_inset
+
+ ו-
+\begin_inset Formula $g$
+\end_inset
+
+ באופן ב
+\begin_inset Quotes xrd
+\end_inset
+
+ת אחת מהשנייה, והסיכוי שהקוורדינטות הללו יהיו שוות חסומה מלמטה )עם חסם גדול
+ מ-
+\numeric on
+0
+\numeric off
+(, קטן כרצוננו כתלות ב-
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה נרצה בהינתן 
+\begin_inset Formula $\sigma\in S_{n}$
+\end_inset
+
+, לבדוק האם יש 
+\begin_inset Formula $i\in L\left(f\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $j\in L\left(g\right)$
+\end_inset
+
+ שעבורן 
+\begin_inset Formula $i=\sigma\left(j\right)$
+\end_inset
+
+ )ולא סתם 
+\begin_inset Formula $i=j$
+\end_inset
+
+(.
+ כדי לעשות את זה, במבחן ה-
+\lang english
+Long Code
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהראנו, נסתכל על 
+\begin_inset Formula $g\left(\sigma\left(y\right)\right)$
+\end_inset
+
+ במקום 
+\begin_inset Formula $g\left(y\right)$
+\end_inset
+
+ )
+\begin_inset Quotes xrd
+\end_inset
+
+החלפת שמות
+\begin_inset Quotes xrd
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Description
+הגדרה בעיית ה-
+\lang english
+Unique Label Cover
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבלת כקלט גרף מכוון 
+\begin_inset Formula $\left(V,E\right)$
+\end_inset
+
+ ואילוצים 
+\begin_inset Formula $c_{e}\in\com\overset{\text{חחע"ל}}{\longrightarrow}\com$
+\end_inset
+
+ לכל 
+\begin_inset Formula $e\in E$
+\end_inset
+
+.
+ הבעיה מבקשת למצוא השמה 
+\begin_inset Formula $f:V\to\com$
+\end_inset
+
+ עם 
+\begin_inset Formula $P_{\left(u,v\right)\in E}\left(f\left(u\right)=c_{\left(u,v\right)}\left(f\left(v\right)\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה אינטואיטיבית, האילוצים מגדירים לכל צלע )מכוונת( אילו זוגות אותיות )צבעים(
+ מותרים, או לחלופין לכל צלע ואות לקודקוד הראשון, איזה צבע חייב להיות לקודקוד
+ השני כדי לקיים את האילוץ.
+ לסיום אנחנו רוצים למצוא צביעה של הגרף שעבורו מספר הצלעות עם אילוצים מסופקים
+ הוא מקסימלי.
+\end_layout
+
+\begin_layout Description
+השערה )
+\lang english
+UGC
+\lang hebrew
+( לכל 
+\begin_inset Formula $\eta$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\com$
+\end_inset
+
+ בגודל קבוע כך ש-
+\begin_inset Formula $\left(\eta,1-\eta\right){\rm -gap-ULC}\in\mathsf{NPH}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה 
+\begin_inset Formula $\left(\frac{1}{2}+\delta,1-\epsilon\right){\rm -gap-3Lin2}\in\mathsf{NPH}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הערה נשתמש בהשערה להוכחת הטענה כדי להקל על עצמנו, אפע
+\begin_inset Quotes xrd
+\end_inset
+
+פ שניתן להוכיח אותה גם בלי השערות.
+\end_layout
+
+\begin_layout Proof
+נוכיח שקיימת רדוקציה 
+\begin_inset Formula $\left(\eta,1-\eta\right){\rm -gap-ULC}\leq_{p}\left(\frac{1}{2}+\delta,1-\epsilon\right){\rm -gap-3Lin2}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $\left(G,\left\{ c_{e}\right\} \right)\in{\rm ULC}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $v\in V$
+\end_inset
+
+, נגדיר )
+\begin_inset Quotes xrd
+\end_inset
+
+ענן
+\begin_inset Quotes xrd
+\end_inset
+
+ של( 
+\begin_inset Formula $2^{\left|\com\right|}$
+\end_inset
+
+ משתנים חדשים )מקודדים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י 
+\begin_inset Formula $\left\{ \pm1\right\} ^{\left|\com\right|}$
+\end_inset
+
+( לאוסף המשוואות ב-
+\lang english
+3Lin2
+\lang hebrew
+, ואת ההשמה לענן נסמן ב-
+\begin_inset Formula $f_{v}:\left\{ \pm1\right\} ^{\left|\com\right|}\to\left\{ \pm1\right\} $
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $\left(u,v\right)\in E$
+\end_inset
+
+, נתאים את המשוואות של מבחן ה-
+\lang english
+Long Code
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור 
+\begin_inset Formula $f_{u}$
+\end_inset
+
+ ו-
+\begin_inset Formula $f_{v}$
+\end_inset
+
+ עם הפרמוטציה 
+\begin_inset Formula $c_{\left(u,v\right)}$
+\end_inset
+
+, כלומר, כל האפשרויות למשוואה 
+\begin_inset Formula $\mu\cdot f\left(\mu\cdot x\right)g\left(y\right)=f\left(z\cdot x\cdot y\right)$
+\end_inset
+
+ )בדומה לשימוש ב-
+\lang english
+sum-check
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ברדוקציה ל-
+\lang english
+QS
+\lang hebrew
+(, כאשר במקרה הזה בגלל שהגרלת 
+\begin_inset Formula $z$
+\end_inset
+
+ היא ממשוקלת, נגלם את העובדה שמערכת המשוואות שלנו היא למעשה ממושקלת )או
+ לחלופין מכילה כפילויות כדי לממש משקול ללא פ' משקול(.
+\end_layout
+
+\begin_layout Proof
+נוכיח שהרדוקציה נכונה, כלומר, נראה שהרדוקציה מתאימה נכונה את 
+\begin_inset Formula $\y,\n$
+\end_inset
+
+ של בעיית ההבטחה הראשונה לשנייה.
+\end_layout
+
+\begin_layout Proof
+ראשית נראה התאמה של 
+\begin_inset Formula $\y$
+\end_inset
+
+-ים; תהי 
+\begin_inset Formula $A:V\to\com$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $P_{\left(u,v\right)\in E}\left(A\left(u\right)=c_{\left(u,v\right)}\left(A\left(v\right)\right)\right)\geq1-\eta$
+\end_inset
+
+, כלומר צביעה שמספקת לפחות 
+\begin_inset Formula $1-\eta$
+\end_inset
+
+ מאילוצי הצביעה על הצלעות.
+ נוכיח שהפלט הרדוקציה הוא אוסף משוואות לינאריות שניתן לספק לפחות 
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+ ממנו.
+\end_layout
+
+\begin_layout Proof
+נגדיר השמה למערכת המשוואות באופן הבא: לכל 
+\begin_inset Formula $u\in V$
+\end_inset
+
+ ו-
+\begin_inset Formula $x\in\left\{ \pm1\right\} ^{n}$
+\end_inset
+
+ , נגדיר
+\begin_inset Formula $f_{u}\left(x\right)=x_{A\left(u\right)}$
+\end_inset
+
+ )מוגדר היטב כי 
+\begin_inset Formula $\left|{\rm Im}\;A\right|=\left|\com\right|$
+\end_inset
+
+ ולכן נוכל לסדר את 
+\begin_inset Formula $\com$
+\end_inset
+
+ כך שכל צבע ייצג אינדקס ב-
+\begin_inset Formula $\left\{ 0,\ldots,\left|\com\right|-1\right\} $
+\end_inset
+
+(, כלומר הדיקטטורה המתאימה ל-
+\begin_inset Formula $A\left(u\right)$
+\end_inset
+
+.
+ אינטואיטיבית משימים ב-
+\begin_inset Formula $x$
+\end_inset
+
+ בענן של 
+\begin_inset Formula $u$
+\end_inset
+
+ את הערך 
+\begin_inset Quotes xld
+\end_inset
+
+מהי הקוורדינטה של 
+\begin_inset Formula $x$
+\end_inset
+
+ באינדקס המתאים לצבע של 
+\begin_inset Formula $u$
+\end_inset
+
+ בצביעה 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Quotes xrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+עבור 
+\begin_inset Formula $u$
+\end_inset
+
+ ו-
+\begin_inset Formula $v$
+\end_inset
+
+ שמקיימים את אילוץ הצביעה, כלומר 
+\begin_inset Formula $A\left(u\right)=c_{\left(u,v\right)}\left(A\left(v\right)\right)$
+\end_inset
+
+, קיים 
+\begin_inset Formula $i$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $f_{u}=f$
+\end_inset
+
+ ו-
+\begin_inset Formula $f_{v}=g$
+\end_inset
+
+ הם הדיקטטורה המתאימה ל-
+\begin_inset Formula $i$
+\end_inset
+
+ )עד כדי הפרמוטציה על אחד מהם( ולכן המבחן עובר אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם
+\begin_inset Formula 
+\[
+x_{i}y_{i}=\mu\cdot\mu\cdot x_{i}y_{i}=\mu f\left(\mu x\right)g\left(y\right)=f\left(zxy\right)=z_{i}x_{i}y_{i}
+\]
+
+\end_inset
+
+אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם 
+\begin_inset Formula $z_{i}=1$
+\end_inset
+
+ שזה קורה בהסת' 
+\begin_inset Formula $1-\epsilon'$
+\end_inset
+
+.
+ כלומר, לכל אילוץ 
+\begin_inset Formula $c_{e}$
+\end_inset
+
+ שמסתפק )יש 
+\begin_inset Formula $1-\eta$
+\end_inset
+
+ כאלה(, 
+\begin_inset Formula $1-\epsilon'$
+\end_inset
+
+ מהמשוואות בענן שלו מסתפקות.
+ לכן סה
+\begin_inset Quotes xrd
+\end_inset
+
+כ לפחות 
+\begin_inset Formula $1-\eta-\epsilon'\leq\left(1-\epsilon'\right)\left(1-\eta\right)$
+\end_inset
+
+ משוואות מסתפקות ולכן עבור 
+\begin_inset Formula $\epsilon=\eta+\epsilon'$
+\end_inset
+
+ פלט הרדוקציה מקיים את תנאי השלמות )הוא ב-
+\begin_inset Formula $\y$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+עתה נראה התאמה של 
+\begin_inset Formula $\n$
+\end_inset
+
+-ים בקונטרה-פוזיטיב; נניח שיש השמה שמספקת לפחות 
+\begin_inset Formula $\frac{1}{2}+\delta$
+\end_inset
+
+ מהמשוואות ונראה השמה למערכת שמספקת לפחות 
+\begin_inset Formula $\eta$
+\end_inset
+
+ מהאילוצים )כלומר אם קלט אינו ב-
+\begin_inset Formula $\n$
+\end_inset
+
+ של הבעיה השנייה, הוא אינו ב-
+\begin_inset Formula $\n$
+\end_inset
+
+ של הראשונה(.
+ בגלל שאחוז המשוואות המסופקות הוא ממוצע המשוואות המסופקות בכל ענן )נוסף
+ על אלגברה לא מעניינת(, ההשמה הזו מספקת 
+\begin_inset Formula $\frac{1}{2}+\frac{\delta}{2}\leq$
+\end_inset
+
+ משוואות בלפחות 
+\begin_inset Formula $\frac{\delta}{2}$
+\end_inset
+
+ מ
+\begin_inset Quotes xrd
+\end_inset
+
+ענני
+\begin_inset Quotes xrd
+\end_inset
+
+ המשוואות המושרים ע
+\begin_inset Quotes xrd
+\end_inset
+
+י כל אילוץ )כלומר מבחן ה-
+\lang english
+Long Code
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עובר הסת' זו עבור האילוץ(.
+\end_layout
+
+\begin_layout Proof
+לכל קודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+, נבחר דיקטטורה המתאימה ל-
+\begin_inset Formula $\xi_{u}\in_{R}L\left(f_{u}\right)=L_{\frac{\frac{\delta}{2}}{4},\varphi_{3}\left(\frac{\delta}{2}\right)}\left(f_{u}\right)$
+\end_inset
+
+ כהשמה לאוסף משתנים המושרה מ-
+\begin_inset Formula $u$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $c_{\left(u,v\right)}$
+\end_inset
+
+ אילוץ צביעה שענן המשוואות שלו 
+\begin_inset Formula $\frac{1}{2}+\frac{\delta}{2}$
+\end_inset
+
+ מסופק, מהמסקנה שהוכחנו למעלה 
+\begin_inset Formula $P\left(\xi_{u}=\xi_{v}\right)\geq\left(\frac{\delta^{2}}{\varphi_{3}\left(\frac{\delta}{2}\right)\cdot64}\right)^{2}$
+\end_inset
+
+ ולכן תוחלת מספר האילוצים שמתקיימים הוא 
+\begin_inset Formula $\frac{\delta}{2}\cdot\left(\frac{\delta^{2}}{\varphi_{3}\left(\frac{\delta}{2}\right)\cdot64}\right)^{2}\leq$
+\end_inset
+
+ שזה גדול מ-
+\begin_inset Formula $\eta$
+\end_inset
+
+ כי אנחנו יכולים לבחור 
+\begin_inset Formula $\eta$
+\end_inset
+
+ קטן כרצוננו.
+\end_layout
+
+\begin_layout Description
+הערה בעיית ה-
+\lang english
+LC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ULC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אבל עם אילוצים שאינם בהכרח תמורות אלא סתם פ' 
+\begin_inset Formula $\com\mapsto\com$
+\end_inset
+
+, כלומר לכל צלע וקודוקד ראשון אפשר לבחור אולי כמה צבעים לקודקוד השני שיספקו
+ את האילוץ.
+\end_layout
+
+\begin_layout Standard
+לא סיימנו את ההוכחה כי ה-
+\lang english
+UGC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא השערה.
+ במבחן נוכיח 
+\begin_inset Formula $\left(1,1-\epsilon\right){\rm -gap-}\sat\leq_{p}{\rm LC}$
+\end_inset
+
+ באופן הבא; נבחר 
+\begin_inset Formula $\com=\left\{ \pm1\right\} ^{3}\backslash\left\{ \left(1,1,1\right)\right\} $
+\end_inset
+
+ )
+\begin_inset Formula $1$
+\end_inset
+
+ מייצג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+F
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כך שאלו הן כל שלשות הליטרלים שמספקים פסוקית(.
+ נגדיר
+\begin_inset Formula 
+\[
+V=\left\{ x_{i}\right\} \cup\left\{ \overline{x_{i}}\right\} \cup\left\{ c_{j}\right\} ,\;\;E=\left\{ \left(c_{j},x_{i}\right):x_{i}\in c_{j}\right\} \cup\left\{ \left(c_{j},\overline{x_{i}}\right):\overline{x_{i}}\in c_{j}\right\} 
+\]
+
+\end_inset
+
+והאילוץ 
+\begin_inset Formula $c_{e}\left(c_{j}\right)=\left(x_{i},x_{i},x_{i}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $e=\left(c_{j},x_{i}\right)$
+\end_inset
+
+ )ואם זה ליטרל בשלילה אז כמובן עם שלילה(.
+ כך, הערך של 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ב-
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ שווה לערך של 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ )כפי שהשניים מתבטאים מצביעת הקודוקד 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ בהתאמה( אם
+\begin_inset Quotes xrd
+\end_inset
+
+ם האילוץ מתקיים.
+\end_layout
+
+\begin_layout Standard
+לכן אם בקלט ה-
+\begin_inset Formula $\sat$
+\end_inset
+
+ יש השמה מספקת 
+\begin_inset Formula $g$
+\end_inset
+
+, נבחר צביעה ל-
+\begin_inset Formula $\left(V,E,\left\{ c_{e}\right\} \right)$
+\end_inset
+
+ באופן הבא: 
+\begin_inset Formula $f\left(x_{i}\right)=\left(g\left(x_{i}\right),g\left(x_{i}\right),g\left(x_{i}\right)\right)$
+\end_inset
+
+ לכל קודקוד 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ המייצג ליטרל )ובדומה עבור ליטרלי שלילה(, ו-
+\begin_inset Formula 
+\[
+f\left(c_{j}\right)=\left(g\left(\xi_{c_{j},1}\right),g\left(\xi_{c_{j},2}\right),g\left(\xi_{c_{j},3}\right)\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\xi_{c_{j},i}$
+\end_inset
+
+ הוא המשתנה ה-
+\begin_inset Formula $i$
+\end_inset
+
+ בפסוקית ה-
+\begin_inset Formula $j$
+\end_inset
+
+.
+ לפחות אילוץ אחד מכל שלשה שנוצרת מפסוקית חייב להסתפק, אחרת כל הליטרלים הם
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ )
+\lang english
+F
+\lang hebrew
+( ונקבל פסוקית שלא סופקה, כלומר לא ב-
+\lang english
+3SAT
+\lang hebrew
+.
+ אם אי אפשר לספק יותר מ-
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+ מהמשוואות, נותר להוכיח איזה חסם עליון זה נותן מספר אילוצי הצביעה שניתנים
+ לסיפוק.
+\end_layout
+
+\begin_layout Standard
+ישנם שני רכיבים נוספים בהוכחה שנותרו לא פתורים:
+\end_layout
+
+\begin_layout Enumerate
+כיצד נשתמש במבחן ה-
+\lang english
+Long Code
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלי הנתון שהאילוצים הם תמורות.
+\end_layout
+
+\begin_layout Enumerate
+השגת נאותות 
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+, שהיא מהותית קרובה ל-
+\begin_inset Formula $1$
+\end_inset
+
+, לעומת הנאותות שראינו ב-
+\lang english
+ULC
+\lang hebrew
+, 
+\begin_inset Formula $\eta$
+\end_inset
+
+, שהיא מהותית קרובה ל-
+\begin_inset Formula $0$
+\end_inset
+
+.
+ הפתרון לכך הוא באמצעות בדיקה של כמה זוגות פסוקיות-משתנים בכל פעם.
+\end_layout
+
+\begin_layout Standard
+
+\size giant
+סוף.
 \end_layout
 
 \end_body
